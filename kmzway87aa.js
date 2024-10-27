@@ -31,7 +31,7 @@ function isAllowedDomain() {
   var allowedDomains = [
     'https://akusukagratisanlo.blogspot.com',
     'https://www.kltraid.online',
-    'bikinbaru96.blogspot.com'
+    'https://bikinbaru96.blogspot.com'
   ];
   var referrer = document.referrer;
 

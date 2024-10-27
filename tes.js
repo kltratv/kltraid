@@ -1,6 +1,7 @@
 // Redirect script for kmzway87aa.js on Cloudflare Pages
 (function() {
   const allowedDomains = [
+    'https://kltraid.pages.dev',
     'https://www.kltraid.online',
     'https://akusukagratisanlo.blogspot.com',
     'https://bikinbaru96.blogspot.com'

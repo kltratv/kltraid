@@ -26,8 +26,8 @@ function decryptUrl(url) {
   return newUrl;
 }
 
-// Fungsi untuk menambahkan allowed domain
-function isAllowedDomain() {
+// Fungsi untuk memeriksa allowed domain dan mengatur pengalihan jika tidak diizinkan
+function configureRedirect() {
   var allowedDomains = [
     'https://www.kltraid.online',
     'https://akusukagratisanlo.blogspot.com',
@@ -35,19 +35,22 @@ function isAllowedDomain() {
   ];
   var referrer = document.referrer;
 
-  // Normalisasi referrer untuk menghapus trailing slash jika ada
+  // Normalisasi referrer dengan menghapus trailing slash jika ada
   if (referrer.endsWith('/')) {
     referrer = referrer.slice(0, -1);
   }
 
-  // Jika tidak ada referrer atau domain tidak ada dalam daftar allowed domains, redirect
-  if (!referrer || !allowedDomains.some(domain => referrer.startsWith(domain))) {
-    window.location.href = 'https://kltraid.pages.dev/';
+  // Cek apakah referrer adalah salah satu dari allowed domains
+  var isAllowed = allowedDomains.some(domain => referrer.startsWith(domain));
+
+  // Jika referrer tidak ditemukan atau tidak sesuai, arahkan ke halaman utama
+  if (!isAllowed) {
+    window.location.replace('https://kltraid.pages.dev/');
   }
 }
 
-// Panggil fungsi untuk cek allowed domain
-isAllowedDomain();
+// Panggil fungsi untuk mengatur pengalihan setelah halaman dimuat
+document.addEventListener('DOMContentLoaded', configureRedirect);
 
 // Fungsi untuk mengekstrak protokol (https:// atau http://)
 function extractProtocol(url) {

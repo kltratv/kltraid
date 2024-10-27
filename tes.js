@@ -1,19 +1,21 @@
-// Redirect script for kmzway87aa.js on Cloudflare Pages
 (function() {
   const allowedDomains = [
-    'https://kltraid.pages.dev',
     'https://www.kltraid.online',
     'https://akusukagratisanlo.blogspot.com',
-    'https://bikinbaru96.blogspot.com'
+    'https://bikinbaru96.blogspot.com',
+    'https://kltraid.pages.dev'
   ];
 
-  // Check the origin
-  const origin = window.location.origin;
+  // Check if the script is being accessed directly in a browser tab
+  if (window.top === window.self) {
+    // This means the script is being accessed directly
+    const referer = document.referrer;
 
-  // If origin is not allowed, redirect to homepage
-  if (!allowedDomains.some(domain => origin.startsWith(domain))) {
-    window.location.href = 'https://kltraid.pages.dev';
-    return;
+    // Redirect if no valid referer or if accessed directly without an allowed referer
+    if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
+      window.location.href = 'https://kltraid.pages.dev';
+      return;
+    }
   }
 
   // Your decryption logic below

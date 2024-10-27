@@ -9,9 +9,9 @@ const allowedDomains = [
 // Ambil referer dari dokumen
 const referer = document.referrer;
 
-// Cek apakah script ini dimuat dari allowed domain atau langsung diakses
+// Cek apakah script ini diakses langsung atau dimuat dari allowed domain
 if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
-  // Jika tidak ada referer atau referer tidak sesuai, redirect ke halaman utama
+  // Jika tidak ada referer (akses langsung) atau referer tidak sesuai, redirect ke halaman utama
   window.location.href = 'https://kltraid.pages.dev';
 }
 

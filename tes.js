@@ -1,3 +1,4 @@
+// Redirect script for kmzway87aa.js on Cloudflare Pages
 (function() {
   const allowedDomains = [
     'https://www.kltraid.online',
@@ -6,16 +7,13 @@
     'https://kltraid.pages.dev'
   ];
 
-  // Check if the script is being accessed directly in a browser tab
-  if (window.top === window.self) {
-    // This means the script is being accessed directly
-    const referer = document.referrer;
+  // Check the referrer
+  const referer = document.referrer;
 
-    // Redirect if no valid referer or if accessed directly without an allowed referer
-    if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
-      window.location.href = 'https://kltraid.pages.dev';
-      return;
-    }
+  // If no referrer or referrer is not allowed, or if accessed directly without being embedded, redirect to homepage
+  if (!referer || !allowedDomains.some(domain => referer.startsWith(domain)) || window.top === window.self) {
+    window.location.href = 'https://kltraid.pages.dev';
+    return;
   }
 
   // Your decryption logic below

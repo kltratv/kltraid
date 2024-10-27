@@ -1,20 +1,3 @@
-// Daftar allowed domains
-const allowedDomains = [
-  'https://kltraid.pages.dev',
-  'https://akusukagratisanlo.blogspot.com',
-  'https://www.kltraid.online',
-  'https://bikinbaru96.blogspot.com'
-];
-
-// Ambil referer dari dokumen
-const referer = document.referrer;
-
-// Cek apakah script ini diakses langsung atau dimuat dari allowed domain
-if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
-  // Jika tidak ada referer (akses langsung) atau referer tidak sesuai, redirect ke halaman utama
-  window.location.href = 'https://kltraid.pages.dev';
-}
-
 // Decryption function for hosted environment (JavaScript)
 function decryptUrl(url) {
   // Cek apakah URL memiliki penanda _token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e

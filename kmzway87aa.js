@@ -1,20 +1,4 @@
 // Decryption function for hosted environment (JavaScript)
-
-// Logika Allowed Domains
-const allowedDomains = [
-  'https://akusukagratisanlo.blogspot.com',
-  'https://www.kltraid.online',
-  'https://bikinbaru96.blogspot.com'
-];
-
-// Ambil referer dari dokumen
-const referer = document.referrer;
-
-// Jika tidak ada referer atau referer tidak sesuai, lakukan redirect
-if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
-  window.location.href = 'https://kltraid.pages.dev';
-}
-
 function decryptUrl(url) {
   // Cek apakah URL memiliki penanda _token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e
   if (!url.endsWith('_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e')) {
@@ -41,6 +25,24 @@ function decryptUrl(url) {
 
   return newUrl;
 }
+
+// Fungsi untuk menambahkan allowed domain
+function isAllowedDomain() {
+  var allowedDomains = [
+    'https://akusukagratisanlo.blogspot.com',
+    'https://www.kltraid.online',
+    'bikinbaru96.blogspot.com'
+  ];
+  var referrer = document.referrer;
+
+  // Jika tidak ada referrer atau domain tidak ada dalam daftar allowed domains, redirect
+  if (!referrer || !allowedDomains.some(domain => referrer.includes(domain))) {
+    window.location.href = 'https://kltraid.pages.dev/';
+  }
+}
+
+// Panggil fungsi untuk cek allowed domain
+isAllowedDomain();
 
 // Fungsi untuk mengekstrak protokol (https:// atau http://)
 function extractProtocol(url) {

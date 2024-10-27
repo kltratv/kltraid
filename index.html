@@ -23,6 +23,29 @@
             height: 100vh;
         }
     </style>
+    <script>
+        // Daftar allowed domains
+        const allowedDomains = [
+            'https://kltraid.pages.dev',
+            'https://akusukagratisanlo.blogspot.com',
+            'https://www.kltraid.online',
+            'https://bikinbaru96.blogspot.com'
+        ];
+
+        // Ambil referer
+        const referer = document.referrer;
+
+        // Cek referer dan load kmzway87aa.js hanya jika sesuai
+        if (referer && allowedDomains.some(domain => referer.startsWith(domain))) {
+            // Buat elemen script untuk memuat kmzway87aa.js
+            const script = document.createElement('script');
+            script.src = 'kmzway87aa.js';
+            document.head.appendChild(script);
+        } else {
+            // Redirect ke halaman utama jika akses langsung atau referer tidak sesuai
+            window.location.href = 'https://kltraid.pages.dev';
+        }
+    </script>
 </head>
 <body>
     <div class="background-image"></div>

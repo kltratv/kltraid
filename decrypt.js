@@ -26,7 +26,7 @@ function decryptUrl(url) {
   return newUrl;
 }
 
-// Fungsi untuk menambahkan allowed domain
+// Fungsi untuk memeriksa allowed domain
 function isAllowedDomain() {
   var allowedDomains = [
     'https://www.kltraid.online',
@@ -35,19 +35,34 @@ function isAllowedDomain() {
   ];
   var referrer = document.referrer;
 
-  // Normalisasi referrer untuk menghapus trailing slash jika ada
-  if (referrer.endsWith('/')) {
-    referrer = referrer.slice(0, -1);
+  // Jika tidak ada referrer atau domain tidak ada dalam daftar allowed domains, redirect
+  if (!referrer) {
+    window.location.href = 'https://kltraid.pages.dev/';
+    return;
   }
 
-  // Jika tidak ada referrer atau domain tidak ada dalam daftar allowed domains, redirect
-  if (!referrer || !allowedDomains.some(domain => referrer.startsWith(domain))) {
+  // Buat URL object untuk referrer dan allowed domains agar lebih aman dan fleksibel dalam pengecekan
+  try {
+    var referrerUrl = new URL(referrer);
+    var isAllowed = allowedDomains.some(domain => {
+      try {
+        var allowedUrl = new URL(domain);
+        return referrerUrl.hostname === allowedUrl.hostname;
+      } catch (e) {
+        return false;
+      }
+    });
+
+    if (!isAllowed) {
+      window.location.href = 'https://kltraid.pages.dev/';
+    }
+  } catch (e) {
     window.location.href = 'https://kltraid.pages.dev/';
   }
 }
 
-// Panggil fungsi untuk cek allowed domain
-isAllowedDomain();
+// Panggil fungsi untuk cek allowed domain setelah halaman dimuat
+document.addEventListener('DOMContentLoaded', isAllowedDomain);
 
 // Fungsi untuk mengekstrak protokol (https:// atau http://)
 function extractProtocol(url) {

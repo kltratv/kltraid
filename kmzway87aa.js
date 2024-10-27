@@ -29,14 +29,19 @@ function decryptUrl(url) {
 // Fungsi untuk menambahkan allowed domain
 function isAllowedDomain() {
   var allowedDomains = [
-    'https://akusukagratisanlo.blogspot.com',
     'https://www.kltraid.online',
+    'https://akusukagratisanlo.blogspot.com',
     'https://bikinbaru96.blogspot.com'
   ];
   var referrer = document.referrer;
 
+  // Normalisasi referrer untuk menghapus trailing slash jika ada
+  if (referrer.endsWith('/')) {
+    referrer = referrer.slice(0, -1);
+  }
+
   // Jika tidak ada referrer atau domain tidak ada dalam daftar allowed domains, redirect
-  if (!referrer || !allowedDomains.some(domain => referrer.includes(domain))) {
+  if (!referrer || !allowedDomains.some(domain => referrer.startsWith(domain))) {
     window.location.href = 'https://kltraid.pages.dev/';
   }
 }

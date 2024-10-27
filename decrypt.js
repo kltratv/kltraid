@@ -1,112 +1,105 @@
-// Decryption function for hosted environment (JavaScript)
-function decryptUrl(url) {
-  // Cek apakah URL memiliki penanda _token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e
-  if (!url.endsWith('_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e')) {
-    return url; // Lewati URL yang tidak memiliki penanda
-  }
-
-  // Hapus penanda dari URL
-  url = url.replace('_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e', '');
-
-  // Pisahkan protokol
-  var protocol = extractProtocol(url);
-  
-  // Pisahkan domain, path, dan ekstensi
-  var { domainAndPath, excludedExtensions, extensionPositions } = extractDomainAndPathAndExtensionPositions(url);
-
-  // Dekripsi domain dan path tanpa protokol dan ekstensi menggunakan tabel substitusi acak
-  var decryptedDomainAndPath = substituteDecrypt(domainAndPath);
-
-  // Gabungkan kembali URL dengan ekstensi di posisi aslinya
-  var newUrl = insertExtensionsBack(decryptedDomainAndPath, excludedExtensions, extensionPositions);
-
-  // Gabungkan kembali dengan protokol
-  newUrl = protocol + newUrl;
-
-  return newUrl;
-}
-
-// Fungsi untuk memeriksa allowed domain dan mengatur pengalihan jika tidak diizinkan
-function configureRedirect() {
-  var allowedDomains = [
+// Redirect script for kmzway87aa.js on Cloudflare Pages
+(function() {
+  const allowedDomains = [
     'https://www.kltraid.online',
     'https://akusukagratisanlo.blogspot.com',
     'https://bikinbaru96.blogspot.com'
   ];
-  var referrer = document.referrer;
 
-  // Normalisasi referrer dengan menghapus trailing slash jika ada
-  if (referrer.endsWith('/')) {
-    referrer = referrer.slice(0, -1);
+  // Check the referrer
+  const referer = document.referrer;
+
+  // If no referrer or referrer is not allowed, redirect to homepage
+  if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
+    window.location.href = 'https://kltraid.pages.dev';
+    return;
   }
 
-  // Cek apakah referrer adalah salah satu dari allowed domains
-  var isAllowed = allowedDomains.some(domain => referrer.startsWith(domain));
+  // Your decryption logic below
+  // Decryption function for hosted environment (JavaScript)
+  function decryptUrl(url) {
+    // Check if URL has the _token
+    if (!url.endsWith('_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e')) {
+      return url; // Skip URLs without the token
+    }
 
-  // Jika referrer tidak ditemukan atau tidak sesuai, arahkan ke halaman utama
-  if (!isAllowed) {
-    window.location.replace('https://kltraid.pages.dev/');
-  }
-}
+    // Remove token from URL
+    url = url.replace('_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e', '');
 
-// Panggil fungsi untuk mengatur pengalihan setelah halaman dimuat
-document.addEventListener('DOMContentLoaded', configureRedirect);
+    // Extract protocol
+    var protocol = extractProtocol(url);
 
-// Fungsi untuk mengekstrak protokol (https:// atau http://)
-function extractProtocol(url) {
-  var match = url.match(/https?:\/\//);
-  return match ? match[0] : '';
-}
+    // Extract domain, path, and extension positions
+    var { domainAndPath, excludedExtensions, extensionPositions } = extractDomainAndPathAndExtensionPositions(url);
 
-// Fungsi untuk mengekstrak domain, path, dan ekstensi, serta posisi ekstensi
-function extractDomainAndPathAndExtensionPositions(url) {
-  // Pisahkan protokol dari sisa URL
-  var protocolRegex = /^https?:\/\//i;
-  var domainAndPath = url.replace(protocolRegex, '');
+    // Decrypt domain and path without protocol and extensions using substitution table
+    var decryptedDomainAndPath = substituteDecrypt(domainAndPath);
 
-  // Cari ekstensi yang dikenal dan keluarkan mereka dari dekripsi
-  var extensionsPattern = /(\.html|\.php|\.m3u8|\.css|\.js|\.xml|\.json)/gi;
-  var excludedExtensions = [];
-  var extensionPositions = [];
-  
-  var match;
-  while ((match = extensionsPattern.exec(domainAndPath)) !== null) {
-    excludedExtensions.push(match[0]); // Simpan ekstensi
-    extensionPositions.push(match.index); // Simpan posisi ekstensi
-    domainAndPath = domainAndPath.replace(match[0], ''); // Hapus ekstensi dari domainAndPath untuk didekripsi
+    // Reinsert extensions at their original positions
+    var newUrl = insertExtensionsBack(decryptedDomainAndPath, excludedExtensions, extensionPositions);
+
+    // Recombine with protocol
+    newUrl = protocol + newUrl;
+
+    return newUrl;
   }
 
-  return { domainAndPath, excludedExtensions, extensionPositions };
-}
-
-// Fungsi untuk memasukkan ekstensi kembali ke posisi asli mereka
-function insertExtensionsBack(decryptedDomainAndPath, excludedExtensions, extensionPositions) {
-  var result = decryptedDomainAndPath;
-  for (var i = 0; i < excludedExtensions.length; i++) {
-    var position = extensionPositions[i];
-    var extension = excludedExtensions[i];
-    result = result.slice(0, position) + extension + result.slice(position);
+  // Function to extract protocol (https:// or http://)
+  function extractProtocol(url) {
+    var match = url.match(/https?:\/\//);
+    return match ? match[0] : '';
   }
-  return result;
-}
 
-// Fungsi untuk mendekripsi menggunakan tabel substitusi acak
-function substituteDecrypt(text) {
-  var substitutionTable = {
-    'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v',
-    'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q',
-    'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l',
-    'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g',
-    'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b',
-    'z': 'a', '0': '9', '1': '8', '2': '7', '3': '6',
-    '4': '5', '5': '4', '6': '3', '7': '2', '8': '1',
-    '9': '0'
-  };
+  // Function to extract domain, path, and extensions, and their positions
+  function extractDomainAndPathAndExtensionPositions(url) {
+    // Remove protocol from URL
+    var protocolRegex = /^https?:\/\//i;
+    var domainAndPath = url.replace(protocolRegex, '');
 
-  var result = '';
-  for (var i = 0; i < text.length; i++) {
-    var char = text[i];
-    result += substitutionTable[char] || char; // Jika tidak ada dalam tabel, biarkan karakter tidak berubah
+    // Find known extensions and exclude them from decryption
+    var extensionsPattern = /(\.html|\.php|\.m3u8|\.css|\.js|\.xml|\.json)/gi;
+    var excludedExtensions = [];
+    var extensionPositions = [];
+
+    var match;
+    while ((match = extensionsPattern.exec(domainAndPath)) !== null) {
+      excludedExtensions.push(match[0]); // Store the extension
+      extensionPositions.push(match.index); // Store the position of the extension
+      domainAndPath = domainAndPath.replace(match[0], ''); // Remove extension from domainAndPath for decryption
+    }
+
+    return { domainAndPath, excludedExtensions, extensionPositions };
   }
-  return result;
-}
+
+  // Function to reinsert extensions at their original positions
+  function insertExtensionsBack(decryptedDomainAndPath, excludedExtensions, extensionPositions) {
+    var result = decryptedDomainAndPath;
+    for (var i = 0; i < excludedExtensions.length; i++) {
+      var position = extensionPositions[i];
+      var extension = excludedExtensions[i];
+      result = result.slice(0, position) + extension + result.slice(position);
+    }
+    return result;
+  }
+
+  // Function to decrypt using a substitution table
+  function substituteDecrypt(text) {
+    var substitutionTable = {
+      'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v',
+      'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q',
+      'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l',
+      'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g',
+      'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b',
+      'z': 'a', '0': '9', '1': '8', '2': '7', '3': '6',
+      '4': '5', '5': '4', '6': '3', '7': '2', '8': '1',
+      '9': '0'
+    };
+
+    var result = '';
+    for (var i = 0; i < text.length; i++) {
+      var char = text[i];
+      result += substitutionTable[char] || char; // If not in table, keep character unchanged
+    }
+    return result;
+  }
+})();

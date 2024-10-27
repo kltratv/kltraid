@@ -6,11 +6,11 @@
     'https://bikinbaru96.blogspot.com'
   ];
 
-  // Check the referrer
-  const referer = document.referrer;
+  // Check the origin
+  const origin = window.location.origin;
 
-  // If no referrer or referrer is not allowed, redirect to homepage
-  if (!referer || !allowedDomains.some(domain => referer.startsWith(domain))) {
+  // If origin is not allowed, redirect to homepage
+  if (!allowedDomains.some(domain => origin.startsWith(domain))) {
     window.location.href = 'https://kltraid.pages.dev';
     return;
   }

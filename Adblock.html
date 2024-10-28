@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detect AdBlock</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+<style>
+body{
+  background-color: #1f1d2b;
+}
+
+.wrapper{
+  position: absolute;
+  max-width: 480px;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  padding: 40px 30px;
+  background: #ffd791;
+  border-radius: 15px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-50%, -50%) scale(1.2);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.06);
+  transition: opacity 0.2s 0s ease-in-out,
+              transform 0.2s 0s ease-in-out;
+}
+.wrapper.show{
+  opacity: 1;
+  pointer-events: auto;
+  transform:translate(-50%, -50%) scale(1);
+}
+.wrapper .content,
+.content .warn-icon,
+.warn-icon .icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper .content{
+  flex-direction: column;
+}
+.content .warn-icon{
+  height: 115px;
+  width: 115px;
+  border-radius: 50%;
+  background: rgb(243, 45, 78);
+}
+.warn-icon .icon{
+  height: 100px;
+  width: 100px;
+  background: #ffd791;
+  border-radius: inherit;
+}
+.warn-icon .icon i{
+  background: rgb(243, 45, 78);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 50px;
+}
+.content h2{
+  margin-top: 35px;
+  font-size: 32px;
+}
+.content p{
+  font-size: 19px;
+  text-align: center;
+  margin-top: 20px;
+}
+.btn{
+  height: 57px;
+  width: 223px;
+  margin-top: 30px;
+  border-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+.btn .bg-layer{
+  height: 100%;
+  width: 300%;
+  position: absolute;
+  left: -100%;
+  background: rgb(243, 45, 78);
+  transition: all 0.4s ease;
+}
+.btn:hover .bg-layer{
+  left: 0;
+}
+.content button{
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  background: none;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  color: #fff;
+  cursor: pointer;
+}
+</style>
+
+  </head>
+  <body>
+    <div id="detect"></div>
+    <div class="wrapper">
+      <div class="content">
+        <div class="warn-icon">
+          <span class="icon"><i class="fas fa-exclamation"></i></span>
+        </div>
+        <h2>Please allow ads on our site🥺</h2>
+        <p>
+          Looks like you're using an ad blocker. We depend on advertising to help fund our website. Please whitelist us if you like our content.
+        </p>
+        <div class="btn">
+          <div class="bg-layer"></div>
+          <button>Allow ads</button>
+        </div>
+      </div>
+    </div>
+<script>
+const detect = document.querySelector('#detect');
+const wrapper = document.querySelector('.wrapper');
+const button = wrapper.querySelector('button');
+
+let adClasses = [
+  'ad',
+  'ads',
+  'adsbox',
+  'doubleclick',
+  'ad-placement',
+  'ad-placeholder',
+  'adbadge',
+  'BannerAd',
+];
+for (let item of adClasses) {
+  detect.classList.add(item);
+}
+let getProperty = window.getComputedStyle(detect).getPropertyValue('display');
+console.log(window.getComputedStyle(detect));
+if (!wrapper.classList.contains('show')) {
+  getProperty == 'none'
+    ? wrapper.classList.add('show')
+    : wrapper.classList.remove('show');
+}
+button.addEventListener('click', () => {
+  wrapper.classList.remove('show');
+  setTimeout(function () {
+    if (!wrapper.classList.contains('show')) {
+      getProperty == 'none'
+        ? wrapper.classList.add('show')
+        : wrapper.classList.remove('show');
+    }
+  }, 2000);
+});
+</script>
+</body>
+</html>

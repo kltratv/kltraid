@@ -19,5 +19,6 @@ const eventData = {
     },
     eventDate: "2024-11-01",
     eventTime: "07:30",
-    duration: 2.08
+    duration: 2.08,
+    countdownId: "countdown-9da34d58-69aa-4289-b917-73fd26a148d5"
 };

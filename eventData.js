@@ -1,4 +1,5 @@
 // BEGIN EVENT DATA
+const eventData = [
 const eventData = {
     "wzgzIw": "7zy3uw05-u42y-56xx-z359-11x7zu7yv722",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
@@ -34,8 +35,7 @@ const eventData = {
     "vevmgTrnv": "91:99",
     "wfizgrlm": "79",
     "xlfmgwldmIw": "xlfmgwldm-7zy3uw05-u42y-56xx-z359-11x7zu7yv722"
-};
-
+};,
 const eventData = {
     "wzgzIw": "4zv46w2z-xy1x-547y-1u21-9956z54152y5",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
@@ -72,4 +72,5 @@ const eventData = {
     "wfizgrlm": "79",
     "xlfmgwldmIw": "xlfmgwldm-4zv46w2z-xy1x-547y-1u21-9956z54152y5"
 };
+];
 // END EVENT DATA

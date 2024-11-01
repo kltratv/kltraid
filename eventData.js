@@ -1,22 +1,22 @@
 // BEGIN EVENT DATA
 const eventData = {
-    "wzgzIw": "vzyy6u2y-179z-5y75-1264-463xxv93x301",
-    "wzgzUio": "sggkh://ddd.tlltov.xl.rw/?so=rw",
+    "wzgzIw": "645z6x37-w541-544x-1816-z295u063187w",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=hhx7",
     "hvievih": [
         {
-            "fio": "sggkh://ddd.tlltov.xl.rw/?so=rw",
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=hhx7",
             "ozyvo": "HD Afgl"
         },
         {
-            "fio": "sggkh://bzmwvc.xln/",
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=gmg7",
             "ozyvo": "HD Afgl"
         },
         {
-            "fio": "sggkh://ddd.yrmt.xln/",
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=hklrw7",
             "ozyvo": "HD Afgl"
         },
         {
-            "fio": "sggkh://rw.hvzixs.bzsll.xln/?ui7=k:ukiw,npg:rw",
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
             "ozyvo": "HD VN [??IOS]"
         }
     ],
@@ -33,6 +33,6 @@ const eventData = {
     "vevmgDzgv": "7975-88-98",
     "vevmgTrnv": "91:99",
     "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-vzyy6u2y-179z-5y75-1264-463xxv93x301"
+    "xlfmgwldmIw": "xlfmgwldm-645z6x37-w541-544x-1816-z295u063187w"
 };
 // END EVENT DATA

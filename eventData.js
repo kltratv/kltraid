@@ -1,7 +1,7 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "dataId": "7165yy10-51xu-5y3u-0xzw-z400uw7725x4",
+    "dataId": "ywu841x5-zyu4-5u5x-y8vu-x72zx3uw1u6z",
     "dataUrl": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
     "servers": [
         {
@@ -34,10 +34,10 @@ const eventData = [
     "eventDate": "7975-88-98",
     "eventTime": "91:99",
     "duration": "79",
-    "countdownId": "xlfmgwldm-7165yy10-51xu-5y3u-0xzw-z400uw7725x4"
+    "countdownId": "xlfmgwldm-ywu841x5-zyu4-5u5x-y8vu-x72zx3uw1u6z"
 },
 {
-    "dataId": "24907341-1xzz-53yy-022x-uxwu3z5vwwyw",
+    "dataId": "wz34z713-y70y-507z-zw98-83818v74146z",
     "dataUrl": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
     "servers": [
         {
@@ -70,7 +70,7 @@ const eventData = [
     "eventDate": "7975-88-98",
     "eventTime": "91:99",
     "duration": "79",
-    "countdownId": "xlfmgwldm-24907341-1xzz-53yy-022x-uxwu3z5vwwyw"
+    "countdownId": "xlfmgwldm-wz34z713-y70y-507z-zw98-83818v74146z"
 }
 ];
 // END EVENT DATA

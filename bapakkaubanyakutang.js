@@ -1,27 +1,47 @@
-function substituteDecrypt(text) {
-  var substitutionTable = {
-    'z': 'a', 'y': 'b', 'x': 'c', 'w': 'd', 'v': 'e',
-    'u': 'f', 't': 'g', 's': 'h', 'r': 'i', 'q': 'j',
-    'p': 'k', 'o': 'l', 'n': 'm', 'm': 'n', 'l': 'o',
-    'k': 'p', 'j': 'q', 'i': 'r', 'h': 's', 'g': 't',
-    'f': 'u', 'e': 'v', 'd': 'w', 'c': 'x', 'b': 'y',
-    'a': 'z', '9': '0', '8': '1', '7': '2', '6': '3',
-    '5': '4', '4': '5', '3': '6', '2': '7', '1': '8',
-    '0': '9'
-  };
+// Tabel substitusi untuk dekripsi
+const substitutionTable = {
+  'z': 'a', 'y': 'b', 'x': 'c', 'w': 'd', 'v': 'e',
+  'u': 'f', 't': 'g', 's': 'h', 'r': 'i', 'q': 'j',
+  'p': 'k', 'o': 'l', 'n': 'm', 'm': 'n', 'l': 'o',
+  'k': 'p', 'j': 'q', 'i': 'r', 'h': 's', 'g': 't',
+  'f': 'u', 'e': 'v', 'd': 'w', 'c': 'x', 'b': 'y',
+  'a': 'z', '9': '0', '8': '1', '7': '2', '6': '3',
+  '5': '4', '4': '5', '3': '6', '2': '7', '1': '8',
+  '0': '9'
+};
 
-  var decryptedText = '';
-  for (var i = 0; i < text.length; i++) {
-    var char = text[i];
-    // Cek apakah karakter adalah huruf kecil atau angka yang perlu didekripsi
-    if (substitutionTable[char.toLowerCase()]) {
-      // Ambil hasil substitusi dan sesuaikan kapitalisasi
-      var decryptedChar = substitutionTable[char.toLowerCase()];
-      decryptedText += (char === char.toUpperCase()) ? decryptedChar.toUpperCase() : decryptedChar;
+// Fungsi dekripsi untuk string
+function substituteDecrypt(text) {
+  let decryptedText = '';
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    // Cek apakah karakter ada di tabel substitusi
+    if (substitutionTable[char]) {
+      decryptedText += substitutionTable[char];
     } else {
-      // Pertahankan karakter yang bukan huruf kecil atau angka
-      decryptedText += char;
+      decryptedText += char; // Pertahankan karakter yang tidak ada di tabel
     }
   }
   return decryptedText;
+}
+
+// Fungsi rekursif untuk mendekripsi semua kunci dan nilai dalam objek JSON
+function decryptEventData(data) {
+  if (typeof data === 'string') {
+    return substituteDecrypt(data); // Dekripsi string
+  } else if (Array.isArray(data)) {
+    return data.map(decryptEventData); // Dekripsi setiap elemen dalam array
+  } else if (typeof data === 'object' && data !== null) {
+    const decryptedObject = {};
+    for (const key in data) {
+      decryptedObject[substituteDecrypt(key)] = decryptEventData(data[key]); // Dekripsi kunci dan nilai
+    }
+    return decryptedObject;
+  }
+  return data; // Jika bukan string, array, atau objek, kembalikan data asli
+}
+
+// Dekripsi data eventData secara otomatis setelah dimuat
+if (typeof eventData !== 'undefined') {
+  eventData = decryptEventData(eventData);
 }

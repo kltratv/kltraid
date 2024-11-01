@@ -32,7 +32,7 @@ const eventData = [
         "name": "MotoGP"
     },
     "eventDate": "2024-11-01",
-    "eventTime": "08:00",
+    "eventTime": "15:00",
     "duration": "20",
     "countdownId": "countdown-dc44164c-7aa5-4305-8265-e2e6ade791d3"
 },

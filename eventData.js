@@ -1,11 +1,11 @@
 // BEGIN EVENT DATA
 const eventData = [
-<div class="event-container" data-id="6f639f82-54c8-4de7-8445-b63a59112065" data-url="https://ovyl.sfnrmyriw.xm/orev/yzooyzi_69859.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
-        {"url": "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_69859.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "COURT 1"},
-        {"url": "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_71819.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "COURT 2"},
-        {"url": "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_76249.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "COURT 3"},
-        {"url": "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_77809.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "COURT 4"},
-        {"url": "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_71119.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "COURT 5"}
+<div class="event-container" data-id="9be04d3b-9bc8-44e5-9489-7f62b2785315" data-url="https://lebo.huminbird.cn/live/ballbar_30140.m3u8" data-servers='[
+        {"url": "https://lebo.huminbird.cn/live/ballbar_30140.m3u8", "label": "COURT 1"},
+        {"url": "https://lebo.huminbird.cn/live/ballbar_28180.m3u8", "label": "COURT 2"},
+        {"url": "https://lebo.huminbird.cn/live/ballbar_23750.m3u8", "label": "COURT 3"},
+        {"url": "https://lebo.huminbird.cn/live/ballbar_22190.m3u8", "label": "COURT 4"},
+        {"url": "https://lebo.huminbird.cn/live/ballbar_28880.m3u8", "label": "COURT 5"}
     ]' data-duration="20">
   <h2><img src="https://i.imgur.com/F597ABm.png" alt="Sport Icon" class="sport-icon">BWF Tour Indonesia Masters</h2>
   <div class="team">
@@ -23,7 +23,7 @@ const eventData = [
     <div class="instruction">You can select a server stream:</div>
     <div class="buttons-container"></div>
   </div>
-  <div class="countdown-wrapper" id="countdown-6f639f82-54c8-4de7-8445-b63a59112065" style="display:none;">
+  <div class="countdown-wrapper" id="countdown-9be04d3b-9bc8-44e5-9489-7f62b2785315" style="display:none;">
       <div class="countdown-title">Event will start in:</div>
       <div class="countdown-timer"></div>
   </div>

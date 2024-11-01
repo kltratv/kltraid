@@ -1,20 +1,20 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "vu2z9uu2-ywzw-5u47-16v0-9z85821196w0",
+    "wzgzIw": "z0u3y561-69wv-53y6-1600-350331u9z69z",
     "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60429.n6f1",
     "hvievih": [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60429.n6f1",
-            "ozyvo": "Sgzyov"
+            "ozyvo": "STABLE"
         },
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_81819.n6f1",
-            "ozyvo": "SD [??IOS]"
+            "ozyvo": "SD [IOS]"
         },
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_2129.n6f1",
-            "ozyvo": "SD [??IOS]"
+            "ozyvo": "SD [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
@@ -30,7 +30,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-97",
     "vevmgTrnv": "96:99",
     "wfizgrlm": "7.91",
-    "xlfmgwldmIw": "xlfmgwldm-vu2z9uu2-ywzw-5u47-16v0-9z85821196w0"
+    "xlfmgwldmIw": "xlfmgwldm-z0u3y561-69wv-53y6-1600-350331u9z69z"
 }
 ];
 // END EVENT DATA

@@ -1,32 +1,76 @@
 // BEGIN EVENT DATA
 const eventData = [
-<div class="event-container" data-id="9be04d3b-9bc8-44e5-9489-7f62b2785315" data-url="https://lebo.huminbird.cn/live/ballbar_30140.m3u8" data-servers='[
-        {"url": "https://lebo.huminbird.cn/live/ballbar_30140.m3u8", "label": "COURT 1"},
-        {"url": "https://lebo.huminbird.cn/live/ballbar_28180.m3u8", "label": "COURT 2"},
-        {"url": "https://lebo.huminbird.cn/live/ballbar_23750.m3u8", "label": "COURT 3"},
-        {"url": "https://lebo.huminbird.cn/live/ballbar_22190.m3u8", "label": "COURT 4"},
-        {"url": "https://lebo.huminbird.cn/live/ballbar_28880.m3u8", "label": "COURT 5"}
-    ]' data-duration="20">
-  <h2><img src="https://i.imgur.com/F597ABm.png" alt="Sport Icon" class="sport-icon">BWF Tour Indonesia Masters</h2>
-  <div class="team">
-    <img src="https://i.imgur.com/F597ABm.png" alt="Badminton" class="team-logo">
-    <span>Badminton</span>
-  </div>
-  <div class="match-date">2024-11-01</div>
-  <div class="match-time">13:30</div>
-  <div class="live-label" style="display:none;">Live</div>
-  <div class="team">
-    <img src="https://i.imgur.com/F597ABm.png" alt="Badminton" class="team-logo">
-    <span>Badminton</span>
-  </div>
-  <div class="server-buttons" style="display:none;">
-    <div class="instruction">You can select a server stream:</div>
-    <div class="buttons-container"></div>
-  </div>
-  <div class="countdown-wrapper" id="countdown-9be04d3b-9bc8-44e5-9489-7f62b2785315" style="display:none;">
-      <div class="countdown-title">Event will start in:</div>
-      <div class="countdown-timer"></div>
-  </div>
-</div>
+{
+    "dataId": "dc44164c-7aa5-4305-8265-e2e6ade791d3",
+    "dataUrl": "https://kltraid.pages.dev/play.html?channel=ssc2",
+    "servers": [
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=ssc2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=tnt2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=spoid2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://bikinbaru96.blogspot.com/2024/07/sport7pm-1.html",
+            "label": "HD VN [IOS]"
+        }
+    ],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "MotoGP Malaysia Grand Prix",
+    "team1": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
+    },
+    "team2": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
+    },
+    "eventDate": "2024-11-01",
+    "eventTime": "08:00",
+    "duration": "20",
+    "countdownId": "countdown-dc44164c-7aa5-4305-8265-e2e6ade791d3"
+},
+{
+    "dataId": "1a82bbdb-fa58-4a27-b244-f04e0922a9e9",
+    "dataUrl": "https://kltraid.pages.dev/play.html?channel=ssc2",
+    "servers": [
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=ssc2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=tnt2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=spoid2",
+            "label": "HD AUTO"
+        },
+        {
+            "url": "https://bikinbaru96.blogspot.com/2024/07/sport7pm-1.html",
+            "label": "HD VN [IOS]"
+        }
+    ],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "MotoGP Mexico",
+    "team1": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
+    },
+    "team2": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
+    },
+    "eventDate": "2024-11-01",
+    "eventTime": "08:00",
+    "duration": "20",
+    "countdownId": "countdown-1a82bbdb-fa58-4a27-b244-f04e0922a9e9"
+}
 ];
 // END EVENT DATA

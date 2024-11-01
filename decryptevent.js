@@ -11,7 +11,13 @@ function substituteDecrypt(text) {
         '0': '9'
     };
 
-    return text.split('').map(char => substitutionTable[char] || char).join('');
+    return text.split('').map(char => {
+        // Dekripsi hanya huruf dan angka, biarkan simbol dan emotikon tetap sama
+        if (/[a-z0-9]/i.test(char)) {
+            return substitutionTable[char.toLowerCase()] || char;
+        }
+        return char; // Biarkan karakter tetap sama jika bukan huruf atau angka
+    }).join('');
 }
 
 // Fungsi rekursif untuk mendekripsi setiap nilai dalam objek eventData

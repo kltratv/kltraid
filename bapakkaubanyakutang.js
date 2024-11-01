@@ -41,7 +41,5 @@ function decryptEventData(data) {
   return data; // Jika bukan string, array, atau objek, kembalikan data asli
 }
 
-// Dekripsi data eventData secara otomatis setelah dimuat
-if (typeof eventData !== 'undefined') {
-  eventData = decryptEventData(eventData);
-}
+// Dekripsi data eventData secara otomatis setelah dimuat ke variabel baru
+const decryptedEventData = decryptEventData(eventData);

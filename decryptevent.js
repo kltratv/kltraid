@@ -24,14 +24,9 @@ function decryptEventData(data) {
         const decryptedObj = {};
         for (const key in data) {
             if (data.hasOwnProperty(key)) {
+                // Dekripsi kunci dan nilai
                 const decryptedKey = substituteDecrypt(key);
-                
-                // Jangan dekripsi nilai dalam "label"
-                if (decryptedKey === "label") {
-                    decryptedObj[decryptedKey] = data[key];
-                } else {
-                    decryptedObj[decryptedKey] = decryptEventData(data[key]);
-                }
+                decryptedObj[decryptedKey] = decryptEventData(data[key]);
             }
         }
         return decryptedObj;

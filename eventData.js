@@ -1,76 +1,76 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "u08z0337-x42x-54ux-z4z4-uv50yu2w93w1",
-    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-    "hvievih": [
+    "dataId": "7165yy10-51xu-5y3u-0xzw-z400uw7725x4",
+    "dataUrl": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
+    "servers": [
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
-            "ozyvo": "HD VN [??IOS]"
+            "url": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
+            "label": "HD VN [??IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "MlglGP Mzozbhrz Gizmw Pirc",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "sportIcon": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "eventName": "MlglGP Mzozbhrz Gizmw Pirc",
+    "team1": {
+        "logo": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
+        "name": "MlglGP"
     },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "team2": {
+        "logo": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
+        "name": "MlglGP"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "91:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-u08z0337-x42x-54ux-z4z4-uv50yu2w93w1"
+    "eventDate": "7975-88-98",
+    "eventTime": "91:99",
+    "duration": "79",
+    "countdownId": "xlfmgwldm-7165yy10-51xu-5y3u-0xzw-z400uw7725x4"
 },
 {
-    "wzgzIw": "8529632y-34w6-5uy1-15wv-1w90w81241y0",
-    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-    "hvievih": [
+    "dataId": "24907341-1xzz-53yy-022x-uxwu3z5vwwyw",
+    "dataUrl": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
+    "servers": [
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD Afgl"
+            "url": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
+            "label": "HD Auto"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
-            "ozyvo": "HD VN [??IOS]"
+            "url": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
+            "label": "HD VN [??IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "MlglGP Mvcrxl",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "sportIcon": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "eventName": "MlglGP Mvcrxl",
+    "team1": {
+        "logo": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
+        "name": "MlglGP"
     },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "team2": {
+        "logo": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
+        "name": "MlglGP"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "91:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-8529632y-34w6-5uy1-15wv-1w90w81241y0"
+    "eventDate": "7975-88-98",
+    "eventTime": "91:99",
+    "duration": "79",
+    "countdownId": "xlfmgwldm-24907341-1xzz-53yy-022x-uxwu3z5vwwyw"
 }
 ];
 // END EVENT DATA

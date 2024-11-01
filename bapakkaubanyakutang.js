@@ -1,4 +1,7 @@
-// Tabel substitusi untuk dekripsi
+// Memuat `eventData.js`
+importScripts('https://kltraid.pages.dev/eventData.js');
+
+// Tabel substitusi untuk dekripsi dan fungsi terkait
 const substitutionTable = {
   'z': 'a', 'y': 'b', 'x': 'c', 'w': 'd', 'v': 'e',
   'u': 'f', 't': 'g', 's': 'h', 'r': 'i', 'q': 'j',
@@ -10,36 +13,76 @@ const substitutionTable = {
   '0': '9'
 };
 
-// Fungsi dekripsi untuk string
 function substituteDecrypt(text) {
   let decryptedText = '';
   for (let i = 0; i < text.length; i++) {
     const char = text[i];
-    // Cek apakah karakter ada di tabel substitusi
     if (substitutionTable[char]) {
       decryptedText += substitutionTable[char];
     } else {
-      decryptedText += char; // Pertahankan karakter yang tidak ada di tabel
+      decryptedText += char;
     }
   }
   return decryptedText;
 }
 
-// Fungsi rekursif untuk mendekripsi semua kunci dan nilai dalam objek JSON
 function decryptEventData(data) {
   if (typeof data === 'string') {
-    return substituteDecrypt(data); // Dekripsi string
+    return substituteDecrypt(data);
   } else if (Array.isArray(data)) {
-    return data.map(decryptEventData); // Dekripsi setiap elemen dalam array
+    return data.map(decryptEventData);
   } else if (typeof data === 'object' && data !== null) {
     const decryptedObject = {};
     for (const key in data) {
-      decryptedObject[substituteDecrypt(key)] = decryptEventData(data[key]); // Dekripsi kunci dan nilai
+      decryptedObject[substituteDecrypt(key)] = decryptEventData(data[key]);
     }
     return decryptedObject;
   }
-  return data; // Jika bukan string, array, atau objek, kembalikan data asli
+  return data;
 }
 
-// Dekripsi data eventData secara otomatis setelah dimuat ke variabel baru
+// Dekripsi data `eventData` setelah diimpor
 const decryptedEventData = decryptEventData(eventData);
+
+function createEventContainers() {
+    const eventsContainer = document.getElementById("events-container");
+    eventsContainer.innerHTML = "";
+
+    decryptedEventData.forEach(event => {
+        const eventContainer = document.createElement("div");
+        eventContainer.className = "event-container";
+        eventContainer.setAttribute("data-id", event.dataId);
+        eventContainer.setAttribute("data-url", event.dataUrl);
+        eventContainer.setAttribute("data-servers", JSON.stringify(event.servers));
+        eventContainer.setAttribute("data-duration", event.duration);
+
+        eventContainer.innerHTML = `
+            <h2><img src="${event.sportIcon}" alt="Sport Icon" class="sport-icon"><span class="event-name">${event.eventName}</span></h2>
+            <div class="team">
+                <img src="${event.team1.logo}" alt="${event.team1.name}" class="team-logo team1-logo">
+                <span class="team1-name">${event.team1.name}</span>
+            </div>
+            <div class="match-date">${event.eventDate}</div>
+            <div class="match-time">${event.eventTime}</div>
+            <div class="live-label" style="display:none;">Live</div>
+            <div class="team">
+                <img src="${event.team2.logo}" alt="${event.team2.name}" class="team-logo team2-logo">
+                <span class="team2-name">${event.team2.name}</span>
+            </div>
+            <div class="server-buttons" style="display:none;">
+                <div class="instruction">You can select a server stream:</div>
+                <div class="buttons-container"></div>
+            </div>
+            <div class="countdown-wrapper" id="countdown-${event.dataId}" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        `;
+        eventsContainer.appendChild(eventContainer);
+    });
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    createEventContainers();
+    setupEvents();
+});

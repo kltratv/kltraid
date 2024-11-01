@@ -11,13 +11,7 @@ function substituteDecrypt(text) {
         '0': '9'
     };
 
-    return text.split('').map(char => {
-        // Dekripsi hanya huruf dan angka, biarkan simbol dan emotikon tetap sama
-        if (/[a-z0-9]/i.test(char)) {
-            return substitutionTable[char.toLowerCase()] || char;
-        }
-        return char; // Biarkan karakter tetap sama jika bukan huruf atau angka
-    }).join('');
+    return text.split('').map(char => substitutionTable[char] || char).join('');
 }
 
 // Fungsi rekursif untuk mendekripsi setiap nilai dalam objek eventData
@@ -30,9 +24,14 @@ function decryptEventData(data) {
         const decryptedObj = {};
         for (const key in data) {
             if (data.hasOwnProperty(key)) {
-                // Dekripsi kunci dan nilai
                 const decryptedKey = substituteDecrypt(key);
-                decryptedObj[decryptedKey] = decryptEventData(data[key]);
+                
+                // Jangan dekripsi nilai dalam "label"
+                if (decryptedKey === "label") {
+                    decryptedObj[decryptedKey] = data[key];
+                } else {
+                    decryptedObj[decryptedKey] = decryptEventData(data[key]);
+                }
             }
         }
         return decryptedObj;

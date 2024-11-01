@@ -1,20 +1,20 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "889u9866-xuv7-542u-0vw1-1uuw754vux26",
+    "wzgzIw": "x5z885xu-zuz8-58xu-y76x-0x81v19w8718",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
     "hvievih": [
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
@@ -34,23 +34,23 @@ const eventData = [
     "vevmgDzgv": "7975-88-98",
     "vevmgTrnv": "91:99",
     "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-889u9866-xuv7-542u-0vw1-1uuw754vux26"
+    "xlfmgwldmIw": "xlfmgwldm-x5z885xu-zuz8-58xu-y76x-0x81v19w8718"
 },
 {
-    "wzgzIw": "w852w28v-uw06-548y-zv78-1x07u5xyv7z1",
+    "wzgzIw": "v1u02283-07u8-5xww-1126-10207513z7u9",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
     "hvievih": [
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD Afgl"
+            "ozyvo": "HD AUTO"
         },
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
@@ -70,7 +70,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-98",
     "vevmgTrnv": "91:99",
     "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-w852w28v-uw06-548y-zv78-1x07u5xyv7z1"
+    "xlfmgwldmIw": "xlfmgwldm-v1u02283-07u8-5xww-1126-10207513z7u9"
 }
 ];
 // END EVENT DATA

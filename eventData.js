@@ -1,76 +1,76 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "y83zuv87-81x0-5xxy-0w00-14646z682330",
-    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-    "hvievih": [
+    "dataId": "97458960-3b00-4704-98aa-9a1f4c269628",
+    "dataUrl": "https://kltraid.pages.dev/play.html?channel=ssc2",
+    "servers": [
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=ssc2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=tnt2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=spoid2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
-            "ozyvo": "HD VN [IOS]"
+            "url": "https://bikinbaru96.blogspot.com/2024/07/sport7pm-1.html",
+            "label": "HD VN [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "MlglGP Mzozbhrz Gizmw Pirc",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "MotoGP Malaysia Grand Prix",
+    "team1": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "team2": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "91:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-y83zuv87-81x0-5xxy-0w00-14646z682330"
+    "eventDate": "2024-11-01",
+    "eventTime": "08:00",
+    "duration": "20",
+    "countdownId": "countdown-97458960-3b00-4704-98aa-9a1f4c269628"
 },
 {
-    "wzgzIw": "0093y97w-xu21-5z59-1z93-v6w60u02y9z7",
-    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-    "hvievih": [
+    "dataId": "7ac6955f-e348-4bdd-8bdf-7186c7c05fbd",
+    "dataUrl": "https://kltraid.pages.dev/play.html?channel=ssc2",
+    "servers": [
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=ssc2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=tnt2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD AUTO"
+            "url": "https://kltraid.pages.dev/play.html?channel=spoid2",
+            "label": "HD AUTO"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.sgno",
-            "ozyvo": "HD VN [IOS]"
+            "url": "https://bikinbaru96.blogspot.com/2024/07/sport7pm-1.html",
+            "label": "HD VN [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "MlglGP Mvcrxl",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "MotoGP Mexico",
+    "team1": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
+    "team2": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "91:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-0093y97w-xu21-5z59-1z93-v6w60u02y9z7"
+    "eventDate": "2024-11-01",
+    "eventTime": "08:00",
+    "duration": "20",
+    "countdownId": "countdown-7ac6955f-e348-4bdd-8bdf-7186c7c05fbd"
 }
 ];
 // END EVENT DATA

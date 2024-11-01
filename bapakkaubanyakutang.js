@@ -1,6 +1,3 @@
-// Memuat `eventData.js`
-importScripts('https://kltraid.pages.dev/eventData.js');
-
 // Tabel substitusi untuk dekripsi dan fungsi terkait
 const substitutionTable = {
   'z': 'a', 'y': 'b', 'x': 'c', 'w': 'd', 'v': 'e',

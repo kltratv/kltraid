@@ -1,26 +1,38 @@
 // BEGIN EVENT DATA
 const eventData = {
-    dataId: "9da34d58-69aa-4289-b917-73fd26a148d5",
-    dataUrl: "https://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.html?pvb=blqHc9t4J1_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
-    servers: [
-        { url: "https://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.html?pvb=blqHc9t4J1_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", label: "Stable" },
-        { url: "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_88339.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", label: "SD [☑️IOS]" },
-        { url: "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_69009.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", label: "SD [☑️IOS]" },
-        { url: "https://ovyl.sfnrmyriw.xm/orev/yzooyzi_68619.m3u8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", label: "SD [☑️IOS]" }
+    "dataId": "eabb3f7b-820a-4b24-8735-536cce06c698",
+    "dataUrl": "https://pogizrw.kztvh.wve/kozb.html?xszmmvo=hhx7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+    "servers": [
+        {
+            "url": "https://pogizrw.kztvh.wve/kozb.html?xszmmvo=hhx7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+            "label": "HD Auto"
+        },
+        {
+            "url": "https://pogizrw.kztvh.wve/kozb.html?xszmmvo=gmg7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+            "label": "HD Auto"
+        },
+        {
+            "url": "https://pogizrw.kztvh.wve/kozb.html?xszmmvo=hklrw7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+            "label": "HD Auto"
+        },
+        {
+            "url": "https://yrprmyzif03.yolthklg.xln/7975/92/hklig2kn-8.html_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+            "label": "HD VN [??IOS]"
+        }
     ],
-    sportIcon: "https://i.imgur.com/oJfBO55.png",
-    eventName: "Copa Sudamericana",
-    team1: {
-        logo: "https://ssl.gstatic.com/onebox/media/sports/logos/wi-J-3U7th2bpIB_Uy9Euw_96x96.png",
-        name: "Racing Club"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "MotoGP Malaysia Grand Prix",
+    "team1": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    team2: {
-        logo: "https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png",
-        name: "Corinthians"
+    "team2": {
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg",
+        "name": "MotoGP"
     },
-    eventDate: "2024-11-01",
-    eventTime: "08:30",
-    duration: 2.08,
-    countdownId: "countdown-9da34d58-69aa-4289-b917-73fd26a148d5"
+    "eventDate": "2024-11-01",
+    "eventTime": "08:00",
+    "duration": "20",
+    "countdownId": "countdown-eabb3f7b-820a-4b24-8735-536cce06c698"
 };
 // END EVENT DATA

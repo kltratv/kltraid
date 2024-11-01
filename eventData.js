@@ -1,3 +1,4 @@
+// BEGIN EVENT DATA
 const eventData = {
     dataId: "9da34d58-69aa-4289-b917-73fd26a148d5",
     dataUrl: "https://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.html?pvb=blqHc9t4J1_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
@@ -22,3 +23,4 @@ const eventData = {
     duration: 2.08,
     countdownId: "countdown-9da34d58-69aa-4289-b917-73fd26a148d5"
 };
+// END EVENT DATA

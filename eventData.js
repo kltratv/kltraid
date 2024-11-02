@@ -1,35 +1,35 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "6x13398z-33y8-57xx-zw61-yyu9z0z53u17",
-    "wzgzUio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-    "hvievih": [
+    "dataId": "8b618bee-e328-4872-b4e8-ad86a617d7dd",
+    "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
+    "servers": [
         {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 8"
+            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
+            "label": "COURT 1"
         },
         {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 7"
+            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
+            "label": "COURT 2"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
-    "vevmgNznv": "BWF Tlfi Imwlmvhrz Mzhgvih",
-    "gvzn8": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
+    "sportIcon": "https://i.imgur.com/F597ABm.png",
+    "eventName": "BWF Tour Indonesia Masters",
+    "team1": {
+        "logo": "https://i.imgur.com/F597ABm.png",
+        "name": "Badminton"
     },
-    "gvzn7": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
+    "team2": {
+        "logo": "https://i.imgur.com/F597ABm.png",
+        "name": "Badminton"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "86:69",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-6x13398z-33y8-57xx-zw61-yyu9z0z53u17"
+    "eventDate": "2024-11-01",
+    "eventTime": "13:30",
+    "duration": "20",
+    "countdownId": "countdown-8b618bee-e328-4872-b4e8-ad86a617d7dd"
 },
 {
-    "dataId": "1cdb29ad-3ed3-443d-8b84-003eb4b0ff01",
+    "dataId": "456e3eaa-7c3a-4d54-8ef8-993d03725589",
     "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
     "servers": [
         {
@@ -54,7 +54,7 @@ const eventData = [
     "eventDate": "2024-11-01",
     "eventTime": "13:30",
     "duration": "20",
-    "countdownId": "countdown-1cdb29ad-3ed3-443d-8b84-003eb4b0ff01"
+    "countdownId": "countdown-456e3eaa-7c3a-4d54-8ef8-993d03725589"
 }
 ];
 // END EVENT DATA

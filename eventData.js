@@ -1,7 +1,7 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "dataId": "8b618bee-e328-4872-b4e8-ad86a617d7dd",
+    "dataId": "c6be4207-ae73-4517-b38d-7c0e3b893c74",
     "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
     "servers": [
         {
@@ -23,13 +23,13 @@ const eventData = [
         "logo": "https://i.imgur.com/F597ABm.png",
         "name": "Badminton"
     },
-    "eventDate": "2024-11-01",
-    "eventTime": "13:30",
+    "eventDate": "2024-11-02",
+    "eventTime": "12:30",
     "duration": "20",
-    "countdownId": "countdown-8b618bee-e328-4872-b4e8-ad86a617d7dd"
+    "countdownId": "countdown-c6be4207-ae73-4517-b38d-7c0e3b893c74"
 },
 {
-    "dataId": "456e3eaa-7c3a-4d54-8ef8-993d03725589",
+    "dataId": "3807265d-8a8c-470f-9f70-f923f6357302",
     "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
     "servers": [
         {
@@ -51,10 +51,10 @@ const eventData = [
         "logo": "https://i.imgur.com/F597ABm.png",
         "name": "Badminton"
     },
-    "eventDate": "2024-11-01",
-    "eventTime": "13:30",
+    "eventDate": "2024-11-02",
+    "eventTime": "12:30",
     "duration": "20",
-    "countdownId": "countdown-456e3eaa-7c3a-4d54-8ef8-993d03725589"
+    "countdownId": "countdown-3807265d-8a8c-470f-9f70-f923f6357302"
 }
 ];
 // END EVENT DATA

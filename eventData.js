@@ -57,36 +57,36 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-w776u271-0y2w-559v-z4zx-9969z6v157w3"
 },
 {
-    "dataId": "193b0ae7-a803-45ee-91e7-71ac86bef5d4",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=7kcQe8j8uB",
-    "servers": [
+    "wzgzIw": "806y9zv2-z196-54vv-08v2-28zx13yvu4w5",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=2pxQv1q1fB",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=7kcQe8j8uB",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=2pxQv1q1fB",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_31650.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68349.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://vietnam.elutuna.workers.dev/channel8.m3u8?auth_key=3000001730549747-0-0-9bca7ceb28518d8fbac47fd8a3fa1f43",
-            "label": "HD VN [IOS]"
+            "fio": "sggkh://ervgmzn.vofgfmz.dlipvih.wve/xszmmvo1.n6f1?zfgs_pvb=6999998269450252-9-9-0yxz2xvy71481w1uyzx52uw1z6uz8u56",
+            "ozyvo": "HD VN [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Liga 1",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/971nr7DeaQFsvjx3K-CIpA_96x96.png",
-        "name": "Borneo FC"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Lrtz 8",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/028mi2DvzQFheqc6K-CIkA_03c03.kmt",
+        "mznv": "Blimvl FC"
     },
-    "team2": {
-        "logo": "https://tmssl.akamaized.net/images/wappen/head/72710.png?lm=1613993004",
-        "name": "Dewa United"
+    "gvzn7": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/27289.kmt?on=8386006995",
+        "mznv": "Dvdz Umrgvw"
     },
-    "eventDate": "2024-11-02",
-    "eventTime": "19:00",
-    "duration": "2.05",
-    "countdownId": "countdown-193b0ae7-a803-45ee-91e7-71ac86bef5d4"
+    "vevmgDzgv": "7975-88-97",
+    "vevmgTrnv": "80:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-806y9zv2-z196-54vv-08v2-28zx13yvu4w5"
 },
 {
     "wzgzIw": "y56778vx-xy56-59uw-z406-060x97vv325y",

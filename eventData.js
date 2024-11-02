@@ -1,7 +1,7 @@
 // BEGIN EVENT DATA
 const eventData = [
-const eventData = {
-    "dataId": "bee271f2-bc5a-4335-a333-a03a8143c9c0",
+{
+    "dataId": "e0d593fd-adf6-4a1f-bcf5-135d269460eb",
     "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
     "servers": [
         {
@@ -34,7 +34,7 @@ const eventData = {
     "eventDate": "2024-11-01",
     "eventTime": "13:30",
     "duration": "20",
-    "countdownId": "countdown-bee271f2-bc5a-4335-a333-a03a8143c9c0"
-};
+    "countdownId": "countdown-e0d593fd-adf6-4a1f-bcf5-135d269460eb"
+}
 ];
 // END EVENT DATA

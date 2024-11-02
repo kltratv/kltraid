@@ -1,3 +1,1 @@
-// BEGIN EVENT DATA
-
-// END EVENT DATA
+undefined

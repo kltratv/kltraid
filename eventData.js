@@ -1,42 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "63wx1z4v-311z-5w4u-yuz0-9y4v5900v9uu",
-    "wzgzUio": "sggkh://qzmxlp.vofgfmz.dlipvih.wve/u3zoM6gc_1aHENcCiKwc1d/Fe7ofxGIysPr7xzWYeF4Lt/8269470549698/orev/nzb38/kozborhg.n6f1",
-    "hvievih": [
-        {
-            "fio": "sggkh://qzmxlp.vofgfmz.dlipvih.wve/u3zoM6gc_1aHENcCiKwc1d/Fe7ofxGIysPr7xzWYeF4Lt/8269470549698/orev/nzb38/kozborhg.n6f1",
-            "ozyvo": "HD VN [IOS]"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD Afgl"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD Afgl"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD Afgl"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",
-    "vevmgNznv": "MlglGP Mzozbhrz Gizmw Pirc",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "92:59",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-63wx1z4v-311z-5w4u-yuz0-9y4v5900v9uu"
-},
-{
     "wzgzIw": "9w8w3068-w912-59y9-07ww-292z8x935168",
     "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_79309.n6f1",
     "hvievih": [
@@ -149,7 +113,7 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-25366uw9-xwx2-5xy5-z081-0y95y8824zvu"
 },
 {
-    "wzgzIw": "6wxx1z1w-2zuu-5913-zz79-v2w853v19x2w",
+    "wzgzIw": "w853vxwu-u11u-55y0-0v0x-9x419786xx9u",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=58WxjRXZhZ",
     "hvievih": [
         {
@@ -162,7 +126,7 @@ const eventData = [
         },
         {
             "fio": "sggkh://ervgmzn.vofgfmz.dlipvih.wve/xszmmvo77.n6f1?zfgs_pvb=6999998269465852-9-9-8y61960wx42x76y36v0u6775y1v2931z",
-            "ozyvo": "SD [IOS]"
+            "ozyvo": "HD VN [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
@@ -178,7 +142,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-97",
     "vevmgTrnv": "84:69",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-6wxx1z1w-2zuu-5913-zz79-v2w853v19x2w"
+    "xlfmgwldmIw": "xlfmgwldm-w853vxwu-u11u-55y0-0v0x-9x419786xx9u"
 },
 {
     "wzgzIw": "46w729w1-11y6-5u39-0x66-y3413z291vwz",

@@ -1265,7 +1265,7 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-5892316v-1xwy-5w28-0647-1uz153wy9w2w"
 },
 {
-    "wzgzIw": "07874413-15vx-5638-yw57-56u6xxz3wx03",
+    "wzgzIw": "28684306-9208-5005-02vy-1553980zv466",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=rVPjNq9QaG",
     "hvievih": [
         {
@@ -1287,6 +1287,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_82419.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
@@ -1302,7 +1306,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-96",
     "vevmgTrnv": "97:54",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-07874413-15vx-5638-yw57-56u6xxz3wx03"
+    "xlfmgwldmIw": "xlfmgwldm-28684306-9208-5005-02vy-1553980zv466"
 },
 {
     "wzgzIw": "4yuu0uvz-5504-583z-1u66-xv463210u440",

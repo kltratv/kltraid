@@ -65,12 +65,12 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-9w8w3068-w912-59y9-07ww-292z8x935168"
 },
 {
-    "wzgzIw": "u66451w0-v985-58uw-1535-3122v2z79u28",
+    "wzgzIw": "54677v70-9420-5584-1625-5790115vwwy2",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=i8Jr0rK6mF",
     "hvievih": [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=i8Jr0rK6mF",
-            "ozyvo": "Sgzyov"
+            "ozyvo": "STABLE"
         },
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70759.n6f1",
@@ -90,15 +90,15 @@ const eventData = [
     "vevmgDzgv": "",
     "vevmgTrnv": "85:69",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-u66451w0-v985-58uw-1535-3122v2z79u28"
+    "xlfmgwldmIw": "xlfmgwldm-54677v70-9420-5584-1625-5790115vwwy2"
 },
 {
-    "wzgzIw": "068x1z14-5ux6-5z2u-10ux-866367yv50z3",
+    "wzgzIw": "954wy882-7xw1-527y-043y-x26091241048",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=nmGMfLwuwv",
     "hvievih": [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=nmGMfLwuwv",
-            "ozyvo": "Sgzyov"
+            "ozyvo": "STABLE"
         },
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68359.n6f1",
@@ -118,15 +118,15 @@ const eventData = [
     "vevmgDzgv": "",
     "vevmgTrnv": "85:69",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-068x1z14-5ux6-5z2u-10ux-866367yv50z3"
+    "xlfmgwldmIw": "xlfmgwldm-954wy882-7xw1-527y-043y-x26091241048"
 },
 {
-    "wzgzIw": "62974465-0187-5y6w-10vu-10zxz7z92vvy",
+    "wzgzIw": "5039xvvy-6u00-5570-z427-06wwu9v5055v",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=ZtgrdOn8Td",
     "hvievih": [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=ZtgrdOn8Td",
-            "ozyvo": "Sgzyov"
+            "ozyvo": "STABLE"
         },
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_62759.n6f1",
@@ -146,7 +146,7 @@ const eventData = [
     "vevmgDzgv": "",
     "vevmgTrnv": "85:69",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-62974465-0187-5y6w-10vu-10zxz7z92vvy"
+    "xlfmgwldmIw": "xlfmgwldm-5039xvvy-6u00-5570-z427-06wwu9v5055v"
 }
 ];
 // END EVENT DATA

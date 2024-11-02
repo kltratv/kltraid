@@ -1,142 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "20v557v2-5x06-5614-0474-v497xuvx234z",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=IL4dlaKbBR",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=IL4dlaKbBR",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_3569.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60079.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_59469.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=fhzx",
-            "ozyvo": "HD AUTO"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=fmre",
-            "ozyvo": "HD AUTO"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/03CxNNQ9AYDAyhhP9V0LfQ_03c03.kmt",
-        "mznv": "Nvdxzhgov Umrgvw"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/5fh7mCto3ptZx9g6skW24Q_03c03.kmt",
-        "mznv": "Aihvmzo"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "80:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-20v557v2-5x06-5614-0474-v497xuvx234z"
-},
-{
-    "wzgzIw": "uuuyx40z-336w-54v7-0xuz-9z096u127y57",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=CSt5AlNZyj",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=CSt5AlNZyj",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_71669.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_65739.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Csznkrlmhsrk",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/0SHahdVy7HoYJuvUEpQNrQ_03c03.kmt",
-        "mznv": "Bozxpyfim Rlevih"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/dF1AtQhhhub6_GLbVR6wSt_03c03.kmt",
-        "mznv": "Ssvuurvow Umrgvw"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "80:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-uuuyx40z-336w-54v7-0xuz-9z096u127y57"
-},
-{
-    "wzgzIw": "92280vz2-u2v3-5uv9-y331-u8u7zv64u4u7",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=hwM8XvR6W1",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=hwM8XvR6W1",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_86009.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Csznkrlmhsrk",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/8ewPDOmpnY_Dm3LiWCoXJd_03c03.kmt",
-        "mznv": "Oculiw Umrgvw"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/54svVsaL6HezZW6v7B05pt_03c03.kmt",
-        "mznv": "Sdzmhvz"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "80:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-92280vz2-u2v3-5uv9-y331-u8u7zv64u4u7"
-},
-{
-    "wzgzIw": "609834w5-41vw-5x85-1248-z0627zv46y84",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=3pQxfuJQLX",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=3pQxfuJQLX",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69349.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60599.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Csznkrlmhsrk",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/T0hIyS3ni0BfRKY3b5FFLA_03c03.kmt",
-        "mznv": "Sglpv Crgb"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/PegoG7tQHf0CD1NejJWTXA_03c03.kmt",
-        "mznv": "Dviyb Clfmgb"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "80:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-609834w5-41vw-5x85-1248-z0627zv46y84"
-},
-{
     "wzgzIw": "w34585zx-z435-5uux-04w5-uwxvxx67x6yv",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XkR4c5nUxy",
     "hvievih": [
@@ -637,40 +501,44 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-w7w467x1-z03x-51w4-0vy6-y8wu04zuv393"
 },
 {
-    "wzgzIw": "1u43850y-yw6w-52y6-1vy2-79y0wy17476u",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XFveI7d7aH",
-    "hvievih": [
+    "dataId": "8f56149b-bd3d-47b3-8eb7-20b9db82523f",
+    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=XFevI2w2zH",
+    "servers": [
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XFveI7d7aH",
-            "ozyvo": "STABLE"
+            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=XFevI2w2zH",
+            "label": "STABLE"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85999.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_14000.m3u8",
+            "label": "SD [IOS]"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85849.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_14150.m3u8",
+            "label": "SD [IOS]"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_63139.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_36860.m3u8",
+            "label": "SD [IOS]"
+        },
+        {
+            "url": "https://kltraid.pages.dev/play.html?channel=dazn2",
+            "label": "HD AUTO"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/9rSsHsASk4j8SL5JsgdJrd_03c03.kmt",
-        "mznv": "Lrevikllo"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Premier League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_96x96.png",
+        "name": "Liverpool"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/EKIv9v-ZIksOxuQAdhfEEQ_03c03.kmt",
-        "mznv": "Birtsglm"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/EKIe0e-ZIphOcfQAwsuEEQ_96x96.png",
+        "name": "Brighton"
     },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "77:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-1u43850y-yw6w-52y6-1vy2-79y0wy17476u"
+    "eventDate": "2024-11-02",
+    "eventTime": "22:00",
+    "duration": "2.05",
+    "countdownId": "countdown-8f56149b-bd3d-47b3-8eb7-20b9db82523f"
 },
 {
     "wzgzIw": "34690u93-yy91-5uw0-078z-3v347vw39v8x",

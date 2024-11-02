@@ -1,8 +1,51 @@
+// Tabel substitusi untuk dekripsi dan fungsi terkait
+const substitutionTable = {
+  'z': 'a', 'y': 'b', 'x': 'c', 'w': 'd', 'v': 'e',
+  'u': 'f', 't': 'g', 's': 'h', 'r': 'i', 'q': 'j',
+  'p': 'k', 'o': 'l', 'n': 'm', 'm': 'n', 'l': 'o',
+  'k': 'p', 'j': 'q', 'i': 'r', 'h': 's', 'g': 't',
+  'f': 'u', 'e': 'v', 'd': 'w', 'c': 'x', 'b': 'y',
+  'a': 'z', '9': '0', '8': '1', '7': '2', '6': '3',
+  '5': '4', '4': '5', '3': '6', '2': '7', '1': '8',
+  '0': '9'
+};
+
+function substituteDecrypt(text) {
+  let decryptedText = '';
+  for (let i = 0; i < text.length; i++) {
+    const char = text[i];
+    if (substitutionTable[char]) {
+      decryptedText += substitutionTable[char];
+    } else {
+      decryptedText += char;
+    }
+  }
+  return decryptedText;
+}
+
+function decryptEventData(data) {
+  if (typeof data === 'string') {
+    return substituteDecrypt(data);
+  } else if (Array.isArray(data)) {
+    return data.map(decryptEventData);
+  } else if (typeof data === 'object' && data !== null) {
+    const decryptedObject = {};
+    for (const key in data) {
+      decryptedObject[substituteDecrypt(key)] = decryptEventData(data[key]);
+    }
+    return decryptedObject;
+  }
+  return data;
+}
+
+// Dekripsi data `eventData` setelah diimpor
+const decryptedEventData = decryptEventData(eventData);
+
 function createEventContainers() {
     const eventsContainer = document.getElementById("events-container");
     eventsContainer.innerHTML = "";
 
-    eventData.forEach(event => {
+    decryptedEventData.forEach(event => {
         const eventContainer = document.createElement("div");
         eventContainer.className = "event-container";
         eventContainer.setAttribute("data-id", event.dataId);

@@ -1,38 +1,36 @@
 // BEGIN EVENT DATA
-const eventData = {
-    "wzgzIw": "z745wyu8-7uu9-5740-15y8-4w46w35509yu",
-    "wzgzUio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+const eventData = [
+{
+    "wzgzIw": "z0u3y561-69wv-53y6-1600-350331u9z69z",
+    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60429.n6f1",
     "hvievih": [
         {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 8"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_60429.n6f1",
+            "ozyvo": "STABLE"
         },
         {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 7"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_81819.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 6"
-        },
-        {
-            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
-            "ozyvo": "COURT 5"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_2129.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
-    "vevmgNznv": "BWF Tlfi Imwlmvhrz Mzhgvih",
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Lrtfv 8",
     "gvzn8": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/D7AQv1jlbPIP5K1MaLedfA_03c03.kmt",
+        "mznv": "Lroov"
     },
     "gvzn7": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/SiKK44wUpCcv5nJhbhsuCt_03c03.kmt",
+        "mznv": "Lblm"
     },
-    "vevmgDzgv": "7975-88-98",
-    "vevmgTrnv": "86:69",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-z745wyu8-7uu9-5740-15y8-4w46w35509yu"
-};
+    "vevmgDzgv": "7975-88-97",
+    "vevmgTrnv": "96:99",
+    "wfizgrlm": "7.91",
+    "xlfmgwldmIw": "xlfmgwldm-z0u3y561-69wv-53y6-1600-350331u9z69z"
+}
+];
 // END EVENT DATA

@@ -501,44 +501,44 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-w7w467x1-z03x-51w4-0vy6-y8wu04zuv393"
 },
 {
-    "dataId": "8f56149b-bd3d-47b3-8eb7-20b9db82523f",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=XFevI2w2zH",
-    "servers": [
+    "wzgzIw": "1u43850y-yw6w-52y6-1vy2-79y0wy17476u",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XFveI7d7aH",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=XFevI2w2zH",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XFveI7d7aH",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_14000.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85999.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_14150.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85849.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_36860.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_63139.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=dazn2",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzam7",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Premier League",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_96x96.png",
-        "name": "Liverpool"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Pivnrvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/9rSsHsASk4j8SL5JsgdJrd_03c03.kmt",
+        "mznv": "Lrevikllo"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/EKIe0e-ZIphOcfQAwsuEEQ_96x96.png",
-        "name": "Brighton"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/EKIv9v-ZIksOxuQAdhfEEQ_03c03.kmt",
+        "mznv": "Birtsglm"
     },
-    "eventDate": "2024-11-02",
-    "eventTime": "22:00",
-    "duration": "2.05",
-    "countdownId": "countdown-8f56149b-bd3d-47b3-8eb7-20b9db82523f"
+    "vevmgDzgv": "7975-88-97",
+    "vevmgTrnv": "77:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-1u43850y-yw6w-52y6-1vy2-79y0wy17476u"
 },
 {
     "wzgzIw": "34690u93-yy91-5uw0-078z-3v347vw39v8x",

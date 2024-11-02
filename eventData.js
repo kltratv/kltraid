@@ -1,60 +1,60 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "dataId": "b4453413-4a38-4d25-815c-e102b4781f9c",
-    "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
-    "servers": [
+    "wzgzIw": "y5546586-5z61-5w74-184x-v897y5218u0x",
+    "wzgzUio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+    "hvievih": [
         {
-            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
-            "label": "COURT 1"
+            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+            "ozyvo": "COURT 8"
         },
         {
-            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
-            "label": "COURT 2"
+            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+            "ozyvo": "COURT 7"
         }
     ],
-    "sportIcon": "https://i.imgur.com/F597ABm.png",
-    "eventName": "BWF Tour Indonesia Masters",
-    "team1": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
+    "vevmgNznv": "BWF Tlfi Imwlmvhrz Mzhgvih",
+    "gvzn8": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "team2": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "gvzn7": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "eventDate": "2024-11-02",
-    "eventTime": "12:30",
-    "duration": "20",
-    "countdownId": "countdown-b4453413-4a38-4d25-815c-e102b4781f9c"
+    "vevmgDzgv": "7975-88-97",
+    "vevmgTrnv": "87:69",
+    "wfizgrlm": "79",
+    "xlfmgwldmIw": "xlfmgwldm-y5546586-5z61-5w74-184x-v897y5218u0x"
 },
 {
-    "dataId": "b5dbb655-092f-4126-bdc1-74111fda1010",
-    "dataUrl": "https://www.zhibo1.cc/live_2_8_40810.html",
-    "servers": [
+    "wzgzIw": "y4wyy344-907u-5873-ywx8-25888uwz8989",
+    "wzgzUio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+    "hvievih": [
         {
-            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
-            "label": "COURT 3"
+            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+            "ozyvo": "COURT 6"
         },
         {
-            "url": "https://www.zhibo1.cc/live_2_8_40810.html",
-            "label": "COURT 4"
+            "fio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
+            "ozyvo": "COURT 5"
         }
     ],
-    "sportIcon": "https://i.imgur.com/F597ABm.png",
-    "eventName": "BWF Tour Mexico Masters",
-    "team1": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
+    "vevmgNznv": "BWF Tlfi Mvcrxl Mzhgvih",
+    "gvzn8": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "team2": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "gvzn7": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "eventDate": "2024-11-02",
-    "eventTime": "12:30",
-    "duration": "20",
-    "countdownId": "countdown-b5dbb655-092f-4126-bdc1-74111fda1010"
+    "vevmgDzgv": "7975-88-97",
+    "vevmgTrnv": "87:69",
+    "wfizgrlm": "79",
+    "xlfmgwldmIw": "xlfmgwldm-y4wyy344-907u-5873-ywx8-25888uwz8989"
 }
 ];
 // END EVENT DATA

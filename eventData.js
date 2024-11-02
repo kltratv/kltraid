@@ -351,6 +351,10 @@ const eventData = [
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzam5",
             "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://xzmwovi.yvzfgb/kvzxlxpfhz.sgno?tvg=sggkh://t993-hov-fh-xnzu-kiw-ub.xwm.kvzxlxpge.xln/xl98/Clmgvmg/CMAF_S7-CTR-5h/Lrev/xszmmvo(4985315-283917-51u07195x67)/nzhgvi.nkw&rnt=zHR9xHM3Lb0kyWFmZXNoxmZkY7UfZGoaY71fxGVsY70qz6R7LnNeyS08wWopL7Y8M7UaMDE4LWU8OGUgMaZoMb94ZnIbLTp7MqBoM7I8ZnZoNb0USVRMRV0BUoRuMTZuOS1cOTIdP7csynw8YWwoPWVfZbZ9ZXJbzXRexmp0VVMnxHJexG0azXRky750TpJDVU0UVCZ7ZXJazW0fPWY6NaE4NaJsLTZoYTMgMaI7NS95ZnFpLTJpMGE6YTIdMDUcZrZkyWFmZS8ny6JgYXQ0w7VrxCZkyWFmZS8cwWFhzXR4PTxnzW8sZ7UgZn0byWF9PXwoYmA=&pvb=9977920u7876663v536zxvv097z00407&pvb7=546847w628yvxx00022y05yyv590wzwx",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

@@ -29,34 +29,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-9w8w3068-w912-59y9-07ww-292z8x935168"
 },
 {
-    "wzgzIw": "46w729w1-11y6-5u39-0x66-y3413z291vwz",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=HNWK9Mf4ZU",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=HNWK9Mf4ZU",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_89079.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Mzozbhrz Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/1q1UwxULnlVudpC2fPu0Rt_03c03.kmt",
-        "mznv": "Pzszmt"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/uZMQY0kxPY4O-s29zsRerd_03c03.kmt",
-        "mznv": "Kfxsrmt"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "83:84",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-46w729w1-11y6-5u39-0x66-y3413z291vwz"
-},
-{
     "wzgzIw": "w776u271-0y2w-559v-z4zx-9969z6v157w3",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=ssBilAuclS",
     "hvievih": [
@@ -85,36 +57,36 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-w776u271-0y2w-559v-z4zx-9969z6v157w3"
 },
 {
-    "wzgzIw": "35u78x24-u9y9-5890-0067-52yz562zz6z5",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=2pxQv1q1fB",
-    "hvievih": [
+    "dataId": "193b0ae7-a803-45ee-91e7-71ac86bef5d4",
+    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=7kcQe8j8uB",
+    "servers": [
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=2pxQv1q1fB",
-            "ozyvo": "STABLE"
+            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=7kcQe8j8uB",
+            "label": "STABLE"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68349.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_31650.m3u8",
+            "label": "SD [IOS]"
         },
         {
-            "fio": "sggkh://ervgmzn.vofgfmz.dlipvi.wve/xszmmvo1.n6f1?zfgs_pvb=6999998269454872-9-9-060923uw990wuzx8w5u3891488w4uv4v",
-            "ozyvo": "HD VN [IOS]"
+            "url": "https://vietnam.elutuna.workers.dev/channel8.m3u8?auth_key=3000001730549747-0-0-9bca7ceb28518d8fbac47fd8a3fa1f43",
+            "label": "HD VN [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtz 8",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/028mi2DvzQFheqc6K-CIkA_03c03.kmt",
-        "mznv": "Blimvl FC"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Liga 1",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/971nr7DeaQFsvjx3K-CIpA_96x96.png",
+        "name": "Borneo FC"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/27289.kmt?on=8386006995",
-        "mznv": "Dvdz Umrgvw"
+    "team2": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/72710.png?lm=1613993004",
+        "name": "Dewa United"
     },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "80:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-35u78x24-u9y9-5890-0067-52yz562zz6z5"
+    "eventDate": "2024-11-02",
+    "eventTime": "19:00",
+    "duration": "2.05",
+    "countdownId": "countdown-193b0ae7-a803-45ee-91e7-71ac86bef5d4"
 },
 {
     "wzgzIw": "y56778vx-xy56-59uw-z406-060x97vv325y",
@@ -1393,38 +1365,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-319214y5-46u4-548v-zxxv-1w88602uzu69"
 },
 {
-    "wzgzIw": "5u2y0320-4x4z-5w1x-1459-76041x0z9v32",
-    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_59579.n6f1",
-    "hvievih": [
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_59579.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_79279.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_62849.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/WKH2Ap4xYD3Qn8EEjXanVd_03c03.kmt",
-        "mznv": "Vrooziivzo"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/r4LruncEVIo9hyeIbhrbsd_03c03.kmt",
-        "mznv": "Rzbl Vzoovxzml"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "99:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-5u2y0320-4x4z-5w1x-1459-76041x0z9v32"
-},
-{
     "wzgzIw": "v690v145-x374-5uw0-1yvx-6w5w022803v7",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=2HmwUwnGY8",
     "hvievih": [
@@ -1711,38 +1651,6 @@ const eventData = [
     "vevmgTrnv": "96:99",
     "wfizgrlm": "7.94",
     "xlfmgwldmIw": "xlfmgwldm-4yuu0uvz-5504-583z-1u66-xv463210u440"
-},
-{
-    "wzgzIw": "x3w2wz29-656z-58yw-1u17-x0w63x3u1vx8",
-    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83759.n6f1",
-    "hvievih": [
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83759.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_88359.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85419.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/QPyqeDdI_9Wff5gCS7O3fd_03c03.kmt",
-        "mznv": "Vzovmxrz"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/Ts5uAVAZvCJWRxKlLW2plA_03c03.kmt",
-        "mznv": "Rvzo Mzwirw"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "96:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-x3w2wz29-656z-58yw-1u17-x0w63x3u1vx8"
 },
 {
     "wzgzIw": "2z843359-098x-52uu-yz94-41w568w3w788",

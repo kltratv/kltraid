@@ -95,6 +95,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68349.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ervgmzn.vofgfmz.dlipvi.wve/xszmmvo1.n6f1?zfgs_pvb=6999998269454872-9-9-060923uw990wuzx8w5u3891488w4uv4v",
+            "ozyvo": "HD VN [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

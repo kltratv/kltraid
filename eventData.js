@@ -1,102 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "w34585zx-z435-5uux-04w5-uwxvxx67x6yv",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XkR4c5nUxy",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=XkR4c5nUxy",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_82119.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69789.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_72389.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/kp-sNCNkGM_JDlHHeLVF-Q_03c03.kmt",
-        "mznv": "Ohzhfmz"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/bePDWQC8M5G2SIt0_vrwtt_03c03.kmt",
-        "mznv": "Vzoozwlorw"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-w34585zx-z435-5uux-04w5-uwxvxx67x6yv"
-},
-{
-    "wzgzIw": "xz692671-8v37-5y67-17xv-0y7u5zvx2981",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=6cjLMAU9ff",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=6cjLMAU9ff",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68709.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/FwKd1uzjfdA9aRKmmouBEA_03c03.kmt",
-        "mznv": "Kzbhvirhkli"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/6159.kmt?on=8557870497",
-        "mznv": "Awzmz Dvnrihkli"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-xz692671-8v37-5y67-17xv-0y7u5zvx2981"
-},
-{
-    "wzgzIw": "zw3wv52z-2y4x-512u-yx22-1y183vx2vv34",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=RO3WgaD8JF",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=RO3WgaD8JF",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_82189.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_80459.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Mzozbhrz Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/IJIdPlbMprJsB5WB7dwd4Q_03c03.kmt",
-        "mznv": "Kvwzs"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/E9mtkJkhC4cAP_Gvii1nPd_03c03.kmt",
-        "mznv": "Svozmtli"
-    },
-    "vevmgDzgv": "7975-88-97",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-zw3wv52z-2y4x-512u-yx22-1y183vx2vv34"
-},
-{
     "wzgzIw": "7u52z981-7yz8-580w-14uy-5vxzyy0602uu",
     "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_74139.n6f1",
     "hvievih": [
@@ -1047,6 +951,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_78179.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

@@ -1,7 +1,6 @@
 // BEGIN EVENT DATA
-const eventData = [
-xlmhg vevmgDzgz = {
-    "wzgzIw": "x51x1867-8z56-51xz-078v-05u02v9x6v94",
+const eventData = {
+    "wzgzIw": "z745wyu8-7uu9-5740-15y8-4w46w35509yu",
     "wzgzUio": "sggkh://ddd.asryl8.xx/orev_7_1_59189.sgno",
     "hvievih": [
         {
@@ -34,7 +33,6 @@ xlmhg vevmgDzgz = {
     "vevmgDzgv": "7975-88-98",
     "vevmgTrnv": "86:69",
     "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-x51x1867-8z56-51xz-078v-05u02v9x6v94"
-}
-];
+    "xlfmgwldmIw": "xlfmgwldm-z745wyu8-7uu9-5740-15y8-4w46w35509yu"
+};
 // END EVENT DATA

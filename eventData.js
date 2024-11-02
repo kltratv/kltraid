@@ -387,6 +387,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_80179.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://xzmwovi.yvzfgb/kvzxlxpfhz.sgno?tvg=sggkh://t993-hov-fh-xnzu-kiw-xu.xwm.kvzxlxpge.xln/xl98/Clmgvmg/CMAF_S7-CTR-5h/Lrev/xszmmvo(4985313-283915-51u070vw9y5)/nzhgvi.nkw&rnt=zHR9xHM3Lb0kyWFmZXNoxmZkY7UfZGoaY71fxGVsY70qz6R7LnNeyS08wWopLaxcZTp5NqEaLWRqNatgM7M8OS8rMnYbLTsrODosMTE4MTU7MS0USVRMRV0BUoRuMTZuOS1cOTIdP7csynw8YWwoPWVfZbZ9ZXJbzXRexmp0VVMnxHJexG0azXRky750TpJDVU0UVCZ7ZXJazW0fPTpbMGVnNDonLWY6OTYgM7RqNS94ZqA7LTIaMTBsMqA7NTRoYbZkyWFmZS8ny6JgYXQ0w7VrxCZkyWFmZS8cwWFhzXR4PTxnzW8sZ7UgZn0byWF9PXwoYmA=&pvb=99773v2vzzuu88wz7w1056w1yv36w46x&pvb7=4u6u1wyu40u3xu452u871v72856z887x",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

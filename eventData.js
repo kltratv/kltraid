@@ -1,30 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "4z363zy5-219v-5434-z994-wvwv88329w55",
-    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_86299.n6f1",
-    "hvievih": [
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_86299.n6f1",
-            "ozyvo": "COURT 8"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
-    "vevmgNznv": "BWF Tlfi Imwlmvhrz Mzhgvih",
-    "gvzn8": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
-        "mznv": "Bzwnrmglm"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "87:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-4z363zy5-219v-5434-z994-wvwv88329w55"
-},
-{
     "wzgzIw": "4u3z8413-1y31-5z52-0069-yz2y91904662",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzamu8",
     "hvievih": [
@@ -57,102 +33,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-4u3z8413-1y31-5z52-0069-yz2y91904662"
 },
 {
-    "wzgzIw": "6w9w2269-z50z-5z1v-0y5y-v0u5vw132y7x",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=gNKhGuuwaD",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=gNKhGuuwaD",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_63719.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_80779.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_76029.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=yvrmrw6",
-            "ozyvo": "HD AUTO"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/hiAAE9yOmCkkUioyJkFrHQ_03c03.kmt",
-        "mznv": "Agovgrxl Mzwirw"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/bOIufEFVFaf8wD1HrJg0eA_03c03.kmt",
-        "mznv": "Lzh Pzonzh"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-6w9w2269-z50z-5z1v-0y5y-v0u5vw132y7x"
-},
-{
-    "wzgzIw": "w57vxwv4-0730-5899-z218-u509x3u940z3",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=Wku5inXuHk",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=Wku5inXuHk",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_65309.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/55993.kmt?on=8558061402",
-        "mznv": "Blwifn"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/nw0O9STiEvOCih2gcX5hMA_03c03.kmt",
-        "mznv": "Aozmbzhkli"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-w57vxwv4-0730-5899-z218-u509x3u940z3"
-},
-{
-    "wzgzIw": "6874wvwu-0623-5585-0816-97zz83x5zx56",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=irCsO9iDZD",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=irCsO9iDZD",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_75459.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/2839.kmt?on=8558183785",
-        "mznv": "Ebfkhkli"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/2224.kmt?on=8558276393",
-        "mznv": "Hzgzbhkli"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "79:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-6874wvwu-0623-5585-0816-97zz83x5zx56"
-},
-{
     "wzgzIw": "212z41u8-1y01-599y-1639-7344yy70z4yw",
     "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_74629.n6f1",
     "hvievih": [
@@ -175,38 +55,6 @@ const eventData = [
     "vevmgTrnv": "79:99",
     "wfizgrlm": "79",
     "xlfmgwldmIw": "xlfmgwldm-212z41u8-1y01-599y-1639-7344yy70z4yw"
-},
-{
-    "wzgzIw": "2u13x9x1-7x3y-58u5-0486-0x7z1xx3u8z6",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=QEsdDe11FM",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=QEsdDe11FM",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_71029.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66629.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Eivwrerhrv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/a3E3BNmk1PqBXguArZ3bNt_03c03.kmt",
-        "mznv": "NEC"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/vupzF8E6Z0UyMSO9VC0WJQ_03c03.kmt",
-        "mznv": "Gilmrmtvm"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "79:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-2u13x9x1-7x3y-58u5-0486-0x7z1xx3u8z6"
 },
 {
     "wzgzIw": "uw11v887-7512-59vy-0xx1-9yz5241xwzzu",
@@ -662,6 +510,14 @@ const eventData = [
         },
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gvo",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://xzmwovi.yvzfgb/nkwp.sgno?tvg=zHR9xHM3Lb0nx7c4LmN9xnVsyS4dZWFqy7NiwHYfY70gL9NeymRoymQeQ98BRo0PTDEgQ8RSLTRaL9ckwnUeY7ssyn4oyCsiwnVsKS0gYXN9ZXIfyXBp&pvb=ZGZrNTpcNDJqZTUbM7E7YapdMDx8OGQ8ZWU9Yax4OTx=&pvb7=YnQbZDY5NGU8OTA5MTUcOTBoZGEdNTZsNnQ4NqE5YnM=",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://xzmwovi.yvzfgb/xlyl.sgno?rw=USANETWORK",
             "ozyvo": "HD AUTO"
         }
     ],

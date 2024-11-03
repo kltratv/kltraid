@@ -170,6 +170,34 @@ const eventData = [
     "vevmgTrnv": "87:99",
     "wfizgrlm": "7.94",
     "xlfmgwldmIw": "xlfmgwldm-5y57455x-v940-578x-z058-94y5v1631y69"
+},
+{
+    "wzgzIw": "u86847xu-58w5-5uv8-yz85-659919u38yyx",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=cizTQqwoVn",
+    "hvievih": [
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=cizTQqwoVn",
+            "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85169.n6f1",
+            "ozyvo": "SD [IOS]"
+        }
+    ],
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Mzozbhrz Sfkvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/n_6rvv4N-D1NfHjsDcvQBd_03c03.kmt",
+        "mznv": "Szyzs"
+    },
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/OkZcrNBsrg7aUWi36FUdNd_03c03.kmt",
+        "mznv": "Kvozmgzm Umrgvw"
+    },
+    "vevmgDzgv": "7975-88-96",
+    "vevmgTrnv": "82:54",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-u86847xu-58w5-5uv8-yz85-659919u38yyx"
 }
 ];
 // END EVENT DATA

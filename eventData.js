@@ -695,6 +695,30 @@ const eventData = [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=Y1YFcL2pmn",
             "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_59469.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_3569.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_1679.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66149.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=fhzx",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gvo",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

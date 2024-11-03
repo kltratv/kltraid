@@ -25,34 +25,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-4z363zy5-219v-5434-z994-wvwv88329w55"
 },
 {
-    "wzgzIw": "1vw411w5-zu00-5z5v-z8y4-u9z94wx45w1w",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=qF53c43QkC",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=qF53c43QkC",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_80809.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/GI1KXjg_2miWNhaUs7nC-A_03c03.kmt",
-        "mznv": "Klmbzhkli"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/y_G3FYsPbTz_WwswrprjbA_03c03.kmt",
-        "mznv": "Ihgzmyfo Bzhzphvsri"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "82:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-1vw411w5-zu00-5z5v-z8y4-u9z94wx45w1w"
-},
-{
     "wzgzIw": "4u3z8413-1y31-5z52-0069-yz2y91904662",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzamu8",
     "hvievih": [
@@ -83,62 +55,6 @@ const eventData = [
     "vevmgTrnv": "82:69",
     "wfizgrlm": "79",
     "xlfmgwldmIw": "xlfmgwldm-4u3z8413-1y31-5z52-0069-yz2y91904662"
-},
-{
-    "wzgzIw": "u86847xu-58w5-5uv8-yz85-659919u38yyx",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=cizTQqwoVn",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=cizTQqwoVn",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85169.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Mzozbhrz Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/n_6rvv4N-D1NfHjsDcvQBd_03c03.kmt",
-        "mznv": "Szyzs"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/OkZcrNBsrg7aUWi36FUdNd_03c03.kmt",
-        "mznv": "Kvozmgzm Umrgvw"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "82:54",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-u86847xu-58w5-5uv8-yz85-659919u38yyx"
-},
-{
-    "wzgzIw": "59w647w0-yu01-52z2-z438-z19027z90u9v",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=WAy9VUfe9M",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=WAy9VUfe9M",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_85239.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Eivwrerhrv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/KPmQQe3PNQcxHPokr5iC-t_03c03.kmt",
-        "mznv": "Gl Asvzw Eztovh"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/dG0B9Qc5RaFwxkLnKmqHLQ_03c03.kmt",
-        "mznv": "PEC Zdloov"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "81:84",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-59w647w0-yu01-52z2-z438-z19027z90u9v"
 },
 {
     "wzgzIw": "1818z746-28y7-5zz2-z92x-91w0z9x71w9y",
@@ -605,12 +521,32 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-9vz1619x-4x73-55v7-0464-7x56z7v75x33"
 },
 {
-    "wzgzIw": "172039w7-7wx5-5w3v-08xx-80z9v8u7u682",
+    "wzgzIw": "vx6zuyv9-27y9-5u5u-zu72-86xww30uw8yy",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=VKYWafYlZt",
     "hvievih": [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=VKYWafYlZt",
             "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66809.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_82529.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_80939.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzamoz8",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=yvrmrw6",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
@@ -626,7 +562,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-96",
     "vevmgTrnv": "77:84",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-172039w7-7wx5-5w3v-08xx-80z9v8u7u682"
+    "xlfmgwldmIw": "xlfmgwldm-vx6zuyv9-27y9-5u5u-zu72-86xww30uw8yy"
 },
 {
     "wzgzIw": "4976511v-6961-54z9-174u-ww0185w00460",

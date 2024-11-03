@@ -571,6 +571,10 @@ const eventData = [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=u56N4noLP1",
             "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_71309.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

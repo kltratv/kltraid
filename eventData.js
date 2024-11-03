@@ -790,8 +790,29 @@ const eventData = [
 },
 {
     "wzgzIw": "x7u0v755-v333-5wxw-z287-47zv27589878",
-    "wzgzUio": "",
-    "hvievih": [],
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=FEdl1UlZhB",
+    "hvievih": [
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=FEdl1UlZhB",
+            "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_73779.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_1629.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70139.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=yvrmrw6",
+            "ozyvo": "HD AUTO"
+        }
+    ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
     "vevmgNznv": "LzLrtz",
     "gvzn8": {
@@ -809,8 +830,25 @@ const eventData = [
 },
 {
     "wzgzIw": "y5u6y389-9ux9-53x4-z5zz-y398x0703w1z",
-    "wzgzUio": "",
-    "hvievih": [],
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=tdSPbauSBY",
+    "hvievih": [
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=tdSPbauSBY",
+            "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_76059.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68029.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://s86e3ppvh2r.z.giyxwm.mvg/SkligTV8/gizxp-e8z8/nlml.n6f1",
+            "ozyvo": "HD POR [IOS]"
+        }
+    ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
     "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
     "gvzn8": {
@@ -828,8 +866,21 @@ const eventData = [
 },
 {
     "wzgzIw": "2v5u13v3-404x-5z08-0u84-26x35520x130",
-    "wzgzUio": "",
-    "hvievih": [],
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=r5tiEVYRYR",
+    "hvievih": [
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=r5tiEVYRYR",
+            "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_61879.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://s86e3ppvh2r.z.giyxwm.mvg/SkligTV7/gizxp-e8z8/nlml.n6f1",
+            "ozyvo": "HD POR [IOS]"
+        }
+    ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
     "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
     "gvzn8": {

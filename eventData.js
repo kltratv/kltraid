@@ -287,6 +287,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_76029.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=yvrmrw6",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

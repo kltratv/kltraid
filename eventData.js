@@ -93,7 +93,7 @@ const eventData = [
             "ozyvo": "HD AUTO"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=yvrmrw8",
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=yvrmrw8",
             "ozyvo": "HD AUTO"
         },
         {

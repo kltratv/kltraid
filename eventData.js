@@ -1,42 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "5715wu38-9u7u-511z-y0x1-y267865wv843",
-    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-    "hvievih": [
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx7",
-            "ozyvo": "HD AUTO"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=gmg7",
-            "ozyvo": "HD AUTO"
-        },
-        {
-            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hklrw7",
-            "ozyvo": "HD AUTO"
-        },
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/88/ervg-7.sgno",
-            "ozyvo": "HD VN [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",
-    "vevmgNznv": "MlglGP Mzozbhrz Gizmw Pirc",
-    "gvzn8": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://fkolzw.drprnvwrz.lit/drprkvwrz/xlnnlmh/z/z9/Mlgl_Gk_oltl.het",
-        "mznv": "MlglGP"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "90:59",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-5715wu38-9u7u-511z-y0x1-y267865wv843"
-},
-{
     "wzgzIw": "4z363zy5-219v-5434-z994-wvwv88329w55",
     "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_86299.n6f1",
     "hvievih": [
@@ -131,6 +95,10 @@ const eventData = [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/88/ervg-7.sgno",
             "ozyvo": "HD VN [IOS]"
+        },
+        {
+            "fio": "sggkh://hgivzngk8.xln/tolyzo8.ksk?hgivzn=ulchklighkivnrfn",
+            "ozyvo": "HD [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",

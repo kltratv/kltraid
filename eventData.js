@@ -25,38 +25,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-4z363zy5-219v-5434-z994-wvwv88329w55"
 },
 {
-    "wzgzIw": "6zzy8v91-x9z2-525w-1657-2v674687xvww",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=oXdgpw4cgc",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=oXdgpw4cgc",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_67359.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_2389.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Rfhhrzm Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/28014.kmt?on=8310678934",
-        "mznv": "Apilm Tlobzggr"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/fMHs7FHxRqH_Q26k4MR8JA_03c03.kmt",
-        "mznv": "Kibobz Slevgle"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "82:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-6zzy8v91-x9z2-525w-1657-2v674687xvww"
-},
-{
     "wzgzIw": "1vw411w5-zu00-5z5v-z8y4-u9z94wx45w1w",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=qF53c43QkC",
     "hvievih": [
@@ -471,6 +439,22 @@ const eventData = [
         {
             "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=673fyXh7IV",
             "ozyvo": "STABLE"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_65619.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_67959.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70629.n6f1",
+            "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://s86e3ppvh2r.z.giyxwm.mvg/SkligTV4/gizxp-e8z8/nlml.n6f1",
+            "ozyvo": "HD POR [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",

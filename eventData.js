@@ -61,38 +61,6 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-4z363zy5-219v-5434-z994-wvwv88329w55"
 },
 {
-    "wzgzIw": "1543344y-535z-5270-1vz3-8vw3163yzwz0",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vm9m3QXRqJ",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vm9m3QXRqJ",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83259.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ervgmzn.vofgfmz.dlipvih.wve/xszmmvo2.n6f1?zfgs_pvb=6999998269378731-9-9-0524553yz3zx96yu6w6wvz5uy3zzu1vu",
-            "ozyvo": "HD VN [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtz 8",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/27284.kmt?on=8277865025",
-        "mznv": "PSBS Brzp"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/3qWWRybJ8K6gf51cCP66Gt_03c03.kmt",
-        "mznv": "Bzor Umrgvw"
-    },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "84:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-1543344y-535z-5270-1vz3-8vw3163yzwz0"
-},
-{
     "wzgzIw": "6zzy8v91-x9z2-525w-1657-2v674687xvww",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=oXdgpw4cgc",
     "hvievih": [
@@ -151,6 +119,34 @@ const eventData = [
     "vevmgTrnv": "82:69",
     "wfizgrlm": "7.94",
     "xlfmgwldmIw": "xlfmgwldm-1vw411w5-zu00-5z5v-z8y4-u9z94wx45w1w"
+},
+{
+    "wzgzIw": "4u3z8413-1y31-5z52-0069-yz2y91904662",
+    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzamu8",
+    "hvievih": [
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=wzamu8",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/7975/88/ervg-7.sgno",
+            "ozyvo": "HD VN [IOS]"
+        }
+    ],
+    "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",
+    "vevmgNznv": "F8 Bizarorzm Gizmw Pirc",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/oTM0VoVbbG4qtF5UHAc05t_35c35.kmt",
+        "mznv": "Flinfoz 8"
+    },
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/oTM0VoVbbG4qtF5UHAc05t_35c35.kmt",
+        "mznv": "Flinfoz 8"
+    },
+    "vevmgDzgv": "7975-88-96",
+    "vevmgTrnv": "82:69",
+    "wfizgrlm": "79",
+    "xlfmgwldmIw": "xlfmgwldm-4u3z8413-1y31-5z52-0069-yz2y91904662"
 },
 {
     "wzgzIw": "u86847xu-58w5-5uv8-yz85-659919u38yyx",
@@ -473,460 +469,441 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-x870y45v-1157-5105-1190-x0y6yu5134xu"
 },
 {
-    "wzgzIw": "y2136z68-x6z6-5y41-0201-015x76yyw727",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/p6Q_nKE01Dmlsixvz9JFtQ_03c03.kmt",
-        "mznv": "Tlggvmszn"
+    "dataId": "b7863a31-c3a3-4b58-9798-984c23bbd272",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Premier League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/k3Q_mKE98Dnohrcea0JFgQ_96x96.png",
+        "name": "Tottenham"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/fbNNvoumFeCEmhLiUL-q7Q_03c03.kmt",
-        "mznv": "Ahglm Vrooz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/uyNNelfnFvCEnsLrUL-j2Q_96x96.png",
+        "name": "Aston Villa"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "78:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-y2136z68-x6z6-5y41-0201-015x76yyw727"
+    "eventDate": "2024-11-03",
+    "eventTime": "21:00",
+    "duration": "2.05",
+    "countdownId": "countdown-b7863a31-c3a3-4b58-9798-984c23bbd272"
 },
 {
-    "wzgzIw": "0zw5y60z-7707-5zx1-zy5u-42vz2334u7y7",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtfv 8",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/DiaFxMWJtgG8mDSwuN9wBA_03c03.kmt",
-        "mznv": "Tlfolfhv"
+    "dataId": "9ad4b39a-2292-4ac8-ab4f-57ea7665f2b2",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Ligue 1",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/DrzFcMWJgtG1nDSdfN0dBA_96x96.png",
+        "name": "Toulouse"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/NWaeJ-A6q1HQpvQZ9hJP8d_03c03.kmt",
-        "mznv": "Rvrnh"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/NWzvJ-A3j8HQkeQZ0sJP1w_96x96.png",
+        "name": "Reims"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "78:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-0zw5y60z-7707-5zx1-zy5u-42vz2334u7y7"
+    "eventDate": "2024-11-03",
+    "eventTime": "21:00",
+    "duration": "2.05",
+    "countdownId": "countdown-9ad4b39a-2292-4ac8-ab4f-57ea7665f2b2"
 },
 {
-    "wzgzIw": "04648v33-w58z-535v-0z84-z39225vz35z6",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Svirv A",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/583.kmt?on=8561451825",
-        "mznv": "Tlirml"
+    "dataId": "95351e66-d41a-464e-9a15-a60774ea64a3",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Serie A",
+    "team1": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/416.png?lm=1438548174",
+        "name": "Torino"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/s-HS7xEVCdMJZFSodYvWnA_03c03.kmt",
-        "mznv": "Frlivmgrmz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/h-HS2cEVCwMJZFSlwYeWmA_96x96.png",
+        "name": "Fiorentina"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "78:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-04648v33-w58z-535v-0z84-z39225vz35z6"
+    "eventDate": "2024-11-03",
+    "eventTime": "21:00",
+    "duration": "2.05",
+    "countdownId": "countdown-95351e66-d41a-464e-9a15-a60774ea64a3"
 },
 {
-    "wzgzIw": "z0y2yx69-01w3-5x57-y697-99695uw09u7z",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Bfmwvhortz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/h9YO9hK0jirlMmaJfFGKfd_03c03.kmt",
-        "mznv": "SC Fivryfit"
+    "dataId": "a9b7bc30-98d6-4c42-b302-00304fd90f2a",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Bundesliga",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/s0YO0sK9qrioMnzJuFGKuw_96x96.png",
+        "name": "SC Freiburg"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/60.kmt?on=8435251119",
-        "mznv": "Mzrma"
+    "team2": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/39.png?lm=1564748880",
+        "name": "Mainz"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "78:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-z0y2yx69-01w3-5x57-y697-99695uw09u7z"
+    "eventDate": "2024-11-03",
+    "eventTime": "21:30",
+    "duration": "2.05",
+    "countdownId": "countdown-a9b7bc30-98d6-4c42-b302-00304fd90f2a"
 },
 {
-    "wzgzIw": "931458w0-0xy0-5227-z5y5-yx50xzyv0310",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Rfhhrzm Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/8875.kmt?on=8299107346",
-        "mznv": "Fzpvo"
+    "dataId": "068541d9-9cb9-4772-a4b4-bc49cabe9689",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Russian Premier League",
+    "team1": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/1124.png?lm=1700892653",
+        "name": "Fakel"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/p9Qw8CaU-plg4Xu2qr2YyA_03c03.kmt",
-        "mznv": "Ksrnpr"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/k0Qd1CzU-kot5Xf7ji7YbA_96x96.png",
+        "name": "Khimki"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "78:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-931458w0-0xy0-5227-z5y5-yx50xzyv0310"
+    "eventDate": "2024-11-03",
+    "eventTime": "21:30",
+    "duration": "2.05",
+    "countdownId": "countdown-068541d9-9cb9-4772-a4b4-bc49cabe9689"
 },
 {
-    "wzgzIw": "yu090xy2-wu37-5u0u-192z-8u378z968x88",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Csznkrlmhsrk",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/FqQESJIdYfTRJ4B2HegaPA_03c03.kmt",
-        "mznv": "Mroodzoo"
+    "dataId": "bf909cb7-df62-4f9f-807a-1f621a031c11",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Championship",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/FjQESJIwYuTRJ5B7HvtzPA_96x96.png",
+        "name": "Millwall"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/gvLLSzMXrn_1BA8w06hMmt_03c03.kmt",
-        "mznv": "Bfimovb"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/teLLSaMXim_8BA1d93sMng_96x96.png",
+        "name": "Burnley"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "77:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-yu090xy2-wu37-5u0u-192z-8u378z968x88"
+    "eventDate": "2024-11-03",
+    "eventTime": "22:00",
+    "duration": "2.05",
+    "countdownId": "countdown-bf909cb7-df62-4f9f-807a-1f621a031c11"
 },
 {
-    "wzgzIw": "467yx411-7509-5x6z-1z08-076zu75w21z4",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/kzYmEE1sxiP03mvHRNlusQ_03c03.kmt",
-        "mznv": "Bzixvolmz"
+    "dataId": "532bc588-2490-4c3a-8a91-923af24d78a5",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "LaLiga",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_96x96.png",
+        "name": "Barcelona"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/TKrgIjvoDbN3M-pYg5Ux9t_03c03.kmt",
-        "mznv": "Ehkzmblo"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/TKitIqelDyN6M-kYt4Uc0g_96x96.png",
+        "name": "Espanyol"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "77:84",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-467yx411-7509-5x6z-1z08-076zu75w21z4"
+    "eventDate": "2024-11-03",
+    "eventTime": "22:15",
+    "duration": "2.05",
+    "countdownId": "countdown-532bc588-2490-4c3a-8a91-923af24d78a5"
 },
 {
-    "wzgzIw": "3w9uv5w7-7035-57uu-z5y6-5z0w490y7x87",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/889697.kmt?on=8301031965",
-        "mznv": "AVS"
+    "dataId": "6d0fe4d2-2964-42ff-a4b3-4a9d509b2c12",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Portuguese Super League",
+    "team1": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/110302.png?lm=1698968034",
+        "name": "AVS"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/6670.kmt?on=8434118741",
-        "mznv": "Fznzorxzl"
+    "team2": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/3329.png?lm=1565881258",
+        "name": "Famalicao"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "77:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-3w9uv5w7-7035-57uu-z5y6-5z0w490y7x87"
+    "eventDate": "2024-11-03",
+    "eventTime": "22:30",
+    "duration": "2.05",
+    "countdownId": "countdown-6d0fe4d2-2964-42ff-a4b3-4a9d509b2c12"
 },
 {
-    "wzgzIw": "7y86023z-z1y9-5660-093z-3u4zy1v92x82",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Eivwrerhrv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/kPp0wa7N2A2YWQpsABIrCQ_03c03.kmt",
-        "mznv": "RKC Wzzodrqp"
+    "dataId": "2b13976a-a8b0-4339-906a-6f5ab8e07c17",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Eredivisie",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/pPk9dz2N7A7YWQkhABIiCQ_96x96.png",
+        "name": "RKC Waalwijk"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/pOBM_2sngOChUuPgIi2phd_03c03.kmt",
-        "mznv": "Aonviv Crgb"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/kOBM_7hmtOCsUfPtIr7ksw_96x96.png",
+        "name": "Almere City"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "77:54",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-7y86023z-z1y9-5660-093z-3u4zy1v92x82"
+    "eventDate": "2024-11-03",
+    "eventTime": "22:45",
+    "duration": "2.05",
+    "countdownId": "countdown-2b13976a-a8b0-4339-906a-6f5ab8e07c17"
 },
 {
-    "wzgzIw": "937270x3-869y-5688-07zz-w874xv56x8zw",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtfv 8",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/qX9lM6dmn3xWOGKlUR6AbA_03c03.kmt",
-        "mznv": "Afcviiv"
+    "dataId": "062729c6-130b-4311-92aa-d125ce43c1ad",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Ligue 1",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jX0oM3wnm6cWOGKoUR3AyA_96x96.png",
+        "name": "Auxerre"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/726.kmt?on=8308496027",
-        "mznv": "Rvmmvh"
+    "team2": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/273.png?lm=1691503972",
+        "name": "Rennes"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-937270x3-869y-5688-07zz-w874xv56x8zw"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:00",
+    "duration": "2.05",
+    "countdownId": "countdown-062729c6-130b-4311-92aa-d125ce43c1ad"
 },
 {
-    "wzgzIw": "u6u19z71-2x57-5y73-15v3-5561w879x212",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtfv 8",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/BRrgzBE8_nqMJtfp3caTRd_03c03.kmt",
-        "mznv": "Lv Hzeiv"
+    "dataId": "f3f80a28-7c42-4b26-84e6-4438d120c787",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Ligue 1",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/BRitaBE1_mjMJguk6xzTRw_96x96.png",
+        "name": "Le Havre"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/030.kmt?on=8540927632",
-        "mznv": "Mlmgkvoorvi"
+    "team2": {
+        "logo": "https://tmssl.akamaized.net/images/wappen/head/969.png?lm=1459072367",
+        "name": "Montpellier"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-u6u19z71-2x57-5y73-15v3-5561w879x212"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:00",
+    "duration": "2.05",
+    "countdownId": "countdown-f3f80a28-7c42-4b26-84e6-4438d120c787"
 },
 {
-    "wzgzIw": "u14490v9-75zy-5795-z799-5u65u3861vy5",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/iQh-esZVYO0ByP5mImf6fd_03c03.kmt",
-        "mznv": "Tizyalmhkli"
+    "dataId": "f85509e0-24ab-4204-a200-4f34f6138eb4",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Turkish Super League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/rQs-vhZVYO9BbP4nInu3uw_96x96.png",
+        "name": "Trabzonspor"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/HOQivZtFingQrLr1HKy0aA_03c03.kmt",
-        "mznv": "Fvmviyzsxv"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HOQreZgFrmtQiLi8HKb9zA_96x96.png",
+        "name": "Fenerbahce"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-u14490v9-75zy-5795-z799-5u65u3861vy5"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:00",
+    "duration": "2.05",
+    "countdownId": "countdown-f85509e0-24ab-4204-a200-4f34f6138eb4"
 },
 {
-    "wzgzIw": "x7390518-450y-5581-13vv-w77089x835yu",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/fwQ3mh30PxgCe856s-GvYd_03c03.kmt",
-        "mznv": "Mzmxsvhgvi Umrgvw"
+    "dataId": "c2609481-549b-4418-86ee-d22910c164bf",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Premier League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_96x96.png",
+        "name": "Manchester United"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/usBITiIoyQcsVB3IqcUO3Q_03c03.kmt",
-        "mznv": "Csvohvz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png",
+        "name": "Chelsea"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-x7390518-450y-5581-13vv-w77089x835yu"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:30",
+    "duration": "2.05",
+    "countdownId": "countdown-c2609481-549b-4418-86ee-d22910c164bf"
 },
 {
-    "wzgzIw": "yw7v0300-92uz-56x3-z147-1zw3u809y6u3",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Bfmwvhortz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/HFt_tk-eyfL2a8Ogslz9ZA_03c03.kmt",
-        "mznv": "Mlmxsvmtozwyzxs"
+    "dataId": "bd2e9699-07fa-43c6-a852-8ad6f190b3f6",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Bundesliga",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HFg_gp-vbuL7z1Othoa0ZA_96x96.png",
+        "name": "Monchengladbach"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/e5G0hiMi-0IWDsCXrPsAId_03c03.kmt",
-        "mznv": "Wviwvi Bivnvm"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/v4G9srMr-9IWDhCXiPhAIw_96x96.png",
+        "name": "Werder Bremen"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-yw7v0300-92uz-56x3-z147-1zw3u809y6u3"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:30",
+    "duration": "2.05",
+    "countdownId": "countdown-bd2e9699-07fa-43c6-a852-8ad6f190b3f6"
 },
 {
-    "wzgzIw": "uw481142-70u3-53u5-yz30-6z0y4v39v824",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Rfhhrzm Pivnrvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/5aPGDxVDJjBKp8bPTOR0Yd_03c03.kmt",
-        "mznv": "Kizhmlwzi"
+    "dataId": "fd518857-29f6-46f4-ba69-3a9b5e60e175",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Russian Premier League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/4zPGDcVDJqBKk1yPTOR9Yw_96x96.png",
+        "name": "Krasnodar"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/4SLxntTil7GBRHDXRuQMeQ_03c03.kmt",
-        "mznv": "Oivmyfit"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/5SLcmgTro2GBRHDXRfQMvQ_96x96.png",
+        "name": "Orenburg"
     },
-    "vevmgDzgv": "7975-88-96",
-    "vevmgTrnv": "76:54",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-uw481142-70u3-53u5-yz30-6z0y4v39v824"
+    "eventDate": "2024-11-03",
+    "eventTime": "23:45",
+    "duration": "2.05",
+    "countdownId": "countdown-fd518857-29f6-46f4-ba69-3a9b5e60e175"
 },
 {
-    "wzgzIw": "52y05uw3-324y-5595-zz19-xy08z6z28z51",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Svirv A",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/1jVaCyUgQYr6gNrAnIGUjt_03c03.kmt",
-        "mznv": "Vvilmz"
+    "dataId": "47b94fd6-675b-4404-aa80-cb91a3a71a48",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Serie A",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/8qVzCbUtQYi3tNiAmIGUqg_96x96.png",
+        "name": "Verona"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/BQwP5qUBFJuG2U_JBhFIMt_03c03.kmt",
-        "mznv": "Rlnz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/BQdP4jUBFJfG7U_JBsFIMg_96x96.png",
+        "name": "Roma"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "99:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-52y05uw3-324y-5595-zz19-xy08z6z28z51"
+    "eventDate": "2024-11-04",
+    "eventTime": "00:00",
+    "duration": "2.05",
+    "countdownId": "countdown-47b94fd6-675b-4404-aa80-cb91a3a71a48"
 },
 {
-    "wzgzIw": "4u3z8413-1y31-5z52-0069-yz2y91904662",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",
-    "vevmgNznv": "F8 Bizarorzm Gizmw Pirc",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/oTM0VoVbbG4qtF5UHAc05t_35c35.kmt",
-        "mznv": "Flinfoz 8"
+    "dataId": "d7b18089-3b14-43aa-a66a-95475ce397df",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "LaLiga",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/hCTs5EX3WjCMC5Jl3QE4Rw_96x96.png",
+        "name": "Sevilla"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/oTM0VoVbbG4qtF5UHAc05t_35c35.kmt",
-        "mznv": "Flinfoz 8"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/w8tb1aeBfVZIj9tZXf7eZg_96x96.png",
+        "name": "Real Sociedad"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "99:99",
-    "wfizgrlm": "79",
-    "xlfmgwldmIw": "xlfmgwldm-4u3z8413-1y31-5z52-0069-yz2y91904662"
+    "eventDate": "2024-11-04",
+    "eventTime": "00:30",
+    "duration": "2.05",
+    "countdownId": "countdown-d7b18089-3b14-43aa-a66a-95475ce397df"
 },
 {
-    "wzgzIw": "w2y81910-6y85-56zz-z33z-04524xv602wu",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/sCTh4EX6WqCMC4Jo6QE5Rd_03c03.kmt",
-        "mznv": "Sverooz"
+    "dataId": "bc4dc176-d359-42ff-954f-0ba810839776",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Portuguese Super League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/MPL7gIc8hdegirtqBZLc2A_96x96.png",
+        "name": "Arouca"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/d1gy8zvBuVZIq0gZXu2vZt_03c03.kmt",
-        "mznv": "Rvzo Slxrvwzw"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/1orTeFljffloKztScEN2RA_96x96.png",
+        "name": "Braga"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "99:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-w2y81910-6y85-56zz-z33z-04524xv602wu"
+    "eventDate": "2024-11-04",
+    "eventTime": "01:00",
+    "duration": "2.05",
+    "countdownId": "countdown-bc4dc176-d359-42ff-954f-0ba810839776"
 },
 {
-    "wzgzIw": "yx5wx823-w640-57uu-045u-9yz189160223",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/MPL2tIx1swvtrigjBZLx7A_03c03.kmt",
-        "mznv": "Ailfxz"
+    "dataId": "e5bc1330-ac6c-42f2-998e-9742dee06b29",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Portuguese Super League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/UkXfMrlrgYiUhK91JaKwYw_96x96.png",
+        "name": "Vitoria SC"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/8liTvFoquuolKagSxEN7RA_03c03.kmt",
-        "mznv": "Biztz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GVi9CQNTfywAlEId1LI9-A_96x96.png",
+        "name": "Moreirense"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "98:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-yx5wx823-w640-57uu-045u-9yz189160223"
+    "eventDate": "2024-11-04",
+    "eventTime": "01:00",
+    "duration": "2.05",
+    "countdownId": "countdown-e5bc1330-ac6c-42f2-998e-9742dee06b29"
 },
 {
-    "wzgzIw": "v4yx8669-zx3x-57u7-001v-0257wvv93y70",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/UpXuMioitYrUsK08JzKdYd_03c03.kmt",
-        "mznv": "Vrglirz SC"
+    "dataId": "62287c07-cd9c-4f09-adbd-7cacd4cfb3e4",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Ligue 1",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/r3qizrAtoAXPICgYjFYCyA_96x96.png",
+        "name": "Nantes"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/GVr0CQNTubdAoEIw8LI0-A_03c03.kmt",
-        "mznv": "Mlivrivmhv"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/KfBX1kHNj26r9NxpqNaTkA_96x96.png",
+        "name": "Marseille"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "98:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-v4yx8669-zx3x-57u7-001v-0257wvv93y70"
+    "eventDate": "2024-11-04",
+    "eventTime": "02:45",
+    "duration": "2.05",
+    "countdownId": "countdown-62287c07-cd9c-4f09-adbd-7cacd4cfb3e4"
 },
 {
-    "wzgzIw": "37712x92-xw0x-5u90-zwyw-2xzxw5xuy6v5",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Lrtfv 8",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/i6jraiAglAXPICtYqFYCbA_03c03.kmt",
-        "mznv": "Nzmgvh"
+    "dataId": "7b8cb187-e37a-479a-8a1e-27601bf15624",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Serie A",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/l2-icwsMhIvsbRw8AwC1yg_96x96.png",
+        "name": "Inter Milan"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/KuBX8pHNq73i0NckjNzTpA_03c03.kmt",
-        "mznv": "Mzihvroov"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/mErkYtulciQkdDZnP1_kBw_96x96.png",
+        "name": "Venezia"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "97:54",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-37712x92-xw0x-5u90-zwyw-2xzxw5xuy6v5"
+    "eventDate": "2024-11-04",
+    "eventTime": "02:45",
+    "duration": "2.05",
+    "countdownId": "countdown-7b8cb187-e37a-479a-8a1e-27601bf15624"
 },
 {
-    "wzgzIw": "2y1xy812-v62z-520z-1z8v-72398yu84375",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Svirv A",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/o7-rxdhMsIehyRd1AdC8bt_03c03.kmt",
-        "mznv": "Imgvi Mrozm"
+    "dataId": "073a61e6-495e-4896-a9e2-db9ac47ad8b5",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "LaLiga",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/OSL_5Zm6kYPP1J17Bo5uDA_96x96.png",
+        "name": "Athletic Club"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/nEipYgfoxrQpwDZmP8_pBd_03c03.kmt",
-        "mznv": "Vvmvarz"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/S0fDZjYYytbZaUt0f3cIhg_96x96.png",
+        "name": "Real Betis"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "97:54",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-2y1xy812-v62z-520z-1z8v-72398yu84375"
+    "eventDate": "2024-11-04",
+    "eventTime": "03:00",
+    "duration": "2.05",
+    "countdownId": "countdown-073a61e6-495e-4896-a9e2-db9ac47ad8b5"
 },
 {
-    "wzgzIw": "926z38v3-504v-5103-z0v7-wy0zx52zw1y4",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "LzLrtz",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/OSL_4Zn3pYPP8J82Bl4fDA_03c03.kmt",
-        "mznv": "Agsovgrx Cofy"
+    "dataId": "bb1a94e7-56b6-4aa1-8599-2ed988dbb6c4",
+    "dataUrl": "",
+    "servers": [],
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Portuguese Super League",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/QkkllEKwkj60jEVtOEZWAg_96x96.png",
+        "name": "Porto"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/S9uDZqYYbgyZzUg9u6xIst_03c03.kmt",
-        "mznv": "Rvzo Bvgrh"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/M4I8t9zSkfsS-jI-m71ADQ_96x96.png",
+        "name": "Estoril Praia"
     },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "96:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-926z38v3-504v-5103-z0v7-wy0zx52zw1y4"
-},
-{
-    "wzgzIw": "yy8z05v2-43y3-5zz8-1400-7vw011wyy3x5",
-    "wzgzUio": "",
-    "hvievih": [],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/QppooEKdpq39qEVgOEZWAt_03c03.kmt",
-        "mznv": "Pligl"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/M5I1g0aSpuhS-qI-n28ADQ_03c03.kmt",
-        "mznv": "Ehgliro Pizrz"
-    },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "96:69",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-yy8z05v2-43y3-5zz8-1400-7vw011wyy3x5"
+    "eventDate": "2024-11-04",
+    "eventTime": "03:30",
+    "duration": "2.05",
+    "countdownId": "countdown-bb1a94e7-56b6-4aa1-8599-2ed988dbb6c4"
 }
 ];
 // END EVENT DATA

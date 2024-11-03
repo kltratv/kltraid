@@ -98,7 +98,7 @@ const eventData = [
         },
         {
             "fio": "sggkh://hgivzngk8.xln/tolyzo8.ksk?hgivzn=ulchklighkivnrfn",
-            "ozyvo": "HD [IOS]"
+            "ozyvo": "HD PLUS [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/MAoz5OO.kmt",

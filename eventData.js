@@ -193,7 +193,7 @@ const eventData = [
             "ozyvo": "SD [IOS]"
         },
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/kozb.sgno?xszmmvo=zw8",
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
             "ozyvo": "HD AUTO"
         }
     ],

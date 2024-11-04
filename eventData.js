@@ -97,32 +97,32 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-y3v1x436-1v7y-5z5w-06v0-001y9053zx13"
 },
 {
-    "wzgzIw": "221uwv9z-630v-524x-05wu-0w97xu6xv553",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BQlRF4Y1WY",
-    "hvievih": [
+    "dataId": "778fde0a-369e-475c-94df-9d02cf3ce446",
+    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BQoRF5Y8WY",
+    "servers": [
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BQlRF4Y1WY",
-            "ozyvo": "STABLE"
+            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BQoRF5Y8WY",
+            "label": "STABLE"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_78189.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_21810.m3u8",
+            "label": "SD [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "Bizarorzm Svirv A",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/gCMSjtXVHROkwCkQsaTl8t_03c03.kmt",
-        "mznv": "Clirmgsrzmh"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "Brazilian Serie A",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png",
+        "name": "Corinthians"
     },
-    "gvzn7": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/2hkfimv-cDg7k3C9rnYYNA_03c03.kmt",
-        "mznv": "Pzonvrizh"
+    "team2": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_96x96.png",
+        "name": "Palmeiras"
     },
-    "vevmgDzgv": "7975-88-94",
-    "vevmgTrnv": "93:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-221uwv9z-630v-524x-05wu-0w97xu6xv553"
+    "eventDate": "2024-11-05",
+    "eventTime": "06:00",
+    "duration": "2.05",
+    "countdownId": "countdown-778fde0a-369e-475c-94df-9d02cf3ce446"
 }
 ];
 // END EVENT DATA

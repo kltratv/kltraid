@@ -431,6 +431,42 @@ const eventData = [
     "vevmgTrnv": "93:99",
     "wfizgrlm": "7.94",
     "xlfmgwldmIw": "xlfmgwldm-221uwv9z-630v-524x-05wu-0w97xu6xv553"
+},
+{
+    "wzgzIw": "8yv8x451-20z0-5vz9-0v0u-zx9555uy4x4y",
+    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69209.n6f1",
+    "hvievih": [
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69209.n6f1",
+            "ozyvo": "COURT 8"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70699.n6f1",
+            "ozyvo": "COURT 7"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_64849.n6f1",
+            "ozyvo": "COURT 6"
+        },
+        {
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66729.n6f1",
+            "ozyvo": "COURT 5"
+        }
+    ],
+    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
+    "vevmgNznv": "BWF Tlfi Klivz Mzhgvih",
+    "gvzn8": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
+    },
+    "gvzn7": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
+    },
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "91:99",
+    "wfizgrlm": "79",
+    "xlfmgwldmIw": "xlfmgwldm-8yv8x451-20z0-5vz9-0v0u-zx9555uy4x4y"
 }
 ];
 // END EVENT DATA

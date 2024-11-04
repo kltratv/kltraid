@@ -1,472 +1,472 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "dataId": "bd5ca86e-1f8b-4c4e-b7db-7ace3100628b",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=cNvo2aj722",
-    "servers": [
+    "wzgzIw": "yw4xz13v-8u1y-5x5v-y2wy-2zxv6899371y",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=xNel7zq277",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=cNvo2aj722",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=xNel7zq277",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_25840.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_74159.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_9090.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_0909.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=sscex1",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhxvc8",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "AFC Champions League Elite",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/8S9rNUFk1YO27XsLV6jn_Q_96x96.png",
-        "name": "Al-Ahli Saudi"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "AFC Csznkrlmh Lvztfv Eorgv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/1S0iNUFp8YO72XhLV3qm_Q_03c03.kmt",
+        "mznv": "Ao-Asor Szfwr"
     },
-    "team2": {
-        "logo": "https://tmssl.akamaized.net//images/wappen/head/13593.png?lm=1420994106",
-        "name": "Al-Shorta"
+    "gvzn7": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/86406.kmt?on=8579005893",
+        "mznv": "Ao-Ssligz"
     },
-    "eventDate": "2024-11-04",
-    "eventTime": "23:00",
-    "duration": "2.05",
-    "countdownId": "countdown-bd5ca86e-1f8b-4c4e-b7db-7ace3100628b"
+    "vevmgDzgv": "7975-88-95",
+    "vevmgTrnv": "76:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-yw4xz13v-8u1y-5x5v-y2wy-2zxv6899371y"
 },
 {
-    "dataId": "f9843d93-e26b-41f0-8a65-2c6687b55171",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BsJYiTlS3e",
-    "servers": [
+    "wzgzIw": "u0156w06-v73y-58u9-1z34-7x3312y44828",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BhJYrToS6v",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BsJYiTlS3e",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BhJYrToS6v",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_24140.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_75859.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_11150.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_88849.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=sscex2",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhxvc7",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "AFC Champions League Elite",
-    "team1": {
-        "logo": "https://tmssl.akamaized.net//images/wappen/head/6079.png?lm=1636634969",
-        "name": "Persepolis"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "AFC Csznkrlmh Lvztfv Eorgv",
+    "gvzn8": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/3920.kmt?on=8363365030",
+        "mznv": "Pvihvklorh"
     },
-    "team2": {
-        "logo": "https://tmssl.akamaized.net//images/wappen/head/6297.png?lm=1694632253",
-        "name": "Al-Gharafa"
+    "gvzn7": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/3702.kmt?on=8305367746",
+        "mznv": "Ao-Gszizuz"
     },
-    "eventDate": "2024-11-04",
-    "eventTime": "23:00",
-    "duration": "2.05",
-    "countdownId": "countdown-f9843d93-e26b-41f0-8a65-2c6687b55171"
+    "vevmgDzgv": "7975-88-95",
+    "vevmgTrnv": "76:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-u0156w06-v73y-58u9-1z34-7x3312y44828"
 },
 {
-    "dataId": "2d9dfda6-ae69-41a6-a73e-7d5eba724a58",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=YnAfPxnAlI",
-    "servers": [
+    "wzgzIw": "7w0wuwz3-zv30-58z3-z26v-2w4vyz275z41",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=YmAuPcmAoI",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=YnAfPxnAlI",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=YmAuPcmAoI",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_20710.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_79289.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_35820.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_64179.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Turkish Super League",
-    "team1": {
-        "logo": "https://tmssl.akamaized.net/images/wappen/head/152.png?lm=1601939192",
-        "name": "Samsunspor"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Tfiprhs Sfkvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/847.kmt?on=8398060807",
+        "mznv": "Sznhfmhkli"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/UCtuB1m9ogk1vakmxCAbWw_96x96.png",
-        "name": "Antalyaspor"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/UCgfB8n0ltp8ezpncCAyWd_03c03.kmt",
+        "mznv": "Amgzobzhkli"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "00:00",
-    "duration": "2.05",
-    "countdownId": "countdown-2d9dfda6-ae69-41a6-a73e-7d5eba724a58"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "99:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-7w0wuwz3-zv30-58z3-z26v-2w4vyz275z41"
 },
 {
-    "dataId": "e64c6603-3f0e-410f-87cc-93b0bae1bc45",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=RnhevB4x4p",
-    "servers": [
+    "wzgzIw": "v35x3396-6u9v-589u-12xx-06y9yzv8yx54",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=RmsveB5c5k",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=RnhevB4x4p",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=RmsveB5c5k",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_21410.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_78589.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_36980.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_63019.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Serie A",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/j8L__ffBY15ooTGG-0uZ2w_96x96.png",
-        "name": "Empoli"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Svirv A",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/q1L__uuBY84llTGG-9fZ7d_03c03.kmt",
+        "mznv": "Enklor"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/6InMYSIcwGvDV1SD3-cPGA_96x96.png",
-        "name": "Como"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/3ImMYSIxdGeDV8SD6-xPGA_03c03.kmt",
+        "mznv": "Clnl"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "00:30",
-    "duration": "2.05",
-    "countdownId": "countdown-e64c6603-3f0e-410f-87cc-93b0bae1bc45"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "99:69",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-v35x3396-6u9v-589u-12xx-06y9yzv8yx54"
 },
 {
-    "dataId": "198dc9f3-6057-4915-a63a-dceb80a392eb",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=edMFW1SFwo",
-    "servers": [
+    "wzgzIw": "801wx0u6-3942-5084-z36z-wxvy19z607vy",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vwMFW8SFdl",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=edMFW1SFwo",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vwMFW8SFdl",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_29620.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70379.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_30130.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69869.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=ad1",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Serie A",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Pr7ZXZlx34eEXdUMTkLvkw_96x96.png",
-        "name": "Parma"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Svirv A",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/Pi2ZXZoc65vEXwUMTpLepd_03c03.kmt",
+        "mznv": "Pzinz"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GlyoZO04xkwVX6oTh8asHA_96x96.png",
-        "name": "Genoa"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/GoblZO95cpdVX3lTs1zhHA_03c03.kmt",
+        "mznv": "Gvmlz"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "00:30",
-    "duration": "2.05",
-    "countdownId": "countdown-198dc9f3-6057-4915-a63a-dceb80a392eb"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "99:69",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-801wx0u6-3942-5084-z36z-wxvy19z607vy"
 },
 {
-    "dataId": "688e04be-b13c-4ca4-8373-74d1e81ec1f8",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=1grlTVpjCS",
-    "servers": [
+    "wzgzIw": "311v95yv-y86x-5xz5-1626-25w8v18vx8u1",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=8tioTVkqCS",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=1grlTVpjCS",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=8tioTVkqCS",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_38250.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_61749.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Denmark Super League",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/FjlPNK4kZUDzQp5-E3PAJg_96x96.png",
-        "name": "Copenhagen"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Dvmnzip Sfkvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/FqoPNK5pZUDaQk4-E6PAJt_03c03.kmt",
+        "mznv": "Clkvmsztvm"
     },
-    "team2": {
-        "logo": "https://tmssl.akamaized.net/images/wappen/head/1177.png?lm=1518117733",
-        "name": "Silkeborg"
+    "gvzn7": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/8822.kmt?on=8481882266",
+        "mznv": "Sropvylit"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "01:00",
-    "duration": "2.05",
-    "countdownId": "countdown-688e04be-b13c-4ca4-8373-74d1e81ec1f8"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "98:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-311v95yv-y86x-5xz5-1626-25w8v18vx8u1"
 },
 {
-    "dataId": "06d60b99-56ee-450a-9190-093d61b7e436",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=ekYBMWUE45",
-    "servers": [
+    "wzgzIw": "93w39y00-43vv-549z-0809-906w38y2v563",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vpYBMWUE54",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=ekYBMWUE45",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vpYBMWUE54",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_38100.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_61899.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_16030.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83969.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=ssc1",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx8",
+            "ozyvo": "HD AUTO"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=ssc5",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hhx4",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "AFC Champions League Elite",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HGVsnyWvMiGVotxhgicdSQ_96x96.png",
-        "name": "Al-Hilal"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "AFC Csznkrlmh Lvztfv Eorgv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/HGVhmbWeMrGVlgcstrxwSQ_03c03.kmt",
+        "mznv": "Ao-Hrozo"
     },
-    "team2": {
-        "logo": "https://tmssl.akamaized.net//images/wappen/head/1076.png?lm=1407646189",
-        "name": "Esteghlal F.C."
+    "gvzn7": {
+        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/8923.kmt?on=8592353810",
+        "mznv": "Ehgvtsozo F.C."
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "01:00",
-    "duration": "2.05",
-    "countdownId": "countdown-06d60b99-56ee-450a-9190-093d61b7e436"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "98:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-93w39y00-43vv-549z-0809-906w38y2v563"
 },
 {
-    "dataId": "fe81b8f0-b73b-4015-9b8e-a4eeac75ad94",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=eTaIHfnYGV",
-    "servers": [
+    "wzgzIw": "uv18y1u9-y26y-5984-0y1v-z5vvzx24zw05",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vTzIHumYGV",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=eTaIHfnYGV",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vTzIHumYGV",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_33240.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66759.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_29140.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70859.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_38110.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_61889.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=ad1",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Serie A",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jcKKlUVaNw3br9cIyOKmQA_96x96.png",
-        "name": "Lazio"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Svirv A",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/qxKKoUVzNd6yi0xIbOKnQA_03c03.kmt",
+        "mznv": "Lzarl"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/e9XfySyGdfyJ4UzEkYwENw_96x96.png",
-        "name": "Cagliari"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/v0XubSbGwubJ5UaEpYdENd_03c03.kmt",
+        "mznv": "Cztorzir"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "02:45",
-    "duration": "2.05",
-    "countdownId": "countdown-fe81b8f0-b73b-4015-9b8e-a4eeac75ad94"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "97:54",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-uv18y1u9-y26y-5984-0y1v-z5vvzx24zw05"
 },
 {
-    "dataId": "f189e926-483b-41c1-9159-6fe0eeef839f",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=IkzYknbFNL",
-    "servers": [
+    "wzgzIw": "u810v073-516y-58x8-0840-3uv9vvvu160u",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=IpaYpmyFNL",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=IkzYknbFNL",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=IpaYpmyFNL",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_32950.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_67049.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_16460.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83539.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_25610.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_74389.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=usac",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=fhzx",
+            "ozyvo": "HD AUTO"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=univ",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=fmre",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Premier League",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Gh7_5p3n364p4vxeM8FhNg_96x96.png",
-        "name": "Fulham"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Pivnrvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/Gs2_4k6m635k5ecvM1FsNt_03c03.kmt",
+        "mznv": "Ffoszn"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/QOUce0WQBYqnkSmN6_TxGA_96x96.png",
-        "name": "Brentford"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/QOUxv9WQBYjmpSnN3_TcGA_03c03.kmt",
+        "mznv": "Bivmguliw"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "03:00",
-    "duration": "2.05",
-    "countdownId": "countdown-f189e926-483b-41c1-9159-6fe0eeef839f"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "96:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-u810v073-516y-58x8-0840-3uv9vvvu160u"
 },
 {
-    "dataId": "e80c8820-71d8-4fe7-bac7-53386d7ae59c",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=TvsY04z3oy",
-    "servers": [
+    "wzgzIw": "v19x1179-28w1-5uv2-yzx2-46613w2zv40x",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=TehY95a6lb",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=TvsY04z3oy",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=TehY95a6lb",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_31160.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_68839.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_22390.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_77609.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_27460.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_72539.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_5810.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_4189.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_15620.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_84379.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://kltraid.pages.dev/play.html?channel=beinid3",
-            "label": "HD AUTO"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=yvrmrw6",
+            "ozyvo": "HD AUTO"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "LaLiga",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wpdhixHP_sloegfP0UlwAw_96x96.png",
-        "name": "Celta Vigo"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "LzLrtz",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/dkwsrcHP_holvtuP9UodAd_03c03.kmt",
+        "mznv": "Cvogz Vrtl"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_96x96.png",
-        "name": "Getafe"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/8UDHZMwKZD84W4tfh2wJbt_03c03.kmt",
+        "mznv": "Gvgzuv"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "03:00",
-    "duration": "2.05",
-    "countdownId": "countdown-e80c8820-71d8-4fe7-bac7-53386d7ae59c"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "96:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-v19x1179-28w1-5uv2-yzx2-46613w2zv40x"
 },
 {
-    "dataId": "9b67208f-351e-4d92-9e86-bf6c31dc09cb",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=CioPsKKtEt",
-    "servers": [
+    "wzgzIw": "0y32791u-648v-5w07-0v13-yu3x68wx90xy",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=CrlPhKKgEg",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=CioPsKKtEt",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=CrlPhKKgEg",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_34510.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_65489.n6f1",
+            "ozyvo": "SD [IOS]"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_37020.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_62979.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Portuguese Super League",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Uql1qECWH5pRMbm5UVsjPg_96x96.png",
-        "name": "Nacional"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Pligftfvhv Sfkvi Lvztfv",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/Ujo8jECWH4kRMyn4UVhqPt_03c03.kmt",
+        "mznv": "Nzxrlmzo"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/i0cKD3neXF2M09arqLQO5g_96x96.png",
-        "name": "Santa Clara"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/r9xKD6mvXF7M90zijLQO4t_03c03.kmt",
+        "mznv": "Szmgz Coziz"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "03:15",
-    "duration": "2.05",
-    "countdownId": "countdown-9b67208f-351e-4d92-9e86-bf6c31dc09cb"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "96:84",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-0y32791u-648v-5w07-0v13-yu3x68wx90xy"
 },
 {
-    "dataId": "778fde0a-369e-475c-94df-9d02cf3ce446",
-    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BQoRF5Y8WY",
-    "servers": [
+    "wzgzIw": "221uwv9z-630v-524x-05wu-0w97xu6xv553",
+    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BQlRF4Y1WY",
+    "hvievih": [
         {
-            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=BQoRF5Y8WY",
-            "label": "STABLE"
+            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=BQlRF4Y1WY",
+            "ozyvo": "STABLE"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_21810.m3u8",
-            "label": "SD [IOS]"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_78189.n6f1",
+            "ozyvo": "SD [IOS]"
         }
     ],
-    "sportIcon": "https://i.imgur.com/oJfBO55.png",
-    "eventName": "Brazilian Serie A",
-    "team1": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/tCMSqgXVHROpdCpQhzTo1g_96x96.png",
-        "name": "Corinthians"
+    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
+    "vevmgNznv": "Bizarorzm Svirv A",
+    "gvzn8": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/gCMSjtXVHROkwCkQsaTl8t_03c03.kmt",
+        "mznv": "Clirmgsrzmh"
     },
-    "team2": {
-        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/7spurne-xDt2p6C0imYYNA_96x96.png",
-        "name": "Palmeiras"
+    "gvzn7": {
+        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/2hkfimv-cDg7k3C9rnYYNA_03c03.kmt",
+        "mznv": "Pzonvrizh"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "06:00",
-    "duration": "2.05",
-    "countdownId": "countdown-778fde0a-369e-475c-94df-9d02cf3ce446"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "93:99",
+    "wfizgrlm": "7.94",
+    "xlfmgwldmIw": "xlfmgwldm-221uwv9z-630v-524x-05wu-0w97xu6xv553"
 },
 {
-    "dataId": "1be1c548-79a9-4ea0-9e9f-ac0444fb5c5b",
-    "dataUrl": "https://lebo.huminbird.cn/live/ballbar_30790.m3u8",
-    "servers": [
+    "wzgzIw": "8yv8x451-20z0-5vz9-0v0u-zx9555uy4x4y",
+    "wzgzUio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69209.n6f1",
+    "hvievih": [
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_30790.m3u8",
-            "label": "COURT 1"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69209.n6f1",
+            "ozyvo": "COURT 8"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_29300.m3u8",
-            "label": "COURT 2"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_70699.n6f1",
+            "ozyvo": "COURT 7"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_35150.m3u8",
-            "label": "COURT 3"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_64849.n6f1",
+            "ozyvo": "COURT 6"
         },
         {
-            "url": "https://lebo.huminbird.cn/live/ballbar_33270.m3u8",
-            "label": "COURT 4"
+            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_66729.n6f1",
+            "ozyvo": "COURT 5"
         }
     ],
-    "sportIcon": "https://i.imgur.com/F597ABm.png",
-    "eventName": "BWF Tour Korea Masters",
-    "team1": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "hkligIxlm": "sggkh://r.rntfi.xln/F402ABn.kmt",
+    "vevmgNznv": "BWF Tlfi Klivz Mzhgvih",
+    "gvzn8": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "team2": {
-        "logo": "https://i.imgur.com/F597ABm.png",
-        "name": "Badminton"
+    "gvzn7": {
+        "oltl": "sggkh://r.rntfi.xln/F402ABn.kmt",
+        "mznv": "Bzwnrmglm"
     },
-    "eventDate": "2024-11-05",
-    "eventTime": "08:00",
-    "duration": "20",
-    "countdownId": "countdown-1be1c548-79a9-4ea0-9e9f-ac0444fb5c5b"
+    "vevmgDzgv": "7975-88-94",
+    "vevmgTrnv": "91:99",
+    "wfizgrlm": "79",
+    "xlfmgwldmIw": "xlfmgwldm-8yv8x451-20z0-5vz9-0v0u-zx9555uy4x4y"
 },
 {
     "wzgzIw": "540u15v3-0276-56z3-zw0w-71u609v9z894",

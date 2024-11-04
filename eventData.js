@@ -2,11 +2,15 @@
 const eventData = [
 {
     "wzgzIw": "614uyxx4-57zv-5zw6-zy9x-wv3z93x5w3uv",
-    "wzgzUio": "sggkh://ervgmzn.vofgfmz.dlipvih.wve/xszmmvo38.n6f1?zfgs_pvb=6999998269291929-9-9-976512v970v05w97041u85vxz6966359",
+    "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hlxxvixszmmvo",
     "hvievih": [
         {
-            "fio": "sggkh://ervgmzn.vofgfmz.dlipvih.wve/xszmmvo38.n6f1?zfgs_pvb=6999998269291929-9-9-976512v970v05w97041u85vxz6966359",
-            "ozyvo": "HD VN [IOS]"
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hlxxvixszmmvo",
+            "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://ze-xs-xwm.nmxmld.rw/orev/vwh/ixgr-hlxxvixszmmvo-sw/hz_soh/ixgr-hlxxvixszmmvo-sw.n6f1",
+            "ozyvo": "HD AUTO [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/5k5Mxkc.kmt",

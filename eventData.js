@@ -1,12 +1,16 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "9u8789z9-05w5-5758-1zx8-1xzy171y4ww6",
+    "wzgzIw": "39z5807x-977u-529u-yyy4-7vxz5u536xx9",
     "wzgzUio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hlxxvixszmmvo",
     "hvievih": [
         {
             "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=hlxxvixszmmvo",
             "ozyvo": "HD AUTO"
+        },
+        {
+            "fio": "sggkh://ze-xs-xwm.nmxmld.rw/orev/vwh/ixgr-hlxxvixszmmvo-sw/hz_soh/ixgr-hlxxvixszmmvo-sw.n6f1",
+            "ozyvo": "HD AUTO [IOS]"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/5k5Mxkc.kmt",
@@ -22,7 +26,7 @@ const eventData = [
     "vevmgDzgv": "7975-88-95",
     "vevmgTrnv": "86:99",
     "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-9u8789z9-05w5-5758-1zx8-1xzy171y4ww6"
+    "xlfmgwldmIw": "xlfmgwldm-39z5807x-977u-529u-yyy4-7vxz5u536xx9"
 },
 {
     "wzgzIw": "yy3uu12y-9723-5w2u-y30w-3u0z73076u3y",

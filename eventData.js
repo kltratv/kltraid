@@ -1,38 +1,6 @@
 // BEGIN EVENT DATA
 const eventData = [
 {
-    "wzgzIw": "25031311-v5wy-5002-z202-7225u9zz14v4",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=EvXeEsyZ0q",
-    "hvievih": [
-        {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=EvXeEsyZ0q",
-            "ozyvo": "STABLE"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_89789.n6f1",
-            "ozyvo": "SD [IOS]"
-        },
-        {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_62579.n6f1",
-            "ozyvo": "SD [IOS]"
-        }
-    ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "AFC Csznkrlmh Lvztfv Eorgv",
-    "gvzn8": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/83785.kmt?on=8306656656",
-        "mznv": "Ao Wzho"
-    },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg/rnztvh/dzkkvm/svzw/343.kmt?on=8313095609",
-        "mznv": "Ao Szww"
-    },
-    "vevmgDzgv": "7975-88-95",
-    "vevmgTrnv": "78:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-25031311-v5wy-5002-z202-7225u9zz14v4"
-},
-{
     "wzgzIw": "yw4xz13v-8u1y-5x5v-y2wy-2zxv6899371y",
     "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=xNel7zq277",
     "hvievih": [
@@ -183,6 +151,10 @@ const eventData = [
         {
             "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_69869.n6f1",
             "ozyvo": "SD [IOS]"
+        },
+        {
+            "fio": "sggkh://pogizrw.kztvh.wve/kozb.sgno?xszmmvo=zw8",
+            "ozyvo": "HD AUTO"
         }
     ],
     "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
@@ -229,36 +201,36 @@ const eventData = [
     "xlfmgwldmIw": "xlfmgwldm-311v95yv-y86x-5xz5-1626-25w8v18vx8u1"
 },
 {
-    "wzgzIw": "93w39y00-43vv-549z-0809-906w38y2v563",
-    "wzgzUio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vpYBMWUE54",
-    "hvievih": [
+    "dataId": "06d60b99-56ee-450a-9190-093d61b7e436",
+    "dataUrl": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=ekYBMWUE45",
+    "servers": [
         {
-            "fio": "sggkh://yrprmyzif03.yolthklg.xln/k/erwvl-kozbvi-ruiznv.sgno?pvb=vpYBMWUE54",
-            "ozyvo": "STABLE"
+            "url": "https://bikinbaru96.blogspot.com/p/video-player-iframe.html?key=ekYBMWUE45",
+            "label": "STABLE"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_61899.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_38100.m3u8",
+            "label": "SD [IOS]"
         },
         {
-            "fio": "sggkh://ovyl.sfnrmyriw.xm/orev/yzooyzi_83969.n6f1",
-            "ozyvo": "SD [IOS]"
+            "url": "https://lebo.huminbird.cn/live/ballbar_16030.m3u8",
+            "label": "SD [IOS]"
         }
     ],
-    "hkligIxlm": "sggkh://r.rntfi.xln/lJuBO44.kmt",
-    "vevmgNznv": "AFC Csznkrlmh Lvztfv Eorgv",
-    "gvzn8": {
-        "oltl": "sggkh://hho.thgzgrx.xln/lmvylc/nvwrz/hkligh/oltlh/HGVhmbWeMrGVlgcstrxwSQ_03c03.kmt",
-        "mznv": "Ao-Hrozo"
+    "sportIcon": "https://i.imgur.com/oJfBO55.png",
+    "eventName": "AFC Champions League Elite",
+    "team1": {
+        "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HGVsnyWvMiGVotxhgicdSQ_96x96.png",
+        "name": "Al-Hilal"
     },
-    "gvzn7": {
-        "oltl": "sggkh://gnhho.zpznzravw.mvg//rnztvh/dzkkvm/svzw/8923.kmt?on=8592353810",
-        "mznv": "Ehgvtsozo F.C."
+    "team2": {
+        "logo": "https://tmssl.akamaized.net//images/wappen/head/1076.png?lm=1407646189",
+        "name": "Esteghlal F.C."
     },
-    "vevmgDzgv": "7975-88-94",
-    "vevmgTrnv": "98:99",
-    "wfizgrlm": "7.94",
-    "xlfmgwldmIw": "xlfmgwldm-93w39y00-43vv-549z-0809-906w38y2v563"
+    "eventDate": "2024-11-05",
+    "eventTime": "01:00",
+    "duration": "2.05",
+    "countdownId": "countdown-06d60b99-56ee-450a-9190-093d61b7e436"
 },
 {
     "wzgzIw": "uv18y1u9-y26y-5984-0y1v-z5vvzx24zw05",

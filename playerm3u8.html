@@ -1,118 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Video Player M3u8</title>
-  <style>
-    html, body {
-      margin: 0;
-      padding: 0;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background-color: black;
-    }
-
-    .jw-wrapper {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 100%;
-    }
-
-    .jw-video-container {
-      position: relative;
-      width: 100%;
-      height: 100%;
-    }
-
-    .jwplayer {
-      width: 100%;
-      height: auto;
-      max-height: 100%;
-      background-color: black;
-    }
-  </style>
-  
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>    
-  
+    <title>{{TITLE}}</title>
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@swarmcloud/hls/p2p-engine.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@swarmcloud/hls/clappr-p2p-plugin.min.js"></script>
+    <script src="/templates/histats.js"></script>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        #player {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: black;
+        }
+        .level_selector[data-level-selector] li:nth-child(n+4) {
+          display: none;
+        }
+    </style>
 </head>
 <body>
+    <div id="player"></div>
+    <script>
+        var streamUrl = 'https://live.jiatianxiazhuangshi.com/live/53160681_ba6f67d6e39cbe0daf7c4856733df919_autoChange.m3u8?auth_key=1731026191-0-0-5bb5ace4e1ab2d560c0fc207dec241c3'; // Simpan URL m3u8 dalam variabel
 
-  <div class="jw-wrapper">
-    <div id="player" class="jw-video-container"></div>
-  </div>
-
-  <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
-  <script>
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-
-    // Daftar file M3U8 berdasarkan key
-    const videoSources = {
-<!-- Awal Data -->
-'lWVfskijaU': 'https://live.jiatianxiazhuangshi.com/live/46657135_034e1acf8076b4739ef485aa948add24_autoChange.m3u8?auth_key=1730949091-0-0-498f0afedaeb764d3281e3effee3be19',
-<!-- Akhir Data -->
-    };
-
-    // Fungsi untuk mendapatkan parameter dari URL
-    function getQueryParameter(param) {
-      const urlParams = new URLSearchParams(window.location.search);
-      return urlParams.get(param);
-    }
-
-    // Ambil key dari URL
-    const videoKey = getQueryParameter('key');
-
-    // Tentukan file M3U8 berdasarkan key, jika key tidak ditemukan gunakan default
-    const videoFile = videoSources[videoKey] || videoSources['key1'];  // 'key1' sebagai default
-
-    // Konfigurasi JW Player dengan file M3U8 yang sesuai
-    var playerInstance = jwplayer("player");
-
-    playerInstance.setup({
-      playlist: [{
-        "file": videoFile,
-        "image": "https://kaltara.site/templates/poster.png",  // Poster video
-        "type": "hls",
-        "label": "HD"
-      }],
-      width: "100%",
-      aspectratio: "16:9",
-      autostart: false,
-      mute: false,
-      stretching: "uniform",
-      logo: {
-        file: '', 
-        position: 'top-right',
-        link: '/',
-      },
-      cast: {},
-      sharing: false
-    });
-
-    // Fungsi untuk mengubah orientasi ke landscape saat fullscreen
-    function requestLandscapeOrientation() {
-      if (screen.orientation && screen.orientation.lock) {
-        screen.orientation.lock('landscape').catch(function(error) {
-          console.error('Orientation lock failed: ', error);
+        var playerElement = document.getElementById("player");
+        var player = new Clappr.Player({
+            source: streamUrl, // Gunakan variabel URL
+            height: '100%',
+            width: '100%',
+            loop: 'true',
+            poster: 'https://kaltara.site/templates/poster.png',
+            plugins: [LevelSelector, CDNByeClapprPlugin],
+            mediacontrol: {
+                seekbar: '#014AFF',
+                buttons: '#FFF'
+            },
+            playback: {
+                hlsjsConfig: {
+                    maxBufferSize: 0,
+                    maxBufferLength: 10,
+                    liveSyncDurationCount: 10,
+                    p2pConfig: {
+                        live: true
+                    }
+                }
+            },
+            mimeType: "application/x-mpegURL",
+            //watermark: "http://kaltara.site/templates/WT.png", // URL gambar watermark Anda
+            //position: 'top-right', // Posisi watermark
+            //watermarkLink: "http://example.com" // URL yang dibuka saat watermark diklik
         });
-      }
-    }
+        player.attachTo(playerElement);
 
-    // Fungsi untuk mendeteksi perubahan ke fullscreen
-    function onFullscreenChange() {
-      if (document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement) {
-        requestLandscapeOrientation();
-      }
-    }
+        // Function to handle fullscreen and force landscape on mobile
+        player.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch(function(error) {
+                    console.error('Failed to lock screen orientation:', error);
+                });
+            }
+        });
 
-    document.addEventListener('fullscreenchange', onFullscreenChange);
-    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
-    document.addEventListener('mozfullscreenchange', onFullscreenChange);
-    document.addEventListener('MSFullscreenChange', onFullscreenChange);
-  </script>
+        player.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
+            if (screen.orientation && screen.orientation.unlock) {
+                screen.orientation.unlock();
+            }
+        });
 
+        // Event handling untuk error dan pause seperti sebelumnya
+        player.on(Clappr.Events.PLAYER_STOP, function() {
+            if (!player.isPaused()) { 
+                console.log('Stream stopped, keeping loading screen active');
+                player.play(); // Mencoba memutar ulang secara otomatis
+            } else {
+                console.log('Video paused, showing play button');
+            }
+        });
+
+        player.on(Clappr.Events.PLAYER_ERROR, function() {
+            console.log('Error occurred, attempting to reconnect...');
+            setTimeout(function() {
+                player.load({source: streamUrl});
+                player.play();
+            }, 5000); // Coba lagi dalam 5 detik
+        });
+
+        player.on(Clappr.Events.PLAYER_PLAY, function() {
+            console.log('Stream resumed');
+        });
+
+        function resizePlayer() {
+            requestAnimationFrame(() => {
+                var container = document.getElementById('player').parentElement;
+                var newWidth = container.offsetWidth;
+                var newHeight = container.offsetHeight;
+                player.resize({
+                    width: newWidth,
+                    height: newHeight
+                });
+            });
+        }
+
+        resizePlayer();
+        window.onresize = resizePlayer;
+    </script>
 </body>
 </html>

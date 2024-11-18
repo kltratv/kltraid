@@ -2,7 +2,8 @@
 const allowedDomains = [
   'https://akusukagratisanlo.blogspot.com/',
   'https://www.kltraid.online/',
-  'https://bikinbaru96.blogspot.com/'
+  'https://bikinbaru96.blogspot.com/',
+  'https://yallashoot-ab01.blogspot.com/'
 ];
 
 // Ambil referer dari dokumen

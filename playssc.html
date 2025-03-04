@@ -35,37 +35,6 @@
         .shaka-video-container .material-icons-round {
             color: #f1ff00; /* Warna ikon */
         }
-        #channel-overlay {
-            position: fixed;
-            top: 0;
-            right: -200px; /* Initial position outside the screen */
-            width: 200px;
-            height: 100%;
-            background-color: rgba(0, 0, 0, 0.8);
-            color: white;
-            padding: 10px;
-            overflow-y: auto;
-            z-index: 1000;
-            box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
-            transition: right 0.3s ease-in-out;
-        }
-        #channel-overlay.visible {
-            right: 0; /* Slide in when visible */
-        }
-        #channel-overlay ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
-        #channel-overlay li {
-            padding: 10px;
-            cursor: pointer;
-            border-bottom: 1px solid #444;
-            transition: background 0.3s;
-        }
-        #channel-overlay li:hover {
-            background-color: rgba(255, 255, 255, 0.1);
-        }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
 </head>

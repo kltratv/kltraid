@@ -159,20 +159,6 @@
             window.history.pushState({}, '', url); // Update the URL without reloading
         }
 
-        function setupOverlayBehavior() {
-            const overlay = document.getElementById('channel-overlay');
-
-            document.addEventListener('mousemove', (event) => {
-                const elementUnderCursor = document.elementFromPoint(event.clientX, event.clientY);
-                // Show overlay if mouse is near the right side or hovering over the overlay
-                if (window.innerWidth - event.clientX < 50 || overlay.contains(elementUnderCursor)) {
-                    overlay.classList.add('visible');
-                } else {
-                    overlay.classList.remove('visible');
-                }
-            });
-        }
-
         function lockOrientationToLandscape() {
             if (screen.orientation && screen.orientation.lock) {
                 screen.orientation.lock('landscape').catch((error) => {

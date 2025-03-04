@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="referrer" content="no-referrer">
+	<meta name="referrer" content="no-referrer">
     <title>Video Player</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <script src="/allowedDomains.js"></script>
+    <!--<script src="/allowedDomains.js"></script>-->
     <style>
         html, body {
             margin: 0;
@@ -41,10 +41,6 @@
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
-    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-    <!--<script data-cfasync="false" type='text/javascript' src='//pl123456.puhtml.com/82/6d/f3/826df33e1880e1ab086c8406879dc14e.js'></script>-->
-    <!--<script type='text/javascript' src='//disappearsurgery.com/93/c9/e1/93c9e1602f4c05da2a587d287c363a0e.js'></script>-->
-    <!--<script src="mpdplay.js"></script>-->
 </head>
 <body>
     <center>
@@ -55,8 +51,8 @@
             </div>
         </div>
     </center>
-	<script>
-		// Channel data - add more channels if needed
+    <script>
+			// Channel data - add more channels if needed
 		const channels = {
 		  'ssc1': { 
 			url: 'https://ssc-1-enc.edgenextcdn.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd',
@@ -131,7 +127,7 @@
 			}
 		  }
 		};
-      
+
         async function init() { 
             const video = document.getElementById('video'); 
             const ui = video['ui']; 
@@ -221,7 +217,6 @@
 
         document.addEventListener('shaka-ui-loaded', init); 
         document.addEventListener('shaka-ui-load-failed', initFailed); 
-		})();
-	</script>
+    </script>
 </body>
 </html>

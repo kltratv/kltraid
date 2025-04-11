@@ -469,3 +469,131 @@
 			drm: { '98cfd6fd4812497fb24dc75f7545f2ee': 'd3006ee69e77b25939728ebf30d3180a' }
 		  }
 		};
+
+		//(function () {
+        //    const allowedHost = ['bikinbaru96.blogspot.com'];
+        //    const currentHost = window.location.hostname;
+
+        //    if (!allowedHost.includes(currentHost)) {
+        //        console.error('Access denied: Unauthorized host');
+        //        window.location.href = 'https://akusukagratisanlo.blogspot.com';
+        //        return;
+        //    }
+
+        async function init() { 
+            const video = document.getElementById('video'); 
+            const ui = video['ui']; 
+            const controls = ui.getControls(); 
+            const player = controls.getPlayer(); 
+            window.player = player; 
+            window.ui = ui; 
+            player.addEventListener('error', onPlayerErrorEvent); 
+            controls.addEventListener('error', onUIErrorEvent); 
+
+			const urlParams = new URLSearchParams(window.location.search);
+			const key = urlParams.get('channel');
+			if (channels[key]) {
+				const channel = channels[key];
+			
+				// Konfigurasi DRM
+				if (channel.drm?.clearkey) {
+					player.configure({
+						drm: {
+							clearKeys: {
+								[channel.drm.clearkey.keyId]: channel.drm.clearkey.key
+							}
+						}
+					});
+				} else {
+					player.configure({
+						drm: {
+							clearKeys: channel.drm
+						}
+					});
+				}
+			
+				// Konfigurasi streaming dan manifest
+				player.configure({
+					streaming: {
+						startAtSegmentBoundary: true,
+						ignoreTextStreamFailures: true,
+						rebufferingGoal: 1,
+						bufferingGoal: 3,
+						bufferBehind: 5,
+						autoLowLatencyMode: true,
+						lowLatencyMode: true,
+						jumpLargeGaps: true,
+						inaccurateManifestTolerance: 0.3,
+						stallEnabled: false
+					},
+					manifest: {
+						dash: {
+							ignoreMinBufferTime: true,
+							autoCorrectDrift: true
+						}
+					}
+				});
+			
+				try {
+					await player.load(channel.url); 
+					console.log('The video has now been loaded!');
+				} catch (error) {
+					onPlayerError(error);
+				}
+			} else {
+				console.error('Channel not found');
+			}			
+
+            // Menambahkan listener untuk fullscreen
+            controls.addEventListener('fullscreen', () => {
+                if (document.fullscreenElement) {
+                    lockOrientationToLandscape();
+                }
+            });
+
+            // Konfigurasi warna seekBar menggunakan UI config
+            ui.configure({
+                seekBarColors: {
+                    base: 'rgba(255, 0, 0, 0.3)', // Warna latar belakang merah transparan
+                    buffered: 'rgba(255, 0, 0, 0.5)', // Warna buffer merah sedikit transparan
+                    played: 'red', // Warna bagian yang dimainkan
+                    adBreaks: 'yellow', // Warna untuk jeda iklan
+                }
+            });
+
+            // Ganti ikon menu dengan ikon gear
+            const menuButton = document.querySelector('.shaka-overflow-menu-button');
+            if (menuButton) {
+                menuButton.innerHTML = '<i class="fas fa-cog"></i>'; // Ikon gear dari Font Awesome
+            }
+        }
+
+        function onPlayerErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function onPlayerError(error) {
+            console.error('Error code', error.code, 'object', error);
+        }
+
+        function onUIErrorEvent(errorEvent) { 
+            onPlayerError(event.detail);
+        }
+
+        function initFailed(errorEvent) {
+            console.error('Unable to load the UI library!');
+        }
+
+        function lockOrientationToLandscape() {
+            if (screen.orientation && screen.orientation.lock) {
+                screen.orientation.lock('landscape').catch((error) => {
+                    console.warn('Orientation lock failed:', error);
+                });
+            }
+        }
+
+        document.addEventListener('shaka-ui-loaded', init); 
+        document.addEventListener('shaka-ui-load-failed', initFailed); 
+		//})();
+
+		window.addEventListener('load', () => disableDevtool());

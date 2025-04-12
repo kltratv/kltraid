@@ -1,57 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Test Player PostMessage</title>
-  <style>
-    body {
-      font-family: sans-serif;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      height: 100vh;
-    }
-
-    .controls {
-      padding: 10px;
-      background: #222;
-      display: flex;
-      gap: 10px;
-      justify-content: center;
-    }
-
-    .controls button {
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      background-color: #ff5252;
-      color: white;
-      border-radius: 5px;
-    }
-
-    iframe {
-      flex: 1;
-      width: 100%;
-      border: none;
-    }
-  </style>
+    <title>Channel Tester</title>
+    <style>
+        button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 100%;
+            height: 80vh;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-  <div class="controls">
-    <button onclick="sendChannel('rcti')">Play RCTI</button>
-    <button onclick="sendChannel('sscex3')">Play SSCE3</button>
-  </div>
+    <h1>Channel Selector</h1>
+    <button onclick="changeChannel('sscex1')">Channel 1</button>
+    <button onclick="changeChannel('sscex2')">Channel 2</button>
+    <button onclick="changeChannel('sscex3')">Channel 3</button>
+    
+    <iframe id="playerFrame" src="player.html"></iframe>
 
-  <iframe id="playerFrame" src="mpd-player.html?key=test" allowfullscreen></iframe>
+    <script>
+        const playerFrame = document.getElementById('playerFrame');
+        const allowedOrigin = window.location.origin;
 
-  <script>
-    function sendChannel(channelKey) {
-      const iframe = document.getElementById('playerFrame');
-      iframe.contentWindow.postMessage({ key: channelKey }, '*');
-    }
-  </script>
+        function changeChannel(channel) {
+            playerFrame.contentWindow.postMessage({
+                type: 'CHANGE_CHANNEL',
+                channel: channel
+            }, allowedOrigin);
+        }
+    </script>
 </body>
 </html>

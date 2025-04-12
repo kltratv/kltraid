@@ -57,11 +57,22 @@
     <script type="module">
         import channels from './channel.js';
         
-        const allowedDomains = ['http://localhost', 'https://kltraid.pages.dev/'];
-        let player, ui;
-
+        // Update dengan domain Anda
+        const allowedDomains = [
+            'https://kltraid.pages.dev',
+            'http://localhost' // Untuk testing lokal
+        ];
+    
         function validateOrigin(origin) {
-            return allowedDomains.some(allowed => origin.startsWith(allowed));
+            return allowedDomains.some(allowed => {
+                try {
+                    const allowedURL = new URL(allowed);
+                    const incomingURL = new URL(origin);
+                    return allowedURL.hostname === incomingURL.hostname;
+                } catch {
+                    return false;
+                }
+            });
         }
 
         async function loadChannel(channelKey) {

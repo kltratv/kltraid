@@ -1,33 +1,50 @@
-// Daftar domain yang diizinkan melakukan iframe
-const allowedDomains = ["kltraid.pages.dev", "yallashoot-ab01.blogspot.com", "bikinbaru96.blogspot.com"];
+// Daftar origin yang diizinkan melakukan iframe
+const allowedOrigins = [
+  "kltraid.pages.dev",
+  "https://yallashoot-ab01.blogspot.com",
+  "https://bikinbaru96.blogspot.com"
+];
+
+// Fungsi untuk mendapatkan origin dari referrer atau top
+function getReferrerOrigin() {
+    try {
+        if (document.referrer) {
+            return new URL(document.referrer).origin;
+        }
+    } catch (e) {
+        console.error("Gagal parsing document.referrer:", e);
+    }
+
+    // Fallback: coba ambil origin dari window.top jika tidak cross-origin
+    try {
+        return window.top.location.origin;
+    } catch (e) {
+        console.warn("Tidak bisa akses window.top.origin (kemungkinan cross-origin).");
+        return null;
+    }
+}
 
 // Fungsi untuk memeriksa apakah halaman sedang dimuat di dalam iframe
 function checkAndRedirect() {
     if (window.top !== window.self) {
-        // Periksa apakah referrer ada
-        if (document.referrer) {
-            const referrerDomain = new URL(document.referrer).hostname;
-            
-            // Log referrer untuk debugging
-            console.log("Referrer Domain: ", referrerDomain);
+        const origin = getReferrerOrigin();
 
-            // Periksa apakah domain referrer ada di daftar allowedDomains
-            if (!allowedDomains.includes(referrerDomain)) {
-                console.log("Domain tidak diizinkan, redirecting...");
-                // Redirect jika domain tidak diizinkan
+        if (origin) {
+            console.log("Origin yang dicek:", origin);
+
+            if (!allowedOrigins.includes(origin)) {
+                console.log("Origin tidak diizinkan, redirecting...");
                 window.top.location = "https://kltraid.pages.dev/"; // Ganti dengan URL tujuan yang diinginkan
             } else {
-                console.log("Domain diizinkan, tidak di-redirect.");
+                console.log("Origin diizinkan, tidak di-redirect.");
             }
         } else {
-            // Referrer kosong, bisa disebabkan oleh no-referrer atau direktori kosong
-            console.log("Referrer kosong, redirecting...");
-            window.top.location = "https://kltraid.pages.dev/"; // Redirect jika referrer kosong
+            console.log("Tidak bisa menentukan origin, iframe dibiarkan.");
         }
     }
 }
 
-// Periksa setiap 30 detik (30000 ms)
+// Periksa setiap 30 detik
 setInterval(checkAndRedirect, 30000);
 
 // Pengecekan pertama setelah 5 menit

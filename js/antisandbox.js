@@ -1,14 +1,20 @@
 (function () {
     function isSandboxedIframe() {
+        // Kondisi umum iframe
+        const isInIframe = window.self !== window.top;
+
+        // frameElement null atau error → kemungkinan sandbox
+        let isSandboxed = false;
         try {
-            return window.self !== window.top && !window.top.location.href;
+            isSandboxed = !window.frameElement || window.frameElement.hasAttribute("sandbox");
         } catch (e) {
-            return true; // error mengakses top → kemungkinan sandbox
+            isSandboxed = true;
         }
+
+        return isInIframe && isSandboxed;
     }
 
     if (isSandboxedIframe()) {
-        // tampilkan overlay warning
         const overlay = document.createElement("div");
         overlay.style.position = "fixed";
         overlay.style.top = 0;
@@ -22,7 +28,9 @@
         overlay.style.justifyContent = "center";
         overlay.style.alignItems = "center";
         overlay.style.fontSize = "20px";
-        overlay.innerText = "⚠️ Halaman ini tidak dapat dimuat dengan sandbox. Harap izinkan akses penuh.";
+        overlay.style.textAlign = "center";
+        overlay.style.padding = "30px";
+        overlay.innerText = "⚠️ Halaman ini dimuat dalam sandboxed iframe.\n\nUntuk memuat konten ini, iframe harus tanpa atribut sandbox.";
         document.body.appendChild(overlay);
     }
 })();

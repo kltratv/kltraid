@@ -1,5 +1,5 @@
 // Daftar domain yang diizinkan melakukan iframe
-const allowedDomains = ["kltraidx01.blogspot.com", "yallashoot-ab01.blogspot.com", "bikinbaru96.blogspot.com", "www.streamkaltaraid.online"];
+const allowedDomains = ["kltraid.pages.dev", "yallashoot-ab01.blogspot.com", "bikinbaru96.blogspot.com"];
 
 // Fungsi untuk memeriksa apakah halaman sedang dimuat di dalam iframe
 function checkAndRedirect() {

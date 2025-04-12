@@ -1,25 +1,28 @@
-<script>
-(function() {
-  // Cek jika halaman ini sedang di-iframe
-  if (window !== window.top) {
-    let sandboxDetected = false;
-
-    try {
-      // Sandbox biasanya memblok akses ke top location
-      window.top.location.toString();
-    } catch (e) {
-      sandboxDetected = true;
+(function () {
+    function isSandboxedIframe() {
+        try {
+            return window.self !== window.top && !window.top.location.href;
+        } catch (e) {
+            return true; // error mengakses top → kemungkinan sandbox
+        }
     }
 
-    // Bisa juga cek apakah fitur tertentu dinonaktifkan oleh sandbox
-    if (!window.parent || !window.parent.postMessage) {
-      sandboxDetected = true;
+    if (isSandboxedIframe()) {
+        // tampilkan overlay warning
+        const overlay = document.createElement("div");
+        overlay.style.position = "fixed";
+        overlay.style.top = 0;
+        overlay.style.left = 0;
+        overlay.style.width = "100%";
+        overlay.style.height = "100%";
+        overlay.style.zIndex = "99999";
+        overlay.style.background = "rgba(0,0,0,0.85)";
+        overlay.style.color = "#fff";
+        overlay.style.display = "flex";
+        overlay.style.justifyContent = "center";
+        overlay.style.alignItems = "center";
+        overlay.style.fontSize = "20px";
+        overlay.innerText = "⚠️ Halaman ini tidak dapat dimuat dengan sandbox. Harap izinkan akses penuh.";
+        document.body.appendChild(overlay);
     }
-
-    // Jika sandbox terdeteksi, redirect
-    if (sandboxDetected) {
-      window.location.href = "https://www.google.com/";
-    }
-  }
 })();
-</script>

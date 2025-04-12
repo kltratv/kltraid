@@ -26,8 +26,11 @@
 
     <script>
         const playerFrame = document.getElementById('playerFrame');
-        const allowedOrigin = window.location.origin;
-
+        const allowedOrigin = 'https://kltraid.pages.dev'; // Ganti dengan domain utama Anda
+        
+        // Pastikan iframe menggunakan domain yang sama
+        playerFrame.src = `${allowedOrigin}/player.html`;
+    
         function changeChannel(channel) {
             playerFrame.contentWindow.postMessage({
                 type: 'CHANGE_CHANNEL',

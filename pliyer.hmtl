@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Same head section as original -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>Video Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+                html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: black;
+        }
+        .shaka-video-container {
+            position: fixed; /* Membuat elemen tetap */
+            top: 50%; /* Menempatkan elemen di tengah secara vertikal */
+            left: 50%; /* Menempatkan elemen di tengah secara horizontal */
+            transform: translate(-50%, -50%); /* Mengatur agar pusat elemen berada di tengah layar */
+            width: 100%;
+            height: 100%;
+        }
+        
+        .shaka-video {
+            width: 100%;
+            height: 100%;
+        }
+
+        .shaka-play-button,
+        .shaka-spinner-container {
+            transform: scale(0.8); /* Ukuran ikon play dan spinner sama */
+        }
+
+        .shaka-video-container .material-icons-round {
+            color: #f1ff00;
+        }
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+</head>
+<body>
+    <!-- Same video container as original -->
+    <center>
+        <div data-shaka-player-container style="width: 100%; height: 100%; cursor: none;" shaka-controls="true" class="shaka-video-container">
+            <video autoplay data-shaka-player id="video" style="width:100%;height:100%;" class="shaka-video" poster="/images/poster.png"></video>
+            <div class="shaka-controls-container">
+                <!-- Shaka Player Controls Here -->
+            </div>
+        </div>
+    </center>
+    
+    <script type="module">
+        import channels from './channel.js';
+        
+        const allowedDomains = ['http://localhost', 'https://bikinbaru96.blogspot.com'];
+        let player, ui;
+
+        function validateOrigin(origin) {
+            return allowedDomains.some(allowed => origin.startsWith(allowed));
+        }
+
+        async function loadChannel(channelKey) {
+            const channel = channels[channelKey];
+            if (!channel) return;
+
+            // Clear existing content
+            await player.unload();
+            
+            // Configure DRM
+            player.configure({
+                drm: { clearKeys: channel.drm },
+                streaming: {
+                    startAtSegmentBoundary: true,
+                    rebufferingGoal: 1,
+                    bufferingGoal: 3,
+                    lowLatencyMode: true
+                }
+            });
+
+            try {
+                await player.load(channel.url);
+                console.log('Channel switched to:', channelKey);
+            } catch (error) {
+                console.error('Error loading channel:', error);
+            }
+        }
+
+        window.addEventListener('message', async (event) => {
+            if (!validateOrigin(event.origin)) {
+                console.warn('Blocked message from unauthorized origin:', event.origin);
+                return;
+            }
+
+            if (event.data.type === 'CHANGE_CHANNEL') {
+                await loadChannel(event.data.channel);
+            }
+        });
+
+        async function init() {
+            const video = document.getElementById('video');
+            ui = video['ui'];
+            player = ui.getControls().getPlayer();
+
+            player.addEventListener('error', console.error);
+            ui.configure({
+                seekBarColors: {
+                    base: 'rgba(255, 0, 0, 0.3)',
+                    buffered: 'rgba(255, 0, 0, 0.5)',
+                    played: 'red',
+                    adBreaks: 'yellow',
+                }
+            });
+
+            // Initial load if channel parameter exists
+            const urlParams = new URLSearchParams(location.search);
+            const initialChannel = urlParams.get('channel');
+            if (initialChannel) await loadChannel(initialChannel);
+        }
+
+        document.addEventListener('shaka-ui-loaded', init);
+        document.addEventListener('DOMContentLoaded', () => disableDevtool());
+    </script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 // Daftar origin yang diizinkan melakukan iframe
 const allowedOrigins = [
-  "kltraid.pages.dev",
+  "https://kltraid.pages.dev/",
   "https://yallashoot-ab01.blogspot.com",
   "https://bikinbaru96.blogspot.com"
 ];

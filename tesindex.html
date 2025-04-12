@@ -24,19 +24,29 @@
     
     <iframe id="playerFrame" src="player.html"></iframe>
 
-    <script>
-        const playerFrame = document.getElementById('playerFrame');
-        const allowedOrigin = 'https://kltraid.pages.dev'; // Ganti dengan domain utama Anda
-        
-        // Pastikan iframe menggunakan domain yang sama
-        playerFrame.src = `${allowedOrigin}/player.html`;
+<script>
+    const playerFrame = document.getElementById('playerFrame');
+    const allowedOrigin = 'https://kltraid.pages.dev';
     
-        function changeChannel(channel) {
-            playerFrame.contentWindow.postMessage({
-                type: 'CHANGE_CHANNEL',
-                channel: channel
-            }, allowedOrigin);
-        }
-    </script>
+    // Tambahkan parameter cache busting
+    playerFrame.src = `${allowedOrigin}/player.html?t=${Date.now()}`;
+
+    function changeChannel(channel) {
+        console.log('Sending message to:', allowedOrigin);
+        playerFrame.contentWindow.postMessage({
+            type: 'CHANGE_CHANNEL',
+            channel: channel
+        }, allowedOrigin);
+    }
+    
+    // Tambahkan error handling untuk iframe
+    playerFrame.addEventListener('load', () => {
+        console.log('Iframe loaded successfully');
+    });
+    
+    playerFrame.addEventListener('error', (err) => {
+        console.error('Iframe loading error:', err);
+    });
+</script>
 </body>
 </html>

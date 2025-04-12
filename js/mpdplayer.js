@@ -1,4 +1,4 @@
-    import channels from './channel.js';
+    import channels from '/js/channel.js';
     
     const allowedDomains = ['https://kltraid.pages.dev', 'https://bikinbaru96.blogspot.com', 'http://localhost'];
     let player, ui, controls;

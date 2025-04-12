@@ -48,14 +48,12 @@
 
     <script type="module">
         import channels from './channel.js';
-
-        // Konfigurasi Player
+        
         const allowedDomains = ['https://kltraid.pages.dev', 'https://bikinbaru96.blogspot.com', 'http://localhost'];
         let player, ui, controls;
         let isPlayerReady = false;
         const pendingMessages = [];
-
-        // Fungsi Validasi Origin
+        
         function validateOrigin(origin) {
             try {
                 const originUrl = new URL(origin);
@@ -69,21 +67,18 @@
                 return false;
             }
         }
-
-        // Fungsi Load Channel
+        
         async function loadChannel(channelKey) {
             try {
                 if (!player || !isPlayerReady) {
                     throw new Error('Player belum siap');
                 }
-
+        
                 const channel = channels[channelKey];
                 if (!channel) throw new Error('Channel tidak ditemukan');
-
-                // Unload player sebelumnya
+        
                 await player.unload();
-
-                // Konfigurasi DRM
+        
                 player.configure({
                     drm: {
                         clearKeys: channel.drm
@@ -102,39 +97,32 @@
                         }
                     }
                 });
-
-                // Load channel baru
+        
                 await player.load(channel.url);
                 console.log('Berhasil pindah channel:', channelKey);
-
             } catch (error) {
                 console.error('Gagal ganti channel:', error);
                 throw error;
             }
         }
-
-        // Inisialisasi Player
+        
         async function initPlayer() {
             try {
                 const video = document.getElementById('video');
-                
-                // Install Shaka UI
+        
                 if (!video.ui) {
                     await shaka.ui.install(video, {
                         controlPanelElements: ['play_pause', 'time_and_duration', 'spacer', 'mute', 'volume', 'fullscreen', 'overflow_menu']
                     });
                 }
-
-                // Dapatkan referensi UI dan Player
+        
                 ui = video.ui;
                 controls = ui.getControls();
                 player = controls.getPlayer();
-
-                // Event Listeners
+        
                 player.addEventListener('error', onPlayerError);
                 controls.addEventListener('error', onUIError);
-
-                // Konfigurasi UI
+        
                 ui.configure({
                     seekBarColors: {
                         base: 'rgba(255, 0, 0, 0.3)',
@@ -143,27 +131,27 @@
                         adBreaks: 'yellow'
                     }
                 });
-
-                // Ganti ikon menu
+        
                 const menuButton = document.querySelector('.shaka-overflow-menu-button');
                 if (menuButton) {
                     menuButton.innerHTML = '<i class="fas fa-cog"></i>';
                 }
-
-                // Load channel awal
+        
+                // Load channel awal (opsional, pakai ?channel=...)
                 const urlParams = new URLSearchParams(location.search);
                 const initialChannel = urlParams.get('channel');
                 if (initialChannel) await loadChannel(initialChannel);
-
+        
                 isPlayerReady = true;
+                window.parent.postMessage({ type: 'READY' }, '*');  // ⬅️ Kirim sinyal READY ke parent
+        
                 processPendingMessages();
-
+        
             } catch (error) {
                 console.error('Gagal inisialisasi player:', error);
             }
         }
-
-        // Proses pesan tertunda
+        
         function processPendingMessages() {
             pendingMessages.forEach(msg => {
                 window.dispatchEvent(new MessageEvent('message', {
@@ -173,56 +161,53 @@
             });
             pendingMessages.length = 0;
         }
-
-        // Penanganan Pesan
+        
         window.addEventListener('message', async (event) => {
             if (!validateOrigin(event.origin)) {
                 console.warn('Diblokir: Origin tidak diizinkan', event.origin);
                 return;
             }
-
+        
             if (!isPlayerReady) {
                 pendingMessages.push(event.data);
                 return;
             }
-
+        
             try {
                 if (event.data.type === 'CHANGE_CHANNEL') {
                     await loadChannel(event.data.channel);
+                } else if (event.data.type === 'STOP_CHANNEL') {
+                    await player?.unload();
+                    console.log('Channel dihentikan');
                 }
             } catch (error) {
                 console.error('Error handling message:', error);
             }
         });
-
-        // Error Handling
+        
         function onPlayerError(error) {
             console.error('Player Error:', error.code, error);
         }
-
+        
         function onUIError(error) {
             console.error('UI Error:', error.detail);
         }
-
-        // Event Listeners Shaka
+        
         document.addEventListener('shaka-ui-loaded', () => {
             console.log('Shaka UI Loaded');
             initPlayer().catch(console.error);
         });
-
+        
         document.addEventListener('shaka-ui-load-failed', (error) => {
             console.error('Shaka UI Gagal Load:', error.detail);
         });
-
-        // Orientation Lock
+        
         function lockOrientation() {
             if (screen.orientation?.lock) {
-                screen.orientation.lock('landscape')
-                    .catch(error => console.warn('Gagal lock orientation:', error));
+                screen.orientation.lock('landscape').catch(error => console.warn('Gagal lock orientation:', error));
             }
         }
-
-        // Fullscreen Handler
+        
         document.addEventListener('fullscreenchange', () => {
             if (document.fullscreenElement) {
                 lockOrientation();

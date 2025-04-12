@@ -16,14 +16,14 @@ function checkAndRedirect() {
             if (!allowedDomains.includes(referrerDomain)) {
                 console.log("Domain tidak diizinkan, redirecting...");
                 // Redirect jika domain tidak diizinkan
-                window.top.location = "https://akusukagratisanlo.blogspot.com"; // Ganti dengan URL tujuan yang diinginkan
+                window.top.location = "https://kltraid.pages.dev/"; // Ganti dengan URL tujuan yang diinginkan
             } else {
                 console.log("Domain diizinkan, tidak di-redirect.");
             }
         } else {
             // Referrer kosong, bisa disebabkan oleh no-referrer atau direktori kosong
             console.log("Referrer kosong, redirecting...");
-            window.top.location = "https://akusukagratisanlo.blogspot.com"; // Redirect jika referrer kosong
+            window.top.location = "https://kltraid.pages.dev/"; // Redirect jika referrer kosong
         }
     }
 }

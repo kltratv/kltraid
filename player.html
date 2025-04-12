@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Same head section as original -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="referrer" content="no-referrer">
@@ -9,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
-                html, body {
+        html, body {
             margin: 0;
             padding: 0;
             width: 100%;
@@ -18,130 +17,217 @@
             background: black;
         }
         .shaka-video-container {
-            position: fixed; /* Membuat elemen tetap */
-            top: 50%; /* Menempatkan elemen di tengah secara vertikal */
-            left: 50%; /* Menempatkan elemen di tengah secara horizontal */
-            transform: translate(-50%, -50%); /* Mengatur agar pusat elemen berada di tengah layar */
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             width: 100%;
             height: 100%;
         }
-        
         .shaka-video {
             width: 100%;
             height: 100%;
         }
-
         .shaka-play-button,
         .shaka-spinner-container {
-            transform: scale(0.8); /* Ukuran ikon play dan spinner sama */
+            transform: scale(0.8);
         }
-
         .shaka-video-container .material-icons-round {
             color: #f1ff00;
         }
     </style>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
-    <!--<script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>-->
 </head>
 <body>
-    <!-- Same video container as original -->
     <center>
         <div data-shaka-player-container style="width: 100%; height: 100%; cursor: none;" shaka-controls="true" class="shaka-video-container">
             <video autoplay data-shaka-player id="video" style="width:100%;height:100%;" class="shaka-video" poster="/images/poster.png"></video>
-            <div class="shaka-controls-container">
-                <!-- Shaka Player Controls Here -->
-            </div>
+            <div class="shaka-controls-container"></div>
         </div>
     </center>
-    
-<script type="module">
-    import channels from './channel.js';
-    
-    const allowedDomains = [
-        'https://kltraid.pages.dev',
-        'http://localhost'
-    ];
 
-    // Fungsi validasi yang lebih akurat
-    function validateOrigin(origin) {
-        try {
-            const originUrl = new URL(origin);
-            return allowedDomains.some(allowed => {
-                const allowedUrl = new URL(allowed);
-                return originUrl.protocol === allowedUrl.protocol &&
-                       originUrl.hostname === allowedUrl.hostname &&
-                       originUrl.port === allowedUrl.port;
-            });
-        } catch {
-            return false;
-        }
-    }
+    <script type="module">
+        import channels from './channel.js';
 
-    // Tambahkan state management
-    let isPlayerReady = false;
-    const pendingMessages = [];
+        // Konfigurasi Player
+        const allowedDomains = ['https://kltraid.pages.dev', 'http://localhost'];
+        let player, ui, controls;
+        let isPlayerReady = false;
+        const pendingMessages = [];
 
-    window.addEventListener('message', async (event) => {
-        console.log('Received message from origin:', event.origin);
-        console.log('Message data:', event.data);
-        
-        if (!validateOrigin(event.origin)) {
-            console.warn(`Origin ${event.origin} not allowed`);
-            return;
-        }
-
-        if (!isPlayerReady) {
-            pendingMessages.push(event.data);
-            return;
-        }
-
-        if (event.data.type === 'CHANGE_CHANNEL') {
+        // Fungsi Validasi Origin
+        function validateOrigin(origin) {
             try {
-                await loadChannel(event.data.channel);
-            } catch (error) {
-                console.error('Channel change failed:', error);
+                const originUrl = new URL(origin);
+                return allowedDomains.some(allowed => {
+                    const allowedUrl = new URL(allowed);
+                    return originUrl.protocol === allowedUrl.protocol &&
+                           originUrl.hostname === allowedUrl.hostname &&
+                           originUrl.port === allowedUrl.port;
+                });
+            } catch {
+                return false;
             }
         }
-    });
 
-    async function init() {
-        try {
-            const video = document.getElementById('video');
-            if (!video.ui) {
-                shaka.ui.install(video);
+        // Fungsi Load Channel
+        async function loadChannel(channelKey) {
+            try {
+                if (!player || !isPlayerReady) {
+                    throw new Error('Player belum siap');
+                }
+
+                const channel = channels[channelKey];
+                if (!channel) throw new Error('Channel tidak ditemukan');
+
+                // Unload player sebelumnya
+                await player.unload();
+
+                // Konfigurasi DRM
+                player.configure({
+                    drm: {
+                        clearKeys: channel.drm
+                    },
+                    streaming: {
+                        rebufferingGoal: 1,
+                        bufferingGoal: 3,
+                        bufferBehind: 5,
+                        autoLowLatencyMode: true,
+                        lowLatencyMode: true
+                    },
+                    manifest: {
+                        dash: {
+                            ignoreMinBufferTime: true,
+                            autoCorrectDrift: true
+                        }
+                    }
+                });
+
+                // Load channel baru
+                await player.load(channel.url);
+                console.log('Berhasil pindah channel:', channelKey);
+
+            } catch (error) {
+                console.error('Gagal ganti channel:', error);
+                throw error;
             }
-            
-            ui = video['ui'];
-            player = ui.getControls().getPlayer();
-            
-            // Tambahkan event listener untuk readiness
-            await player.isReady();
-            isPlayerReady = true;
-            
-            // Proses pesan yang tertunda
+        }
+
+        // Inisialisasi Player
+        async function initPlayer() {
+            try {
+                const video = document.getElementById('video');
+                
+                // Install Shaka UI
+                if (!video.ui) {
+                    await shaka.ui.install(video, {
+                        controlPanelElements: ['play_pause', 'time_and_duration', 'spacer', 'mute', 'volume', 'fullscreen', 'overflow_menu']
+                    });
+                }
+
+                // Dapatkan referensi UI dan Player
+                ui = video.ui;
+                controls = ui.getControls();
+                player = controls.getPlayer();
+
+                // Event Listeners
+                player.addEventListener('error', onPlayerError);
+                controls.addEventListener('error', onUIError);
+
+                // Konfigurasi UI
+                ui.configure({
+                    seekBarColors: {
+                        base: 'rgba(255, 0, 0, 0.3)',
+                        buffered: 'rgba(255, 0, 0, 0.5)',
+                        played: 'red',
+                        adBreaks: 'yellow'
+                    }
+                });
+
+                // Ganti ikon menu
+                const menuButton = document.querySelector('.shaka-overflow-menu-button');
+                if (menuButton) {
+                    menuButton.innerHTML = '<i class="fas fa-cog"></i>';
+                }
+
+                // Load channel awal
+                const urlParams = new URLSearchParams(location.search);
+                const initialChannel = urlParams.get('channel');
+                if (initialChannel) await loadChannel(initialChannel);
+
+                isPlayerReady = true;
+                processPendingMessages();
+
+            } catch (error) {
+                console.error('Gagal inisialisasi player:', error);
+            }
+        }
+
+        // Proses pesan tertunda
+        function processPendingMessages() {
             pendingMessages.forEach(msg => {
                 window.dispatchEvent(new MessageEvent('message', {
                     data: msg,
                     origin: window.location.origin
                 }));
             });
-            
-            console.log('Player initialized successfully');
-            
-        } catch (error) {
-            console.error('Initialization failed:', error);
+            pendingMessages.length = 0;
         }
-    }
 
-    // Tambahkan error handling untuk Shaka UI
-    document.addEventListener('shaka-ui-loaded', () => {
-        console.log('Shaka UI loaded');
-        init().catch(console.error);
-    });
-    
-    document.addEventListener('shaka-ui-load-failed', (error) => {
-        console.error('Shaka UI failed to load:', error.detail);
-    });
-</script>
+        // Penanganan Pesan
+        window.addEventListener('message', async (event) => {
+            if (!validateOrigin(event.origin)) {
+                console.warn('Diblokir: Origin tidak diizinkan', event.origin);
+                return;
+            }
+
+            if (!isPlayerReady) {
+                pendingMessages.push(event.data);
+                return;
+            }
+
+            try {
+                if (event.data.type === 'CHANGE_CHANNEL') {
+                    await loadChannel(event.data.channel);
+                }
+            } catch (error) {
+                console.error('Error handling message:', error);
+            }
+        });
+
+        // Error Handling
+        function onPlayerError(error) {
+            console.error('Player Error:', error.code, error);
+        }
+
+        function onUIError(error) {
+            console.error('UI Error:', error.detail);
+        }
+
+        // Event Listeners Shaka
+        document.addEventListener('shaka-ui-loaded', () => {
+            console.log('Shaka UI Loaded');
+            initPlayer().catch(console.error);
+        });
+
+        document.addEventListener('shaka-ui-load-failed', (error) => {
+            console.error('Shaka UI Gagal Load:', error.detail);
+        });
+
+        // Orientation Lock
+        function lockOrientation() {
+            if (screen.orientation?.lock) {
+                screen.orientation.lock('landscape')
+                    .catch(error => console.warn('Gagal lock orientation:', error));
+            }
+        }
+
+        // Fullscreen Handler
+        document.addEventListener('fullscreenchange', () => {
+            if (document.fullscreenElement) {
+                lockOrientation();
+            }
+        });
+    </script>
 </body>
 </html>

@@ -301,7 +301,7 @@
 
                 if (!shakaIframe.src.includes('kltraid.pages.dev')) {
                     shakaIframeReady = false;
-                    shakaIframe.src = 'https://kltraid.pages.dev/player.html';
+                    shakaIframe.src = 'https://kltraid.pages.dev/vip/mpdplayer.html';
                 } else if (shakaIframeReady) {
                     shakaIframe.contentWindow.postMessage({
                         type: 'CHANGE_CHANNEL',

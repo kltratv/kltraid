@@ -54,87 +54,94 @@
         </div>
     </center>
     
-    <script type="module">
-        import channels from './channel.js';
-        
-        // Update dengan domain Anda
-        const allowedDomains = [
-            'https://kltraid.pages.dev',
-            'http://localhost' // Untuk testing lokal
-        ];
+<script type="module">
+    import channels from './channel.js';
     
-        function validateOrigin(origin) {
+    const allowedDomains = [
+        'https://kltraid.pages.dev',
+        'http://localhost'
+    ];
+
+    // Fungsi validasi yang lebih akurat
+    function validateOrigin(origin) {
+        try {
+            const originUrl = new URL(origin);
             return allowedDomains.some(allowed => {
-                try {
-                    const allowedURL = new URL(allowed);
-                    const incomingURL = new URL(origin);
-                    return allowedURL.hostname === incomingURL.hostname;
-                } catch {
-                    return false;
-                }
+                const allowedUrl = new URL(allowed);
+                return originUrl.protocol === allowedUrl.protocol &&
+                       originUrl.hostname === allowedUrl.hostname &&
+                       originUrl.port === allowedUrl.port;
             });
+        } catch {
+            return false;
+        }
+    }
+
+    // Tambahkan state management
+    let isPlayerReady = false;
+    const pendingMessages = [];
+
+    window.addEventListener('message', async (event) => {
+        console.log('Received message from origin:', event.origin);
+        console.log('Message data:', event.data);
+        
+        if (!validateOrigin(event.origin)) {
+            console.warn(`Origin ${event.origin} not allowed`);
+            return;
         }
 
-        async function loadChannel(channelKey) {
-            const channel = channels[channelKey];
-            if (!channel) return;
+        if (!isPlayerReady) {
+            pendingMessages.push(event.data);
+            return;
+        }
 
-            // Clear existing content
-            await player.unload();
-            
-            // Configure DRM
-            player.configure({
-                drm: { clearKeys: channel.drm },
-                streaming: {
-                    startAtSegmentBoundary: true,
-                    rebufferingGoal: 1,
-                    bufferingGoal: 3,
-                    lowLatencyMode: true
-                }
-            });
-
+        if (event.data.type === 'CHANGE_CHANNEL') {
             try {
-                await player.load(channel.url);
-                console.log('Channel switched to:', channelKey);
+                await loadChannel(event.data.channel);
             } catch (error) {
-                console.error('Error loading channel:', error);
+                console.error('Channel change failed:', error);
             }
         }
+    });
 
-        window.addEventListener('message', async (event) => {
-            if (!validateOrigin(event.origin)) {
-                console.warn('Blocked message from unauthorized origin:', event.origin);
-                return;
-            }
-
-            if (event.data.type === 'CHANGE_CHANNEL') {
-                await loadChannel(event.data.channel);
-            }
-        });
-
-        async function init() {
+    async function init() {
+        try {
             const video = document.getElementById('video');
+            if (!video.ui) {
+                shaka.ui.install(video);
+            }
+            
             ui = video['ui'];
             player = ui.getControls().getPlayer();
-
-            player.addEventListener('error', console.error);
-            ui.configure({
-                seekBarColors: {
-                    base: 'rgba(255, 0, 0, 0.3)',
-                    buffered: 'rgba(255, 0, 0, 0.5)',
-                    played: 'red',
-                    adBreaks: 'yellow',
-                }
+            
+            // Tambahkan event listener untuk readiness
+            await player.isReady();
+            isPlayerReady = true;
+            
+            // Proses pesan yang tertunda
+            pendingMessages.forEach(msg => {
+                window.dispatchEvent(new MessageEvent('message', {
+                    data: msg,
+                    origin: window.location.origin
+                }));
             });
-
-            // Initial load if channel parameter exists
-            const urlParams = new URLSearchParams(location.search);
-            const initialChannel = urlParams.get('channel');
-            if (initialChannel) await loadChannel(initialChannel);
+            
+            console.log('Player initialized successfully');
+            
+        } catch (error) {
+            console.error('Initialization failed:', error);
         }
+    }
 
-        document.addEventListener('shaka-ui-loaded', init);
-        document.addEventListener('DOMContentLoaded', () => disableDevtool());
-    </script>
+    // Tambahkan error handling untuk Shaka UI
+    document.addEventListener('shaka-ui-loaded', () => {
+        console.log('Shaka UI loaded');
+        init().catch(console.error);
+    });
+    
+    document.addEventListener('shaka-ui-load-failed', (error) => {
+        console.error('Shaka UI failed to load:', error.detail);
+    });
+</script>
 </body>
 </html>

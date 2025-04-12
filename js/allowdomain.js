@@ -1,4 +1,3 @@
-<script type="text/javascript">
 // Daftar domain yang diizinkan melakukan iframe
 const allowedDomains = ["kltraidx01.blogspot.com", "yallashoot-ab01.blogspot.com", "bikinbaru96.blogspot.com", "www.streamkaltaraid.online"];
 
@@ -33,4 +32,3 @@ setInterval(checkAndRedirect, 30000);
 
 // Pengecekan pertama setelah 5 menit
 setTimeout(checkAndRedirect, 300000);
-</script>

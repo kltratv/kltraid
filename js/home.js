@@ -306,7 +306,7 @@
                     shakaIframe.contentWindow.postMessage({
                         type: 'CHANGE_CHANNEL',
                         channel: url
-                    }, 'https://kltraid.pages.dev/js');
+                    }, 'https://kltraid.pages.dev/');
                     pendingShakaChannel = null;
                 }
 
@@ -315,7 +315,7 @@
                 shakaIframe.style.display = 'block';
                 console.log('Channel loaded (via Shaka):', url);
             } else {
-                shakaIframe.contentWindow?.postMessage({ type: 'STOP_CHANNEL' }, 'https://kltraid.pages.dev/js');
+                shakaIframe.contentWindow?.postMessage({ type: 'STOP_CHANNEL' }, 'https://kltraid.pages.dev/');
                 if (videoIframe.src !== url) videoIframe.src = url;
                 videoIframe.style.display = 'block';
                 shakaIframe.style.display = 'none';
@@ -340,7 +340,7 @@
                     shakaIframe.contentWindow.postMessage({
                         type: 'CHANGE_CHANNEL',
                         channel: url
-                    }, 'https://kltraid.pages.dev/js');
+                    }, 'https://kltraid.pages.dev/');
                     pendingShakaChannel = null;
                 }
 
@@ -349,7 +349,7 @@
                 shakaIframe.style.display = 'block';
                 console.log('Loaded via Shaka:', url);
             } else {
-                shakaIframe.contentWindow?.postMessage({ type: 'STOP_CHANNEL' }, 'https://kltraid.pages.dev/js');
+                shakaIframe.contentWindow?.postMessage({ type: 'STOP_CHANNEL' }, 'https://kltraid.pages.dev/');
                 if (videoIframe.src !== url) videoIframe.src = url;
                 videoIframe.style.display = 'block';
                 shakaIframe.style.display = 'none';
@@ -533,7 +533,7 @@
                 iframe.contentWindow.postMessage({
                     type: 'CHANGE_CHANNEL',
                     channel: pendingShakaChannel
-                }, 'https://kltraid.pages.dev/js');
+                }, 'https://kltraid.pages.dev/');
                 console.log('[Shaka] Pending channel dikirim ulang:', pendingShakaChannel);
                 pendingShakaChannel = null;
             }

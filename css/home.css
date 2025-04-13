@@ -1,4 +1,4 @@
-      	/* Custom CSS for Video Player and Sidebar Layout */
+        /* Custom CSS for Video Player and Sidebar Layout */
         html, body {
             margin: 0;
             height: 100%;
@@ -38,6 +38,15 @@
             width: 100%;
             height: 100%;
             object-fit: cover; /* Tetap menggunakan cover untuk memastikan video mengisi seluruh wadah */
+        }
+      	#player {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: black; /* Optional: background hitam untuk player */
+          	display: none;
         }
         .channel-container {
             display: flex;

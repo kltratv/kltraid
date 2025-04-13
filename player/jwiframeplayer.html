@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Player</title>
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
-
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+  <script type="text/javascript" src="//disappearsurgery.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js"></script>
   <style>
     html, body {
       margin: 0;
@@ -78,10 +79,10 @@
     }
 
     @keyframes shadowRolling {
-      0% { box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0, 0px 0, 0px 0; }
-      12% { box-shadow: 100px 0 white, 0px 0, 0px 0, 0px 0; }
-      25% { box-shadow: 110px 0 white, 100px 0 white, 0px 0, 0px 0; }
-      36% { box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0; }
+      0% { box-shadow: 0 0 transparent, 0 0 transparent, 0 0 transparent, 0 0 transparent; }
+      12% { box-shadow: 100px 0 white, 0 0 transparent, 0 0 transparent, 0 0 transparent; }
+      25% { box-shadow: 110px 0 white, 100px 0 white, 0 0 transparent, 0 0 transparent; }
+      36% { box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0 0 transparent; }
       50% { box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white; }
       62% { box-shadow: 200px 0 transparent, 130px 0 white, 120px 0 white, 110px 0 white; }
       75% { box-shadow: 200px 0 transparent, 200px 0 transparent, 130px 0 white, 120px 0 white; }
@@ -91,7 +92,7 @@
   </style>
 </head>
 <body>
-  <div id="loaderContainer" class="loader-container hidden">
+  <div id="loaderContainer" class="loader-container">
     <div class="loader"></div>
     <div>Comeback later</div>
   </div>
@@ -107,41 +108,40 @@
 
   <script>
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-    const loader = document.getElementById('loaderContainer');
-    const jwContainer = document.getElementById('jwContainer');
-    const videoIframe = document.getElementById('videoIframe');
-    let playerInstance = null;
+    let playerInstance;
 
-    const excludedDomains = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
-    const noReferrerKeywords = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
+    function showLoader() {
+      document.getElementById('loaderContainer').classList.remove('hidden');
+      document.getElementById('jwContainer').classList.add('hidden');
+      document.getElementById('videoIframe').classList.add('hidden');
+    }
 
-    function loadStream(url) {
+    function hideLoader() {
+      document.getElementById('loaderContainer').classList.add('hidden');
+    }
+
+    function loadVideo(url) {
       if (!url) {
-        loader.classList.remove('hidden');
-        return;
+        showLoader();
+        throw new Error("No URL provided");
       }
 
-      const link = new URL(url);
-
-      // Handle referrer
-      if (noReferrerKeywords.some(k => link.hostname.includes(k))) {
+      // Referrer protection
+      const noReferrerKeywords = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
+      const link = document.createElement('a');
+      link.href = url;
+      if (noReferrerKeywords.some(keyword => link.hostname.includes(keyword))) {
         const meta = document.createElement('meta');
         meta.name = 'referrer';
         meta.content = 'no-referrer';
         document.head.appendChild(meta);
       }
 
-      // JWPlayer
       if (url.includes('.m3u8')) {
-        videoIframe.classList.add('hidden');
-        videoIframe.src = '';
-        jwContainer.classList.remove('hidden');
+        document.getElementById('jwContainer').classList.remove('hidden');
+        document.getElementById('videoIframe').classList.add('hidden');
 
-        if (playerInstance) {
-          playerInstance.remove();
-        }
-
-        playerInstance = jwplayer('player').setup({
+        playerInstance = jwplayer("player").setup({
           playlist: [{
             file: url,
             image: 'https://kltraid.pages.dev/images/poster.png',
@@ -161,11 +161,11 @@
 
         playerInstance.addButton(
           `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
-            <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
+              <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+              <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
           </svg>`,
-          "Refresh",
-          function () {
+          "Refresh Video",
+          () => {
             const currentFile = playerInstance.getPlaylistItem().file;
             playerInstance.stop().load({ file: currentFile }).play();
           },
@@ -179,36 +179,32 @@
         });
 
       } else {
-        jwContainer.classList.add('hidden');
-        if (playerInstance) playerInstance.remove();
-        videoIframe.classList.remove('hidden');
+        document.getElementById('jwContainer').classList.add('hidden');
+        document.getElementById('videoIframe').classList.remove('hidden');
+        document.getElementById('videoIframe').src = url;
 
-        if (excludedDomains.includes(link.hostname)) {
-          videoIframe.removeAttribute('sandbox');
+        const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
+        if (excluded.includes(link.hostname)) {
+          document.getElementById('videoIframe').removeAttribute('sandbox');
         }
-
-        videoIframe.src = url;
       }
+
+      hideLoader();
     }
 
-    // postMessage listener
+    // PostMessage Handler
     window.addEventListener('message', (event) => {
-      if (!event.data || typeof event.data !== 'object') return;
+      // Optional: Batasi hanya dari domain tertentu
+      const allowedOrigins = ['https://bikinbaru96.blogspot.com', 'http://localhost'];
+      if (!allowedOrigins.includes(event.origin)) return;
 
-      const { type, stream } = event.data;
-
-      if (type === 'CHANGE_STREAM') {
-        loadStream(stream);
-      } else if (type === 'STOP_STREAM') {
-        if (playerInstance) playerInstance.stop();
-        videoIframe.src = '';
+      const data = event.data;
+      if (data && data.type === 'SET_VIDEO' && data.url) {
+        loadVideo(data.url);
       }
     });
 
-    // Kirim READY ke parent
-    window.parent.postMessage('READY', '*');
-
-    // Fullscreen
+    // Orientation Lock
     function onFullscreenChange() {
       if (document.fullscreenElement) {
         screen.orientation?.lock('landscape').catch(console.error);
@@ -219,7 +215,9 @@
 
     document.addEventListener('fullscreenchange', onFullscreenChange);
     document.addEventListener('webkitfullscreenchange', onFullscreenChange);
-    window.addEventListener('load', () => disableDevtool());
+    window.addEventListener('load', () => {
+      disableDevtool();
+    });
   </script>
 </body>
 </html>

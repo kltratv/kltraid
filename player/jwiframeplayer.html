@@ -7,6 +7,8 @@
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
   <script type="text/javascript" src="//disappearsurgery.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js"></script>
+  <script type="module" src="./sources.js"></script>
+
   <style>
     html, body {
       margin: 0;
@@ -106,9 +108,11 @@
     allow="encrypted-media; autoplay">
   </iframe>
 
-  <script>
+  <script type="module">
+    import sources from './sources.js';
+
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
-    let playerInstance;
+    let playerInstance = null;
 
     function showLoader() {
       document.getElementById('loaderContainer').classList.remove('hidden');
@@ -120,22 +124,20 @@
       document.getElementById('loaderContainer').classList.add('hidden');
     }
 
-    function loadVideo(url) {
-      if (!url) {
-        showLoader();
-        throw new Error("No URL provided");
-      }
-
-      // Referrer protection
-      const noReferrerKeywords = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
+    function setReferrerPolicy(url) {
+      const blocked = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
       const link = document.createElement('a');
       link.href = url;
-      if (noReferrerKeywords.some(keyword => link.hostname.includes(keyword))) {
+      if (blocked.some(keyword => link.hostname.includes(keyword))) {
         const meta = document.createElement('meta');
         meta.name = 'referrer';
         meta.content = 'no-referrer';
         document.head.appendChild(meta);
       }
+    }
+
+    function loadVideoByUrl(url) {
+      setReferrerPolicy(url);
 
       if (url.includes('.m3u8')) {
         document.getElementById('jwContainer').classList.remove('hidden');
@@ -161,8 +163,8 @@
 
         playerInstance.addButton(
           `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
-              <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+            <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
           </svg>`,
           "Refresh Video",
           () => {
@@ -179,32 +181,46 @@
         });
 
       } else {
+        const iframe = document.getElementById('videoIframe');
         document.getElementById('jwContainer').classList.add('hidden');
-        document.getElementById('videoIframe').classList.remove('hidden');
-        document.getElementById('videoIframe').src = url;
+        iframe.classList.remove('hidden');
+        iframe.src = url;
 
         const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
-        if (excluded.includes(link.hostname)) {
-          document.getElementById('videoIframe').removeAttribute('sandbox');
+        const hostname = new URL(url).hostname;
+        if (excluded.includes(hostname)) {
+          iframe.removeAttribute('sandbox');
         }
       }
 
       hideLoader();
     }
 
-    // PostMessage Handler
-    window.addEventListener('message', (event) => {
-      // Optional: Batasi hanya dari domain tertentu
-      const allowedOrigins = ['https://bikinbaru96.blogspot.com', 'http://localhost'];
-      if (!allowedOrigins.includes(event.origin)) return;
+    function handlePostMessage(event) {
+      const allowed = ['https://bikinbaru96.blogspot.com', 'http://localhost'];
+      if (!allowed.includes(event.origin)) return;
 
-      const data = event.data;
-      if (data && data.type === 'SET_VIDEO' && data.url) {
-        loadVideo(data.url);
+      const { type, key, url } = event.data;
+
+      if (type === 'SET_VIDEO' && key && sources[key]) {
+        showLoader();
+        loadVideoByUrl(sources[key]);
       }
+
+      if (type === 'CHANGE_STREAM' && url) {
+        showLoader();
+        loadVideoByUrl(url);
+      }
+    }
+
+    window.addEventListener('message', handlePostMessage);
+
+    // Kirim sinyal READY seperti Shaka
+    window.addEventListener('load', () => {
+      window.parent.postMessage('READY', '*');
+      disableDevtool();
     });
 
-    // Orientation Lock
     function onFullscreenChange() {
       if (document.fullscreenElement) {
         screen.orientation?.lock('landscape').catch(console.error);
@@ -215,9 +231,6 @@
 
     document.addEventListener('fullscreenchange', onFullscreenChange);
     document.addEventListener('webkitfullscreenchange', onFullscreenChange);
-    window.addEventListener('load', () => {
-      disableDevtool();
-    });
   </script>
 </body>
 </html>

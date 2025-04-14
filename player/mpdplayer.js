@@ -1,5 +1,5 @@
     import channels from './channel.js';
-    import { allowedDomains, allowedHosts, fallbackRedirect } from '/js/allowdomain.js'; // ✅ lengkap
+    import { allowedDomains, allowedHosts, fallbackRedirect } from 'https://kltraid.pages.dev/js/allowdomain.js';
     
     function enforceAllowedHost() {
         const currentHost = window.location.hostname;

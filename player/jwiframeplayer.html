@@ -104,6 +104,16 @@
       }
     }
 
+    function handleJWFullscreen(fullscreen) {
+      if (fullscreen) {
+        screen.orientation?.lock('landscape').catch(err => {
+          console.warn('[JW] Orientation lock failed:', err);
+        });
+      } else {
+        screen.orientation?.unlock?.();
+      }
+    }
+
     function loadVideoByUrl(url) {
       destroyJWPlayer();
       document.getElementById('videoIframe').src = 'about:blank';
@@ -129,6 +139,11 @@
           logo: { file: '' },
           cast: {},
           sharing: false
+        });
+
+        playerInstance.on('fullscreen', isFullscreen => {
+          playerInstance.setMute(true);
+          handleJWFullscreen(isFullscreen);
         });
 
         playerInstance.addButton(
@@ -196,16 +211,6 @@
       window.parent.postMessage('JW_READY', '*');
       disableDevtool();
     });
-
-    function onFullscreenChange() {
-      if (playerInstance && typeof playerInstance.setMute === 'function') {
-        playerInstance.setMute(true);
-        console.log('[JW] Mute enforced on fullscreen');
-      }
-    }
-
-    document.addEventListener('fullscreenchange', onFullscreenChange);
-    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
   </script>
 </body>
 </html>

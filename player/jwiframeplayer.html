@@ -217,7 +217,7 @@
 
     // Kirim sinyal READY seperti Shaka
     window.addEventListener('load', () => {
-      window.parent.postMessage('READY', '*');
+      window.parent.postMessage('JW_READY', '*'); // ✅ khusus JWPlayer
       disableDevtool();
     });
 

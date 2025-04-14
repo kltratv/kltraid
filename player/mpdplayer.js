@@ -1,18 +1,5 @@
     import channels from './channel.js';
-    import { allowedDomains, allowedHosts, fallbackRedirect } from 'https://kltraid.pages.dev/js/allowdomain.js';
-    
-    function enforceAllowedHost() {
-        const currentHost = window.location.hostname;
-    
-        if (!allowedHosts.includes(currentHost)) {
-            console.error('Access denied: Unauthorized host ->', currentHost);
-            window.location.href = fallbackRedirect;
-        }
-    }
-    
-    enforceAllowedHost(); // panggil sebelum load apapun
-    
-    //////////////////////////////////////////////////////////////////
+    import { allowedDomains } from '/js/allowdomain.js';
     
     let player, ui, controls;
     let isPlayerReady = false;

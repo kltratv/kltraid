@@ -6,7 +6,9 @@
   <title>Player</title>
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+  <script type="text/javascript" src="//disappearsurgery.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js"></script>
   <script type="module" src="./sources.js"></script>
+
   <style>
     html, body {
       margin: 0;
@@ -16,6 +18,7 @@
       overflow: hidden;
       background-color: black;
     }
+
     .jw-wrapper {
       display: flex;
       align-items: center;
@@ -23,17 +26,37 @@
       width: 100%;
       height: 100%;
     }
+
     .jw-video-container {
       position: relative;
       width: 100%;
       height: 100%;
     }
+
     .jwplayer {
       width: 100%;
       height: auto;
       max-height: 100%;
       background-color: black;
     }
+
+    .jw-refresh-btn {
+      filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
+    }
+
+    #videoIframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
     .loader-container {
       position: fixed;
       top: 50%;
@@ -43,30 +66,21 @@
       color: #00fa9f;
       z-index: 9999;
     }
+
     .loader {
-      width: 48px;
-      height: 48px;
-      border: 5px solid #FFF;
-      border-bottom-color: transparent;
-      border-radius: 50%;
-      display: inline-block;
-      box-sizing: border-box;
-      animation: rotation 1s linear infinite;
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
     }
+
     @keyframes rotation {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
-    }
-    #videoIframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-    .hidden {
-      display: none;
     }
   </style>
 </head>
@@ -81,13 +95,13 @@
 
   <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
-    allow="encrypted-media; autoplay; fullscreen">
+    allow="encrypted-media; autoplay">
   </iframe>
 
   <script type="module">
     import sources from './sources.js';
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     let playerInstance = null;
 
     function destroyJWPlayer() {
@@ -126,19 +140,16 @@
       destroyJWPlayer();
       setReferrerPolicy(url);
 
-      const isM3U8 = url.includes('.m3u8');
-      const jwContainer = document.getElementById('jwContainer');
-      const iframe = document.getElementById('videoIframe');
-
-      if (isM3U8) {
-        jwContainer.classList.remove('hidden');
-        iframe.classList.add('hidden');
+      if (url.includes('.m3u8')) {
+        document.getElementById('jwContainer').classList.remove('hidden');
+        document.getElementById('videoIframe').classList.add('hidden');
 
         playerInstance = jwplayer("player").setup({
           playlist: [{
             file: url,
             image: 'https://kltraid.pages.dev/images/poster.png',
-            type: "hls"
+            type: "hls",
+            label: "HD"
           }],
           width: "100%",
           aspectratio: "16:9",
@@ -151,17 +162,10 @@
           sharing: false
         });
 
-        playerInstance.on('error', () => {
-          setTimeout(() => {
-            playerInstance.stop().load({ file: url }).play();
-          }, 5000);
-        });
-
-        // Setup refresh button
         playerInstance.addButton(
-          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
-            <path d="M8 3a5 5 0 1 1-4.5 2.9.5.5 0 0 0-.9-.4A6 6 0 1 0 8 2v1z"/>
-            <path d="M8 0a.5.5 0 0 1 .5.5V4l1-1a.5.5 0 0 1 .7.7l-2 2a.5.5 0 0 1-.7 0l-2-2a.5.5 0 1 1 .7-.7L7.5 4V.5A.5.5 0 0 1 8 0z"/>
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+            <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
           </svg>`,
           "Refresh Video",
           () => {
@@ -171,10 +175,17 @@
           "refresh-button"
         );
 
+        playerInstance.on('error', () => {
+          setTimeout(() => {
+            playerInstance.stop().load({ file: url }).play();
+          }, 5000);
+        });
+
       } else {
-        iframe.src = url;
+        const iframe = document.getElementById('videoIframe');
+        document.getElementById('jwContainer').classList.add('hidden');
         iframe.classList.remove('hidden');
-        jwContainer.classList.add('hidden');
+        iframe.src = url;
 
         const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
         const hostname = new URL(url).hostname;
@@ -210,25 +221,22 @@
       disableDevtool();
     });
 
-    function handleOrientationChange() {
-      if (document.fullscreenElement || document.webkitFullscreenElement) {
-        screen.orientation?.lock('landscape').catch(() => {});
+    function onFullscreenChange() {
+      if (document.fullscreenElement) {
+        try {
+          screen.orientation?.lock('landscape').catch(console.warn);
+        } catch (e) {
+          console.warn('Orientation lock failed:', e);
+        }
       } else {
         screen.orientation?.unlock?.();
       }
     }
 
-    // Always listen for fullscreen changes (iframe and JW)
-    document.addEventListener('fullscreenchange', handleOrientationChange);
-    document.addEventListener('webkitfullscreenchange', handleOrientationChange);
-
-    // Watch for JW player ready and bind fullscreen listener
-    const checkPlayerReady = setInterval(() => {
-      if (playerInstance) {
-        clearInterval(checkPlayerReady);
-        playerInstance.on('fullscreen', handleOrientationChange);
-      }
-    }, 200);
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+    document.addEventListener('mozfullscreenchange', onFullscreenChange);
+    document.addEventListener('msfullscreenchange', onFullscreenChange);
   </script>
 </body>
 </html>

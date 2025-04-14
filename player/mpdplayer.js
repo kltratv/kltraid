@@ -1,19 +1,19 @@
     import channels from './channel.js';
-    import { allowedDomains } from '/js/allowdomain.js';
-
+    import { allowedDomains, allowedHosts, fallbackRedirect } from '/js/allowdomain.js'; // ✅ lengkap
+    
     function enforceAllowedHost() {
-    const currentHost = window.location.hostname;
-
-    if (!allowedHosts.includes(currentHost)) {
+        const currentHost = window.location.hostname;
+    
+        if (!allowedHosts.includes(currentHost)) {
             console.error('Access denied: Unauthorized host ->', currentHost);
             window.location.href = fallbackRedirect;
         }
     }
     
     enforceAllowedHost(); // panggil sebelum load apapun
-
+    
     //////////////////////////////////////////////////////////////////
-
+    
     let player, ui, controls;
     let isPlayerReady = false;
     const pendingMessages = [];

@@ -1,5 +1,21 @@
+  // ⬇️ Import terlebih dahulu dari 1 file konfigurasi
+  import { allowedDomains, allowedHosts, fallbackRedirect } from '/js/allowdomain.js';
+  
+  // ⬇️ Jalankan validasi host sebelum load logic lainnya
+  function enforceAllowedHost() {
+      const currentHost = window.location.hostname;
+  
+      if (!allowedHosts.includes(currentHost)) {
+          console.error('Access denied: Unauthorized host ->', currentHost);
+          window.location.href = fallbackRedirect;
+      }
+  }
+  
+  enforceAllowedHost(); // panggil seawal mungkin
+
+
   import sources from './sdplayersources.js';
-  import { allowedDomains } from '/js/allowdomain.js';
+
   jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 
   let playerInstance = null;

@@ -308,7 +308,7 @@ function setupChannels() {
                 shakaIframe.contentWindow.postMessage({
                     type: 'CHANGE_CHANNEL',
                     channel: channelKey
-                }, 'https://kltraid.pages.dev/');
+                }, 'https://bikinbaru96.blogspot.com');
                 pendingShakaChannel = null;
             }
 
@@ -328,7 +328,7 @@ function setupChannels() {
 
             if (!videoIframe.src.includes('jwiframeplayer.html')) {
                 jwIframeReady = false;
-                videoIframe.src = 'https://kltraid.pages.dev/player/sdplayer.html';
+                videoIframe.src = 'https://bikinbaru96.blogspot.com/p/player.html';
             } else if (jwIframeReady) {
                 videoIframe.contentWindow.postMessage({ type: 'SET_VIDEO', key: cleanKey }, '*');
                 pendingJWKey = null;

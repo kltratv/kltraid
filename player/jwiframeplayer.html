@@ -110,68 +110,68 @@
     }
   }
 
-  function loadVideoByUrl(url) {
-    destroyJWPlayer();
-    setReferrerPolicy(url);
+function loadVideoByUrl(url) {
+  destroyJWPlayer();
+  setReferrerPolicy(url);
 
-    const iframe = document.getElementById('videoIframe');
-    iframe.src = 'about:blank';
-    iframe.classList.add('hidden');
+  const iframe = document.getElementById('videoIframe');
+  iframe.src = 'about:blank'; // 🧹 Matikan video lama
+  iframe.classList.add('hidden');
 
-    if (url.includes('.m3u8')) {
-      document.getElementById('jwContainer').classList.remove('hidden');
+  if (url.includes('.m3u8')) {
+    document.getElementById('jwContainer').classList.remove('hidden');
 
-      playerInstance = jwplayer("player").setup({
-        playlist: [{
-          file: url,
-          image: 'https://kltraid.pages.dev/images/poster.png',
-          type: "hls",
-          label: "HD"
-        }],
-        width: "100%",
-        aspectratio: "16:9",
-        autostart: true,
-        mute: false,
-        stretching: "uniform",
-        playsinline: true,
-        logo: { file: '' },
-        cast: {},
-        sharing: false
-      });
+    playerInstance = jwplayer("player").setup({
+      playlist: [{
+        file: url,
+        image: 'https://kltraid.pages.dev/images/poster.png',
+        type: "hls",
+        label: "HD"
+      }],
+      width: "100%",
+      aspectratio: "16:9",
+      autostart: true,
+      mute: false,
+      stretching: "uniform",
+      playsinline: true,
+      logo: { file: '' },
+      cast: {},
+      sharing: false
+    });
 
-      playerInstance.addButton(
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
-          <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
-          <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
-        </svg>`,
-        "Refresh Video",
-        () => {
-          const currentFile = playerInstance.getPlaylistItem().file;
-          playerInstance.stop().load({ file: currentFile }).play();
-        },
-        "refresh-button"
-      );
+    playerInstance.addButton(
+      `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+        <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
+      </svg>`,
+      "Refresh Video",
+      () => {
+        const currentFile = playerInstance.getPlaylistItem().file;
+        playerInstance.stop().load({ file: currentFile }).play();
+      },
+      "refresh-button"
+    );
 
-      playerInstance.on('error', () => {
-        setTimeout(() => {
-          playerInstance.stop().load({ file: url }).play();
-        }, 5000);
-      });
+    playerInstance.on('error', () => {
+      setTimeout(() => {
+        playerInstance.stop().load({ file: url }).play();
+      }, 5000);
+    });
 
-    } else {
-      document.getElementById('jwContainer').classList.add('hidden');
-      iframe.classList.remove('hidden');
-      iframe.src = url;
+  } else {
+    document.getElementById('jwContainer').classList.add('hidden');
+    iframe.src = url;
+    iframe.classList.remove('hidden');
 
-      const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
-      const hostname = new URL(url).hostname;
-      if (excluded.includes(hostname)) {
-        iframe.removeAttribute('sandbox');
-      }
+    const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
+    const hostname = new URL(url).hostname;
+    if (excluded.includes(hostname)) {
+      iframe.removeAttribute('sandbox');
     }
-
-    hideLoader();
   }
+
+  hideLoader();
+}
 
   function handlePostMessage(event) {
     const allowed = ['https://bikinbaru96.blogspot.com', 'http://localhost'];

@@ -69,7 +69,6 @@
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
     allow="encrypted-media; autoplay">
   </iframe>
-
 <script type="module">
   import sources from './sources.js';
   jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
@@ -118,24 +117,18 @@
     }
   }
 
-  function patchJWFullscreenButton(container) {
-    const tryPatch = setInterval(() => {
-      const fsBtn = container.querySelector('.jw-icon-fullscreen');
-      const video = container.querySelector('video');
-      if (fsBtn && video) {
-        fsBtn.onclick = () => {
-          const reqFS = video.requestFullscreen || video.webkitRequestFullscreen || video.msRequestFullscreen;
-          if (reqFS) {
-            reqFS.call(video).then(() => {
-              requestLandscapeOrientation();
-            });
-          }
-        };
-        clearInterval(tryPatch);
-        console.log('[JW] Patched fullscreen button for landscape');
-      }
-    }, 300);
+  function handleFullscreenChange() {
+    const elem = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    if (elem) {
+      requestLandscapeOrientation();
+    }
   }
+
+  // Global fullscreen listeners
+  document.addEventListener('fullscreenchange', handleFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', handleFullscreenChange);
+  document.addEventListener('mozfullscreenchange', handleFullscreenChange);
+  document.addEventListener('MSFullscreenChange', handleFullscreenChange);
 
   function loadVideoByUrl(url) {
     destroyJWPlayer();
@@ -164,11 +157,6 @@
         logo: { file: '' },
         cast: {},
         sharing: false
-      });
-
-      playerInstance.on('ready', () => {
-        const container = playerInstance.getContainer();
-        patchJWFullscreenButton(container);
       });
 
       playerInstance.addButton(
@@ -229,7 +217,6 @@
     disableDevtool();
   });
 </script>
-
 
 </body>
 </html>

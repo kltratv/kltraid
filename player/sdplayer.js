@@ -99,7 +99,7 @@
     hideLoader();
   }
 
-  function handlePostMessage(event) {
+function handlePostMessage(event) {
     if (!allowedDomains.includes(event.origin)) return;
 
     const { type, key, url } = event.data;

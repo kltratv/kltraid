@@ -70,7 +70,7 @@
     allow="encrypted-media; autoplay">
   </iframe>
 
-<script type="module">
+  <script type="module">
   import sources from './sources.js';
   jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 
@@ -91,7 +91,7 @@
     document.getElementById('jwContainer').classList.add('hidden');
     const iframe = document.getElementById('videoIframe');
     iframe.classList.add('hidden');
-    iframe.src = 'about:blank'; // stop previous iframe
+    iframe.src = 'about:blank';
   }
 
   function hideLoader() {
@@ -110,32 +110,30 @@
     }
   }
 
-  function patchJWFullscreen(playerInstance) {
-    const container = playerInstance.getContainer();
-    const patch = () => {
-      const fsBtn = container.querySelector('.jw-icon-fullscreen');
-      const video = container.querySelector('.jw-video');
-
-      if (fsBtn && video) {
-        fsBtn.addEventListener('click', () => {
-          const goFullscreen = video.requestFullscreen || video.webkitRequestFullscreen;
-          if (goFullscreen) {
-            goFullscreen.call(video).then(() => {
-              screen.orientation?.lock?.('landscape').catch(console.warn);
-            });
-          }
-        });
-        console.log('[JW] Fullscreen override patched');
-      }
-    };
-
-    const interval = setInterval(() => {
-      if (container.querySelector('.jw-icon-fullscreen')) {
-        patch();
-        clearInterval(interval);
-      }
-    }, 300);
+  function requestLandscapeOrientation() {
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock('landscape').catch(err => {
+        console.warn('[Orientation] Lock failed:', err);
+      });
+    }
   }
+
+  function onFullscreenChange() {
+    if (
+      document.fullscreenElement ||
+      document.webkitFullscreenElement ||
+      document.mozFullScreenElement ||
+      document.msFullscreenElement
+    ) {
+      requestLandscapeOrientation();
+    }
+  }
+
+  // Bind once globally for JW fullscreen detection
+  document.addEventListener('fullscreenchange', onFullscreenChange);
+  document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+  document.addEventListener('mozfullscreenchange', onFullscreenChange);
+  document.addEventListener('MSFullscreenChange', onFullscreenChange);
 
   function loadVideoByUrl(url) {
     destroyJWPlayer();
@@ -151,7 +149,7 @@
       playerInstance = jwplayer("player").setup({
         playlist: [{
           file: url,
-          image: '',
+          image: 'https://kltraid.pages.dev/images/poster.png',
           type: "hls",
           label: "HD"
         }],
@@ -164,10 +162,6 @@
         logo: { file: '' },
         cast: {},
         sharing: false
-      });
-
-      playerInstance.on('ready', () => {
-        patchJWFullscreen(playerInstance);
       });
 
       playerInstance.addButton(
@@ -199,16 +193,6 @@
       if (excluded.includes(hostname)) {
         iframe.removeAttribute('sandbox');
       }
-
-      // Try fullscreen + lock orientation if user taps iframe
-      iframe.addEventListener('click', () => {
-        const req = iframe.requestFullscreen || iframe.webkitRequestFullscreen;
-        if (req) {
-          req.call(iframe).then(() => {
-            screen.orientation?.lock?.('landscape').catch(console.warn);
-          });
-        }
-      });
     }
 
     hideLoader();
@@ -237,22 +221,7 @@
     window.parent.postMessage('JW_READY', '*');
     disableDevtool();
   });
-
-  // Fallback orientation lock if native fullscreen button used
-  function onFullscreenChange() {
-    const elem = document.fullscreenElement || document.webkitFullscreenElement;
-    if (elem) {
-      screen.orientation?.lock?.('landscape').catch(console.warn);
-    } else {
-      screen.orientation?.unlock?.();
-    }
-  }
-
-  document.addEventListener('fullscreenchange', onFullscreenChange);
-  document.addEventListener('webkitfullscreenchange', onFullscreenChange);
 </script>
-
-
 
 </body>
 </html>

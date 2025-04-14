@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>MPD Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/css/mpdplayer.css">
+    <script src="/js/hitstats.js"></script>
+    <script src="/js/allowdomain.js"></script>
+    <!--<script src="/js/disabledadblock.js"></script>-->
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+    <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/ae/3b/26/ae3b266ab5ae91abcaa715535a094b32.js'></script>
+    
+</head>
+<body>
+    <center>
+        <div data-shaka-player-container style="width: 100%; height: 100%; cursor: none;" shaka-controls="true" class="shaka-video-container">
+            <video autoplay data-shaka-player id="video" style="width:100%;height:100%;" class="shaka-video" poster="/images/poster.png"></video>
+            <div class="shaka-controls-container"></div>
+        </div>
+    </center>
+
+    <script type="module" src="/js/mpdplayer.js"></script>
+
+</body>
+</html>

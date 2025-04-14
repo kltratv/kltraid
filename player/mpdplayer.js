@@ -1,5 +1,5 @@
     import channels from './channel.js';
-    import { allowedDomains } from './allowdomain.js';
+    import { allowedDomains } from '/js/allowdomain.js';
 
     let player, ui, controls;
     let isPlayerReady = false;

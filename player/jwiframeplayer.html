@@ -91,7 +91,7 @@
     document.getElementById('jwContainer').classList.add('hidden');
     const iframe = document.getElementById('videoIframe');
     iframe.classList.add('hidden');
-    iframe.src = 'about:blank';
+    iframe.src = 'about:blank'; // stop previous iframe
   }
 
   function hideLoader() {
@@ -108,6 +108,33 @@
       meta.content = 'no-referrer';
       document.head.appendChild(meta);
     }
+  }
+
+  function patchJWFullscreen(playerInstance) {
+    const container = playerInstance.getContainer();
+    const patch = () => {
+      const fsBtn = container.querySelector('.jw-icon-fullscreen');
+      const video = container.querySelector('.jw-video');
+
+      if (fsBtn && video) {
+        fsBtn.addEventListener('click', () => {
+          const goFullscreen = video.requestFullscreen || video.webkitRequestFullscreen;
+          if (goFullscreen) {
+            goFullscreen.call(video).then(() => {
+              screen.orientation?.lock?.('landscape').catch(console.warn);
+            });
+          }
+        });
+        console.log('[JW] Fullscreen override patched');
+      }
+    };
+
+    const interval = setInterval(() => {
+      if (container.querySelector('.jw-icon-fullscreen')) {
+        patch();
+        clearInterval(interval);
+      }
+    }, 300);
   }
 
   function loadVideoByUrl(url) {
@@ -140,35 +167,7 @@
       });
 
       playerInstance.on('ready', () => {
-        const container = playerInstance.getContainer();
-
-        // 🧠 Override tombol fullscreen agar trigger langsung
-        const patchFullscreenButton = () => {
-          const fsBtn = container.querySelector('.jw-icon-fullscreen');
-          const video = container.querySelector('.jw-video');
-
-          if (fsBtn && video) {
-            fsBtn.onclick = () => {
-              if (video.requestFullscreen) {
-                video.requestFullscreen().then(() => {
-                  screen.orientation?.lock?.('landscape').catch(console.warn);
-                });
-              } else if (video.webkitRequestFullscreen) {
-                video.webkitRequestFullscreen();
-                screen.orientation?.lock?.('landscape').catch(console.warn);
-              }
-            };
-            console.log('[JW] Fullscreen button patched');
-          }
-        };
-
-        // ⏳ Pastikan tombol tersedia
-        const patchInterval = setInterval(() => {
-          if (container.querySelector('.jw-icon-fullscreen')) {
-            patchFullscreenButton();
-            clearInterval(patchInterval);
-          }
-        }, 300);
+        patchJWFullscreen(playerInstance);
       });
 
       playerInstance.addButton(
@@ -200,6 +199,16 @@
       if (excluded.includes(hostname)) {
         iframe.removeAttribute('sandbox');
       }
+
+      // Try fullscreen + lock orientation if user taps iframe
+      iframe.addEventListener('click', () => {
+        const req = iframe.requestFullscreen || iframe.webkitRequestFullscreen;
+        if (req) {
+          req.call(iframe).then(() => {
+            screen.orientation?.lock?.('landscape').catch(console.warn);
+          });
+        }
+      });
     }
 
     hideLoader();
@@ -229,6 +238,7 @@
     disableDevtool();
   });
 
+  // Fallback orientation lock if native fullscreen button used
   function onFullscreenChange() {
     const elem = document.fullscreenElement || document.webkitFullscreenElement;
     if (elem) {
@@ -241,6 +251,7 @@
   document.addEventListener('fullscreenchange', onFullscreenChange);
   document.addEventListener('webkitfullscreenchange', onFullscreenChange);
 </script>
+
 
 
 </body>

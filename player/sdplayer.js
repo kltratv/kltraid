@@ -99,7 +99,7 @@
   }
 
   function handlePostMessage(event) {
-    if (!allowed.includes(event.origin)) return;
+    if (!allowedDomains.includes(event.origin)) return;
 
     const { type, key, url } = event.data;
 

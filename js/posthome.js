@@ -303,7 +303,7 @@ function setupChannels() {
 
             if (!shakaIframe.src.includes('mpdplayer.html')) {
                 shakaIframeReady = false;
-                shakaIframe.src = 'https://kltraid.pages.dev/player/mpdplayer.html';
+                shakaIframe.src = 'https://bikinbaru96.blogspot.com/p/mpd-player.html';
             } else if (shakaIframeReady) {
                 shakaIframe.contentWindow.postMessage({
                     type: 'CHANGE_CHANNEL',
@@ -320,7 +320,7 @@ function setupChannels() {
 
         function playJW(key) {
             if (shakaIframe && shakaIframe.contentWindow) {
-                shakaIframe.contentWindow.postMessage({ type: 'STOP_CHANNEL' }, 'https://kltraid.pages.dev/');
+                shakaIframe.contentWindow.postMessage({ type: 'STOP_CHANNEL' }, 'https://bikinbaru96.blogspot.com');
             }
 
             const cleanKey = key.startsWith('key=') ? key.split('key=')[1] : key;
@@ -527,7 +527,7 @@ function setupChannels() {
 
     // Ensure correct video is loaded when returning from popunder
     window.addEventListener('message', (event) => {
-        if (event.origin !== 'https://kltraid.pages.dev') return;
+        if (event.origin !== 'https://bikinbaru96.blogspot.com') return;
 
         if (event.data === 'READY') {
             console.log('[Shaka] Player READY diterima dari iframe');

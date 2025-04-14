@@ -222,21 +222,35 @@
     });
 
     function onFullscreenChange() {
-      if (document.fullscreenElement) {
+      const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+    
+      if (isFullscreen) {
         try {
-          screen.orientation?.lock('landscape').catch(console.warn);
+          if (screen.orientation && screen.orientation.lock) {
+            screen.orientation.lock('landscape').then(() => {
+              console.log('[Orientation] Locked to landscape');
+            }).catch(err => {
+              console.warn('[Orientation] Lock failed:', err.message);
+            });
+          }
         } catch (e) {
-          console.warn('Orientation lock failed:', e);
+          console.warn('[Orientation] Exception:', e.message);
         }
       } else {
-        screen.orientation?.unlock?.();
+        try {
+          screen.orientation?.unlock?.();
+          console.log('[Orientation] Unlocked');
+        } catch (e) {
+          // Ignore silently
+        }
       }
     }
-
+    
     document.addEventListener('fullscreenchange', onFullscreenChange);
     document.addEventListener('webkitfullscreenchange', onFullscreenChange);
     document.addEventListener('mozfullscreenchange', onFullscreenChange);
-    document.addEventListener('msfullscreenchange', onFullscreenChange);
+    document.addEventListener('MSFullscreenChange', onFullscreenChange);
+
   </script>
 </body>
 </html>

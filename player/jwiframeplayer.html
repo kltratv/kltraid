@@ -6,7 +6,6 @@
   <title>Player</title>
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-  <script type="module" src="./sources.js"></script>
   <style>
     html, body {
       margin: 0;
@@ -24,8 +23,23 @@
       height: 100%;
     }
     .jw-video-container {
+      position: relative;
       width: 100%;
       height: 100%;
+    }
+    .jwplayer {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      background-color: black;
+    }
+    #videoIframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
     .hidden {
       display: none;
@@ -35,6 +49,7 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
+      text-align: center;
       color: #00fa9f;
       z-index: 9999;
     }
@@ -44,6 +59,8 @@
       border: 5px solid #FFF;
       border-bottom-color: transparent;
       border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
       animation: rotation 1s linear infinite;
     }
     @keyframes rotation {
@@ -61,15 +78,15 @@
     <div id="player" class="jw-video-container"></div>
   </div>
 
-  <iframe id="videoIframe" class="hidden" src="about:blank" frameborder="0" allowfullscreen scrolling="no"
+  <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
     allow="encrypted-media; autoplay">
   </iframe>
 
   <script type="module">
     import sources from './sources.js';
-    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
 
+    jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
     let playerInstance = null;
 
     function destroyJWPlayer() {
@@ -104,14 +121,25 @@
       }
     }
 
+    function onJWFullscreenChange() {
+      const isFullscreen = playerInstance?.getFullscreen?.();
+      if (isFullscreen) {
+        screen.orientation?.lock('landscape').catch(console.warn);
+      } else {
+        screen.orientation?.unlock?.();
+      }
+    }
+
     function loadVideoByUrl(url) {
+      showLoader();
       destroyJWPlayer();
-      document.getElementById('videoIframe').src = 'about:blank';
       setReferrerPolicy(url);
 
       if (url.includes('.m3u8')) {
-        document.getElementById('jwContainer').classList.remove('hidden');
-        document.getElementById('videoIframe').classList.add('hidden');
+        const container = document.getElementById('jwContainer');
+        const iframe = document.getElementById('videoIframe');
+        container.classList.remove('hidden');
+        iframe.classList.add('hidden');
 
         playerInstance = jwplayer("player").setup({
           playlist: [{
@@ -131,28 +159,21 @@
           sharing: false
         });
 
-        playerInstance.addButton(
-          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
-            <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
-          </svg>`,
-          "Refresh Video",
-          () => {
-            const currentFile = playerInstance.getPlaylistItem().file;
-            playerInstance.stop().load({ file: currentFile }).play();
-          },
-          "refresh-button"
-        );
+        playerInstance.on('fullscreen', onJWFullscreenChange);
+
+        playerInstance.on('ready', hideLoader);
 
         playerInstance.on('error', () => {
           setTimeout(() => {
-            playerInstance.stop().load({ file: url }).play();
-          }, 5000);
+            playerInstance?.stop?.();
+            playerInstance?.load?.({ file: url }).play();
+          }, 3000);
         });
-
       } else {
         const iframe = document.getElementById('videoIframe');
-        document.getElementById('jwContainer').classList.add('hidden');
+        const container = document.getElementById('jwContainer');
+        destroyJWPlayer();
+        container.classList.add('hidden');
         iframe.classList.remove('hidden');
         iframe.src = url;
 
@@ -161,9 +182,9 @@
         if (excluded.includes(hostname)) {
           iframe.removeAttribute('sandbox');
         }
-      }
 
-      hideLoader();
+        hideLoader();
+      }
     }
 
     function handlePostMessage(event) {
@@ -172,20 +193,11 @@
 
       const { type, key, url } = event.data;
 
-      if (type === 'SET_VIDEO') {
-        if (key && sources[key]) {
-          showLoader();
-          loadVideoByUrl(sources[key]);
-        } else {
-          console.warn('[JW] Invalid key or missing source:', key);
-          showLoader();
-          destroyJWPlayer();
-          document.getElementById('videoIframe').src = 'about:blank';
-        }
+      if (type === 'SET_VIDEO' && key && sources[key]) {
+        loadVideoByUrl(sources[key]);
       }
 
       if (type === 'CHANGE_STREAM' && url) {
-        showLoader();
         loadVideoByUrl(url);
       }
     }
@@ -196,24 +208,6 @@
       window.parent.postMessage('JW_READY', '*');
       disableDevtool();
     });
-
-    function onFullscreenChange() {
-      if (playerInstance && typeof playerInstance.setMute === 'function') {
-        playerInstance.setMute(true);
-        console.log('[JW] Mute enforced on fullscreen');
-      }
-    
-      // Auto landscape saat fullscreen (jika didukung)
-      if (document.fullscreenElement || document.webkitFullscreenElement) {
-        if (screen.orientation && screen.orientation.lock) {
-          screen.orientation.lock('landscape').then(() => {
-            console.log('[JW] Orientation locked to landscape');
-          }).catch((err) => {
-            console.warn('[JW] Orientation lock failed:', err);
-          });
-        }
-      }
-    }
   </script>
 </body>
 </html>

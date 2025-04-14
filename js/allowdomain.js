@@ -6,13 +6,3 @@ export const allowedDomains = [
     'http://localhost'
 ];
 
-// Auto-generate allowed hosts dari allowedDomains
-export const allowedHosts = allowedDomains.map(url => {
-    try {
-        return new URL(url).hostname;
-    } catch {
-        return null;
-    }
-}).filter(Boolean);
-
-export const fallbackRedirect = 'https://akusukagratisanlo.blogspot.com';

@@ -226,27 +226,31 @@
         }
     }
 
-    function setupChannels() {
-        const channelContainers = document.querySelectorAll('.channel-container');
-        const activeChannelId = sessionStorage.getItem('activeChannelId');
+function setupChannels() {
+    const channelContainers = document.querySelectorAll('.channel-container');
+    const activeChannelId = sessionStorage.getItem('activeChannelId');
 
-        channelContainers.forEach(container => {
-            const id = container.getAttribute('data-id');
-            const dataUrl = container.getAttribute('data-url');
+    channelContainers.forEach(container => {
+	const id = container.getAttribute('data-id');
+	const dataUrl = container.getAttribute('data-url');
 
-            if (id === activeChannelId) {
-                container.classList.add('selected');
-                loadEventVideo(container);
-            }
+	// Load aktif saat pertama kali ditemukan
+	if (id === activeChannelId) {
+	    container.classList.add('selected');
+	    loadEventVideo(container, dataUrl);
+	}
 
-            container.addEventListener('click', () => {
-                channelContainers.forEach(c => c.classList.remove('selected'));
-                container.classList.add('selected');
-                sessionStorage.setItem('activeChannelId', id);
-                loadEventVideo(container);
-            });
-        });
-    }
+	container.addEventListener('click', () => {
+	    // Unselect semua dan select yang baru
+	    channelContainers.forEach(c => c.classList.remove('selected'));
+	    container.classList.add('selected');
+	    sessionStorage.setItem('activeChannelId', id);
+
+	    // Muat ulang video dengan loadEventVideo
+	    loadEventVideo(container, dataUrl);
+	});
+    });
+}
 
     function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
         const id = container.getAttribute('data-id');

@@ -8,7 +8,6 @@
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
   <script type="text/javascript" src="//disappearsurgery.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js"></script>
   <script type="module" src="./sources.js"></script>
-
   <style>
     html, body {
       margin: 0;
@@ -18,7 +17,6 @@
       overflow: hidden;
       background-color: black;
     }
-
     .jw-wrapper {
       display: flex;
       align-items: center;
@@ -26,24 +24,20 @@
       width: 100%;
       height: 100%;
     }
-
     .jw-video-container {
       position: relative;
       width: 100%;
       height: 100%;
     }
-
     .jwplayer {
       width: 100%;
       height: auto;
       max-height: 100%;
       background-color: black;
     }
-
     .jw-refresh-btn {
       filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
     }
-
     #videoIframe {
       position: fixed;
       top: 0;
@@ -52,11 +46,9 @@
       height: 100%;
       border: 0;
     }
-
     .hidden {
       display: none;
     }
-
     .loader-container {
       position: fixed;
       top: 50%;
@@ -66,18 +58,16 @@
       color: #00fa9f;
       z-index: 9999;
     }
-
     .loader {
-        width: 48px;
-        height: 48px;
-        border: 5px solid #FFF;
-        border-bottom-color: transparent;
-        border-radius: 50%;
-        display: inline-block;
-        box-sizing: border-box;
-        animation: rotation 1s linear infinite;
+      width: 48px;
+      height: 48px;
+      border: 5px solid #FFF;
+      border-bottom-color: transparent;
+      border-radius: 50%;
+      display: inline-block;
+      box-sizing: border-box;
+      animation: rotation 1s linear infinite;
     }
-
     @keyframes rotation {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -88,20 +78,17 @@
   <div id="loaderContainer" class="loader-container">
     <div class="loader"></div>
   </div>
-
   <div class="jw-wrapper hidden" id="jwContainer">
     <div id="player" class="jw-video-container"></div>
   </div>
-
   <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
-    allow="encrypted-media; autoplay">
-  </iframe>
+    allow="encrypted-media; autoplay"></iframe>
 
   <script type="module">
     import sources from './sources.js';
-
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
     let playerInstance = null;
 
     function destroyJWPlayer() {
@@ -145,21 +132,27 @@
         document.getElementById('videoIframe').classList.add('hidden');
 
         playerInstance = jwplayer("player").setup({
-          playlist: [{
-            file: url,
-            image: 'https://kltraid.pages.dev/images/poster.png',
-            type: "hls",
-            label: "HD"
-          }],
+          playlist: [{ file: url, image: 'https://kltraid.pages.dev/images/poster.png', type: "hls" }],
           width: "100%",
           aspectratio: "16:9",
           autostart: true,
-          mute: false,
+          mute: true,
           stretching: "uniform",
           playsinline: true,
           logo: { file: '' },
           cast: {},
           sharing: false
+        });
+
+        playerInstance.on('ready', () => {
+          playerInstance.setMute(true);
+        });
+
+        playerInstance.on('fullscreen', function(e) {
+          if (e.fullscreen) {
+            playerInstance.setMute(true);
+            console.log('[JW] Force mute on fullscreen');
+          }
         });
 
         playerInstance.addButton(
@@ -222,35 +215,15 @@
     });
 
     function onFullscreenChange() {
-      const isFullscreen = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
-    
-      if (isFullscreen) {
-        try {
-          if (screen.orientation && screen.orientation.lock) {
-            screen.orientation.lock('landscape').then(() => {
-              console.log('[Orientation] Locked to landscape');
-            }).catch(err => {
-              console.warn('[Orientation] Lock failed:', err.message);
-            });
-          }
-        } catch (e) {
-          console.warn('[Orientation] Exception:', e.message);
-        }
+      if (document.fullscreenElement) {
+        screen.orientation?.lock('landscape').catch(console.error);
       } else {
-        try {
-          screen.orientation?.unlock?.();
-          console.log('[Orientation] Unlocked');
-        } catch (e) {
-          // Ignore silently
-        }
+        screen.orientation?.unlock?.();
       }
     }
-    
+
     document.addEventListener('fullscreenchange', onFullscreenChange);
     document.addEventListener('webkitfullscreenchange', onFullscreenChange);
-    document.addEventListener('mozfullscreenchange', onFullscreenChange);
-    document.addEventListener('MSFullscreenChange', onFullscreenChange);
-
   </script>
 </body>
 </html>

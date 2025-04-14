@@ -125,7 +125,7 @@
     }
 
     function setReferrerPolicy(url) {
-      const blocked = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
+      const blocked = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso', 'dens'];
       const link = document.createElement('a');
       link.href = url;
       if (blocked.some(keyword => link.hostname.includes(keyword))) {

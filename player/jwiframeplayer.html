@@ -82,6 +82,7 @@
       playerInstance.remove();
       playerInstance = null;
       document.getElementById('jwContainer').innerHTML = '<div id="player" class="jw-video-container"></div>';
+      console.log('[JW] Player destroyed');
     }
   }
 
@@ -91,6 +92,10 @@
     const iframe = document.getElementById('videoIframe');
     iframe.classList.add('hidden');
     iframe.src = 'about:blank';
+  }
+
+  function hideLoader() {
+    document.getElementById('loaderContainer').classList.add('hidden');
   }
 
   function setReferrerPolicy(url) {
@@ -103,6 +108,33 @@
       meta.content = 'no-referrer';
       document.head.appendChild(meta);
     }
+  }
+
+  function requestLandscapeOrientation() {
+    if (screen.orientation && screen.orientation.lock) {
+      screen.orientation.lock('landscape').catch(err => {
+        console.warn('[Orientation] Lock failed:', err);
+      });
+    }
+  }
+
+  function patchJWFullscreenButton(container) {
+    const tryPatch = setInterval(() => {
+      const fsBtn = container.querySelector('.jw-icon-fullscreen');
+      const video = container.querySelector('video');
+      if (fsBtn && video) {
+        fsBtn.onclick = () => {
+          const reqFS = video.requestFullscreen || video.webkitRequestFullscreen || video.msRequestFullscreen;
+          if (reqFS) {
+            reqFS.call(video).then(() => {
+              requestLandscapeOrientation();
+            });
+          }
+        };
+        clearInterval(tryPatch);
+        console.log('[JW] Patched fullscreen button for landscape');
+      }
+    }, 300);
   }
 
   function loadVideoByUrl(url) {
@@ -124,98 +156,80 @@
           label: "HD"
         }],
         width: "100%",
-        height: "100%",
+        aspectratio: "16:9",
         autostart: true,
         mute: false,
         stretching: "uniform",
         playsinline: true,
-        logo: { file: '' }
+        logo: { file: '' },
+        cast: {},
+        sharing: false
       });
 
       playerInstance.on('ready', () => {
         const container = playerInstance.getContainer();
-        
-        const handleOrientation = () => {
-          if (screen.orientation?.type?.startsWith('portrait')) {
-            screen.orientation?.lock?.('landscape').catch(console.warn);
-          }
-        };
-
-        const patchFullscreenButton = () => {
-          const fsBtn = container.querySelector('.jw-icon-fullscreen');
-          const video = container.querySelector('.jw-video');
-
-          if (fsBtn && video) {
-            fsBtn.onclick = () => {
-              if (video.requestFullscreen) {
-                video.requestFullscreen()
-                  .then(() => handleOrientation())
-                  .catch(console.warn);
-              } else if (video.webkitRequestFullscreen) {
-                video.webkitRequestFullscreen();
-                setTimeout(handleOrientation, 300);
-              }
-            };
-          }
-        };
-
-        const checkFullscreenButton = setInterval(() => {
-          if (container.querySelector('.jw-icon-fullscreen')) {
-            patchFullscreenButton();
-            clearInterval(checkFullscreenButton);
-          }
-        }, 300);
+        patchJWFullscreenButton(container);
       });
 
       playerInstance.addButton(
-        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" viewBox="0 0 16 16">
-          <path d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 0 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+        `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
           <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
         </svg>`,
         "Refresh Video",
-        () => playerInstance.load({ file: url }).play(),
+        () => {
+          const currentFile = playerInstance.getPlaylistItem().file;
+          playerInstance.stop().load({ file: currentFile }).play();
+        },
         "refresh-button"
       );
 
+      playerInstance.on('error', () => {
+        setTimeout(() => {
+          playerInstance.stop().load({ file: url }).play();
+        }, 5000);
+      });
+
     } else {
+      document.getElementById('jwContainer').classList.add('hidden');
       iframe.src = url;
       iframe.classList.remove('hidden');
-      
-      // Handle orientation untuk iframe
-      iframe.onload = () => {
-        try {
-          iframe.contentWindow.postMessage('FORCE_LANDSCAPE', '*');
-        } catch(e) {}
-      };
-    }
 
-    document.getElementById('loaderContainer').classList.add('hidden');
-  }
-
-  // Handle orientation change untuk semua tipe player
-  function onFullscreenChange() {
-    const elem = document.fullscreenElement || document.webkitFullscreenElement;
-    if (elem) {
-      if (screen.orientation?.lock) {
-        screen.orientation.lock('landscape').catch(() => {
-          setTimeout(() => screen.orientation?.lock?.('landscape'), 300);
-        });
+      const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
+      const hostname = new URL(url).hostname;
+      if (excluded.includes(hostname)) {
+        iframe.removeAttribute('sandbox');
       }
-    } else {
-      screen.orientation?.unlock?.();
+    }
+
+    hideLoader();
+  }
+
+  function handlePostMessage(event) {
+    const allowed = ['https://bikinbaru96.blogspot.com', 'http://localhost'];
+    if (!allowed.includes(event.origin)) return;
+
+    const { type, key, url } = event.data;
+
+    if (type === 'SET_VIDEO' && key && sources[key]) {
+      showLoader();
+      loadVideoByUrl(sources[key]);
+    }
+
+    if (type === 'CHANGE_STREAM' && url) {
+      showLoader();
+      loadVideoByUrl(url);
     }
   }
 
-  document.addEventListener('fullscreenchange', onFullscreenChange);
-  document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+  window.addEventListener('message', handlePostMessage);
 
-  // Handle message untuk iframe
-  window.addEventListener('message', (e) => {
-    if (e.data === 'REQUEST_ORIENTATION_LOCK') {
-      screen.orientation?.lock?.('landscape').catch(console.warn);
-    }
+  window.addEventListener('load', () => {
+    window.parent.postMessage('JW_READY', '*');
+    disableDevtool();
   });
 </script>
+
 
 </body>
 </html>

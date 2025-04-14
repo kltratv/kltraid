@@ -6,6 +6,7 @@
   <title>Player</title>
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
+  <script type="text/javascript" src="//disappearsurgery.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js"></script>
   <script type="module" src="./sources.js"></script>
 
   <style>
@@ -17,10 +18,45 @@
       overflow: hidden;
       background-color: black;
     }
-    .jw-wrapper { display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; }
-    .jw-video-container { position: relative; width: 100%; height: 100%; }
-    .jwplayer { width: 100%; height: auto; max-height: 100%; background-color: black; }
-    .hidden { display: none; }
+
+    .jw-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    .jw-video-container {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+
+    .jwplayer {
+      width: 100%;
+      height: auto;
+      max-height: 100%;
+      background-color: black;
+    }
+
+    .jw-refresh-btn {
+      filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
+    }
+
+    #videoIframe {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+
+    .hidden {
+      display: none;
+    }
+
     .loader-container {
       position: fixed;
       top: 50%;
@@ -30,16 +66,18 @@
       color: #00fa9f;
       z-index: 9999;
     }
+
     .loader {
-      width: 48px;
-      height: 48px;
-      border: 5px solid #FFF;
-      border-bottom-color: transparent;
-      border-radius: 50%;
-      display: inline-block;
-      box-sizing: border-box;
-      animation: rotation 1s linear infinite;
+        width: 48px;
+        height: 48px;
+        border: 5px solid #FFF;
+        border-bottom-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        box-sizing: border-box;
+        animation: rotation 1s linear infinite;
     }
+
     @keyframes rotation {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -57,7 +95,8 @@
 
   <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
-    allow="encrypted-media; autoplay"></iframe>
+    allow="encrypted-media; autoplay">
+  </iframe>
 
   <script type="module">
     import sources from './sources.js';
@@ -106,26 +145,21 @@
         document.getElementById('videoIframe').classList.add('hidden');
 
         playerInstance = jwplayer("player").setup({
-          playlist: [{ file: url, image: 'https://kltraid.pages.dev/images/poster.png', type: "hls" }],
+          playlist: [{
+            file: url,
+            image: 'https://kltraid.pages.dev/images/poster.png',
+            type: "hls",
+            label: "HD"
+          }],
           width: "100%",
           aspectratio: "16:9",
           autostart: true,
-          mute: true,
-          playsinline: true,
+          mute: false,
           stretching: "uniform",
+          playsinline: true,
           logo: { file: '' },
           cast: {},
           sharing: false
-        });
-
-        playerInstance.on('play', () => {
-          console.log('[JW] Playback started');
-          hideLoader();
-        });
-
-        playerInstance.on('error', err => {
-          console.warn('[JW] Error', err);
-          hideLoader();
         });
 
         playerInstance.addButton(
@@ -141,13 +175,26 @@
           "refresh-button"
         );
 
+        playerInstance.on('error', () => {
+          setTimeout(() => {
+            playerInstance.stop().load({ file: url }).play();
+          }, 5000);
+        });
+
       } else {
         const iframe = document.getElementById('videoIframe');
         document.getElementById('jwContainer').classList.add('hidden');
         iframe.classList.remove('hidden');
         iframe.src = url;
-        hideLoader();
+
+        const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
+        const hostname = new URL(url).hostname;
+        if (excluded.includes(hostname)) {
+          iframe.removeAttribute('sandbox');
+        }
       }
+
+      hideLoader();
     }
 
     function handlePostMessage(event) {
@@ -174,13 +221,22 @@
       disableDevtool();
     });
 
-    document.addEventListener('fullscreenchange', () => {
+    function onFullscreenChange() {
       if (document.fullscreenElement) {
-        screen.orientation?.lock('landscape').catch(console.error);
+        try {
+          screen.orientation?.lock('landscape').catch(console.warn);
+        } catch (e) {
+          console.warn('Orientation lock failed:', e);
+        }
       } else {
         screen.orientation?.unlock?.();
       }
-    });
+    }
+
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
+    document.addEventListener('mozfullscreenchange', onFullscreenChange);
+    document.addEventListener('msfullscreenchange', onFullscreenChange);
   </script>
 </body>
 </html>

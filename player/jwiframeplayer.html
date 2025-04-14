@@ -7,7 +7,6 @@
   <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
   <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
   <script type="module" src="./sources.js"></script>
-
   <style>
     html, body {
       margin: 0;
@@ -17,7 +16,6 @@
       overflow: hidden;
       background-color: black;
     }
-
     .jw-wrapper {
       display: flex;
       align-items: center;
@@ -25,54 +23,29 @@
       width: 100%;
       height: 100%;
     }
-
     .jw-video-container {
-      position: relative;
       width: 100%;
       height: 100%;
     }
-
-    .jwplayer {
-      width: 100%;
-      height: auto;
-      max-height: 100%;
-      background-color: black;
-    }
-
-    #videoIframe {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
     .hidden {
       display: none;
     }
-
     .loader-container {
       position: fixed;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      text-align: center;
       color: #00fa9f;
       z-index: 9999;
     }
-
     .loader {
       width: 48px;
       height: 48px;
       border: 5px solid #FFF;
       border-bottom-color: transparent;
       border-radius: 50%;
-      display: inline-block;
-      box-sizing: border-box;
       animation: rotation 1s linear infinite;
     }
-
     @keyframes rotation {
       0% { transform: rotate(0deg); }
       100% { transform: rotate(360deg); }
@@ -88,15 +61,15 @@
     <div id="player" class="jw-video-container"></div>
   </div>
 
-  <iframe id="videoIframe" class="hidden" src="about:blank" allowfullscreen scrolling="no"
+  <iframe id="videoIframe" class="hidden" src="about:blank" frameborder="0" allowfullscreen scrolling="no"
     sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
     allow="encrypted-media; autoplay">
   </iframe>
 
   <script type="module">
     import sources from './sources.js';
-
     jwplayer.key = 'XSuP4qMl+9tK17QNb+4+th2Pm9AWgMO/cYH8CI0HGGr7bdjo';
+
     let playerInstance = null;
 
     function destroyJWPlayer() {
@@ -112,9 +85,7 @@
     function showLoader() {
       document.getElementById('loaderContainer').classList.remove('hidden');
       document.getElementById('jwContainer').classList.add('hidden');
-      const iframe = document.getElementById('videoIframe');
-      iframe.src = 'about:blank';
-      iframe.classList.add('hidden');
+      document.getElementById('videoIframe').classList.add('hidden');
     }
 
     function hideLoader() {
@@ -122,7 +93,7 @@
     }
 
     function setReferrerPolicy(url) {
-      const blocked = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso', 'dens'];
+      const blocked = ['jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso', 'op-group1-swiftservehd-1.dens'];
       const link = document.createElement('a');
       link.href = url;
       if (blocked.some(k => link.hostname.includes(k))) {
@@ -134,24 +105,20 @@
     }
 
     function loadVideoByUrl(url) {
-      showLoader();
       destroyJWPlayer();
+      document.getElementById('videoIframe').src = 'about:blank';
       setReferrerPolicy(url);
 
-      const iframe = document.getElementById('videoIframe');
-      iframe.src = 'about:blank'; // 🔇 clear previous audio
-      iframe.classList.add('hidden');
-
-      const jwContainer = document.getElementById('jwContainer');
-
       if (url.includes('.m3u8')) {
-        jwContainer.classList.remove('hidden');
+        document.getElementById('jwContainer').classList.remove('hidden');
+        document.getElementById('videoIframe').classList.add('hidden');
 
         playerInstance = jwplayer("player").setup({
           playlist: [{
             file: url,
             image: 'https://kltraid.pages.dev/images/poster.png',
-            type: "hls"
+            type: "hls",
+            label: "HD"
           }],
           width: "100%",
           aspectratio: "16:9",
@@ -164,33 +131,39 @@
           sharing: false
         });
 
-        playerInstance.on('ready', () => {
-          hideLoader();
-          console.log('[JW] Ready');
-        });
+        playerInstance.addButton(
+          `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="white" stroke="white" stroke-width="0.8" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M8 3a5 5 0 1 1-4.546 2.914.5.5 0 1 0-.908-.418A6 6 0 1 0 8 2v1z"/>
+            <path d="M8 0a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 4.293V.5A.5.5 0 0 1 8 0z"/>
+          </svg>`,
+          "Refresh Video",
+          () => {
+            const currentFile = playerInstance.getPlaylistItem().file;
+            playerInstance.stop().load({ file: currentFile }).play();
+          },
+          "refresh-button"
+        );
 
         playerInstance.on('error', () => {
           setTimeout(() => {
-            playerInstance.load({ file: url }).play();
+            playerInstance.stop().load({ file: url }).play();
           }, 5000);
         });
 
-      } else if (url.startsWith('http')) {
-        jwContainer.classList.add('hidden');
-        iframe.src = url;
+      } else {
+        const iframe = document.getElementById('videoIframe');
+        document.getElementById('jwContainer').classList.add('hidden');
         iframe.classList.remove('hidden');
+        iframe.src = url;
 
         const excluded = ['embedstreams.top', 'legalhelpfast.pro', 'streamsvv1.su'];
         const hostname = new URL(url).hostname;
         if (excluded.includes(hostname)) {
           iframe.removeAttribute('sandbox');
         }
-
-        hideLoader();
-      } else {
-        console.warn('[Video] Invalid or empty source URL');
-        showLoader(); // stay on loader
       }
+
+      hideLoader();
     }
 
     function handlePostMessage(event) {
@@ -199,11 +172,20 @@
 
       const { type, key, url } = event.data;
 
-      if (type === 'SET_VIDEO' && key && sources[key]) {
-        loadVideoByUrl(sources[key]);
+      if (type === 'SET_VIDEO') {
+        if (key && sources[key]) {
+          showLoader();
+          loadVideoByUrl(sources[key]);
+        } else {
+          console.warn('[JW] Invalid key or missing source:', key);
+          showLoader();
+          destroyJWPlayer();
+          document.getElementById('videoIframe').src = 'about:blank';
+        }
       }
 
       if (type === 'CHANGE_STREAM' && url) {
+        showLoader();
         loadVideoByUrl(url);
       }
     }
@@ -215,9 +197,15 @@
       disableDevtool();
     });
 
-    document.addEventListener('fullscreenchange', () => {
-      jwplayer().setMute(true); // ✅ stay muted
-    });
+    function onFullscreenChange() {
+      if (playerInstance && typeof playerInstance.setMute === 'function') {
+        playerInstance.setMute(true);
+        console.log('[JW] Mute enforced on fullscreen');
+      }
+    }
+
+    document.addEventListener('fullscreenchange', onFullscreenChange);
+    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
   </script>
 </body>
 </html>

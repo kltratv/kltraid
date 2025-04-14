@@ -202,10 +202,18 @@
         playerInstance.setMute(true);
         console.log('[JW] Mute enforced on fullscreen');
       }
+    
+      // Auto landscape saat fullscreen (jika didukung)
+      if (document.fullscreenElement || document.webkitFullscreenElement) {
+        if (screen.orientation && screen.orientation.lock) {
+          screen.orientation.lock('landscape').then(() => {
+            console.log('[JW] Orientation locked to landscape');
+          }).catch((err) => {
+            console.warn('[JW] Orientation lock failed:', err);
+          });
+        }
+      }
     }
-
-    document.addEventListener('fullscreenchange', onFullscreenChange);
-    document.addEventListener('webkitfullscreenchange', onFullscreenChange);
   </script>
 </body>
 </html>

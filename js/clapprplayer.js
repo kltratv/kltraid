@@ -17,7 +17,7 @@
       
         // Tambahkan meta referrer jika domain termasuk dalam daftar
         (function () {
-            const noReferrerKeywords = ['sindikasi.inews', 'video.detik', 'op-group1-swiftservehd-1.dens'];
+            const noReferrerKeywords = ['sindikasi.inews', 'video.detik', 'op-group1-swiftservehd-1.dens', 'jiatianxiazhuangshi', 'naqsheala', 'inplaynet', 'newkso'];
 
             const url = document.createElement('a');
             url.href = videoUrl;
@@ -73,7 +73,7 @@
         } else {
             document.getElementById('videoIframe').classList.remove('hidden');
             
-            const excludedDomains = ['sindikasi.inews.id'];
+            const excludedDomains = ['embedstreams.top', 'embedme.top', 'streamsvv1.su'];
             const link = document.createElement('a');
             link.href = videoUrl;
 

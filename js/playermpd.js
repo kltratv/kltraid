@@ -457,7 +457,7 @@ function decode(encrypted) {
 		};
 
 		(function redirectIfNotAllowed() {
-			const allowedDomains = ['https://kltraid.pages.dev/', 'https://bikinbaru96.blogspot.com'];
+			const allowedDomains = ['kltraid.pages.dev', 'bikinbaru96.blogspot.com'];
 			const currentDomain = window.location.hostname;
 		
 			const isAllowed = allowedDomains.some(domain => currentDomain.endsWith(domain));

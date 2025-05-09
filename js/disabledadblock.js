@@ -1,21 +1,27 @@
-  (function () {
-    function detectAdBlock() {
+(function () {
+    function detectElementBlocking() {
         return new Promise((resolve) => {
             let bait = document.createElement("div");
-            bait.className = "adsbox ad-banner ad-unit"; // Common blocked ad-related class names
+            bait.className = "adsbox ad-banner ad-unit"; // Typical adblock targets
             bait.style.width = "1px";
             bait.style.height = "1px";
             bait.style.position = "absolute";
             bait.style.left = "-9999px";
-            bait.style.visibility = "hidden"; // Make it harder to detect by AdBlock itself
+            bait.style.visibility = "hidden";
             document.body.appendChild(bait);
 
             setTimeout(() => {
-                let isBlocked = !bait || bait.offsetParent === null || window.getComputedStyle(bait).display === "none";
+                const isBlocked = !bait || bait.offsetParent === null || window.getComputedStyle(bait).display === "none";
                 document.body.removeChild(bait);
                 resolve(isBlocked);
-            }, 100); // Reduced timeout for better performance
+            }, 100);
         });
+    }
+
+    function detectDNSAdBlock() {
+        return fetch("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: "HEAD", mode: "no-cors" })
+            .then(() => false) // Accessible = not blocked
+            .catch(() => true); // Blocked = likely DNS adblock
     }
 
     function showAdblockPopup() {
@@ -45,11 +51,12 @@
         });
     }
 
-    window.addEventListener("load", () => {
-        detectAdBlock().then((adBlockDetected) => {
-            if (adBlockDetected) {
-                showAdblockPopup();
-            }
-        });
+    window.addEventListener("load", async () => {
+        const adBlockDetected = await detectElementBlocking();
+        const dnsBlocked = await detectDNSAdBlock();
+
+        if (adBlockDetected || dnsBlocked) {
+            showAdblockPopup();
+        }
     });
 })();

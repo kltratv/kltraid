@@ -1,0 +1,1418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
+  	<link rel="stylesheet" href="https://kltraid.pages.dev/css/home.css">
+    <title>Video Player with Sidebar</title>
+    <style>
+    </style>
+
+	<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+
+</head>
+<body>
+    <div id="main-content">
+    <div class="video-container">
+        <div class="video-wrapper">
+            <img id="video-placeholder" src="https://kltraid.pages.dev/images/home_11zon.jpg" alt="Video Placeholder" style="width: 100%; height: 100%; object-fit: cover;">
+            <div id="player"></div> <!-- Pindahkan player ke dalam video-wrapper -->
+            <iframe id="video-iframe" src="about:blank" width="100%" height="100%" frameborder="0" allowfullscreen scrolling="no" gesture="media" allow="encrypted-media" style="display:none;"></iframe>
+            <div class="countdown-wrapper" id="countdown" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+    </div>
+
+	<div class="sidebar">
+        <!-- Menu-wrapper di atas -->
+        <div class="menu-wrapper-top">
+            <div class="menu-container">
+                <button class="menu-button" onclick="refreshVideoPlayer()">Refresh Video</button>
+                <button class="menu-button" onclick="switchContent('live-event')">Live Event</button>
+              	<button class="menu-button" onclick="switchContent('live-tv')">Live TV</button>
+                <button class="menu-button" onclick="switchContent('chat')">Chat</button>
+            </div>
+        </div>
+
+        <div id="refresh" class="sidebar-content">
+            <h2>Refresh Content</h2>
+            <!-- Content for Refresh will be added here -->
+        </div>
+
+        <div id="live-event" class="sidebar-content active">
+            <div id="content">
+              
+<!-- Awal Data -->
+<div class="event-container" data-id="431c8621-8865-4850-a1df-5bfd1bcced21" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hklks7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hklks7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmg7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=FarzTEaRne_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="1000">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Balapan.png" alt="Sport Icon" class="sport-icon">Michelin Grand Prix de France</h2>
+  <div class="team">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg" alt="MotoGP" class="team-logo">
+    <span>MotoGP</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-09</div>
+  <div class="kickoff-match-time">13:30</div>
+  <div class="match-date" style="display:none;">2025-05-09</div>
+  <div class="match-time" style="display:none;">13:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a0/Moto_Gp_logo.svg" alt="MotoGP" class="team-logo">
+    <span>MotoGP</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-431c8621-8865-4850-a1df-5bfd1bcced21" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="712939ca-709f-469c-92a2-e5607720f8c8" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmg8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmg8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=wpnyzSTz0K_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="10">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">UFC 315</h2>
+  <div class="team">
+    <img src="https://i.imgur.com/FYmwhN9.png" alt="UFC" class="team-logo">
+    <span>UFC</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">05:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">05:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://i.imgur.com/FYmwhN9.png" alt="UFC" class="team-logo">
+    <span>UFC</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-712939ca-709f-469c-92a2-e5607720f8c8" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="aa975245-f3e8-445f-bd6e-36f23fc5a81b" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=wZ4FbkNdl6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=wZ4FbkNdl6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=hRjmO2jXkO_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">J1 League</h2>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/593.png?lm=1409743213" alt="Kyoto Sanga" class="team-logo">
+    <span>Kyoto Sanga</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">12:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">12:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/CrmdMPWZ2i17k-0LByWBow_96x96.png" alt="Nagoya Grampus" class="team-logo">
+    <span>Nagoya Grampus</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-aa975245-f3e8-445f-bd6e-36f23fc5a81b" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="43488b96-4a5d-43c7-a859-dbfea32e5a1a" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=x3T2kOE9LK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=x3T2kOE9LK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=AgF5KKpi0w_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">J1 League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/R93vCpU9GEI9dXNU3J2tCQ_96x96.png" alt="Albirex Niigata" class="team-logo">
+    <span>Albirex Niigata</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">12:05</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">12:05</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/F-09rxdgECid61-Rj8Uxrw_96x96.png" alt="Urawa Reds" class="team-logo">
+    <span>Urawa Reds</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-43488b96-4a5d-43c7-a859-dbfea32e5a1a" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="725e7232-6329-40c0-a50d-be3ca7b5cda3" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=xzCBfhY797_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=xzCBfhY797_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=nwNiMcfncC_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">J1 League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/T20Z8bRwgt-eP8J_w5esUw_96x96.png" alt="Cerezo Osaka" class="team-logo">
+    <span>Cerezo Osaka</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">13:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">13:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/BZfy8AwWl7GS9GXYugkvtQ_96x96.png" alt="Yokohama F. Marinos" class="team-logo">
+    <span>Yokohama F. Marinos</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-725e7232-6329-40c0-a50d-be3ca7b5cda3" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="8b69e2dd-e4dc-4027-abbc-a660033ec2f4" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=ffBU5uOp27_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=ffBU5uOp27_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=cEpJWbunlN_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">J1 League</h2>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/3734.png?lm=1707218030" alt="Tokyo Verdy" class="team-logo">
+    <span>Tokyo Verdy</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">13:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">13:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/WjcAbePPVHp9E4UiovZSUA_96x96.png" alt="Shonan Bellmare" class="team-logo">
+    <span>Shonan Bellmare</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-8b69e2dd-e4dc-4027-abbc-a660033ec2f4" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="747768e3-0ffd-4012-9413-2cdfe38db620" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=I44bRh5kJK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=I44bRh5kJK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=S4LP5OwbXs_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">J1 League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/wj1tBH6I54UBBsO6YXe6VA_96x96.png" alt="Gamba Osaka" class="team-logo">
+    <span>Gamba Osaka</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">13:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">13:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/G3pPwIuyzPEQI858X5DZrw_96x96.png" alt="Sanfrecce Hiroshima" class="team-logo">
+    <span>Sanfrecce Hiroshima</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-747768e3-0ffd-4012-9413-2cdfe38db620" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="8a0d3a88-4c6f-4836-a410-98423cebc98e" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=SbfeFD1X5l_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=SbfeFD1X5l_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=3ser433zjK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Liga 1</h2>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/72715.png?lm=1722134974" alt="PSBS Biak" class="team-logo">
+    <span>PSBS Biak</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">13:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">13:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/N8ehfu0um3u2H7RwOfmmZg_96x96.png" alt="Persis Solo" class="team-logo">
+    <span>Persis Solo</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-8a0d3a88-4c6f-4836-a410-98423cebc98e" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="7021bea8-bf81-414e-81d2-d63f122c8e1d" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=B0Z10YmMuT_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=B0Z10YmMuT_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=XPwZ9IsXnK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">K League 1</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/sC2vTgf3ZsFWY8a1o4tkbg_96x96.png" alt="Jeju United" class="team-logo">
+    <span>Jeju United</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">14:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">14:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/-K1h8OOTItUmjKqR2g5Nnw_96x96.png" alt="Ulsan" class="team-logo">
+    <span>Ulsan</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-7021bea8-bf81-414e-81d2-d63f122c8e1d" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="d967ec09-5e6a-46a3-998d-abbabdda2094" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=YNPza6ig77_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=YNPza6ig77_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=th5E9cxUrb_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Liga 1</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/gF6obPRsLgF7Oj3wEl7vtQ_96x96.png" alt="Arema" class="team-logo">
+    <span>Arema</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">15:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">15:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/jz2h8KmLrZz9pgMq36GPtw_96x96.png" alt="Persik Kediri" class="team-logo">
+    <span>Persik Kediri</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-d967ec09-5e6a-46a3-998d-abbabdda2094" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="8f5040cf-d27d-499c-bdc4-3ed827899ce3" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=wYiDFHIWk0_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=wYiDFHIWk0_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=WUQNOUHS3Z_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Voli.png" alt="Sport Icon" class="sport-icon">Proliga Men</h2>
+  <div class="team">
+    <img src="https://volleybox.net/media/upload/teams/1640920804DTqw5.png" alt="Palembang BS" class="team-logo">
+    <span>Palembang BS</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">16:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">16:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://volleybox.net/media/upload/teams/1728136954aeI3q.png" alt="Surabaya Samator" class="team-logo">
+    <span>Surabaya Samator</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-8f5040cf-d27d-499c-bdc4-3ed827899ce3" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="9fd0b6ed-aa61-4e4d-807e-af84832ceed3" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=MyVRKStdMF_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=MyVRKStdMF_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=Bu2nft7sKu_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">K League 1</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/DuaOwMOLBfwzaP_meKLaEg_96x96.png" alt="Gangwon" class="team-logo">
+    <span>Gangwon</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">17:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">17:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/zMbApCPUxbVjMaBugpVp2A_96x96.png" alt="Sangju Sangmu" class="team-logo">
+    <span>Sangju Sangmu</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-9fd0b6ed-aa61-4e4d-807e-af84832ceed3" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="90011d8c-5a25-47be-a698-dbd3fdcb0e7c" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=tg37JYk34S_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=tg37JYk34S_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=Tx3lkeqykb_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">K League 1</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/NWXV7bdDxjLz4zZk9bhoKg_96x96.png" alt="Gwangju" class="team-logo">
+    <span>Gwangju</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">17:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">17:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/5JL1pqxK8ydx8YzPIWTCKg_96x96.png" alt="Jeonbuk Motors" class="team-logo">
+    <span>Jeonbuk Motors</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-90011d8c-5a25-47be-a698-dbd3fdcb0e7c" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="91f754c8-3729-49ac-9fe0-eabc70f66fe3" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=sNNsKBt9K6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=sNNsKBt9K6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=iu48Vh0a8Y_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Eredivisie</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/wG9B0Qx4RzFdcpLmKnjHLQ_96x96.png" alt="PEC Zwolle" class="team-logo">
+    <span>PEC Zwolle</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">17:15</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">17:15</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/KPnQQv6PNQxcHPlpi4rC-g_96x96.png" alt="Go Ahead Eagles" class="team-logo">
+    <span>Go Ahead Eagles</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-91f754c8-3729-49ac-9fe0-eabc70f66fe3" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="b710c3a7-0073-4053-8d10-d74b96489efb" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=zw8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=zw8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=oK9egK2fH5_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=llmD8smW4Q_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=JTKGwkuYKB_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Serie A</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/92Aw_iasBENKmzvdpbTpHQ_96x96.png" alt="Udinese" class="team-logo">
+    <span>Udinese</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">17:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">17:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/g2S0HUWrWZX9hwKC87W11Q_96x96.png" alt="Monza" class="team-logo">
+    <span>Monza</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-b710c3a7-0073-4053-8d10-d74b96489efb" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="70b5bcf4-e976-4cc5-9fb0-6be1280501b5" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=fhzxdvhg_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=fhzxdvhg_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=fmre_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmgnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmg8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=zXSkL9w9W1_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=JmVMwyi5eE_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=AI4BXUkS87_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Premier League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/96CcNNQ0AYDAbssP0V9LuQ_96x96.png" alt="Newcastle" class="team-logo">
+    <span>Newcastle</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">18:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">17:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png" alt="Chelsea" class="team-logo">
+    <span>Chelsea</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-70b5bcf4-e976-4cc5-9fb0-6be1280501b5" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="b60536bf-3b10-479a-b307-63e46ffbf344" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb83oznc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb83oznc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmzf7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=G1MQj12hOC_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=4Lt26oCSmx_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=QkeQ6z7nYR_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">LaLiga</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/Id84F7Ji9rZGVacaazlBYA_96x96.png" alt="Leganes" class="team-logo">
+    <span>Leganes</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">19:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">18:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/TKitIqelDyN6M-kYt4Uc0g_96x96.png" alt="Espanyol" class="team-logo">
+    <span>Espanyol</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-b60536bf-3b10-479a-b307-63e46ffbf344" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="0eff459c-a5ba-4b52-8139-f57e3d93e26c" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=1beCgjJTRU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=1beCgjJTRU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=PCKpJVt2Nl_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Liga 1</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/sknmRTJdv0tHxLHy-H1L8Q_96x96.png" alt="Persebaya Surabaya" class="team-logo">
+    <span>Persebaya Surabaya</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">19:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/NJbgskD55Z91SB0VmxLo8g_96x96.png" alt="Semen Padang" class="team-logo">
+    <span>Semen Padang</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-0eff459c-a5ba-4b52-8139-f57e3d93e26c" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="8b0ec78f-f2b5-4dee-9818-4fa3887e79a6" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=WxfYfE9YNO_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=WxfYfE9YNO_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=myr3hWIhCl_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Voli.png" alt="Sport Icon" class="sport-icon">Proliga Men</h2>
+  <div class="team">
+    <img src="https://upload.wikimedia.org/wikipedia/id/thumb/8/86/Bogor_Lavani.png/323px-Bogor_Lavani.png" alt="Jakarta Lavani" class="team-logo">
+    <span>Jakarta Lavani</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">19:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://upload.wikimedia.org/wikipedia/id/7/7f/Logo_Jakarta_Bhayangkara_Presisi.png" alt="Jakarta Bhayangkara" class="team-logo">
+    <span>Jakarta Bhayangkara</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-8b0ec78f-f2b5-4dee-9818-4fa3887e79a6" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="dd487626-3dc6-44ee-bbcf-06e535624dd3" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=hh4BLaxapy_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=hh4BLaxapy_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=7UpXh02OSW_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Eredivisie</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/APPtKtO4wP6dQme5I1MSlA_96x96.png" alt="Twente" class="team-logo">
+    <span>Twente</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">19:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/Xf2ldClrgyjAQGXtqliERg_96x96.png" alt="Utrecht" class="team-logo">
+    <span>Utrecht</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-dd487626-3dc6-44ee-bbcf-06e535624dd3" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="383efd49-9654-4ffc-9ee2-c7728c6e1940" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=vKZfl3I5tv_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=vKZfl3I5tv_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=XQ71Vefkra_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Eredivisie</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/36g41WN3WdjCRsSFiurazw_96x96.png" alt="Feyenoord" class="team-logo">
+    <span>Feyenoord</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">19:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/FylTPR72JXIGFzqwQocSAQ_96x96.png" alt="PSV" class="team-logo">
+    <span>PSV</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-383efd49-9654-4ffc-9ee2-c7728c6e1940" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="197c6580-5234-4970-ba5d-a6d91ddcb24d" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=zw8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=zw8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=QmvALEfT56_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=nti8PmCDWR_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=0H3YTYB6UN_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Serie A</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/8qVzCbUtQYi3tNiAmIGUqg_96x96.png" alt="Verona" class="team-logo">
+    <span>Verona</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/tIaC5FB7Gm8CIULc77qMjg_96x96.png" alt="Lecce" class="team-logo">
+    <span>Lecce</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-197c6580-5234-4970-ba5d-a6d91ddcb24d" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="2e2eec20-82ea-4941-879c-0c98abf0652e" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=BTpmVm77zu_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=BTpmVm77zu_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=HaILQzBXkQ_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Turkish Super League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/7Jd7fcfirCIyjzS7tse1ZA_96x96.png" alt="Sivasspor" class="team-logo">
+    <span>Sivasspor</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:00</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">20:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/44006.png?lm=1441938597" alt="Bodrumspor" class="team-logo">
+    <span>Bodrumspor</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-2e2eec20-82ea-4941-879c-0c98abf0652e" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="617ea763-7299-48b6-b807-ebbe3e1657ba" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzam7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzam7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=itAQ6DlWBN_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=tAIWvON9O2_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=qg1COr2Cr9_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Premier League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_96x96.png" alt="Manchester United" class="team-logo">
+    <span>Manchester United</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:15</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/bXkiyIzsbDip3x2FFcUU3A_96x96.png" alt="West Ham" class="team-logo">
+    <span>West Ham</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-617ea763-7299-48b6-b807-ebbe3e1657ba" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="cf56b7d4-26bc-4283-a134-dcfcfb5f5d29" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=myx_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=myx_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=fhzxdvhg_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=5RaKPRQnfY_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=RIL0k2XwcW_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=OtvntnuhUm_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Premier League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/Zr6FbE-8pDH7UBpWCO8U9A_96x96.png" alt="Nottingham Forest" class="team-logo">
+    <span>Nottingham Forest</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:15</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/UDYY4FSlty6fXFBzvFfcyw_96x96.png" alt="Leicester City" class="team-logo">
+    <span>Leicester City</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-cf56b7d4-26bc-4283-a134-dcfcfb5f5d29" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="09b27b54-653d-40e2-9197-c008d621f82d" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmgnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gmgnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=Vdt7ls46js_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=fxnVH6o8as_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=eG8wWExL6o_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Premier League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/k3Q_mKE98Dnohrcea0JFgQ_96x96.png" alt="Tottenham" class="team-logo">
+    <span>Tottenham</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:15</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">19:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/8piQOzndGmApKYTcvyN9vA_96x96.png" alt="Crystal Palace" class="team-logo">
+    <span>Crystal Palace</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-09b27b54-653d-40e2-9197-c008d621f82d" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="73a58f9a-5ead-41fc-8e3f-7c31c7f86c2e" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmzf6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmzf6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzamwv8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb75yfmnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=bJlToYbWjy_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=KNGmQfqhSW_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=An8AiH8nbV_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Bundesliga</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/0zIcXiwD_JGY482DFC28Lw_96x96.png" alt="Leverkusen" class="team-logo">
+    <span>Leverkusen</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">20:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">20:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/FZnTSH2rbHFos4BnlWAItw_96x96.png" alt="Borussia Dortmund" class="team-logo">
+    <span>Borussia Dortmund</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-73a58f9a-5ead-41fc-8e3f-7c31c7f86c2e" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="6a815d24-2ea4-4555-834f-987f5eb33e27" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmzf7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmzf7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzamwv7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb83oznc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=yvrmrw6_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=cwfGj9OFNl_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=cwYFgrk2RD_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=yWlhFV9wwX_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">LaLiga</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/paYnEE8hcrP96neHRNofhQ_96x96.png" alt="Barcelona" class="team-logo">
+    <span>Barcelona</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">21:15</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">20:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png" alt="Real Madrid" class="team-logo">
+    <span>Real Madrid</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-6a815d24-2ea4-4555-834f-987f5eb33e27" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="e8046225-f86a-4bb5-9767-9ca994503ecb" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=QAbBo2weLY_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=QAbBo2weLY_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=7lwoITHG6c_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Liga Portugal</h2>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/2431.png?lm=1598342709" alt="Estrela" class="team-logo">
+    <span>Estrela</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">21:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">21:30</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://tmssl.akamaized.net/images/wappen/head/110302.png?lm=1698968034" alt="AVS" class="team-logo">
+    <span>AVS</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-e8046225-f86a-4bb5-9767-9ca994503ecb" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="ddb275ca-ec83-43ca-a781-4cda078f8bfa" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=V85KVG4XlU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=V85KVG4XlU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=BaaLOTXpCR_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Eredivisie</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/WIAAdPpdzFwVKU7maFvJ6w_96x96.png" alt="Ajax" class="team-logo">
+    <span>Ajax</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">21:45</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">21:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/z6E6BNnp8PjBXtfAiZ6yNg_96x96.png" alt="NEC" class="team-logo">
+    <span>NEC</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-ddb275ca-ec83-43ca-a781-4cda078f8bfa" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="3c4bb8c0-6f7d-471c-9b07-a3c2330b752f" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=Pr6TEZCkWY_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=Pr6TEZCkWY_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=DtGTgIzsFg_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="2.17">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Eredivisie</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/Lhhh1mbsrqH2K1AfXFazrQ_96x96.png" alt="AZ" class="team-logo">
+    <span>AZ</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">21:45</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">21:45</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/efkaF1E3Z9UbMSO0VC9WJQ_96x96.png" alt="Groningen" class="team-logo">
+    <span>Groningen</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-3c4bb8c0-6f7d-471c-9b07-a3c2330b752f" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="9a1b549a-a048-4786-b5cc-b7b93cc31758" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=myx_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=myx_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=gvo_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzam7_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=uc3bqP0nVp_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=gPWpKKxrjR_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=D7m9m8Hu3Q_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Premier League</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_96x96.png" alt="Liverpool" class="team-logo">
+    <span>Liverpool</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">22:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">22:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/4us2nCgl6kgZc0t3hpW75Q_96x96.png" alt="Arsenal" class="team-logo">
+    <span>Arsenal</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-9a1b549a-a048-4786-b5cc-b7b93cc31758" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<div class="event-container" data-id="f86e451a-b31a-4bd9-8411-8196b60a70fa" data-url="https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb75yfmnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e" data-servers='[
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=hpb75yfmnc_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvinkw.html?xszmmvo=wzamwv8_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "HD AUTO"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=OFoJ6pPzMK_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=RN9h2AxB85_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"},
+        {"url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=7YfbsmPHUz_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e", "label": "SD [IOS]"}
+    ]' data-duration="3">
+  <h2><img src="https://kltraid.pages.dev/images/sportsicon/Sepakbola.png" alt="Sport Icon" class="sport-icon">Bundesliga</h2>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/VOizBJPDHnvnSaU3XPVGAw_96x96.png" alt="Eintracht Frankfurt" class="team-logo">
+    <span>Eintracht Frankfurt</span>
+  </div>
+  <div class="kickoff-match-date">2025-05-11</div>
+  <div class="kickoff-match-time">22:30</div>
+  <div class="match-date" style="display:none;">2025-05-11</div>
+  <div class="match-time" style="display:none;">22:00</div>
+  <div class="live-label" style="display:none;">Live</div>
+  <div class="team">
+    <img src="https://ssl.gstatic.com/onebox/media/sports/logos/tMFLGl5GGkQXMihhpJVXuw_96x96.png" alt="St. Pauli" class="team-logo">
+    <span>St. Pauli</span>
+  </div>
+  <div class="server-buttons" style="display:none;">
+    <div class="instruction">You can select a server stream:</div>
+    <div class="buttons-container"></div>
+  </div>
+  <div class="countdown-wrapper" id="countdown-f86e451a-b31a-4bd9-8411-8196b60a70fa" style="display:none;">
+      <div class="countdown-title">Event will start in:</div>
+      <div class="countdown-timer"></div>
+  </div>
+</div>
+<!-- Akhir Data -->
+            <div id="spacer"></div>
+            </div>
+        </div>
+      
+      	<div id="live-tv" class="sidebar-content">
+            <div id="content">
+<!-- Awal Data Channel-->              
+<div class="channel-container" data-id="channel1" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 1</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel2" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc2">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 2</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel3" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc3">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 3</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel4" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc4">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 4</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel5" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc5">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 5</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel6" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 1</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel7" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 2</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel8" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex3">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 3</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel9" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rcti">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-rcti.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">RCTI</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel10" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mnc">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-mnctv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">MNCTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel11" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=gtv">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-gtv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">GTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel12" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=inews">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-inewstv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">iNEWS</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel13" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=metrotv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501451_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Metro TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel14" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tvone">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501492_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">TV One</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel15" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=kompas">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501525_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Kompas TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel16" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=antv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501594_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">ANTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel17" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rtv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501653_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">RTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel18" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=trans7">
+    <div class="logo-container">
+        <img src="https://tv.detik.com/image/Trans7.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Trans 7</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel19" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=transtv">
+    <div class="logo-container">
+        <img src="https://tv.detik.com/image/TransTV.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Trans TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel20" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mdtv">
+    <div class="logo-container">
+        <img src="https://vmp-cms.telkomsel.com/sites/default/files/entry/0_keojjla6/banner_mdpi.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">MDTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel21" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=sctv">
+    <div class="logo-container">
+        <img src="https://www.transtv.co.id/livetv/anytv/SCTV_live_streaming_tv.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SCTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel22" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=indosiar">
+    <div class="logo-container">
+        <img src="https://images.indihometv.com/tvposter/indosiar.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Indosiar</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel23" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=moji">
+    <div class="logo-container">
+        <img src="https://i0.wp.com/tanggal.id/wp-content/uploads/2025/01/Moji-TV.webp" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Moji</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel24" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=kplus">
+    <div class="logo-container">
+        <img src="https://images.indihometv.com/tvposter/k+.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">K+</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel25" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=jowo">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1725851535_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Jowo TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel26" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=btv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501562_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">BTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel27" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeographic">
+    <div class="logo-container">
+        <img src="https://throughiris.com/wp-content/uploads/2017/01/NatGeo_Upfront_Feature_HD_17.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">NAT GEO</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel28" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeowild">
+    <div class="logo-container">
+        <img src="https://identsandpresentation.com/natgeowild2015/one-d.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">NAT GEO WILD</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel29" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=animalplanet">
+    <div class="logo-container">
+        <img src="https://stmify.com/wp-content/uploads/2024/08/9-s.webp" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">ANIMAL PLANET</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+<!-- Akhir Data Channel-->
+            <div id="spacer"></div>
+            </div>
+        </div>
+      
+        <div id="chat" class="sidebar-content">
+            <iframe class="chat-iframe" src="https://www3.cbox.ws/box/?boxid=3538770&boxtag=Dn3dpG" width="294px" height="645px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            <div id="spacer"></div>
+        </div>
+
+            <div class="menu-wrapper-bottom">
+                <div class="menu-container">
+                    <!-- Tombol Refresh Halaman dengan warna sesuai -->
+                    <button class="menu-button refresh-button" onclick="location.reload();">
+                        <i class="fas fa-sync-alt"></i> Refresh Page
+                    </button>
+                    <!-- Tombol Telegram dengan warna sesuai -->
+                    <button class="menu-button telegram-button" onclick="window.open('https://t.me/+YdCBhuNDESw3ZWRl', '_blank');">
+                        <i class="fab fa-telegram-plane"></i> Telegram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        <script src="https://kltraid.pages.dev/js/apasih.js"></script>
+  		<script src="https://kltraid.pages.dev/js/home.js"></script>
+  
+<script>
+    function selectServerButton(button) {
+        // Menghapus class active dari semua tombol server
+        var buttons = document.querySelectorAll('.server-button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Menambahkan class active pada tombol yang diklik
+        button.classList.add('active');
+        // Simpan URL dari tombol server yang aktif
+        var url = button.getAttribute('data-url');
+        var eventId = button.closest('.event-container').getAttribute('data-id');
+        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
+    }
+
+    // Fungsi untuk switch content
+    function switchContent(target) {
+        document.querySelectorAll('.sidebar-content').forEach(function(content) {
+            content.classList.remove('active'); // hide all content
+        });
+        var targetContent = document.getElementById(target);
+        targetContent.classList.add('active'); // show target content
+
+        // Lazy load chat iframe
+        if (target === 'chat') {
+            var chatIframe = targetContent.querySelector('.chat-iframe');
+            if (chatIframe && !chatIframe.src) {
+                chatIframe.src = chatIframe.getAttribute('data-src');
+            }
+        }
+    }
+
+    function refreshVideoPlayer() {
+        var videoIframe = document.getElementById('video-iframe');
+        if (videoIframe) {
+            var currentSrc = videoIframe.src;
+
+            // Cek apakah iframe tersebut menggunakan Clappr dengan pengecekan sumber video HLS
+            if (currentSrc.includes('m3u8') || currentSrc.includes('clappr')) {
+                try {
+                    // Akses player Clappr di dalam iframe
+                    var player = videoIframe.contentWindow.player;
+
+                    if (player) {
+                        // Reload Clappr player tanpa mengosongkan src iframe
+                        player.stop();
+                        player.load({source: player.options.source});  // Memuat ulang stream yang sama
+                        player.play();  // Mulai ulang player
+                        console.log('Clappr player refreshed successfully');
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh Clappr player:', error);
+                }
+            } else {
+                // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
+                videoIframe.src = '';  // Kosongkan src
+                // Set atribut sandbox jika perlu
+                if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
+                    videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+                } else {
+                    videoIframe.removeAttribute('sandbox');
+                }
+                videoIframe.src = currentSrc;  // Set ulang src untuk reload iframe
+                console.log('Non-Clappr iframe refreshed successfully');
+            }
+        }
+    }
+
+    function startPeriodicEventCheck() {
+        setInterval(function() {
+            var now = new Date();
+            document.querySelectorAll('.event-container').forEach(function(container) {
+                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
+                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
+                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+                var eventStartTime = parseEventDateTime(matchDate, matchTime);
+                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+
+                if (now >= eventEndTime) {
+                    var id = container.getAttribute('data-id');
+                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
+                }
+            });
+        }, 60000); // Periksa setiap menit
+    }
+
+    // Setup initial events based on data directly from HTML
+    setupEvents();
+    setupChannels();
+
+    // Ensure correct video is loaded when returning from popunder
+    window.addEventListener('focus', function() {
+        var storedActiveEventId = sessionStorage.getItem('activeEventId');
+        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            // Dekripsi URL sebelum digunakan
+            var decryptedServerUrl = decryptUrl(storedActiveServerUrl);
+
+            var activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                var storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedServerUrl, false);
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

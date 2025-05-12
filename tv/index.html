@@ -15,72 +15,50 @@
     <title>Video Player with Sidebar</title>
 
 <style>
-.notif-modal {
+.notif-bar {
   position: fixed;
-  top: 0; left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  top: 56px; /* ⬅️ Adjust jika toolbar kamu tinggi */
+  right: 0;
   z-index: 9999;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px 12px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  box-shadow: -4px 4px 10px rgba(0,0,0,0.3);
+  font-family: sans-serif;
+  max-width: 90%;
+  gap: 10px;
 }
 
-.notif-modal.hidden {
+.notif-bar.hidden {
   display: none;
 }
 
-.notif-modal-content {
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: #fff;
-  padding: 24px 30px;
-  border-radius: 12px;
-  text-align: center;
-  width: 90%;
-  max-width: 360px;
-  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
-  position: relative;
-  font-family: sans-serif;
-  animation: fadeInScale 0.3s ease-out;
+.notif-text {
+  white-space: nowrap;
+  font-size: 14px;
 }
 
-.notif-close-btn {
-  position: absolute;
-  top: 10px;
-  right: 12px;
-  background: transparent;
-  border: none;
-  color: #fff;
-  font-size: 20px;
-  cursor: pointer;
-}
-
-.notif-enable-btn {
-  margin-top: 20px;
-  background-color: #fff;
+.notif-action {
+  background: white;
   color: #0072ff;
-  padding: 10px 20px;
   border: none;
-  border-radius: 8px;
+  padding: 6px 12px;
+  border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 13px;
 }
 
-.notif-enable-btn:hover {
-  background-color: #e6f0ff;
-}
-
-@keyframes fadeInScale {
-  from {
-    transform: scale(0.9);
-    opacity: 0;
-  }
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
+.notif-close {
+  background: transparent;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 </style>
 
@@ -90,14 +68,12 @@
 
 <body>
 
-<div id="notif-modal" class="notif-modal hidden">
-  <div class="notif-modal-content">
-    <button class="notif-close-btn" onclick="tutupModal()">✖</button>
-    <h2>🔔 Aktifkan Notifikasi</h2>
-    <p>Dapatkan info penting langsung ke perangkatmu!</p>
-    <button class="notif-enable-btn" onclick="bukaPengaturanNotifikasi()">Aktifkan Sekarang</button>
-  </div>
+<div id="notif-bar" class="notif-bar hidden">
+  <span class="notif-text">🔔 Aktifkan notifikasi</span>
+  <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Aktifkan</button>
+  <button class="notif-close" onclick="tutupNotifBar()">✖</button>
 </div>
+
 
 
 
@@ -474,31 +450,26 @@
 <script>
 function bukaPengaturanNotifikasi() {
   window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-  tutupModal();
+  tutupNotifBar();
 }
 
-function tutupModal() {
-  document.getElementById('notif-modal').classList.add('hidden');
-  localStorage.setItem('notifModalClosed', 'true');
+function tutupNotifBar() {
+  document.getElementById('notif-bar').classList.add('hidden');
+  localStorage.setItem('notifBarClosed', 'true');
 }
 
-function tampilkanModalJikaPerlu() {
-  const sudahDitutup = localStorage.getItem('notifModalClosed') === 'true';
+function tampilkanNotifBarJikaPerlu() {
+  const sudahDitutup = localStorage.getItem('notifBarClosed') === 'true';
   const izin = Notification.permission;
 
-  console.log('🔔 Notif status:', izin);
-  console.log('🚫 Modal pernah ditutup:', sudahDitutup);
-
-  // Hanya tampilkan modal jika:
-  // - Belum diaktifkan ("default" atau "denied")
-  // - Belum pernah ditutup
   if (!sudahDitutup && izin !== 'granted') {
-    document.getElementById('notif-modal').classList.remove('hidden');
+    document.getElementById('notif-bar').classList.remove('hidden');
   }
 }
 
-document.addEventListener('DOMContentLoaded', tampilkanModalJikaPerlu);
+document.addEventListener('DOMContentLoaded', tampilkanNotifBarJikaPerlu);
 </script>
+
 
 
 </body>

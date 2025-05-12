@@ -15,7 +15,7 @@
     <style>
     </style>
 
-    <!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>-->
+	<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
 </head>
 <body>
@@ -31,16 +31,35 @@
 	</header>
 		
 	<div id="main-content">
-	<div class="video-container">
-	<div class="video-wrapper">
-	    <img id="video-placeholder" src="/images/home_11zon.jpg" alt="Video Placeholder" style="width: 100%; height: 100%; object-fit: cover;">
-	    <div id="player"></div> <!-- Pindahkan player ke dalam video-wrapper -->
-	    <iframe id="video-iframe" src="about:blank" width="100%" height="100%" frameborder="0" allowfullscreen scrolling="no" gesture="media" allow="encrypted-media" style="display:none;"></iframe>
-	    <div class="countdown-wrapper" id="countdown" style="display:none;">
-		<div class="countdown-title">Event will start in:</div>
-		<div class="countdown-timer"></div>
+	  <div class="video-container">
+	    <div class="video-wrapper">
+	      <!-- Placeholder dengan class "show" agar tampil sejak awal -->
+	      <img id="video-placeholder"
+	           class="show"
+	           src="/images/poster_11zon.jpg"
+	           alt="Video Placeholder"
+	           style="width: 100%; height: 100%; object-fit: cover;">
+	
+	      <!-- Clappr Player container -->
+	      <div id="player" class="fade-layer"></div>
+	
+	      <!-- Iframe player untuk channel -->
+	      <iframe id="video-iframe"
+	              class="fade-layer"
+	              src="about:blank"
+	              width="100%" height="100%"
+	              frameborder="0" allowfullscreen
+	              scrolling="no" gesture="media"
+	              allow="encrypted-media"
+	              style="display: none;"></iframe>
+	
+	      <!-- Countdown (jika event belum mulai) -->
+	      <div class="countdown-wrapper" id="countdown" style="display: none;">
+	        <div class="countdown-title">Event will start in:</div>
+	        <div class="countdown-timer"></div>
+	      </div>
 	    </div>
-	</div>
+	  </div>
 	</div>
 
 	<div class="sidebar">
@@ -388,9 +407,8 @@
   
         <script src="/tv/js/apasihtv.js"></script>
   	<script src="/tv/js/hometv.js"></script>
-
+  
 <script>
-	    
     function selectServerButton(button) {
         // Menghapus class active dari semua tombol server
         var buttons = document.querySelectorAll('.server-button');
@@ -478,54 +496,41 @@
         }, 60000); // Periksa setiap menit
     }
 
-    window.addEventListener('DOMContentLoaded', async () => {
-        await loadEventsFromJSON(); // ambil event dari GitHub
-      	await loadChannelsFromJSON(); // panggil ini juga
-    
-        // Restore video saat kembali dari popunder
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-    
+    // Setup initial events based on data directly from HTML
+    setupEvents();
+    setupChannels();
+
+    // Ensure correct video is loaded when returning from popunder
+    window.addEventListener('focus', function() {
+        var storedActiveEventId = sessionStorage.getItem('activeEventId');
+        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
         if (storedActiveEventId && storedActiveServerUrl) {
-            const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            // Dekripsi URL sebelum digunakan
+            var decryptedServerUrl = decryptUrl(storedActiveServerUrl);
+
+            var activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
             if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                var storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedServerUrl}"]`);
                 if (storedButton) {
                     selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
+                    loadEventVideo(activeContainer, decryptedServerUrl, false);
                 }
             }
         }
     });
-    
-    window.addEventListener('focus', () => {
-    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-
-    if (storedActiveEventId && storedActiveServerUrl) {
-        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-        if (activeContainer) {
-            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-            if (storedButton) {
-                selectServerButton(storedButton);
-                loadEventVideo(activeContainer, decryptedUrl, false);
-            }
-        }
-    }
 	
-    if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/tv/sw.js')
-        .then(function(reg) {
-          console.log('Service Worker registered:', reg);
-        })
-        .catch(function(err) {
-          console.error('Service Worker registration failed:', err);
-        });
-    }
-	    
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/tv/sw.js')
+    .then(function(reg) {
+      console.log('Service Worker registered:', reg);
+    })
+    .catch(function(err) {
+      console.error('Service Worker registration failed:', err);
+    });
+}
+
 </script>
- 
+
 </body>
 </html>

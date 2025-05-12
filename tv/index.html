@@ -14,65 +14,78 @@
 
     <title>Video Player with Sidebar</title>
 
-/* Styling dasar untuk modal */
 <style>
-.modal {
+.toast {
   position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+  padding: 16px 20px;
   z-index: 9999;
-  left: 0; top: 0;
-  width: 100vw; height: 100vh;
-  background: rgba(0,0,0,0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  animation: slideUp 0.4s ease;
+  max-width: 280px;
+  font-family: sans-serif;
 }
 
-.modal.hidden {
+.toast.hidden {
   display: none;
 }
 
-.modal-content {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-  padding: 20px 30px;
-  border-radius: 12px;
-  text-align: center;
-  color: #fff;
-  max-width: 320px;
-  position: relative;
-  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+.toast-content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.modal-content h2 {
-  margin-top: 0;
+.toast-text {
+  font-size: 15px;
+  line-height: 1.4;
 }
 
-.enable-btn {
-  background: #fff;
-  color: #007BFF;
+.toast-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toast-btn {
+  background: white;
+  color: #0072ff;
   border: none;
-  padding: 10px 20px;
-  margin-top: 15px;
+  padding: 6px 14px;
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.enable-btn:hover {
-  background: #e6f0ff;
+.toast-btn:hover {
+  background: #f0f8ff;
 }
 
-.close-btn {
-  position: absolute;
-  top: 8px;
-  right: 10px;
+.toast-close {
   background: transparent;
-  color: #fff;
+  color: white;
+  font-size: 18px;
   border: none;
-  font-size: 20px;
   cursor: pointer;
 }
-    </style>
+
+@keyframes slideUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+</style>
+
 
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
@@ -80,14 +93,17 @@
 
 <body>
 
-<div id="notif-modal" class="modal hidden">
-  <div class="modal-content">
-    <button class="close-btn" onclick="tutupModal()">✖</button>
-    <h2>🔔 Aktifkan Notifikasi</h2>
-    <p>Dapatkan info terbaru langsung di perangkatmu!</p>
-    <button onclick="bukaPengaturanNotifikasi()" class="enable-btn">Aktifkan Sekarang</button>
+<div id="notif-toast" class="toast hidden">
+  <div class="toast-content">
+    <span class="toast-text">🔔 Aktifkan notifikasi agar tidak ketinggalan info!</span>
+    <div class="toast-actions">
+      <button onclick="bukaPengaturanNotifikasi()" class="toast-btn">Aktifkan</button>
+      <button onclick="tutupToast()" class="toast-close">✖</button>
+    </div>
   </div>
 </div>
+
+
 
     <header class="app-header">
         <div class="logo-area">
@@ -461,23 +477,23 @@
   <script>
 function bukaPengaturanNotifikasi() {
   window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
+  tutupToast();
 }
 
-function tutupModal() {
-  document.getElementById('notif-modal').classList.add('hidden');
-  // Simpan agar tidak ditampilkan ulang
-  localStorage.setItem('notifModalClosed', 'true');
+function tutupToast() {
+  document.getElementById('notif-toast').classList.add('hidden');
+  localStorage.setItem('notifToastClosed', 'true');
 }
 
-async function cekIzinNotifikasiDanTampilkanModal() {
-  if (localStorage.getItem('notifModalClosed') === 'true') return;
+function tampilkanToastJikaPerlu() {
+  if (localStorage.getItem('notifToastClosed') === 'true') return;
 
   if ('Notification' in window && Notification.permission !== 'granted') {
-    document.getElementById('notif-modal').classList.remove('hidden');
+    document.getElementById('notif-toast').classList.remove('hidden');
   }
 }
 
-document.addEventListener('DOMContentLoaded', cekIzinNotifikasiDanTampilkanModal);
+document.addEventListener('DOMContentLoaded', tampilkanToastJikaPerlu);
   </script>
 
 </body>

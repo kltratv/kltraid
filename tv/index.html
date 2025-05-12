@@ -58,7 +58,7 @@
 
 <body>
 
-<button onclick="cobaBukaDialerSangatSederhana()">Coba Dialer Sangat Sederhana</button>
+<button onclick="cobaBukaPengaturanNotifikasiSederhana()">Coba Buka Pengaturan Notifikasi (Sederhana)</button>
 
     <header class="app-header">
         <div class="logo-area">
@@ -430,17 +430,21 @@
     <script src="/tv/js/hometv.js"></script>
 
   <script>
-function cobaBukaDialerSangatSederhana() {
+function cobaBukaPengaturanNotifikasiSederhana() {
   if (navigator.userAgent.toLowerCase().includes("android")) {
     try {
-      window.location.href = "tel:1234567890";
+      window.location.href = "intent://settings#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;package=" + getPackageNameAplikasiTWA() + ";S.android.provider.extra.APP_PACKAGE=" + getPackageNameAplikasiTWA() + ";end";
     } catch (e) {
-      console.error("Gagal membuka dialer (sederhana):", e);
-      alert("Tidak dapat membuka dialer.");
+      console.error("Gagal membuka pengaturan notifikasi (sederhana):", e);
+      alert("Tidak dapat membuka pengaturan notifikasi secara otomatis.");
     }
   } else {
     alert("Fitur ini hanya tersedia di perangkat Android.");
   }
+}
+
+function getPackageNameAplikasiTWA() {
+  return "dev.pages.kltraid.twa"; // Pastikan ini benar!
 }
   </script>
 

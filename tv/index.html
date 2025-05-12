@@ -93,15 +93,15 @@
 
 <body>
 
-<div id="notif-toast" class="toast hidden">
-  <div class="toast-content">
-    <span class="toast-text">🔔 Aktifkan notifikasi agar tidak ketinggalan info!</span>
-    <div class="toast-actions">
-      <button onclick="bukaPengaturanNotifikasi()" class="toast-btn">Aktifkan</button>
-      <button onclick="tutupToast()" class="toast-close">✖</button>
-    </div>
+<div id="notif-modal" class="notif-modal hidden">
+  <div class="notif-modal-content">
+    <button class="notif-close-btn" onclick="tutupModal()">✖</button>
+    <h2>🔔 Aktifkan Notifikasi</h2>
+    <p>Dapatkan info penting langsung ke perangkatmu!</p>
+    <button class="notif-enable-btn" onclick="bukaPengaturanNotifikasi()">Aktifkan Sekarang</button>
   </div>
 </div>
+
 
 
 

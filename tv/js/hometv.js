@@ -69,24 +69,24 @@
             container.insertAdjacentHTML('beforeend', html);
         });
 
-	  setupEvents(); // harus dipanggil sebelum restore
-	
-	  // ✅ Pindahkan ke sini
-	  const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	  const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-	
-	  if (storedActiveEventId && storedActiveServerUrl) {
-	    const decryptedUrl = decryptUrl(storedActiveServerUrl);
-	    const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-	    if (activeContainer) {
-	      const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-	      if (storedButton) {
-	        selectServerButton(storedButton);
-	        loadEventVideo(activeContainer, decryptedUrl, false);
-	      }
-	    }
-	  }
-	}
+        setupEvents(); // harus dipanggil sebelum restore
+
+        // ✅ Pindahkan ke sini
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    }
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);

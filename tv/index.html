@@ -58,7 +58,7 @@
 
 <body>
 
-<button onclick="cobaBukaPengaturanNotifikasiTanpaHash()">Coba Buka Pengaturan Notifikasi (Sederhana)</button>
+<button onclick="cobaBukaPengaturanNotifikasiSederhana()">Coba Buka Pengaturan Notifikasi (Sederhana)</button>
 
     <header class="app-header">
         <div class="logo-area">
@@ -430,16 +430,12 @@
     <script src="/tv/js/hometv.js"></script>
 
   <script>
-function cobaBukaPengaturanNotifikasiTanpaHash() {
+function cobaBukaPengaturanNotifikasiSederhana() {
   if (navigator.userAgent.toLowerCase().includes("android")) {
     try {
-      window.location.href = "intent://settings" +
-                            "?action=android.settings.APP_NOTIFICATION_SETTINGS" +
-                            "&package=" + getPackageNameAplikasiTWA() +
-                            "&S.android.provider.extra.APP_PACKAGE=" + getPackageNameAplikasiTWA() +
-                            "#end"; // Beberapa sistem mungkin memerlukan #end
+      window.location.href = "intent://settings#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;package=" + getPackageNameAplikasiTWA() + ";S.android.provider.extra.APP_PACKAGE=" + getPackageNameAplikasiTWA() + ";end";
     } catch (e) {
-      console.error("Gagal membuka pengaturan notifikasi (tanpa hash):", e);
+      console.error("Gagal membuka pengaturan notifikasi (sederhana):", e);
       alert("Tidak dapat membuka pengaturan notifikasi secara otomatis.");
     }
   } else {

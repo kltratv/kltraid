@@ -754,24 +754,46 @@
         }
     });
 
-    function bukaPengaturanNotifikasi() {
-        window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-        tutupNotifBar();
-    }
-
-    function tutupNotifBar() {
-        document.getElementById('notif-bar').classList.add('hidden');
-    }
-
-    // Tampilkan hanya jika URL punya ?notif=off
-    function cekQueryNotifBar() {
-        const params = new URLSearchParams(window.location.search);
-        if (params.get('notif') === 'off') {
-            document.getElementById('notif-bar').classList.remove('hidden');
-        }
-    }
-
-    document.addEventListener('DOMContentLoaded', cekQueryNotifBar);
+	function bukaPengaturanNotifikasi() {
+	  window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
+	  tutupNotifBar();
+	}
+	
+	function tutupNotifBar() {
+	  document.getElementById('notif-bar').classList.add('hidden');
+	}
+	
+	// 🔊 Sound default dengan Web Audio API
+	function playNotifSound() {
+	  try {
+	    const ctx = new (window.AudioContext || window.webkitAudioContext)();
+	    const oscillator = ctx.createOscillator();
+	    const gainNode = ctx.createGain();
+	
+	    oscillator.type = 'triangle';       // Jenis suara
+	    oscillator.frequency.setValueAtTime(880, ctx.currentTime); // Nada A5
+	    gainNode.gain.setValueAtTime(0.1, ctx.currentTime);        // Volume pelan
+	
+	    oscillator.connect(gainNode);
+	    gainNode.connect(ctx.destination);
+	
+	    oscillator.start();
+	    oscillator.stop(ctx.currentTime + 0.3); // Durasi 300ms
+	  } catch (e) {
+	    console.warn('🔇 Web Audio tidak didukung:', e);
+	  }
+	}
+	
+	// Tampilkan hanya jika URL punya ?notif=off
+	function cekQueryNotifBar() {
+	  const params = new URLSearchParams(window.location.search);
+	  if (params.get('notif') === 'off') {
+	    document.getElementById('notif-bar').classList.remove('hidden');
+	    playNotifSound(); // 🔊 Play sound saat muncul
+	  }
+	}
+	
+	document.addEventListener('DOMContentLoaded', cekQueryNotifBar);
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/tv/sw.js')

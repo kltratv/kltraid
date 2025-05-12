@@ -1,104 +1,174 @@
     var intervals = {}; // Object to keep track of intervals
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
-
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
-
-function setupEvents() {
-    var eventContainers = document.querySelectorAll('.event-container');
-    var validEventIds = [];
-
-    eventContainers.forEach(function(container) {
-        var id = container.getAttribute('data-id');
-        validEventIds.push(id);
-
-        // Event time (match-date and match-time)
-        var matchDate = container.querySelector('.match-date').textContent.trim();
-        var matchTime = container.querySelector('.match-time').textContent.trim();
-        var eventTime = parseEventDateTime(matchDate, matchTime);
-
-        // Kickoff event time (kickoff-match-date and kickoff-match-time)
-        var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
-        var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
-        var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
-
-        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
-        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-
-        // Update match times for both eventTime and kickoffEventTime
-        updateMatchTimes(container, eventTime); // Original event time
-        updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
-
-        // Check live status using eventTime
-        checkLiveStatus(container, eventTime, eventDurationMilliseconds);
-
-        // Check stored event status
-        var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
-        if (storedStatus === 'ended') {
-            markEventAsEnded(id); // Set event as ended if stored status is "ended"
-            if (activeEventId === id) {
-                redirectToEndedURL();
-            }
-        }
-
-        // Setup server buttons
-        var servers = JSON.parse(container.getAttribute('data-servers'));
-        var buttonsContainer = container.querySelector('.buttons-container');
-
-        buttonsContainer.innerHTML = ''; // Clear existing buttons
-
-        servers.forEach(function(server, index) {
-            if (server.label.includes("Mobile") && !isMobileDevice()) {
-                return;
-            }
-
-            var button = document.createElement('div');
-            button.className = 'server-button';
-            button.textContent = server.label;
-            button.setAttribute('data-url', server.url);
-            button.addEventListener('click', function(event) {
-                event.stopPropagation();
-                selectServerButton(button);
-                loadEventVideo(container, server.url);
-            });
-            buttonsContainer.appendChild(button);
-
-            if (index === 0) {
-                button.classList.add('active');
-            }
+  
+    async function loadChannelsFromJSON() {
+      try {
+        const res = await fetch('https://kltraid.pages.dev/js/channel.json');
+        if (!res.ok) throw new Error('Failed to load channel.json');
+        const data = await res.json();
+        const container = document.querySelector('#live-tv #content');
+        container.innerHTML = "";
+    
+        data.forEach(channel => {
+          const html = `
+            <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
+              <div class="logo-container">
+                <img src="${channel.logo}" alt="Channel Logo" class="logo">
+              </div>
+              <div class="info-container">
+                <h3 class="channel-name">${channel.name}</h3>
+                <p class="status">${channel.status}</p>
+              </div>
+            </div>
+          `;
+          container.insertAdjacentHTML('beforeend', html);
         });
-
-        // Add event listener to toggle server buttons on click
-        container.addEventListener('click', function() {
-            var now = new Date();
-            if (now >= eventTime) {
-                toggleServerButtons(container, true);
-            }
-            loadEventVideo(container); // Ensure the event is loaded when container is clicked
+    
+        setupChannels(); // aktifkan klik listener setelah render
+      } catch (error) {
+        console.error('Error loading channels:', error);
+      }
+    }
+      
+    async function loadEventsFromJSON() {
+        const res = await fetch('https://kltraid.pages.dev/js/event.json');
+        const data = await res.json();
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = ""; // Kosongkan kontainer lama
+    
+        data.forEach(event => {
+            const serverStr = JSON.stringify(event.servers).replace(/"/g, '&quot;');
+    
+            const html = `
+            <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
+                <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+                <div class="team">
+                    <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+                    <span>${event.team1.name}</span>
+                </div>
+                <div class="kickoff-match-date">${event.kickoff_date}</div>
+                <div class="kickoff-match-time">${event.kickoff_time}</div>
+                <div class="match-date" style="display:none;">${event.match_date}</div>
+                <div class="match-time" style="display:none;">${event.match_time}</div>
+                <div class="live-label" style="display:none;">Live</div>
+                <div class="team">
+                    <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+                    <span>${event.team2.name}</span>
+                </div>
+                <div class="server-buttons" style="display:none;">
+                    <div class="instruction">You can select a server stream:</div>
+                    <div class="buttons-container"></div>
+                </div>
+                <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+                    <div class="countdown-title">Event will start in:</div>
+                    <div class="countdown-timer"></div>
+                </div>
+            </div>
+            `;
+            container.insertAdjacentHTML('beforeend', html);
         });
-
-        // Restore active button state from sessionStorage
-        var storedActiveEventId = sessionStorage.getItem('activeEventId');
-        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
-        if (storedActiveEventId === id && storedActiveServerUrl) {
-            var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-            if (storedButton) {
-                selectServerButton(storedButton);
-                loadEventVideo(container, storedActiveServerUrl, false);
-            }
-        }
-    });
-
-    // Check if the active event is still valid, otherwise reset it
-    if (activeEventId && !validEventIds.includes(activeEventId)) {
-        redirectToEndedURL();
+    
+        setupEvents(); // panggil ulang setup setelah DOM element event dibuat
     }
 
-    // Start periodic check for event statuses
-    startPeriodicEventCheck();
-}
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    function setupEvents() {
+        var eventContainers = document.querySelectorAll('.event-container');
+        var validEventIds = [];
+
+        eventContainers.forEach(function(container) {
+            var id = container.getAttribute('data-id');
+            validEventIds.push(id);
+
+            // Event time (match-date and match-time)
+            var matchDate = container.querySelector('.match-date').textContent.trim();
+            var matchTime = container.querySelector('.match-time').textContent.trim();
+            var eventTime = parseEventDateTime(matchDate, matchTime);
+
+            // Kickoff event time (kickoff-match-date and kickoff-match-time)
+            var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
+            var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
+            var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
+
+            var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+            var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+            // Update match times for both eventTime and kickoffEventTime
+            updateMatchTimes(container, eventTime); // Original event time
+            updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
+
+            // Check live status using eventTime
+            checkLiveStatus(container, eventTime, eventDurationMilliseconds);
+
+            // Check stored event status
+            var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
+            if (storedStatus === 'ended') {
+                markEventAsEnded(id); // Set event as ended if stored status is "ended"
+                if (activeEventId === id) {
+                    redirectToEndedURL();
+                }
+            }
+
+            // Setup server buttons
+            var servers = JSON.parse(container.getAttribute('data-servers'));
+            var buttonsContainer = container.querySelector('.buttons-container');
+
+            buttonsContainer.innerHTML = ''; // Clear existing buttons
+
+            servers.forEach(function(server, index) {
+                if (server.label.includes("Mobile") && !isMobileDevice()) {
+                    return;
+                }
+
+                var button = document.createElement('div');
+                button.className = 'server-button';
+                button.textContent = server.label;
+                button.setAttribute('data-url', server.url);
+                button.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    selectServerButton(button);
+                    loadEventVideo(container, server.url);
+                });
+                buttonsContainer.appendChild(button);
+
+                if (index === 0) {
+                    button.classList.add('active');
+                }
+            });
+
+            // Add event listener to toggle server buttons on click
+            container.addEventListener('click', function() {
+                var now = new Date();
+                if (now >= eventTime) {
+                    toggleServerButtons(container, true);
+                }
+                loadEventVideo(container); // Ensure the event is loaded when container is clicked
+            });
+
+            // Restore active button state from sessionStorage
+            var storedActiveEventId = sessionStorage.getItem('activeEventId');
+            var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+            if (storedActiveEventId === id && storedActiveServerUrl) {
+                var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(container, storedActiveServerUrl, false);
+                }
+            }
+        });
+
+        // Check if the active event is still valid, otherwise reset it
+        if (activeEventId && !validEventIds.includes(activeEventId)) {
+            redirectToEndedURL();
+        }
+
+        // Start periodic check for event statuses
+        startPeriodicEventCheck();
+    }
 
     function parseEventDateTime(date, time) {
         // Assuming date format is "June 21, 2024" and time is "07:30"
@@ -272,120 +342,109 @@ function updateMatchTimes(container, eventStartTime) {
     }
 
     function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
-        var id = container.getAttribute('data-id');
-        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+        var id = container.getAttribute('data-id'); // Mendapatkan data-id
+        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`); // Ambil URL dari sessionStorage tanpa mendekripsi
         var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
-        var isChannel = container.classList.contains('channel-container');
-    
+        var isChannel = container.classList.contains('channel-container'); // Deteksi apakah ini channel-container
+
         var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
         var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
         var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
         var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
         var eventStartTime = parseEventDateTime(matchDate, matchTime);
         var now = new Date();
-    
-        if (isNaN(eventStartTime.getTime()) && !isChannel) return;
-    
-        if (resetActiveId) {
-            activeEventId = id;
-            sessionStorage.setItem('activeEventId', id);
+
+        if (isNaN(eventStartTime.getTime()) && !isChannel) {
+            console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
+            return;
         }
-    
+
+        if (resetActiveId) {
+            activeEventId = id; // Set the active event ID
+            sessionStorage.setItem('activeEventId', id); // Save active event ID to session storage
+        }
+
         var countdownElement = document.getElementById('countdown');
         var countdownTimer = countdownElement.querySelector('.countdown-timer');
         var videoIframe = document.getElementById('video-iframe');
         var videoPlaceholder = document.getElementById('video-placeholder');
         var playerElement = document.getElementById("player");
-    
-        var decryptedUrl = decryptUrl(url);
+
+        // Set sandbox attributes before loading the URL
+        var decryptedUrl = decryptUrl(url); // Dekripsi hanya pada variabel baru sebelum digunakan
         if (decryptedUrl.includes('sportsonline') || decryptedUrl.includes('sportcastelite') || decryptedUrl.includes('venoms') || decryptedUrl.includes('p2plive2')) {
             videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
         } else {
             videoIframe.removeAttribute('sandbox');
         }
-    
+
+        // Hide all countdowns and clear all intervals
         document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
             countdown.style.display = 'none';
         });
-        for (var key in intervals) clearInterval(intervals[key]);
-    
+        for (var key in intervals) {
+            clearInterval(intervals[key]);
+        }
+
+        // Hide buttons for other events
         document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
             buttonsContainer.style.display = 'none';
         });
-    
-        // ✅ KHUSUS CHANNEL-CONTAINER (IFRAME)
+
+        // Jika ini channel-container (menggunakan iframe langsung)
         if (isChannel) {
+            // Hentikan dan kosongkan Clappr Player jika masih aktif
             if (clapprPlayerInstance) {
-                clapprPlayerInstance.destroy();
-                clapprPlayerInstance = null;
-                lastLoadedUrl = null;
+                clapprPlayerInstance.destroy(); // Hancurkan Clappr Player
+                clapprPlayerInstance = null; // Reset Clappr instance setelah dihancurkan
+                lastLoadedUrl = null; // Reset URL terakhir yang dimuat
             }
-    
+
+            // Set URL iframe jika berbeda
             if (videoIframe.src !== decryptedUrl) {
-                // ✅ Tampilkan placeholder, sembunyikan iframe dulu
-                // Reset state
-                videoPlaceholder.classList.remove('show');
-                videoIframe.classList.remove('show');
-                videoPlaceholder.style.display = 'block';
-                videoIframe.style.display = 'none';
-                
-                // Fade logic saat iframe selesai load
-                videoIframe.onload = function () {
-                    videoIframe.style.display = 'block';
-                
-                    // Delay sejenak agar CSS transition bekerja
-                    setTimeout(() => {
-                        videoPlaceholder.classList.remove('show');
-                        videoIframe.classList.add('show');
-                        setTimeout(() => {
-                            videoPlaceholder.style.display = 'none';
-                        }, 400); // Tunggu sampai transisi selesai
-                    }, 50);
-                };
-                
-                // Mulai dengan menampilkan placeholder
-                setTimeout(() => {
-                    videoPlaceholder.classList.add('show');
-                }, 10);
-                
-                videoIframe.src = decryptedUrl;
-            } else {
-                videoPlaceholder.style.display = 'none';
-                videoIframe.style.display = 'block';
+                videoIframe.src = decryptedUrl; // Set URL iframe
             }
-    
-            playerElement.style.display = 'none';
+            videoIframe.style.display = 'block'; // Tampilkan iframe
+            videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
+            playerElement.style.display = 'none'; // Sembunyikan Clappr Player
             console.log('Channel video loaded:', decryptedUrl);
-            return;
+            return; // Tidak melanjutkan logika event-container
         }
-    
-        // ✅ EVENT-CONTAINER DENGAN PLAYER (M3U8)
+
+        // Jika URL adalah m3u8, gunakan Clappr Player
         if (now >= eventStartTime) {
             countdownElement.style.display = 'none';
-    
+
+            // Hentikan dan kosongkan iframe jika berpindah dari URL iframe ke URL lain
             if (videoIframe && videoIframe.src !== decryptedUrl) {
-                videoIframe.src = '';
-                videoIframe.style.display = 'none';
+                videoIframe.src = ''; // Kosongkan src iframe untuk menghentikan pemutaran video
+                videoIframe.style.display = 'none'; // Sembunyikan iframe
             }
-    
+
             if (decryptedUrl.includes(".m3u8")) {
                 let normalizedUrl = normalizeUrl(decryptedUrl);
-    
+
+                // Jika Clappr player sudah ada dan tidak perlu diinisialisasi ulang
                 if (clapprPlayerInstance && lastLoadedUrl === normalizedUrl) {
-                    videoPlaceholder.style.display = 'none';
-                    playerElement.style.display = 'block';
+                    console.log('Clappr sudah ada, sembunyikan video-placeholder dan tampilkan player');
+                    videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
+                    playerElement.style.display = 'block'; // Pastikan player tetap tampil
                 } else {
+                    // Jika Clappr player sudah ada, tetapi URL berbeda, maka kita hancurkan dan inisialisasi ulang
                     if (clapprPlayerInstance) {
+                        // Bersihkan event listeners dan pending reconnects
                         clapprPlayerInstance.off(Clappr.Events.PLAYER_ERROR);
                         clapprPlayerInstance.off(Clappr.Events.PLAYER_STOP);
                         clearTimeout(reconnectTimeout);
-                        clapprPlayerInstance.destroy();
-                        clapprPlayerInstance = null;
+                        clapprPlayerInstance.destroy(); // Hancurkan player jika URL berbeda
+                        clapprPlayerInstance = null; // Reset instance setelah dihancurkan
                     }
-    
-                    videoPlaceholder.style.display = 'none';
-                    playerElement.style.display = 'block';
-    
+
+                    videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
+                    playerElement.style.display = 'block'; // Tampilkan Clappr Player
+
+                    // Inisialisasi Clappr Player
                     clapprPlayerInstance = new Clappr.Player({
                         source: normalizedUrl,
                         height: '100%',
@@ -393,44 +452,58 @@ function updateMatchTimes(container, eventStartTime) {
                         loop: 'true',
                         poster: 'https://kltraid.pages.dev/images/poster_11zon.jpg',
                         plugins: [LevelSelector],
-                        mediacontrol: { seekbar: '#014AFF', buttons: '#FFF' },
+                        mediacontrol: {
+                            seekbar: '#014AFF',
+                            buttons: '#FFF'
+                        },
                         playback: {
-                            hlsjsConfig: { startPosition: -1 }
+                            hlsjsConfig: {
+                                startPosition: -1, // Selalu mulai dari posisi live terkini
+                            }
                         },
                         mimeType: "application/x-mpegURL"
                     });
-    
-                    clapprPlayerInstance.attachTo(playerElement);
-                    lastLoadedUrl = normalizedUrl;
-    
+
+                    clapprPlayerInstance.attachTo(playerElement); // Attach Clappr ke playerElement
+                    lastLoadedUrl = normalizedUrl; // Simpan URL terakhir yang dimuat
+
+                    // Force landscape on fullscreen
                     clapprPlayerInstance.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
                         if (screen.orientation && screen.orientation.lock) {
-                            screen.orientation.lock('landscape').catch(console.error);
+                            screen.orientation.lock('landscape').catch(function(error) {
+                                console.error('Failed to lock screen orientation:', error);
+                            });
                         }
                     });
-    
+
+                    // Unlock orientation on exit fullscreen
                     clapprPlayerInstance.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
                         if (screen.orientation && screen.orientation.unlock) {
                             screen.orientation.unlock();
                         }
                     });
-    
+
+                    // Auto-reconnect on error
                     clapprPlayerInstance.on(Clappr.Events.PLAYER_ERROR, function() {
-                        clearTimeout(reconnectTimeout);
+                        console.log('Error occurred, attempting to reconnect...');
+                        clearTimeout(reconnectTimeout); // Clear any pending reconnects
                         reconnectTimeout = setTimeout(function() {
-                            if (clapprPlayerInstance?.options.source === normalizedUrl) {
-                                clapprPlayerInstance.load({ source: normalizedUrl });
+                            if (clapprPlayerInstance && clapprPlayerInstance.options.source === normalizedUrl) {
+                                clapprPlayerInstance.load({source: normalizedUrl});
                                 clapprPlayerInstance.play();
                             }
-                        }, 5000);
+                        }, 5000); // Coba lagi dalam 5 detik
                     });
-    
+
+                    // Auto-play after stop
                     clapprPlayerInstance.on(Clappr.Events.PLAYER_STOP, function() {
                         if (!clapprPlayerInstance.isPaused()) {
-                            clapprPlayerInstance.play();
+                            console.log('Stream stopped, trying to reconnect');
+                            clapprPlayerInstance.play(); // Auto-reconnect jika stream berhenti
                         }
                     });
-    
+
+                    // Auto resize player
                     function resizePlayer() {
                         requestAnimationFrame(() => {
                             var newWidth = playerElement.parentElement.offsetWidth;
@@ -441,52 +514,47 @@ function updateMatchTimes(container, eventStartTime) {
                     resizePlayer();
                     window.onresize = resizePlayer;
                 }
-    
+
             } else {
-                // ✅ NON-m3u8 (iframe dengan placeholder fix)
-                playerElement.style.display = 'none';
+                // Untuk URL lain (bukan m3u8), gunakan iframe biasa
+                playerElement.style.display = 'none'; // Sembunyikan Clappr Player
                 if (clapprPlayerInstance) {
-                    clapprPlayerInstance.destroy();
-                    clapprPlayerInstance = null;
-                    lastLoadedUrl = null;
+                    clapprPlayerInstance.destroy(); // Hancurkan Clappr Player jika masih ada
+                    clapprPlayerInstance = null; // Reset instance setelah dihancurkan
+                    lastLoadedUrl = null; // Reset URL yang terakhir dimuat
                 }
-    
-                if (videoIframe.src !== decryptedUrl) {
-                    videoPlaceholder.style.display = 'block';
-                    videoIframe.style.display = 'none';
-    
-                    videoIframe.onload = function () {
-                        videoPlaceholder.style.display = 'none';
-                        videoIframe.style.display = 'block';
-                    };
-    
-                    videoIframe.src = decryptedUrl;
-                } else {
-                    videoPlaceholder.style.display = 'none';
-                    videoIframe.style.display = 'block';
+                if (videoIframe.src !== decryptedUrl) { // Hanya update src jika berbeda
+                    videoIframe.src = decryptedUrl; // Load URL untuk iframe
                 }
+                videoIframe.style.display = 'block'; // Tampilkan iframe
+                videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
             }
-    
-            setActiveHoverEffect(id);
+
+            setActiveHoverEffect(id);  // Fungsi untuk mengatur efek hover berdasarkan id
             console.log('Loading event video now:', id);
-            toggleServerButtons(container, true);
-            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
-    
+            toggleServerButtons(container, true); // Tampilkan tombol server
+            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds); // Show live label
+
+            // Mark the correct button as active if not already marked
             var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
-            if (activeButton) selectServerButton(activeButton);
-    
+            if (activeButton) {
+                selectServerButton(activeButton);
+            }
         } else {
+            // Jika event belum dimulai, tampilkan video-placeholder tanpa menghancurkan Clappr player
             countdownElement.style.display = 'block';
             videoIframe.style.display = 'none';
-            videoPlaceholder.style.display = 'block';
-            playerElement.style.display = 'none';
+            videoPlaceholder.style.display = 'block'; // Pastikan placeholder tampil di atas Clappr
+            playerElement.style.display = 'none'; // Sembunyikan Clappr player sementara waktu
             updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
-            setActiveHoverEffect(id);
+            setActiveHoverEffect(id); // Set hover effect when event is selected
             console.log('Setting countdown for future event:', id);
         }
-    
+
+        // Tampilkan tombol server untuk event yang aktif
         toggleServerButtons(container, now >= eventStartTime);
-    
+
+        // Simpan URL server yang aktif di sessionStorage
         if (resetActiveId && specificUrl) {
             sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
         }
@@ -545,3 +613,128 @@ function updateMatchTimes(container, eventStartTime) {
             serverButtonsContainer.style.display = 'none';
         }
     }
+
+    function selectServerButton(button) {
+        // Menghapus class active dari semua tombol server
+        var buttons = document.querySelectorAll('.server-button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Menambahkan class active pada tombol yang diklik
+        button.classList.add('active');
+        // Simpan URL dari tombol server yang aktif
+        var url = button.getAttribute('data-url');
+        var eventId = button.closest('.event-container').getAttribute('data-id');
+        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
+    }
+
+    // Fungsi untuk switch content
+    function switchContent(target) {
+        document.querySelectorAll('.sidebar-content').forEach(function(content) {
+            content.classList.remove('active'); // hide all content
+        });
+        var targetContent = document.getElementById(target);
+        targetContent.classList.add('active'); // show target content
+
+        // Lazy load chat iframe
+        if (target === 'chat') {
+            var chatIframe = targetContent.querySelector('.chat-iframe');
+            if (chatIframe && !chatIframe.src) {
+                chatIframe.src = chatIframe.getAttribute('data-src');
+            }
+        }
+    }
+
+    function refreshVideoPlayer() {
+        var videoIframe = document.getElementById('video-iframe');
+        if (videoIframe) {
+            var currentSrc = videoIframe.src;
+
+            // Cek apakah iframe tersebut menggunakan Clappr dengan pengecekan sumber video HLS
+            if (currentSrc.includes('m3u8') || currentSrc.includes('clappr')) {
+                try {
+                    // Akses player Clappr di dalam iframe
+                    var player = videoIframe.contentWindow.player;
+
+                    if (player) {
+                        // Reload Clappr player tanpa mengosongkan src iframe
+                        player.stop();
+                        player.load({source: player.options.source});  // Memuat ulang stream yang sama
+                        player.play();  // Mulai ulang player
+                        console.log('Clappr player refreshed successfully');
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh Clappr player:', error);
+                }
+            } else {
+                // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
+                videoIframe.src = '';  // Kosongkan src
+                // Set atribut sandbox jika perlu
+                if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
+                    videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+                } else {
+                    videoIframe.removeAttribute('sandbox');
+                }
+                videoIframe.src = currentSrc;  // Set ulang src untuk reload iframe
+                console.log('Non-Clappr iframe refreshed successfully');
+            }
+        }
+    }
+
+    function startPeriodicEventCheck() {
+        setInterval(function() {
+            var now = new Date();
+            document.querySelectorAll('.event-container').forEach(function(container) {
+                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
+                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
+                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+                var eventStartTime = parseEventDateTime(matchDate, matchTime);
+                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+
+                if (now >= eventEndTime) {
+                    var id = container.getAttribute('data-id');
+                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
+                }
+            });
+        }, 60000); // Periksa setiap menit
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        await loadEventsFromJSON(); // ambil event dari GitHub
+      	await loadChannelsFromJSON(); // panggil ini juga
+    
+        // Restore video saat kembali dari popunder
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    });
+    
+    window.addEventListener('focus', () => {
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    });

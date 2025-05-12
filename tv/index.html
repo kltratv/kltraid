@@ -17,27 +17,26 @@
 <style>
 .toast {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  right: 16px;
+  bottom: 16px;
+  left: 16px;
+  max-width: 360px;
+  margin: auto;
   background: linear-gradient(135deg, #00c6ff, #0072ff);
   color: white;
   border-radius: 10px;
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-  padding: 16px 20px;
-  z-index: 9999;
-  animation: slideUp 0.4s ease;
-  max-width: 280px;
-  font-family: sans-serif;
-}
-
-.toast.hidden {
-  display: none;
-}
-
-.toast-content {
+  padding: 14px 18px;
+  z-index: 99999;
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-family: sans-serif;
+  animation: slideUp 0.4s ease;
+}
+
+.toast.hidden {
+  display: none !important;
 }
 
 .toast-text {
@@ -59,7 +58,7 @@
   border-radius: 6px;
   font-weight: bold;
   cursor: pointer;
-  transition: background 0.3s;
+  flex-shrink: 0;
 }
 
 .toast-btn:hover {
@@ -72,6 +71,7 @@
   font-size: 18px;
   border: none;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 @keyframes slideUp {

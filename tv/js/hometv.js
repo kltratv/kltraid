@@ -230,38 +230,39 @@
         intervals[id] = interval; // Store the interval in the intervals object
     }
 
-function updateMatchTimes(container, eventStartTime) {
-    var matchDateElem = container.querySelector('.match-date');
-    var matchTimeElem = container.querySelector('.match-time');
-    var kickoffDateElem = container.querySelector('.kickoff-match-date');
-    var kickoffTimeElem = container.querySelector('.kickoff-match-time');
-
-    if (!matchDateElem.hasAttribute('data-original-date')) {
-        matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
-        matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+    function updateMatchTimes(container, eventStartTime) {
+        var matchDateElem = container.querySelector('.match-date');
+        var matchTimeElem = container.querySelector('.match-time');
+        var kickoffDateElem = container.querySelector('.kickoff-match-date');
+        var kickoffTimeElem = container.querySelector('.kickoff-match-time');
+    
+        if (!matchDateElem.hasAttribute('data-original-date')) {
+            matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
+            matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+        }
+    
+        var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
+        var visitorOffsetInMinutes = new Date().getTimezoneOffset();
+        var visitorOffsetInHours = visitorOffsetInMinutes / 60;
+        var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
+    
+        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+    
+        console.log(`Adjusted date for event: ${adjustedDate}`);
+        console.log(`Adjusted time for event: ${adjustedTime}`);
+    
+        // Update match date and time
+        matchDateElem.textContent = adjustedDate;
+        matchTimeElem.textContent = adjustedTime;
+    
+        // Update kickoff date and time if available
+        if (kickoffDateElem && kickoffTimeElem) {
+            kickoffDateElem.textContent = adjustedDate;
+            kickoffTimeElem.textContent = adjustedTime;
+        }
     }
 
-    var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
-    var visitorOffsetInMinutes = new Date().getTimezoneOffset();
-    var visitorOffsetInHours = visitorOffsetInMinutes / 60;
-    var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
-
-    var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-    var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-
-    console.log(`Adjusted date for event: ${adjustedDate}`);
-    console.log(`Adjusted time for event: ${adjustedTime}`);
-
-    // Update match date and time
-    matchDateElem.textContent = adjustedDate;
-    matchTimeElem.textContent = adjustedTime;
-
-    // Update kickoff date and time if available
-    if (kickoffDateElem && kickoffTimeElem) {
-        kickoffDateElem.textContent = adjustedDate;
-        kickoffTimeElem.textContent = adjustedTime;
-    }
-}
     function checkLiveStatus(container, eventStartTime, eventDurationMilliseconds) {
         var now = new Date();
         var liveLabel = container.querySelector('.live-label');

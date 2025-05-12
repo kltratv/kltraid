@@ -15,77 +15,74 @@
     <title>Video Player with Sidebar</title>
 
 <style>
-.toast {
+.notif-modal {
   position: fixed;
-  right: 16px;
-  bottom: 16px;
-  left: 16px;
-  max-width: 360px;
-  margin: auto;
-  background: linear-gradient(135deg, #00c6ff, #0072ff);
-  color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
-  padding: 14px 18px;
-  z-index: 99999;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
   display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-family: sans-serif;
-  animation: slideUp 0.4s ease;
-}
-
-.toast.hidden {
-  display: none !important;
-}
-
-.toast-text {
-  font-size: 15px;
-  line-height: 1.4;
-}
-
-.toast-actions {
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
+  z-index: 9999;
 }
 
-.toast-btn {
-  background: white;
-  color: #0072ff;
+.notif-modal.hidden {
+  display: none;
+}
+
+.notif-modal-content {
+  background: linear-gradient(135deg, #00c6ff, #0072ff);
+  color: #fff;
+  padding: 24px 30px;
+  border-radius: 12px;
+  text-align: center;
+  width: 90%;
+  max-width: 360px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  position: relative;
+  font-family: sans-serif;
+  animation: fadeInScale 0.3s ease-out;
+}
+
+.notif-close-btn {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
   border: none;
-  padding: 6px 14px;
-  border-radius: 6px;
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.notif-enable-btn {
+  margin-top: 20px;
+  background-color: #fff;
+  color: #0072ff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
   font-weight: bold;
   cursor: pointer;
-  flex-shrink: 0;
+  transition: background-color 0.3s;
 }
 
-.toast-btn:hover {
-  background: #f0f8ff;
+.notif-enable-btn:hover {
+  background-color: #e6f0ff;
 }
 
-.toast-close {
-  background: transparent;
-  color: white;
-  font-size: 18px;
-  border: none;
-  cursor: pointer;
-  flex-shrink: 0;
-}
-
-@keyframes slideUp {
+@keyframes fadeInScale {
   from {
-    transform: translateY(40px);
+    transform: scale(0.9);
     opacity: 0;
   }
   to {
-    transform: translateY(0);
+    transform: scale(1);
     opacity: 1;
   }
 }
 </style>
-
 
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
@@ -474,27 +471,28 @@
     <script src="/tv/js/apasihtv.js"></script>
     <script src="/tv/js/hometv.js"></script>
 
-  <script>
+<script>
 function bukaPengaturanNotifikasi() {
   window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-  tutupToast();
+  tutupModal();
 }
 
-function tutupToast() {
-  document.getElementById('notif-toast').classList.add('hidden');
-  localStorage.setItem('notifToastClosed', 'true');
+function tutupModal() {
+  document.getElementById('notif-modal').classList.add('hidden');
+  localStorage.setItem('notifModalClosed', 'true');
 }
 
-function tampilkanToastJikaPerlu() {
-  if (localStorage.getItem('notifToastClosed') === 'true') return;
+function tampilkanModalJikaPerlu() {
+  if (localStorage.getItem('notifModalClosed') === 'true') return;
 
   if ('Notification' in window && Notification.permission !== 'granted') {
-    document.getElementById('notif-toast').classList.remove('hidden');
+    document.getElementById('notif-modal').classList.remove('hidden');
   }
 }
 
-document.addEventListener('DOMContentLoaded', tampilkanToastJikaPerlu);
-  </script>
+document.addEventListener('DOMContentLoaded', tampilkanModalJikaPerlu);
+</script>
+
 
 </body>
 </html>

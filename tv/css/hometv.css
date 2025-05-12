@@ -208,26 +208,27 @@
         }
 
         .sidebar-content {
-            flex-grow: 1; /* Let content take the remaining space */
-            padding: 2px; /* Padding around content for better spacing */
-            display: none; /* Hide by default */
-            overflow-y: auto; /* Ensures only this part is scrollable */
-
-                background:
-                      radial-gradient(50% 50% at 100% 0,#0f172a 0%  5% ,#060a0f 6%  15%,#0f172a 16% 25%,#060a0f 26% 35%,#0f172a 36% 45%,
-                       #060a0f 46% 55%,#0f172a 56% 65%,#060a0f 66% 75%,#0f172a 76% 85%,#060a0f 86% 95%,
-                       #0000 96%),
-                      radial-gradient(50% 50% at 0 100%,#0f172a 0%  5% ,#060a0f 6%  15%,#0f172a 16% 25%,#060a0f 26% 35%,#0f172a 36% 45%,
-                       #060a0f 46% 55%,#0f172a 56% 65%,#060a0f 66% 75%,#0f172a 76% 85%,#060a0f 86% 95%,
-                       #0000 96%),
-                      radial-gradient(50% 50%,#0f172a 0%  5% ,#060a0f 6%  15%,#0f172a 16% 25%,#060a0f 26% 35%,#0f172a 36% 45%,
-                       #060a0f 46% 55%,#0f172a 56% 65%,#060a0f 66% 75%,#0f172a 76% 85%,#060a0f 86% 95%,
-                       #0000 96%),
-                      radial-gradient(50% 50%,#0f172a 0%  5% ,#060a0f 6%  15%,#0f172a 16% 25%,#060a0f 26% 35%,#0f172a 36% 45%,
-                       #060a0f 46% 55%,#0f172a 56% 65%,#060a0f 66% 75%,#0f172a 76% 85%,#060a0f 86% 95%,
-                       #0000 96%) 32px 32px;
-                background-size: 64px 64px;
-                background-color: #0f172a;
+            flex-grow: 1;
+            padding: 2px;
+            display: none; /* pastikan ini aktif saat menguji */
+            overflow-y: auto;
+        
+            background:
+                repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)),
+                repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px,
+                repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)),
+                repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px,
+                #0f172a;
+            background-size: 64px 64px;
+            background-position: 0 0;
         }
 
         .sidebar-content.active {

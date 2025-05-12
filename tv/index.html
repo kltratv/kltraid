@@ -430,10 +430,10 @@
     <script src="/tv/js/hometv.js"></script>
 
   <script>
-function bukaDialer() {
+function cobaBukaDialerDenganPackage() {
   if (navigator.userAgent.toLowerCase().includes("android")) {
     try {
-      window.location.href = "intent:1234567890#Intent;action=android.intent.action.DIAL;end";
+      window.location.href = "intent:1234567890#Intent;action=android.intent.action.DIAL;package=dev.pages.kltraid.twa;end";
     } catch (e) {
       console.error("Gagal membuka dialer:", e);
       alert("Tidak dapat membuka dialer.");

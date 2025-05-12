@@ -58,7 +58,7 @@
 
 <body>
 
-<button onclick="cobaBukaDialerExplicit()">Coba Buka Dialer</button>
+<button onclick="cobaBukaDialerSangatSederhana()">Coba Dialer Sangat Sederhana</button>
 
     <header class="app-header">
         <div class="logo-area">
@@ -430,16 +430,12 @@
     <script src="/tv/js/hometv.js"></script>
 
   <script>
-function cobaBukaDialerExplicit() {
+function cobaBukaDialerSangatSederhana() {
   if (navigator.userAgent.toLowerCase().includes("android")) {
     try {
-      const intent = new Intent("android.intent.action.DIAL");
-      intent.setData(Uri.parse("tel:1234567890"));
-      // Bagaimana cara "startActivity" dari WebView TWA mungkin berbeda
-      // window.location.href = intent.toUri(Intent.URI_INTENT_SCHEME);
-      window.location.href = "intent:1234567890#Intent;action=android.intent.action.DIAL;end";
+      window.location.href = "tel:1234567890";
     } catch (e) {
-      console.error("Gagal membuka dialer (explicit):", e);
+      console.error("Gagal membuka dialer (sederhana):", e);
       alert("Tidak dapat membuka dialer.");
     }
   } else {

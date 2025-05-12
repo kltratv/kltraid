@@ -440,12 +440,10 @@
   <script>
 const notificationModal = document.getElementById('notificationModal');
 const closeModalButton = document.getElementById('closeModalButton');
-let modalTelahDitampilkan = localStorage.getItem('modal_notifikasi_twa_telah_ditampilkan') === 'true';
 
 // Fungsi untuk menampilkan modal
 function tampilkanModal() {
   notificationModal.style.display = 'flex';
-  localStorage.setItem('modal_notifikasi_twa_telah_ditampilkan', 'true');
 }
 
 // Fungsi untuk menyembunyikan modal
@@ -468,12 +466,18 @@ function bukaPengaturanNotifikasiAplikasi() {
 }
 
 function getPackageNameAplikasiTWA() {
-  return "dev.pages.kltraid.twa"; // Pastikan ini benar!
+  return "com.example.twa.aplikasianda"; // Pastikan ini benar!
 }
 
 // Event listener untuk tombol close modal
 closeModalButton.addEventListener('click', sembunyikanModal);
 
+// Tampilkan modal saat halaman dimuat (tanpa memeriksa localStorage)
+window.onload = () => {
+  if (navigator.userAgent.toLowerCase().includes("android")) {
+    tampilkanModal();
+  }
+};
   </script>
 
 </body>

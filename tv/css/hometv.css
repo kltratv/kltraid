@@ -418,3 +418,53 @@
                 padding-bottom: calc(0px + env(safe-area-inset-bottom)); /* Menambahkan padding bawah */
             }
         }
+
+        /* === APP HEADER === */
+        .app-header {
+          background-color: #0f0f0f;
+          color: #ffffff;
+          padding: 10px 16px;
+          display: flex;
+          align-items: center;
+          border-bottom: 1px solid #222;
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+          z-index: 1000;
+          position: relative;
+        }
+        
+        /* Wrapper logo + teks */
+        .logo-area {
+          display: flex;
+          align-items: center;
+        }
+        
+        /* Logo di kiri */
+        .logo-img {
+          width: 64px;
+          height: auto;
+          margin-right: 12px;
+        }
+        
+        /* Area teks di kanan logo */
+        .text-area {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          line-height: 1.2;
+        }
+        
+        /* Nama Aplikasi */
+        .app-name {
+          font-size: 22px;
+          font-weight: bold;
+          font-family: 'Teko', sans-serif;
+          letter-spacing: 1px;
+          text-transform: uppercase;
+        }
+        
+        /* Slogan */
+        .app-slogan {
+          font-size: 12px;
+          opacity: 0.75;
+          font-family: Arial, sans-serif;
+        }

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="//cdn.jsdelivr.net/npm/@clappr/player@0.6.0/dist/clappr.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@0.3.0/dist/level-selector.min.js"></script>
+  	<link rel="stylesheet" href="https://kltraid.pages.dev/css/home.css">
+    <title>Video Player with Sidebar</title>
+    <style>
+    </style>
+
+	<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
+
+</head>
+<body>
+    <div id="main-content">
+    <div class="video-container">
+        <div class="video-wrapper">
+            <img id="video-placeholder" src="https://kltraid.pages.dev/images/home_11zon.jpg" alt="Video Placeholder" style="width: 100%; height: 100%; object-fit: cover;">
+            <div id="player"></div> <!-- Pindahkan player ke dalam video-wrapper -->
+            <iframe id="video-iframe" src="about:blank" width="100%" height="100%" frameborder="0" allowfullscreen scrolling="no" gesture="media" allow="encrypted-media" style="display:none;"></iframe>
+            <div class="countdown-wrapper" id="countdown" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+    </div>
+
+	<div class="sidebar">
+        <!-- Menu-wrapper di atas -->
+        <div class="menu-wrapper-top">
+            <div class="menu-container">
+                <button class="menu-button" onclick="refreshVideoPlayer()">Refresh Video</button>
+                <button class="menu-button" onclick="switchContent('live-event')">Live Event</button>
+              	<button class="menu-button" onclick="switchContent('live-tv')">Live TV</button>
+                <button class="menu-button" onclick="switchContent('chat')">Chat</button>
+            </div>
+        </div>
+
+        <div id="refresh" class="sidebar-content">
+            <h2>Refresh Content</h2>
+            <!-- Content for Refresh will be added here -->
+        </div>
+
+        <div id="live-event" class="sidebar-content active">
+            <div id="content">
+              
+<!-- Awal Data -->
+
+<!-- Akhir Data -->
+            <div id="spacer"></div>
+            </div>
+        </div>
+      
+      	<div id="live-tv" class="sidebar-content">
+            <div id="content">
+<!-- Awal Data Channel-->              
+<div class="channel-container" data-id="channel1" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 1</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel2" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc2">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 2</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel3" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc3">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 3</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel4" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc4">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 4</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel5" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc5">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports 5</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel6" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 1</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel7" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 2</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel8" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex3">
+    <div class="logo-container">
+        <img src="https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SSC Sports Extra 3</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel9" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rcti">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-rcti.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">RCTI</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel10" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mnc">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-mnctv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">MNCTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel11" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=gtv">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-gtv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">GTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel12" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=inews">
+    <div class="logo-container">
+        <img src="https://am.sindonews.net/mobile/2016/images/tv/live-inewstv.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">iNEWS</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel13" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=metrotv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501451_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Metro TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel14" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tvone">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501492_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">TV One</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel15" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=kompas">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501525_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Kompas TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel16" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=antv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501594_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">ANTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel17" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rtv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501653_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">RTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel18" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=trans7">
+    <div class="logo-container">
+        <img src="https://tv.detik.com/image/Trans7.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Trans 7</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel19" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=transtv">
+    <div class="logo-container">
+        <img src="https://tv.detik.com/image/TransTV.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Trans TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel20" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mdtv">
+    <div class="logo-container">
+        <img src="https://vmp-cms.telkomsel.com/sites/default/files/entry/0_keojjla6/banner_mdpi.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">MDTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel21" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=sctv">
+    <div class="logo-container">
+        <img src="https://www.transtv.co.id/livetv/anytv/SCTV_live_streaming_tv.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">SCTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel22" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=indosiar">
+    <div class="logo-container">
+        <img src="https://images.indihometv.com/tvposter/indosiar.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Indosiar</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+              
+<div class="channel-container" data-id="channel23" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=moji">
+    <div class="logo-container">
+        <img src="https://i0.wp.com/tanggal.id/wp-content/uploads/2025/01/Moji-TV.webp" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Moji</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel24" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=kplus">
+    <div class="logo-container">
+        <img src="https://images.indihometv.com/tvposter/k+.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">K+</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel25" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=jowo">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1725851535_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">Jowo TV</h3>
+        <p class="status">Online</p>
+    </div>
+</div> 
+
+<div class="channel-container" data-id="channel26" data-url="https://bikinbaru96.blogspot.com/p/playertv.html?key=btv">
+    <div class="logo-container">
+        <img src="http://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501562_tvchannels_v1.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">BTV</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel27" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeographic">
+    <div class="logo-container">
+        <img src="https://throughiris.com/wp-content/uploads/2017/01/NatGeo_Upfront_Feature_HD_17.png" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">NAT GEO</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel28" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeowild">
+    <div class="logo-container">
+        <img src="https://identsandpresentation.com/natgeowild2015/one-d.jpg" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">NAT GEO WILD</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+
+<div class="channel-container" data-id="channel29" data-url="https://bikinbaru96.blogspot.com/p/playermpd.html?channel=animalplanet">
+    <div class="logo-container">
+        <img src="https://stmify.com/wp-content/uploads/2024/08/9-s.webp" alt="Channel Logo" class="logo">
+    </div>
+    <div class="info-container">
+        <h3 class="channel-name">ANIMAL PLANET</h3>
+        <p class="status">Online</p>
+    </div>
+</div>
+<!-- Akhir Data Channel-->
+            <div id="spacer"></div>
+            </div>
+        </div>
+      
+        <div id="chat" class="sidebar-content">
+            <iframe class="chat-iframe" src="https://www3.cbox.ws/box/?boxid=3538770&boxtag=Dn3dpG" width="294px" height="645px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
+            <div id="spacer"></div>
+        </div>
+
+            <div class="menu-wrapper-bottom">
+                <div class="menu-container">
+                    <!-- Tombol Refresh Halaman dengan warna sesuai -->
+                    <button class="menu-button refresh-button" onclick="location.reload();">
+                        <i class="fas fa-sync-alt"></i> Refresh Page
+                    </button>
+                    <!-- Tombol Telegram dengan warna sesuai -->
+                    <button class="menu-button telegram-button" onclick="window.open('https://t.me/+YdCBhuNDESw3ZWRl', '_blank');">
+                        <i class="fab fa-telegram-plane"></i> Telegram
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+  
+        <script src="https://kltraid.pages.dev/js/apasih.js"></script>
+  		<script src="https://kltraid.pages.dev/js/home.js"></script>
+  
+<script>
+    function selectServerButton(button) {
+        // Menghapus class active dari semua tombol server
+        var buttons = document.querySelectorAll('.server-button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Menambahkan class active pada tombol yang diklik
+        button.classList.add('active');
+        // Simpan URL dari tombol server yang aktif
+        var url = button.getAttribute('data-url');
+        var eventId = button.closest('.event-container').getAttribute('data-id');
+        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
+    }
+
+    // Fungsi untuk switch content
+    function switchContent(target) {
+        document.querySelectorAll('.sidebar-content').forEach(function(content) {
+            content.classList.remove('active'); // hide all content
+        });
+        var targetContent = document.getElementById(target);
+        targetContent.classList.add('active'); // show target content
+
+        // Lazy load chat iframe
+        if (target === 'chat') {
+            var chatIframe = targetContent.querySelector('.chat-iframe');
+            if (chatIframe && !chatIframe.src) {
+                chatIframe.src = chatIframe.getAttribute('data-src');
+            }
+        }
+    }
+
+    function refreshVideoPlayer() {
+        var videoIframe = document.getElementById('video-iframe');
+        if (videoIframe) {
+            var currentSrc = videoIframe.src;
+
+            // Cek apakah iframe tersebut menggunakan Clappr dengan pengecekan sumber video HLS
+            if (currentSrc.includes('m3u8') || currentSrc.includes('clappr')) {
+                try {
+                    // Akses player Clappr di dalam iframe
+                    var player = videoIframe.contentWindow.player;
+
+                    if (player) {
+                        // Reload Clappr player tanpa mengosongkan src iframe
+                        player.stop();
+                        player.load({source: player.options.source});  // Memuat ulang stream yang sama
+                        player.play();  // Mulai ulang player
+                        console.log('Clappr player refreshed successfully');
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh Clappr player:', error);
+                }
+            } else {
+                // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
+                videoIframe.src = '';  // Kosongkan src
+                // Set atribut sandbox jika perlu
+                if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
+                    videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+                } else {
+                    videoIframe.removeAttribute('sandbox');
+                }
+                videoIframe.src = currentSrc;  // Set ulang src untuk reload iframe
+                console.log('Non-Clappr iframe refreshed successfully');
+            }
+        }
+    }
+
+    function startPeriodicEventCheck() {
+        setInterval(function() {
+            var now = new Date();
+            document.querySelectorAll('.event-container').forEach(function(container) {
+                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
+                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
+                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+                var eventStartTime = parseEventDateTime(matchDate, matchTime);
+                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+
+                if (now >= eventEndTime) {
+                    var id = container.getAttribute('data-id');
+                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
+                }
+            });
+        }, 60000); // Periksa setiap menit
+    }
+
+    // Setup initial events based on data directly from HTML
+    setupEvents();
+    setupChannels();
+
+    // Ensure correct video is loaded when returning from popunder
+    window.addEventListener('focus', function() {
+        var storedActiveEventId = sessionStorage.getItem('activeEventId');
+        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            // Dekripsi URL sebelum digunakan
+            var decryptedServerUrl = decryptUrl(storedActiveServerUrl);
+
+            var activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                var storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedServerUrl, false);
+                }
+            }
+        }
+    });
+</script>
+
+</body>
+</html>

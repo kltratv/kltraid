@@ -2,103 +2,103 @@
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
 
-function isMobileDevice() {
-    return /Mobi|Android/i.test(navigator.userAgent);
-}
-
-function setupEvents() {
-    var eventContainers = document.querySelectorAll('.event-container');
-    var validEventIds = [];
-
-    eventContainers.forEach(function(container) {
-        var id = container.getAttribute('data-id');
-        validEventIds.push(id);
-
-        // Event time (match-date and match-time)
-        var matchDate = container.querySelector('.match-date').textContent.trim();
-        var matchTime = container.querySelector('.match-time').textContent.trim();
-        var eventTime = parseEventDateTime(matchDate, matchTime);
-
-        // Kickoff event time (kickoff-match-date and kickoff-match-time)
-        var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
-        var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
-        var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
-
-        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
-        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-
-        // Update match times for both eventTime and kickoffEventTime
-        updateMatchTimes(container, eventTime); // Original event time
-        updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
-
-        // Check live status using eventTime
-        checkLiveStatus(container, eventTime, eventDurationMilliseconds);
-
-        // Check stored event status
-        var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
-        if (storedStatus === 'ended') {
-            markEventAsEnded(id); // Set event as ended if stored status is "ended"
-            if (activeEventId === id) {
-                redirectToEndedURL();
-            }
-        }
-
-        // Setup server buttons
-        var servers = JSON.parse(container.getAttribute('data-servers'));
-        var buttonsContainer = container.querySelector('.buttons-container');
-
-        buttonsContainer.innerHTML = ''; // Clear existing buttons
-
-        servers.forEach(function(server, index) {
-            if (server.label.includes("Mobile") && !isMobileDevice()) {
-                return;
-            }
-
-            var button = document.createElement('div');
-            button.className = 'server-button';
-            button.textContent = server.label;
-            button.setAttribute('data-url', server.url);
-            button.addEventListener('click', function(event) {
-                event.stopPropagation();
-                selectServerButton(button);
-                loadEventVideo(container, server.url);
-            });
-            buttonsContainer.appendChild(button);
-
-            if (index === 0) {
-                button.classList.add('active');
-            }
-        });
-
-        // Add event listener to toggle server buttons on click
-        container.addEventListener('click', function() {
-            var now = new Date();
-            if (now >= eventTime) {
-                toggleServerButtons(container, true);
-            }
-            loadEventVideo(container); // Ensure the event is loaded when container is clicked
-        });
-
-        // Restore active button state from sessionStorage
-        var storedActiveEventId = sessionStorage.getItem('activeEventId');
-        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
-        if (storedActiveEventId === id && storedActiveServerUrl) {
-            var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-            if (storedButton) {
-                selectServerButton(storedButton);
-                loadEventVideo(container, storedActiveServerUrl, false);
-            }
-        }
-    });
-
-    // Check if the active event is still valid, otherwise reset it
-    if (activeEventId && !validEventIds.includes(activeEventId)) {
-        redirectToEndedURL();
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
     }
-
-    // Start periodic check for event statuses
-    startPeriodicEventCheck();
-}
+    
+    function setupEvents() {
+        var eventContainers = document.querySelectorAll('.event-container');
+        var validEventIds = [];
+    
+        eventContainers.forEach(function(container) {
+            var id = container.getAttribute('data-id');
+            validEventIds.push(id);
+    
+            // Event time (match-date and match-time)
+            var matchDate = container.querySelector('.match-date').textContent.trim();
+            var matchTime = container.querySelector('.match-time').textContent.trim();
+            var eventTime = parseEventDateTime(matchDate, matchTime);
+    
+            // Kickoff event time (kickoff-match-date and kickoff-match-time)
+            var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
+            var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
+            var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
+    
+            var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+            var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+    
+            // Update match times for both eventTime and kickoffEventTime
+            updateMatchTimes(container, eventTime); // Original event time
+            updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
+    
+            // Check live status using eventTime
+            checkLiveStatus(container, eventTime, eventDurationMilliseconds);
+    
+            // Check stored event status
+            var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
+            if (storedStatus === 'ended') {
+                markEventAsEnded(id); // Set event as ended if stored status is "ended"
+                if (activeEventId === id) {
+                    redirectToEndedURL();
+                }
+            }
+    
+            // Setup server buttons
+            var servers = JSON.parse(container.getAttribute('data-servers'));
+            var buttonsContainer = container.querySelector('.buttons-container');
+    
+            buttonsContainer.innerHTML = ''; // Clear existing buttons
+    
+            servers.forEach(function(server, index) {
+                if (server.label.includes("Mobile") && !isMobileDevice()) {
+                    return;
+                }
+    
+                var button = document.createElement('div');
+                button.className = 'server-button';
+                button.textContent = server.label;
+                button.setAttribute('data-url', server.url);
+                button.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    selectServerButton(button);
+                    loadEventVideo(container, server.url);
+                });
+                buttonsContainer.appendChild(button);
+    
+                if (index === 0) {
+                    button.classList.add('active');
+                }
+            });
+    
+            // Add event listener to toggle server buttons on click
+            container.addEventListener('click', function() {
+                var now = new Date();
+                if (now >= eventTime) {
+                    toggleServerButtons(container, true);
+                }
+                loadEventVideo(container); // Ensure the event is loaded when container is clicked
+            });
+    
+            // Restore active button state from sessionStorage
+            var storedActiveEventId = sessionStorage.getItem('activeEventId');
+            var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+            if (storedActiveEventId === id && storedActiveServerUrl) {
+                var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(container, storedActiveServerUrl, false);
+                }
+            }
+        });
+    
+        // Check if the active event is still valid, otherwise reset it
+        if (activeEventId && !validEventIds.includes(activeEventId)) {
+            redirectToEndedURL();
+        }
+    
+        // Start periodic check for event statuses
+        startPeriodicEventCheck();
+    }
 
     function parseEventDateTime(date, time) {
         // Assuming date format is "June 21, 2024" and time is "07:30"
@@ -160,38 +160,39 @@ function setupEvents() {
         intervals[id] = interval; // Store the interval in the intervals object
     }
 
-function updateMatchTimes(container, eventStartTime) {
-    var matchDateElem = container.querySelector('.match-date');
-    var matchTimeElem = container.querySelector('.match-time');
-    var kickoffDateElem = container.querySelector('.kickoff-match-date');
-    var kickoffTimeElem = container.querySelector('.kickoff-match-time');
-
-    if (!matchDateElem.hasAttribute('data-original-date')) {
-        matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
-        matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+    function updateMatchTimes(container, eventStartTime) {
+        var matchDateElem = container.querySelector('.match-date');
+        var matchTimeElem = container.querySelector('.match-time');
+        var kickoffDateElem = container.querySelector('.kickoff-match-date');
+        var kickoffTimeElem = container.querySelector('.kickoff-match-time');
+    
+        if (!matchDateElem.hasAttribute('data-original-date')) {
+            matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
+            matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+        }
+    
+        var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
+        var visitorOffsetInMinutes = new Date().getTimezoneOffset();
+        var visitorOffsetInHours = visitorOffsetInMinutes / 60;
+        var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
+    
+        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
+    
+        console.log(`Adjusted date for event: ${adjustedDate}`);
+        console.log(`Adjusted time for event: ${adjustedTime}`);
+    
+        // Update match date and time
+        matchDateElem.textContent = adjustedDate;
+        matchTimeElem.textContent = adjustedTime;
+    
+        // Update kickoff date and time if available
+        if (kickoffDateElem && kickoffTimeElem) {
+            kickoffDateElem.textContent = adjustedDate;
+            kickoffTimeElem.textContent = adjustedTime;
+        }
     }
 
-    var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
-    var visitorOffsetInMinutes = new Date().getTimezoneOffset();
-    var visitorOffsetInHours = visitorOffsetInMinutes / 60;
-    var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
-
-    var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-    var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-
-    console.log(`Adjusted date for event: ${adjustedDate}`);
-    console.log(`Adjusted time for event: ${adjustedTime}`);
-
-    // Update match date and time
-    matchDateElem.textContent = adjustedDate;
-    matchTimeElem.textContent = adjustedTime;
-
-    // Update kickoff date and time if available
-    if (kickoffDateElem && kickoffTimeElem) {
-        kickoffDateElem.textContent = adjustedDate;
-        kickoffTimeElem.textContent = adjustedTime;
-    }
-}
     function checkLiveStatus(container, eventStartTime, eventDurationMilliseconds) {
         var now = new Date();
         var liveLabel = container.querySelector('.live-label');

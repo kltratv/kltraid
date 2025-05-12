@@ -19,7 +19,12 @@
 
 </head>
 <body>
-	
+	<div id="notif-info" style="padding: 15px; background: #fdf3e7; margin: 10px;">
+	    🔔 Aktifkan notifikasi untuk dapat update langsung pertandingan!
+	    <br/>
+	    <button onclick="openSettings()">Aktifkan Sekarang</button>
+	</div>
+		
 	<header class="app-header">
 	  <div class="logo-area">
 	    <img src="/tv/images/logoheader.png" alt="KLTRA Logo" class="logo-img">
@@ -520,18 +525,10 @@
         }
     });
 
-document.getElementById('allow-notif').addEventListener('click', () => {
-    if ('Notification' in window && Notification.permission !== 'granted') {
-        Notification.requestPermission().then(permission => {
-            if (permission === 'granted') {
-                console.log('✅ Notifikasi diaktifkan');
-            } else {
-                console.log('❌ Ditolak');
-            }
-        });
-    }
-});
-
+function openSettings() {
+    // Arahkan pengguna ke pengaturan notifikasi
+    window.location.href = "intent://settings#Intent;package=dev.pages.kltraid.twa;end";
+}
 	
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/tv/sw.js')

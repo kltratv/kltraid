@@ -14,53 +14,55 @@
 
     <title>Video Player with Sidebar</title>
 
-<style>
-.notif-bar {
-  position: fixed;
-  top: 56px; /* ⬅️ Adjust jika toolbar kamu tinggi */
-  right: 0;
-  z-index: 9999;
-  background: linear-gradient(90deg, #00c6ff, #0072ff);
-  color: white;
-  display: flex;
-  align-items: center;
-  padding: 10px 12px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-  box-shadow: -4px 4px 10px rgba(0,0,0,0.3);
-  font-family: sans-serif;
-  max-width: 90%;
-  gap: 10px;
-}
+    <style>
+      .notif-bar {
+        position: fixed;
+        top: 56px; /* ⬅️ Adjust jika toolbar kamu tinggi */
+        right: 0;
+        z-index: 9999;
+        background: linear-gradient(90deg, #00c6ff, #0072ff);
+        color: white;
+        display: flex;
+        align-items: center;
+        padding: 10px 12px;
+        border-top-left-radius: 8px;
+        border-bottom-left-radius: 8px;
+        box-shadow: -4px 4px 10px rgba(0,0,0,0.3);
+        font-family: sans-serif;
+        max-width: 90%;
+        gap: 10px;
+        left: auto;
+        border-radius: 8px 0 0 8px; /* Lebih eksplisit untuk sisi kanan */
+      }
 
-.notif-bar.hidden {
-  display: none;
-}
+      .notif-bar.hidden {
+        display: none;
+      }
 
-.notif-text {
-  white-space: nowrap;
-  font-size: 14px;
-}
+      .notif-text {
+        white-space: nowrap;
+        font-size: 14px;
+      }
 
-.notif-action {
-  background: white;
-  color: #0072ff;
-  border: none;
-  padding: 6px 12px;
-  border-radius: 6px;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 13px;
-}
+      .notif-action {
+        background: white;
+        color: #0072ff;
+        border: none;
+        padding: 6px 12px;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        font-size: 13px;
+      }
 
-.notif-close {
-  background: transparent;
-  color: white;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-}
-</style>
+      .notif-close {
+        background: transparent;
+        color: white;
+        border: none;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    </style>
 
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
@@ -69,8 +71,8 @@
 <body>
 
 <div id="notif-bar" class="notif-bar hidden">
-  <span class="notif-text">🔔 Aktifkan notifikasi</span>
-  <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Aktifkan</button>
+  <span class="notif-text">🔔 Enable notifications</span>
+  <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Enable</button>
   <button class="notif-close" onclick="tutupNotifBar()">✖</button>
 </div>
 

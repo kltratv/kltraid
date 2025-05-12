@@ -58,15 +58,7 @@
 
 <body>
 
-<div id="notificationModal" class="modal-container">
-  <div class="modal-content">
-    <span id="closeModalButton" class="modal-close-button">&times;</span>
-    <h2>Izin Notifikasi Diperlukan</h2>
-    <p>Untuk mendapatkan informasi terbaru dan penting dari kami, mohon aktifkan notifikasi untuk aplikasi ini di pengaturan ponsel Anda.</p>
-    <button onclick="bukaPengaturanNotifikasiAplikasi()">Buka Pengaturan Notifikasi</button>
-    <p style="font-size: 0.8em; color: #777;">Anda dapat mengelola izin notifikasi kapan saja di pengaturan perangkat Anda.</p>
-  </div>
-</div>
+<button onclick="bukaDialer()">Buka Dialer</button>
 
     <header class="app-header">
         <div class="logo-area">
@@ -438,46 +430,18 @@
     <script src="/tv/js/hometv.js"></script>
 
   <script>
-const notificationModal = document.getElementById('notificationModal');
-const closeModalButton = document.getElementById('closeModalButton');
-
-// Fungsi untuk menampilkan modal
-function tampilkanModal() {
-  notificationModal.style.display = 'flex';
-}
-
-// Fungsi untuk menyembunyikan modal
-function sembunyikanModal() {
-  notificationModal.style.display = 'none';
-}
-
-// Fungsi untuk membuka pengaturan notifikasi aplikasi (Android Intent)
-function bukaPengaturanNotifikasiAplikasi() {
+function bukaDialer() {
   if (navigator.userAgent.toLowerCase().includes("android")) {
     try {
-      window.location.href = "intent:#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;package=" + getPackageNameAplikasiTWA() + ";S.android.provider.extra.APP_PACKAGE=" + getPackageNameAplikasiTWA() + ";end";
+      window.location.href = "intent:1234567890#Intent;action=android.intent.action.DIAL;end";
     } catch (e) {
-      console.error("Gagal membuka pengaturan notifikasi:", e);
-      alert("Tidak dapat membuka pengaturan notifikasi secara otomatis.");
+      console.error("Gagal membuka dialer:", e);
+      alert("Tidak dapat membuka dialer.");
     }
   } else {
     alert("Fitur ini hanya tersedia di perangkat Android.");
   }
 }
-
-function getPackageNameAplikasiTWA() {
-  return "dev.pages.kltraid.twa"; // Pastikan ini benar!
-}
-
-// Event listener untuk tombol close modal
-closeModalButton.addEventListener('click', sembunyikanModal);
-
-// Tampilkan modal saat halaman dimuat (tanpa memeriksa localStorage)
-window.onload = () => {
-  if (navigator.userAgent.toLowerCase().includes("android")) {
-    tampilkanModal();
-  }
-};
   </script>
 
 </body>

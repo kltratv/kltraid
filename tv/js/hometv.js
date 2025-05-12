@@ -2,16 +2,16 @@
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
 
-	async function loadChannelsFromJSON() {
-	  try {
-	    const res = await fetch('https://kltraid.pages.dev/json/channel.json');
-	    if (!res.ok) throw new Error('Failed to load channel.json');
-	    const data = await res.json();
-	    const container = document.querySelector('#live-tv #content');
-	    container.innerHTML = "";
-	
-	    data.forEach(channel => {
-	      const html = `
+    async function loadChannelsFromJSON() {
+        try {
+            const res = await fetch('https://kltraid.pages.dev/json/channel.json');
+            if (!res.ok) throw new Error('Failed to load channel.json');
+            const data = await res.json();
+            const container = document.querySelector('#live-tv #content');
+            container.innerHTML = "";
+
+            data.forEach(channel => {
+                const html = `
 	        <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
 	          <div class="logo-container">
 	            <img src="${channel.logo}" alt="Channel Logo" class="logo">
@@ -22,25 +22,25 @@
 	          </div>
 	        </div>
 	      `;
-	      container.insertAdjacentHTML('beforeend', html);
-	    });
-	
-	    setupChannels(); // aktifkan klik listener setelah render
-	  } catch (error) {
-	    console.error('Error loading channels:', error);
-	  }
-	}
-	  
-	async function loadEventsFromJSON() {
-	    const res = await fetch('https://kltraid.pages.dev/json/event.json');
-	    const data = await res.json();
-	    const container = document.querySelector('#live-event #content');
-	    container.innerHTML = ""; // Kosongkan kontainer lama
-	
-	    data.forEach(event => {
-	        const serverStr = JSON.stringify(event.servers).replace(/"/g, '&quot;');
-	
-	        const html = `
+                container.insertAdjacentHTML('beforeend', html);
+            });
+
+            setupChannels(); // aktifkan klik listener setelah render
+        } catch (error) {
+            console.error('Error loading channels:', error);
+        }
+    }
+
+    async function loadEventsFromJSON() {
+        const res = await fetch('https://kltraid.pages.dev/json/event.json');
+        const data = await res.json();
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = ""; // Kosongkan kontainer lama
+
+        data.forEach(event => {
+            const serverStr = JSON.stringify(event.servers).replace(/"/g, '&quot;');
+
+            const html = `
 	        <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
 	            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
 	            <div class="team">
@@ -66,44 +66,44 @@
 	            </div>
 	        </div>
 	        `;
-	        container.insertAdjacentHTML('beforeend', html);
-	    });
-	
-	    setupEvents(); // panggil ulang setup setelah DOM element event dibuat
-	}
+            container.insertAdjacentHTML('beforeend', html);
+        });
+
+        setupEvents(); // panggil ulang setup setelah DOM element event dibuat
+    }
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
-    
+
     function setupEvents() {
         var eventContainers = document.querySelectorAll('.event-container');
         var validEventIds = [];
-    
+
         eventContainers.forEach(function(container) {
             var id = container.getAttribute('data-id');
             validEventIds.push(id);
-    
+
             // Event time (match-date and match-time)
             var matchDate = container.querySelector('.match-date').textContent.trim();
             var matchTime = container.querySelector('.match-time').textContent.trim();
             var eventTime = parseEventDateTime(matchDate, matchTime);
-    
+
             // Kickoff event time (kickoff-match-date and kickoff-match-time)
             var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
             var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
             var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
-    
+
             var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
             var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-    
+
             // Update match times for both eventTime and kickoffEventTime
             updateMatchTimes(container, eventTime); // Original event time
             updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
-    
+
             // Check live status using eventTime
             checkLiveStatus(container, eventTime, eventDurationMilliseconds);
-    
+
             // Check stored event status
             var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
             if (storedStatus === 'ended') {
@@ -112,18 +112,18 @@
                     redirectToEndedURL();
                 }
             }
-    
+
             // Setup server buttons
             var servers = JSON.parse(container.getAttribute('data-servers'));
             var buttonsContainer = container.querySelector('.buttons-container');
-    
+
             buttonsContainer.innerHTML = ''; // Clear existing buttons
-    
+
             servers.forEach(function(server, index) {
                 if (server.label.includes("Mobile") && !isMobileDevice()) {
                     return;
                 }
-    
+
                 var button = document.createElement('div');
                 button.className = 'server-button';
                 button.textContent = server.label;
@@ -134,12 +134,12 @@
                     loadEventVideo(container, server.url);
                 });
                 buttonsContainer.appendChild(button);
-    
+
                 if (index === 0) {
                     button.classList.add('active');
                 }
             });
-    
+
             // Add event listener to toggle server buttons on click
             container.addEventListener('click', function() {
                 var now = new Date();
@@ -148,7 +148,7 @@
                 }
                 loadEventVideo(container); // Ensure the event is loaded when container is clicked
             });
-    
+
             // Restore active button state from sessionStorage
             var storedActiveEventId = sessionStorage.getItem('activeEventId');
             var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
@@ -160,12 +160,12 @@
                 }
             }
         });
-    
+
         // Check if the active event is still valid, otherwise reset it
         if (activeEventId && !validEventIds.includes(activeEventId)) {
             redirectToEndedURL();
         }
-    
+
         // Start periodic check for event statuses
         startPeriodicEventCheck();
     }
@@ -235,27 +235,35 @@
         var matchTimeElem = container.querySelector('.match-time');
         var kickoffDateElem = container.querySelector('.kickoff-match-date');
         var kickoffTimeElem = container.querySelector('.kickoff-match-time');
-    
+
         if (!matchDateElem.hasAttribute('data-original-date')) {
             matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
             matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
         }
-    
+
         var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
         var visitorOffsetInMinutes = new Date().getTimezoneOffset();
         var visitorOffsetInHours = visitorOffsetInMinutes / 60;
         var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
-    
-        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: false });
-    
+
+        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+
         console.log(`Adjusted date for event: ${adjustedDate}`);
         console.log(`Adjusted time for event: ${adjustedTime}`);
-    
+
         // Update match date and time
         matchDateElem.textContent = adjustedDate;
         matchTimeElem.textContent = adjustedTime;
-    
+
         // Update kickoff date and time if available
         if (kickoffDateElem && kickoffTimeElem) {
             kickoffDateElem.textContent = adjustedDate;
@@ -328,7 +336,7 @@
     // Variabel global untuk Clappr Player instance, timeout reconnect, dan cache URL
     var clapprPlayerInstance = null;
     var reconnectTimeout = null;
-    var lastLoadedUrl = null;  // Cache URL terakhir yang dimuat
+    var lastLoadedUrl = null; // Cache URL terakhir yang dimuat
 
     function normalizeUrl(url) {
         try {
@@ -490,7 +498,9 @@
                         clearTimeout(reconnectTimeout); // Clear any pending reconnects
                         reconnectTimeout = setTimeout(function() {
                             if (clapprPlayerInstance && clapprPlayerInstance.options.source === normalizedUrl) {
-                                clapprPlayerInstance.load({source: normalizedUrl});
+                                clapprPlayerInstance.load({
+                                    source: normalizedUrl
+                                });
                                 clapprPlayerInstance.play();
                             }
                         }, 5000); // Coba lagi dalam 5 detik
@@ -509,7 +519,10 @@
                         requestAnimationFrame(() => {
                             var newWidth = playerElement.parentElement.offsetWidth;
                             var newHeight = playerElement.parentElement.offsetHeight;
-                            clapprPlayerInstance.resize({ width: newWidth, height: newHeight });
+                            clapprPlayerInstance.resize({
+                                width: newWidth,
+                                height: newHeight
+                            });
                         });
                     }
                     resizePlayer();
@@ -531,7 +544,7 @@
                 videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
             }
 
-            setActiveHoverEffect(id);  // Fungsi untuk mengatur efek hover berdasarkan id
+            setActiveHoverEffect(id); // Fungsi untuk mengatur efek hover berdasarkan id
             console.log('Loading event video now:', id);
             toggleServerButtons(container, true); // Tampilkan tombol server
             checkLiveStatus(container, eventStartTime, eventDurationMilliseconds); // Show live label
@@ -660,8 +673,10 @@
                     if (player) {
                         // Reload Clappr player tanpa mengosongkan src iframe
                         player.stop();
-                        player.load({source: player.options.source});  // Memuat ulang stream yang sama
-                        player.play();  // Mulai ulang player
+                        player.load({
+                            source: player.options.source
+                        }); // Memuat ulang stream yang sama
+                        player.play(); // Mulai ulang player
                         console.log('Clappr player refreshed successfully');
                     }
                 } catch (error) {
@@ -669,14 +684,14 @@
                 }
             } else {
                 // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
-                videoIframe.src = '';  // Kosongkan src
+                videoIframe.src = ''; // Kosongkan src
                 // Set atribut sandbox jika perlu
                 if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
                     videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
                 } else {
                     videoIframe.removeAttribute('sandbox');
                 }
-                videoIframe.src = currentSrc;  // Set ulang src untuk reload iframe
+                videoIframe.src = currentSrc; // Set ulang src untuk reload iframe
                 console.log('Non-Clappr iframe refreshed successfully');
             }
         }
@@ -702,50 +717,50 @@
         }, 60000); // Periksa setiap menit
     }
 
-	window.addEventListener('DOMContentLoaded', async () => {
-	    await loadEventsFromJSON(); // ambil event dari GitHub
-	  	await loadChannelsFromJSON(); // panggil ini juga
-	
-	    // Restore video saat kembali dari popunder
-	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-	
-	    if (storedActiveEventId && storedActiveServerUrl) {
-	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-	        if (activeContainer) {
-	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-	            if (storedButton) {
-	                selectServerButton(storedButton);
-	                loadEventVideo(activeContainer, decryptedUrl, false);
-	            }
-	        }
-	    }
-	});
+    window.addEventListener('DOMContentLoaded', async () => {
+        await loadEventsFromJSON(); // ambil event dari GitHub
+        await loadChannelsFromJSON(); // panggil ini juga
 
-	window.addEventListener('focus', () => {
-	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-	
-	    if (storedActiveEventId && storedActiveServerUrl) {
-	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-	        if (activeContainer) {
-	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-	            if (storedButton) {
-	                selectServerButton(storedButton);
-	                loadEventVideo(activeContainer, decryptedUrl, false);
-	            }
-	        }
-	    }
-	});
-	
+        // Restore video saat kembali dari popunder
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    });
+
+    window.addEventListener('focus', () => {
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    });
+
     if ('serviceWorker' in navigator) {
-      navigator.serviceWorker.register('/tv/sw.js')
-        .then(function(reg) {
-          console.log('Service Worker registered:', reg);
-        })
-        .catch(function(err) {
-          console.error('Service Worker registration failed:', err);
-        });
+        navigator.serviceWorker.register('/tv/sw.js')
+            .then(function(reg) {
+                console.log('Service Worker registered:', reg);
+            })
+            .catch(function(err) {
+                console.error('Service Worker registration failed:', err);
+            });
     }

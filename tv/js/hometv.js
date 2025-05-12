@@ -2,6 +2,76 @@
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
 
+	async function loadChannelsFromJSON() {
+	  try {
+	    const res = await fetch('https://kltraid.pages.dev/json/channel.json');
+	    if (!res.ok) throw new Error('Failed to load channel.json');
+	    const data = await res.json();
+	    const container = document.querySelector('#live-tv #content');
+	    container.innerHTML = "";
+	
+	    data.forEach(channel => {
+	      const html = `
+	        <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
+	          <div class="logo-container">
+	            <img src="${channel.logo}" alt="Channel Logo" class="logo">
+	          </div>
+	          <div class="info-container">
+	            <h3 class="channel-name">${channel.name}</h3>
+	            <p class="status">${channel.status}</p>
+	          </div>
+	        </div>
+	      `;
+	      container.insertAdjacentHTML('beforeend', html);
+	    });
+	
+	    setupChannels(); // aktifkan klik listener setelah render
+	  } catch (error) {
+	    console.error('Error loading channels:', error);
+	  }
+	}
+	  
+	async function loadEventsFromJSON() {
+	    const res = await fetch('https://kltraid.pages.dev/json/event.json');
+	    const data = await res.json();
+	    const container = document.querySelector('#live-event #content');
+	    container.innerHTML = ""; // Kosongkan kontainer lama
+	
+	    data.forEach(event => {
+	        const serverStr = JSON.stringify(event.servers).replace(/"/g, '&quot;');
+	
+	        const html = `
+	        <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
+	            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+	            <div class="team">
+	                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+	                <span>${event.team1.name}</span>
+	            </div>
+	            <div class="kickoff-match-date">${event.kickoff_date}</div>
+	            <div class="kickoff-match-time">${event.kickoff_time}</div>
+	            <div class="match-date" style="display:none;">${event.match_date}</div>
+	            <div class="match-time" style="display:none;">${event.match_time}</div>
+	            <div class="live-label" style="display:none;">Live</div>
+	            <div class="team">
+	                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+	                <span>${event.team2.name}</span>
+	            </div>
+	            <div class="server-buttons" style="display:none;">
+	                <div class="instruction">You can select a server stream:</div>
+	                <div class="buttons-container"></div>
+	            </div>
+	            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+	                <div class="countdown-title">Event will start in:</div>
+	                <div class="countdown-timer"></div>
+	            </div>
+	        </div>
+	        `;
+	        container.insertAdjacentHTML('beforeend', html);
+	    });
+	
+	    setupEvents(); // panggil ulang setup setelah DOM element event dibuat
+	}
+
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
     }
@@ -632,29 +702,43 @@
         }, 60000); // Periksa setiap menit
     }
 
-    // Setup initial events based on data directly from HTML
-    setupEvents();
-    setupChannels();
+	window.addEventListener('DOMContentLoaded', async () => {
+	    await loadEventsFromJSON(); // ambil event dari GitHub
+	  	await loadChannelsFromJSON(); // panggil ini juga
+	
+	    // Restore video saat kembali dari popunder
+	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+	
+	    if (storedActiveEventId && storedActiveServerUrl) {
+	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
+	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+	        if (activeContainer) {
+	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+	            if (storedButton) {
+	                selectServerButton(storedButton);
+	                loadEventVideo(activeContainer, decryptedUrl, false);
+	            }
+	        }
+	    }
+	});
 
-    // Ensure correct video is loaded when returning from popunder
-    window.addEventListener('focus', function() {
-        var storedActiveEventId = sessionStorage.getItem('activeEventId');
-        var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-
-        if (storedActiveEventId && storedActiveServerUrl) {
-            // Dekripsi URL sebelum digunakan
-            var decryptedServerUrl = decryptUrl(storedActiveServerUrl);
-
-            var activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                var storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedServerUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedServerUrl, false);
-                }
-            }
-        }
-    });
+	window.addEventListener('focus', () => {
+	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+	
+	    if (storedActiveEventId && storedActiveServerUrl) {
+	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
+	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+	        if (activeContainer) {
+	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+	            if (storedButton) {
+	                selectServerButton(storedButton);
+	                loadEventVideo(activeContainer, decryptedUrl, false);
+	            }
+	        }
+	    }
+	});
 	
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('/tv/sw.js')

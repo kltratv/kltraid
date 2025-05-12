@@ -519,6 +519,20 @@
             }
         }
     });
+	
+<button id="allow-notif">Izinkan Notifikasi</button>
+
+document.getElementById('allow-notif').addEventListener('click', () => {
+    if ('Notification' in window && Notification.permission !== 'granted') {
+        Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+                console.log('✅ Notifikasi diaktifkan');
+            } else {
+                console.log('❌ Ditolak');
+            }
+        });
+    }
+});
 
 	
 if ('serviceWorker' in navigator) {

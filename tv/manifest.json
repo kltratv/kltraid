@@ -2,7 +2,7 @@
   "name": "KLTRATV",
   "short_name": "KLTRATV",
   "start_url": "/tv/",
-  "display": "fullscreen"
+  "display": "standalone"
   "background_color": "#10161d",
   "theme_color": "#000000",
   "orientation": "portrait",

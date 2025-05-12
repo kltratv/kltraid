@@ -519,8 +519,6 @@
             }
         }
     });
-	
-<button id="allow-notif">Izinkan Notifikasi</button>
 
 document.getElementById('allow-notif').addEventListener('click', () => {
     if ('Notification' in window && Notification.permission !== 'granted') {

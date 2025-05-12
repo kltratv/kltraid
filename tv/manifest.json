@@ -1,6 +1,6 @@
 {
-  "name": "TV Streaming App",
-  "short_name": "TVApp",
+  "name": "KLTRATV",
+  "short_name": "KLTRATV",
   "start_url": "/tv/",
   "display": "standalone",
   "background_color": "#0f161d",

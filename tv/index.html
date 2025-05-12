@@ -13,43 +13,65 @@
     <meta name="theme-color" content="#000000">
 
     <title>Video Player with Sidebar</title>
-    <style>
-            /* Styling dasar untuk modal */
-.modal-container {
-  display: none; /* Sembunyikan secara default */
-  position: fixed; /* Membuatnya mengambang */
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5); /* Latar belakang semi-transparan */
+
+/* Styling dasar untuk modal */
+<style>
+.modal {
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0;
+  width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 9999; /* Nilai z-index yang sangat tinggi */
 }
 
-    .modal-content {
-      background-color: #fefefe;
-      padding: 20px;
-      border-radius: 8px;
-      width: 80%;
-      max-width: 400px;
-      position: relative; /* Untuk memposisikan tombol close */
-    }
+.modal.hidden {
+  display: none;
+}
 
-    .modal-close-button {
-      position: absolute;
-      top: 10px;
-      right: 10px;
-      font-size: 20px;
-      font-weight: bold;
-      color: #aaa;
-      cursor: pointer;
-    }
+.modal-content {
+  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+  padding: 20px 30px;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  max-width: 320px;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
 
-    .modal-close-button:hover {
-      color: black;
-    }
+.modal-content h2 {
+  margin-top: 0;
+}
+
+.enable-btn {
+  background: #fff;
+  color: #007BFF;
+  border: none;
+  padding: 10px 20px;
+  margin-top: 15px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.enable-btn:hover {
+  background: #e6f0ff;
+}
+
+.close-btn {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  background: transparent;
+  color: #fff;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
     </style>
 
     <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
@@ -58,7 +80,14 @@
 
 <body>
 
-<button onclick="bukaPengaturanNotifikasi()">Aktifkan Notifikasi</button>
+<div id="notif-modal" class="modal hidden">
+  <div class="modal-content">
+    <button class="close-btn" onclick="tutupModal()">✖</button>
+    <h2>🔔 Aktifkan Notifikasi</h2>
+    <p>Dapatkan info terbaru langsung di perangkatmu!</p>
+    <button onclick="bukaPengaturanNotifikasi()" class="enable-btn">Aktifkan Sekarang</button>
+  </div>
+</div>
 
     <header class="app-header">
         <div class="logo-area">
@@ -431,8 +460,24 @@
 
   <script>
 function bukaPengaturanNotifikasi() {
-    window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
+  window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
 }
+
+function tutupModal() {
+  document.getElementById('notif-modal').classList.add('hidden');
+  // Simpan agar tidak ditampilkan ulang
+  localStorage.setItem('notifModalClosed', 'true');
+}
+
+async function cekIzinNotifikasiDanTampilkanModal() {
+  if (localStorage.getItem('notifModalClosed') === 'true') return;
+
+  if ('Notification' in window && Notification.permission !== 'granted') {
+    document.getElementById('notif-modal').classList.remove('hidden');
+  }
+}
+
+document.addEventListener('DOMContentLoaded', cekIzinNotifikasiDanTampilkanModal);
   </script>
 
 </body>

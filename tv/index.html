@@ -483,9 +483,16 @@ function tutupModal() {
 }
 
 function tampilkanModalJikaPerlu() {
-  if (localStorage.getItem('notifModalClosed') === 'true') return;
+  const sudahDitutup = localStorage.getItem('notifModalClosed') === 'true';
+  const izin = Notification.permission;
 
-  if ('Notification' in window && Notification.permission !== 'granted') {
+  console.log('🔔 Notif status:', izin);
+  console.log('🚫 Modal pernah ditutup:', sudahDitutup);
+
+  // Hanya tampilkan modal jika:
+  // - Belum diaktifkan ("default" atau "denied")
+  // - Belum pernah ditutup
+  if (!sudahDitutup && izin !== 'granted') {
     document.getElementById('notif-modal').classList.remove('hidden');
   }
 }

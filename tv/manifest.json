@@ -3,7 +3,7 @@
   "short_name": "TVApp",
   "start_url": "/tv/",
   "display": "standalone",
-  "background_color": "#000000",
+  "background_color": "#0f161d",
   "theme_color": "#000000",
   "orientation": "portrait",
   "icons": [

@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "dev.pages.kltraid.twa",
+      "sha256_cert_fingerprints": [
+        "BE:97:D6:A4:8B:AB:A5:D6:4A:E7:B1:F7:04:56:1C:9C:11:32:6E:A4:5C:91:B3:5D:F0:C6:54:2B:F1:FE:95:EE"
+      ]
+    }
+  }
+]

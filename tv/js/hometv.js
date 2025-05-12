@@ -69,8 +69,24 @@
             container.insertAdjacentHTML('beforeend', html);
         });
 
-        setupEvents(); // panggil ulang setup setelah DOM element event dibuat
-    }
+	  setupEvents(); // harus dipanggil sebelum restore
+	
+	  // ✅ Pindahkan ke sini
+	  const storedActiveEventId = sessionStorage.getItem('activeEventId');
+	  const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+	
+	  if (storedActiveEventId && storedActiveServerUrl) {
+	    const decryptedUrl = decryptUrl(storedActiveServerUrl);
+	    const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+	    if (activeContainer) {
+	      const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+	      if (storedButton) {
+	        selectServerButton(storedButton);
+	        loadEventVideo(activeContainer, decryptedUrl, false);
+	      }
+	    }
+	  }
+	}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
@@ -722,23 +738,6 @@
         await loadChannelsFromJSON(); // panggil ini juga
 
         // Restore video saat kembali dari popunder
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-
-        if (storedActiveEventId && storedActiveServerUrl) {
-            const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
-                }
-            }
-        }
-    });
-
-    window.addEventListener('focus', () => {
         const storedActiveEventId = sessionStorage.getItem('activeEventId');
         const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 

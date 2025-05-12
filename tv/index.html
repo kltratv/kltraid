@@ -546,16 +546,6 @@
             }
         }
     });
-
-document.addEventListener('DOMContentLoaded', () => {
-    if ('Notification' in window && Notification.permission !== 'granted') {
-        document.getElementById('notif-popup').style.display = 'block';
-    }
-});
-
-function openAppSettings() {
-    window.location.href = 'intent://#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;end;';
-}
 	
 if ('serviceWorker' in navigator) {
   navigator.serviceWorker.register('/tv/sw.js')

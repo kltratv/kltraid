@@ -448,24 +448,9 @@
     <script src="/tv/js/hometv.js"></script>
 
 <script>
-function bukaPengaturanNotifikasi() {
-  window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-  tutupNotifBar();
+if (new URLSearchParams(window.location.search).get('notif') === 'off') {
+  document.getElementById('notif-bar').classList.remove('hidden');
 }
-
-function tutupNotifBar() {
-  document.getElementById('notif-bar').classList.add('hidden');
-}
-
-function tampilkanNotifBarJikaPerlu() {
-  // Hanya tampilkan bar jika permission masih default atau denied
-  if ('Notification' in window && Notification.permission !== 'granted') {
-    document.getElementById('notif-bar').classList.remove('hidden');
-  }
-}
-
-// Jalankan saat DOM siap
-document.addEventListener('DOMContentLoaded', tampilkanNotifBarJikaPerlu);
 </script>
 
 

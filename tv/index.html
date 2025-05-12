@@ -13,17 +13,39 @@
 
     <title>Video Player with Sidebar</title>
     <style>
+	#notif-popup {
+	    position: fixed;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    background: #10161d;
+	    color: white;
+	    padding: 20px;
+	    border-radius: 12px;
+	    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	    text-align: center;
+	    z-index: 9999;
+	    display: none;
+	}
+	#notif-popup button {
+	    background-color: #F91E4E;
+	    color: white;
+	    border: none;
+	    padding: 10px 20px;
+	    margin-top: 12px;
+	    border-radius: 8px;
+	    cursor: pointer;
+	}
     </style>
 
 	<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
 </head>
 <body>
-	<div id="notif-info" style="padding: 15px; background: #fdf3e7; margin: 10px;">
-	    🔔 Aktifkan notifikasi untuk dapat update langsung pertandingan!
-	    <br/>
-	    <button onclick="openSettings()">Aktifkan Sekarang</button>
-	</div>
+<div id="notif-popup">
+    <p>Aktifkan notifikasi agar tidak ketinggalan siaran langsung!</p>
+    <button onclick="openAppSettings()">Buka Pengaturan</button>
+</div>
 		
 	<header class="app-header">
 	  <div class="logo-area">
@@ -525,9 +547,14 @@
         }
     });
 
-function openSettings() {
-    // Arahkan pengguna ke pengaturan notifikasi
-    window.location.href = "intent://settings#Intent;package=dev.pages.kltraid.twa;end";
+document.addEventListener('DOMContentLoaded', () => {
+    if ('Notification' in window && Notification.permission !== 'granted') {
+        document.getElementById('notif-popup').style.display = 'block';
+    }
+});
+
+function openAppSettings() {
+    window.location.href = 'intent://#Intent;action=android.settings.APP_NOTIFICATION_SETTINGS;end;';
 }
 	
 if ('serviceWorker' in navigator) {

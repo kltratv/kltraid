@@ -423,13 +423,14 @@
         .app-header {
           background-color: #0f0f0f;
           color: #ffffff;
-          padding: 10px 16px;
+          padding: 6px 12px;
           display: flex;
           align-items: center;
           border-bottom: 1px solid #222;
-          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
           z-index: 1000;
           position: relative;
+          height: 56px; /* tinggi standar toolbar Android */
         }
         
         /* Wrapper logo + teks */
@@ -438,11 +439,11 @@
           align-items: center;
         }
         
-        /* Logo di kiri */
+        /* Logo kecil di kiri */
         .logo-img {
-          width: 64px;
-          height: auto;
-          margin-right: 12px;
+          height: 36px;
+          width: auto;
+          margin-right: 10px;
         }
         
         /* Area teks di kanan logo */
@@ -450,21 +451,21 @@
           display: flex;
           flex-direction: column;
           justify-content: center;
-          line-height: 1.2;
+          line-height: 1.1;
         }
         
         /* Nama Aplikasi */
         .app-name {
-          font-size: 22px;
-          font-weight: bold;
+          font-size: 16px;
+          font-weight: 600;
           font-family: 'Teko', sans-serif;
-          letter-spacing: 1px;
+          letter-spacing: 0.5px;
           text-transform: uppercase;
         }
         
         /* Slogan */
         .app-slogan {
-          font-size: 12px;
-          opacity: 0.75;
+          font-size: 10px;
+          opacity: 0.7;
           font-family: Arial, sans-serif;
         }

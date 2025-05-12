@@ -754,6 +754,25 @@
         }
     });
 
+    function bukaPengaturanNotifikasi() {
+        window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
+        tutupNotifBar();
+    }
+
+    function tutupNotifBar() {
+        document.getElementById('notif-bar').classList.add('hidden');
+    }
+
+    // Tampilkan hanya jika URL punya ?notif=off
+    function cekQueryNotifBar() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('notif') === 'off') {
+            document.getElementById('notif-bar').classList.remove('hidden');
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', cekQueryNotifBar);
+
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/tv/sw.js')
             .then(function(reg) {

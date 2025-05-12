@@ -450,31 +450,24 @@
 <script>
 function bukaPengaturanNotifikasi() {
   window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-  tutupModal();
+  tutupNotifBar();
 }
 
-function tutupModal() {
-  document.getElementById('notif-modal').classList.add('hidden');
-  localStorage.setItem('notifModalClosed', 'true');
+function tutupNotifBar() {
+  document.getElementById('notif-bar').classList.add('hidden');
 }
 
-function tampilkanModalJikaPerlu() {
-  const sudahDitutup = localStorage.getItem('notifModalClosed') === 'true';
-  const izin = Notification.permission;
-
-  console.log('🔔 Notif status:', izin);
-  console.log('🚫 Modal pernah ditutup:', sudahDitutup);
-
-  // Hanya tampilkan modal jika:
-  // - Belum diaktifkan ("default" atau "denied")
-  // - Belum pernah ditutup
-  if (!sudahDitutup && izin !== 'granted') {
-    document.getElementById('notif-modal').classList.remove('hidden');
+function tampilkanNotifBarJikaPerlu() {
+  // Hanya tampilkan bar jika permission masih default atau denied
+  if ('Notification' in window && Notification.permission !== 'granted') {
+    document.getElementById('notif-bar').classList.remove('hidden');
   }
 }
 
-document.addEventListener('DOMContentLoaded', tampilkanModalJikaPerlu);
+// Jalankan saat DOM siap
+document.addEventListener('DOMContentLoaded', tampilkanNotifBarJikaPerlu);
 </script>
+
 
 
 

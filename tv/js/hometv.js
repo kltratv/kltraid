@@ -4,7 +4,7 @@
 
     async function loadChannelsFromJSON() {
         try {
-            const res = await fetch('https://kltraid.pages.dev/json/channel.json');
+            const res = await fetch('https://content.elutuna.workers.dev/channel.json');
             if (!res.ok) throw new Error('Failed to load channel.json');
             const data = await res.json();
             const container = document.querySelector('#live-tv #content');
@@ -32,7 +32,7 @@
     }
 
     async function loadEventsFromJSON() {
-        const res = await fetch('https://kltraid.pages.dev/json/event.json');
+        const res = await fetch('https://content.elutuna.workers.dev/event.json');
         const data = await res.json();
         const container = document.querySelector('#live-event #content');
         container.innerHTML = ""; // Kosongkan kontainer lama

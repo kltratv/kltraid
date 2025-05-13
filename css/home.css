@@ -208,22 +208,11 @@
         }
 
         .sidebar-content {
-            flex-grow: 1; /* Let content take the remaining space */
-            padding: 2px; /* Padding around content for better spacing */
-            display: none; /* Hide by default */
-            overflow-y: auto; /* Ensures only this part is scrollable */
-                background:
-                      repeating-linear-gradient( 45deg,#0000 calc(-650%/13) calc(50%/13),#0f1129 0 calc(100%/13),
-                      #0000 0 calc(150%/13),#0f1129 0 calc(200%/13),
-                      #0000 0 calc(250%/13),#0f1129 0 calc(300%/13)),repeating-linear-gradient( 45deg,#0000 calc(-650%/13) calc(50%/13),#0f1129 0 calc(100%/13),
-                      #0000 0 calc(150%/13),#0f1129 0 calc(200%/13),
-                      #0000 0 calc(250%/13),#0f1129 0 calc(300%/13)) 32px 32px,
-                      repeating-linear-gradient(-45deg,#0000 calc(-650%/13) calc(50%/13),#0f1129 0 calc(100%/13),
-                      #0000 0 calc(150%/13),#0f1129 0 calc(200%/13),
-                      #0000 0 calc(250%/13),#0f1129 0 calc(300%/13)),repeating-linear-gradient(-45deg,#0000 calc(-650%/13) calc(50%/13),#0f1129 0 calc(100%/13),
-                      #0000 0 calc(150%/13),#0f1129 0 calc(200%/13),
-                      #0000 0 calc(250%/13),#0f1129 0 calc(300%/13)) 32px 32px #0f172a;
-                background-size: 64px 64px;
+            flex-grow: 1; /* Membuat elemen ini mengisi ruang sisa dalam flex container */
+            padding: 2px; /* Memberi jarak di dalam elemen agar isi tidak mepet ke tepi */
+            background-color: #0F172A; /* Warna latar belakang (biru tua kehitaman) */
+            display: none; /* Disembunyikan secara default */
+            overflow-y: auto; /* Jika isi lebih tinggi dari kontainer, beri scroll vertikal */
         }
 
         .sidebar-content.active {

@@ -60,5 +60,30 @@
     "kickoff_time": "00:00",
     "match_date": "2025-05-14",
     "match_time": "00:00"
+  },
+  {
+    "id": "0f8e05aa-3629-4136-ab81-986a1e850b3b",
+    "url": "",
+    "servers": [
+      {
+        "url": "",
+        "label": "Server 1"
+      }
+    ],
+    "duration": 3,
+    "league": "LaLiga",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Real Sociedad",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/w8tb1aeBfVZIj9tZXf7eZg_96x96.png"
+    },
+    "team2": {
+      "name": "Celta",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wpdhixHP_sloegfP0UlwAw_96x96.png"
+    },
+    "kickoff_date": "2025-05-14",
+    "kickoff_time": "01:00",
+    "match_date": "2025-05-14",
+    "match_time": "01:00"
   }
 ]

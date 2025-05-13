@@ -92,32 +92,21 @@
             container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
         }
 
-setupEvents(); // Bangun DOM dan tombol server
+setupEvents(); // ⬅️ selesai dulu
 
-// 🔁 Tunggu satu tick agar setupEvents selesai render tombol
 setTimeout(() => {
     const storedActiveEventId = sessionStorage.getItem('activeEventId');
     const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
     if (storedActiveEventId && storedActiveServerUrl) {
         const decryptedUrl = decryptUrl(storedActiveServerUrl);
-
         const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
         if (activeContainer) {
-            // 🔁 Tunggu tombol server terbentuk
-            const observer = new MutationObserver((mutations, obs) => {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
-                    obs.disconnect(); // hentikan observer
-                }
-            });
-
-            observer.observe(activeContainer, {
-                childList: true,
-                subtree: true,
-            });
+            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+            if (storedButton) {
+                selectServerButton(storedButton);
+                loadEventVideo(activeContainer, decryptedUrl, false);
+            }
         }
     }
 }, 0);

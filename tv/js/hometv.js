@@ -43,9 +43,22 @@
         container.innerHTML = ""; // Kosongkan kontainer lama
 
         data.forEach(event => {
-            const serverStr = JSON.stringify(event.servers).replace(/"/g, '&quot;');
+            // 🔁 Modifikasi label server "SD [IOS]" menjadi "Server 1", "Server 2", dst
+            let iosCount = 0;
+            const modifiedServers = event.servers.map(server => {
+                if (server.label === "SD [IOS]") {
+                    iosCount++;
+                    return {
+                        ...server,
+                        label: `Server ${iosCount}`
+                    };
+                }
+                return server;
+            });
 
-            const html = 
+            const serverStr = JSON.stringify(modifiedServers).replace(/"/g, '&quot;');
+
+            const html = `
 	        <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
 	            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
 	            <div class="team">
@@ -70,21 +83,26 @@
 	                <div class="countdown-timer"></div>
 	            </div>
 	        </div>
-	        ;
+	        `;
             container.insertAdjacentHTML('beforeend', html);
         });
+
+        // ⬇️ Tambahkan spacer di sini agar scroll tidak terpotong
+        if (!container.querySelector('#spacer')) {
+            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+        }
 
         setupEvents(); // harus dipanggil sebelum restore
 
         // ✅ Pindahkan ke sini
         const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(activeServerUrl_${storedActiveEventId});
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
         if (storedActiveEventId && storedActiveServerUrl) {
             const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(.event-container[data-id="${storedActiveEventId}"]);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
             if (activeContainer) {
-                const storedButton = activeContainer.querySelector(.server-button[data-url="${decryptedUrl}"]);
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
                 if (storedButton) {
                     selectServerButton(storedButton);
                     loadEventVideo(activeContainer, decryptedUrl, false);

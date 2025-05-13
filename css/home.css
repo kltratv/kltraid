@@ -402,7 +402,7 @@
             .countdown-wrapper {
                 font-size: 20px;
             }
-            .spacer {
+            #spacer {
                 height: 140px; /* Sesuaikan nilai tinggi ini untuk memastikan sidebar tidak menimpa navbar */
                 width: 100%;
                 background: transparent; /* Pastikan div ini tidak terlihat */

@@ -16,68 +16,71 @@
 
     <style>
         @keyframes slideInRight {
-          from {
-            transform: translateX(100%);
-            opacity: 0;
-          }
-          to {
-            transform: translateX(0);
-            opacity: 1;
-          }
+            from {
+                transform: translateX(100%);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
         }
-        
+
         .notif-bar {
-          position: fixed;
-          top: 56px; /* ⬅️ Adjust jika toolbar kamu tinggi */
-          right: 0;
-          left: auto;
-          z-index: 9999;
-          background: linear-gradient(90deg, #00c6ff, #0072ff);
-          color: white;
-          display: flex;
-          align-items: center;
-          padding: 10px 12px;
-          border-radius: 8px 0 0 8px; /* Tetap menempel kanan */
-          box-shadow: -4px 4px 10px rgba(0,0,0,0.3);
-          font-family: sans-serif;
-          max-width: 90%;
-          gap: 10px;
-        
-          /* 🔄 Animasi saat muncul */
-          animation: slideInRight 0.4s ease-out;
+            position: fixed;
+            top: 56px;
+            /* ⬅️ Adjust jika toolbar kamu tinggi */
+            right: 0;
+            left: auto;
+            z-index: 9999;
+            background: linear-gradient(90deg, #00c6ff, #0072ff);
+            color: white;
+            display: flex;
+            align-items: center;
+            padding: 10px 12px;
+            border-radius: 8px 0 0 8px;
+            /* Tetap menempel kanan */
+            box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
+            font-family: sans-serif;
+            max-width: 90%;
+            gap: 10px;
+
+            /* 🔄 Animasi saat muncul */
+            animation: slideInRight 0.4s ease-out;
         }
-        
+
         .notif-bar.hidden {
-          display: none;
+            display: none;
         }
-        
+
         .notif-text {
-          white-space: nowrap;
-          font-size: 14px;
+            white-space: nowrap;
+            font-size: 14px;
         }
-        
+
         .notif-action {
-          background: white;
-          color: #0072ff;
-          border: none;
-          padding: 6px 12px;
-          border-radius: 6px;
-          font-weight: bold;
-          cursor: pointer;
-          font-size: 13px;
-          transition: background-color 0.3s;
+            background: white;
+            color: #0072ff;
+            border: none;
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            font-size: 13px;
+            transition: background-color 0.3s;
         }
-        
+
         .notif-action:hover {
-          background-color: #e6f0ff;
+            background-color: #e6f0ff;
         }
-        
+
         .notif-close {
-          background: transparent;
-          color: white;
-          border: none;
-          font-size: 16px;
-          cursor: pointer;
+            background: transparent;
+            color: white;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
         }
     </style>
 
@@ -87,11 +90,11 @@
 
 <body>
 
-<div id="notif-bar" class="notif-bar hidden">
-  <span class="notif-text">🔔 Enable notifications</span>
-  <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Enable</button>
-  <button class="notif-close" onclick="tutupNotifBar()">✖</button>
-</div>
+    <div id="notif-bar" class="notif-bar hidden">
+        <span class="notif-text">🔔 Enable notifications</span>
+        <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Enable</button>
+        <button class="notif-close" onclick="tutupNotifBar()">✖</button>
+    </div>
 
 
 
@@ -178,4 +181,5 @@
     <script src="/tv/js/apasihtv.js"></script>
     <script src="/tv/js/hometv.js"></script>
 </body>
+
 </html>

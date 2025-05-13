@@ -1,18 +1,22 @@
         /* Custom CSS for Video Player and Sidebar Layout */
-        html, body {
+        html,
+        body {
             margin: 0;
             height: 100%;
             overflow: hidden;
             display: flex;
             flex-direction: column;
             color: white;
-            font-family: 'Teko', sans-serif; /* Menggunakan font Teko dari Google Fonts */
+            font-family: 'Teko', sans-serif;
+            /* Menggunakan font Teko dari Google Fonts */
         }
+
         #main-content {
             display: flex;
             width: 100%;
             height: 100%;
         }
+
         .video-container {
             flex: 1;
             background-color: #000;
@@ -22,11 +26,13 @@
             justify-content: center;
             align-items: center;
         }
+
         .video-wrapper {
             position: relative;
             width: 100%;
             /* Menggunakan rasio 16:9 dengan padding-bottom */
-            padding-bottom: 56.25%; /* Rasio 16:9 */
+            padding-bottom: 56.25%;
+            /* Rasio 16:9 */
             height: 0;
         }
 
@@ -37,17 +43,21 @@
             left: 0;
             width: 100%;
             height: 100%;
-            object-fit: cover; /* Tetap menggunakan cover untuk memastikan video mengisi seluruh wadah */
+            object-fit: cover;
+            /* Tetap menggunakan cover untuk memastikan video mengisi seluruh wadah */
         }
-      	#player {
+
+        #player {
             position: absolute;
             top: 0;
             left: 0;
             width: 100%;
             height: 100%;
-            background-color: black; /* Optional: background hitam untuk player */
-          	display: none;
+            background-color: black;
+            /* Optional: background hitam untuk player */
+            display: none;
         }
+
         .channel-container {
             display: flex;
             align-items: center;
@@ -55,8 +65,10 @@
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%; /* Menyesuaikan dengan elemen induk */
-            box-sizing: border-box; /* Memastikan padding tidak menambah lebar total */
+            width: 100%;
+            /* Menyesuaikan dengan elemen induk */
+            box-sizing: border-box;
+            /* Memastikan padding tidak menambah lebar total */
             margin-bottom: 2px;
         }
 
@@ -111,112 +123,175 @@
             padding: 20px;
             border-radius: 10px;
         }
+
         .countdown-title {
             margin-bottom: 10px;
         }
+
         .sidebar {
-            flex: 0 0 400px; /* Lebar tetap untuk sidebar */
+            flex: 0 0 400px;
+            /* Lebar tetap untuk sidebar */
             background-color: #f4f4f4;
-            padding: 0; /* Menghilangkan padding */
-            overflow-y: auto; /* Memungkinkan scroll vertikal jika diperlukan */
-            overflow-x: hidden; /* Mencegah scroll horizontal */
+            padding: 0;
+            /* Menghilangkan padding */
+            overflow-y: auto;
+            /* Memungkinkan scroll vertikal jika diperlukan */
+            overflow-x: hidden;
+            /* Mencegah scroll horizontal */
             height: 100vh;
-            box-sizing: border-box; /* Menyertakan padding dalam perhitungan lebar */
+            box-sizing: border-box;
+            /* Menyertakan padding dalam perhitungan lebar */
             display: flex;
             flex-direction: column;
         }
 
         /* CSS untuk menu-wrapper di atas */
         .menu-wrapper-top {
-            background-color: #ffffff; /* Warna latar yang solid */
-            padding: 0; /* Padding seragam di semua sisi */
-            box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* Bayangan untuk kedalaman visual */
-            border-bottom: 1px solid #ccc; /* Garis batas untuk memperjelas pemisahan */
-            position: sticky; /* Membuat menu tetap di atas saat di-scroll */
-            top: 0; /* Menempel di atas */
-            z-index: 100; /* Memastikan menu berada di atas isi lainnya */
-            width: 100%; /* Memastikan mengisi lebar sidebar */
+            background-color: #ffffff;
+            /* Warna latar yang solid */
+            padding: 0;
+            /* Padding seragam di semua sisi */
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            /* Bayangan untuk kedalaman visual */
+            border-bottom: 1px solid #ccc;
+            /* Garis batas untuk memperjelas pemisahan */
+            position: sticky;
+            /* Membuat menu tetap di atas saat di-scroll */
+            top: 0;
+            /* Menempel di atas */
+            z-index: 100;
+            /* Memastikan menu berada di atas isi lainnya */
+            width: 100%;
+            /* Memastikan mengisi lebar sidebar */
         }
 
         /* Tombol Refresh - warna abu-abu */
         .menu-wrapper-bottom .refresh-button {
-            background-color: #4CAF50; /* Warna abu-abu */
+            background-color: #4CAF50;
+            /* Warna abu-abu */
         }
 
         .menu-wrapper-bottom .refresh-button:hover {
-            background-color: #45A049; /* Warna abu-abu yang lebih gelap saat hover */
+            background-color: #45A049;
+            /* Warna abu-abu yang lebih gelap saat hover */
         }
 
         /* Tombol Telegram - warna biru */
         .menu-wrapper-bottom .telegram-button {
-            background-color: #0088cc; /* Warna biru sesuai Telegram */
+            background-color: #0088cc;
+            /* Warna biru sesuai Telegram */
         }
 
         .menu-wrapper-bottom .telegram-button:hover {
-            background-color: #007ab8; /* Warna biru yang lebih gelap saat hover */
+            background-color: #007ab8;
+            /* Warna biru yang lebih gelap saat hover */
         }
 
         /* Umum untuk semua tombol di menu-wrapper-bottom */
         .menu-wrapper-bottom .menu-button {
-            flex: 1; /* Pastikan tombol membagi ruang secara merata */
-            text-align: center; /* Memusatkan teks dan ikon */
-            padding: 10px 0; /* Padding untuk kenyamanan pengguna */
-            color: white; /* Warna teks */
-            border: none; /* Menghilangkan border */
-            cursor: pointer; /* Menampilkan kursor pointer saat hover */
-            transition: background-color 0.3s; /* Transisi halus untuk efek hover */
-            margin: 0; /* Menghilangkan margin antar tombol */
-            border-left: 1px solid #ffffff; /* Garis pemisah antar tombol */
-            font-family: 'Teko', sans-serif; /* Menambahkan properti font-family */
+            flex: 1;
+            /* Pastikan tombol membagi ruang secara merata */
+            text-align: center;
+            /* Memusatkan teks dan ikon */
+            padding: 10px 0;
+            /* Padding untuk kenyamanan pengguna */
+            color: white;
+            /* Warna teks */
+            border: none;
+            /* Menghilangkan border */
+            cursor: pointer;
+            /* Menampilkan kursor pointer saat hover */
+            transition: background-color 0.3s;
+            /* Transisi halus untuk efek hover */
+            margin: 0;
+            /* Menghilangkan margin antar tombol */
+            border-left: 1px solid #ffffff;
+            /* Garis pemisah antar tombol */
+            font-family: 'Teko', sans-serif;
+            /* Menambahkan properti font-family */
         }
 
         .menu-wrapper-bottom .menu-button:first-child {
-            border-left: none; /* Menghilangkan garis pemisah pada tombol pertama */
+            border-left: none;
+            /* Menghilangkan garis pemisah pada tombol pertama */
         }
 
         .menu-wrapper-bottom .menu-button i {
-            margin-right: 8px; /* Jarak antara ikon dan teks */
+            margin-right: 8px;
+            /* Jarak antara ikon dan teks */
         }
 
         .menu-container {
             display: flex;
-            width: 100%; /* Memastikan mengisi lebar wrapper */
-            margin: 0; /* Menghilangkan margin default */
-            padding: 0; /* Menghilangkan padding default */
+            width: 100%;
+            /* Memastikan mengisi lebar wrapper */
+            margin: 0;
+            /* Menghilangkan margin default */
+            padding: 0;
+            /* Menghilangkan padding default */
         }
 
         .menu-button {
-            flex: 1; /* Ensures each button has the same width */
-            text-align: center; /* Centering the text inside the buttons */
-            padding: 10px 0; /* Padding for button for better touch */
-            background-color: #F91E4E; /* Example background color */
-            color: white; /* Text color */
-            border: none; /* Removes border */
-            cursor: pointer; /* Shows a pointer cursor on hover */
-            transition: background-color 0.3s; /* Smooth transition for hover effect */
-            margin: 0; /* Menghilangkan margin antar tombol */
-            border-left: 1px solid #ffffff; /* Garis pemisah antar tombol */
-            font-family: 'Teko', sans-serif; /* Menambahkan properti font-family */
+            flex: 1;
+            /* Ensures each button has the same width */
+            text-align: center;
+            /* Centering the text inside the buttons */
+            padding: 10px 0;
+            /* Padding for button for better touch */
+            background-color: #F91E4E;
+            /* Example background color */
+            color: white;
+            /* Text color */
+            border: none;
+            /* Removes border */
+            cursor: pointer;
+            /* Shows a pointer cursor on hover */
+            transition: background-color 0.3s;
+            /* Smooth transition for hover effect */
+            margin: 0;
+            /* Menghilangkan margin antar tombol */
+            border-left: 1px solid #ffffff;
+            /* Garis pemisah antar tombol */
+            font-family: 'Teko', sans-serif;
+            /* Menambahkan properti font-family */
         }
 
         .menu-button:first-child {
-            border-left: none; /* Menghilangkan garis pemisah pada tombol pertama */
+            border-left: none;
+            /* Menghilangkan garis pemisah pada tombol pertama */
         }
 
         .menu-button:hover {
-            background-color: #ff456e; /* Darker shade on hover */
+            background-color: #ff456e;
+            /* Darker shade on hover */
         }
 
         .sidebar-content {
-            flex-grow: 1; /* Membuat elemen ini mengisi ruang sisa dalam flex container */
-            padding: 2px; /* Memberi jarak di dalam elemen agar isi tidak mepet ke tepi */
-            background-color: #0F172A; /* Warna latar belakang (biru tua kehitaman) */
-            display: none; /* Disembunyikan secara default */
-            overflow-y: auto; /* Jika isi lebih tinggi dari kontainer, beri scroll vertikal */
+            flex-grow: 1;
+            /* Let content take the remaining space */
+            padding: 2px;
+            /* Padding around content for better spacing */
+            display: none;
+            /* Hide by default */
+            overflow-y: auto;
+            /* Ensures only this part is scrollable */
+            background:
+                repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px,
+                repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px #0f172a;
+            background-size: 64px 64px;
         }
 
         .sidebar-content.active {
-            display: block; /* Show active content */
+            display: block;
+            /* Show active content */
         }
 
         .event-container {
@@ -224,13 +299,14 @@
             background: linear-gradient(135deg, #1b262c, #2c3e50, #34495e, #3a3a52);
             padding: 10px;
             border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             cursor: pointer;
             transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease;
             margin-bottom: 10px;
         }
 
-        .event-container:hover, .event-container.hover-effect {
+        .event-container:hover,
+        .event-container.hover-effect {
             background: linear-gradient(135deg, #2b3842, #3b5267, #46556c, #50505b);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
@@ -274,7 +350,8 @@
             transition: background-color 0.3s;
             text-align: center;
             /* flex: 1; */
-            max-width: 80px; /* Lebar maksimal untuk tombol */
+            max-width: 80px;
+            /* Lebar maksimal untuk tombol */
         }
 
         .server-button.active {
@@ -336,13 +413,16 @@
 
         .chat-iframe {
             width: 100%;
-            height: 98%; /* Make the iframe fill the entire height of the sidebar content */
+            height: 98%;
+            /* Make the iframe fill the entire height of the sidebar content */
             border: none;
             overflow: hidden;
         }
 
-        .event-container .team-logo1, .event-container .team-logo2 {
-            width: 24px; /* Ukuran logo lebih besar */
+        .event-container .team-logo1,
+        .event-container .team-logo2 {
+            width: 24px;
+            /* Ukuran logo lebih besar */
             height: auto;
             margin-right: 10px;
         }
@@ -351,7 +431,8 @@
             background-color: #ffff0000;
         }
 
-        .event-container .team1, .event-container .team2 {
+        .event-container .team1,
+        .event-container .team2 {
             display: flex;
             align-items: center;
             /* margin: 10px 0; */
@@ -371,11 +452,13 @@
                 display: flex;
                 height: 100vh;
             }
+
             .video-container {
                 width: 100%;
                 position: relative;
                 padding-top: 56.25%;
             }
+
             .video-wrapper {
                 position: absolute;
                 top: 0;
@@ -383,6 +466,7 @@
                 bottom: 0;
                 left: 0;
             }
+
             .sidebar {
                 width: 100%;
                 padding: 2px;
@@ -392,29 +476,41 @@
                 flex-grow: 1;
                 min-height: calc(100vh - 56.25vw);
             }
+
             .menu-button {
                 margin-bottom: 2px;
             }
+
             .chat-iframe {
-                height: 63vh; /* Make the iframe fill the entire height of the sidebar content */
+                height: 63vh;
+                /* Make the iframe fill the entire height of the sidebar content */
                 border: none;
             }
+
             .countdown-wrapper {
                 font-size: 20px;
             }
+
             #spacer {
-                height: 140px; /* Sesuaikan nilai tinggi ini untuk memastikan sidebar tidak menimpa navbar */
+                height: 140px;
+                /* Sesuaikan nilai tinggi ini untuk memastikan sidebar tidak menimpa navbar */
                 width: 100%;
-                background: transparent; /* Pastikan div ini tidak terlihat */
+                background: transparent;
+                /* Pastikan div ini tidak terlihat */
             }
+
             /* Tambahan untuk memastikan menu-wrapper-bottom berada di atas navbar */
             .menu-wrapper-bottom {
-                position: fixed; /* Pastikan posisi fixed agar selalu di atas navbar */
-                bottom: env(safe-area-inset-bottom); /* Sesuaikan dengan safe area */
+                position: fixed;
+                /* Pastikan posisi fixed agar selalu di atas navbar */
+                bottom: env(safe-area-inset-bottom);
+                /* Sesuaikan dengan safe area */
                 left: 0;
                 right: 0;
                 width: 100%;
-                z-index: 1000; /* Pastikan z-index cukup tinggi */
-                padding-bottom: calc(0px + env(safe-area-inset-bottom)); /* Menambahkan padding bawah */
+                z-index: 1000;
+                /* Pastikan z-index cukup tinggi */
+                padding-bottom: calc(0px + env(safe-area-inset-bottom));
+                /* Menambahkan padding bawah */
             }
         }

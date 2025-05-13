@@ -57,146 +57,230 @@
   },
   {
     "id": "Channel9",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=beinau1",
+    "logo": "https://resizer-acm.eco.astro.com.my/tr:w-1504/https://dj7fdt04hl8tv.cloudfront.net/acm/media/njoi/beinsports1.jpg",
+    "name": "bEIN AU 1",
+    "status": "Online"
+  },
+  {
+    "id": "Channel10",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=beinau2",
+    "logo": "https://resizer-acm.eco.astro.com.my/tr:w-1504/https://dj7fdt04hl8tv.cloudfront.net/acm/media/njoi/beinsports1.jpg",
+    "name": "bEIN AU 2",
+    "status": "Online"
+  },
+  {
+    "id": "Channel11",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=beinau3",
+    "logo": "https://resizer-acm.eco.astro.com.my/tr:w-1504/https://dj7fdt04hl8tv.cloudfront.net/acm/media/njoi/beinsports1.jpg",
+    "name": "bEIN AU 3",
+    "status": "Online"
+  },
+  {
+    "id": "Channel12",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=spoph1",
+    "logo": "https://up.wepick.kr/wp-content/uploads/2023/06/a-1-150.jpg",
+    "name": "SPOTV PH 1",
+    "status": "Online"
+  },
+  {
+    "id": "Channel13",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=spoph2",
+    "logo": "https://up.wepick.kr/wp-content/uploads/2023/06/a-1-150.jpg",
+    "name": "SPOTV PH 2",
+    "status": "Online"
+  },
+  {
+    "id": "Channel14",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=tnt1",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblTiwoGLIGJes3wn8kamdivhodneYpkP8uQ&s",
+    "name": "TNT GB 1",
+    "status": "Online"
+  },
+  {
+    "id": "Channel15",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=tnt2",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblTiwoGLIGJes3wn8kamdivhodneYpkP8uQ&s",
+    "name": "TNT GB 2",
+    "status": "Online"
+  },
+  {
+    "id": "Channel16",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=tnt3",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblTiwoGLIGJes3wn8kamdivhodneYpkP8uQ&s",
+    "name": "TNT GB 3",
+    "status": "Online"
+  },
+  {
+    "id": "Channel17",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=tnt4",
+    "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTblTiwoGLIGJes3wn8kamdivhodneYpkP8uQ&s",
+    "name": "TNT GB 4",
+    "status": "Online"
+  },
+  {
+    "id": "Channel18",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=foxmx1",
+    "logo": "https://pbs.twimg.com/media/GfQpmq-WsAAbex4?format=jpg&name=900x900",
+    "name": "FOX MX 1",
+    "status": "Online"
+  },
+  {
+    "id": "Channel19",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=foxmx2",
+    "logo": "https://pbs.twimg.com/media/GfQpmq-WsAAbex4?format=jpg&name=900x900",
+    "name": "FOX MX 2",
+    "status": "Online"
+  },
+  {
+    "id": "Channel20",
+    "url": "https://bikinbaru96.blogspot.com/p/hara.html?channel=foxmx3",
+    "logo": "https://pbs.twimg.com/media/GfQpmq-WsAAbex4?format=jpg&name=900x900",
+    "name": "FOX MX 3",
+    "status": "Online"
+  },
+  {
+    "id": "Channel21",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rcti",
     "logo": "https://am.sindonews.net/mobile/2016/images/tv/live-rcti.png",
     "name": "RCTI",
     "status": "Online"
   },
   {
-    "id": "Channel10",
+    "id": "Channel22",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mnc",
     "logo": "https://am.sindonews.net/mobile/2016/images/tv/live-mnctv.png",
     "name": "MNCTV",
     "status": "Online"
   },
   {
-    "id": "Channel11",
+    "id": "Channel23",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=gtv",
     "logo": "https://am.sindonews.net/mobile/2016/images/tv/live-gtv.png",
     "name": "GTV",
     "status": "Online"
   },
   {
-    "id": "Channel12",
+    "id": "Channel24",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=inews",
     "logo": "https://am.sindonews.net/mobile/2016/images/tv/live-inewstv.png",
     "name": "iNEWS",
     "status": "Online"
   },
   {
-    "id": "Channel13",
+    "id": "Channel25",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=metrotv",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501451_tvchannels_v1.jpg",
     "name": "Metro TV",
     "status": "Online"
   },
   {
-    "id": "Channel14",
+    "id": "Channel26",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tvone",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501492_tvchannels_v1.jpg",
     "name": "TV One",
     "status": "Online"
   },
   {
-    "id": "Channel15",
+    "id": "Channel27",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=kompas",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501525_tvchannels_v1.jpg",
     "name": "Kompas TV",
     "status": "Online"
   },
   {
-    "id": "Channel16",
+    "id": "Channel28",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=antv",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501594_tvchannels_v1.jpg",
     "name": "ANTV",
     "status": "Online"
   },
   {
-    "id": "Channel17",
+    "id": "Channel29",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=rtv",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501653_tvchannels_v1.jpg",
     "name": "RTV",
     "status": "Online"
   },
   {
-    "id": "Channel18",
+    "id": "Channel30",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=trans7",
     "logo": "https://tv.detik.com/image/Trans7.jpg",
     "name": "Trans 7",
     "status": "Online"
   },
   {
-    "id": "Channel19",
+    "id": "Channel31",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=transtv",
     "logo": "https://tv.detik.com/image/TransTV.jpg",
     "name": "Trans TV",
     "status": "Online"
   },
   {
-    "id": "Channel20",
+    "id": "Channel32",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=mdtv",
     "logo": "https://vmp-cms.telkomsel.com/sites/default/files/entry/0_keojjla6/banner_mdpi.png",
     "name": "MDTV",
     "status": "Online"
   },
   {
-    "id": "Channel21",
+    "id": "Channel33",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=sctv",
     "logo": "https://www.transtv.co.id/livetv/anytv/SCTV_live_streaming_tv.jpg",
     "name": "SCTV",
     "status": "Online"
   },
   {
-    "id": "Channel22",
+    "id": "Channel34",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=indosiar",
     "logo": "https://images.indihometv.com/tvposter/indosiar.png",
     "name": "Indosiar",
     "status": "Online"
   },
   {
-    "id": "Channel23",
+    "id": "Channel35",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=moji",
     "logo": "https://i0.wp.com/tanggal.id/wp-content/uploads/2025/01/Moji-TV.webp",
     "name": "Moji",
     "status": "Online"
   },
   {
-    "id": "Channel24",
+    "id": "Channel36",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=kplus",
     "logo": "https://images.indihometv.com/tvposter/k+.png",
     "name": "K+",
     "status": "Online"
   },
   {
-    "id": "Channel25",
+    "id": "Channel37",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=jowo",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1725851535_tvchannels_v1.jpg",
     "name": "Jowo TV",
     "status": "Online"
   },
   {
-    "id": "Channel26",
+    "id": "Channel38",
     "url": "https://bikinbaru96.blogspot.com/p/playertv.html?key=btv",
     "logo": "https://picture.dens.tv/wp/img/tvchannels_v1/340x160/1687501562_tvchannels_v1.jpg",
     "name": "BTV",
     "status": "Online"
   },
   {
-    "id": "Channel27",
+    "id": "Channel39",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeographic",
     "logo": "https://throughiris.com/wp-content/uploads/2017/01/NatGeo_Upfront_Feature_HD_17.png",
     "name": "NAT GEO",
     "status": "Online"
   },
   {
-    "id": "Channel28",
+    "id": "Channel40",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=natgeowild",
     "logo": "https://identsandpresentation.com/natgeowild2015/one-d.jpg",
     "name": "NAT GEO WILD",
     "status": "Online"
   },
   {
-    "id": "Channel29",
+    "id": "Channel41",
     "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=animalplanet",
     "logo": "https://stmify.com/wp-content/uploads/2024/08/9-s.webp",
     "name": "ANIMAL PLANET",

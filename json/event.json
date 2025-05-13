@@ -210,5 +210,30 @@
     "kickoff_time": "06:00",
     "match_date": "2025-05-14",
     "match_time": "06:00"
+  },
+  {
+    "id": "926f936d-7669-4cfe-af98-79845340919f",
+    "url": "",
+    "servers": [
+      {
+        "url": "",
+        "label": "Server 1"
+      }
+    ],
+    "duration": 3,
+    "league": "Copa Libertadores",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Universidad Chile",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jqe29gPx-mxrOrDOSLwcBw_96x96.png"
+    },
+    "team2": {
+      "name": "Carabobo",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wktM2uDV7Cy6dccvr6DnTg_96x96.png"
+    },
+    "kickoff_date": "2025-05-14",
+    "kickoff_time": "07:30",
+    "match_date": "2025-05-14",
+    "match_time": "07:30"
   }
 ]

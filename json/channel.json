@@ -12,5 +12,47 @@
     "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
     "name": "SSC Sports 2",
     "status": "Online"
+  },
+  {
+    "id": "Channel3",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc3",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports 3",
+    "status": "Online"
+  },
+  {
+    "id": "Channel4",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc4",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports 4",
+    "status": "Online"
+  },
+  {
+    "id": "Channel5",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc5",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports 5",
+    "status": "Online"
+  },
+  {
+    "id": "Channel6",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports Extra 1",
+    "status": "Online"
+  },
+  {
+    "id": "Channel7",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports Extra 2",
+    "status": "Online"
+  },
+  {
+    "id": "Channel8",
+    "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex3",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "name": "SSC Sports Extra 3",
+    "status": "Online"
   }
 ]

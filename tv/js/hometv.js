@@ -31,59 +31,80 @@
         }
     }
 
-    async function loadEventsFromJSON() {
-        const res = await fetch('https://content.elutuna.workers.dev/event.json');
-        const data = await res.json();
-        const container = document.querySelector('#live-event #content');
-        container.innerHTML = ""; // Kosongkan kontainer lama
+	async function loadEventsFromJSON() {
+	    const res = await fetch('https://content.elutuna.workers.dev/event.json');
+	    const data = await res.json();
+	    const container = document.querySelector('#live-event #content');
+	    container.innerHTML = ""; // Kosongkan kontainer lama
+	
+	    data.forEach(event => {
+	        // 🔁 Modifikasi label server "SD [IOS]" menjadi "Server 1", "Server 2", dst
+	        let iosCount = 0;
+	        const modifiedServers = event.servers.map(server => {
+	            if (server.label === "SD [IOS]") {
+	                iosCount++;
+	                return {
+	                    ...server,
+	                    label: `Server ${iosCount}`
+	                };
+	            }
+	            return server;
+	        });
+	
+	        const serverStr = JSON.stringify(modifiedServers).replace(/"/g, '&quot;');
+	
+	        const html = `
+	        <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
+	            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+	            <div class="team">
+	                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+	                <span>${event.team1.name}</span>
+	            </div>
+	            <div class="kickoff-match-date">${event.kickoff_date}</div>
+	            <div class="kickoff-match-time">${event.kickoff_time}</div>
+	            <div class="match-date" style="display:none;">${event.match_date}</div>
+	            <div class="match-time" style="display:none;">${event.match_time}</div>
+	            <div class="live-label" style="display:none;">Live</div>
+	            <div class="team">
+	                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+	                <span>${event.team2.name}</span>
+	            </div>
+	            <div class="server-buttons" style="display:none;">
+	                <div class="instruction">You can select a server stream:</div>
+	                <div class="buttons-container"></div>
+	            </div>
+	            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+	                <div class="countdown-title">Event will start in:</div>
+	                <div class="countdown-timer"></div>
+	            </div>
+	        </div>
+	        `;
+	        container.insertAdjacentHTML('beforeend', html);
+	    });
 
-        data.forEach(event => {
-            // Modifikasi label server
-            let iosServerCount = 0;
-            const updatedServers = event.servers.map(server => {
-                if (server.label === "SD [IOS]") {
-                    iosServerCount++;
-                    return {
-                        ...server,
-                        label: `Server ${iosServerCount}`
-                    };
-                }
-                return server;
-            });
-
-            const serverStr = JSON.stringify(updatedServers).replace(/"/g, '&quot;');
-
-            const html = `
-        <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
-            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-            <div class="team">
-                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
-                <span>${event.team1.name}</span>
-            </div>
-            <div class="kickoff-match-date">${event.kickoff_date}</div>
-            <div class="kickoff-match-time">${event.kickoff_time}</div>
-            <div class="match-date" style="display:none;">${event.match_date}</div>
-            <div class="match-time" style="display:none;">${event.match_time}</div>
-            <div class="live-label" style="display:none;">Live</div>
-            <div class="team">
-                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
-                <span>${event.team2.name}</span>
-            </div>
-            <div class="server-buttons" style="display:none;">
-                <div class="instruction">You can select a server stream:</div>
-                <div class="buttons-container"></div>
-            </div>
-            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
-                <div class="countdown-title">Event will start in:</div>
-                <div class="countdown-timer"></div>
-            </div>
-        </div>
-        `;
-            container.insertAdjacentHTML('beforeend', html);
-        });
-
-        setupEvents(); // harus dipanggil sebelum restore
-    }
+	    // ⬇️ Tambahkan spacer di sini agar scroll tidak terpotong
+	    if (!container.querySelector('#spacer')) {
+	        container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+	    }
+	
+	    setupEvents(); // harus dipanggil sebelum restore
+	
+	    // ✅ Restore video jika user kembali ke halaman
+	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+	
+	    if (storedActiveEventId && storedActiveServerUrl) {
+	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
+	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+	        if (activeContainer) {
+	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+	            if (storedButton) {
+	                selectServerButton(storedButton);
+	                loadEventVideo(activeContainer, decryptedUrl, false);
+	            }
+	        }
+	    }
+	}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);

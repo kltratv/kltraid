@@ -2,34 +2,39 @@
     var activeEventId = null; // Track the currently active event
     const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
 
-    async function loadChannelsFromJSON() {
-        try {
-            const res = await fetch('https://content.elutuna.workers.dev/channel.json');
-            if (!res.ok) throw new Error('Failed to load channel.json');
-            const data = await res.json();
-            const container = document.querySelector('#live-tv #content');
-            container.innerHTML = "";
-
-            data.forEach(channel => {
-                const html = `
-	        <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
-	          <div class="logo-container">
-	            <img src="${channel.logo}" alt="Channel Logo" class="logo">
-	          </div>
-	          <div class="info-container">
-	            <h3 class="channel-name">${channel.name}</h3>
-	            <p class="status">${channel.status}</p>
-	          </div>
-	        </div>
-	      `;
-                container.insertAdjacentHTML('beforeend', html);
-            });
-
-            setupChannels(); // aktifkan klik listener setelah render
-        } catch (error) {
-            console.error('Error loading channels:', error);
-        }
-    }
+	async function loadChannelsFromJSON() {
+	    try {
+	        const res = await fetch('https://content.elutuna.workers.dev/channel.json');
+	        if (!res.ok) throw new Error('Failed to load channel.json');
+	        const data = await res.json();
+	        const container = document.querySelector('#live-tv #content');
+	        container.innerHTML = "";
+	
+	        data.forEach(channel => {
+	            const html = `
+	            <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
+	                <div class="logo-container">
+	                    <img src="${channel.logo}" alt="Channel Logo" class="logo">
+	                </div>
+	                <div class="info-container">
+	                    <h3 class="channel-name">${channel.name}</h3>
+	                    <p class="status">${channel.status}</p>
+	                </div>
+	            </div>
+	            `;
+	            container.insertAdjacentHTML('beforeend', html);
+	        });
+	
+	        // ⬇️ Tambahkan spacer agar konten bisa di-scroll sampai habis
+	        if (!container.querySelector('#spacer')) {
+	            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+	        }
+	
+	        setupChannels(); // aktifkan klik listener setelah render
+	    } catch (error) {
+	        console.error('Error loading channels:', error);
+	    }
+	}
 
 	async function loadEventsFromJSON() {
 	    const res = await fetch('https://content.elutuna.workers.dev/event.json');
@@ -89,21 +94,6 @@
 	
 	    setupEvents(); // harus dipanggil sebelum restore
 	
-	    // ✅ Restore video jika user kembali ke halaman
-	    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-	
-	    if (storedActiveEventId && storedActiveServerUrl) {
-	        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-	        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-	        if (activeContainer) {
-	            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-	            if (storedButton) {
-	                selectServerButton(storedButton);
-	                loadEventVideo(activeContainer, decryptedUrl, false);
-	            }
-	        }
-	    }
 	}
 
     function isMobileDevice() {

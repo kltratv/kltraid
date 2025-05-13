@@ -82,6 +82,43 @@
             font-size: 16px;
             cursor: pointer;
         }
+
+    #modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      z-index: 9999;
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    #modal-container {
+      position: relative;
+      width: 90vw;
+      aspect-ratio: 9 / 16;
+      background: #000;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      border-radius: 12px;
+    }
+
+    #close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 2px solid white;
+      color: white;
+      font-size: 18px;
+      padding: 8px 12px;
+      cursor: pointer;
+      border-radius: 50%;
+      display: none;
+    }
     </style>
 
     <!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>-->
@@ -89,7 +126,14 @@
 </head>
 
 <body>
+  <div id="modal-overlay">
+    <div id="modal-container">
+      <button id="close-btn" onclick="closeModal()">✖</button>
+      <!-- Adsterra akan dimuat di sini -->
+    </div>
+  </div>
 
+    
     <div id="notif-bar" class="notif-bar hidden">
         <span class="notif-text">🔔 Enable notifications</span>
         <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Enable</button>
@@ -181,7 +225,28 @@
 
     <script src="/tv/js/apasihtv.js"></script>
     <script src="/tv/js/hometv.js"></script>
-    
+
+<script>
+        function loadAdsterraIntoModal() {
+      const script = document.createElement('script');
+      script.src = '//disappearsurgery.com/1d/b5/0c/1db50c967f59ee86bf2c8fa7e1895d3b.js';
+      document.getElementById('modal-container').appendChild(script);
+    }
+
+    function closeModal() {
+      document.getElementById('modal-overlay').style.display = 'none';
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        document.getElementById('modal-overlay').style.display = 'flex';
+        loadAdsterraIntoModal();
+        setTimeout(() => {
+          document.getElementById('close-btn').style.display = 'block';
+        }, 5000);
+      }, 1000); // Delay tampil modal 1 detik setelah halaman siap (opsional)
+    });
+</script>
 </body>
 
 </html>

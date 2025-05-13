@@ -733,26 +733,28 @@
         }, 60000); // Periksa setiap menit
     }
 
-    window.addEventListener('DOMContentLoaded', async () => {
-        await loadEventsFromJSON(); // ambil event dari GitHub
-        await loadChannelsFromJSON(); // panggil ini juga
+window.addEventListener('DOMContentLoaded', async () => {
+    await loadEventsFromJSON();              // 🔁 Panggil sekali saat halaman pertama dibuka
+    await loadChannelsFromJSON();            // 🔁 Panggil sekali (tidak perlu interval)
 
-        // Restore video saat kembali dari popunder
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    setInterval(loadEventsFromJSON, 60000);  // 🔁 Refresh event.json setiap 60 detik
 
-        if (storedActiveEventId && storedActiveServerUrl) {
-            const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
-                }
+    // 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
+    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+    if (storedActiveEventId && storedActiveServerUrl) {
+        const decryptedUrl = decryptUrl(storedActiveServerUrl);
+        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+        if (activeContainer) {
+            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+            if (storedButton) {
+                selectServerButton(storedButton);
+                loadEventVideo(activeContainer, decryptedUrl, false);
             }
         }
-    });
+    }
+});
 
 	function bukaPengaturanNotifikasi() {
 	  window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";

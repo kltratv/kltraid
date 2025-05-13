@@ -32,28 +32,28 @@
     }
 
     async function loadEventsFromJSON() {
-    const res = await fetch('https://content.elutuna.workers.dev/event.json');
-    const data = await res.json();
-    const container = document.querySelector('#live-event #content');
-    container.innerHTML = ""; // Kosongkan kontainer lama
+        const res = await fetch('https://content.elutuna.workers.dev/event.json');
+        const data = await res.json();
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = ""; // Kosongkan kontainer lama
 
-    data.forEach(event => {
-        // Modifikasi label server
-        let iosServerCount = 0;
-        const updatedServers = event.servers.map(server => {
-            if (server.label === "SD [IOS]") {
-                iosServerCount++;
-                return {
-                    ...server,
-                    label: `Server ${iosServerCount}`
-                };
-            }
-            return server;
-        });
+        data.forEach(event => {
+            // Modifikasi label server
+            let iosServerCount = 0;
+            const updatedServers = event.servers.map(server => {
+                if (server.label === "SD [IOS]") {
+                    iosServerCount++;
+                    return {
+                        ...server,
+                        label: `Server ${iosServerCount}`
+                    };
+                }
+                return server;
+            });
 
-        const serverStr = JSON.stringify(updatedServers).replace(/"/g, '&quot;');
+            const serverStr = JSON.stringify(updatedServers).replace(/"/g, '&quot;');
 
-        const html = `
+            const html = `
         <div class="event-container" data-id="${event.id}" data-url="${event.url}" data-servers="${serverStr}" data-duration="${event.duration}">
             <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
             <div class="team">
@@ -79,11 +79,11 @@
             </div>
         </div>
         `;
-        container.insertAdjacentHTML('beforeend', html);
-    });
+            container.insertAdjacentHTML('beforeend', html);
+        });
 
-    setupEvents(); // harus dipanggil sebelum restore
-}
+        setupEvents(); // harus dipanggil sebelum restore
+    }
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
@@ -730,69 +730,69 @@
         }, 60000); // Periksa setiap menit
     }
 
-window.addEventListener('DOMContentLoaded', async () => {
-    await loadEventsFromJSON();              // 🔁 Panggil sekali saat halaman pertama dibuka
-    await loadChannelsFromJSON();            // 🔁 Panggil sekali (tidak perlu interval)
+    window.addEventListener('DOMContentLoaded', async () => {
+        await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
+        await loadChannelsFromJSON(); // 🔁 Panggil sekali (tidak perlu interval)
 
-    setInterval(loadEventsFromJSON, 60000);  // 🔁 Refresh event.json setiap 60 detik
+        setInterval(loadEventsFromJSON, 60000); // 🔁 Refresh event.json setiap 60 detik
 
-    // 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
-    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+        // 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-    if (storedActiveEventId && storedActiveServerUrl) {
-        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-        if (activeContainer) {
-            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-            if (storedButton) {
-                selectServerButton(storedButton);
-                loadEventVideo(activeContainer, decryptedUrl, false);
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
             }
         }
-    }
-});
+    });
 
-	function bukaPengaturanNotifikasi() {
-	  window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
-	  tutupNotifBar();
-	}
-	
-	function tutupNotifBar() {
-	  document.getElementById('notif-bar').classList.add('hidden');
-	}
-	
-	// 🔊 Sound default dengan Web Audio API
-	function playNotifSound() {
-	  try {
-	    const ctx = new (window.AudioContext || window.webkitAudioContext)();
-	    const oscillator = ctx.createOscillator();
-	    const gainNode = ctx.createGain();
-	
-	    oscillator.type = 'triangle';       // Jenis suara
-	    oscillator.frequency.setValueAtTime(880, ctx.currentTime); // Nada A5
-	    gainNode.gain.setValueAtTime(0.1, ctx.currentTime);        // Volume pelan
-	
-	    oscillator.connect(gainNode);
-	    gainNode.connect(ctx.destination);
-	
-	    oscillator.start();
-	    oscillator.stop(ctx.currentTime + 0.3); // Durasi 300ms
-	  } catch (e) {
-	    console.warn('🔇 Web Audio tidak didukung:', e);
-	  }
-	}
-	
-	// Tampilkan hanya jika URL punya ?notif=off
-	function cekQueryNotifBar() {
-	  const params = new URLSearchParams(window.location.search);
-	  if (params.get('notif') === 'off') {
-	    document.getElementById('notif-bar').classList.remove('hidden');
-	    playNotifSound(); // 🔊 Play sound saat muncul
-	  }
-	}
-	
-	document.addEventListener('DOMContentLoaded', cekQueryNotifBar);
+    function bukaPengaturanNotifikasi() {
+        window.location.href = "intent://open_notifications#Intent;scheme=myapp;package=dev.pages.kltraid.twa;end";
+        tutupNotifBar();
+    }
+
+    function tutupNotifBar() {
+        document.getElementById('notif-bar').classList.add('hidden');
+    }
+
+    // 🔊 Sound default dengan Web Audio API
+    function playNotifSound() {
+        try {
+            const ctx = new(window.AudioContext || window.webkitAudioContext)();
+            const oscillator = ctx.createOscillator();
+            const gainNode = ctx.createGain();
+
+            oscillator.type = 'triangle'; // Jenis suara
+            oscillator.frequency.setValueAtTime(880, ctx.currentTime); // Nada A5
+            gainNode.gain.setValueAtTime(0.1, ctx.currentTime); // Volume pelan
+
+            oscillator.connect(gainNode);
+            gainNode.connect(ctx.destination);
+
+            oscillator.start();
+            oscillator.stop(ctx.currentTime + 0.3); // Durasi 300ms
+        } catch (e) {
+            console.warn('🔇 Web Audio tidak didukung:', e);
+        }
+    }
+
+    // Tampilkan hanya jika URL punya ?notif=off
+    function cekQueryNotifBar() {
+        const params = new URLSearchParams(window.location.search);
+        if (params.get('notif') === 'off') {
+            document.getElementById('notif-bar').classList.remove('hidden');
+            playNotifSound(); // 🔊 Play sound saat muncul
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', cekQueryNotifBar);
 
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/tv/sw.js')

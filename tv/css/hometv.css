@@ -480,3 +480,18 @@
           opacity: 0.7;
           font-family: Arial, sans-serif;
         }
+
+        .wallet-icon {
+          margin-left: auto;
+          font-size: 20px;
+          color: #fff;
+          padding: 8px;
+          text-decoration: none;
+          display: flex;
+          align-items: center;
+          transition: opacity 0.2s;
+        }
+        
+        .wallet-icon:hover {
+          opacity: 0.7;
+        }

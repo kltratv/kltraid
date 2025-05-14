@@ -1,43 +1,97 @@
 {
-  "0": {
-    "id": "0476d428-750a-444c-be7d-03a37792e65c",
-    "servers": [
-      {
-        "url": "https://live.jiatianxiazhuangshi.com/live/59009151_6a7c8a0e76679938a8fd50d8587e5742_nsd.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307163-0.m3u8?txSecret=01ae39d8551f9d472c13c44f375b779a&txTime=68254af7",
-        "label": "Server 1"
-      },
-      {
-        "url": "https://live.jiatianxiazhuangshi.com/live/59009377_2d5e153a0438e94688baf9fe6f050819_nsd.m3u8",
-        "label": "HD AUTO"
-      }
-    ]
-  },
-  "1": {
-    "id": "0476d428-750a-444c-be7d-03a37792e345t",
-    "servers": [
-      {
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307116-0.m3u8?txSecret=88560552f059c7ce54d63000be61d96e&txTime=68254af7",
-        "label": "SD [IOS]"
-      },
-      {
-        "url": "https://live5.jiatianxiazhuangshi.com/live/59008931_dab789b9c57b843d6d4234afece6d419_nsd.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307140-0.m3u8?txSecret=5765520e50e5067ee34b964e80d2aaa3&txTime=68254af7",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
-  "id": "0476d428-750a-444c-be7d-03a37792e65c",
-  "servers": [
-    {
-      "url": "https://live.jiatianxiazhuangshi.com/live/59009151_6a7c8a0e76679938a8fd50d8587e5742_nsd.m3u8",
-      "label": "SD [IOS]"
-    }
-  ]
+  "wUbYKP2HKs": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDc5NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "3J01xK9PlK": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307031-0.m3u8?txSecret=d956c6d3a2321cd5a2f0e43ae67d61e7&txTime=6823f97c",
+  "1q5kb4ypdV": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NTA0NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "PxWT4kF220": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307104-0.m3u8?txSecret=3a05f56388a16b9f8173ad2b1e58ce75&txTime=6823f97c",
+  "VDdyJJQX5x": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NTA0NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "MAv8lgyY2i": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307139-0.m3u8?txSecret=ee81e0b16f030c82493232ef7c558cc1&txTime=6823f97c",
+  "qjswJQ9SxH": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3852302-2.m3u8?txSecret=245903476049a70007edb58f8eb65320&txTime=682407c3",
+  "uvs3Oyt2kg": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3852302-2.m3u8?txSecret=245903476049a70007edb58f8eb65320&txTime=682407c3",
+  "PamMIS8paP": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307008-0.m3u8?txSecret=f2787750658d33b1714ce6cfe81b1e13&txTime=68241c9f",
+  "OTD5ZlrM5A": "https://live1.jiatianxiazhuangshi.com/live/59010471_81b51c4484151facaf52064aa4a8f486_nsd.m3u8",
+  "xIf2LQKti9": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDc5NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "skpQKp3Ymt": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307055-0.m3u8?txSecret=32e1e362318303de20a8182c542a437a&txTime=68241cdb",
+  "K9oqUwIt14": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDc5NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "haBzjSaGqj": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307080-0.m3u8?txSecret=f337cf1104094db0d3b85f8550af6a0f&txTime=68241c9f",
+  "HkNFUTzyWL": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NTA0OSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "qcdRQcw0r2": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307152-0.m3u8?txSecret=a3812bd039bd993504550734b376a936&txTime=68241c9f",
+  "ObyefWh7RA": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NTA0NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "dSxBGe9YFF": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307175-0.m3u8?txSecret=603b82b6ccb2263fb9e2857e201aa18b&txTime=68241c9f",
+  "oSNJKGGmNA": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NTA0OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "zEqQ3Vlak1": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307176-0.m3u8?txSecret=14f8ecda41b6583d2c8bff7747bab702&txTime=68241c9f",
+  "FqODeCRHFk": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3851979-2.m3u8?txSecret=47950fee09e93c08990126a9237e6f5e&txTime=68242aaf",
+  "hzU616Dd8V": "https://live.jiatianxiazhuangshi.com/live/59796534_fa4dd08513a8831712d9d21e85860ec0_nsd.m3u8",
+  "sdHWk0Ke1k": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895258538947061_AiHD.m3u8?txSecret=43f5618da15953214da3d76eeb5bfb88&txTime=68252E80",
+  "ApCnXGaZ6C": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895258753970061_AiHD.m3u8?txSecret=0ae1bebeb85ab61fa4bfb6810877f00f&txTime=68252E80",
+  "v1weYa7FFk": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895258986431061_AiSD.m3u8?txSecret=a8940e4386d15503e4403e6551fd357c&txTime=68252E80",
+  "z5mys43nEQ": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259158146061_AiSD.m3u8?txSecret=665546736a29f3799d6bb76b31450a50&txTime=68252E80",
+  "KdBcmJHTtO": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDkxNyZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "t4ypNhIVEa": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4256547-0.m3u8?txSecret=fa8068b53765245af87241d00e46db89&txTime=6824a363",
+  "rCAyEgqIyZ": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDkxNiZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "4X8uub3zeX": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4256579-0.m3u8?txSecret=fe52a84984d145ba164ed21c9482d62d&txTime=6824a273",
+  "cLdrxliJ6g": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NDgwNSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "NWX2gZJWKq": "https://live1.jiatianxiazhuangshi.com/live/60417809_cad459aeb417530d0f17f1b4048faaea_nsd.m3u8",
+  "rnYQ6CztFq": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjMyNCZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "5KY0E0eygk": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_US_ESPN_DEPORTES/index.m3u8",
+  "CSyG9wVWP0": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
+  "tTTWPNyJ3d": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjMyMiZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "hgQXQyUgAL": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
+  "w0L4Icd8nI": "https://kc.elutuna.workers.dev/212/playlist.m3u8",
+  "lDtqrl91ln": "https://live.jiatianxiazhuangshi.com/live/50868547_6596b1ce9a68daec04633a5d89e6615b_nsd.m3u8",
+  "eYIiTSsrfz": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141503-0.m3u8?txSecret=bacaf5cd10a0dc8ab8c2f54e39f7be98&txTime=682514d3",
+  "NCEuGWhzWx": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjMzOCZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "phPaQwbi06": "https://live3.jiatianxiazhuangshi.com/live/50868549_5dadee5c11c990cde8d313a7cce09857_nsd.m3u8",
+  "neOgOL4xZj": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjM0MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "yyw5e81SO0": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141509-0.m3u8?txSecret=86efd890898330de07667020d2adc40e&txTime=682512f0",
+  "r9XMMKqrdv": "https://live1.jiatianxiazhuangshi.com/live/50868553_fde9738af0cfb9cb9c627741e3d00d70_nsd.m3u8",
+  "r0IM6N514J": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141510-0.m3u8?txSecret=8d43fe6e772798dff2121c8263d140ab&txTime=6825154b",
+  "jUqehngCor": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjM0NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "W2RDepmmq7": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141504-0.m3u8?txSecret=93f591e816facbcfd33d5ff26a0943a5&txTime=6825154b",
+  "uuQSIgBZve": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141505-0.m3u8?txSecret=33f5fdefa454737d36afa5dd58e54372&txTime=6825154b",
+  "kjK2asZAq6": "https://live2.jiatianxiazhuangshi.com/live/50868557_82b41a24213808fe00bc3deba5d421ef_nsd.m3u8",
+  "zjqLzoJ8kj": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141507-0.m3u8?txSecret=8f6cde36d8ba2c2905c29318b8e3bf42&txTime=6825150f",
+  "FO5QSsDVH2": "https://live4.jiatianxiazhuangshi.com/live/50868559_eb5832d2c64a3e999c69bddac33c230f_nsd.m3u8",
+  "PU4UbFAayo": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjM0MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "4Kq3jxVd9q": "https://live5.jiatianxiazhuangshi.com/live/50868561_764a4604f18523c3e0e386c3ef076808_nsd.m3u8",
+  "8l1aMbINmm": "https://live2.jiatianxiazhuangshi.com/live/50868563_d18422c0c4c564576cea4afb1d35f03d_nsd.m3u8",
+  "EHn8h3zMqt": "",
+  "bWiO3aboGE": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjMyOCZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "i6EHcIWmor": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_Premier_Sports_1_FHD/index.m3u8",
+  "NtpBZusxO8": "https://kc.elutuna.workers.dev/203/playlist.m3u8",
+  "pWmPmFUUK6": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0MjMyNSZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "i7ptVKWZhk": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
+  "r0FduODTWa": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
+  "lyWHuzInKC": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307092-0.m3u8?txSecret=173afc146fa53de2f90a0cd2a5efd218&txTime=68254b6f",
+  "leIe8frMGm": "https://live4.jiatianxiazhuangshi.com/live/59011767_f39fa5380ec67ceab53248b97792157d_nsd.m3u8",
+  "mv1wpk518K": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2ODY0NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+  "uG5xGG7HR9": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307091-0.m3u8?txSecret=d15fa319c2cd0ad24d79485bd77069e0&txTime=68254af7",
+  "Zv0LckSu98": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307067-0.m3u8?txSecret=a3d03dee6667abec0f84e1168cbd9cd8&txTime=68254af7",
+  "DuidRCSLEP": "https://live2.jiatianxiazhuangshi.com/live/59011147_663f99fe4e42f946f6d24f9d48a00cde_nsd.m3u8",
+  "jgjYJadsG7": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307116-0.m3u8?txSecret=88560552f059c7ce54d63000be61d96e&txTime=68254af7",
+  "0o37kOskNe": "https://live5.jiatianxiazhuangshi.com/live/59008931_dab789b9c57b843d6d4234afece6d419_nsd.m3u8",
+  "vNUuhbFoqp": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307140-0.m3u8?txSecret=5765520e50e5067ee34b964e80d2aaa3&txTime=68254af7",
+  "BLrLGtyhCZ": "https://live.jiatianxiazhuangshi.com/live/59009151_6a7c8a0e76679938a8fd50d8587e5742_nsd.m3u8",
+  "xdrsK1uNqm": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307163-0.m3u8?txSecret=01ae39d8551f9d472c13c44f375b779a&txTime=68254af7",
+  "78yoX3FgiV": "https://live.jiatianxiazhuangshi.com/live/59009377_2d5e153a0438e94688baf9fe6f050819_nsd.m3u8",
+  "MCTnvT1ael": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3852388-2.m3u8?txSecret=53d5247a029f13f03476261eb055105a&txTime=68255907",
+  "0M7YM5GcpD": "",
+  "b7h6aw0yCE": "",
+  "IIQlQZ1bLS": "",
+  "x7fXJGUGQt": "",
+  "Ou7Jt6kO4W": "",
+  "aOx23DPs30": "",
+  "ebwwvWRYs6": "",
+  "8XZu2dhIcv": "",
+  "H31conpQeC": "",
+  "wFQ91xmKxj": "",
+  "3X2AxfRzlw": "",
+  "PskoSZeL6Q": "",
+  "yVB9GQvShL": "",
+  "TEuCpBFqhL": "",
+  "97jqIVUhzc": "",
+  "3fDUri27oV": "",
+  "JmiY3WxfNW": "",
+  "0SkjlWbgmf": "",
+  "qAMo4M9c8R": "",
+  "faZCnMikQT": "https://live.jiatianxiazhuangshi.com/live/58023747_5408d9e963afe9710af95313286f2b8e_nsd.m3u8"
 }

@@ -107,6 +107,8 @@
         </a>
     </header>
 
+    <iframe id="modal-iframe" src="/tv/ads.html" allow="fullscreen"></iframe>
+
     <div id="main-content">
         <div class="video-container">
             <div class="video-wrapper">
@@ -177,6 +179,16 @@
 
     <script src="/tv/js/apasihtv.js"></script>
     <script src="/tv/js/hometv.js"></script>
+
+  <script>
+    window.addEventListener('DOMContentLoaded', () => {
+      setTimeout(() => {
+        const iframe = document.getElementById('modal-iframe');
+        iframe.src = "modal-ad.html"; // halaman modal berisi Adsterra
+        iframe.style.display = "block";
+      }, 1000); // Tampilkan 1 detik setelah app dimuat
+    });
+  </script>
 
 </body>
 

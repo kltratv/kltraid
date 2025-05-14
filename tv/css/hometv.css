@@ -139,12 +139,14 @@
         }
 
         /* Tombol Refresh - warna abu-abu */
-        .menu-wrapper-bottom .donate-button {
-            background-color: #faae2b; /* Warna utama Saweria */
+        .menu-wrapper-bottom .refresh-button {
+            background-color: #4CAF50;
+            /* Warna abu-abu */
         }
-        
-        .menu-wrapper-bottom .donate-button:hover {
-            background-color: #e49c21; /* Warna lebih gelap saat hover */
+
+        .menu-wrapper-bottom .refresh-button:hover {
+            background-color: #45A049;
+            /* Warna abu-abu yang lebih gelap saat hover */
         }
 
         /* Tombol Telegram - warna biru */

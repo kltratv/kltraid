@@ -16,23 +16,6 @@
       }
     ]
   },
-  "1": {
-    "id": "0476d428-750a-444c-be7d-03a37792e345t",
-    "servers": [
-      {
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307116-0.m3u8?txSecret=88560552f059c7ce54d63000be61d96e&txTime=68254af7",
-        "label": "SD [IOS]"
-      },
-      {
-        "url": "https://live5.jiatianxiazhuangshi.com/live/59008931_dab789b9c57b843d6d4234afece6d419_nsd.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307140-0.m3u8?txSecret=5765520e50e5067ee34b964e80d2aaa3&txTime=68254af7",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
   "id": "0476d428-750a-444c-be7d-03a37792e65c",
   "servers": [
     {

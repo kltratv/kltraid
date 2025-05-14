@@ -84,7 +84,7 @@
         }
     </style>
 
-    <!--<script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>-->
+    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
 
 </head>
     
@@ -106,8 +106,6 @@
           <i class="fas fa-gift"></i>
         </a>
     </header>
-
-    <iframe id="modal-iframe" src="https://bikinbaru96.blogspot.com/2025/05/tes.html" allow="fullscreen"></iframe>
 
     <div id="main-content">
         <div class="video-container">
@@ -180,15 +178,20 @@
     <script src="/tv/js/apasihtv.js"></script>
     <script src="/tv/js/hometv.js"></script>
 
-  <script>
-    window.addEventListener('DOMContentLoaded', () => {
-      setTimeout(() => {
-        const iframe = document.getElementById('modal-iframe');
-        iframe.src = "modal-ad.html"; // halaman modal berisi Adsterra
-        iframe.style.display = "block";
-      }, 1000); // Tampilkan 1 detik setelah app dimuat
-    });
-  </script>
+<script>
+  function showAdsterraSocialBar() {
+    const script = document.createElement('script');
+    script.src = '//disappearsurgery.com/1d/b5/0c/1db50c967f59ee86bf2c8fa7e1895d3b.js';
+    document.body.appendChild(script);
+  }
+
+  // Contoh: Tampilkan setelah 5 detik
+  window.addEventListener('DOMContentLoaded', () => {
+    setTimeout(() => {
+      showAdsterraSocialBar();
+    }, 5000);
+  });
+</script>
 
 </body>
 

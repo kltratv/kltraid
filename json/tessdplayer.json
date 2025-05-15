@@ -8,15 +8,5 @@
         "label": "Server 1"
       }
     ]
-  },
-  {
-    "id": "5decf324-cfaf-435b-8e9d-80285518b35f",
-    "servers": [
-      {
-        "key": "w5dHwl2ANv",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
-        "label": "Server 1"
-      }
-    ]
   }
 ]

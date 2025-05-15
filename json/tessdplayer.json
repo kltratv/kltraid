@@ -1,11 +1,21 @@
 [
   {
-    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
+    "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
     "servers": [
       {
-        "key": "3ZjT9lT9Yg",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "key": "5aMQCwwYLn",
+        "url": "",
         "label": "Server 1"
+      },
+      {
+        "key": "WYNT4v1X1I",
+        "url": "",
+        "label": "Server 2"
+      },
+      {
+        "key": "ST9Jfds2jy",
+        "url": "",
+        "label": "Server 3"
       }
     ]
   }

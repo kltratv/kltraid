@@ -4,12 +4,12 @@
     "servers": [
       {
         "key": "k6P4FFoJao",
-        "url": "",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0NTU1MiZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SERVER 1"
       },
       {
         "key": "6l82MwNshx",
-        "url": "",
+        "url": "https://live.jiatianxiazhuangshi.com/live/56690631_6239be05eddf4fef9135944258ebd0a0_nsd.m3u8",
         "label": "SERVER 2"
       }
     ]
@@ -19,12 +19,12 @@
     "servers": [
       {
         "key": "OY9vLxP5bg",
-        "url": "",
+        "url": "https://live.jiatianxiazhuangshi.com/live/58023747_5408d9e963afe9710af95313286f2b8e_nsd.m3u8",
         "label": "SERVER 1"
       },
       {
         "key": "OmArg4cfCY",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
         "label": "SERVER 2"
       }
     ]
@@ -34,12 +34,12 @@
     "servers": [
       {
         "key": "yajUofjoEL",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
         "label": "SERVER 1"
       },
       {
         "key": "sdtp1kk6mA",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
         "label": "SERVER 2"
       }
     ]

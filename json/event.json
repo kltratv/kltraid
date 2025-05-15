@@ -149,6 +149,18 @@
     "servers": [
       {
         "url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=RXw42pg7jU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+        "label": "HD AUTO"
+      },
+      {
+        "url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=RXw42pg7jU_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+        "label": "SD [IOS]"
+      },
+      {
+        "url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=zlxVqeaeBg_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
+        "label": "SD [IOS]"
+      },
+      {
+        "url": "https://yrprmyzif03.yolthklg.xln/k/kozbvihw.html?pvb=I7QZcoSAK3_token=989324ehhedfkhjswf32423kjhksdfgsdge425t34t4e",
         "label": "SD [IOS]"
       }
     ],
@@ -165,8 +177,8 @@
     },
     "kickoff_date": "2025-05-16",
     "kickoff_time": "00:00",
-    "match_date": "2025-05-16",
-    "match_time": "00:00",
+    "match_date": "2025-05-15",
+    "match_time": "23:30",
     "firstRow": 24
   },
   {

@@ -3,17 +3,17 @@
     "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
     "servers": [
       {
-        "key": "MIXC8rviYO",
+        "key": "MrHAjia5O4",
         "url": "",
         "label": "Server 1"
       },
       {
-        "key": "LmJN4r4n66",
+        "key": "weZKrvkzxj",
         "url": "",
         "label": "Server 2"
       },
       {
-        "key": "diJFVSSOzj",
+        "key": "fLU30zUVQi",
         "url": "",
         "label": "Server 3"
       }
@@ -21,6 +21,22 @@
   },
   {
     "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
-    "servers": []
+    "servers": [
+      {
+        "key": "7J4JlLAIxn",
+        "url": "",
+        "label": "Server 1"
+      },
+      {
+        "key": "tMxtn600rN",
+        "url": "",
+        "label": "Server 2"
+      },
+      {
+        "key": "F2nuGCfvYr",
+        "url": "",
+        "label": "Server 3"
+      }
+    ]
   }
 ]

@@ -1,40 +1,21 @@
 [
   {
-    "id": "ddef749f-da19-4152-bacb-a31c3cbf8013",
+    "id": "a83d3622-3b64-42f1-bb21-d4884bf563b2",
     "duration": 2.17,
     "league": "Copa Libertadores",
     "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
     "team1": {
-      "name": "Botafogo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_96x96.png"
+      "name": "Racing Club",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wi-J-3U7th2bpIB_Uy9Euw_96x96.png"
     },
     "team2": {
-      "name": "Estudiantes",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nDfL4YLZSNWXZniXushVag_96x96.png"
+      "name": "Colo-Colo",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/cEY0fDx48kkZOPpbK_Bhsg_96x96.png"
     },
     "kickoff_date": "2025-05-15",
     "kickoff_time": "15:35",
     "match_date": "2025-05-15",
     "match_time": "15:35",
-    "firstRow": 5
-  },
-  {
-    "id": "d61f167c-9806-4499-bc76-bdd5580add9a",
-    "duration": 2.17,
-    "league": "Copa Sudamericana",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Cerro Largo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GwmZsh_Xo-06zJM2k19o1w_96x96.png"
-    },
-    "team2": {
-      "name": "Vitoria",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_96x96.png"
-    },
-    "kickoff_date": "2025-05-15",
-    "kickoff_time": "15:35",
-    "match_date": "2025-05-15",
-    "match_time": "15:35",
-    "firstRow": 6
+    "firstRow": 3
   }
 ]

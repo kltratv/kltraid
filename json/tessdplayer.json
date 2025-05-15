@@ -1,1 +1,12 @@
-[]
+[
+  {
+    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
+    "servers": [
+      {
+        "key": "GvdQH7eVkv",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2ODg1MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      }
+    ]
+  }
+]

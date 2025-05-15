@@ -3,14 +3,14 @@
     "id": "a83d3622-3b64-42f1-bb21-d4884bf563b2",
     "servers": [
       {
-        "key": "hRpUNmDkmc",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0NTU1MiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "k6P4FFoJao",
+        "url": "",
+        "label": "SERVER 1"
       },
       {
-        "key": "FwFoBy5sGT",
-        "url": "https://live.jiatianxiazhuangshi.com/live/56690631_6239be05eddf4fef9135944258ebd0a0_nsd.m3u8",
-        "label": "SD [IOS]"
+        "key": "6l82MwNshx",
+        "url": "",
+        "label": "SERVER 2"
       }
     ]
   },
@@ -18,14 +18,14 @@
     "id": "5d1a67b2-871a-4518-9315-aa08a8e3918d",
     "servers": [
       {
-        "key": "OuhQ0CKqpZ",
-        "url": "https://live.jiatianxiazhuangshi.com/live/58023747_5408d9e963afe9710af95313286f2b8e_nsd.m3u8",
-        "label": "SD [IOS]"
+        "key": "OY9vLxP5bg",
+        "url": "",
+        "label": "SERVER 1"
       },
       {
-        "key": "IDYrXa0cKu",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
-        "label": "SD [IOS]"
+        "key": "OmArg4cfCY",
+        "url": "",
+        "label": "SERVER 2"
       }
     ]
   },
@@ -33,14 +33,14 @@
     "id": "fd719e4e-3651-43f5-bead-fd471f3c4489",
     "servers": [
       {
-        "key": "blWKnTN1d5",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
-        "label": "SD [IOS]"
+        "key": "yajUofjoEL",
+        "url": "",
+        "label": "SERVER 1"
       },
       {
-        "key": "HAGf5Q7LMe",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
-        "label": "SD [IOS]"
+        "key": "sdtp1kk6mA",
+        "url": "",
+        "label": "SERVER 2"
       }
     ]
   }

@@ -4,11 +4,11 @@
     "servers": [
       {
         "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2ODY1MiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": ""
+        "label": "SD [IOS]"
       },
       {
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307056-0.m3u8?txSecret=1f94848c71daec1dccc30f69604f91a2&txTime=68256e20",
-        "label": ""
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -17,11 +17,11 @@
     "servers": [
       {
         "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2ODY1MCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": ""
+        "label": "SD [IOS]"
       },
       {
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4307043-0.m3u8?txSecret=4e4231f0ef0801d89297a3dda3074138&txTime=68256e20",
-        "label": ""
+        "label": "SD [IOS]"
       }
     ]
   }

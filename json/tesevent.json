@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
-    "duration": 3,
-    "league": "Copa Libertadores",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Sao Paulo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/4w2Z97Hf9CSOqICK3a8AxQ_96x96.png"
-    },
-    "team2": {
-      "name": "Libertad",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/gvh3DahLJZX8rKidtQmuuw_96x96.png"
-    },
-    "kickoff_date": "2025-05-15",
-    "kickoff_time": "18:54",
-    "match_date": "2025-05-15",
-    "match_time": "18:54",
-    "firstRow": 4
-  },
-  {
     "id": "5decf324-cfaf-435b-8e9d-80285518b35f",
     "duration": 3,
     "league": "Copa Libertadores",
@@ -55,24 +36,5 @@
     "match_date": "2025-05-15",
     "match_time": "18:54",
     "firstRow": 5
-  },
-  {
-    "id": "c5c0a890-51f4-4954-be58-bf31c34dd8d9",
-    "duration": 3,
-    "league": "Copa Sudamericana",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Cerro Largo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GwmZsh_Xo-06zJM2k19o1w_96x96.png"
-    },
-    "team2": {
-      "name": "Vitoria",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/LHSM6VchpkI4NIptoSTHOg_96x96.png"
-    },
-    "kickoff_date": "2025-05-15",
-    "kickoff_time": "18:54",
-    "match_date": "2025-05-15",
-    "match_time": "18:54",
-    "firstRow": 6
   }
 ]

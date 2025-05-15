@@ -38,25 +38,6 @@
     "firstRow": 4
   },
   {
-    "id": "5decf324-cfaf-435b-8e9d-80285518b35f",
-    "duration": 3,
-    "league": "Copa Libertadores",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Botafogo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/KLDWYp-H8CAOT9H_JgizRg_96x96.png"
-    },
-    "team2": {
-      "name": "Estudiantes",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nDfL4YLZSNWXZniXushVag_96x96.png"
-    },
-    "kickoff_date": "2025-05-16",
-    "kickoff_time": "00:24",
-    "match_date": "2025-05-16",
-    "match_time": "00:24",
-    "firstRow": 5
-  },
-  {
     "id": "c5c0a890-51f4-4954-be58-bf31c34dd8d9",
     "duration": 3,
     "league": "Copa Sudamericana",

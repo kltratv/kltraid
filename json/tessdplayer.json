@@ -1,45 +1,20 @@
 [
   {
-    "id": "c5c0a890-51f4-4954-be58-bf31c34dd8d9",
+    "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
     "servers": [
       {
-        "key": "HWERIyu1RV",
+        "key": "JZARA1S0lT",
         "url": "",
         "label": "Server 1"
       },
       {
-        "key": "MVFxhfWz1E",
+        "key": "zzUM85sX3D",
         "url": "",
-        "label": "Server 2"
-      },
-      {
-        "key": "2TiNZUbsUo",
-        "url": "",
-        "label": "Server 3"
-      }
-    ]
-  },
-  {
-    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
-    "servers": [
-      {
-        "key": "MrHAjia5O4",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
         "label": "Server 1"
       },
       {
-        "key": "fLU30zUVQi",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
-        "label": "Server 3"
-      }
-    ]
-  },
-  {
-    "id": "5decf324-cfaf-435b-8e9d-80285518b35f",
-    "servers": [
-      {
-        "key": "XDGF5biRba",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
+        "key": "PexTsx5rtO",
+        "url": "",
         "label": "Server 1"
       }
     ]

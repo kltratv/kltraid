@@ -60,10 +60,15 @@ async function loadEventsFromJSON() {
     events.forEach(event => {
         const servers = playerMap[event.id] || [];
         const firstKey = servers[0]?.key || '';
-        const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-        const encodedServers = JSON.stringify(servers).replace(/"/g, '&quot;');
+        const defaultUrl = firstKey ? ${playerBaseUrl}${firstKey} : '';
+        const serversForAttribute = servers.map(s => ({
+			key: s.key,
+			label: s.label,
+			url: `${playerBaseUrl}${s.key}` // ⬅️ konversi semua url jadi player+key
+		}));
+		const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
-        const html = `
+        const html = 
         <div class="event-container"
              data-id="${event.id}"
              data-url="${defaultUrl}"
@@ -98,19 +103,19 @@ async function loadEventsFromJSON() {
                 <div class="countdown-timer"></div>
             </div>
         </div>
-        `;
+        ;
 
         container.insertAdjacentHTML('beforeend', html);
 
         // Inject tombol server berbasis key → player page
-        const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+        const eventContainer = container.querySelector(.event-container[data-id="${event.id}"]);
         const buttonContainer = eventContainer.querySelector('.buttons-container');
 
         servers.forEach((server, index) => {
             const div = document.createElement('div');
             div.className = 'server-button';
             if (index === 0) div.classList.add('active');
-            div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
+            div.setAttribute('data-url', ${playerBaseUrl}${server.key});
             div.textContent = server.label;
             buttonContainer.appendChild(div);
         });
@@ -125,13 +130,13 @@ async function loadEventsFromJSON() {
 
     // Restore session
     const storedActiveEventId = sessionStorage.getItem('activeEventId');
-    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    const storedActiveServerUrl = sessionStorage.getItem(activeServerUrl_${storedActiveEventId});
 
     if (storedActiveEventId && storedActiveServerUrl) {
         const decryptedUrl = decryptUrl(storedActiveServerUrl);
-        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+        const activeContainer = document.querySelector(.event-container[data-id="${storedActiveEventId}"]);
         if (activeContainer) {
-            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+            const storedButton = activeContainer.querySelector(.server-button[data-url="${decryptedUrl}"]);
             if (storedButton) {
                 selectServerButton(storedButton);
                 loadEventVideo(activeContainer, decryptedUrl, false);

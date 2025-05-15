@@ -1,5 +1,5 @@
-{
-  "0": {
+[
+  {
     "id": "0476d428-750a-444c-be7d-03a37792e65c",
     "servers": [
       {
@@ -15,12 +15,5 @@
         "label": "HD AUTO"
       }
     ]
-  },
-  "id": "0476d428-750a-444c-be7d-03a37792e65c",
-  "servers": [
-    {
-      "url": "https://live.jiatianxiazhuangshi.com/live/59009151_6a7c8a0e76679938a8fd50d8587e5742_nsd.m3u8",
-      "label": "SD [IOS]"
-    }
-  ]
-}
+  }
+]

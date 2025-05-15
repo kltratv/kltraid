@@ -61,13 +61,13 @@ async function loadEventsFromJSON() {
         const servers = playerMap[event.id] || [];
         const firstKey = servers[0]?.key || '';
         const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-        const serverStr = JSON.stringify(servers).replace(/"/g, '&quot;');
+        const encodedServers = JSON.stringify(servers).replace(/"/g, '&quot;');
 
         const html = `
         <div class="event-container"
              data-id="${event.id}"
              data-url="${defaultUrl}"
-             data-servers="${serverStr}"
+             data-servers="${encodedServers}"
              data-duration="${event.duration}">
              
             <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
@@ -102,7 +102,7 @@ async function loadEventsFromJSON() {
 
         container.insertAdjacentHTML('beforeend', html);
 
-        // Inject tombol server ke buttons-container
+        // Inject tombol server berbasis key → player page
         const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
         const buttonContainer = eventContainer.querySelector('.buttons-container');
 
@@ -116,7 +116,7 @@ async function loadEventsFromJSON() {
         });
     });
 
-    // Tambahkan spacer jika belum ada
+    // Spacer agar tidak terpotong scroll
     if (!container.querySelector('#spacer')) {
         container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
     }

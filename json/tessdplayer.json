@@ -1,22 +1,26 @@
 [
   {
-    "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
+    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
     "servers": [
       {
-        "key": "7J4JlLAIxn",
+        "key": "su47q4jjLl",
         "url": "",
         "label": "Server 1"
       },
       {
-        "key": "tMxtn600rN",
+        "key": "JNZSsmOegt",
         "url": "",
         "label": "Server 2"
       },
       {
-        "key": "F2nuGCfvYr",
+        "key": "nXsiI2Ka2S",
         "url": "",
         "label": "Server 3"
       }
     ]
+  },
+  {
+    "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
+    "servers": []
   }
 ]

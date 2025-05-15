@@ -3,9 +3,19 @@
     "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
     "servers": [
       {
-        "key": "GvdQH7eVkv",
-        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
-        "label": "SD [IOS]"
+        "key": "SzBZucJ3HL",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0NTUxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "Server 1"
+      },
+      {
+        "key": "pHBPlaalLx",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_20/index.m3u8",
+        "label": "Server 2"
+      },
+      {
+        "key": "hDEpXDnZwX",
+        "url": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
+        "label": "Server 3"
       }
     ]
   }

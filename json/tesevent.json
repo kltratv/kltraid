@@ -1,24 +1,5 @@
 [
   {
-    "id": "aebfa716-6ade-44a8-87c2-d3c9c30843b3",
-    "duration": 2.17,
-    "league": "Copa Libertadores",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Racing Club",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wi-J-3U7th2bpIB_Uy9Euw_96x96.png"
-    },
-    "team2": {
-      "name": "Colo-Colo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/cEY0fDx48kkZOPpbK_Bhsg_96x96.png"
-    },
-    "kickoff_date": "2025-05-15",
-    "kickoff_time": "15:35",
-    "match_date": "2025-05-15",
-    "match_time": "15:35",
-    "firstRow": 3
-  },
-  {
     "id": "5d1a67b2-871a-4518-9315-aa08a8e3918d",
     "duration": 2.17,
     "league": "Copa Libertadores",

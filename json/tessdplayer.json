@@ -4,38 +4,38 @@
     "servers": [
       {
         "key": "9YQf7sBcZp",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
         "label": "SD [IOS]"
       },
       {
         "key": "NM09W4vRga",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
         "label": "SD [IOS]"
       },
       {
         "key": "MxE3DAJkBT",
-        "url": "",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
         "label": "SD [IOS]"
       }
     ]
   },
   {
-    "id": "5decf324-cfaf-435b-8e9d-80285518b35f",
+    "id": "bafb7604-e9bc-4158-87b1-3fc469e40cc8",
     "servers": [
       {
-        "key": "9YQf7sBcZp",
-        "url": "",
-        "label": "SD [IOS]"
+        "key": "ze0ozjNSR7",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
+        "label": "Server 1"
       },
       {
-        "key": "NM09W4vRga",
-        "url": "",
-        "label": "SD [IOS]"
+        "key": "zkfEyD74Zd",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
+        "label": "Server 1"
       },
       {
-        "key": "MxE3DAJkBT",
-        "url": "",
-        "label": "SD [IOS]"
+        "key": "O8Ja7P067I",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
+        "label": "Server 1"
       }
     ]
   }

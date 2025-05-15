@@ -38,8 +38,8 @@
 
     async function loadEventsFromJSON() {
         const [eventRes, playerRes] = await Promise.all([
-            fetch('https://content.elutuna.workers.dev/event.json'),
-            fetch('https://content.elutuna.workers.dev/sdplayer.json')
+            fetch('https://content.elutuna.workers.dev/tesevent.json'),
+            fetch('https://content.elutuna.workers.dev/tessdplayer.json')
         ]);
     
         const events = await eventRes.json();

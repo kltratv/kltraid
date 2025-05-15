@@ -1,30 +1,45 @@
 [
   {
-    "id": "ddef749f-da19-4152-bacb-a31c3cbf8013",
+    "id": "a83d3622-3b64-42f1-bb21-d4884bf563b2",
     "servers": [
       {
-        "key": "Zs7SH5020h",
-        "url": "https://live.jiatianxiazhuangshi.com/live/58023747_5408d9e963afe9710af95313286f2b8e_nsd.m3u8",
+        "key": "hRpUNmDkmc",
+        "url": "",
         "label": "SD [IOS]"
       },
       {
-        "key": "rGu6SojuGt",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259776063061_AiSD.m3u8?txSecret=e1f97526925f9458940db967eedad229&txTime=68268000",
+        "key": "FwFoBy5sGT",
+        "url": "",
         "label": "SD [IOS]"
       }
     ]
   },
   {
-    "id": "d61f167c-9806-4499-bc76-bdd5580add9a",
+    "id": "5d1a67b2-871a-4518-9315-aa08a8e3918d",
     "servers": [
       {
-        "key": "0bydGtoQYU",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895259975905061_AiSD.m3u8?txSecret=72f67a954e73ecd304975a36169f3914&txTime=68268000",
+        "key": "OuhQ0CKqpZ",
+        "url": "",
         "label": "SD [IOS]"
       },
       {
-        "key": "yptzz5fAvd",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895260153172061_AiSD.m3u8?txSecret=dec95b1b0133626bc950deaf0851ff68&txTime=68268000",
+        "key": "IDYrXa0cKu",
+        "url": "",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "fd719e4e-3651-43f5-bead-fd471f3c4489",
+    "servers": [
+      {
+        "key": "blWKnTN1d5",
+        "url": "",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "HAGf5Q7LMe",
+        "url": "",
         "label": "SD [IOS]"
       }
     ]

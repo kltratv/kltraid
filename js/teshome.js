@@ -36,106 +36,109 @@
         }
     }
 
-    async function loadEventsFromJSON() {
-        const [eventRes, playerRes] = await Promise.all([
-            fetch('https://content.elutuna.workers.dev/tesevent.json'),
-            fetch('https://content.elutuna.workers.dev/tessdplayer.json')
-        ]);
-    
-        const events = await eventRes.json();
-        const playerList = await playerRes.json();
-        const playerMap = {};
-    
-        playerList.forEach(item => {
-            if (item.id && Array.isArray(item.servers)) {
-                playerMap[item.id] = item.servers;
-            }
-        });
-    
-        const container = document.querySelector('#live-event #content');
-        container.innerHTML = "";
-    
-        events.forEach(event => {
-            const servers = playerMap[event.id] || [];
-            const defaultUrl = servers[0]?.url || '';
-            const serverStr = JSON.stringify(servers).replace(/"/g, '&quot;');
-    
-            const html = `
-            <div class="event-container"
-                 data-id="${event.id}"
-                 data-url="${defaultUrl}"
-                 data-servers="${serverStr}"
-                 data-duration="${event.duration}">
-                 
-                <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-                
-                <div class="team">
-                    <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
-                    <span>${event.team1.name}</span>
-                </div>
-                
-                <div class="kickoff-match-date">${event.kickoff_date}</div>
-                <div class="kickoff-match-time">${event.kickoff_time}</div>
-                <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
-                <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
-                <div class="live-label" style="display:none;">Live</div>
-                
-                <div class="team">
-                    <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
-                    <span>${event.team2.name}</span>
-                </div>
-                
-                <div class="server-buttons" style="display:none;">
-                    <div class="instruction">You can select a server stream:</div>
-                    <div class="buttons-container"></div>
-                </div>
-                
-                <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
-                    <div class="countdown-title">Event will start in:</div>
-                    <div class="countdown-timer"></div>
-                </div>
-            </div>
-            `;
-    
-            container.insertAdjacentHTML('beforeend', html);
-    
-            // Inject tombol server ke buttons-container
-            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
-            const buttonContainer = eventContainer.querySelector('.buttons-container');
-    
-            servers.forEach((server, index) => {
-                const div = document.createElement('div');
-                div.className = 'server-button';
-                if (index === 0) div.classList.add('active');
-                div.setAttribute('data-url', server.url);
-                div.textContent = server.label;
-                buttonContainer.appendChild(div);
-            });
-        });
-    
-        // Tambahkan spacer jika belum ada
-        if (!container.querySelector('#spacer')) {
-            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+async function loadEventsFromJSON() {
+    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/tessdplayer.html?key=";
+
+    const [eventRes, playerRes] = await Promise.all([
+        fetch('https://content.elutuna.workers.dev/tesevent.json'),
+        fetch('https://content.elutuna.workers.dev/tessdplayer.json')
+    ]);
+
+    const events = await eventRes.json();
+    const playerList = await playerRes.json();
+    const playerMap = {};
+
+    playerList.forEach(item => {
+        if (item.id && Array.isArray(item.servers)) {
+            playerMap[item.id] = item.servers;
         }
-    
-        setupEvents();
-    
-        // Restore session
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
-    
-        if (storedActiveEventId && storedActiveServerUrl) {
-            const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
-                }
+    });
+
+    const container = document.querySelector('#live-event #content');
+    container.innerHTML = "";
+
+    events.forEach(event => {
+        const servers = playerMap[event.id] || [];
+        const firstKey = servers[0]?.key || '';
+        const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+        const serverStr = JSON.stringify(servers).replace(/"/g, '&quot;');
+
+        const html = `
+        <div class="event-container"
+             data-id="${event.id}"
+             data-url="${defaultUrl}"
+             data-servers="${serverStr}"
+             data-duration="${event.duration}">
+             
+            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+            
+            <div class="team">
+                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+                <span>${event.team1.name}</span>
+            </div>
+            
+            <div class="kickoff-match-date">${event.kickoff_date}</div>
+            <div class="kickoff-match-time">${event.kickoff_time}</div>
+            <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+            <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+            <div class="live-label" style="display:none;">Live</div>
+            
+            <div class="team">
+                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+                <span>${event.team2.name}</span>
+            </div>
+            
+            <div class="server-buttons" style="display:none;">
+                <div class="instruction">You can select a server stream:</div>
+                <div class="buttons-container"></div>
+            </div>
+            
+            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+        `;
+
+        container.insertAdjacentHTML('beforeend', html);
+
+        // Inject tombol server ke buttons-container
+        const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+        const buttonContainer = eventContainer.querySelector('.buttons-container');
+
+        servers.forEach((server, index) => {
+            const div = document.createElement('div');
+            div.className = 'server-button';
+            if (index === 0) div.classList.add('active');
+            div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
+            div.textContent = server.label;
+            buttonContainer.appendChild(div);
+        });
+    });
+
+    // Tambahkan spacer jika belum ada
+    if (!container.querySelector('#spacer')) {
+        container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+    }
+
+    setupEvents();
+
+    // Restore session
+    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+    if (storedActiveEventId && storedActiveServerUrl) {
+        const decryptedUrl = decryptUrl(storedActiveServerUrl);
+        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+        if (activeContainer) {
+            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+            if (storedButton) {
+                selectServerButton(storedButton);
+                loadEventVideo(activeContainer, decryptedUrl, false);
             }
         }
     }
+}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);

@@ -396,7 +396,6 @@ function setupChannels() {
     });
 }
 
-var clapprPlayerInstance = null;
 var reconnectTimeout = null;
 var lastLoadedUrl = null;
 
@@ -429,16 +428,16 @@ function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
         return;
     }
 
-if (resetActiveId) {
-    if (isChannel) {
-	sessionStorage.setItem('activeChannelId', id);
-	sessionStorage.removeItem('activeEventId');
-    } else {
-	sessionStorage.setItem('activeEventId', id);
-	sessionStorage.removeItem('activeChannelId');
-	activeEventId = id;
+    if (resetActiveId) {
+        if (isChannel) {
+            sessionStorage.setItem('activeChannelId', id);
+            sessionStorage.removeItem('activeEventId');
+        } else {
+            sessionStorage.setItem('activeEventId', id);
+            sessionStorage.removeItem('activeChannelId');
+            activeEventId = id;
+        }
     }
-}
 
     var countdownElement = document.getElementById('countdown');
     var countdownTimer = countdownElement.querySelector('.countdown-timer');
@@ -463,13 +462,8 @@ if (resetActiveId) {
         buttonsContainer.style.display = 'none';
     });
 
+    // Tampilkan langsung jika channel (iframe penuh)
     if (isChannel) {
-        if (clapprPlayerInstance) {
-            clapprPlayerInstance.destroy();
-            clapprPlayerInstance = null;
-            lastLoadedUrl = null;
-        }
-
         if (videoIframe.src !== url) {
             videoIframe.src = url;
         }
@@ -480,6 +474,7 @@ if (resetActiveId) {
         return;
     }
 
+    // Event container logic
     if (now >= eventStartTime) {
         countdownElement.style.display = 'none';
 
@@ -488,103 +483,13 @@ if (resetActiveId) {
             videoIframe.style.display = 'none';
         }
 
-        if (url.includes(".m3u8")) {
-            let normalizedUrl = normalizeUrl(url);
-
-            if (clapprPlayerInstance && lastLoadedUrl === normalizedUrl) {
-                console.log('Clappr sudah ada, sembunyikan video-placeholder dan tampilkan player');
-                videoPlaceholder.style.display = 'none';
-                playerElement.style.display = 'block';
-            } else {
-                if (clapprPlayerInstance) {
-                    clapprPlayerInstance.off(Clappr.Events.PLAYER_ERROR);
-                    clapprPlayerInstance.off(Clappr.Events.PLAYER_STOP);
-                    clearTimeout(reconnectTimeout);
-                    clapprPlayerInstance.destroy();
-                    clapprPlayerInstance = null;
-                }
-
-                videoPlaceholder.style.display = 'none';
-                playerElement.style.display = 'block';
-
-                clapprPlayerInstance = new Clappr.Player({
-                    source: normalizedUrl,
-                    height: '100%',
-                    width: '100%',
-                    loop: 'true',
-                    poster: 'https://kltraid.pages.dev/images/poster_11zon.jpg',
-                    plugins: [LevelSelector],
-                    mediacontrol: {
-                        seekbar: '#014AFF',
-                        buttons: '#FFF'
-                    },
-                    playback: {
-                        hlsjsConfig: {
-                            startPosition: -1,
-                        }
-                    },
-                    mimeType: "application/x-mpegURL"
-                });
-
-                clapprPlayerInstance.attachTo(playerElement);
-                lastLoadedUrl = normalizedUrl;
-
-                clapprPlayerInstance.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
-                    if (screen.orientation && screen.orientation.lock) {
-                        screen.orientation.lock('landscape').catch(function(error) {
-                            console.error('Failed to lock screen orientation:', error);
-                        });
-                    }
-                });
-
-                clapprPlayerInstance.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
-                    if (screen.orientation && screen.orientation.unlock) {
-                        screen.orientation.unlock();
-                    }
-                });
-
-                clapprPlayerInstance.on(Clappr.Events.PLAYER_ERROR, function() {
-                    console.log('Error occurred, attempting to reconnect...');
-                    clearTimeout(reconnectTimeout);
-                    reconnectTimeout = setTimeout(function() {
-                        if (clapprPlayerInstance && clapprPlayerInstance.options.source === normalizedUrl) {
-                            clapprPlayerInstance.load({ source: normalizedUrl });
-                            clapprPlayerInstance.play();
-                        }
-                    }, 5000);
-                });
-
-                clapprPlayerInstance.on(Clappr.Events.PLAYER_STOP, function() {
-                    if (!clapprPlayerInstance.isPaused()) {
-                        console.log('Stream stopped, trying to reconnect');
-                        clapprPlayerInstance.play();
-                    }
-                });
-
-                function resizePlayer() {
-                    requestAnimationFrame(() => {
-                        var newWidth = playerElement.parentElement.offsetWidth;
-                        var newHeight = playerElement.parentElement.offsetHeight;
-                        clapprPlayerInstance.resize({ width: newWidth, height: newHeight });
-                    });
-                }
-                resizePlayer();
-                window.onresize = resizePlayer;
-            }
-
-        } else {
-            playerElement.style.display = 'none';
-            if (clapprPlayerInstance) {
-                clapprPlayerInstance.destroy();
-                clapprPlayerInstance = null;
-                lastLoadedUrl = null;
-            }
-            if (videoIframe.src !== url) {
-                videoIframe.src = url;
-            }
-            videoIframe.style.display = 'block';
-            videoPlaceholder.style.display = 'none';
+        if (videoIframe.src !== url) {
+            videoIframe.src = url;
         }
+
+        videoIframe.style.display = 'block';
+        videoPlaceholder.style.display = 'none';
+        playerElement.style.display = 'none';
 
         setActiveHoverEffect(id);
         console.log('Loading event video now:', id);

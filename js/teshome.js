@@ -36,39 +36,39 @@
         }
     }
 
-async function loadEventsFromJSON() {
-    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/tessdplayer.html?key=";
+    async function loadEventsFromJSON() {
+        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/tessdplayer.html?key=";
 
-    const [eventRes, playerRes] = await Promise.all([
-        fetch('https://content.elutuna.workers.dev/tesevent.json'),
-        fetch('https://content.elutuna.workers.dev/tessdplayer.json')
-    ]);
+        const [eventRes, playerRes] = await Promise.all([
+            fetch('https://content.elutuna.workers.dev/tesevent.json'),
+            fetch('https://content.elutuna.workers.dev/tessdplayer.json')
+        ]);
 
-    const events = await eventRes.json();
-    const playerList = await playerRes.json();
-    const playerMap = {};
+        const events = await eventRes.json();
+        const playerList = await playerRes.json();
+        const playerMap = {};
 
-    playerList.forEach(item => {
-        if (item.id && Array.isArray(item.servers)) {
-            playerMap[item.id] = item.servers;
-        }
-    });
+        playerList.forEach(item => {
+            if (item.id && Array.isArray(item.servers)) {
+                playerMap[item.id] = item.servers;
+            }
+        });
 
-    const container = document.querySelector('#live-event #content');
-    container.innerHTML = "";
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = "";
 
-    events.forEach(event => {
-        const servers = playerMap[event.id] || [];
-        const firstKey = servers[0]?.key || '';
-        const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-        const serversForAttribute = servers.map(s => ({
-            key: s.key,
-            label: s.label,
-            url: `${playerBaseUrl}${s.key}`
-        }));
-        const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
+        events.forEach(event => {
+            const servers = playerMap[event.id] || [];
+            const firstKey = servers[0]?.key || '';
+            const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+            const serversForAttribute = servers.map(s => ({
+                key: s.key,
+                label: s.label,
+                url: `${playerBaseUrl}${s.key}`
+            }));
+            const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
-        const html = `
+            const html = `
         <div class="event-container"
              data-id="${event.id}"
              data-url="${defaultUrl}"
@@ -105,45 +105,45 @@ async function loadEventsFromJSON() {
         </div>
         `;
 
-        container.insertAdjacentHTML('beforeend', html);
+            container.insertAdjacentHTML('beforeend', html);
 
-        // Inject tombol server berbasis key → player page
-        const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
-        const buttonContainer = eventContainer.querySelector('.buttons-container');
+            // Inject tombol server berbasis key → player page
+            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+            const buttonContainer = eventContainer.querySelector('.buttons-container');
 
-        servers.forEach((server, index) => {
-            const div = document.createElement('div');
-            div.className = 'server-button';
-            if (index === 0) div.classList.add('active');
-            div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
-            div.textContent = server.label;
-            buttonContainer.appendChild(div);
+            servers.forEach((server, index) => {
+                const div = document.createElement('div');
+                div.className = 'server-button';
+                if (index === 0) div.classList.add('active');
+                div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
+                div.textContent = server.label;
+                buttonContainer.appendChild(div);
+            });
         });
-    });
 
-    // Spacer agar tidak terpotong scroll
-    if (!container.querySelector('#spacer')) {
-        container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
-    }
+        // Spacer agar tidak terpotong scroll
+        if (!container.querySelector('#spacer')) {
+            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+        }
 
-    setupEvents();
+        setupEvents();
 
-    // Restore session
-    const storedActiveEventId = sessionStorage.getItem('activeEventId');
-    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+        // Restore session
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-    if (storedActiveEventId && storedActiveServerUrl) {
-        const decryptedUrl = decryptUrl(storedActiveServerUrl);
-        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-        if (activeContainer) {
-            const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-            if (storedButton) {
-                selectServerButton(storedButton);
-                loadEventVideo(activeContainer, decryptedUrl, false);
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
             }
         }
     }
-}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
@@ -371,151 +371,151 @@ async function loadEventsFromJSON() {
         }
     }
 
-function setupChannels() {
-    var channelContainers = document.querySelectorAll('.channel-container');
-    var activeChannelId = sessionStorage.getItem('activeChannelId');
+    function setupChannels() {
+        var channelContainers = document.querySelectorAll('.channel-container');
+        var activeChannelId = sessionStorage.getItem('activeChannelId');
 
-    channelContainers.forEach(function(container) {
-        var channelId = container.getAttribute('data-id');
+        channelContainers.forEach(function(container) {
+            var channelId = container.getAttribute('data-id');
 
-        if (channelId === activeChannelId) {
-            container.classList.add('selected');
-            loadEventVideo(container);
-        }
+            if (channelId === activeChannelId) {
+                container.classList.add('selected');
+                loadEventVideo(container);
+            }
 
-        container.addEventListener('click', function() {
-            channelContainers.forEach(function(otherContainer) {
-                otherContainer.classList.remove('selected');
+            container.addEventListener('click', function() {
+                channelContainers.forEach(function(otherContainer) {
+                    otherContainer.classList.remove('selected');
+                });
+
+                container.classList.add('selected');
+                sessionStorage.setItem('activeChannelId', channelId);
+                sessionStorage.removeItem('activeEventId'); // Hapus pilihan event agar tidak konflik
+                loadEventVideo(container);
             });
-
-            container.classList.add('selected');
-            sessionStorage.setItem('activeChannelId', channelId);
-	    sessionStorage.removeItem('activeEventId'); // Hapus pilihan event agar tidak konflik
-            loadEventVideo(container);
         });
-    });
-}
-
-var reconnectTimeout = null;
-var lastLoadedUrl = null;
-
-function normalizeUrl(url) {
-    try {
-        let urlObj = new URL(url);
-        return urlObj.origin + urlObj.pathname + urlObj.search;
-    } catch (e) {
-        console.error("Invalid URL:", url);
-        return url;
-    }
-}
-
-function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
-    var id = container.getAttribute('data-id');
-    var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
-    var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
-    var isChannel = container.classList.contains('channel-container');
-
-    var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
-    var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
-    var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
-    var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-
-    var eventStartTime = parseEventDateTime(matchDate, matchTime);
-    var now = new Date();
-
-    if (isNaN(eventStartTime.getTime()) && !isChannel) {
-        console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
-        return;
     }
 
-    if (resetActiveId) {
-        if (isChannel) {
-            sessionStorage.setItem('activeChannelId', id);
-            sessionStorage.removeItem('activeEventId');
+    var reconnectTimeout = null;
+    var lastLoadedUrl = null;
+
+    function normalizeUrl(url) {
+        try {
+            let urlObj = new URL(url);
+            return urlObj.origin + urlObj.pathname + urlObj.search;
+        } catch (e) {
+            console.error("Invalid URL:", url);
+            return url;
+        }
+    }
+
+    function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
+        var id = container.getAttribute('data-id');
+        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+        var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
+        var isChannel = container.classList.contains('channel-container');
+
+        var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
+        var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
+        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+        var eventStartTime = parseEventDateTime(matchDate, matchTime);
+        var now = new Date();
+
+        if (isNaN(eventStartTime.getTime()) && !isChannel) {
+            console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
+            return;
+        }
+
+        if (resetActiveId) {
+            if (isChannel) {
+                sessionStorage.setItem('activeChannelId', id);
+                sessionStorage.removeItem('activeEventId');
+            } else {
+                sessionStorage.setItem('activeEventId', id);
+                sessionStorage.removeItem('activeChannelId');
+                activeEventId = id;
+            }
+        }
+
+        var countdownElement = document.getElementById('countdown');
+        var countdownTimer = countdownElement.querySelector('.countdown-timer');
+        var videoIframe = document.getElementById('video-iframe');
+        var videoPlaceholder = document.getElementById('video-placeholder');
+        var playerElement = document.getElementById("player");
+
+        if (url.includes('sportsonline') || url.includes('sportcastelite') || url.includes('venoms') || url.includes('p2plive2')) {
+            videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
         } else {
-            sessionStorage.setItem('activeEventId', id);
-            sessionStorage.removeItem('activeChannelId');
-            activeEventId = id;
+            videoIframe.removeAttribute('sandbox');
         }
-    }
 
-    var countdownElement = document.getElementById('countdown');
-    var countdownTimer = countdownElement.querySelector('.countdown-timer');
-    var videoIframe = document.getElementById('video-iframe');
-    var videoPlaceholder = document.getElementById('video-placeholder');
-    var playerElement = document.getElementById("player");
-
-    if (url.includes('sportsonline') || url.includes('sportcastelite') || url.includes('venoms') || url.includes('p2plive2')) {
-        videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
-    } else {
-        videoIframe.removeAttribute('sandbox');
-    }
-
-    document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
-        countdown.style.display = 'none';
-    });
-    for (var key in intervals) {
-        clearInterval(intervals[key]);
-    }
-
-    document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
-        buttonsContainer.style.display = 'none';
-    });
-
-    // Tampilkan langsung jika channel (iframe penuh)
-    if (isChannel) {
-        if (videoIframe.src !== url) {
-            videoIframe.src = url;
+        document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
+            countdown.style.display = 'none';
+        });
+        for (var key in intervals) {
+            clearInterval(intervals[key]);
         }
-        videoIframe.style.display = 'block';
-        videoPlaceholder.style.display = 'none';
-        playerElement.style.display = 'none';
-        console.log('Channel video loaded:', url);
-        return;
-    }
 
-    // Event container logic
-    if (now >= eventStartTime) {
-        countdownElement.style.display = 'none';
+        document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
+            buttonsContainer.style.display = 'none';
+        });
 
-        if (videoIframe && videoIframe.src !== url) {
-            videoIframe.src = '';
+        // Tampilkan langsung jika channel (iframe penuh)
+        if (isChannel) {
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+            console.log('Channel video loaded:', url);
+            return;
+        }
+
+        // Event container logic
+        if (now >= eventStartTime) {
+            countdownElement.style.display = 'none';
+
+            if (videoIframe && videoIframe.src !== url) {
+                videoIframe.src = '';
+                videoIframe.style.display = 'none';
+            }
+
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+
+            setActiveHoverEffect(id);
+            console.log('Loading event video now:', id);
+            toggleServerButtons(container, true);
+            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
+
+            var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
+            if (activeButton) {
+                selectServerButton(activeButton);
+            }
+        } else {
+            countdownElement.style.display = 'block';
             videoIframe.style.display = 'none';
+            videoPlaceholder.style.display = 'block';
+            playerElement.style.display = 'none';
+            updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
+            setActiveHoverEffect(id);
+            console.log('Setting countdown for future event:', id);
         }
 
-        if (videoIframe.src !== url) {
-            videoIframe.src = url;
+        toggleServerButtons(container, now >= eventStartTime);
+
+        if (resetActiveId && specificUrl) {
+            sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
         }
-
-        videoIframe.style.display = 'block';
-        videoPlaceholder.style.display = 'none';
-        playerElement.style.display = 'none';
-
-        setActiveHoverEffect(id);
-        console.log('Loading event video now:', id);
-        toggleServerButtons(container, true);
-        checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
-
-        var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
-        if (activeButton) {
-            selectServerButton(activeButton);
-        }
-    } else {
-        countdownElement.style.display = 'block';
-        videoIframe.style.display = 'none';
-        videoPlaceholder.style.display = 'block';
-        playerElement.style.display = 'none';
-        updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
-        setActiveHoverEffect(id);
-        console.log('Setting countdown for future event:', id);
     }
-
-    toggleServerButtons(container, now >= eventStartTime);
-
-    if (resetActiveId && specificUrl) {
-        sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
-    }
-}
 
     function markEventAsEnded(eventId) {
         var eventContainer = document.querySelector(`.event-container[data-id="${eventId}"]`);

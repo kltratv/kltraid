@@ -1,17 +1,1 @@
-[
-  {
-    "id": "ab47f9ee-544c-4175-82a8-a2b3e9245a0d",
-    "servers": [
-      {
-        "key": "aNjt246lRS",
-        "url": "",
-        "label": "SERVER 1"
-      },
-      {
-        "key": "tlHDNFbKxs",
-        "url": "",
-        "label": "SERVER 2"
-      }
-    ]
-  }
-]
+[]

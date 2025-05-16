@@ -664,7 +664,7 @@
         await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
         await loadChannelsFromJSON(); // 🔁 Panggil sekali (tidak perlu interval)
 
-        setInterval(loadEventsFromJSON, 60000); // 🔁 Refresh event.json setiap 60 detik
+        setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh event.json setiap 5 detik
 
         // 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
         const storedActiveEventId = sessionStorage.getItem('activeEventId');

@@ -37,11 +37,11 @@
     }
 
     async function loadEventsFromJSON() {
-        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
+        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/tessdplayer.html?key=";
 
         const [eventRes, playerRes] = await Promise.all([
-            fetch('https://content.elutuna.workers.dev/event.json'),
-            fetch('https://content.elutuna.workers.dev/sdplayer.json')
+            fetch('https://content.elutuna.workers.dev/tesevent.json'),
+            fetch('https://content.elutuna.workers.dev/tessdplayer.json')
         ]);
 
         const events = await eventRes.json();
@@ -128,20 +128,22 @@
 
         setupEvents();
 
-	// Restore session
-	const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+        // Restore session
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-	if (storedActiveEventId && storedActiveServerUrl) {
-		const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-		if (activeContainer) {
-			const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-			if (storedButton) {
-				selectServerButton(storedButton);
-			}
-			loadEventVideo(activeContainer, storedActiveServerUrl, false);
-		}
-	}
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    }
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);
@@ -658,35 +660,25 @@
         }, 60000); // Periksa setiap menit
     }
 
-	window.addEventListener('DOMContentLoaded', async () => {
-		await loadEventsFromJSON();       // 🔁 Panggil sekali saat halaman pertama dibuka
-		await loadChannelsFromJSON();     // 🔁 Panggil sekali
+    window.addEventListener('DOMContentLoaded', async () => {
+        await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
+        await loadChannelsFromJSON(); // 🔁 Panggil sekali (tidak perlu interval)
 
-		setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh setiap 5 detik
+        setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh event.json setiap 5 detik
 
-		// 🔄 Restore session untuk event
-		const storedActiveEventId = sessionStorage.getItem('activeEventId');
-		const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+        // 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-		if (storedActiveEventId && storedActiveServerUrl) {
-			const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-			if (activeContainer) {
-				const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-				if (storedButton) {
-					selectServerButton(storedButton);
-				}
-				loadEventVideo(activeContainer, storedActiveServerUrl, false);
-				return; // ⬅️ Jika event ditemukan, tidak lanjut ke channel
-			}
-		}
-
-		// 🔄 Restore session untuk channel (jika event tidak tersedia)
-		const storedActiveChannelId = sessionStorage.getItem('activeChannelId');
-		if (storedActiveChannelId) {
-			const activeChannel = document.querySelector(`.channel-container[data-id="${storedActiveChannelId}"]`);
-			if (activeChannel) {
-				activeChannel.classList.add('selected');
-				loadEventVideo(activeChannel);
-			}
-		}
-	});
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const decryptedUrl = decryptUrl(storedActiveServerUrl);
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(activeContainer, decryptedUrl, false);
+                }
+            }
+        }
+    });

@@ -36,39 +36,39 @@
         }
     }
 
-    async function loadEventsFromJSON() {
-        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/tessdplayer.html?key=";
+async function loadEventsFromJSON() {
+    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
 
-        const [eventRes, playerRes] = await Promise.all([
-            fetch('https://content.elutuna.workers.dev/tesevent.json'),
-            fetch('https://content.elutuna.workers.dev/tessdplayer.json')
-        ]);
+    const [eventRes, playerRes] = await Promise.all([
+        fetch('https://content.elutuna.workers.dev/event.json'),
+        fetch('https://content.elutuna.workers.dev/sdplayer.json')
+    ]);
 
-        const events = await eventRes.json();
-        const playerList = await playerRes.json();
-        const playerMap = {};
+    const events = await eventRes.json();
+    const playerList = await playerRes.json();
+    const playerMap = {};
 
-        playerList.forEach(item => {
-            if (item.id && Array.isArray(item.servers)) {
-                playerMap[item.id] = item.servers;
-            }
-        });
+    playerList.forEach(item => {
+        if (item.id && Array.isArray(item.servers)) {
+            playerMap[item.id] = item.servers;
+        }
+    });
 
-        const container = document.querySelector('#live-event #content');
-        container.innerHTML = "";
+    const container = document.querySelector('#live-event #content');
+    container.innerHTML = "";
 
-        events.forEach(event => {
-            const servers = playerMap[event.id] || [];
-            const firstKey = servers[0]?.key || '';
-            const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-            const serversForAttribute = servers.map(s => ({
-                key: s.key,
-                label: s.label,
-                url: `${playerBaseUrl}${s.key}`
-            }));
-            const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
+    events.forEach(event => {
+        const servers = playerMap[event.id] || [];
+        const firstKey = servers[0]?.key || '';
+        const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+        const serversForAttribute = servers.map(s => ({
+            key: s.key,
+            label: s.label,
+            url: `${playerBaseUrl}${s.key}`
+        }));
+        const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
-            const html = `
+        const html = `
         <div class="event-container"
              data-id="${event.id}"
              data-url="${defaultUrl}"
@@ -105,45 +105,44 @@
         </div>
         `;
 
-            container.insertAdjacentHTML('beforeend', html);
+        container.insertAdjacentHTML('beforeend', html);
 
-            // Inject tombol server berbasis key → player page
-            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
-            const buttonContainer = eventContainer.querySelector('.buttons-container');
+        // Inject tombol server berbasis key → player page
+        const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+        const buttonContainer = eventContainer.querySelector('.buttons-container');
 
-            servers.forEach((server, index) => {
-                const div = document.createElement('div');
-                div.className = 'server-button';
-                if (index === 0) div.classList.add('active');
-                div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
-                div.textContent = server.label;
-                buttonContainer.appendChild(div);
-            });
+        servers.forEach((server, index) => {
+            const div = document.createElement('div');
+            div.className = 'server-button';
+            if (index === 0) div.classList.add('active');
+            div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
+            div.textContent = server.label;
+            buttonContainer.appendChild(div);
         });
+    });
 
-        // Spacer agar tidak terpotong scroll
-        if (!container.querySelector('#spacer')) {
-            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
-        }
+    // Spacer agar tidak terpotong scroll
+    if (!container.querySelector('#spacer')) {
+        container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+    }
 
-        setupEvents();
+    setupEvents();
 
-        // Restore session
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    // 🔄 Restore session (event only, handled here)
+    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-        if (storedActiveEventId && storedActiveServerUrl) {
-            const decryptedUrl = decryptUrl(storedActiveServerUrl);
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${decryptedUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                    loadEventVideo(activeContainer, decryptedUrl, false);
-                }
+    if (storedActiveEventId && storedActiveServerUrl) {
+        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+        if (activeContainer) {
+            const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+            if (storedButton) {
+                selectServerButton(storedButton);
             }
+            loadEventVideo(activeContainer, storedActiveServerUrl, false);
         }
     }
+}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);

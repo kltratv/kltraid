@@ -1,1 +1,681 @@
-var intervals={},activeEventId=null;const fallbackURL='https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html';async function loadChannelsFromJSON(){try{const _0x5e0e4b=await fetch('https://content.elutuna.workers.dev/channel.json');if(!_0x5e0e4b['ok'])throw new Error('Failed\x20to\x20load\x20channel.json');const _0x338229=await _0x5e0e4b['json'](),_0x512899=document['querySelector']('#live-tv\x20#content');_0x512899['innerHTML']='',_0x338229['forEach'](_0x1949df=>{const _0x57ffb9='\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22channel-container\x22\x20data-id=\x22'+_0x1949df['id']+'\x22\x20data-url=\x22'+_0x1949df['url']+'\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-container\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x1949df['logo']+'\x22\x20alt=\x22Channel\x20Logo\x22\x20class=\x22logo\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22info-container\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22channel-name\x22>'+_0x1949df['name']+'</h3>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22status\x22>'+_0x1949df['status']+'</p>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20';_0x512899['insertAdjacentHTML']('beforeend',_0x57ffb9);}),!_0x512899['querySelector']('#spacer')&&_0x512899['insertAdjacentHTML']('beforeend','<div\x20id=\x22spacer\x22></div>'),setupChannels();}catch(_0x3b0586){console['error']('Error\x20loading\x20channels:',_0x3b0586);}}async function loadEventsFromJSON(){const _0x567da7='https://bikinbaru96.blogspot.com/p/sdplayer.html?key=',[_0x200d5a,_0x4cd04c]=await Promise['all']([fetch('https://content.elutuna.workers.dev/event.json'),fetch('https://content.elutuna.workers.dev/sdplayer.json')]),_0x516795=await _0x200d5a['json'](),_0x7606a3=await _0x4cd04c['json'](),_0x4b222b={};_0x7606a3['forEach'](_0x399b04=>{_0x399b04['id']&&Array['isArray'](_0x399b04['servers'])&&(_0x4b222b[_0x399b04['id']]=_0x399b04['servers']);});const _0x15cf05=document['querySelector']('#live-event\x20#content');_0x15cf05['innerHTML']='',_0x516795['forEach'](_0x2df7e2=>{const _0x238431=_0x4b222b[_0x2df7e2['id']]||[],_0x5aaa6a=_0x238431[0x0]?.['key']||'',_0x1a8682=_0x5aaa6a?''+_0x567da7+_0x5aaa6a:'',_0x18d16a=_0x238431['map'](_0xed2f8c=>({'key':_0xed2f8c['key'],'label':_0xed2f8c['label'],'url':''+_0x567da7+_0xed2f8c['key']})),_0x2fddde=JSON['stringify'](_0x18d16a)['replace'](/"/g,'&quot;'),_0x57d14d='\x0a\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22event-container\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20data-id=\x22'+_0x2df7e2['id']+'\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20data-url=\x22'+_0x1a8682+'\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20data-servers=\x22'+_0x2fddde+'\x22\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20data-duration=\x22'+_0x2df7e2['duration']+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h2><img\x20src=\x22'+_0x2df7e2['icon']+'\x22\x20class=\x22sport-icon\x22>'+_0x2df7e2['league']+'</h2>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22team\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x2df7e2['team1']['logo']+'\x22\x20class=\x22team-logo\x22\x20alt=\x22'+_0x2df7e2['team1']['name']+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>'+_0x2df7e2['team1']['name']+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22kickoff-match-date\x22>'+_0x2df7e2['kickoff_date']+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22kickoff-match-time\x22>'+_0x2df7e2['kickoff_time']+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22match-date\x22\x20style=\x22display:none;\x22\x20data-original-date=\x22'+_0x2df7e2['match_date']+'\x22>'+_0x2df7e2['match_date']+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22match-time\x22\x20style=\x22display:none;\x22\x20data-original-time=\x22'+_0x2df7e2['match_time']+'\x22>'+_0x2df7e2['kickoff_time']+'</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22live-label\x22\x20style=\x22display:none;\x22>Live</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22team\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x2df7e2['team2']['logo']+'\x22\x20class=\x22team-logo\x22\x20alt=\x22'+_0x2df7e2['team2']['name']+'\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<span>'+_0x2df7e2['team2']['name']+'</span>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22server-buttons\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22instruction\x22>You\x20can\x20select\x20a\x20server\x20stream:</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22buttons-container\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22countdown-wrapper\x22\x20id=\x22countdown-'+_0x2df7e2['id']+'\x22\x20style=\x22display:none;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22countdown-title\x22>Event\x20will\x20start\x20in:</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22countdown-timer\x22></div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20\x20\x20\x20\x20';_0x15cf05['insertAdjacentHTML']('beforeend',_0x57d14d);const _0x17a7cf=_0x15cf05['querySelector']('.event-container[data-id=\x22'+_0x2df7e2['id']+'\x22]'),_0x93a265=_0x17a7cf['querySelector']('.buttons-container');_0x238431['forEach']((_0x48e5b3,_0x390f1a)=>{const _0x56f954=document['createElement']('div');_0x56f954['className']='server-button';if(_0x390f1a===0x0)_0x56f954['classList']['add']('active');_0x56f954['setAttribute']('data-url',''+_0x567da7+_0x48e5b3['key']),_0x56f954['textContent']=_0x48e5b3['label'],_0x93a265['appendChild'](_0x56f954);});});!_0x15cf05['querySelector']('#spacer')&&_0x15cf05['insertAdjacentHTML']('beforeend','<div\x20id=\x22spacer\x22></div>');setupEvents();const _0x2f3bb7=sessionStorage['getItem']('activeEventId'),_0x381fd0=sessionStorage['getItem']('activeServerUrl_'+_0x2f3bb7);if(_0x2f3bb7&&_0x381fd0){const _0x53c6bf=decryptUrl(_0x381fd0),_0x3e4b05=document['querySelector']('.event-container[data-id=\x22'+_0x2f3bb7+'\x22]');if(_0x3e4b05){const _0x2e7a7d=_0x3e4b05['querySelector']('.server-button[data-url=\x22'+_0x53c6bf+'\x22]');_0x2e7a7d&&(selectServerButton(_0x2e7a7d),loadEventVideo(_0x3e4b05,_0x53c6bf,![]));}}}function isMobileDevice(){return/Mobi|Android/i['test'](navigator['userAgent']);}function setupEvents(){var _0x2641e9=document['querySelectorAll']('.event-container'),_0x5da823=[];_0x2641e9['forEach'](function(_0x5d7dc9){var _0x33eaa3=_0x5d7dc9['getAttribute']('data-id');_0x5da823['push'](_0x33eaa3);var _0x43b30c=_0x5d7dc9['querySelector']('.match-date')['textContent']['trim'](),_0x6759d9=_0x5d7dc9['querySelector']('.match-time')['textContent']['trim'](),_0x12a0f2=parseEventDateTime(_0x43b30c,_0x6759d9),_0x48734c=_0x5d7dc9['querySelector']('.kickoff-match-date')['textContent']['trim'](),_0x13ae21=_0x5d7dc9['querySelector']('.kickoff-match-time')['textContent']['trim'](),_0x473d07=parseEventDateTime(_0x48734c,_0x13ae21),_0x338908=parseFloat(_0x5d7dc9['getAttribute']('data-duration'))||3.5,_0x2d9cf3=_0x338908*0x3c*0x3c*0x3e8;updateMatchTimes(_0x5d7dc9,_0x12a0f2),updateMatchTimes(_0x5d7dc9,_0x473d07),checkLiveStatus(_0x5d7dc9,_0x12a0f2,_0x2d9cf3);var _0x1e90dc=sessionStorage['getItem']('eventStatus_'+_0x33eaa3);_0x1e90dc==='ended'&&(markEventAsEnded(_0x33eaa3),activeEventId===_0x33eaa3&&redirectToEndedURL());var _0x580f3e=JSON['parse'](_0x5d7dc9['getAttribute']('data-servers')),_0x51fc20=_0x5d7dc9['querySelector']('.buttons-container');_0x51fc20['innerHTML']='',_0x580f3e['forEach'](function(_0x587a8b,_0x2d8239){if(_0x587a8b['label']['includes']('Mobile')&&!isMobileDevice())return;var _0x2b1a9c=document['createElement']('div');_0x2b1a9c['className']='server-button',_0x2b1a9c['textContent']=_0x587a8b['label'],_0x2b1a9c['setAttribute']('data-url',_0x587a8b['url']),_0x2b1a9c['addEventListener']('click',function(_0x314a15){_0x314a15['stopPropagation'](),selectServerButton(_0x2b1a9c),loadEventVideo(_0x5d7dc9,_0x587a8b['url']);}),_0x51fc20['appendChild'](_0x2b1a9c),_0x2d8239===0x0&&_0x2b1a9c['classList']['add']('active');}),_0x5d7dc9['addEventListener']('click',function(){var _0x4df033=new Date();_0x4df033>=_0x12a0f2&&toggleServerButtons(_0x5d7dc9,!![]),loadEventVideo(_0x5d7dc9);});var _0x4b87b2=sessionStorage['getItem']('activeEventId'),_0x143713=sessionStorage['getItem']('activeServerUrl_'+_0x33eaa3);if(_0x4b87b2===_0x33eaa3&&_0x143713){var _0x25095f=_0x5d7dc9['querySelector']('.server-button[data-url=\x22'+_0x143713+'\x22]');_0x25095f&&(selectServerButton(_0x25095f),loadEventVideo(_0x5d7dc9,_0x143713,![]));}}),activeEventId&&!_0x5da823['includes'](activeEventId)&&redirectToEndedURL(),startPeriodicEventCheck();}function parseEventDateTime(_0x2ff20f,_0x234d52){var _0x472dcf=new Date(_0x2ff20f+'T'+_0x234d52+':00+07:00');return _0x472dcf;}function updateCountdown(_0x55b133,_0x3e4862,_0x11cdee,_0x3de771,_0x6565e0){clearInterval(intervals[_0x6565e0]);var _0x23d1d8=setInterval(function(){var _0x57fcf8=new Date()['getTime'](),_0x17b929=_0x11cdee['getTime']()-_0x57fcf8;if(_0x17b929<0x3e8){var _0x11c2e1=document['getElementById']('video-iframe');_0x11c2e1&&(_0x11c2e1['src']='');}if(_0x17b929<0x0){clearInterval(_0x23d1d8),_0x55b133['style']['display']='none',console['log']('Event\x20started:',_0x6565e0),loadEventVideo(document['querySelector']('.event-container[data-id=\x22'+_0x6565e0+'\x22]'),_0x3de771,![]),checkLiveStatus(document['querySelector']('.event-container[data-id=\x22'+_0x6565e0+'\x22]'),_0x11cdee);var _0x4fd5bc=document['querySelector']('.event-container[data-id=\x22'+_0x6565e0+'\x22]\x20.server-button');_0x4fd5bc&&selectServerButton(_0x4fd5bc);var _0x58259b=parseFloat(document['querySelector']('.event-container[data-id=\x22'+_0x6565e0+'\x22]')['getAttribute']('data-duration'))*0x3c*0x3c*0x3e8||3.5*0x3c*0x3c*0x3e8,_0x336909=new Date(_0x11cdee['getTime']()+_0x58259b);setTimeout(function(){var _0x166e75=new Date();_0x166e75>=_0x336909&&(activeEventId===_0x6565e0&&(markEventAsEnded(_0x6565e0),redirectToEndedURL()));},_0x58259b);}else{var _0x89b687=Math['floor'](_0x17b929/(0x3e8*0x3c*0x3c*0x18)),_0x536175=Math['floor'](_0x17b929%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x1dafd7=Math['floor'](_0x17b929%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x458c71=Math['floor'](_0x17b929%(0x3e8*0x3c)/0x3e8);_0x55b133['style']['display']='block',_0x3e4862['innerHTML']=_0x89b687+'d\x20'+_0x536175+'h\x20'+_0x1dafd7+'m\x20'+_0x458c71+'s\x20',console['log']('Countdown\x20for\x20event\x20'+_0x6565e0+':\x20'+_0x89b687+'d\x20'+_0x536175+'h\x20'+_0x1dafd7+'m\x20'+_0x458c71+'s');}},0x3e8);intervals[_0x6565e0]=_0x23d1d8;}function updateMatchTimes(_0x21eae9,_0x1a4812){var _0x5c98c2=_0x21eae9['querySelector']('.match-date'),_0x4c6464=_0x21eae9['querySelector']('.match-time'),_0x4e212a=_0x21eae9['querySelector']('.kickoff-match-date'),_0x4cfd2c=_0x21eae9['querySelector']('.kickoff-match-time');!_0x5c98c2['hasAttribute']('data-original-date')&&(_0x5c98c2['setAttribute']('data-original-date',_0x5c98c2['textContent']['trim']()),_0x4c6464['setAttribute']('data-original-time',_0x4c6464['textContent']['trim']()));var _0x4299b0=new Date(_0x1a4812['getTime']()+_0x1a4812['getTimezoneOffset']()*0xea60),_0x121134=new Date()['getTimezoneOffset'](),_0x2d90b7=_0x121134/0x3c,_0x4489bf=new Date(_0x4299b0['getTime']()-_0x2d90b7*0x3c*0x3c*0x3e8),_0x3592ef=_0x4489bf['toLocaleDateString']('en-US',{'year':'numeric','month':'long','day':'numeric'}),_0x42874b=_0x4489bf['toLocaleTimeString']('en-US',{'hour':'2-digit','minute':'2-digit','hour12':![]});console['log']('Adjusted\x20date\x20for\x20event:\x20'+_0x3592ef),console['log']('Adjusted\x20time\x20for\x20event:\x20'+_0x42874b),_0x5c98c2['textContent']=_0x3592ef,_0x4c6464['textContent']=_0x42874b,_0x4e212a&&_0x4cfd2c&&(_0x4e212a['textContent']=_0x3592ef,_0x4cfd2c['textContent']=_0x42874b);}function checkLiveStatus(_0xa57abe,_0x427980,_0x507842){var _0x520053=new Date(),_0x57ecd8=_0xa57abe['querySelector']('.live-label');if(_0x520053>=_0x427980){_0x57ecd8['style']['display']='block',console['log']('Event\x20live:',_0xa57abe['getAttribute']('data-id'));var _0x24edab=new Date(_0x427980['getTime']()+_0x507842);setTimeout(function(){var _0x570064=new Date();_0x570064>=_0x24edab&&markEventAsEnded(_0xa57abe['getAttribute']('data-id'));},_0x24edab['getTime']()-_0x520053);}else _0x57ecd8['style']['display']='none',console['log']('Event\x20not\x20live\x20yet:',_0xa57abe['getAttribute']('data-id')),setTimeout(function(){checkLiveStatus(_0xa57abe,_0x427980,_0x507842);},_0x427980['getTime']()-_0x520053);}function setupChannels(){var _0x147f08=document['querySelectorAll']('.channel-container'),_0x498a25=sessionStorage['getItem']('activeChannelId');_0x147f08['forEach'](function(_0x348314){var _0x23f3e4=_0x348314['getAttribute']('data-id');_0x23f3e4===_0x498a25&&(_0x348314['classList']['add']('selected'),loadEventVideo(_0x348314)),_0x348314['addEventListener']('click',function(){_0x147f08['forEach'](function(_0x30ba27){_0x30ba27['classList']['remove']('selected');}),_0x348314['classList']['add']('selected'),sessionStorage['setItem']('activeChannelId',_0x23f3e4),sessionStorage['removeItem']('activeEventId'),loadEventVideo(_0x348314);});});}var reconnectTimeout=null,lastLoadedUrl=null;function normalizeUrl(_0x1f0174){try{let _0x62727f=new URL(_0x1f0174);return _0x62727f['origin']+_0x62727f['pathname']+_0x62727f['search'];}catch(_0x55a67f){return console['error']('Invalid\x20URL:',_0x1f0174),_0x1f0174;}}function loadEventVideo(_0x371d14,_0x1bbdf6=null,_0x56e17a=!![]){var _0x194ae2=_0x371d14['getAttribute']('data-id'),_0x4ad887=sessionStorage['getItem']('activeServerUrl_'+_0x194ae2),_0x23095a=_0x1bbdf6||_0x4ad887||_0x371d14['getAttribute']('data-url')||fallbackURL,_0x5a329f=_0x371d14['classList']['contains']('channel-container'),_0x336026=_0x371d14['querySelector']('.match-date')?.['getAttribute']('data-original-date'),_0x7feec8=_0x371d14['querySelector']('.match-time')?.['getAttribute']('data-original-time'),_0x562056=parseFloat(_0x371d14['getAttribute']('data-duration'))||3.5,_0xb4fabe=_0x562056*0x3c*0x3c*0x3e8,_0x365763=parseEventDateTime(_0x336026,_0x7feec8),_0x565739=new Date();if(isNaN(_0x365763['getTime']())&&!_0x5a329f){console['error']('Invalid\x20event\x20time\x20for\x20event\x20'+_0x194ae2+':\x20'+_0x336026+'\x20'+_0x7feec8);return;}_0x56e17a&&(_0x5a329f?(sessionStorage['setItem']('activeChannelId',_0x194ae2),sessionStorage['removeItem']('activeEventId')):(sessionStorage['setItem']('activeEventId',_0x194ae2),sessionStorage['removeItem']('activeChannelId'),activeEventId=_0x194ae2));var _0x486e18=document['getElementById']('countdown'),_0x11b6ef=_0x486e18['querySelector']('.countdown-timer'),_0x12b371=document['getElementById']('video-iframe'),_0x21d60b=document['getElementById']('video-placeholder'),_0x5da8e4=document['getElementById']('player');_0x23095a['includes']('sportsonline')||_0x23095a['includes']('sportcastelite')||_0x23095a['includes']('venoms')||_0x23095a['includes']('p2plive2')?_0x12b371['setAttribute']('sandbox','allow-same-origin\x20allow-scripts\x20allow-forms\x20allow-pointer-lock\x20allow-top-navigation'):_0x12b371['removeAttribute']('sandbox');document['querySelectorAll']('.countdown-wrapper')['forEach'](function(_0x5aa86c){_0x5aa86c['style']['display']='none';});for(var _0x382eba in intervals){clearInterval(intervals[_0x382eba]);}document['querySelectorAll']('.event-container\x20.server-buttons')['forEach'](function(_0x5ad7a2){_0x5ad7a2['style']['display']='none';});if(_0x5a329f){_0x12b371['src']!==_0x23095a&&(_0x12b371['src']=_0x23095a);_0x12b371['style']['display']='block',_0x21d60b['style']['display']='none',_0x5da8e4['style']['display']='none',console['log']('Channel\x20video\x20loaded:',_0x23095a);return;}if(_0x565739>=_0x365763){_0x486e18['style']['display']='none';_0x12b371&&_0x12b371['src']!==_0x23095a&&(_0x12b371['src']='',_0x12b371['style']['display']='none');_0x12b371['src']!==_0x23095a&&(_0x12b371['src']=_0x23095a);_0x12b371['style']['display']='block',_0x21d60b['style']['display']='none',_0x5da8e4['style']['display']='none',setActiveHoverEffect(_0x194ae2),console['log']('Loading\x20event\x20video\x20now:',_0x194ae2),toggleServerButtons(_0x371d14,!![]),checkLiveStatus(_0x371d14,_0x365763,_0xb4fabe);var _0x228884=_0x371d14['querySelector']('.server-button[data-url=\x22'+_0x23095a+'\x22]');_0x228884&&selectServerButton(_0x228884);}else _0x486e18['style']['display']='block',_0x12b371['style']['display']='none',_0x21d60b['style']['display']='block',_0x5da8e4['style']['display']='none',updateCountdown(_0x486e18,_0x11b6ef,_0x365763,_0x23095a,_0x194ae2),setActiveHoverEffect(_0x194ae2),console['log']('Setting\x20countdown\x20for\x20future\x20event:',_0x194ae2);toggleServerButtons(_0x371d14,_0x565739>=_0x365763),_0x56e17a&&_0x1bbdf6&&sessionStorage['setItem']('activeServerUrl_'+_0x194ae2,_0x1bbdf6);}function markEventAsEnded(_0x5d1175){var _0x540963=document['querySelector']('.event-container[data-id=\x22'+_0x5d1175+'\x22]');_0x540963&&(sessionStorage['setItem']('eventStatus_'+_0x5d1175,'ended'),_0x540963['style']['display']='none');}function redirectToEndedURL(){var _0x586352=sessionStorage['getItem']('activeEventId'),_0x4f8651=sessionStorage['getItem']('eventStatus_'+_0x586352);if(_0x4f8651==='ended'){var _0xfa69b2=document['querySelector']('.event-container[data-id=\x22'+_0x586352+'\x22]');_0xfa69b2&&(_0xfa69b2['style']['display']='none');}}function setActiveHoverEffect(_0x5a57c1){document['querySelectorAll']('.event-container')['forEach'](function(_0x35dba3){_0x35dba3['classList']['remove']('hover-effect');});var _0x2463a3=document['querySelector']('.event-container[data-id=\x22'+_0x5a57c1+'\x22]');_0x2463a3&&(_0x2463a3['classList']['add']('hover-effect'),console['log']('Hover\x20effect\x20set\x20for\x20event:',_0x5a57c1));}function resetHoverEffect(){if(activeEventId){var _0xf86b95=document['querySelector']('.event-container[data-id=\x22'+activeEventId+'\x22]');_0xf86b95&&(_0xf86b95['classList']['add']('hover-effect'),console['log']('Hover\x20effect\x20reset\x20for\x20active\x20event:',activeEventId));}}function toggleServerButtons(_0x23f14b,_0x883607=!![]){var _0x30d7df=_0x23f14b['querySelector']('.server-buttons');_0x883607?_0x30d7df['style']['display']='flex':_0x30d7df['style']['display']='none';}function selectServerButton(_0x31d6bc){var _0x49a453=document['querySelectorAll']('.server-button');_0x49a453['forEach'](function(_0x49c0bf){_0x49c0bf['classList']['remove']('active');}),_0x31d6bc['classList']['add']('active');var _0x5c1fe3=_0x31d6bc['getAttribute']('data-url'),_0x3344b9=_0x31d6bc['closest']('.event-container')['getAttribute']('data-id');sessionStorage['setItem']('activeServerUrl_'+_0x3344b9,_0x5c1fe3);}function switchContent(_0x8d0130){document['querySelectorAll']('.sidebar-content')['forEach'](function(_0x331c85){_0x331c85['classList']['remove']('active');});var _0x398a45=document['getElementById'](_0x8d0130);_0x398a45['classList']['add']('active');if(_0x8d0130==='chat'){var _0x2fdcd1=_0x398a45['querySelector']('.chat-iframe');_0x2fdcd1&&!_0x2fdcd1['src']&&(_0x2fdcd1['src']=_0x2fdcd1['getAttribute']('data-src'));}}function refreshVideoPlayer(){var _0x1e0ef8=document['getElementById']('video-iframe');if(_0x1e0ef8){var _0x3a0e17=_0x1e0ef8['src'];if(_0x3a0e17['includes']('m3u8')||_0x3a0e17['includes']('clappr'))try{var _0x2e7dfc=_0x1e0ef8['contentWindow']['player'];_0x2e7dfc&&(_0x2e7dfc['stop'](),_0x2e7dfc['load']({'source':_0x2e7dfc['options']['source']}),_0x2e7dfc['play'](),console['log']('Clappr\x20player\x20refreshed\x20successfully'));}catch(_0x5da1f7){console['error']('Failed\x20to\x20refresh\x20Clappr\x20player:',_0x5da1f7);}else _0x1e0ef8['src']='',_0x3a0e17['includes']('sportsonline')||_0x3a0e17['includes']('sportcastelite')||_0x3a0e17['includes']('venoms')||_0x3a0e17['includes']('p2plive2')?_0x1e0ef8['setAttribute']('sandbox','allow-same-origin\x20allow-scripts\x20allow-forms\x20allow-pointer-lock\x20allow-top-navigation'):_0x1e0ef8['removeAttribute']('sandbox'),_0x1e0ef8['src']=_0x3a0e17,console['log']('Non-Clappr\x20iframe\x20refreshed\x20successfully');}}function startPeriodicEventCheck(){setInterval(function(){var _0x5e97d9=new Date();document['querySelectorAll']('.event-container')['forEach'](function(_0x2655ba){var _0x420414=_0x2655ba['querySelector']('.match-date')['getAttribute']('data-original-date'),_0x53b3ca=_0x2655ba['querySelector']('.match-time')['getAttribute']('data-original-time'),_0xfc66c7=parseFloat(_0x2655ba['getAttribute']('data-duration'))||3.5,_0x1fbae1=_0xfc66c7*0x3c*0x3c*0x3e8,_0x2433fc=parseEventDateTime(_0x420414,_0x53b3ca),_0x50d6c9=new Date(_0x2433fc['getTime']()+_0x1fbae1);if(_0x5e97d9>=_0x50d6c9){var _0x1d0ce3=_0x2655ba['getAttribute']('data-id');markEventAsEnded(_0x1d0ce3);}});},0xea60);}window['addEventListener']('DOMContentLoaded',async()=>{await loadEventsFromJSON(),await loadChannelsFromJSON(),setInterval(loadEventsFromJSON,0x1388);const _0x9b0461=sessionStorage['getItem']('activeEventId'),_0x2b8b16=sessionStorage['getItem']('activeServerUrl_'+_0x9b0461);if(_0x9b0461&&_0x2b8b16){const _0x3fdc30=decryptUrl(_0x2b8b16),_0x4781e3=document['querySelector']('.event-container[data-id=\x22'+_0x9b0461+'\x22]');if(_0x4781e3){const _0x383bfd=_0x4781e3['querySelector']('.server-button[data-url=\x22'+_0x3fdc30+'\x22]');_0x383bfd&&(selectServerButton(_0x383bfd),loadEventVideo(_0x4781e3,_0x3fdc30,![]));}}});
+    var intervals = {}; // Object to keep track of intervals
+    var activeEventId = null; // Track the currently active event
+    const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
+
+    async function loadChannelsFromJSON() {
+        try {
+            const res = await fetch('https://content.elutuna.workers.dev/channel.json');
+            if (!res.ok) throw new Error('Failed to load channel.json');
+            const data = await res.json();
+            const container = document.querySelector('#live-tv #content');
+            container.innerHTML = "";
+
+            data.forEach(channel => {
+                const html = `
+	        <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
+	          <div class="logo-container">
+	            <img src="${channel.logo}" alt="Channel Logo" class="logo">
+	          </div>
+	          <div class="info-container">
+	            <h3 class="channel-name">${channel.name}</h3>
+	            <p class="status">${channel.status}</p>
+	          </div>
+	        </div>
+	      `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+
+            // ⬇️ Tambahkan spacer di sini agar scroll tidak terpotong
+            if (!container.querySelector('#spacer')) {
+                container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+            }
+
+            setupChannels(); // aktifkan klik listener setelah render
+        } catch (error) {
+            console.error('Error loading channels:', error);
+        }
+    }
+
+    async function loadEventsFromJSON() {
+        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
+
+        const [eventRes, playerRes] = await Promise.all([
+            fetch('https://content.elutuna.workers.dev/event.json'),
+            fetch('https://content.elutuna.workers.dev/sdplayer.json')
+        ]);
+
+        const events = await eventRes.json();
+        const playerList = await playerRes.json();
+        const playerMap = {};
+
+        playerList.forEach(item => {
+            if (item.id && Array.isArray(item.servers)) {
+                playerMap[item.id] = item.servers;
+            }
+        });
+
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = "";
+
+        events.forEach(event => {
+            const servers = playerMap[event.id] || [];
+            const firstKey = servers[0]?.key || '';
+            const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+            const serversForAttribute = servers.map(s => ({
+                key: s.key,
+                label: s.label,
+                url: `${playerBaseUrl}${s.key}`
+            }));
+            const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
+
+            const html = `
+        <div class="event-container"
+             data-id="${event.id}"
+             data-url="${defaultUrl}"
+             data-servers="${encodedServers}"
+             data-duration="${event.duration}">
+             
+            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+            
+            <div class="team">
+                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+                <span>${event.team1.name}</span>
+            </div>
+            
+            <div class="kickoff-match-date">${event.kickoff_date}</div>
+            <div class="kickoff-match-time">${event.kickoff_time}</div>
+            <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+            <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+            <div class="live-label" style="display:none;">Live</div>
+            
+            <div class="team">
+                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+                <span>${event.team2.name}</span>
+            </div>
+            
+            <div class="server-buttons" style="display:none;">
+                <div class="instruction">You can select a server stream:</div>
+                <div class="buttons-container"></div>
+            </div>
+            
+            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+        `;
+
+            container.insertAdjacentHTML('beforeend', html);
+
+            // Inject tombol server berbasis key → player page
+            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+            const buttonContainer = eventContainer.querySelector('.buttons-container');
+
+            servers.forEach((server, index) => {
+                const div = document.createElement('div');
+                div.className = 'server-button';
+                if (index === 0) div.classList.add('active');
+                div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
+                div.textContent = server.label;
+                buttonContainer.appendChild(div);
+            });
+        });
+
+        // Spacer agar tidak terpotong scroll
+        if (!container.querySelector('#spacer')) {
+            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+        }
+
+        setupEvents();
+
+	// Restore session
+	const storedActiveEventId = sessionStorage.getItem('activeEventId');
+	const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+	if (storedActiveEventId && storedActiveServerUrl) {
+		const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+		if (activeContainer) {
+			const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+			if (storedButton) {
+				selectServerButton(storedButton);
+				loadEventVideo(activeContainer, storedActiveServerUrl, false);
+			}
+		}
+	}
+
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    function setupEvents() {
+        var eventContainers = document.querySelectorAll('.event-container');
+        var validEventIds = [];
+
+        eventContainers.forEach(function(container) {
+            var id = container.getAttribute('data-id');
+            validEventIds.push(id);
+
+            // Event time (match-date and match-time)
+            var matchDate = container.querySelector('.match-date').textContent.trim();
+            var matchTime = container.querySelector('.match-time').textContent.trim();
+            var eventTime = parseEventDateTime(matchDate, matchTime);
+
+            // Kickoff event time (kickoff-match-date and kickoff-match-time)
+            var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
+            var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
+            var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
+
+            var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+            var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+            // Update match times for both eventTime and kickoffEventTime
+            updateMatchTimes(container, eventTime); // Original event time
+            updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
+
+            // Check live status using eventTime
+            checkLiveStatus(container, eventTime, eventDurationMilliseconds);
+
+            // Check stored event status
+            var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
+            if (storedStatus === 'ended') {
+                markEventAsEnded(id); // Set event as ended if stored status is "ended"
+                if (activeEventId === id) {
+                    redirectToEndedURL();
+                }
+            }
+
+            // Setup server buttons
+            var servers = JSON.parse(container.getAttribute('data-servers'));
+            var buttonsContainer = container.querySelector('.buttons-container');
+
+            buttonsContainer.innerHTML = ''; // Clear existing buttons
+
+            servers.forEach(function(server, index) {
+                if (server.label.includes("Mobile") && !isMobileDevice()) {
+                    return;
+                }
+
+                var button = document.createElement('div');
+                button.className = 'server-button';
+                button.textContent = server.label;
+                button.setAttribute('data-url', server.url);
+                button.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    selectServerButton(button);
+                    loadEventVideo(container, server.url);
+                });
+                buttonsContainer.appendChild(button);
+
+                if (index === 0) {
+                    button.classList.add('active');
+                }
+            });
+
+            // Add event listener to toggle server buttons on click
+            container.addEventListener('click', function() {
+                var now = new Date();
+                if (now >= eventTime) {
+                    toggleServerButtons(container, true);
+                }
+                loadEventVideo(container); // Ensure the event is loaded when container is clicked
+            });
+
+            // Restore active button state from sessionStorage
+            var storedActiveEventId = sessionStorage.getItem('activeEventId');
+            var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+            if (storedActiveEventId === id && storedActiveServerUrl) {
+                var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(container, storedActiveServerUrl, false);
+                }
+            }
+        });
+
+        // Check if the active event is still valid, otherwise reset it
+        if (activeEventId && !validEventIds.includes(activeEventId)) {
+            redirectToEndedURL();
+        }
+
+        // Start periodic check for event statuses
+        startPeriodicEventCheck();
+    }
+
+    function parseEventDateTime(date, time) {
+        // Assuming date format is "June 21, 2024" and time is "07:30"
+        var formattedDate = new Date(`${date}T${time}:00+07:00`);
+        return formattedDate;
+    }
+
+    function updateCountdown(countdownElement, countdownTimer, eventTime, url, id) {
+        clearInterval(intervals[id]); // Clear previous interval if exists
+
+        var interval = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = eventTime.getTime() - now;
+
+            if (distance < 1000) { // Clear the video src just before the countdown ends
+                var videoIframe = document.getElementById('video-iframe');
+                if (videoIframe) {
+                    videoIframe.src = '';
+                }
+            }
+
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.style.display = 'none';
+                console.log('Event started:', id);
+                loadEventVideo(document.querySelector(`.event-container[data-id="${id}"]`), url, false); // Load video with the initial URL
+                checkLiveStatus(document.querySelector(`.event-container[data-id="${id}"]`), eventTime); // Show live label
+
+                // Mark the first button as active
+                var firstButton = document.querySelector(`.event-container[data-id="${id}"] .server-button`);
+                if (firstButton) {
+                    selectServerButton(firstButton);
+                }
+
+                // Set timeout to check if event should end after its duration
+                var eventDurationMilliseconds = parseFloat(document.querySelector(`.event-container[data-id="${id}"]`).getAttribute('data-duration')) * 60 * 60 * 1000 || 3.5 * 60 * 60 * 1000;
+                var eventEndTime = new Date(eventTime.getTime() + eventDurationMilliseconds);
+                setTimeout(function() {
+                    var now = new Date();
+                    if (now >= eventEndTime) {
+                        if (activeEventId === id) {
+                            markEventAsEnded(id);
+                            redirectToEndedURL();
+                        }
+                    }
+                }, eventDurationMilliseconds);
+            } else {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.style.display = 'block'; // Ensure countdown element is displayed
+                countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s `;
+                console.log(`Countdown for event ${id}: ${days}d ${hours}h ${minutes}m ${seconds}s`);
+            }
+        }, 1000);
+
+        intervals[id] = interval; // Store the interval in the intervals object
+    }
+
+    function updateMatchTimes(container, eventStartTime) {
+        var matchDateElem = container.querySelector('.match-date');
+        var matchTimeElem = container.querySelector('.match-time');
+        var kickoffDateElem = container.querySelector('.kickoff-match-date');
+        var kickoffTimeElem = container.querySelector('.kickoff-match-time');
+
+        if (!matchDateElem.hasAttribute('data-original-date')) {
+            matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
+            matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+        }
+
+        var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
+        var visitorOffsetInMinutes = new Date().getTimezoneOffset();
+        var visitorOffsetInHours = visitorOffsetInMinutes / 60;
+        var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
+
+        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+
+        console.log(`Adjusted date for event: ${adjustedDate}`);
+        console.log(`Adjusted time for event: ${adjustedTime}`);
+
+        // Update match date and time
+        matchDateElem.textContent = adjustedDate;
+        matchTimeElem.textContent = adjustedTime;
+
+        // Update kickoff date and time if available
+        if (kickoffDateElem && kickoffTimeElem) {
+            kickoffDateElem.textContent = adjustedDate;
+            kickoffTimeElem.textContent = adjustedTime;
+        }
+    }
+
+    function checkLiveStatus(container, eventStartTime, eventDurationMilliseconds) {
+        var now = new Date();
+        var liveLabel = container.querySelector('.live-label');
+
+        if (now >= eventStartTime) {
+            liveLabel.style.display = 'block';
+            console.log('Event live:', container.getAttribute('data-id'));
+
+            // Set timeout untuk menyembunyikan event container saat event berakhir
+            var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+            setTimeout(function() {
+                var now = new Date();
+                if (now >= eventEndTime) {
+                    markEventAsEnded(container.getAttribute('data-id')); // Sembunyikan event-container saat event berakhir
+                }
+            }, eventEndTime.getTime() - now);
+        } else {
+            liveLabel.style.display = 'none';
+            console.log('Event not live yet:', container.getAttribute('data-id'));
+
+            // Set timeout untuk mengecek status live lagi saat event dimulai
+            setTimeout(function() {
+                checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
+            }, eventStartTime.getTime() - now);
+        }
+    }
+
+    function setupChannels() {
+        var channelContainers = document.querySelectorAll('.channel-container');
+        var activeChannelId = sessionStorage.getItem('activeChannelId');
+
+        channelContainers.forEach(function(container) {
+            var channelId = container.getAttribute('data-id');
+
+            if (channelId === activeChannelId) {
+                container.classList.add('selected');
+                loadEventVideo(container);
+            }
+
+            container.addEventListener('click', function() {
+                channelContainers.forEach(function(otherContainer) {
+                    otherContainer.classList.remove('selected');
+                });
+
+                container.classList.add('selected');
+                sessionStorage.setItem('activeChannelId', channelId);
+                sessionStorage.removeItem('activeEventId'); // Hapus pilihan event agar tidak konflik
+                loadEventVideo(container);
+            });
+        });
+    }
+
+    var reconnectTimeout = null;
+    var lastLoadedUrl = null;
+
+    function normalizeUrl(url) {
+        try {
+            let urlObj = new URL(url);
+            return urlObj.origin + urlObj.pathname + urlObj.search;
+        } catch (e) {
+            console.error("Invalid URL:", url);
+            return url;
+        }
+    }
+
+    function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
+        var id = container.getAttribute('data-id');
+        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+        var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
+        var isChannel = container.classList.contains('channel-container');
+
+        var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
+        var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
+        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+        var eventStartTime = parseEventDateTime(matchDate, matchTime);
+        var now = new Date();
+
+        if (isNaN(eventStartTime.getTime()) && !isChannel) {
+            console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
+            return;
+        }
+
+        if (resetActiveId) {
+            if (isChannel) {
+                sessionStorage.setItem('activeChannelId', id);
+                sessionStorage.removeItem('activeEventId');
+            } else {
+                sessionStorage.setItem('activeEventId', id);
+                sessionStorage.removeItem('activeChannelId');
+                activeEventId = id;
+            }
+        }
+
+        var countdownElement = document.getElementById('countdown');
+        var countdownTimer = countdownElement.querySelector('.countdown-timer');
+        var videoIframe = document.getElementById('video-iframe');
+        var videoPlaceholder = document.getElementById('video-placeholder');
+        var playerElement = document.getElementById("player");
+
+        if (url.includes('sportsonline') || url.includes('sportcastelite') || url.includes('venoms') || url.includes('p2plive2')) {
+            videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+        } else {
+            videoIframe.removeAttribute('sandbox');
+        }
+
+        document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
+            countdown.style.display = 'none';
+        });
+        for (var key in intervals) {
+            clearInterval(intervals[key]);
+        }
+
+        document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
+            buttonsContainer.style.display = 'none';
+        });
+
+        // Tampilkan langsung jika channel (iframe penuh)
+        if (isChannel) {
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+            console.log('Channel video loaded:', url);
+            return;
+        }
+
+        // Event container logic
+        if (now >= eventStartTime) {
+            countdownElement.style.display = 'none';
+
+            if (videoIframe && videoIframe.src !== url) {
+                videoIframe.src = '';
+                videoIframe.style.display = 'none';
+            }
+
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+
+            setActiveHoverEffect(id);
+            console.log('Loading event video now:', id);
+            toggleServerButtons(container, true);
+            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
+
+            var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
+            if (activeButton) {
+                selectServerButton(activeButton);
+            }
+        } else {
+            countdownElement.style.display = 'block';
+            videoIframe.style.display = 'none';
+            videoPlaceholder.style.display = 'block';
+            playerElement.style.display = 'none';
+            updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
+            setActiveHoverEffect(id);
+            console.log('Setting countdown for future event:', id);
+        }
+
+        toggleServerButtons(container, now >= eventStartTime);
+
+        if (resetActiveId && specificUrl) {
+            sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
+        }
+    }
+
+    function markEventAsEnded(eventId) {
+        var eventContainer = document.querySelector(`.event-container[data-id="${eventId}"]`);
+        if (eventContainer) {
+            sessionStorage.setItem(`eventStatus_${eventId}`, 'ended'); // Simpan status "Ended" di sessionStorage
+            eventContainer.style.display = 'none'; // Sembunyikan event container ketika event berakhir
+        }
+    }
+
+    function redirectToEndedURL() {
+        var storedActiveEventId = sessionStorage.getItem('activeEventId');
+        var storedStatus = sessionStorage.getItem(`eventStatus_${storedActiveEventId}`);
+
+        if (storedStatus === 'ended') {
+            // Jika event sudah berakhir, sembunyikan event-container aktif
+            var activeEventContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeEventContainer) {
+                activeEventContainer.style.display = 'none'; // Sembunyikan event container
+            }
+        }
+    }
+
+    function setActiveHoverEffect(activeId) {
+        // Menghapus class hover-effect dari semua containers
+        document.querySelectorAll('.event-container').forEach(function(container) {
+            container.classList.remove('hover-effect');
+        });
+
+        // Menambahkan class hover-effect hanya pada container dengan id yang aktif
+        var activeContainer = document.querySelector('.event-container[data-id="' + activeId + '"]');
+        if (activeContainer) {
+            activeContainer.classList.add('hover-effect');
+            console.log('Hover effect set for event:', activeId);
+        }
+    }
+
+    function resetHoverEffect() {
+        if (activeEventId) {
+            var activeContainer = document.querySelector('.event-container[data-id="' + activeEventId + '"]');
+            if (activeContainer) {
+                activeContainer.classList.add('hover-effect');
+                console.log('Hover effect reset for active event:', activeEventId);
+            }
+        }
+    }
+
+    function toggleServerButtons(container, show = true) {
+        var serverButtonsContainer = container.querySelector('.server-buttons');
+        if (show) {
+            serverButtonsContainer.style.display = 'flex';
+        } else {
+            serverButtonsContainer.style.display = 'none';
+        }
+    }
+
+    function selectServerButton(button) {
+        // Menghapus class active dari semua tombol server
+        var buttons = document.querySelectorAll('.server-button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Menambahkan class active pada tombol yang diklik
+        button.classList.add('active');
+        // Simpan URL dari tombol server yang aktif
+        var url = button.getAttribute('data-url');
+        var eventId = button.closest('.event-container').getAttribute('data-id');
+        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
+    }
+
+    // Fungsi untuk switch content
+    function switchContent(target) {
+        document.querySelectorAll('.sidebar-content').forEach(function(content) {
+            content.classList.remove('active'); // hide all content
+        });
+        var targetContent = document.getElementById(target);
+        targetContent.classList.add('active'); // show target content
+
+        // Lazy load chat iframe
+        if (target === 'chat') {
+            var chatIframe = targetContent.querySelector('.chat-iframe');
+            if (chatIframe && !chatIframe.src) {
+                chatIframe.src = chatIframe.getAttribute('data-src');
+            }
+        }
+    }
+
+    function refreshVideoPlayer() {
+        var videoIframe = document.getElementById('video-iframe');
+        if (videoIframe) {
+            var currentSrc = videoIframe.src;
+
+            // Cek apakah iframe tersebut menggunakan Clappr dengan pengecekan sumber video HLS
+            if (currentSrc.includes('m3u8') || currentSrc.includes('clappr')) {
+                try {
+                    // Akses player Clappr di dalam iframe
+                    var player = videoIframe.contentWindow.player;
+
+                    if (player) {
+                        // Reload Clappr player tanpa mengosongkan src iframe
+                        player.stop();
+                        player.load({
+                            source: player.options.source
+                        }); // Memuat ulang stream yang sama
+                        player.play(); // Mulai ulang player
+                        console.log('Clappr player refreshed successfully');
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh Clappr player:', error);
+                }
+            } else {
+                // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
+                videoIframe.src = ''; // Kosongkan src
+                // Set atribut sandbox jika perlu
+                if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
+                    videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+                } else {
+                    videoIframe.removeAttribute('sandbox');
+                }
+                videoIframe.src = currentSrc; // Set ulang src untuk reload iframe
+                console.log('Non-Clappr iframe refreshed successfully');
+            }
+        }
+    }
+
+    function startPeriodicEventCheck() {
+        setInterval(function() {
+            var now = new Date();
+            document.querySelectorAll('.event-container').forEach(function(container) {
+                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
+                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
+                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+                var eventStartTime = parseEventDateTime(matchDate, matchTime);
+                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+
+                if (now >= eventEndTime) {
+                    var id = container.getAttribute('data-id');
+                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
+                }
+            });
+        }, 60000); // Periksa setiap menit
+    }
+
+	window.addEventListener('DOMContentLoaded', async () => {
+		await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
+		await loadChannelsFromJSON(); // 🔁 Panggil sekali (tidak perlu interval)
+
+		setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh event.json setiap 5 detik
+
+		// 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
+		const storedActiveEventId = sessionStorage.getItem('activeEventId');
+		const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+		if (storedActiveEventId && storedActiveServerUrl) {
+			const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+			if (activeContainer) {
+				const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+				if (storedButton) {
+					selectServerButton(storedButton);
+					loadEventVideo(activeContainer, storedActiveServerUrl, false);
+				}
+			}
+		}
+	});

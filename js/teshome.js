@@ -390,6 +390,7 @@ function setupChannels() {
 
             container.classList.add('selected');
             sessionStorage.setItem('activeChannelId', channelId);
+	    sessionStorage.removeItem('activeEventId'); // Hapus pilihan event agar tidak konflik
             loadEventVideo(container);
         });
     });
@@ -431,6 +432,7 @@ function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
     if (resetActiveId) {
         activeEventId = id;
         sessionStorage.setItem('activeEventId', id);
+	sessionStorage.removeItem('activeChannelId'); // Hapus pilihan channel
     }
 
     var countdownElement = document.getElementById('countdown');

@@ -371,281 +371,239 @@ async function loadEventsFromJSON() {
         }
     }
 
-    function setupChannels() {
-        var channelContainers = document.querySelectorAll('.channel-container');
+function setupChannels() {
+    var channelContainers = document.querySelectorAll('.channel-container');
+    var activeChannelId = sessionStorage.getItem('activeChannelId');
 
-        // Ambil ID elemen yang sebelumnya dipilih dari sessionStorage
-        var activeChannelId = sessionStorage.getItem('activeChannelId');
+    channelContainers.forEach(function(container) {
+        var channelId = container.getAttribute('data-id');
 
-        channelContainers.forEach(function(container) {
-            var channelId = container.getAttribute('data-id'); // Pastikan elemen punya atribut unik, misalnya "data-id"
+        if (channelId === activeChannelId) {
+            container.classList.add('selected');
+            loadEventVideo(container);
+        }
 
-            // Jika elemen ini adalah yang terakhir dipilih, tambahkan kelas .selected
-            if (channelId === activeChannelId) {
-                container.classList.add('selected');
-                // Gunakan loadEventVideo untuk memuat ulang video dari channel-container
-                loadEventVideo(container); // Muat ulang video dengan fungsi loadEventVideo
-            }
+        container.addEventListener('click', function() {
+            channelContainers.forEach(function(otherContainer) {
+                otherContainer.classList.remove('selected');
+            });
 
-            // Tambahkan event listener untuk klik
-            container.addEventListener('click', function() {
-                // Hapus kelas .selected dari semua elemen lain
-                channelContainers.forEach(function(otherContainer) {
-                    otherContainer.classList.remove('selected');
+            container.classList.add('selected');
+            sessionStorage.setItem('activeChannelId', channelId);
+            loadEventVideo(container);
+        });
+    });
+}
+
+var clapprPlayerInstance = null;
+var reconnectTimeout = null;
+var lastLoadedUrl = null;
+
+function normalizeUrl(url) {
+    try {
+        let urlObj = new URL(url);
+        return urlObj.origin + urlObj.pathname + urlObj.search;
+    } catch (e) {
+        console.error("Invalid URL:", url);
+        return url;
+    }
+}
+
+function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
+    var id = container.getAttribute('data-id');
+    var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+    var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
+    var isChannel = container.classList.contains('channel-container');
+
+    var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
+    var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
+    var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+    var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+    var eventStartTime = parseEventDateTime(matchDate, matchTime);
+    var now = new Date();
+
+    if (isNaN(eventStartTime.getTime()) && !isChannel) {
+        console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
+        return;
+    }
+
+    if (resetActiveId) {
+        activeEventId = id;
+        sessionStorage.setItem('activeEventId', id);
+    }
+
+    var countdownElement = document.getElementById('countdown');
+    var countdownTimer = countdownElement.querySelector('.countdown-timer');
+    var videoIframe = document.getElementById('video-iframe');
+    var videoPlaceholder = document.getElementById('video-placeholder');
+    var playerElement = document.getElementById("player");
+
+    if (url.includes('sportsonline') || url.includes('sportcastelite') || url.includes('venoms') || url.includes('p2plive2')) {
+        videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+    } else {
+        videoIframe.removeAttribute('sandbox');
+    }
+
+    document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
+        countdown.style.display = 'none';
+    });
+    for (var key in intervals) {
+        clearInterval(intervals[key]);
+    }
+
+    document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
+        buttonsContainer.style.display = 'none';
+    });
+
+    if (isChannel) {
+        if (clapprPlayerInstance) {
+            clapprPlayerInstance.destroy();
+            clapprPlayerInstance = null;
+            lastLoadedUrl = null;
+        }
+
+        if (videoIframe.src !== url) {
+            videoIframe.src = url;
+        }
+        videoIframe.style.display = 'block';
+        videoPlaceholder.style.display = 'none';
+        playerElement.style.display = 'none';
+        console.log('Channel video loaded:', url);
+        return;
+    }
+
+    if (now >= eventStartTime) {
+        countdownElement.style.display = 'none';
+
+        if (videoIframe && videoIframe.src !== url) {
+            videoIframe.src = '';
+            videoIframe.style.display = 'none';
+        }
+
+        if (url.includes(".m3u8")) {
+            let normalizedUrl = normalizeUrl(url);
+
+            if (clapprPlayerInstance && lastLoadedUrl === normalizedUrl) {
+                console.log('Clappr sudah ada, sembunyikan video-placeholder dan tampilkan player');
+                videoPlaceholder.style.display = 'none';
+                playerElement.style.display = 'block';
+            } else {
+                if (clapprPlayerInstance) {
+                    clapprPlayerInstance.off(Clappr.Events.PLAYER_ERROR);
+                    clapprPlayerInstance.off(Clappr.Events.PLAYER_STOP);
+                    clearTimeout(reconnectTimeout);
+                    clapprPlayerInstance.destroy();
+                    clapprPlayerInstance = null;
+                }
+
+                videoPlaceholder.style.display = 'none';
+                playerElement.style.display = 'block';
+
+                clapprPlayerInstance = new Clappr.Player({
+                    source: normalizedUrl,
+                    height: '100%',
+                    width: '100%',
+                    loop: 'true',
+                    poster: 'https://kltraid.pages.dev/images/poster_11zon.jpg',
+                    plugins: [LevelSelector],
+                    mediacontrol: {
+                        seekbar: '#014AFF',
+                        buttons: '#FFF'
+                    },
+                    playback: {
+                        hlsjsConfig: {
+                            startPosition: -1,
+                        }
+                    },
+                    mimeType: "application/x-mpegURL"
                 });
 
-                // Tambahkan kelas .selected ke elemen yang diklik
-                container.classList.add('selected');
+                clapprPlayerInstance.attachTo(playerElement);
+                lastLoadedUrl = normalizedUrl;
 
-                // Simpan ID elemen yang sedang dipilih ke sessionStorage
-                sessionStorage.setItem('activeChannelId', channelId);
-
-                // Load video menggunakan loadEventVideo
-                loadEventVideo(container); // Panggil loadEventVideo untuk memuat video channel
-            });
-        });
-    }
-
-    // Variabel global untuk Clappr Player instance, timeout reconnect, dan cache URL
-    var clapprPlayerInstance = null;
-    var reconnectTimeout = null;
-    var lastLoadedUrl = null; // Cache URL terakhir yang dimuat
-
-    function normalizeUrl(url) {
-        try {
-            let urlObj = new URL(url);
-            // Hapus trailing slash, tetapi tetap simpan query string jika ada
-            let normalizedUrl = urlObj.origin + urlObj.pathname + urlObj.search;
-            return normalizedUrl;
-        } catch (e) {
-            console.error("Invalid URL:", url);
-            return url; // Kembalikan URL asli jika tidak bisa diparsing
-        }
-    }
-
-    function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
-        var id = container.getAttribute('data-id'); // Mendapatkan data-id
-        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`); // Ambil URL dari sessionStorage tanpa mendekripsi
-        var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
-        var isChannel = container.classList.contains('channel-container'); // Deteksi apakah ini channel-container
-
-        var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
-        var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
-        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
-        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
-
-        var eventStartTime = parseEventDateTime(matchDate, matchTime);
-        var now = new Date();
-
-        if (isNaN(eventStartTime.getTime()) && !isChannel) {
-            console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
-            return;
-        }
-
-        if (resetActiveId) {
-            activeEventId = id; // Set the active event ID
-            sessionStorage.setItem('activeEventId', id); // Save active event ID to session storage
-        }
-
-        var countdownElement = document.getElementById('countdown');
-        var countdownTimer = countdownElement.querySelector('.countdown-timer');
-        var videoIframe = document.getElementById('video-iframe');
-        var videoPlaceholder = document.getElementById('video-placeholder');
-        var playerElement = document.getElementById("player");
-
-        // Set sandbox attributes before loading the URL
-        var decryptedUrl = decryptUrl(url); // Dekripsi hanya pada variabel baru sebelum digunakan
-        if (decryptedUrl.includes('sportsonline') || decryptedUrl.includes('sportcastelite') || decryptedUrl.includes('venoms') || decryptedUrl.includes('p2plive2')) {
-            videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
-        } else {
-            videoIframe.removeAttribute('sandbox');
-        }
-
-        // Hide all countdowns and clear all intervals
-        document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
-            countdown.style.display = 'none';
-        });
-        for (var key in intervals) {
-            clearInterval(intervals[key]);
-        }
-
-        // Hide buttons for other events
-        document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
-            buttonsContainer.style.display = 'none';
-        });
-
-        // Jika ini channel-container (menggunakan iframe langsung)
-        if (isChannel) {
-            // Hentikan dan kosongkan Clappr Player jika masih aktif
-            if (clapprPlayerInstance) {
-                clapprPlayerInstance.destroy(); // Hancurkan Clappr Player
-                clapprPlayerInstance = null; // Reset Clappr instance setelah dihancurkan
-                lastLoadedUrl = null; // Reset URL terakhir yang dimuat
-            }
-
-            // Set URL iframe jika berbeda
-            if (videoIframe.src !== decryptedUrl) {
-                videoIframe.src = decryptedUrl; // Set URL iframe
-            }
-            videoIframe.style.display = 'block'; // Tampilkan iframe
-            videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
-            playerElement.style.display = 'none'; // Sembunyikan Clappr Player
-            console.log('Channel video loaded:', decryptedUrl);
-            return; // Tidak melanjutkan logika event-container
-        }
-
-        // Jika URL adalah m3u8, gunakan Clappr Player
-        if (now >= eventStartTime) {
-            countdownElement.style.display = 'none';
-
-            // Hentikan dan kosongkan iframe jika berpindah dari URL iframe ke URL lain
-            if (videoIframe && videoIframe.src !== decryptedUrl) {
-                videoIframe.src = ''; // Kosongkan src iframe untuk menghentikan pemutaran video
-                videoIframe.style.display = 'none'; // Sembunyikan iframe
-            }
-
-            if (decryptedUrl.includes(".m3u8")) {
-                let normalizedUrl = normalizeUrl(decryptedUrl);
-
-                // Jika Clappr player sudah ada dan tidak perlu diinisialisasi ulang
-                if (clapprPlayerInstance && lastLoadedUrl === normalizedUrl) {
-                    console.log('Clappr sudah ada, sembunyikan video-placeholder dan tampilkan player');
-                    videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
-                    playerElement.style.display = 'block'; // Pastikan player tetap tampil
-                } else {
-                    // Jika Clappr player sudah ada, tetapi URL berbeda, maka kita hancurkan dan inisialisasi ulang
-                    if (clapprPlayerInstance) {
-                        // Bersihkan event listeners dan pending reconnects
-                        clapprPlayerInstance.off(Clappr.Events.PLAYER_ERROR);
-                        clapprPlayerInstance.off(Clappr.Events.PLAYER_STOP);
-                        clearTimeout(reconnectTimeout);
-                        clapprPlayerInstance.destroy(); // Hancurkan player jika URL berbeda
-                        clapprPlayerInstance = null; // Reset instance setelah dihancurkan
-                    }
-
-                    videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
-                    playerElement.style.display = 'block'; // Tampilkan Clappr Player
-
-                    // Inisialisasi Clappr Player
-                    clapprPlayerInstance = new Clappr.Player({
-                        source: normalizedUrl,
-                        height: '100%',
-                        width: '100%',
-                        loop: 'true',
-                        poster: 'https://kltraid.pages.dev/images/poster_11zon.jpg',
-                        plugins: [LevelSelector],
-                        mediacontrol: {
-                            seekbar: '#014AFF',
-                            buttons: '#FFF'
-                        },
-                        playback: {
-                            hlsjsConfig: {
-                                startPosition: -1, // Selalu mulai dari posisi live terkini
-                            }
-                        },
-                        mimeType: "application/x-mpegURL"
-                    });
-
-                    clapprPlayerInstance.attachTo(playerElement); // Attach Clappr ke playerElement
-                    lastLoadedUrl = normalizedUrl; // Simpan URL terakhir yang dimuat
-
-                    // Force landscape on fullscreen
-                    clapprPlayerInstance.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
-                        if (screen.orientation && screen.orientation.lock) {
-                            screen.orientation.lock('landscape').catch(function(error) {
-                                console.error('Failed to lock screen orientation:', error);
-                            });
-                        }
-                    });
-
-                    // Unlock orientation on exit fullscreen
-                    clapprPlayerInstance.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
-                        if (screen.orientation && screen.orientation.unlock) {
-                            screen.orientation.unlock();
-                        }
-                    });
-
-                    // Auto-reconnect on error
-                    clapprPlayerInstance.on(Clappr.Events.PLAYER_ERROR, function() {
-                        console.log('Error occurred, attempting to reconnect...');
-                        clearTimeout(reconnectTimeout); // Clear any pending reconnects
-                        reconnectTimeout = setTimeout(function() {
-                            if (clapprPlayerInstance && clapprPlayerInstance.options.source === normalizedUrl) {
-                                clapprPlayerInstance.load({
-                                    source: normalizedUrl
-                                });
-                                clapprPlayerInstance.play();
-                            }
-                        }, 5000); // Coba lagi dalam 5 detik
-                    });
-
-                    // Auto-play after stop
-                    clapprPlayerInstance.on(Clappr.Events.PLAYER_STOP, function() {
-                        if (!clapprPlayerInstance.isPaused()) {
-                            console.log('Stream stopped, trying to reconnect');
-                            clapprPlayerInstance.play(); // Auto-reconnect jika stream berhenti
-                        }
-                    });
-
-                    // Auto resize player
-                    function resizePlayer() {
-                        requestAnimationFrame(() => {
-                            var newWidth = playerElement.parentElement.offsetWidth;
-                            var newHeight = playerElement.parentElement.offsetHeight;
-                            clapprPlayerInstance.resize({
-                                width: newWidth,
-                                height: newHeight
-                            });
+                clapprPlayerInstance.on(Clappr.Events.PLAYER_FULLSCREEN, function() {
+                    if (screen.orientation && screen.orientation.lock) {
+                        screen.orientation.lock('landscape').catch(function(error) {
+                            console.error('Failed to lock screen orientation:', error);
                         });
                     }
-                    resizePlayer();
-                    window.onresize = resizePlayer;
-                }
+                });
 
-            } else {
-                // Untuk URL lain (bukan m3u8), gunakan iframe biasa
-                playerElement.style.display = 'none'; // Sembunyikan Clappr Player
-                if (clapprPlayerInstance) {
-                    clapprPlayerInstance.destroy(); // Hancurkan Clappr Player jika masih ada
-                    clapprPlayerInstance = null; // Reset instance setelah dihancurkan
-                    lastLoadedUrl = null; // Reset URL yang terakhir dimuat
+                clapprPlayerInstance.on(Clappr.Events.PLAYER_EXIT_FULLSCREEN, function() {
+                    if (screen.orientation && screen.orientation.unlock) {
+                        screen.orientation.unlock();
+                    }
+                });
+
+                clapprPlayerInstance.on(Clappr.Events.PLAYER_ERROR, function() {
+                    console.log('Error occurred, attempting to reconnect...');
+                    clearTimeout(reconnectTimeout);
+                    reconnectTimeout = setTimeout(function() {
+                        if (clapprPlayerInstance && clapprPlayerInstance.options.source === normalizedUrl) {
+                            clapprPlayerInstance.load({ source: normalizedUrl });
+                            clapprPlayerInstance.play();
+                        }
+                    }, 5000);
+                });
+
+                clapprPlayerInstance.on(Clappr.Events.PLAYER_STOP, function() {
+                    if (!clapprPlayerInstance.isPaused()) {
+                        console.log('Stream stopped, trying to reconnect');
+                        clapprPlayerInstance.play();
+                    }
+                });
+
+                function resizePlayer() {
+                    requestAnimationFrame(() => {
+                        var newWidth = playerElement.parentElement.offsetWidth;
+                        var newHeight = playerElement.parentElement.offsetHeight;
+                        clapprPlayerInstance.resize({ width: newWidth, height: newHeight });
+                    });
                 }
-                if (videoIframe.src !== decryptedUrl) { // Hanya update src jika berbeda
-                    videoIframe.src = decryptedUrl; // Load URL untuk iframe
-                }
-                videoIframe.style.display = 'block'; // Tampilkan iframe
-                videoPlaceholder.style.display = 'none'; // Sembunyikan placeholder
+                resizePlayer();
+                window.onresize = resizePlayer;
             }
 
-            setActiveHoverEffect(id); // Fungsi untuk mengatur efek hover berdasarkan id
-            console.log('Loading event video now:', id);
-            toggleServerButtons(container, true); // Tampilkan tombol server
-            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds); // Show live label
-
-            // Mark the correct button as active if not already marked
-            var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
-            if (activeButton) {
-                selectServerButton(activeButton);
-            }
         } else {
-            // Jika event belum dimulai, tampilkan video-placeholder tanpa menghancurkan Clappr player
-            countdownElement.style.display = 'block';
-            videoIframe.style.display = 'none';
-            videoPlaceholder.style.display = 'block'; // Pastikan placeholder tampil di atas Clappr
-            playerElement.style.display = 'none'; // Sembunyikan Clappr player sementara waktu
-            updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
-            setActiveHoverEffect(id); // Set hover effect when event is selected
-            console.log('Setting countdown for future event:', id);
+            playerElement.style.display = 'none';
+            if (clapprPlayerInstance) {
+                clapprPlayerInstance.destroy();
+                clapprPlayerInstance = null;
+                lastLoadedUrl = null;
+            }
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
         }
 
-        // Tampilkan tombol server untuk event yang aktif
-        toggleServerButtons(container, now >= eventStartTime);
+        setActiveHoverEffect(id);
+        console.log('Loading event video now:', id);
+        toggleServerButtons(container, true);
+        checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
 
-        // Simpan URL server yang aktif di sessionStorage
-        if (resetActiveId && specificUrl) {
-            sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
+        var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
+        if (activeButton) {
+            selectServerButton(activeButton);
         }
+    } else {
+        countdownElement.style.display = 'block';
+        videoIframe.style.display = 'none';
+        videoPlaceholder.style.display = 'block';
+        playerElement.style.display = 'none';
+        updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
+        setActiveHoverEffect(id);
+        console.log('Setting countdown for future event:', id);
     }
+
+    toggleServerButtons(container, now >= eventStartTime);
+
+    if (resetActiveId && specificUrl) {
+        sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
+    }
+}
 
     function markEventAsEnded(eventId) {
         var eventContainer = document.querySelector(`.event-container[data-id="${eventId}"]`);

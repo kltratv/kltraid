@@ -1,16 +1,26 @@
 [
   {
-    "id": "05be4b2e-4e54-4ecf-a563-43363f139dad",
+    "id": "00857e76-c200-4277-b26a-1d7f93ea1286",
     "servers": [
       {
-        "key": "Nop7KeT1gG",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895261165136061_AiSD.m3u8?txSecret=1d7a718a13628857a6fbd4a38bf45f24&txTime=6827FBB0",
-        "label": "Server 1"
+        "key": "jYA7uBNlRi",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
+        "label": "KILAT"
       },
       {
-        "key": "NWeawEDuNG",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895261344016061_AiSD.m3u8?txSecret=961bf83ae0e7a06bf1b6a2062f44f83b&txTime=6827FBB0",
-        "label": "Server 2"
+        "key": "mH4rZRBhNq",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4140076-2.m3u8?txSecret=6dff0d83936add636503d80b6fdf53ef&txTime=6827def7",
+        "label": "HOY"
+      },
+      {
+        "key": "qrYjWzFFaK",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1MDc2MCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SOCCERWATCH"
+      },
+      {
+        "key": "z8NlvMbh71",
+        "url": "https://kc.elutuna.workers.dev/203/playlist.m3u8",
+        "label": "SPOCHAK"
       }
     ]
   }

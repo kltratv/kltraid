@@ -1,41 +1,16 @@
 [
   {
-    "id": "c5c0a890-51f4-4954-be58-bf31c34dd8d9",
+    "id": "ab47f9ee-544c-4175-82a8-a2b3e9245a0d",
     "servers": [
       {
-        "key": "pkmPSS1yTW",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2ODg1MSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "Server 1"
-      },
-      {
-        "key": "XGuTQHcZIk",
+        "key": "aNjt246lRS",
         "url": "",
-        "label": "Server 2"
+        "label": "SERVER 1"
       },
       {
-        "key": "HbfIJu36qw",
+        "key": "tlHDNFbKxs",
         "url": "",
-        "label": "Server 3"
-      }
-    ]
-  },
-  {
-    "id": "700bf11d-8d54-4469-a65b-3c61f9fd07dc",
-    "servers": [
-      {
-        "key": "SzBZucJ3HL",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY0NTUxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "Server 1"
-      },
-      {
-        "key": "pHBPlaalLx",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_20/index.m3u8",
-        "label": "Server 2"
-      },
-      {
-        "key": "hDEpXDnZwX",
-        "url": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
-        "label": "Server 3"
+        "label": "SERVER 2"
       }
     ]
   }

@@ -1,1 +1,17 @@
-[]
+[
+  {
+    "id": "05be4b2e-4e54-4ecf-a563-43363f139dad",
+    "servers": [
+      {
+        "key": "Nop7KeT1gG",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895261165136061_AiSD.m3u8?txSecret=1d7a718a13628857a6fbd4a38bf45f24&txTime=6827FBB0",
+        "label": "Server 1"
+      },
+      {
+        "key": "NWeawEDuNG",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895261344016061_AiSD.m3u8?txSecret=961bf83ae0e7a06bf1b6a2062f44f83b&txTime=6827FBB0",
+        "label": "Server 2"
+      }
+    ]
+  }
+]

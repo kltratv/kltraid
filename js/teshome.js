@@ -429,11 +429,16 @@ function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
         return;
     }
 
-    if (resetActiveId) {
-        activeEventId = id;
-        sessionStorage.setItem('activeEventId', id);
-	sessionStorage.removeItem('activeChannelId'); // Hapus pilihan channel
+if (resetActiveId) {
+    if (isChannel) {
+	sessionStorage.setItem('activeChannelId', id);
+	sessionStorage.removeItem('activeEventId');
+    } else {
+	sessionStorage.setItem('activeEventId', id);
+	sessionStorage.removeItem('activeChannelId');
+	activeEventId = id;
     }
+}
 
     var countdownElement = document.getElementById('countdown');
     var countdownTimer = countdownElement.querySelector('.countdown-timer');

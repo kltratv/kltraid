@@ -138,8 +138,8 @@
 			const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
 			if (storedButton) {
 				selectServerButton(storedButton);
-				loadEventVideo(activeContainer, storedActiveServerUrl, false);
 			}
+			loadEventVideo(activeContainer, storedActiveServerUrl, false);
 		}
 	}
 
@@ -659,12 +659,12 @@
     }
 
 	window.addEventListener('DOMContentLoaded', async () => {
-		await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
-		await loadChannelsFromJSON(); // 🔁 Panggil sekali (tidak perlu interval)
+		await loadEventsFromJSON();       // 🔁 Panggil sekali saat halaman pertama dibuka
+		await loadChannelsFromJSON();     // 🔁 Panggil sekali
 
-		setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh event.json setiap 5 detik
+		setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh setiap 5 detik
 
-		// 🔄 Restore session (aktifkan kembali video jika user kembali dari popunder/tab)
+		// 🔄 Restore session untuk event
 		const storedActiveEventId = sessionStorage.getItem('activeEventId');
 		const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
@@ -674,8 +674,19 @@
 				const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
 				if (storedButton) {
 					selectServerButton(storedButton);
-					loadEventVideo(activeContainer, storedActiveServerUrl, false);
 				}
+				loadEventVideo(activeContainer, storedActiveServerUrl, false);
+				return; // ⬅️ Jika event ditemukan, tidak lanjut ke channel
+			}
+		}
+
+		// 🔄 Restore session untuk channel (jika event tidak tersedia)
+		const storedActiveChannelId = sessionStorage.getItem('activeChannelId');
+		if (storedActiveChannelId) {
+			const activeChannel = document.querySelector(`.channel-container[data-id="${storedActiveChannelId}"]`);
+			if (activeChannel) {
+				activeChannel.classList.add('selected');
+				loadEventVideo(activeChannel);
 			}
 		}
 	});

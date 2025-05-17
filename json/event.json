@@ -435,5 +435,24 @@
     "match_date": "2025-05-18",
     "match_time": "02:00",
     "firstRow": 36
+  },
+  {
+    "id": "bcebcbcc-c94b-48fb-b3e0-40753eff757d",
+    "duration": 10,
+    "league": "UFC Fight Night",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Pertarungan.png",
+    "team1": {
+      "name": "UFC",
+      "logo": "https://i.imgur.com/FYmwhN9.png"
+    },
+    "team2": {
+      "name": "UFC",
+      "logo": "https://i.imgur.com/FYmwhN9.png"
+    },
+    "kickoff_date": "2025-05-18",
+    "kickoff_time": "07:00",
+    "match_date": "2025-05-18",
+    "match_time": "07:00",
+    "firstRow": 26
   }
 ]

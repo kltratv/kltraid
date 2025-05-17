@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "d59a1fa0-ed3c-426f-9d3e-f105ec5cc56b",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al Ittifaq",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/yg0RhOLRCzpRO4_h0Td4Og_96x96.png"
-    },
-    "team2": {
-      "name": "Damac",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/50532.png?lm=1698933712"
-    },
-    "kickoff_date": "2025-05-17",
-    "kickoff_time": "22:55",
-    "match_date": "2025-05-17",
-    "match_time": "22:25",
-    "firstRow": 5
-  },
-  {
     "id": "310a2a68-924e-424f-b094-655c9d2506e4",
     "duration": 3,
     "league": "Saudi Pro League",

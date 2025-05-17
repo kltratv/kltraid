@@ -38,25 +38,6 @@
     "firstRow": 9
   },
   {
-    "id": "f50a1e4f-a8ea-428e-a428-5fbd63133477",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al-Ahli",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/8S9rNUFk1YO27XsLV6jn_Q_96x96.png"
-    },
-    "team2": {
-      "name": "Al Kholood",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/91427.png?lm=1719154382"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "01:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:30",
-    "firstRow": 15
-  },
-  {
     "id": "837370a4-266f-4107-85f3-927381da49d6",
     "duration": 3,
     "league": "Serie A",

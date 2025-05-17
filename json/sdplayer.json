@@ -21,6 +21,11 @@
         "key": "IxsE4nmWyE",
         "url": "https://live.jiatianxiazhuangshi.com/live/57130717_072966befb4dfb53c29965f330892e74_nsd.m3u8",
         "label": "ANDROID/PC"
+      },
+      {
+        "key": "fgWAeims3R",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4262938-0.m3u8?txSecret=005feabce95778210504ce5860545c39&txTime=6828739b",
+        "label": "SD [IOS]"
       }
     ]
   },

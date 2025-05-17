@@ -20,6 +20,46 @@
     ]
   },
   {
+    "id": "9096ca3d-2d74-4e6f-b545-28f03f0e19f0",
+    "servers": [
+      {
+        "key": "aFs0L1itjn",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160782-0.m3u8?txSecret=daf3bfe8e863e1f762a26eabd63fa6dd&txTime=6828f9a5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "9kYvYLBrMB",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "DxPA1i6ynG",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "18f16fb9-9e08-4009-a3a9-52dc4a87be54",
+    "servers": [
+      {
+        "key": "KwdmPpDIeE",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160783-0.m3u8?txSecret=1888c4065caf2d1bb37f0653827c1543&txTime=6828f9a5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "HfHxwgHsdu",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "oquBmxbY5Z",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
@@ -431,46 +471,6 @@
         "key": "omTgMBR3x1",
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4172018-0.m3u8?txSecret=3e92bd11d1fbbbd038fa0631de0c2d4e&txTime=6828eea1",
         "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "9096ca3d-2d74-4e6f-b545-28f03f0e19f0",
-    "servers": [
-      {
-        "key": "aFs0L1itjn",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "9kYvYLBrMB",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "DxPA1i6ynG",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "18f16fb9-9e08-4009-a3a9-52dc4a87be54",
-    "servers": [
-      {
-        "key": "KwdmPpDIeE",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "HfHxwgHsdu",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "oquBmxbY5Z",
-        "url": "",
-        "label": ""
       }
     ]
   },

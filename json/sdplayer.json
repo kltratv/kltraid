@@ -1,10 +1,15 @@
 [
   {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2efr45f",
+    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
     "servers": [
       {
-        "key": "fG79YmXdC5",
-        "url": "",
+        "key": "FfZgxH44or",
+        "url": "https://goalstreamz.com/events/nbastreams1/",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "FsVPPGimHu",
+        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
         "label": "SD [IOS]"
       }
     ]
@@ -25,16 +30,11 @@
     ]
   },
   {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "id": "fd974796-5e3d-4d03-ab14-89adb2efr45f",
     "servers": [
       {
-        "key": "FfZgxH44or",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3852527-2.m3u8?txSecret=b82926b6000e6c31731d7c12f2738483&txTime=68280a17",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "FsVPPGimHu",
-        "url": "https://live2.jiatianxiazhuangshi.com/live/ndqmrs39mg1urkv_120ddccb699700771fef89b301fb53df_autoChange.m3u8?auth_key=1747453979-0-0-b8204e7c343da1bad16389c9f9785517",
+        "key": "fG79YmXdC5",
+        "url": "",
         "label": "SD [IOS]"
       }
     ]

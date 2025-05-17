@@ -76,25 +76,6 @@
     "firstRow": 7
   },
   {
-    "id": "e9edf115-082f-4e8b-b1ae-3be1880f88c8",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Adana Demirspor",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/3840.png?lm=1442129502"
-    },
-    "team2": {
-      "name": "Hatayspor",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/7775.png?lm=1441723606"
-    },
-    "kickoff_date": "2025-05-17",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-17",
-    "match_time": "23:00",
-    "firstRow": 6
-  },
-  {
     "id": "b9666222-8795-45fd-ba89-cd1a9ae6acd3",
     "duration": 2.17,
     "league": "Liga Portugal",

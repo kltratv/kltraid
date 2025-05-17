@@ -48,6 +48,7 @@ async function loadEventsFromJSON() {
     const playerList = await playerRes.json();
     const playerMap = {};
 
+    // Buat peta player berdasarkan ID
     playerList.forEach(item => {
         if (item.id && Array.isArray(item.servers)) {
             playerMap[item.id] = item.servers;
@@ -59,16 +60,13 @@ async function loadEventsFromJSON() {
 
     events.forEach(event => {
         const servers = playerMap[event.id] || [];
-
-        // Gunakan server.url jika tersedia, fallback ke playerBaseUrl + key
-        const defaultUrl = servers[0]?.url?.trim()
-            ? servers[0].url.trim()
-            : (servers[0]?.key ? `${playerBaseUrl}${servers[0].key}` : '');
+        const firstKey = servers[0]?.key || '';
+        const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
 
         const serversForAttribute = servers.map(s => ({
             key: s.key,
             label: s.label,
-            url: s.url?.trim() ? s.url.trim() : `${playerBaseUrl}${s.key}`
+            url: `${playerBaseUrl}${s.key}` // Selalu arahkan ke halaman iklan (playersd)
         }));
 
         const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
@@ -81,28 +79,28 @@ async function loadEventsFromJSON() {
              data-duration="${event.duration}">
              
             <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-
+            
             <div class="team">
                 <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
                 <span>${event.team1.name}</span>
             </div>
-
+            
             <div class="kickoff-match-date">${event.kickoff_date}</div>
             <div class="kickoff-match-time">${event.kickoff_time}</div>
             <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
             <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
             <div class="live-label" style="display:none;">Live</div>
-
+            
             <div class="team">
                 <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
                 <span>${event.team2.name}</span>
             </div>
-
+            
             <div class="server-buttons" style="display:none;">
                 <div class="instruction">You can select a server stream:</div>
                 <div class="buttons-container"></div>
             </div>
-
+            
             <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
                 <div class="countdown-title">Event will start in:</div>
                 <div class="countdown-timer"></div>
@@ -112,28 +110,26 @@ async function loadEventsFromJSON() {
 
         container.insertAdjacentHTML('beforeend', html);
 
-        // Inject tombol server berbasis key
         const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
         const buttonContainer = eventContainer.querySelector('.buttons-container');
 
-        serversForAttribute.forEach((server, index) => {
+        servers.forEach((server, index) => {
             const div = document.createElement('div');
             div.className = 'server-button';
             if (index === 0) div.classList.add('active');
-            div.setAttribute('data-url', server.url);
+            div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
             div.textContent = server.label;
             buttonContainer.appendChild(div);
         });
     });
 
-    // Spacer agar scroll tidak terpotong
     if (!container.querySelector('#spacer')) {
         container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
     }
 
     setupEvents();
 
-    // Restore session
+    // Restore session (tanpa decrypt lagi)
     const storedActiveEventId = sessionStorage.getItem('activeEventId');
     const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 

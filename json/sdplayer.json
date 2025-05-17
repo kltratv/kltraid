@@ -10,6 +10,36 @@
     ]
   },
   {
+    "id": "4e0630a2-6565-4e7b-a527-fb34de924793",
+    "servers": [
+      {
+        "key": "6BaiT0rYoA",
+        "url": "https://live2.jiatianxiazhuangshi.com/live/52325133_47672afc50079d883f31fcdab559fe83_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "X1EyLOqFJ2",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "ee09c18c-6c02-438a-b4d0-b0cf1da6ecc9",
+    "servers": [
+      {
+        "key": "nmu7Nwg7E3",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "w2qUoIvbSo",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {

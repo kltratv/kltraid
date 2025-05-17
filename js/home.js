@@ -36,18 +36,21 @@
         }
     }
 
-    async function loadEventsFromJSON() {
-        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
+async function loadEventsFromJSON() {
+    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
 
+    try {
         const [eventRes, playerRes] = await Promise.all([
             fetch('https://content.elutuna.workers.dev/event.json'),
             fetch('https://content.elutuna.workers.dev/sdplayer.json')
         ]);
 
+        if (!eventRes.ok || !playerRes.ok) throw new Error('Gagal memuat JSON');
+
         const events = await eventRes.json();
         const playerList = await playerRes.json();
-        const playerMap = {};
 
+        const playerMap = {};
         playerList.forEach(item => {
             if (item.id && Array.isArray(item.servers)) {
                 playerMap[item.id] = item.servers;
@@ -61,6 +64,7 @@
             const servers = playerMap[event.id] || [];
             const firstKey = servers[0]?.key || '';
             const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+
             const serversForAttribute = servers.map(s => ({
                 key: s.key,
                 label: s.label,
@@ -69,45 +73,44 @@
             const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
             const html = `
-        <div class="event-container"
-             data-id="${event.id}"
-             data-url="${defaultUrl}"
-             data-servers="${encodedServers}"
-             data-duration="${event.duration}">
-             
-            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-            
-            <div class="team">
-                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
-                <span>${event.team1.name}</span>
-            </div>
-            
-            <div class="kickoff-match-date">${event.kickoff_date}</div>
-            <div class="kickoff-match-time">${event.kickoff_time}</div>
-            <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
-            <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
-            <div class="live-label" style="display:none;">Live</div>
-            
-            <div class="team">
-                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
-                <span>${event.team2.name}</span>
-            </div>
-            
-            <div class="server-buttons" style="display:none;">
-                <div class="instruction">You can select a server stream:</div>
-                <div class="buttons-container"></div>
-            </div>
-            
-            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
-                <div class="countdown-title">Event will start in:</div>
-                <div class="countdown-timer"></div>
-            </div>
-        </div>
-        `;
+                <div class="event-container"
+                    data-id="${event.id}"
+                    data-url="${defaultUrl}"
+                    data-servers="${encodedServers}"
+                    data-duration="${event.duration}">
+                    
+                    <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+
+                    <div class="team">
+                        <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+                        <span>${event.team1.name}</span>
+                    </div>
+
+                    <div class="kickoff-match-date">${event.kickoff_date}</div>
+                    <div class="kickoff-match-time">${event.kickoff_time}</div>
+                    <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+                    <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+                    <div class="live-label" style="display:none;">Live</div>
+
+                    <div class="team">
+                        <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+                        <span>${event.team2.name}</span>
+                    </div>
+
+                    <div class="server-buttons" style="display:none;">
+                        <div class="instruction">You can select a server stream:</div>
+                        <div class="buttons-container"></div>
+                    </div>
+
+                    <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+                        <div class="countdown-title">Event will start in:</div>
+                        <div class="countdown-timer"></div>
+                    </div>
+                </div>
+            `;
 
             container.insertAdjacentHTML('beforeend', html);
 
-            // Inject tombol server berbasis key → player page
             const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
             const buttonContainer = eventContainer.querySelector('.buttons-container');
 
@@ -121,29 +124,32 @@
             });
         });
 
-        // Spacer agar tidak terpotong scroll
+        // Spacer agar scroll tidak terpotong
         if (!container.querySelector('#spacer')) {
             container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
         }
 
         setupEvents();
 
-	// Restore session
-	const storedActiveEventId = sessionStorage.getItem('activeEventId');
-	const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+        // ✅ Restore session
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 
-	if (storedActiveEventId && storedActiveServerUrl) {
-		const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-		if (activeContainer) {
-			const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-			if (storedButton) {
-				selectServerButton(storedButton);
-			}
-			loadEventVideo(activeContainer, storedActiveServerUrl, false);
-		}
-	}
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                }
+                loadEventVideo(activeContainer, storedActiveServerUrl, false);
+            }
         }
+
+    } catch (error) {
+        console.error('❌ Gagal memuat event:', error);
     }
+}
 
     function isMobileDevice() {
         return /Mobi|Android/i.test(navigator.userAgent);

@@ -6,6 +6,11 @@
         "key": "QVtF0rl9Oz",
         "url": "https://live1.jiatianxiazhuangshi.com/live/57436763_40e74823e28c2ee14718ab625586a9ca_nsd.m3u8",
         "label": "ANDROID/PC"
+      },
+      {
+        "key": "H8uGDxliDV",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3NzU1MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -46,6 +51,11 @@
         "key": "TJ6cizD3uV",
         "url": "https://live4.jiatianxiazhuangshi.com/live/57436757_5ffb261cd31e199b68064b71831cc57a_nsd.m3u8",
         "label": "ANDROID/PC"
+      },
+      {
+        "key": "zrAnEbEwOQ",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3NzU1NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       }
     ]
   },

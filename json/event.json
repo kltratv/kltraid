@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "ab321bd0-776c-46f2-b012-47d6d6c6f038",
-    "duration": 20,
-    "league": "Thailand Open",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Badminton.png",
-    "team1": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "team2": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "kickoff_date": "2025-05-17",
-    "kickoff_time": "12:00",
-    "match_date": "2025-05-17",
-    "match_time": "12:00",
-    "firstRow": 9
-  },
-  {
     "id": "11619a9d-fa43-4f94-a061-3575f375c4b7",
     "duration": 2.17,
     "league": "Liga 1",

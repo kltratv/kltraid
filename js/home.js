@@ -37,7 +37,7 @@
     }
 
 async function loadEventsFromJSON() {
-    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
+    const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/playersd.html?key=";
 
     const [eventRes, playerRes] = await Promise.all([
         fetch('https://content.elutuna.workers.dev/event.json'),

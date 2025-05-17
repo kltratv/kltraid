@@ -38,25 +38,6 @@
     "firstRow": 9
   },
   {
-    "id": "26610d08-3a89-4a83-bae7-dfff8d34a9d9",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Avispa Fukuoka",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/tw1kqIgPORPxSYI1gl6_wg_96x96.png"
-    },
-    "team2": {
-      "name": "Nagoya Grampus",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/CrmdMPWZ2i17k-0LByWBow_96x96.png"
-    },
-    "kickoff_date": "2025-05-17",
-    "kickoff_time": "12:30",
-    "match_date": "2025-05-17",
-    "match_time": "12:30",
-    "firstRow": 9
-  },
-  {
     "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
     "duration": 2.17,
     "league": "J1 League",

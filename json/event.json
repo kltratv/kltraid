@@ -35,7 +35,7 @@
     "kickoff_time": "22:30",
     "match_date": "2025-05-17",
     "match_time": "22:00",
-    "firstRow": 15
+    "firstRow": 4
   },
   {
     "id": "d59a1fa0-ed3c-426f-9d3e-f105ec5cc56b",
@@ -54,7 +54,7 @@
     "kickoff_time": "22:55",
     "match_date": "2025-05-17",
     "match_time": "22:25",
-    "firstRow": 16
+    "firstRow": 5
   },
   {
     "id": "e9edf115-082f-4e8b-b1ae-3be1880f88c8",
@@ -73,7 +73,7 @@
     "kickoff_time": "23:00",
     "match_date": "2025-05-17",
     "match_time": "23:00",
-    "firstRow": 32
+    "firstRow": 6
   },
   {
     "id": "310a2a68-924e-424f-b094-655c9d2506e4",
@@ -92,7 +92,7 @@
     "kickoff_time": "23:15",
     "match_date": "2025-05-17",
     "match_time": "22:45",
-    "firstRow": 18
+    "firstRow": 7
   },
   {
     "id": "b9666222-8795-45fd-ba89-cd1a9ae6acd3",
@@ -111,121 +111,7 @@
     "kickoff_time": "00:00",
     "match_date": "2025-05-18",
     "match_time": "00:00",
-    "firstRow": 19
-  },
-  {
-    "id": "9096ca3d-2d74-4e6f-b545-28f03f0e19f0",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Farense",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/4294.png?lm=1550150253"
-    },
-    "team2": {
-      "name": "Santa Clara",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/i0cKD3neXF2M09arqLQO5g_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 20
-  },
-  {
-    "id": "18f16fb9-9e08-4009-a3a9-52dc4a87be54",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Arouca",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/MPL7gIc8hdegirtqBZLc2A_96x96.png"
-    },
-    "team2": {
-      "name": "Boavista",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/By55z84mN_FMRPKVlqZiSA_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 21
-  },
-  {
-    "id": "6db0136f-641e-4c2b-bfb9-a51a3f3b0e40",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Estoril",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/M4I8t9zSkfsS-jI-m71ADQ_96x96.png"
-    },
-    "team2": {
-      "name": "Estrela",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/2431.png?lm=1598342709"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 22
-  },
-  {
-    "id": "429bbbad-670a-478f-8afd-6acbee81140d",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Sporting CP",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/58doDuhR0wW3WZE9PdODUw_96x96.png"
-    },
-    "team2": {
-      "name": "Vitoria Guimaraes",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/UkXfMrlrgYiUhK91JaKwYw_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 23
-  },
-  {
-    "id": "a132cf3c-1dc6-43f4-9332-56bdda999bae",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Sporting Braga",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/1orTeFljffloKztScEN2RA_96x96.png"
-    },
-    "team2": {
-      "name": "Benfica",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nFwABZ-4n_A3BGXT9A7Adg_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 24
-  },
-  {
-    "id": "54d22666-1e31-40e8-b797-3b1c95cdb427",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "AVS",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/110302.png?lm=1698968034"
-    },
-    "team2": {
-      "name": "Moreirense",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GVi9CQNTfywAlEId1LI9-A_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 25
+    "firstRow": 8
   },
   {
     "id": "f50a1e4f-a8ea-428e-a428-5fbd63133477",
@@ -244,7 +130,7 @@
     "kickoff_time": "01:00",
     "match_date": "2025-05-18",
     "match_time": "00:30",
-    "firstRow": 26
+    "firstRow": 15
   },
   {
     "id": "837370a4-266f-4107-85f3-927381da49d6",
@@ -263,7 +149,7 @@
     "kickoff_time": "01:45",
     "match_date": "2025-05-18",
     "match_time": "01:15",
-    "firstRow": 27
+    "firstRow": 16
   },
   {
     "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
@@ -282,7 +168,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "01:30",
-    "firstRow": 28
+    "firstRow": 17
   },
   {
     "id": "c5e967fa-7c7c-4437-b1b5-50b7e8247d97",
@@ -301,7 +187,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 29
+    "firstRow": 18
   },
   {
     "id": "0358360f-ad58-4270-95b7-bde1e729d2a0",
@@ -320,7 +206,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 30
+    "firstRow": 19
   },
   {
     "id": "fc40f05a-8833-4df5-a79d-d9563c26389c",
@@ -339,7 +225,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 31
+    "firstRow": 20
   },
   {
     "id": "832d2cbb-c0f4-4320-9c7b-4fc8c4e50ca0",
@@ -358,7 +244,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 32
+    "firstRow": 21
   },
   {
     "id": "4f5df547-1fc9-4585-b9fd-08614e5d4f99",
@@ -377,7 +263,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 33
+    "firstRow": 22
   },
   {
     "id": "a8e28c96-5a15-41e4-92cd-121f2340e015",
@@ -396,7 +282,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 34
+    "firstRow": 23
   },
   {
     "id": "6a668b5b-aa0b-4515-bcce-64323300b2ae",
@@ -415,7 +301,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 35
+    "firstRow": 24
   },
   {
     "id": "f8e180c3-05b8-4903-ae7e-a4a2ba269af6",
@@ -434,7 +320,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-18",
     "match_time": "02:00",
-    "firstRow": 36
+    "firstRow": 25
   },
   {
     "id": "bcebcbcc-c94b-48fb-b3e0-40753eff757d",

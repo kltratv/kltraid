@@ -1,91 +1,11 @@
 [
   {
-    "id": "4f5df547-1fc9-4585-b9fd-08614e5d4f99",
-    "servers": [
-      {
-        "key": "NMIh3Yk8sz",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "rG3dFzsa2k",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "xrwE8gFIU5",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a8e28c96-5a15-41e4-92cd-121f2340e015",
-    "servers": [
-      {
-        "key": "O1QCSDwCP8",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "uKMebg7kS5",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "So7CyhSpR4",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6a668b5b-aa0b-4515-bcce-64323300b2ae",
-    "servers": [
-      {
-        "key": "afiEmBu7l0",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "hwHhhXwl8q",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2Z9ZeQNy0G",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f8e180c3-05b8-4903-ae7e-a4a2ba269af6",
-    "servers": [
-      {
-        "key": "6MRdA2Ne1d",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "fYPPmpL6Ip",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "jczphvMNBm",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "bcebcbcc-c94b-48fb-b3e0-40753eff757d",
     "servers": [
       {
         "key": "rRumSf8xAL",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
       },
       {
         "key": "ovWjse8jTb",
@@ -94,26 +14,6 @@
       },
       {
         "key": "rGKgAsvYq2",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "783e815a-0f2e-49f6-bdac-c8d674798719",
-    "servers": [
-      {
-        "key": "Il4lU45H9a",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "vsUydaAdT7",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "VVZMsF6yZq",
         "url": "",
         "label": ""
       }
@@ -764,6 +664,106 @@
       },
       {
         "key": "LstAPG4hE7",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "4f5df547-1fc9-4585-b9fd-08614e5d4f99",
+    "servers": [
+      {
+        "key": "NMIh3Yk8sz",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "rG3dFzsa2k",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "xrwE8gFIU5",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "a8e28c96-5a15-41e4-92cd-121f2340e015",
+    "servers": [
+      {
+        "key": "O1QCSDwCP8",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "uKMebg7kS5",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "So7CyhSpR4",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "6a668b5b-aa0b-4515-bcce-64323300b2ae",
+    "servers": [
+      {
+        "key": "afiEmBu7l0",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "hwHhhXwl8q",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2Z9ZeQNy0G",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "f8e180c3-05b8-4903-ae7e-a4a2ba269af6",
+    "servers": [
+      {
+        "key": "6MRdA2Ne1d",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "fYPPmpL6Ip",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "jczphvMNBm",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "783e815a-0f2e-49f6-bdac-c8d674798719",
+    "servers": [
+      {
+        "key": "Il4lU45H9a",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vsUydaAdT7",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "VVZMsF6yZq",
         "url": "",
         "label": ""
       }

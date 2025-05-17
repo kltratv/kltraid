@@ -1,44 +1,14 @@
 [
   {
-    "id": "11619a9d-fa43-4f94-a061-3575f375c4b7",
-    "servers": [
-      {
-        "key": "MXIIHZl4tB",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "rSRjVqvN1S",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6ff118aa-27e2-41c2-a5c0-beb62adb64b2",
-    "servers": [
-      {
-        "key": "dkZMJRbd3h",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "VW34rYB6lr",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
-        "key": "YL5QBaZffB",
+        "key": "UjJ4ldHdGP",
         "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
         "label": "HD AUTO"
       },
       {
-        "key": "0G3BsztwdZ",
+        "key": "j5asmdnH4V",
         "url": "https://goalstreamz.com/f1streams/streams/",
         "label": "SD [IOS]"
       }
@@ -48,23 +18,13 @@
     "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
     "servers": [
       {
-        "key": "FfZgxH44or",
+        "key": "yl6OTJmQr3",
         "url": "https://goalstreamz.com/events/nbastreams1/",
         "label": "SD [IOS]"
       },
       {
-        "key": "FsVPPGimHu",
+        "key": "qMwTopbahK",
         "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2efr45f",
-    "servers": [
-      {
-        "key": "fG79YmXdC5",
-        "url": "",
         "label": "SD [IOS]"
       }
     ]

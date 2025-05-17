@@ -1,21 +1,36 @@
 [
   {
-    "id": "e9edf115-082f-4e8b-b1ae-3be1880f88c8",
+    "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
     "servers": [
       {
-        "key": "561kC1FRlz",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTEyMyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "2l1Cc4axfT",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nova1sk",
+        "label": "HD AUTO"
       },
       {
-        "key": "e5NH61OrB4",
-        "url": "https://live4.jiatianxiazhuangshi.com/live/51472447_a64303a4acb01fe88e93698f583bc8bb_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "WpmoQxteRW",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "Qvwxe4BzPg",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160871-0.m3u8?txSecret=08694c9c1259bd2594c92f8ed80a3aee&txTime=6828eb1d",
-        "label": "SD [IOS]"
+        "key": "UsfoIRAeKw",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "0WkbP3tZ9O",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "zg22CFAt2s",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2xdd3j1wTu",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -395,6 +410,26 @@
     ]
   },
   {
+    "id": "e9edf115-082f-4e8b-b1ae-3be1880f88c8",
+    "servers": [
+      {
+        "key": "561kC1FRlz",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTEyMyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "e5NH61OrB4",
+        "url": "https://live4.jiatianxiazhuangshi.com/live/51472447_a64303a4acb01fe88e93698f583bc8bb_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "Qvwxe4BzPg",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160871-0.m3u8?txSecret=08694c9c1259bd2594c92f8ed80a3aee&txTime=6828eb1d",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
     "id": "310a2a68-924e-424f-b094-655c9d2506e4",
     "servers": [
       {
@@ -519,41 +554,6 @@
       },
       {
         "key": "11BJQsShBR",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
-    "servers": [
-      {
-        "key": "2l1Cc4axfT",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "WpmoQxteRW",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "UsfoIRAeKw",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "0WkbP3tZ9O",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "zg22CFAt2s",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2xdd3j1wTu",
         "url": "",
         "label": ""
       }

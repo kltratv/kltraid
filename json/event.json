@@ -38,25 +38,6 @@
     "firstRow": 7
   },
   {
-    "id": "b9666222-8795-45fd-ba89-cd1a9ae6acd3",
-    "duration": 2.17,
-    "league": "Liga Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Porto",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/QkkllEKwkj60jEVtOEZWAg_96x96.png"
-    },
-    "team2": {
-      "name": "Nacional",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Uql1qECWH5pRMbm5UVsjPg_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "00:00",
-    "firstRow": 8
-  },
-  {
     "id": "cc605cda-4d82-476d-923a-c99f2191029e",
     "duration": 1000,
     "league": "Motul Czech Round",

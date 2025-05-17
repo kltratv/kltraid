@@ -1,34 +1,19 @@
 [
   {
-    "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
+    "id": "d59a1fa0-ed3c-426f-9d3e-f105ec5cc56b",
     "servers": [
       {
-        "key": "2l1Cc4axfT",
-        "url": "",
-        "label": ""
+        "key": "tn7C0AnJdn",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
+        "label": "HD AUTO"
       },
       {
-        "key": "WpmoQxteRW",
-        "url": "",
-        "label": ""
+        "key": "t7mhEZ1VPl",
+        "url": "https://live.jiatianxiazhuangshi.com/live/60377299_256f90ac09d0881865ffe001e234280c_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "UsfoIRAeKw",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "0WkbP3tZ9O",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "zg22CFAt2s",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2xdd3j1wTu",
+        "key": "9vhdJvyTF0",
         "url": "",
         "label": ""
       }
@@ -390,26 +375,6 @@
     ]
   },
   {
-    "id": "d59a1fa0-ed3c-426f-9d3e-f105ec5cc56b",
-    "servers": [
-      {
-        "key": "tn7C0AnJdn",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "t7mhEZ1VPl",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "9vhdJvyTF0",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "e9edf115-082f-4e8b-b1ae-3be1880f88c8",
     "servers": [
       {
@@ -554,6 +519,41 @@
       },
       {
         "key": "11BJQsShBR",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
+    "servers": [
+      {
+        "key": "2l1Cc4axfT",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "WpmoQxteRW",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "UsfoIRAeKw",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "0WkbP3tZ9O",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "zg22CFAt2s",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2xdd3j1wTu",
         "url": "",
         "label": ""
       }

@@ -1,21 +1,31 @@
 [
   {
-    "id": "f50a1e4f-a8ea-428e-a428-5fbd63133477",
+    "id": "837370a4-266f-4107-85f3-927381da49d6",
     "servers": [
       {
-        "key": "IQjHIp3MTJ",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc5",
+        "key": "7MSzUpsY4Z",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
         "label": "HD AUTO"
       },
       {
-        "key": "ZKt8xRVCX0",
-        "url": "https://live1.jiatianxiazhuangshi.com/live/60377309_64678862e97e2b6b80d8fa382172b5be_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "fKdk8atsV4",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinau2",
+        "label": "HD AUTO"
       },
       {
-        "key": "kz8OFLICVC",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4171960-0.m3u8?txSecret=900bc15010a1483d9e15b004e6175802&txTime=68290787",
+        "key": "krUl5vPOBC",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3NjU3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
+      },
+      {
+        "key": "vKgDXzWn2D",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "11BJQsShBR",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -180,32 +190,22 @@
     ]
   },
   {
-    "id": "837370a4-266f-4107-85f3-927381da49d6",
+    "id": "f50a1e4f-a8ea-428e-a428-5fbd63133477",
     "servers": [
       {
-        "key": "7MSzUpsY4Z",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "key": "IQjHIp3MTJ",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc5",
         "label": "HD AUTO"
       },
       {
-        "key": "fKdk8atsV4",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinau2",
-        "label": "HD AUTO"
+        "key": "ZKt8xRVCX0",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/60377309_64678862e97e2b6b80d8fa382172b5be_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "krUl5vPOBC",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "vKgDXzWn2D",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "11BJQsShBR",
-        "url": "",
-        "label": ""
+        "key": "kz8OFLICVC",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4171960-0.m3u8?txSecret=900bc15010a1483d9e15b004e6175802&txTime=68290787",
+        "label": "SD [IOS]"
       }
     ]
   },

@@ -10,6 +10,16 @@
     ]
   },
   {
+    "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
+    "servers": [
+      {
+        "key": "ysq2kUAK2v",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3NzU2MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
@@ -126,26 +136,6 @@
         "key": "9rsYZoF9l7",
         "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895262233138061_AiSD.m3u8?txSecret=fb8205ff448daae5e7fe2d56531fdc26&txTime=68294D30",
         "label": "COURT 1"
-      }
-    ]
-  },
-  {
-    "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
-    "servers": [
-      {
-        "key": "ysq2kUAK2v",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "jrqUP6jpdj",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "6ujJjGhTgE",
-        "url": "",
-        "label": ""
       }
     ]
   },

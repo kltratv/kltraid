@@ -1,31 +1,196 @@
 [
   {
-    "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
+    "id": "306fd882-5644-4d1f-93f5-1d06ccbb054b",
     "servers": [
       {
-        "key": "s66cDTXaui",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
+        "key": "QVtF0rl9Oz",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "xUHwxF4eUG",
-        "url": "https://goalstreamz.com/f1streams/streams/",
-        "label": "SD [IOS]"
+        "key": "H8uGDxliDV",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nWtTF0isGk",
+        "url": "",
+        "label": ""
       }
     ]
   },
   {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "id": "27587587-e528-427c-995c-24ec2b5e1307",
     "servers": [
       {
-        "key": "RDebegm0Eq",
-        "url": "https://goalstreamz.com/events/nbastreams1/",
-        "label": "SD [IOS]"
+        "key": "vFqciPXzac",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "NFvCvdFy5w",
-        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
-        "label": "SD [IOS]"
+        "key": "MiD8MSM3fB",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "lO6KvzpCGD",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "1f6a6d7d-8d1f-4230-955c-4d15401ff966",
+    "servers": [
+      {
+        "key": "Gzy8x5yZoo",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "C4haDBSDx5",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "VUcsZvRs2e",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "9e318190-e3e9-4064-bd13-334931971075",
+    "servers": [
+      {
+        "key": "TJ6cizD3uV",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "zrAnEbEwOQ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "QLyzAXd1OV",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "ab321bd0-776c-46f2-b012-47d6d6c6f038",
+    "servers": [
+      {
+        "key": "9rsYZoF9l7",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "WkvMylNCjd",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "26610d08-3a89-4a83-bae7-dfff8d34a9d9",
+    "servers": [
+      {
+        "key": "vCjPmaHSTl",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "cSHAtT5jmT",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "7NXdbL6ejY",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
+    "servers": [
+      {
+        "key": "ysq2kUAK2v",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "jrqUP6jpdj",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "6ujJjGhTgE",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "c3ec33f5-4884-4d92-9ac5-d2bd9549f5a4",
+    "servers": [
+      {
+        "key": "VAxbboi4PA",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "lxtIy5J1p3",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "NTGqBLkeAy",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
+    "servers": [
+      {
+        "key": "ysq2kUAK2v",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "jrqUP6jpdj",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "6ujJjGhTgE",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "c3ec33f5-4884-4d92-9ac5-d2bd9549f5a4",
+    "servers": [
+      {
+        "key": "VAxbboi4PA",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "lxtIy5J1p3",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "NTGqBLkeAy",
+        "url": "",
+        "label": ""
       }
     ]
   }

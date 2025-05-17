@@ -39,115 +39,113 @@
 async function loadEventsFromJSON() {
     const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/sdplayer.html?key=";
 
-    try {
-        const [eventRes, playerRes] = await Promise.all([
-            fetch('https://content.elutuna.workers.dev/event.json'),
-            fetch('https://content.elutuna.workers.dev/sdplayer.json')
-        ]);
+    const [eventRes, playerRes] = await Promise.all([
+        fetch('https://content.elutuna.workers.dev/event.json'),
+        fetch('https://content.elutuna.workers.dev/sdplayer.json')
+    ]);
 
-        if (!eventRes.ok || !playerRes.ok) throw new Error('Gagal memuat JSON');
+    const events = await eventRes.json();
+    const playerList = await playerRes.json();
+    const playerMap = {};
 
-        const events = await eventRes.json();
-        const playerList = await playerRes.json();
-
-        const playerMap = {};
-        playerList.forEach(item => {
-            if (item.id && Array.isArray(item.servers)) {
-                playerMap[item.id] = item.servers;
-            }
-        });
-
-        const container = document.querySelector('#live-event #content');
-        container.innerHTML = "";
-
-        events.forEach(event => {
-            const servers = playerMap[event.id] || [];
-            const firstKey = servers[0]?.key || '';
-            const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-
-            const serversForAttribute = servers.map(s => ({
-                key: s.key,
-                label: s.label,
-                url: `${playerBaseUrl}${s.key}`
-            }));
-            const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
-
-            const html = `
-                <div class="event-container"
-                    data-id="${event.id}"
-                    data-url="${defaultUrl}"
-                    data-servers="${encodedServers}"
-                    data-duration="${event.duration}">
-                    
-                    <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-
-                    <div class="team">
-                        <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
-                        <span>${event.team1.name}</span>
-                    </div>
-
-                    <div class="kickoff-match-date">${event.kickoff_date}</div>
-                    <div class="kickoff-match-time">${event.kickoff_time}</div>
-                    <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
-                    <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
-                    <div class="live-label" style="display:none;">Live</div>
-
-                    <div class="team">
-                        <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
-                        <span>${event.team2.name}</span>
-                    </div>
-
-                    <div class="server-buttons" style="display:none;">
-                        <div class="instruction">You can select a server stream:</div>
-                        <div class="buttons-container"></div>
-                    </div>
-
-                    <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
-                        <div class="countdown-title">Event will start in:</div>
-                        <div class="countdown-timer"></div>
-                    </div>
-                </div>
-            `;
-
-            container.insertAdjacentHTML('beforeend', html);
-
-            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
-            const buttonContainer = eventContainer.querySelector('.buttons-container');
-
-            servers.forEach((server, index) => {
-                const div = document.createElement('div');
-                div.className = 'server-button';
-                if (index === 0) div.classList.add('active');
-                div.setAttribute('data-url', `${playerBaseUrl}${server.key}`);
-                div.textContent = server.label;
-                buttonContainer.appendChild(div);
-            });
-        });
-
-        // Spacer agar scroll tidak terpotong
-        if (!container.querySelector('#spacer')) {
-            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+    playerList.forEach(item => {
+        if (item.id && Array.isArray(item.servers)) {
+            playerMap[item.id] = item.servers;
         }
+    });
 
-        setupEvents();
+    const container = document.querySelector('#live-event #content');
+    container.innerHTML = "";
 
-        // ✅ Restore session
-        const storedActiveEventId = sessionStorage.getItem('activeEventId');
-        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+    events.forEach(event => {
+        const servers = playerMap[event.id] || [];
 
-        if (storedActiveEventId && storedActiveServerUrl) {
-            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
-            if (activeContainer) {
-                const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
-                if (storedButton) {
-                    selectServerButton(storedButton);
-                }
-                loadEventVideo(activeContainer, storedActiveServerUrl, false);
+        // Gunakan server.url jika tersedia, fallback ke playerBaseUrl + key
+        const defaultUrl = servers[0]?.url?.trim()
+            ? servers[0].url.trim()
+            : (servers[0]?.key ? `${playerBaseUrl}${servers[0].key}` : '');
+
+        const serversForAttribute = servers.map(s => ({
+            key: s.key,
+            label: s.label,
+            url: s.url?.trim() ? s.url.trim() : `${playerBaseUrl}${s.key}`
+        }));
+
+        const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
+
+        const html = `
+        <div class="event-container"
+             data-id="${event.id}"
+             data-url="${defaultUrl}"
+             data-servers="${encodedServers}"
+             data-duration="${event.duration}">
+             
+            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+
+            <div class="team">
+                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+                <span>${event.team1.name}</span>
+            </div>
+
+            <div class="kickoff-match-date">${event.kickoff_date}</div>
+            <div class="kickoff-match-time">${event.kickoff_time}</div>
+            <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+            <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+            <div class="live-label" style="display:none;">Live</div>
+
+            <div class="team">
+                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+                <span>${event.team2.name}</span>
+            </div>
+
+            <div class="server-buttons" style="display:none;">
+                <div class="instruction">You can select a server stream:</div>
+                <div class="buttons-container"></div>
+            </div>
+
+            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+                <div class="countdown-title">Event will start in:</div>
+                <div class="countdown-timer"></div>
+            </div>
+        </div>
+        `;
+
+        container.insertAdjacentHTML('beforeend', html);
+
+        // Inject tombol server berbasis key
+        const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+        const buttonContainer = eventContainer.querySelector('.buttons-container');
+
+        serversForAttribute.forEach((server, index) => {
+            const div = document.createElement('div');
+            div.className = 'server-button';
+            if (index === 0) div.classList.add('active');
+            div.setAttribute('data-url', server.url);
+            div.textContent = server.label;
+            buttonContainer.appendChild(div);
+        });
+    });
+
+    // Spacer agar scroll tidak terpotong
+    if (!container.querySelector('#spacer')) {
+        container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+    }
+
+    setupEvents();
+
+    // Restore session
+    const storedActiveEventId = sessionStorage.getItem('activeEventId');
+    const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+    if (storedActiveEventId && storedActiveServerUrl) {
+        const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+        if (activeContainer) {
+            const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+            if (storedButton) {
+                selectServerButton(storedButton);
             }
+            loadEventVideo(activeContainer, storedActiveServerUrl, false);
         }
-
-    } catch (error) {
-        console.error('❌ Gagal memuat event:', error);
     }
 }
 

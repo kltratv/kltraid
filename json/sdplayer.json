@@ -1,59 +1,19 @@
 [
   {
-    "id": "b9666222-8795-45fd-ba89-cd1a9ae6acd3",
+    "id": "bcebcbcc-c94b-48fb-b3e0-40753eff757d",
     "servers": [
       {
-        "key": "sczyk1FWGv",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTAwNCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "rRumSf8xAL",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "ovWjse8jTb",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "UJGaNQurZF",
-        "url": "https://live4.jiatianxiazhuangshi.com/live/51389367_7ce81a6af28a8d112192a1b62d81623b_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "JNWfTqwW5A",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160788-0.m3u8?txSecret=8efed14296bed93d46fe8a0771e95ac3&txTime=6828f9a5",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "9096ca3d-2d74-4e6f-b545-28f03f0e19f0",
-    "servers": [
-      {
-        "key": "aFs0L1itjn",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160782-0.m3u8?txSecret=daf3bfe8e863e1f762a26eabd63fa6dd&txTime=6828f9a5",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "9kYvYLBrMB",
-        "url": "https://live2.jiatianxiazhuangshi.com/live/51389369_e1f4bdbb363b9b6277563c82798e2d82_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "DxPA1i6ynG",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "18f16fb9-9e08-4009-a3a9-52dc4a87be54",
-    "servers": [
-      {
-        "key": "KwdmPpDIeE",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160783-0.m3u8?txSecret=1888c4065caf2d1bb37f0653827c1543&txTime=6828f9a5",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "HfHxwgHsdu",
-        "url": "https://live3.jiatianxiazhuangshi.com/live/51389371_7769215dc5896b780d5372d8d71c48b3_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "oquBmxbY5Z",
+        "key": "rGKgAsvYq2",
         "url": "",
         "label": ""
       }
@@ -475,6 +435,66 @@
     ]
   },
   {
+    "id": "b9666222-8795-45fd-ba89-cd1a9ae6acd3",
+    "servers": [
+      {
+        "key": "sczyk1FWGv",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTAwNCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "UJGaNQurZF",
+        "url": "https://live4.jiatianxiazhuangshi.com/live/51389367_7ce81a6af28a8d112192a1b62d81623b_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "JNWfTqwW5A",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160788-0.m3u8?txSecret=8efed14296bed93d46fe8a0771e95ac3&txTime=6828f9a5",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "9096ca3d-2d74-4e6f-b545-28f03f0e19f0",
+    "servers": [
+      {
+        "key": "aFs0L1itjn",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160782-0.m3u8?txSecret=daf3bfe8e863e1f762a26eabd63fa6dd&txTime=6828f9a5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "9kYvYLBrMB",
+        "url": "https://live2.jiatianxiazhuangshi.com/live/51389369_e1f4bdbb363b9b6277563c82798e2d82_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "DxPA1i6ynG",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "18f16fb9-9e08-4009-a3a9-52dc4a87be54",
+    "servers": [
+      {
+        "key": "KwdmPpDIeE",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160783-0.m3u8?txSecret=1888c4065caf2d1bb37f0653827c1543&txTime=6828f9a5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "HfHxwgHsdu",
+        "url": "https://live3.jiatianxiazhuangshi.com/live/51389371_7769215dc5896b780d5372d8d71c48b3_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "oquBmxbY5Z",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "f50a1e4f-a8ea-428e-a428-5fbd63133477",
     "servers": [
       {
@@ -724,26 +744,6 @@
       },
       {
         "key": "jczphvMNBm",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "bcebcbcc-c94b-48fb-b3e0-40753eff757d",
-    "servers": [
-      {
-        "key": "rRumSf8xAL",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "ovWjse8jTb",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "rGKgAsvYq2",
         "url": "",
         "label": ""
       }

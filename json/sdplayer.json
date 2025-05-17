@@ -60,20 +60,40 @@
     ]
   },
   {
-    "id": "cff788d7-7d6e-43bf-90ce-294ece0cc898",
+    "id": "52cadc71-917f-4135-b5f2-ddd755bef06c",
     "servers": [
       {
-        "key": "SDHacoiIkV",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDg3NyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": ""
-      },
-      {
-        "key": "akxVbkZaRS",
-        "url": "",
+        "key": "RgHVp1lGVH",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDkwNCZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "CvGfwAXH6Z",
+        "key": "9UOhKGSchV",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "arwoe4eFRl",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "a99a3639-a01e-45b1-8ed9-2fa83ecbda3c",
+    "servers": [
+      {
+        "key": "79EAOBORWW",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDg5MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "izgWs9WWhp",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "tvmF537mdt",
         "url": "",
         "label": ""
       }
@@ -240,40 +260,20 @@
     ]
   },
   {
-    "id": "52cadc71-917f-4135-b5f2-ddd755bef06c",
+    "id": "cff788d7-7d6e-43bf-90ce-294ece0cc898",
     "servers": [
       {
-        "key": "RgHVp1lGVH",
-        "url": "",
+        "key": "SDHacoiIkV",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDg3NyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": ""
       },
       {
-        "key": "9UOhKGSchV",
+        "key": "akxVbkZaRS",
         "url": "",
-        "label": ""
+        "label": "SD [IOS]"
       },
       {
-        "key": "arwoe4eFRl",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a99a3639-a01e-45b1-8ed9-2fa83ecbda3c",
-    "servers": [
-      {
-        "key": "79EAOBORWW",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "izgWs9WWhp",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "tvmF537mdt",
+        "key": "CvGfwAXH6Z",
         "url": "",
         "label": ""
       }

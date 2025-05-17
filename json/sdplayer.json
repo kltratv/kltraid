@@ -1,39 +1,19 @@
 [
   {
-    "id": "0358360f-ad58-4270-95b7-bde1e729d2a0",
+    "id": "fc40f05a-8833-4df5-a79d-d9563c26389c",
     "servers": [
       {
-        "key": "jrwzt0Q6nW",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI2MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "4zG5sHsl7X",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI1MyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "GL1oeG9C8F",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "q3AXYp0NOy",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6a668b5b-aa0b-4515-bcce-64323300b2ae",
-    "servers": [
-      {
-        "key": "afiEmBu7l0",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI0NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "4xxS9ykYok",
+        "url": "https://kc.elutuna.workers.dev/213/playlist.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "hwHhhXwl8q",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2Z9ZeQNy0G",
+        "key": "gHEq9IngJ3",
         "url": "",
         "label": ""
       }
@@ -315,20 +295,20 @@
     ]
   },
   {
-    "id": "fc40f05a-8833-4df5-a79d-d9563c26389c",
+    "id": "0358360f-ad58-4270-95b7-bde1e729d2a0",
     "servers": [
       {
-        "key": "4zG5sHsl7X",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI1MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "jrwzt0Q6nW",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI2MyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "4xxS9ykYok",
+        "key": "GL1oeG9C8F",
         "url": "",
         "label": ""
       },
       {
-        "key": "gHEq9IngJ3",
+        "key": "q3AXYp0NOy",
         "url": "",
         "label": ""
       }
@@ -389,6 +369,26 @@
       },
       {
         "key": "So7CyhSpR4",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "6a668b5b-aa0b-4515-bcce-64323300b2ae",
+    "servers": [
+      {
+        "key": "afiEmBu7l0",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NTI0NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "hwHhhXwl8q",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2Z9ZeQNy0G",
         "url": "",
         "label": ""
       }

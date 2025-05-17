@@ -1,19 +1,19 @@
 [
   {
-    "id": "306fd882-5644-4d1f-93f5-1d06ccbb054b",
+    "id": "ea92ea5b-b674-40be-90da-1af2f17ef73c",
     "servers": [
       {
-        "key": "QVtF0rl9Oz",
+        "key": "T0cN7tQ3YY",
         "url": "",
         "label": ""
       },
       {
-        "key": "H8uGDxliDV",
+        "key": "Zve2hmZF80",
         "url": "",
         "label": ""
       },
       {
-        "key": "nWtTF0isGk",
+        "key": "vQw5ggJlEv",
         "url": "",
         "label": ""
       }
@@ -155,42 +155,52 @@
     ]
   },
   {
-    "id": "ea99d345-f191-48b1-914f-723e6baa1fed",
+    "id": "ea92ea5b-b674-40be-90da-1af2f17ef73c",
     "servers": [
       {
-        "key": "ysq2kUAK2v",
+        "key": "T0cN7tQ3YY",
         "url": "",
         "label": ""
       },
       {
-        "key": "jrqUP6jpdj",
+        "key": "Zve2hmZF80",
         "url": "",
         "label": ""
       },
       {
-        "key": "6ujJjGhTgE",
+        "key": "vQw5ggJlEv",
         "url": "",
         "label": ""
       }
     ]
   },
   {
-    "id": "c3ec33f5-4884-4d92-9ac5-d2bd9549f5a4",
+    "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
-        "key": "VAxbboi4PA",
-        "url": "",
-        "label": ""
+        "key": "s66cDTXaui",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
       },
       {
-        "key": "lxtIy5J1p3",
-        "url": "",
-        "label": ""
+        "key": "xUHwxF4eUG",
+        "url": "https://goalstreamz.com/f1streams/streams/",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "servers": [
+      {
+        "key": "RDebegm0Eq",
+        "url": "https://goalstreamz.com/events/nbastreams1/",
+        "label": "SD [IOS]"
       },
       {
-        "key": "NTGqBLkeAy",
-        "url": "",
-        "label": ""
+        "key": "NFvCvdFy5w",
+        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
+        "label": "SD [IOS]"
       }
     ]
   }

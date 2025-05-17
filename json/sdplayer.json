@@ -1,15 +1,15 @@
 [
   {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
-        "key": "FfZgxH44or",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3852527-2.m3u8?txSecret=b82926b6000e6c31731d7c12f2738483&txTime=68280a17",
-        "label": "SD [IOS]"
+        "key": "YL5QBaZffB",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
       },
       {
-        "key": "FsVPPGimHu",
-        "url": "https://live2.jiatianxiazhuangshi.com/live/ndqmrs39mg1urkv_120ddccb699700771fef89b301fb53df_autoChange.m3u8?auth_key=1747453979-0-0-b8204e7c343da1bad16389c9f9785517",
+        "key": "0G3BsztwdZ",
+        "url": "https://goalstreamz.com/f1streams/streams/",
         "label": "SD [IOS]"
       }
     ]

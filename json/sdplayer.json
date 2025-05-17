@@ -1,36 +1,36 @@
 [
   {
-    "id": "baeed871-e9a5-410f-be97-8bf26d809cad",
+    "id": "f4f6bba2-d974-4083-b466-4dd2b31c2566",
     "servers": [
       {
-        "key": "Hdemt8sUer",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
+        "key": "2l1Cc4axfT",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "7oucF7eupO",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nova1sk",
-        "label": "HD AUTO"
+        "key": "WpmoQxteRW",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "4z9AZLWdpE",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nz_sky_sport_2/index.m3u8",
-        "label": "SD [IOS]"
+        "key": "UsfoIRAeKw",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "m2lsXdlNpq",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDY2OCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "0WkbP3tZ9O",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "bFRvjPsCo3",
-        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
-        "label": "SD [IOS]"
+        "key": "zg22CFAt2s",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "qFoNEBntYL",
-        "url": "https://live.jiatianxiazhuangshi.com/live/60193377_da70e51457ea30a1850fd22c452d61ae_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "2xdd3j1wTu",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -351,6 +351,41 @@
         "key": "1sVV3goGCB",
         "url": "https://sc.elutuna.workers.dev/319/playlist.m3u8",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "baeed871-e9a5-410f-be97-8bf26d809cad",
+    "servers": [
+      {
+        "key": "Hdemt8sUer",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "7oucF7eupO",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nova1sk",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "4z9AZLWdpE",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nz_sky_sport_2/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "m2lsXdlNpq",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1NDY2OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "bFRvjPsCo3",
+        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "qFoNEBntYL",
+        "url": "https://live.jiatianxiazhuangshi.com/live/60193377_da70e51457ea30a1850fd22c452d61ae_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },

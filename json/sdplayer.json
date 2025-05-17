@@ -1,16 +1,76 @@
 [
   {
-    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "id": "306fd882-5644-4d1f-93f5-1d06ccbb054b",
     "servers": [
       {
-        "key": "FfZgxH44or",
-        "url": "https://goalstreamz.com/events/nbastreams1/",
-        "label": "SD [IOS]"
+        "key": "zculVxGowN",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "FsVPPGimHu",
-        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
-        "label": "SD [IOS]"
+        "key": "FabFyO8qPy",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "27587587-e528-427c-995c-24ec2b5e1307",
+    "servers": [
+      {
+        "key": "3UuxfeUxDn",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "DSnv45l3SY",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "1f6a6d7d-8d1f-4230-955c-4d15401ff966",
+    "servers": [
+      {
+        "key": "fRLQtqDUf0",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "5lRCY73ldo",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "9e318190-e3e9-4064-bd13-334931971075",
+    "servers": [
+      {
+        "key": "70SRqFfyDK",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "9YWjS2KiKF",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "26610d08-3a89-4a83-bae7-dfff8d34a9d9",
+    "servers": [
+      {
+        "key": "r0G2cuFzyn",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "cIHVwfomPp",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -25,6 +85,21 @@
       {
         "key": "0G3BsztwdZ",
         "url": "https://goalstreamz.com/f1streams/streams/",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "fd974796-5e3d-4d03-ab14-89adb2ccd028",
+    "servers": [
+      {
+        "key": "FfZgxH44or",
+        "url": "https://goalstreamz.com/events/nbastreams1/",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "FsVPPGimHu",
+        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59211050-hydra-wsu/playlist.m3u8?wsSecret=5153010ede006e6a1220ed84bf30823b&wsABSTime=6828180c",
         "label": "SD [IOS]"
       }
     ]

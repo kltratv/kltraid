@@ -1,11 +1,11 @@
 [
   {
-    "id": "ab321bd0-776c-46f2-b012-47d6d6c6f038",
+    "id": "26610d08-3a89-4a83-bae7-dfff8d34a9d9",
     "servers": [
       {
-        "key": "9rsYZoF9l7",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3895262233138061_AiSD.m3u8?txSecret=fb8205ff448daae5e7fe2d56531fdc26&txTime=68294D30",
-        "label": "COURT 1"
+        "key": "7NXdbL6ejY",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -14,6 +14,16 @@
     "servers": [
       {
         "key": "7NXdbL6ejY",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vCjPmaHSTl",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "cSHAtT5jmT",
         "url": "",
         "label": ""
       }

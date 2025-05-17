@@ -4,7 +4,7 @@
     "servers": [
       {
         "key": "tn7C0AnJdn",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
         "label": "HD AUTO"
       },
       {
@@ -14,6 +14,26 @@
       },
       {
         "key": "9vhdJvyTF0",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "310a2a68-924e-424f-b094-655c9d2506e4",
+    "servers": [
+      {
+        "key": "8glOuzZU7t",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Gc65haC1Is",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "omTgMBR3x1",
         "url": "",
         "label": ""
       }
@@ -389,26 +409,6 @@
       },
       {
         "key": "Qvwxe4BzPg",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "310a2a68-924e-424f-b094-655c9d2506e4",
-    "servers": [
-      {
-        "key": "8glOuzZU7t",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Gc65haC1Is",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "omTgMBR3x1",
         "url": "",
         "label": ""
       }

@@ -1,25 +1,5 @@
 [
   {
-    "id": "11619a9d-fa43-4f94-a061-3575f375c4b7",
-    "servers": [
-      {
-        "key": "E6b9SNOi8T",
-        "url": "https://xlz.plcdn.xyz//ajax//chanel//type//5//link//channel24",
-        "label": "HD VN [IOS]"
-      },
-      {
-        "key": "juLrwa1tvz",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184681-0.m3u8?txSecret=5e9673846381824e7c5500ed9dbc7b96&txTime=6828b2e5",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "vnKxEOs3KC",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "6ff118aa-27e2-41c2-a5c0-beb62adb64b2",
     "servers": [
       {
@@ -29,8 +9,8 @@
       },
       {
         "key": "ejiYHgZvCL",
-        "url": "",
-        "label": ""
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184680-0.m3u8?txSecret=8c52c3083baeec58f6b80d796ea3a0e8&txTime=6828b4ff",
+        "label": "SD [IOS]"
       },
       {
         "key": "6C1mnuxtkI",
@@ -109,6 +89,26 @@
       },
       {
         "key": "s4kHNB4vfw",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "11619a9d-fa43-4f94-a061-3575f375c4b7",
+    "servers": [
+      {
+        "key": "E6b9SNOi8T",
+        "url": "https://xlz.plcdn.xyz//ajax//chanel//type//5//link//channel24",
+        "label": "HD VN [IOS]"
+      },
+      {
+        "key": "juLrwa1tvz",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184681-0.m3u8?txSecret=5e9673846381824e7c5500ed9dbc7b96&txTime=6828b2e5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "vnKxEOs3KC",
         "url": "",
         "label": ""
       }

@@ -69,41 +69,41 @@ async function loadEventsFromJSON() {
         const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
         const html = `
-        <div class="event-container"
-             data-id="${event.id}"
-             data-url="${defaultUrl}"
-             data-servers="${encodedServers}"
-             data-duration="${event.duration}">
-             
-            <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
-            
-            <div class="team">
-                <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
-                <span>${event.team1.name}</span>
-            </div>
-            
-            <div class="kickoff-match-date">${event.kickoff_date}</div>
-            <div class="kickoff-match-time">${event.kickoff_time}</div>
-            <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
-            <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
-            <div class="live-label" style="display:none;">Live</div>
-            
-            <div class="team">
-                <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
-                <span>${event.team2.name}</span>
-            </div>
-            
-            <div class="server-buttons" style="display:none;">
-                <div class="instruction">You can select a server stream:</div>
-                <div class="buttons-container"></div>
-            </div>
-            
-            <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
-                <div class="countdown-title">Event will start in:</div>
-                <div class="countdown-timer"></div>
-            </div>
+    <div class="event-container"
+         data-id="${event.id}"
+         data-url="${defaultUrl}"
+         data-servers="${encodedServers}"
+         data-duration="${event.duration}">
+         
+        <h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+        
+        <div class="team">
+            <img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+            <span>${event.team1.name}</span>
         </div>
-        `;
+        
+        <div class="kickoff-match-date">${event.kickoff_date}</div>
+        <div class="kickoff-match-time">${event.kickoff_time}</div>
+        <div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+        <div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+        <div class="live-label" style="display:none;">Live</div>
+        
+        <div class="team">
+            <img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+            <span>${event.team2.name}</span>
+        </div>
+        
+        <div class="server-buttons" style="display:none;">
+            <div class="instruction">You can select a server stream:</div>
+            <div class="buttons-container"></div>
+        </div>
+        
+        <div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+            <div class="countdown-title">Event will start in:</div>
+            <div class="countdown-timer"></div>
+        </div>
+    </div>
+    `;
 
         container.insertAdjacentHTML('beforeend', html);
 
@@ -128,7 +128,7 @@ async function loadEventsFromJSON() {
 
     setupEvents();
 
-    // ✅ Restore session (tanpa decrypt)
+    // Restore session (langsung tanpa decrypt)
     const storedActiveEventId = sessionStorage.getItem('activeEventId');
     const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 

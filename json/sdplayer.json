@@ -1,16 +1,21 @@
 [
   {
-    "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
+    "id": "e515e0f5-3434-41b5-b625-e5b7aabbbd1e",
     "servers": [
       {
-        "key": "En4r7PpgBq",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
+        "key": "nd7vnzLuFj",
+        "url": "https://live4.jiatianxiazhuangshi.com/live/57130721_b99d5155467b533d227b2565b98262d2_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "fnCMEFsW48",
-        "url": "https://goalstreamz.com/f1streams/streams/",
-        "label": "SD [IOS]"
+        "key": "JLUJoklZlQ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "s4kHNB4vfw",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -59,8 +64,8 @@
     "servers": [
       {
         "key": "nd7vnzLuFj",
-        "url": "",
-        "label": ""
+        "url": "https://live4.jiatianxiazhuangshi.com/live/57130721_b99d5155467b533d227b2565b98262d2_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
         "key": "JLUJoklZlQ",

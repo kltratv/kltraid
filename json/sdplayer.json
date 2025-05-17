@@ -1,29 +1,34 @@
 [
   {
-    "id": "837370a4-266f-4107-85f3-927381da49d6",
+    "id": "baeed871-e9a5-410f-be97-8bf26d809cad",
     "servers": [
       {
-        "key": "7MSzUpsY4Z",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "key": "Hdemt8sUer",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
         "label": "HD AUTO"
       },
       {
-        "key": "fKdk8atsV4",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinau2",
+        "key": "7oucF7eupO",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nova1sk",
         "label": "HD AUTO"
       },
       {
-        "key": "krUl5vPOBC",
+        "key": "4z9AZLWdpE",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nz_sky_sport_2/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "m2lsXdlNpq",
         "url": "",
         "label": ""
       },
       {
-        "key": "vKgDXzWn2D",
+        "key": "bFRvjPsCo3",
         "url": "",
         "label": ""
       },
       {
-        "key": "11BJQsShBR",
+        "key": "qFoNEBntYL",
         "url": "",
         "label": ""
       }
@@ -350,41 +355,6 @@
     ]
   },
   {
-    "id": "baeed871-e9a5-410f-be97-8bf26d809cad",
-    "servers": [
-      {
-        "key": "Hdemt8sUer",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "7oucF7eupO",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nova1sk",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "4z9AZLWdpE",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "m2lsXdlNpq",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "bFRvjPsCo3",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "qFoNEBntYL",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "d59a1fa0-ed3c-426f-9d3e-f105ec5cc56b",
     "servers": [
       {
@@ -519,6 +489,36 @@
       },
       {
         "key": "kz8OFLICVC",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "837370a4-266f-4107-85f3-927381da49d6",
+    "servers": [
+      {
+        "key": "7MSzUpsY4Z",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "fKdk8atsV4",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinau2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "krUl5vPOBC",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vKgDXzWn2D",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "11BJQsShBR",
         "url": "",
         "label": ""
       }

@@ -10,7 +10,7 @@
       {
         "key": "7oucF7eupO",
         "url": "https://hipaf6u2j3pwygg.nice-flower.store/v3/director/VE1Nzc0MmE3ZjMxNTMwLTNmYjktMzI3NC03NTkyLTMyNmM0YmI3/master.m3u8?md5=sv9n4s_pY0fAJZc-RuGeEA&expires=1747538219",
-        "label": "HD AUTO"
+        "label": "HD [IOS]"
       },
       {
         "key": "4z9AZLWdpE",
@@ -31,6 +31,26 @@
         "key": "qFoNEBntYL",
         "url": "https://live.jiatianxiazhuangshi.com/live/60193377_da70e51457ea30a1850fd22c452d61ae_nsd.m3u8",
         "label": "ANDROID/PC"
+      }
+    ]
+  },
+  {
+    "id": "310a2a68-924e-424f-b094-655c9d2506e4",
+    "servers": [
+      {
+        "key": "8glOuzZU7t",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Gc65haC1Is",
+        "url": "https://live.jiatianxiazhuangshi.com/live/60377301_a64a45a149fabb86b615f4ea702dec4f_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "omTgMBR3x1",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -391,26 +411,6 @@
         "key": "Qvwxe4BzPg",
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160871-0.m3u8?txSecret=08694c9c1259bd2594c92f8ed80a3aee&txTime=6828eb1d",
         "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "310a2a68-924e-424f-b094-655c9d2506e4",
-    "servers": [
-      {
-        "key": "8glOuzZU7t",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "Gc65haC1Is",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "omTgMBR3x1",
-        "url": "",
-        "label": ""
       }
     ]
   },

@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "11619a9d-fa43-4f94-a061-3575f375c4b7",
-    "duration": 3,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "PSS Sleman",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/O9oSqdIsDxMrh1sQAeJAMQ_96x96.png"
-    },
-    "team2": {
-      "name": "Persija",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/zG89oHU9U0HCCF-zutao2Q_96x96.png"
-    },
-    "kickoff_date": "2025-05-17",
-    "kickoff_time": "19:00",
-    "match_date": "2025-05-17",
-    "match_time": "19:00",
-    "firstRow": 4
-  },
-  {
     "id": "19ec9e63-4580-48d7-9dbc-e971433feb45",
     "duration": 2.17,
     "league": "Bundesliga",

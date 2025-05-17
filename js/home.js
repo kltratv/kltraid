@@ -48,7 +48,6 @@ async function loadEventsFromJSON() {
     const playerList = await playerRes.json();
     const playerMap = {};
 
-    // Buat peta player berdasarkan ID
     playerList.forEach(item => {
         if (item.id && Array.isArray(item.servers)) {
             playerMap[item.id] = item.servers;
@@ -62,13 +61,11 @@ async function loadEventsFromJSON() {
         const servers = playerMap[event.id] || [];
         const firstKey = servers[0]?.key || '';
         const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
-
         const serversForAttribute = servers.map(s => ({
             key: s.key,
             label: s.label,
-            url: `${playerBaseUrl}${s.key}` // Selalu arahkan ke halaman iklan (playersd)
+            url: `${playerBaseUrl}${s.key}`
         }));
-
         const encodedServers = JSON.stringify(serversForAttribute).replace(/"/g, '&quot;');
 
         const html = `
@@ -110,6 +107,7 @@ async function loadEventsFromJSON() {
 
         container.insertAdjacentHTML('beforeend', html);
 
+        // Inject tombol server berbasis key → player page
         const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
         const buttonContainer = eventContainer.querySelector('.buttons-container');
 
@@ -123,13 +121,14 @@ async function loadEventsFromJSON() {
         });
     });
 
+    // Spacer agar tidak terpotong scroll
     if (!container.querySelector('#spacer')) {
         container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
     }
 
     setupEvents();
 
-    // Restore session (tanpa decrypt lagi)
+    // ✅ Restore session (tanpa decrypt)
     const storedActiveEventId = sessionStorage.getItem('activeEventId');
     const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
 

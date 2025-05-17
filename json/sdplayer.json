@@ -1,5 +1,25 @@
 [
   {
+    "id": "f099dab7-b31b-4b97-b896-8f934a84951d",
+    "servers": [
+      {
+        "key": "SZrAl6Y69f",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4262878-0.m3u8?txSecret=39ca808de179f97a86069af30e481c6d&txTime=682896bf",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "3HNLzHHf5H",
+        "url": "https://live3.jiatianxiazhuangshi.com/live/57130719_76e7cc034180c817a2b5c2f170a51b41_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "4TQruEKE87",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4262878-0.m3u8?txSecret=39ca808de179f97a86069af30e481c6d&txTime=682896bf",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {
@@ -31,26 +51,6 @@
         "key": "IOEb3A7iRO",
         "url": "https://thapcam.elutuna.workers.dev/499f1duIKmMKjfHauiHsKg/Fv2lucGIbhPi2caWYvF5Lg/1747497673405/live/may61/playlist.m3u8",
         "label": "COURT 2"
-      }
-    ]
-  },
-  {
-    "id": "f099dab7-b31b-4b97-b896-8f934a84951d",
-    "servers": [
-      {
-        "key": "3HNLzHHf5H",
-        "url": "https://live3.jiatianxiazhuangshi.com/live/57130719_76e7cc034180c817a2b5c2f170a51b41_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "4TQruEKE87",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4262878-0.m3u8?txSecret=39ca808de179f97a86069af30e481c6d&txTime=682896bf",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "SZrAl6Y69f",
-        "url": "",
-        "label": ""
       }
     ]
   },

@@ -114,7 +114,7 @@
     "firstRow": 24
   },
   {
-    "id": "162a60f2-2681-4db0-80b4-f8781820a040",
+    "id": "c35d4ee0-2443-4cf6-b5fb-132564ca15b2",
     "duration": 3,
     "league": "LaLiga",
     "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
@@ -130,7 +130,7 @@
     "kickoff_time": "00:00",
     "match_date": "2025-05-18",
     "match_time": "23:30",
-    "firstRow": 25
+    "firstRow": 9
   },
   {
     "id": "88f8a796-c44e-4b71-982b-83727131d41b",
@@ -209,25 +209,6 @@
     "firstRow": 29
   },
   {
-    "id": "d5b21e0f-9ae4-4693-8e15-f90dddf9d4c9",
-    "duration": 3,
-    "league": "LaLiga",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Sevilla",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/hCTs5EX3WjCMC5Jl3QE4Rw_96x96.png"
-    },
-    "team2": {
-      "name": "Real Madrid",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Th4fAVAZeCJWRcKoLW7koA_96x96.png"
-    },
-    "kickoff_date": "2025-05-19",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "23:30",
-    "firstRow": 30
-  },
-  {
     "id": "6f5f1c09-307a-4777-b9aa-a5dc6558a7ae",
     "duration": 2.17,
     "league": "LaLiga",
@@ -283,25 +264,6 @@
     "match_date": "2025-05-19",
     "match_time": "00:00",
     "firstRow": 33
-  },
-  {
-    "id": "93848fe7-3120-4629-a699-fd437d380594",
-    "duration": 3,
-    "league": "LaLiga",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Atletico Madrid",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/srAAE0bOnCppUrlbJpFiHQ_96x96.png"
-    },
-    "team2": {
-      "name": "Real Betis",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/S0fDZjYYytbZaUt0f3cIhg_96x96.png"
-    },
-    "kickoff_date": "2025-05-19",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-18",
-    "match_time": "23:30",
-    "firstRow": 34
   },
   {
     "id": "7a4b367d-4efc-4888-9bfc-29a61b2a0079",

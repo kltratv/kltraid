@@ -1,21 +1,21 @@
 [
   {
-    "id": "0f869666-c813-4e44-b3ad-8969e2e38473",
+    "id": "cf26f1ea-a032-461e-aa36-7012a5fe2bde",
     "servers": [
       {
-        "key": "JHHYskKQ9W",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4MjE5NiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "GfWWwntWAv",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "CPxHr5HcZt",
-        "url": "https://live1.jiatianxiazhuangshi.com/live/52325141_34d793e6c5f7aa1dd72c6c9828d470ff_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "Sxg9drLZX4",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "3D2V0pBTEf",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184682-0.m3u8?txSecret=21da019f80f3a88304067f89f99a8975&txTime=6829b71b",
-        "label": "SD [IOS]"
+        "key": "Nx5elSSWVp",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -135,6 +135,26 @@
     ]
   },
   {
+    "id": "0f869666-c813-4e44-b3ad-8969e2e38473",
+    "servers": [
+      {
+        "key": "JHHYskKQ9W",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4MjE5NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "CPxHr5HcZt",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/52325141_34d793e6c5f7aa1dd72c6c9828d470ff_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "3D2V0pBTEf",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184682-0.m3u8?txSecret=21da019f80f3a88304067f89f99a8975&txTime=6829b71b",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
     "id": "8fe2959d-3c05-49b6-be69-e298566a0bbe",
     "servers": [
       {
@@ -224,21 +244,6 @@
       },
       {
         "key": "mLfhOOiuST",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "cf26f1ea-a032-461e-aa36-7012a5fe2bde",
-    "servers": [
-      {
-        "key": "GfWWwntWAv",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Sxg9drLZX4",
         "url": "",
         "label": ""
       }

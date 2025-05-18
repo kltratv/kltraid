@@ -1,66 +1,61 @@
 [
   {
-    "id": "4a94813a-3e33-47d0-8d8e-e6566c415def",
+    "id": "7e6f3fdf-faf4-4341-a993-87146c18f2c0",
     "servers": [
       {
-        "key": "niwZrZ5zT0",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "58MRpAPpWu",
-        "url": "https://live.jiatianxiazhuangshi.com/live/50868565_657d57c29e61a2501b3b6900b86b08bf_nsd.m3u8",
+        "key": "Ca9aBvwQLn",
+        "url": "https://live4.jiatianxiazhuangshi.com/live/50868569_cbf104fc6bb7e79e9f0b3d1e91bea0d3_nsd.m3u8",
         "label": "ANDROID/PC"
       },
       {
-        "key": "xpq3NxMF9F",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141512-0.m3u8?txSecret=ad823a138d609d15898ed6a96cb39b30&txTime=682a0b66",
+        "key": "v5GDLRNzYS",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141517-0.m3u8?txSecret=e8ce50d0b075cf86bd9cf009e7fb0706&txTime=682a0b66",
         "label": "SD [IOS]"
       }
     ]
   },
   {
-    "id": "317fa399-ef12-490c-bd4d-b1247a6f4624",
+    "id": "cbe7e03d-aefe-4979-a6cc-cfaeeb490aac",
     "servers": [
       {
-        "key": "x9O0ueYXND",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "KX50kCb0nY",
+        "url": "https://live.jiatianxiazhuangshi.com/live/50868571_baf0ce7ce9a652c6939f846412b951b2_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "E8FKFFNTWV",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141513-0.m3u8?txSecret=fa877c3e61a1623c2688af33e6ce1e92&txTime=682a0b66",
+        "key": "trWnJXXHP6",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141515-0.m3u8?txSecret=c96913c53a48c2598120c1ed48bd5099&txTime=682a0b66",
         "label": "SD [IOS]"
       }
     ]
   },
   {
-    "id": "6c3d347f-08f5-4d13-ac60-82a792a3c136",
+    "id": "834a1ead-6b59-4863-8b4f-75084814cdea",
     "servers": [
       {
-        "key": "pvv51tPab9",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI4MCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "d7NQAxnjvT",
+        "url": "https://live3.jiatianxiazhuangshi.com/live/50868573_f04f762bcd2e363bd88b07a79f2ccd6c_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "28q03age78",
-        "url": "https://live2.jiatianxiazhuangshi.com/live/50868579_f0c3fa146c44f698f36fe2ff842fe4f6_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "cz0zLQIMYE",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141516-0.m3u8?txSecret=68b1f60e92d9a28a33d1265c0d0ebf20&txTime=682a0c1a",
+        "label": "SD [IOS]"
       }
     ]
   },
   {
-    "id": "d2a0ff12-eadd-42f1-b414-e7fcdba24aea",
+    "id": "f554cca8-ce54-42c5-86ec-e9ba2addba20",
     "servers": [
       {
-        "key": "hMW7WDSGty",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3OCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "eUCKDHB8uN",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/50868575_7543b549f3e55284b57d0a161303b378_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "CYndbqF3Mg",
-        "url": "https://live5.jiatianxiazhuangshi.com/live/50868581_b11c981096fbabf51fc08dd0f4778f46_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "xZeaiIKX7A",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141520-0.m3u8?txSecret=8fa68a04c4e73bcc52aa1de8152a7f3a&txTime=682a0bb6",
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -536,6 +531,71 @@
         "key": "Lr03ke258u",
         "url": "",
         "label": ""
+      }
+    ]
+  },
+  {
+    "id": "4a94813a-3e33-47d0-8d8e-e6566c415def",
+    "servers": [
+      {
+        "key": "niwZrZ5zT0",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "58MRpAPpWu",
+        "url": "https://live.jiatianxiazhuangshi.com/live/50868565_657d57c29e61a2501b3b6900b86b08bf_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "xpq3NxMF9F",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141512-0.m3u8?txSecret=ad823a138d609d15898ed6a96cb39b30&txTime=682a0b66",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "317fa399-ef12-490c-bd4d-b1247a6f4624",
+    "servers": [
+      {
+        "key": "x9O0ueYXND",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "E8FKFFNTWV",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4141513-0.m3u8?txSecret=fa877c3e61a1623c2688af33e6ce1e92&txTime=682a0b66",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "6c3d347f-08f5-4d13-ac60-82a792a3c136",
+    "servers": [
+      {
+        "key": "pvv51tPab9",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI4MCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "28q03age78",
+        "url": "https://live2.jiatianxiazhuangshi.com/live/50868579_f0c3fa146c44f698f36fe2ff842fe4f6_nsd.m3u8",
+        "label": "ANDROID/PC"
+      }
+    ]
+  },
+  {
+    "id": "d2a0ff12-eadd-42f1-b414-e7fcdba24aea",
+    "servers": [
+      {
+        "key": "hMW7WDSGty",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "CYndbqF3Mg",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/50868581_b11c981096fbabf51fc08dd0f4778f46_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   }

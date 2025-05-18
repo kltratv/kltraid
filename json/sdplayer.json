@@ -1,5 +1,40 @@
 [
   {
+    "id": "4b9debf5-46fd-4e67-8045-dc7e1732aaf0",
+    "servers": [
+      {
+        "key": "xhtpjW4YNq",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "M8CKgbbh6p",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "bndR5lfYuW",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODkyNiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "bcI390VvCt",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Oz341113b1",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "7GOk2tjxDZ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "689f27a0-c6e7-490a-952f-324db24e81d8",
     "servers": [
       {
@@ -244,41 +279,6 @@
       },
       {
         "key": "armvvZrMkt",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "4b9debf5-46fd-4e67-8045-dc7e1732aaf0",
-    "servers": [
-      {
-        "key": "xhtpjW4YNq",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "M8CKgbbh6p",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "bndR5lfYuW",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "bcI390VvCt",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Oz341113b1",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "7GOk2tjxDZ",
         "url": "",
         "label": ""
       }

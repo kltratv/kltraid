@@ -57,44 +57,6 @@
     "firstRow": 18
   },
   {
-    "id": "1e78e2d0-068b-413b-be97-217e8d1fa485",
-    "duration": 2.17,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Brentford",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/QOUce0WQBYqnkSmN6_TxGA_96x96.png"
-    },
-    "team2": {
-      "name": "Fulham",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Gh7_5p3n364p4vxeM8FhNg_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "21:00",
-    "match_date": "2025-05-18",
-    "match_time": "21:00",
-    "firstRow": 19
-  },
-  {
-    "id": "1668bb7d-a96a-4aa5-9efa-fb70a5574fe0",
-    "duration": 2.17,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Leicester City",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/UDYY4FSlty6fXFBzvFfcyw_96x96.png"
-    },
-    "team2": {
-      "name": "Ipswich Town",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/56vquJBk5U16Dng7txLXCw_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "21:00",
-    "match_date": "2025-05-18",
-    "match_time": "21:00",
-    "firstRow": 20
-  },
-  {
     "id": "6baf9fa6-e346-46c5-be67-1ea19c9485e3",
     "duration": 3,
     "league": "Premier League",

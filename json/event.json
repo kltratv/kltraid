@@ -19,63 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "a79d3a43-e242-4691-a5f1-e7a091330633",
-    "duration": 3,
-    "league": "Serie A",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Roma",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/BQdP4jUBFJfG7U_JBsFIMg_96x96.png"
-    },
-    "team2": {
-      "name": "Milan",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/VoKsJ6RitaHGhsM62e6AXQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-19",
-    "kickoff_time": "01:45",
-    "match_date": "2025-05-19",
-    "match_time": "01:45",
-    "firstRow": 36
-  },
-  {
-    "id": "972ed3df-e235-43a1-b33d-1d783121c8b0",
-    "duration": 3,
-    "league": "Serie A",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Juventus",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/6lal-0xwWtos5HI99HRvuQ_96x96.png"
-    },
-    "team2": {
-      "name": "Udinese",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/92Aw_iasBENKmzvdpbTpHQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-19",
-    "kickoff_time": "01:45",
-    "match_date": "2025-05-19",
-    "match_time": "01:45",
-    "firstRow": 40
-  },
-  {
-    "id": "d180ad75-252c-475c-bd1e-f063524850ec",
-    "duration": 3,
-    "league": "Serie A",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Inter Milan",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/l2-icwsMhIvsbRw8AwC1yg_96x96.png"
-    },
-    "team2": {
-      "name": "Lazio",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jcKKlUVaNw3br9cIyOKmQA_96x96.png"
-    },
-    "kickoff_date": "2025-05-19",
-    "kickoff_time": "01:45",
-    "match_date": "2025-05-19",
-    "match_time": "01:45",
-    "firstRow": 41
-  },
-  {
     "id": "d55bdf6b-3b81-46b9-ad58-c5ca3df3a385",
     "duration": 3,
     "league": "NBA",

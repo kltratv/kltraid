@@ -1,1 +1,24 @@
-
+[
+  {
+    "key": "soccer_channel",
+    "type": "mpd",
+    "url": "https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd",
+    "referer": "https://www.visionplus.id/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",
+    "drm": {
+      "type": "widevine",
+      "licenseUrl": "https://drm-vision2025.tvrusak1992.workers.dev/?no=115&type=drm"
+    }
+  },
+  {
+    "key": "spotv",
+    "type": "mpd",
+    "url": "https://d3b0v7fggu5zwm.cloudfront.net/out/v1/b4814ae93ca84dd3bb5b0aff76ca263f/index.mpd",
+    "referer": "https://www.visionplus.id/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",
+    "drm": {
+      "type": "widevine",
+      "licenseUrl": "https://drm-vision2025.tvrusak1992.workers.dev/?no=119&type=drm"
+    }
+  }
+]

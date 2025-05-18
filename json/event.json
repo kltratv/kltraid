@@ -133,6 +133,25 @@
     "firstRow": 10
   },
   {
+    "id": "4a94813a-3e33-47d0-8d8e-e6566c415def",
+    "duration": 2.17,
+    "league": "Eredivisie",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Ajax",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/WIAAdPpdzFwVKU7maFvJ6w_96x96.png"
+    },
+    "team2": {
+      "name": "Twente",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/APPtKtO4wP6dQme5I1MSlA_96x96.png"
+    },
+    "kickoff_date": "2025-05-18",
+    "kickoff_time": "19:30",
+    "match_date": "2025-05-18",
+    "match_time": "19:30",
+    "firstRow": 10
+  },
+  {
     "id": "4b9debf5-46fd-4e67-8045-dc7e1732aaf0",
     "duration": 3,
     "league": "Premier League",

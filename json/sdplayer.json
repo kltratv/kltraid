@@ -1,99 +1,34 @@
 [
   {
-    "id": "c35d4ee0-2443-4cf6-b5fb-132564ca15b2",
+    "id": "a79d3a43-e242-4691-a5f1-e7a091330633",
     "servers": [
       {
-        "key": "FYJ5hvYtNT",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "key": "oXTyXEbT66",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=arena5cr",
         "label": "HD AUTO"
       },
       {
-        "key": "IcrwZAtx6i",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "d9SZUzWByv",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "r5AVcYNIof",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_17/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "XUHS2IWAPj",
-        "url": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "vU0GNTyOOt",
+        "key": "zI0GHw91Pt",
         "url": "",
         "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
-    "servers": [
-      {
-        "key": "GcHi4y9XD1",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
       },
       {
-        "key": "qcUHOVN5p5",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "CaHUwXOSuf",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1OTAwOCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "6pxLmNxfAy",
-        "url": "https://rr4---sn-8pxuuxa-on.applecdnstore.com/livetv/2024/live_event_espn_plus_13/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "GJRoIzu5g0",
-        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "mJJt1OL0HP",
+        "key": "OBwoUYy5Nq",
         "url": "",
         "label": ""
-      }
-    ]
-  },
-  {
-    "id": "c3af8280-f9cb-46c5-810c-ccb37a240c2d",
-    "servers": [
-      {
-        "key": "gZwMAx2WcI",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=arena10cr",
-        "label": "HD AUTO"
       },
       {
-        "key": "oJ7KKUO9BT",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "cu8hzapMWo",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "GwUrqwPSJj",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_31/index.m3u8",
-        "label": "SD [IOS]"
+        "key": "wvx8ghTx6b",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "72e1gBfYpx",
-        "url": "https://kc.elutuna.workers.dev/212/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "xIMg70Yja3",
+        "key": "Qasbzrqiw9",
         "url": "",
         "label": ""
       }
@@ -680,6 +615,41 @@
     ]
   },
   {
+    "id": "c35d4ee0-2443-4cf6-b5fb-132564ca15b2",
+    "servers": [
+      {
+        "key": "FYJ5hvYtNT",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "IcrwZAtx6i",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "d9SZUzWByv",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "r5AVcYNIof",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_17/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "XUHS2IWAPj",
+        "url": "https://kc.elutuna.workers.dev/211/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "vU0GNTyOOt",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "88f8a796-c44e-4b71-982b-83727131d41b",
     "servers": [
       {
@@ -760,6 +730,41 @@
     ]
   },
   {
+    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
+    "servers": [
+      {
+        "key": "GcHi4y9XD1",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "qcUHOVN5p5",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "CaHUwXOSuf",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1OTAwOCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "6pxLmNxfAy",
+        "url": "https://rr4---sn-8pxuuxa-on.applecdnstore.com/livetv/2024/live_event_espn_plus_13/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "GJRoIzu5g0",
+        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "mJJt1OL0HP",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "6f5f1c09-307a-4777-b9aa-a5dc6558a7ae",
     "servers": [
       {
@@ -820,6 +825,36 @@
     ]
   },
   {
+    "id": "c3af8280-f9cb-46c5-810c-ccb37a240c2d",
+    "servers": [
+      {
+        "key": "gZwMAx2WcI",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=arena10cr",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "oJ7KKUO9BT",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "GwUrqwPSJj",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_31/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "72e1gBfYpx",
+        "url": "https://kc.elutuna.workers.dev/212/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "xIMg70Yja3",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "7a4b367d-4efc-4888-9bfc-29a61b2a0079",
     "servers": [
       {
@@ -834,41 +869,6 @@
       },
       {
         "key": "vhEth2XHfW",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a79d3a43-e242-4691-a5f1-e7a091330633",
-    "servers": [
-      {
-        "key": "oXTyXEbT66",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "zI0GHw91Pt",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "OBwoUYy5Nq",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "cu8hzapMWo",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "wvx8ghTx6b",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Qasbzrqiw9",
         "url": "",
         "label": ""
       }

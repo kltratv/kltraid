@@ -70,41 +70,6 @@
     ]
   },
   {
-    "id": "d5b21e0f-9ae4-4693-8e15-f90dddf9d4c9",
-    "servers": [
-      {
-        "key": "GcHi4y9XD1",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "qcUHOVN5p5",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "CaHUwXOSuf",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "6pxLmNxfAy",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GJRoIzu5g0",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "mJJt1OL0HP",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "93848fe7-3120-4629-a699-fd437d380594",
     "servers": [
       {
@@ -769,6 +734,41 @@
       },
       {
         "key": "968qEtzTPU",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "d5b21e0f-9ae4-4693-8e15-f90dddf9d4c9",
+    "servers": [
+      {
+        "key": "GcHi4y9XD1",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "qcUHOVN5p5",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "CaHUwXOSuf",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "6pxLmNxfAy",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GJRoIzu5g0",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "mJJt1OL0HP",
         "url": "",
         "label": ""
       }

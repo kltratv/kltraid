@@ -1,16 +1,36 @@
 [
   {
-    "id": "9a197e2b-bc58-4311-9cc6-27f8650359f3",
+    "id": "c83960ff-76fc-4f3e-b42c-cd1e07cc4cfa",
     "servers": [
       {
-        "key": "e1IrDuOdZQ",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI5NCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "4cbkytnBhN",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "label": "HD AUTO"
       },
       {
-        "key": "FJLcL4fbkJ",
-        "url": "https://live.jiatianxiazhuangshi.com/live/57130727_219cef535a79c3bfd19174e71f820488_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "SU7EYjQWAU",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "cumv9AK97y",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "romVBNyTqx",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "tLlUWgjQUM",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "mLfhOOiuST",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -195,37 +215,17 @@
     ]
   },
   {
-    "id": "c83960ff-76fc-4f3e-b42c-cd1e07cc4cfa",
+    "id": "9a197e2b-bc58-4311-9cc6-27f8650359f3",
     "servers": [
       {
-        "key": "4cbkytnBhN",
-        "url": "",
-        "label": ""
+        "key": "e1IrDuOdZQ",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI5NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "SU7EYjQWAU",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "cumv9AK97y",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "romVBNyTqx",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "tLlUWgjQUM",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "mLfhOOiuST",
-        "url": "",
-        "label": ""
+        "key": "FJLcL4fbkJ",
+        "url": "https://live.jiatianxiazhuangshi.com/live/57130727_219cef535a79c3bfd19174e71f820488_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },

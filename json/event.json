@@ -57,25 +57,6 @@
     "firstRow": 5
   },
   {
-    "id": "26dab815-5b6e-4289-91de-a302b4c9248f",
-    "duration": 2.17,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Semen Padang",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/NJbgskD55Z91SB0VmxLo8g_96x96.png"
-    },
-    "team2": {
-      "name": "Persik Kediri",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jz2h8KmLrZz9pgMq36GPtw_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "15:30",
-    "match_date": "2025-05-18",
-    "match_time": "15:30",
-    "firstRow": 11
-  },
-  {
     "id": "9a197e2b-bc58-4311-9cc6-27f8650359f3",
     "duration": 2.17,
     "league": "K League 1",

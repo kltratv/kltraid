@@ -57,63 +57,6 @@
     "firstRow": 21
   },
   {
-    "id": "bf824d6c-e5f8-409a-8fcb-64aaa11793eb",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Galatasaray",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/TWjoccvTU4JXZJZ3aW3cVg_96x96.png"
-    },
-    "team2": {
-      "name": "Kayserispor",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/FdKw8faquwA0zRKnnlfBEA_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-18",
-    "match_time": "23:00",
-    "firstRow": 22
-  },
-  {
-    "id": "bce387f3-0f30-462c-90d7-955c20f347b5",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Fenerbahce",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HOQreZgFrmtQiLi8HKb9zA_96x96.png"
-    },
-    "team2": {
-      "name": "Eyupspor",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/7160.png?lm=1441816214"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-18",
-    "match_time": "23:00",
-    "firstRow": 23
-  },
-  {
-    "id": "e2805a85-e946-48e8-89b8-f38530f0b1c6",
-    "duration": 2.17,
-    "league": "Denmark Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Randers",
-      "logo": "https://tmssl.akamaized.net//images/wappen/head/5724.png?lm=1518117482"
-    },
-    "team2": {
-      "name": "Kobenhavn",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/190.png?lm=1518117389"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-18",
-    "match_time": "23:00",
-    "firstRow": 24
-  },
-  {
     "id": "c35d4ee0-2443-4cf6-b5fb-132564ca15b2",
     "duration": 3,
     "league": "LaLiga",

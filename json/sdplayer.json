@@ -9,8 +9,8 @@
       },
       {
         "key": "IB4apz7Fxx",
-        "url": "",
-        "label": ""
+        "url": "https://live2.jiatianxiazhuangshi.com/live/57130723_5a36af80f7ce42acacf4cfe5c1804bbb_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },
@@ -24,23 +24,8 @@
       },
       {
         "key": "HRxLzbIndh",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "eedf0361-3d72-487b-bba5-f311b9a7a88a",
-    "servers": [
-      {
-        "key": "Dfmpt6fBO2",
-        "url": "https://sc.elutuna.workers.dev/326/chunklist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "TdoTgxNxGP",
-        "url": "",
-        "label": ""
+        "url": "https://live3.jiatianxiazhuangshi.com/live/57130725_d8353cf0bf83105333dce75f09b56a76_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },
@@ -259,6 +244,21 @@
       },
       {
         "key": "Nx5elSSWVp",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "eedf0361-3d72-487b-bba5-f311b9a7a88a",
+    "servers": [
+      {
+        "key": "Dfmpt6fBO2",
+        "url": "https://sc.elutuna.workers.dev/326/chunklist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "TdoTgxNxGP",
         "url": "",
         "label": ""
       }

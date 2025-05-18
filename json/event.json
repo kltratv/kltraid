@@ -57,44 +57,6 @@
     "firstRow": 5
   },
   {
-    "id": "cffb21c6-4930-43fc-9888-903782df32ae",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Fagiano Okayama",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/OncdfTKKDt6vezD_-qNZWA_96x96.png"
-    },
-    "team2": {
-      "name": "Albirex Niigata",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/R93vCpU9GEI9dXNU3J2tCQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "13:00",
-    "match_date": "2025-05-18",
-    "match_time": "13:00",
-    "firstRow": 6
-  },
-  {
-    "id": "2440ff92-9ccb-4965-aa72-1f5156609d44",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Kawasaki Frontale",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/JzqHyQjUTYRQf_9HHYqFBw_96x96.png"
-    },
-    "team2": {
-      "name": "Cerezo Osaka",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/T20Z8bRwgt-eP8J_w5esUw_96x96.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "13:00",
-    "match_date": "2025-05-18",
-    "match_time": "13:00",
-    "firstRow": 7
-  },
-  {
     "id": "0f869666-c813-4e44-b3ad-8969e2e38473",
     "duration": 2.17,
     "league": "Liga 1",

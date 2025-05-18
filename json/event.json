@@ -57,25 +57,6 @@
     "firstRow": 5
   },
   {
-    "id": "eedf0361-3d72-487b-bba5-f311b9a7a88a",
-    "duration": 3,
-    "league": "ASIA: AVC Champions League - Play Offs",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Voli.png",
-    "team1": {
-      "name": "Al-Rayyan",
-      "logo": "https://tmssl.akamaized.net//images/wappen/head/3229.png?lm=1728899512"
-    },
-    "team2": {
-      "name": "Osaka Bluteon",
-      "logo": "https://volleybox.net/media/upload/teams/1734139510aJb2s.png"
-    },
-    "kickoff_date": "2025-05-18",
-    "kickoff_time": "14:05",
-    "match_date": "2025-05-18",
-    "match_time": "14:05",
-    "firstRow": 9
-  },
-  {
     "id": "26dab815-5b6e-4289-91de-a302b4c9248f",
     "duration": 2.17,
     "league": "Liga 1",

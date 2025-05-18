@@ -1,20 +1,5 @@
 [
   {
-    "id": "cffb21c6-4930-43fc-9888-903782df32ae",
-    "servers": [
-      {
-        "key": "KkhltDX3nL",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4MjIxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "xxMMLxXFTq",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "2440ff92-9ccb-4965-aa72-1f5156609d44",
     "servers": [
       {
@@ -24,8 +9,8 @@
       },
       {
         "key": "b6lMt4HSXB",
-        "url": "",
-        "label": ""
+        "url": "https://live1.jiatianxiazhuangshi.com/live/57436773_ae2475ebe8b1618a22f4c27d4be3ee3f_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },
@@ -111,6 +96,21 @@
         "key": "M4rLS4YRDD",
         "url": "https://thapcam.elutuna.workers.dev/NNixORr4dHm8mzV0-UsYgA/Fv2lucGIbhPi2caWYvF5Lg/1747566270215/live/longSD/playlist.m3u8",
         "label": "COURT 1"
+      }
+    ]
+  },
+  {
+    "id": "cffb21c6-4930-43fc-9888-903782df32ae",
+    "servers": [
+      {
+        "key": "KkhltDX3nL",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4MjIxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "xxMMLxXFTq",
+        "url": "",
+        "label": ""
       }
     ]
   },

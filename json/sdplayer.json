@@ -14,8 +14,8 @@
       },
       {
         "key": "d9SZUzWByv",
-        "url": "",
-        "label": ""
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
         "key": "r5AVcYNIof",
@@ -35,35 +35,140 @@
     ]
   },
   {
-    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
+    "id": "88f8a796-c44e-4b71-982b-83727131d41b",
     "servers": [
       {
-        "key": "GcHi4y9XD1",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
+        "key": "cT01hhcUvL",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1OTAxNyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "qcUHOVN5p5",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "CaHUwXOSuf",
+        "key": "ASfsIjA20g",
         "url": "",
         "label": ""
       },
       {
-        "key": "6pxLmNxfAy",
+        "key": "mi8ZC3Bqfq",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "cffa05b1-843f-4dbe-bf4b-6b914be0c87f",
+    "servers": [
+      {
+        "key": "EJH5av7xpM",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "G7XYZGZSAr",
         "url": "",
         "label": ""
       },
       {
-        "key": "GJRoIzu5g0",
+        "key": "aOX1gkgM4B",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "fcdf3b6c-ed66-4551-b01f-261083e6f7a6",
+    "servers": [
+      {
+        "key": "t1STUtTiXG",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk5NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "v6OS4tgHEQ",
         "url": "",
         "label": ""
       },
       {
-        "key": "mJJt1OL0HP",
+        "key": "kGKyw3lZJZ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "a0f2b450-ec01-4bd9-b183-5cf5f8c2c94d",
+    "servers": [
+      {
+        "key": "Bh1iAs6AYM",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1OTAwMCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "wO5DIrEkAn",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "968qEtzTPU",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "6f5f1c09-307a-4777-b9aa-a5dc6558a7ae",
+    "servers": [
+      {
+        "key": "8swmjHS420",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk4NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "vwbkvgjiG9",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ZsIY2S2EfN",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5f5141b4-39da-4bf4-8fad-ed823b3c077b",
+    "servers": [
+      {
+        "key": "HsUhOYoJ7J",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk5NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "6tq1ekdmUX",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "5waQbbj6To",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "01569731-5d5a-4832-9bf2-35c40029d990",
+    "servers": [
+      {
+        "key": "ozFmvq7tUK",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk5OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "0Ne5vJxvqa",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GiUyxho4WR",
         "url": "",
         "label": ""
       }
@@ -79,8 +184,8 @@
       },
       {
         "key": "oJ7KKUO9BT",
-        "url": "",
-        "label": ""
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1ODk3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
         "key": "GwUrqwPSJj",
@@ -680,87 +785,7 @@
     ]
   },
   {
-    "id": "88f8a796-c44e-4b71-982b-83727131d41b",
-    "servers": [
-      {
-        "key": "cT01hhcUvL",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ASfsIjA20g",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "mi8ZC3Bqfq",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "cffa05b1-843f-4dbe-bf4b-6b914be0c87f",
-    "servers": [
-      {
-        "key": "EJH5av7xpM",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "G7XYZGZSAr",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "aOX1gkgM4B",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "fcdf3b6c-ed66-4551-b01f-261083e6f7a6",
-    "servers": [
-      {
-        "key": "t1STUtTiXG",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "v6OS4tgHEQ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "kGKyw3lZJZ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a0f2b450-ec01-4bd9-b183-5cf5f8c2c94d",
-    "servers": [
-      {
-        "key": "Bh1iAs6AYM",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "wO5DIrEkAn",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "968qEtzTPU",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "d5b21e0f-9ae4-4693-8e15-f90dddf9d4c9",
+    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
     "servers": [
       {
         "key": "GcHi4y9XD1",
@@ -789,96 +814,6 @@
       },
       {
         "key": "mJJt1OL0HP",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6f5f1c09-307a-4777-b9aa-a5dc6558a7ae",
-    "servers": [
-      {
-        "key": "8swmjHS420",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "vwbkvgjiG9",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ZsIY2S2EfN",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "5f5141b4-39da-4bf4-8fad-ed823b3c077b",
-    "servers": [
-      {
-        "key": "HsUhOYoJ7J",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "6tq1ekdmUX",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "5waQbbj6To",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "01569731-5d5a-4832-9bf2-35c40029d990",
-    "servers": [
-      {
-        "key": "ozFmvq7tUK",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "0Ne5vJxvqa",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GiUyxho4WR",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "93848fe7-3120-4629-a699-fd437d380594",
-    "servers": [
-      {
-        "key": "gZwMAx2WcI",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=arena10cr",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "oJ7KKUO9BT",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GwUrqwPSJj",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "72e1gBfYpx",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "xIMg70Yja3",
         "url": "",
         "label": ""
       }

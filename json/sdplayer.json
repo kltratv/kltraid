@@ -19,8 +19,8 @@
       },
       {
         "key": "r5AVcYNIof",
-        "url": "",
-        "label": ""
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_17/index.m3u8",
+        "label": "SD [IOS]"
       },
       {
         "key": "XUHS2IWAPj",
@@ -64,8 +64,8 @@
       },
       {
         "key": "G7XYZGZSAr",
-        "url": "",
-        "label": ""
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_21/index.m3u8",
+        "label": "SD [IOS]"
       },
       {
         "key": "aOX1gkgM4B",
@@ -84,8 +84,8 @@
       },
       {
         "key": "v6OS4tgHEQ",
-        "url": "",
-        "label": ""
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_32/index.m3u8",
+        "label": "SD [IOS]"
       },
       {
         "key": "kGKyw3lZJZ",
@@ -109,6 +109,41 @@
       },
       {
         "key": "968qEtzTPU",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
+    "servers": [
+      {
+        "key": "GcHi4y9XD1",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "qcUHOVN5p5",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "CaHUwXOSuf",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY1OTAwOCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "6pxLmNxfAy",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GJRoIzu5g0",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "mJJt1OL0HP",
         "url": "",
         "label": ""
       }
@@ -781,41 +816,6 @@
         "key": "CYndbqF3Mg",
         "url": "https://live5.jiatianxiazhuangshi.com/live/50868581_b11c981096fbabf51fc08dd0f4778f46_nsd.m3u8",
         "label": "ANDROID/PC"
-      }
-    ]
-  },
-  {
-    "id": "f45186bd-4e61-4a90-8973-232731c3154b",
-    "servers": [
-      {
-        "key": "GcHi4y9XD1",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "qcUHOVN5p5",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "CaHUwXOSuf",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "6pxLmNxfAy",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GJRoIzu5g0",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "mJJt1OL0HP",
-        "url": "",
-        "label": ""
       }
     ]
   },

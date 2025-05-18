@@ -20,6 +20,21 @@
     ]
   },
   {
+    "id": "317fa399-ef12-490c-bd4d-b1247a6f4624",
+    "servers": [
+      {
+        "key": "x9O0ueYXND",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjI3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "E8FKFFNTWV",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "7f05aebc-e158-4b5a-adba-bbb2ac50ff3a",
     "servers": [
       {

@@ -1,19 +1,34 @@
 [
   {
-    "id": "644173e8-0eaf-4a3e-835b-763aadde00b1",
+    "id": "734612ad-9d04-4e99-823d-73c26dcbd0f3",
     "servers": [
       {
-        "key": "N783mvtpYR",
-        "url": "https://kc.elutuna.workers.dev/200/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "3qrCavf4og",
+        "key": "nSzAZNOBls",
         "url": "",
         "label": ""
       },
       {
-        "key": "MiGEYHem1F",
+        "key": "He8lAQh05k",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "KZ1iKG08yl",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "RuIGWw69DX",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "IgOU38P67Q",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "oRpBw4auhN",
         "url": "",
         "label": ""
       }

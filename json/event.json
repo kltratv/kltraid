@@ -1,24 +1,5 @@
 [
   {
-    "id": "fae88770-9058-4bd6-80fe-9e4eb2335c0f",
-    "duration": 3,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Manchester City",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/z44l-a0W1v5FmgPnemV6Xw_96x96.png"
-    },
-    "team2": {
-      "name": "AFC Bournemouth",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/IcOt-hrK04B-RlRwI3R0yA_96x96.png"
-    },
-    "kickoff_date": "2025-05-21",
-    "kickoff_time": "02:00",
-    "match_date": "2025-05-21",
-    "match_time": "01:30",
-    "firstRow": 8
-  },
-  {
     "id": "169b808f-ecc6-4c9e-90c6-92e7bb9ed673",
     "duration": 3,
     "league": "NBA",

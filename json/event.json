@@ -1,24 +1,5 @@
 [
   {
-    "id": "08f4ade2-9faa-43b4-8e50-c62a75609e47",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al Quadisiya",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/CsnZyxzmgLcVTJPH6sHXzQ_96x96.png"
-    },
-    "team2": {
-      "name": "Al Orubah",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/tI1ZWwSJlDpRgRmF3RUZZA_96x96.png"
-    },
-    "kickoff_date": "2025-05-20",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-20",
-    "match_time": "22:30",
-    "firstRow": 4
-  },
-  {
     "id": "b42422a0-fde4-4475-b3ab-6735008df172",
     "duration": 3,
     "league": "Saudi Pro League",

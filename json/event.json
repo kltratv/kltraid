@@ -58,7 +58,7 @@
   },
   {
     "id": "d82eae8b-dee6-4853-8df4-e6598043bc88",
-    "duration": 3,
+    "duration": 2.17,
     "league": "Premier League",
     "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
     "team1": {
@@ -91,7 +91,7 @@
     "kickoff_date": "2025-05-21",
     "kickoff_time": "02:00",
     "match_date": "2025-05-21",
-    "match_time": "02:00",
+    "match_time": "01:30",
     "firstRow": 8
   },
   {

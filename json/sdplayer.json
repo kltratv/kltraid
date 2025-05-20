@@ -1,5 +1,45 @@
 [
   {
+    "id": "08f4ade2-9faa-43b4-8e50-c62a75609e47",
+    "servers": [
+      {
+        "key": "0Euq54uEc7",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "tJj0urxDzV",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "8N5FxXfmUX",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "b42422a0-fde4-4475-b3ab-6735008df172",
+    "servers": [
+      {
+        "key": "ZAMyr1aT0u",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "tT1bZJruZM",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "KfkwUbCQhJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "027cbda1-8044-4f68-a561-211e112b4540",
     "servers": [
       {

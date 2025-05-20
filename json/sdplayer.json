@@ -1,26 +1,71 @@
 [
   {
-    "id": "ebaa5911-ba5d-4f40-a296-ab3288368860",
+    "id": "d82eae8b-dee6-4853-8df4-e6598043bc88",
     "servers": [
       {
-        "key": "J3CPTGcgQV",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "key": "dtE0OMLzuG",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "HD AUTO"
       },
       {
-        "key": "B5bmVlVwvE",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
+        "key": "BiccS0JMze",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "O9Kv52fqlz",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "zjfbNXWjtv",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "knxxfk04xG",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vv6IPMhbh2",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "fae88770-9058-4bd6-80fe-9e4eb2335c0f",
+    "servers": [
+      {
+        "key": "A3td9sdpzG",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
         "label": "HD AUTO"
       },
       {
-        "key": "Uo1Qieo7fg",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MDEyMSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "9KAkyUuyoX",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=fubo",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "dOdfkFT6tU",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "AZG2fJaLxR",
-        "url": "https://live.jiatianxiazhuangshi.com/live/52034871_2e2a9dde542cb0f46e910c6f3b0fcbbd_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "9wDnFePWrW",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nkYQH1ddE8",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2OBXYozCja",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -95,72 +140,27 @@
     ]
   },
   {
-    "id": "d82eae8b-dee6-4853-8df4-e6598043bc88",
+    "id": "ebaa5911-ba5d-4f40-a296-ab3288368860",
     "servers": [
       {
-        "key": "dtE0OMLzuG",
-        "url": "",
+        "key": "J3CPTGcgQV",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
         "label": "HD AUTO"
       },
       {
-        "key": "BiccS0JMze",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "O9Kv52fqlz",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "zjfbNXWjtv",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "knxxfk04xG",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "vv6IPMhbh2",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "fae88770-9058-4bd6-80fe-9e4eb2335c0f",
-    "servers": [
-      {
-        "key": "A3td9sdpzG",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "key": "B5bmVlVwvE",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
         "label": "HD AUTO"
       },
       {
-        "key": "9KAkyUuyoX",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=fubo",
-        "label": "HD AUTO"
+        "key": "Uo1Qieo7fg",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MDEyMSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "dOdfkFT6tU",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "9wDnFePWrW",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "nkYQH1ddE8",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2OBXYozCja",
-        "url": "",
-        "label": ""
+        "key": "AZG2fJaLxR",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034871_2e2a9dde542cb0f46e910c6f3b0fcbbd_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },

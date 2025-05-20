@@ -1,5 +1,55 @@
 [
   {
+    "id": "ebaa5911-ba5d-4f40-a296-ab3288368860",
+    "servers": [
+      {
+        "key": "J3CPTGcgQV",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "B5bmVlVwvE",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Uo1Qieo7fg",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "027cbda1-8044-4f68-a561-211e112b4540",
+    "servers": [
+      {
+        "key": "rGWsW0DsVR",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436147923061_AiHD.m3u8?txSecret=2fbefa5a29c7d2509cc57135ea9d8a7d&txTime=682D1780",
+        "label": "COURT 1"
+      },
+      {
+        "key": "5Mpl4MyHDQ",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436375112061_AiHD.m3u8?txSecret=96f59bb0c592c57256172551d343d707&txTime=682D1780",
+        "label": "COURT 2"
+      },
+      {
+        "key": "iaoG1O1sBt",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436548241061_AiHD.m3u8?txSecret=8f3602baf714bbaaf6d47d200c28b9c0&txTime=682D1780",
+        "label": "COURT 3"
+      },
+      {
+        "key": "KkzhmttIgQ",
+        "url": "https://3be4be19ef6d73cd744383f2da36c93f.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436727130061_AiHD.m3u8?txSecret=0d76d9e28805c3bbec1aa8d6f69808ab&txTime=682D1780",
+        "label": "COURT 4"
+      },
+      {
+        "key": "05R2qPkq6w",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "08f4ade2-9faa-43b4-8e50-c62a75609e47",
     "servers": [
       {
@@ -34,36 +84,6 @@
       },
       {
         "key": "KfkwUbCQhJ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "027cbda1-8044-4f68-a561-211e112b4540",
-    "servers": [
-      {
-        "key": "rGWsW0DsVR",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436147923061_AiHD.m3u8?txSecret=2fbefa5a29c7d2509cc57135ea9d8a7d&txTime=682D1780",
-        "label": "COURT 1"
-      },
-      {
-        "key": "5Mpl4MyHDQ",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436375112061_AiHD.m3u8?txSecret=96f59bb0c592c57256172551d343d707&txTime=682D1780",
-        "label": "COURT 2"
-      },
-      {
-        "key": "iaoG1O1sBt",
-        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436548241061_AiHD.m3u8?txSecret=8f3602baf714bbaaf6d47d200c28b9c0&txTime=682D1780",
-        "label": "COURT 3"
-      },
-      {
-        "key": "KkzhmttIgQ",
-        "url": "https://3be4be19ef6d73cd744383f2da36c93f.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436727130061_AiHD.m3u8?txSecret=0d76d9e28805c3bbec1aa8d6f69808ab&txTime=682D1780",
-        "label": "COURT 4"
-      },
-      {
-        "key": "05R2qPkq6w",
         "url": "",
         "label": ""
       }

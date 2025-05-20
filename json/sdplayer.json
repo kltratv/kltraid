@@ -1,21 +1,26 @@
 [
   {
-    "id": "b42422a0-fde4-4475-b3ab-6735008df172",
+    "id": "ebaa5911-ba5d-4f40-a296-ab3288368860",
     "servers": [
       {
-        "key": "ZAMyr1aT0u",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "key": "J3CPTGcgQV",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
         "label": "HD AUTO"
       },
       {
-        "key": "tT1bZJruZM",
-        "url": "https://live.jiatianxiazhuangshi.com/live/52034869_4207940b7b3c5b32c70195cc73ed8659_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "B5bmVlVwvE",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
+        "label": "HD AUTO"
       },
       {
-        "key": "KfkwUbCQhJ",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MDEyMCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "Uo1Qieo7fg",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MDEyMSZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
+      },
+      {
+        "key": "AZG2fJaLxR",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -70,27 +75,22 @@
     ]
   },
   {
-    "id": "ebaa5911-ba5d-4f40-a296-ab3288368860",
+    "id": "b42422a0-fde4-4475-b3ab-6735008df172",
     "servers": [
       {
-        "key": "J3CPTGcgQV",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "key": "ZAMyr1aT0u",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
         "label": "HD AUTO"
       },
       {
-        "key": "B5bmVlVwvE",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
-        "label": "HD AUTO"
+        "key": "tT1bZJruZM",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034869_4207940b7b3c5b32c70195cc73ed8659_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "Uo1Qieo7fg",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "AZG2fJaLxR",
-        "url": "",
-        "label": ""
+        "key": "KfkwUbCQhJ",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MDEyMCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       }
     ]
   },

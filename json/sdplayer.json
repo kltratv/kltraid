@@ -1,34 +1,29 @@
 [
   {
-    "id": "734612ad-9d04-4e99-823d-73c26dcbd0f3",
+    "id": "027cbda1-8044-4f68-a561-211e112b4540",
     "servers": [
       {
-        "key": "nSzAZNOBls",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
-        "label": "HD AUTO"
+        "key": "rGWsW0DsVR",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436147923061_AiHD.m3u8?txSecret=2fbefa5a29c7d2509cc57135ea9d8a7d&txTime=682D1780",
+        "label": "COURT 1"
       },
       {
-        "key": "He8lAQh05k",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
-        "label": "HD AUTO"
+        "key": "5Mpl4MyHDQ",
+        "url": "https://f53f9c237c56f89e1114dd35444b770c.v.smtcdns.net/play.cbalive.weibisai.com/live/3900436375112061_AiHD.m3u8?txSecret=96f59bb0c592c57256172551d343d707&txTime=682D1780",
+        "label": "COURT 2"
       },
       {
-        "key": "KZ1iKG08yl",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2MjQ0NCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "iaoG1O1sBt",
+        "url": "",
+        "label": "COURT 3"
       },
       {
-        "key": "RuIGWw69DX",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
-        "label": "SD [IOS]"
+        "key": "KkzhmttIgQ",
+        "url": "",
+        "label": "COURT 4"
       },
       {
-        "key": "IgOU38P67Q",
-        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "oRpBw4auhN",
+        "key": "05R2qPkq6w",
         "url": "",
         "label": ""
       }

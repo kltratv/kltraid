@@ -1,1 +1,29 @@
-
+[
+  {
+    "id": "channel1",
+    "name": "SSC Sports 1",
+    "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
+    "url": "https://kltraid.pages.dev/json/playlist.json",
+    "status": "Online",
+    "category": "Sports",
+    "key": "ssc1"
+  },
+  {
+    "id": "channel2",
+    "name": "ESPN HD",
+    "logo": "https://upload.wikimedia.org/.../ESPN_wordmark.svg",
+    "url": "https://kltraid.pages.dev/json/playlist.json",
+    "status": "Online",
+    "category": "Sports",
+    "key": "espn"
+  },
+  {
+    "id": "channel3",
+    "name": "MTV Asia",
+    "logo": "https://upload.wikimedia.org/.../MTV_Logo_2010.svg",
+    "url": "https://kltraid.pages.dev/json/playlist.json",
+    "status": "Online",
+    "category": "Entertainment",
+    "key": "mtv"
+  }
+]

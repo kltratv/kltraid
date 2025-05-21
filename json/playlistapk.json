@@ -20,5 +20,10 @@
       "type": "widevine",
       "licenseUrl": "https://drm-vision2025.tvrusak1992.workers.dev/?no=119&type=drm"
     }
+  },
+  {
+    "key": "sky_sports_nz",
+    "type": "hls",
+    "url": "https://7pal.short.gy/skyspt1nz"
   }
 ]

@@ -1,5 +1,25 @@
 [
   {
+    "id": "4384290a-aa09-49f9-868f-e5f6d7c20782",
+    "servers": [
+      {
+        "key": "RuCUFPu8Xe",
+        "url": "https://live.jiatianxiazhuangshi.com/live/57436693_0c3410f7c8a9c8ba6334b9b0ae7d4ea4_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "dG4hRT5oWd",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "c77Mju8tCf",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "1438501a-3723-4332-a00d-cfaa0f4db3b7",
     "servers": [
       {
@@ -41,26 +61,6 @@
         "key": "rMG6FP66cF",
         "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900438529464061_AiHD.m3u8?txSecret=bc4654f2eb99acd0edb026e599e7ca49&txTime=682E6900",
         "label": "COURT 4"
-      }
-    ]
-  },
-  {
-    "id": "4384290a-aa09-49f9-868f-e5f6d7c20782",
-    "servers": [
-      {
-        "key": "RuCUFPu8Xe",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "dG4hRT5oWd",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "c77Mju8tCf",
-        "url": "",
-        "label": ""
       }
     ]
   },

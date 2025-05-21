@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "5c11dfae-5227-4276-95e1-636797e0b75d",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al Wehda",
-      "logo": "https://tmssl.akamaized.net//images/wappen/head/15796.png?lm=1698755139"
-    },
-    "team2": {
-      "name": "Al Hilal",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/HGVsnyWvMiGVotxhgicdSQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-22",
-    "kickoff_time": "01:00",
-    "match_date": "2025-05-22",
-    "match_time": "00:30",
-    "firstRow": 9
-  },
-  {
     "id": "2667fa31-dc14-4493-bfbc-ff3e69d997fb",
     "duration": 4,
     "league": "UEFA Europa League: Final",

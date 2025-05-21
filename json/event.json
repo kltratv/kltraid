@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "3136f66c-7f31-48f8-a998-7d2c033cf386",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al Nassr",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GWXetBOkODOWR3p2NIBqJg_96x96.png"
-    },
-    "team2": {
-      "name": "Al Khaleej",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/eoQs93x8Ez1-qqf7sS8MmQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-21",
-    "kickoff_time": "23:10",
-    "match_date": "2025-05-21",
-    "match_time": "22:40",
-    "firstRow": 7
-  },
-  {
     "id": "db02b5a9-0990-4db3-9c2f-2acc9c1332fc",
     "duration": 3,
     "league": "Saudi Pro League",

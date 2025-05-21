@@ -19,44 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "4384290a-aa09-49f9-868f-e5f6d7c20782",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Kawasaki Frontale",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/JzqHyQjUTYRQf_9HHYqFBw_96x96.png"
-    },
-    "team2": {
-      "name": "Urawa Reds",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/F-09rxdgECid61-Rj8Uxrw_96x96.png"
-    },
-    "kickoff_date": "2025-05-21",
-    "kickoff_time": "17:00",
-    "match_date": "2025-05-21",
-    "match_time": "17:00",
-    "firstRow": 4
-  },
-  {
-    "id": "1438501a-3723-4332-a00d-cfaa0f4db3b7",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Yokohama F. Marinos",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/BZfy8AwWl7GS9GXYugkvtQ_96x96.png"
-    },
-    "team2": {
-      "name": "Vissel Kobe",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/BZUmVsyGi03lHJ0KfZ7wUA_96x96.png"
-    },
-    "kickoff_date": "2025-05-21",
-    "kickoff_time": "17:00",
-    "match_date": "2025-05-21",
-    "match_time": "17:00",
-    "firstRow": 5
-  },
-  {
     "id": "54af4489-14b9-4658-9ded-34321e884173",
     "duration": 2.17,
     "league": "ASEAN Club Championship",

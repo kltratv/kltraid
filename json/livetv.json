@@ -1,12 +1,12 @@
 [
   {
     "id": "channel1",
-    "name": "SSC Sports 1",
+    "name": "Soccer Channel",
     "logo": "https://saudipedia.com/en/saudipediaen/uploads/images/2024/11/19/thumbs/400x400/128197.jpg",
     "url": "https://kltraid.pages.dev/json/playlist.json",
     "status": "Online",
     "category": "Sports",
-    "key": "ssc1"
+    "key": "soccer_channel"
   },
   {
     "id": "channel2",

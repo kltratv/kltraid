@@ -14,48 +14,8 @@
       },
       {
         "key": "5weJpBTIPV",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "db02b5a9-0990-4db3-9c2f-2acc9c1332fc",
-    "servers": [
-      {
-        "key": "cXMEvvnWA0",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "36MtaaJIbN",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "7SgYSfPswJ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "5c11dfae-5227-4276-95e1-636797e0b75d",
-    "servers": [
-      {
-        "key": "AnciBlXU1s",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "xOyeGs03pE",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "VYGgryKSsC",
-        "url": "",
-        "label": ""
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MzY5NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -139,6 +99,46 @@
       },
       {
         "key": "VjsCXhAtjP",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "db02b5a9-0990-4db3-9c2f-2acc9c1332fc",
+    "servers": [
+      {
+        "key": "cXMEvvnWA0",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "36MtaaJIbN",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "7SgYSfPswJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5c11dfae-5227-4276-95e1-636797e0b75d",
+    "servers": [
+      {
+        "key": "AnciBlXU1s",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=spoph1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "xOyeGs03pE",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "VYGgryKSsC",
         "url": "",
         "label": ""
       }

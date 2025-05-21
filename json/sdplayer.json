@@ -1,21 +1,21 @@
 [
   {
-    "id": "db02b5a9-0990-4db3-9c2f-2acc9c1332fc",
+    "id": "5c11dfae-5227-4276-95e1-636797e0b75d",
     "servers": [
       {
-        "key": "cXMEvvnWA0",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "key": "AnciBlXU1s",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
         "label": "HD AUTO"
       },
       {
-        "key": "36MtaaJIbN",
-        "url": "https://live.jiatianxiazhuangshi.com/live/52034877_2a089a2bba12a32dca37f7f3414eed31_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "xOyeGs03pE",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5MzY5NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "7SgYSfPswJ",
-        "url": "https://live.statssportsgoal.com/vivo/live-1-4172019-0.m3u8?sign=e3d9cd4c7839dea7576cd849f45438f9&t=682e36aa",
-        "label": "SD [IOS]"
+        "key": "VYGgryKSsC",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -125,22 +125,22 @@
     ]
   },
   {
-    "id": "5c11dfae-5227-4276-95e1-636797e0b75d",
+    "id": "db02b5a9-0990-4db3-9c2f-2acc9c1332fc",
     "servers": [
       {
-        "key": "AnciBlXU1s",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "key": "cXMEvvnWA0",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
         "label": "HD AUTO"
       },
       {
-        "key": "xOyeGs03pE",
-        "url": "",
-        "label": ""
+        "key": "36MtaaJIbN",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034877_2a089a2bba12a32dca37f7f3414eed31_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "VYGgryKSsC",
-        "url": "",
-        "label": ""
+        "key": "7SgYSfPswJ",
+        "url": "https://live.statssportsgoal.com/vivo/live-1-4172019-0.m3u8?sign=e3d9cd4c7839dea7576cd849f45438f9&t=682e36aa",
+        "label": "SD [IOS]"
       }
     ]
   },

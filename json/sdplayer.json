@@ -1,69 +1,19 @@
 [
   {
-    "id": "d82eae8b-dee6-4853-8df4-e6598043bc88",
+    "id": "169b808f-ecc6-4c9e-90c6-92e7bb9ed673",
     "servers": [
       {
-        "key": "dtE0OMLzuG",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "BiccS0JMze",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nz_sky_sport_2/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "O9Kv52fqlz",
-        "url": "https://kc.elutuna.workers.dev/203/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "zjfbNXWjtv",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "knxxfk04xG",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "vv6IPMhbh2",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "fae88770-9058-4bd6-80fe-9e4eb2335c0f",
-    "servers": [
-      {
-        "key": "A3td9sdpzG",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "key": "KhUJDQF3tv",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt2",
         "label": "HD AUTO"
       },
       {
-        "key": "9KAkyUuyoX",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=fubo",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "dOdfkFT6tU",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "iXcOdUDgf0",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853217-2.m3u8?txSecret=958d4824101fcfd5dd77463f6daea416&txTime=682d5730",
         "label": "SD [IOS]"
       },
       {
-        "key": "9wDnFePWrW",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "nkYQH1ddE8",
-        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "2OBXYozCja",
+        "key": "9QPgd8HbS8",
         "url": "",
         "label": ""
       }
@@ -165,20 +115,70 @@
     ]
   },
   {
-    "id": "169b808f-ecc6-4c9e-90c6-92e7bb9ed673",
+    "id": "d82eae8b-dee6-4853-8df4-e6598043bc88",
     "servers": [
       {
-        "key": "KhUJDQF3tv",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt2",
-        "label": "HD AUTO"
+        "key": "dtE0OMLzuG",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "iXcOdUDgf0",
+        "key": "BiccS0JMze",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nz_sky_sport_2/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "O9Kv52fqlz",
+        "url": "https://kc.elutuna.workers.dev/203/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "zjfbNXWjtv",
         "url": "",
         "label": ""
       },
       {
-        "key": "9QPgd8HbS8",
+        "key": "knxxfk04xG",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vv6IPMhbh2",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "fae88770-9058-4bd6-80fe-9e4eb2335c0f",
+    "servers": [
+      {
+        "key": "A3td9sdpzG",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "9KAkyUuyoX",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=fubo",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "dOdfkFT6tU",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY2NjU3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "9wDnFePWrW",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "nkYQH1ddE8",
+        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "2OBXYozCja",
         "url": "",
         "label": ""
       }

@@ -45,22 +45,22 @@
       {
         "key": "84eQfWlrdu",
         "url": "https://3be4be19ef6d73cd744383f2da36c93f.v.smtcdns.net/play.cbalive.weibisai.com/live/3900438923525061_AiHD.m3u8?txSecret=e9d25edc9f1aa4a8732c1f2e02bf7ebe&txTime=682FBA80",
-        "label": "SD [IOS]"
+        "label": "COURT 1"
       },
       {
         "key": "5s2SQTHBdA",
-        "url": "",
-        "label": ""
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900439104087061_AiHD.m3u8?txSecret=1cc9d3bc4a2a65f2bd479a1171ef7d41&txTime=682FBA80",
+        "label": "COURT 2"
       },
       {
         "key": "7VJfNRME7p",
-        "url": "",
-        "label": ""
+        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3900439382096061_AiHD.m3u8?txSecret=f6ea90eb233fb4cf95a2de4bb6b69e48&txTime=682FBA80",
+        "label": "COURT 3"
       },
       {
         "key": "MKocbatS93",
-        "url": "",
-        "label": ""
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900439559318061_AiHD.m3u8?txSecret=10e128f12cb821ba8d8d43d0cc650de3&txTime=682FBA80",
+        "label": "COURT 4"
       }
     ]
   }

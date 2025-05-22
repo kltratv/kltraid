@@ -23,7 +23,7 @@
   },
   {
     "key": "sky_sports_nz",
-    "type": "progressive",
+    "type": "hls",
     "url": "https://7pal.short.gy/skyspt1nz",
     "userAgent": "VLC,Mozilla/5.0"
   }

@@ -4,8 +4,8 @@
     "servers": [
       {
         "key": "07ltg4mKg4",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
+        "label": "HD AUTO"
       },
       {
         "key": "3eVVfpEIDP",
@@ -24,8 +24,8 @@
     "servers": [
       {
         "key": "PcSgdm588R",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
       },
       {
         "key": "0WN8whqYmy",
@@ -40,32 +40,12 @@
     ]
   },
   {
-    "id": "3abeae3d-9902-4d8c-b722-7d568f384e1b",
-    "servers": [
-      {
-        "key": "3IWfUdNaLD",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "W5kKXLIJRg",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "uJAJE03FqX",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "fd049801-a0fc-4bae-b8ab-d36396c1efa1",
     "servers": [
       {
         "key": "MFKtpHhMVM",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ssc1",
+        "label": "HD AUTO"
       },
       {
         "key": "4sq4DczwjX",
@@ -74,66 +54,6 @@
       },
       {
         "key": "G8pbRx7A2M",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "3e440b27-0827-4eee-9a58-13dc9f16c5df",
-    "servers": [
-      {
-        "key": "ClSkDInLkT",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "xgo1yDvnxQ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "3UbKQdcJmy",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "ecca5e4b-9cfa-4342-bde0-c6c7d5ebc4ad",
-    "servers": [
-      {
-        "key": "qkcWd7BkZe",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "6QZhNByr26",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "pcCfieSnxK",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "9d4dd8ff-b299-4ffa-9559-148fd6a834fe",
-    "servers": [
-      {
-        "key": "7y8fxZASkj",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "tdbyEFgS3z",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "CORs827jvw",
         "url": "",
         "label": ""
       }
@@ -211,6 +131,86 @@
         "key": "MxZCFVhaAg",
         "url": "https://thapcam.elutuna.workers.dev/Oz_hHiIlzp5ausmPI6OgRg/Fv2lucGIbhPi2caWYvF5Lg/1747937443920/live/Z3SD/playlist.m3u8",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "3abeae3d-9902-4d8c-b722-7d568f384e1b",
+    "servers": [
+      {
+        "key": "3IWfUdNaLD",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "W5kKXLIJRg",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "uJAJE03FqX",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "3e440b27-0827-4eee-9a58-13dc9f16c5df",
+    "servers": [
+      {
+        "key": "ClSkDInLkT",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "xgo1yDvnxQ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "3UbKQdcJmy",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "ecca5e4b-9cfa-4342-bde0-c6c7d5ebc4ad",
+    "servers": [
+      {
+        "key": "qkcWd7BkZe",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "6QZhNByr26",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "pcCfieSnxK",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "9d4dd8ff-b299-4ffa-9559-148fd6a834fe",
+    "servers": [
+      {
+        "key": "7y8fxZASkj",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "tdbyEFgS3z",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "CORs827jvw",
+        "url": "",
+        "label": ""
       }
     ]
   }

@@ -7,6 +7,12 @@
 #EXTINF:-1 tvg-id="SoccerChannel.id" group-title="Sports" tvg-logo="https://www.visionplus.id/images/repository/655/655-LOGO-m.png",Soccer Channel
 https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd
 
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=e60ece8f0d9042fcb52508055ec48e5e:213f438bd4961cda987d41b7f154f1e5
+#EXTINF:-1 tvg-id="Spotvid" group-title="Sports" tvg-logo="https://www.bevy.be/bevyfiles/indonesia.xml" tvg-logo="https://www.visionplus.id/images/repository/957/49957-SNAPSHOT-l.png",SPOTV ID
+https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mpd/SPOTVHD.mpd
+
 #EXTINF:-1 tvg-id="SkySportsNZ1" group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/7/7e/Sky_Sport_NZ_logo.svg/1920px-Sky_Sport_NZ_logo.svg.png",Sky Sports NZ 1
 https://7pal.short.gy/skyspt1nz
 
@@ -25,3 +31,5 @@ https://hotlivezz179602324.akainu.xyz/2s3fu2zMUs7kW3gqZKGQ6Q/Fv2lucGIbhPi2caWYvF
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
 #EXTINF:-1 tvg-id="jjok" group-title="Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",JJOK
 https://scdn.amggsp.com/383/playlist.m3u8
+
+

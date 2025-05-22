@@ -1,24 +1,5 @@
 [
   {
-    "id": "fd049801-a0fc-4bae-b8ab-d36396c1efa1",
-    "duration": 3,
-    "league": "Saudi Pro League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Al-Ahli",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/8S9rNUFk1YO27XsLV6jn_Q_96x96.png"
-    },
-    "team2": {
-      "name": "Al Ittifaq",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/yg0RhOLRCzpRO4_h0Td4Og_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "01:00",
-    "match_date": "2025-05-23",
-    "match_time": "00:30",
-    "firstRow": 7
-  },
-  {
     "id": "3e440b27-0827-4eee-9a58-13dc9f16c5df",
     "duration": 2.17,
     "league": "Eredivisie",

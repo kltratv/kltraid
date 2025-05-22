@@ -4,27 +4,23 @@
     "servers": [
       {
         "key": "5Hv0e9wZaH",
-        "url": "https://kltraid.pages.dev/json/tes1.json?key=jjok",
+        "url": "https://kltraid.pages.dev/json/playlistapk.m3u?tvg-id=SoccerChannel.id",
         "label": "COURT 1",
-        "type": "hls"
       },
       {
         "key": "TkaRExc9te",
-        "url": "https://goalstreamz.com/events/stream1",
+        "url": "https://kltraid.pages.dev/json/playlistapk.m3u?tvg-id=TNTUK1",
         "label": "COURT 2",
-        "type": "html"
       },
       {
         "key": "HfVlfjK3yk",
-        "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
         "label": "COURT 3",
-        "type": "hls"
       },
       {
         "key": "rMG6FP66cF",
-        "url": "https://kltraid.pages.dev/json/tes1.json?key=soccer_channel",
+        "url": "https://lewis1jni.sm000tellvtjbfastrong.shop/id/baseball/major-league-baseball-1927587/oakland-athletics-vs-los-angeles-angels.html?icg=SUQ&ilang=id",
         "label": "COURT 4",
-        "type": "mpd"
       }
     ]
   }

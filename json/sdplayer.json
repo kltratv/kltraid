@@ -1,19 +1,19 @@
 [
   {
-    "id": "02921476-b516-4561-8835-c4d4bc6b8d9c",
+    "id": "5a642c5b-254c-4f9d-8a25-5f8ee1820695",
     "servers": [
       {
-        "key": "nmHf4cH10R",
-        "url": "https://live.jiatianxiazhuangshi.com/live/58267293_8825a6cddfe150d3046cb65b8fd7969d_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "XgGPZ1kV1N",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853020-2.m3u8?txSecret=85a8e2418d72d2ac5be7874c1169f98b&txTime=682ea1a9",
+        "label": "SD [IOS]"
       },
       {
-        "key": "X8jZ6Jlve2",
+        "key": "Lpq3OFjcBJ",
         "url": "",
         "label": ""
       },
       {
-        "key": "B1VA4pFsxH",
+        "key": "laG0uCUZCI",
         "url": "",
         "label": ""
       }
@@ -210,20 +210,20 @@
     ]
   },
   {
-    "id": "5a642c5b-254c-4f9d-8a25-5f8ee1820695",
+    "id": "02921476-b516-4561-8835-c4d4bc6b8d9c",
     "servers": [
       {
-        "key": "XgGPZ1kV1N",
+        "key": "nmHf4cH10R",
+        "url": "https://live.jiatianxiazhuangshi.com/live/58267293_8825a6cddfe150d3046cb65b8fd7969d_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "X8jZ6Jlve2",
         "url": "",
         "label": ""
       },
       {
-        "key": "Lpq3OFjcBJ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "laG0uCUZCI",
+        "key": "B1VA4pFsxH",
         "url": "",
         "label": ""
       }

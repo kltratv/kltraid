@@ -1,21 +1,21 @@
 [
   {
-    "id": "9b803a13-d345-4ca9-90c3-a7842a667cad",
+    "id": "d77660d6-25fa-4adc-9752-4a66ed7f431b",
     "servers": [
       {
-        "key": "07ltg4mKg4",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
+        "key": "PcSgdm588R",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
         "label": "HD AUTO"
       },
       {
-        "key": "3eVVfpEIDP",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5Nzc1NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "0WN8whqYmy",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5Nzc1NiZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "WWu8JfjBFR",
-        "url": "https://live.jiatianxiazhuangshi.com/live/52034873_66c383d10c7489837137c6296ae1cd8a_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "xmDWFTMCRQ",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -95,22 +95,22 @@
     ]
   },
   {
-    "id": "d77660d6-25fa-4adc-9752-4a66ed7f431b",
+    "id": "9b803a13-d345-4ca9-90c3-a7842a667cad",
     "servers": [
       {
-        "key": "PcSgdm588R",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "key": "07ltg4mKg4",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex1",
         "label": "HD AUTO"
       },
       {
-        "key": "0WN8whqYmy",
-        "url": "",
-        "label": ""
+        "key": "3eVVfpEIDP",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5Nzc1NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "xmDWFTMCRQ",
-        "url": "",
-        "label": ""
+        "key": "WWu8JfjBFR",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034873_66c383d10c7489837137c6296ae1cd8a_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },

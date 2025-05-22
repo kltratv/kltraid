@@ -35,5 +35,5 @@ https://scdn.amggsp.com/383/playlist.m3u8
 #EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
 #KODIPROP:inputstream.adaptive.license_type=clearkey
 #KODIPROP:inputstream.adaptive.license_key=10798eeaac054d85a8fef5ed6f1478a8:e3e8d9e01e7140c99eb1e2d58ee87ff4
-#EXTINF:-1 tvg-id="ClearKeyTest" group-title="Debug" tvg-logo="https://dummyimage.com/600x400/000/fff.png&text=ClearKey",DASH - Valid ClearKey Stream
-https://storage.googleapis.com/shaka-demo-assets/angel-one-clearkey/dash.mpd
+#EXTINF:-1 tvg-id="SingleKIDTest" group-title="Debug" tvg-logo="https://dummyimage.com/600x400/000/fff.png&text=ClearKey",Single-KID DASH Stream
+https://bitmovin-a.akamaihd.net/content/MI201109210084_1/dash/stream.mpd

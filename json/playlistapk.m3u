@@ -32,4 +32,10 @@ https://hotlivezz179602324.akainu.xyz/2s3fu2zMUs7kW3gqZKGQ6Q/Fv2lucGIbhPi2caWYvF
 #EXTINF:-1 tvg-id="jjok" group-title="Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",JJOK
 https://scdn.amggsp.com/383/playlist.m3u8
 
+#EXTVLCOPT:http-user-agent=ExoPlayerDemo/2.15.1 (Linux; Android 13) ExoPlayerLib/2.15.1
+#KODIPROP:inputstream.adaptive.license_type=clearkey
+#KODIPROP:inputstream.adaptive.license_key=1ae8ccd0e0e84d30a74b5fcf5c55e9f5:9b389d8b6a2c496faeab3f47ff3b6c8d
+#EXTINF:-1 tvg-id="TestClearKey" group-title="Debug" tvg-logo="https://dummyimage.com/600x400/000/fff.png&text=ClearKey",DASH ClearKey Test
+https://storage.googleapis.com/shaka-demo-assets/angel-one-clearkey/dash.mpd
+
 

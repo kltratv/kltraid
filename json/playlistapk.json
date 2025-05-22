@@ -22,9 +22,10 @@
     }
   },
   {
-    "key": "sky_sports_nz",
+    "key": "jjok",
     "type": "hls",
-    "url": "https://7pal.short.gy/skyspt1nz",
-    "userAgent": "VLC,Mozilla/5.0"
+    "url": "https://lcdn.amggsp.com/409/playlist.m3u8",
+    "referer": "https://amggsp.com/",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36"
   }
 ]

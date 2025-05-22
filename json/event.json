@@ -1,24 +1,5 @@
 [
   {
-    "id": "3e440b27-0827-4eee-9a58-13dc9f16c5df",
-    "duration": 2.17,
-    "league": "Eredivisie",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Twente",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/APPtKtO4wP6dQme5I1MSlA_96x96.png"
-    },
-    "team2": {
-      "name": "NEC",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/z6E6BNnp8PjBXtfAiZ6yNg_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "02:00",
-    "match_date": "2025-05-23",
-    "match_time": "02:00",
-    "firstRow": 8
-  },
-  {
     "id": "ecca5e4b-9cfa-4342-bde0-c6c7d5ebc4ad",
     "duration": 3,
     "league": "NBA",

@@ -17,11 +17,11 @@ https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/inde
 #EXTVLCOPT:http-origin=https://g.zoomplayer.xyz
 #EXTVLCOPT:http-referrer=https://g.zoomplayer.xyz/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="THAPCAM" group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",THAPCAM
+#EXTINF:-1 tvg-id="THAPCAM" group-title="Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",THAPCAM
 https://hotlivezz179602324.akainu.xyz/2s3fu2zMUs7kW3gqZKGQ6Q/Fv2lucGIbhPi2caWYvF5Lg/1747951825145/live/meoSD/playlist.m3u8
 
 #EXTVLCOPT:http-origin=https://amggsp.com
 #EXTVLCOPT:http-referrer=https://amggsp.com/
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
-#EXTINF:-1 tvg-id="jjok" group-title="Sports" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",JJOK
+#EXTINF:-1 tvg-id="jjok" group-title="Event" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/TNT_Sports_UK_logo.svg/2560px-TNT_Sports_UK_logo.svg.png",JJOK
 https://scdn.amggsp.com/383/playlist.m3u8

@@ -1,25 +1,5 @@
 [
   {
-    "id": "5a642c5b-254c-4f9d-8a25-5f8ee1820695",
-    "servers": [
-      {
-        "key": "XgGPZ1kV1N",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853020-2.m3u8?txSecret=85a8e2418d72d2ac5be7874c1169f98b&txTime=682ea1a9",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "Lpq3OFjcBJ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "laG0uCUZCI",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "d9bb32c3-8c4f-47b7-8a5f-a6637230243e",
     "servers": [
       {
@@ -41,6 +21,26 @@
         "key": "rMG6FP66cF",
         "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900438529464061_AiHD.m3u8?txSecret=bc4654f2eb99acd0edb026e599e7ca49&txTime=682E6900",
         "label": "COURT 4"
+      },
+      {
+        "key": "84eQfWlrdu",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "5s2SQTHBdA",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "7VJfNRME7p",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "MKocbatS93",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -224,6 +224,26 @@
       },
       {
         "key": "B1VA4pFsxH",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5a642c5b-254c-4f9d-8a25-5f8ee1820695",
+    "servers": [
+      {
+        "key": "XgGPZ1kV1N",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853020-2.m3u8?txSecret=85a8e2418d72d2ac5be7874c1169f98b&txTime=682ea1a9",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Lpq3OFjcBJ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "laG0uCUZCI",
         "url": "",
         "label": ""
       }

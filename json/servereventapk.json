@@ -6,7 +6,7 @@
         "key": "5Hv0e9wZaH",
         "url": "https://kltraid.pages.dev/json/tes1.json?key=sky_sports_nz",
         "label": "COURT 1",
-        "type": "hls"
+        "type": "progressive"
       },
       {
         "key": "TkaRExc9te",

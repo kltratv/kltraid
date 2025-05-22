@@ -1,21 +1,21 @@
 [
   {
-    "id": "d77660d6-25fa-4adc-9752-4a66ed7f431b",
+    "id": "3abeae3d-9902-4d8c-b722-7d568f384e1b",
     "servers": [
       {
-        "key": "PcSgdm588R",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "0WN8whqYmy",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5Nzc1NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "3IWfUdNaLD",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5NzY3NiZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "xmDWFTMCRQ",
-        "url": "https://live.jiatianxiazhuangshi.com/live/52034863_ac3833cd823778d3fa7ad40ce55b96a7_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "W5kKXLIJRg",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "uJAJE03FqX",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -115,22 +115,22 @@
     ]
   },
   {
-    "id": "3abeae3d-9902-4d8c-b722-7d568f384e1b",
+    "id": "d77660d6-25fa-4adc-9752-4a66ed7f431b",
     "servers": [
       {
-        "key": "3IWfUdNaLD",
-        "url": "",
-        "label": ""
+        "key": "PcSgdm588R",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=sscex2",
+        "label": "HD AUTO"
       },
       {
-        "key": "W5kKXLIJRg",
-        "url": "",
-        "label": ""
+        "key": "0WN8whqYmy",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5Nzc1NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
-        "key": "uJAJE03FqX",
-        "url": "",
-        "label": ""
+        "key": "xmDWFTMCRQ",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034863_ac3833cd823778d3fa7ad40ce55b96a7_nsd.m3u8",
+        "label": "ANDROID/PC"
       }
     ]
   },

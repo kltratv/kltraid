@@ -5,22 +5,26 @@
       {
         "key": "5Hv0e9wZaH",
         "url": "https://kltraid.pages.dev/json/tes1.json?key=sky_sports_nz",
-        "label": "COURT 1"
+        "label": "COURT 1",
+        "type": "hls"
       },
       {
         "key": "TkaRExc9te",
         "url": "https://goalstreamz.com/events/stream1",
-        "label": "COURT 2"
+        "label": "COURT 2",
+        "type": "html"
       },
       {
         "key": "HfVlfjK3yk",
         "url": "https://bitdash-a.akamaihd.net/content/sintel/hls/playlist.m3u8",
-        "label": "COURT 3"
+        "label": "COURT 3",
+        "type": "hls"
       },
       {
         "key": "rMG6FP66cF",
         "url": "https://kltraid.pages.dev/json/tes1.json?key=soccer_channel",
-        "label": "COURT 4"
+        "label": "COURT 4",
+        "type": "mpd"
       }
     ]
   }

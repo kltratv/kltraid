@@ -1,21 +1,21 @@
 [
   {
-    "id": "e8b57524-c105-4221-b983-47ee836bca03",
+    "id": "55c008d0-8a66-4b78-9ac8-b34dd7afa59a",
     "servers": [
       {
-        "key": "qFMIBaVteJ",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3ODUzNiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "3OIA4yCPuA",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "r0qpePTidL",
-        "url": "https://live1.jiatianxiazhuangshi.com/live/57130729_72dad307f035eefa9ec6571eb64d1d12_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "QRUYkTwXYj",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "5VfW3YMewG",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4266930-0.m3u8?txSecret=3bc18e2f03a1914e19f6293e7d0c8bb5&txTime=68308785",
-        "label": "SD [IOS]"
+        "key": "r3MuRV0wR4",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -100,6 +100,26 @@
       {
         "key": "eOAQcGeUCy",
         "url": "https://goalstreamz.com/f1streams/streams/",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "e8b57524-c105-4221-b983-47ee836bca03",
+    "servers": [
+      {
+        "key": "qFMIBaVteJ",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY3ODUzNiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "r0qpePTidL",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/57130729_72dad307f035eefa9ec6571eb64d1d12_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "5VfW3YMewG",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4266930-0.m3u8?txSecret=3bc18e2f03a1914e19f6293e7d0c8bb5&txTime=68308785",
         "label": "SD [IOS]"
       }
     ]

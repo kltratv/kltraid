@@ -4,8 +4,8 @@
     "servers": [
       {
         "key": "3OIA4yCPuA",
-        "url": "",
-        "label": ""
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwMTk2MSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
       },
       {
         "key": "QRUYkTwXYj",
@@ -14,66 +14,6 @@
       },
       {
         "key": "r3MuRV0wR4",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
-    "servers": [
-      {
-        "key": "3a0AB5BIUN",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "xeTwPNkU1X",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "5XFsY8pZlm",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
-    "servers": [
-      {
-        "key": "HS6OvQWFx9",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "LY2aQUhHrR",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "EJEBoDYZnj",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
-    "servers": [
-      {
-        "key": "tk9sIRJAJe",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "0cQ2bf6nVo",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "OCbzn3RzhL",
         "url": "",
         "label": ""
       }
@@ -201,6 +141,66 @@
         "key": "zNMkOzmeQj",
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4266931-0.m3u8?txSecret=f7f249ff685391c6a2683943c8a74323&txTime=683086d1",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
+    "servers": [
+      {
+        "key": "3a0AB5BIUN",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "xeTwPNkU1X",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "5XFsY8pZlm",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
+    "servers": [
+      {
+        "key": "HS6OvQWFx9",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "LY2aQUhHrR",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "EJEBoDYZnj",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
+    "servers": [
+      {
+        "key": "tk9sIRJAJe",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "0cQ2bf6nVo",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "OCbzn3RzhL",
+        "url": "",
+        "label": ""
       }
     ]
   }

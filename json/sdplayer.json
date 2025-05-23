@@ -9,11 +9,71 @@
       },
       {
         "key": "QRUYkTwXYj",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184688-0.m3u8?txSecret=9ee37ecbb818eedcbc0baf805af491b6&txTime=68309ca5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "r3MuRV0wR4",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
+    "servers": [
+      {
+        "key": "3a0AB5BIUN",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwMTk1NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "xeTwPNkU1X",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184690-0.m3u8?txSecret=4d6ef2a7de1880eea2f3a54801f50964&txTime=68309ca5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "5XFsY8pZlm",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
+    "servers": [
+      {
+        "key": "HS6OvQWFx9",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184693-0.m3u8?txSecret=9fb8c75f0b7f6fa5c45092d2b827681a&txTime=68309ca5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "LY2aQUhHrR",
         "url": "",
         "label": ""
       },
       {
-        "key": "r3MuRV0wR4",
+        "key": "EJEBoDYZnj",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
+    "servers": [
+      {
+        "key": "tk9sIRJAJe",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184686-0.m3u8?txSecret=1ae59bbd20bbb517584632c14cf24288&txTime=68309ca5",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "0cQ2bf6nVo",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "OCbzn3RzhL",
         "url": "",
         "label": ""
       }
@@ -141,66 +201,6 @@
         "key": "zNMkOzmeQj",
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4266931-0.m3u8?txSecret=f7f249ff685391c6a2683943c8a74323&txTime=683086d1",
         "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
-    "servers": [
-      {
-        "key": "3a0AB5BIUN",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "xeTwPNkU1X",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "5XFsY8pZlm",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
-    "servers": [
-      {
-        "key": "HS6OvQWFx9",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "LY2aQUhHrR",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "EJEBoDYZnj",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
-    "servers": [
-      {
-        "key": "tk9sIRJAJe",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "0cQ2bf6nVo",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "OCbzn3RzhL",
-        "url": "",
-        "label": ""
       }
     ]
   }

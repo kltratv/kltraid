@@ -38,44 +38,6 @@
     "firstRow": 6
   },
   {
-    "id": "e8b57524-c105-4221-b983-47ee836bca03",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Jeju United",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/sC2vTgf3ZsFWY8a1o4tkbg_96x96.png"
-    },
-    "team2": {
-      "name": "Jeonbuk Motors",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/5JL1pqxK8ydx8YzPIWTCKg_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "17:30",
-    "match_date": "2025-05-23",
-    "match_time": "17:30",
-    "firstRow": 7
-  },
-  {
-    "id": "396f27e7-7edd-464a-babc-b24bc916a5bb",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Anyang",
-      "logo": "https://tmssl.akamaized.net//images/wappen/head/38898.png?lm=1709930221"
-    },
-    "team2": {
-      "name": "Pohang Steelers",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/oHFLIPiY-JeABv5EXD8-5Q_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "17:30",
-    "match_date": "2025-05-23",
-    "match_time": "17:30",
-    "firstRow": 8
-  },
-  {
     "id": "55c008d0-8a66-4b78-9ac8-b34dd7afa59a",
     "duration": 2.17,
     "league": "Liga 1",

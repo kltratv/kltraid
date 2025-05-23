@@ -1,19 +1,19 @@
 [
   {
-    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
+    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
     "servers": [
       {
-        "key": "tk9sIRJAJe",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184686-0.m3u8?txSecret=1ae59bbd20bbb517584632c14cf24288&txTime=68309ca5",
+        "key": "HS6OvQWFx9",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwMTk1NSZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "0cQ2bf6nVo",
+        "key": "LY2aQUhHrR",
         "url": "",
         "label": ""
       },
       {
-        "key": "OCbzn3RzhL",
+        "key": "EJEBoDYZnj",
         "url": "",
         "label": ""
       }
@@ -185,20 +185,20 @@
     ]
   },
   {
-    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
+    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
     "servers": [
       {
-        "key": "HS6OvQWFx9",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184693-0.m3u8?txSecret=9fb8c75f0b7f6fa5c45092d2b827681a&txTime=68309ca5",
+        "key": "tk9sIRJAJe",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4184686-0.m3u8?txSecret=1ae59bbd20bbb517584632c14cf24288&txTime=68309ca5",
         "label": "SD [IOS]"
       },
       {
-        "key": "LY2aQUhHrR",
+        "key": "0cQ2bf6nVo",
         "url": "",
         "label": ""
       },
       {
-        "key": "EJEBoDYZnj",
+        "key": "OCbzn3RzhL",
         "url": "",
         "label": ""
       }

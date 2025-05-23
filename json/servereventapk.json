@@ -8,9 +8,19 @@
         "label": "Soccer Channel"
       },
       {
+        "key": "tnt_uk",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json",
+        "label": "TNT UK"
+      },
+      {
         "key": "spotv_id",
         "url": "https://kltraid.pages.dev/json/playlistapk.json",
         "label": "SPOTV ID"
+      },
+      {
+        "key": "court_4",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52034863_ac3833cd823778d3fa7ad40ce55b96a7_nsd.m3u8",
+        "label": "COURT 4"
       }
     ]
   }

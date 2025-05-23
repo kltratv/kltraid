@@ -4,17 +4,17 @@
     "servers": [
       {
         "key": "5Hv0e9wZaH",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=SoccerChannel",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=SoccerChannel.id",
         "label": "COURT 1"
       },
       {
         "key": "TkaRExc9te",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=TNTUK1",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=TNTUK1",
         "label": "COURT 2"
       },
       {
         "key": "HfVlfjK3yk",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=Spotvid",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=Spotvid",
         "label": "COURT 3"
       },
       {

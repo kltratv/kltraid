@@ -3,22 +3,22 @@
     "id": "d9bb32c3-8c4f-47b7-8a5f-a6637230243e",
     "servers": [
       {
-        "key": "soccer_1",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json",
-        "label": "Soccer Channel"
+        "key": "5Hv0e9wZaH",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=SoccerChannel",
+        "label": "COURT 1"
       },
       {
-        "key": "tnt_uk",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json",
-        "label": "TNT UK"
+        "key": "TkaRExc9te",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=TNTUK1",
+        "label": "COURT 2"
       },
       {
-        "key": "spotv_id",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json",
-        "label": "SPOTV ID"
+        "key": "HfVlfjK3yk",
+        "url": "https://kltraid.pages.dev/json/playlistapk.json?key=Spotvid",
+        "label": "COURT 3"
       },
       {
-        "key": "court_4",
+        "key": "rMG6FP66cF",
         "url": "https://live.jiatianxiazhuangshi.com/live/52034863_ac3833cd823778d3fa7ad40ce55b96a7_nsd.m3u8",
         "label": "COURT 4"
       }

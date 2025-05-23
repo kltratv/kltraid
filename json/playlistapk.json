@@ -1,0 +1,30 @@
+[
+  {
+    "id": "SoccerChannel.id",
+    "title": "Soccer Channel",
+    "group": "Sports",
+    "drm": {
+      "type": "widevine",
+      "licenseUrl": "https://drm-vision2025.tvrusak1992.workers.dev/?no=115&type=drm"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+      "Referer": "https://www.visionplus.id/"
+    },
+    "url": "https://d2xz2v5wuvgur6.cloudfront.net/out/v1/63c0da12bb4d48afbaf053f51dff2353/index.mpd"
+  },
+  {
+    "id": "Spotvid",
+    "title": "SPOTV ID",
+    "group": "Sports",
+    "drm": {
+      "type": "clearkey",
+      "keyId": "e60ece8f0d9042fcb52508055ec48e5e",
+      "key": "213f438bd4961cda987d41b7f154f1e5"
+    },
+    "headers": {
+      "User-Agent": "ExoPlayerDemo/2.15.1 (Linux; Android 13)"
+    },
+    "url": "https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mpd/SPOTVHD.mpd"
+  }
+]

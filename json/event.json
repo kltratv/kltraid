@@ -19,25 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "9d4dd8ff-b299-4ffa-9559-148fd6a834fe",
-    "duration": 2.17,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Persik Kediri",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/jz2h8KmLrZz9pgMq36GPtw_96x96.png"
-    },
-    "team2": {
-      "name": "Borneo",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/971nr7DeaQFsvjx3K-CIpA_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "15:30",
-    "match_date": "2025-05-23",
-    "match_time": "15:30",
-    "firstRow": 4
-  },
-  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "duration": 1000,
     "league": "2025 MotoGP British Grand Prix",

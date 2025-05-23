@@ -4,7 +4,7 @@
     "servers": [
       {
         "key": "DiD2kqfX5g",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3900440345167061_AiHD.m3u8?txSecret=84c19ac79ad88232898d39e516afe023&txTime=6830FDF0",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304801.m3u8",
         "label": "COURT 1"
       },
       {
@@ -14,7 +14,7 @@
       },
       {
         "key": "f8ewBTRlen",
-        "url": "https://3be4be19ef6d73cd744383f2da36c93f.v.smtcdns.net/play.cbalive.weibisai.com/live/3900440699791061_AiHD.m3u8?txSecret=2f46dfe8e03e8d487158f3e7e5b2514c&txTime=6830FDF0",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/2027305001.m3u8",
         "label": "COURT 3"
       },
       {

@@ -95,63 +95,6 @@
     "firstRow": 9
   },
   {
-    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
-    "duration": 2.17,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Persija",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/zG89oHU9U0HCCF-zutao2Q_96x96.png"
-    },
-    "team2": {
-      "name": "Malut United",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/97916.png?lm=1688777192"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "19:00",
-    "match_date": "2025-05-23",
-    "match_time": "19:00",
-    "firstRow": 10
-  },
-  {
-    "id": "3b06c417-1f7d-489c-ba17-0fadc936c486",
-    "duration": 2.17,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "PSM",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/1-PbIEfjB_RIrtqlxGEK7w_96x96.png"
-    },
-    "team2": {
-      "name": "Persita",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/KS6m2kDLyw-alBwraSvPZA_96x96.png"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "19:00",
-    "match_date": "2025-05-23",
-    "match_time": "19:00",
-    "firstRow": 11
-  },
-  {
-    "id": "6c588368-fc46-4bf8-8fab-e7d96c8a407f",
-    "duration": 2.17,
-    "league": "Liga 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Dewa United",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/72710.png?lm=1613993004"
-    },
-    "team2": {
-      "name": "PSBS Biak Numfor",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/72715.png?lm=1722134974"
-    },
-    "kickoff_date": "2025-05-23",
-    "kickoff_time": "19:00",
-    "match_date": "2025-05-23",
-    "match_time": "19:00",
-    "firstRow": 12
-  },
-  {
     "id": "a90d64a0-3b39-4c0e-aaa6-88af1eb8b96f",
     "duration": 3,
     "league": "Serie A",

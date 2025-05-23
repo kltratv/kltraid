@@ -40,5 +40,45 @@
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62"
     },
     "url": "https://ssc-1-enc.edgenextcdn.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd"
+  },
+  {
+    "id": "RCTI-HD",
+    "title": "RCTI HD",
+    "group": "National TV",
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",
+      "Referer": "https://www.visionplus.id/"
+    },
+    "url": "https://av-ch-cdn.mncnow.id/live/eds/rcti-2/sa_dash/rcti-2.mpd"
+  },
+  {
+    "id": "DuniaAnak",
+    "title": "Dunia Anak",
+    "group": "Kids",
+    "drm": {
+      "type": "widevine",
+      "licenseUrl": "https://cubmu-cindo.cenc16995.workers.dev/"
+    },
+    "headers": {
+      "User-Agent": "Xstream XGO/1.22 (Linux;Android 9) ExoPlayerLib/2.10.5"
+    },
+    "url": "https://cdnjkt913.transvision.co.id:1000/live/master/2/4028c6856c3db2cc016cdc32eb0c439c/manifest.mpd"
+  },
+  {
+    "id": "MalaysiaMasters2025",
+    "title": "13:55 WIB PERODUA Malaysia Masters 2025",
+    "group": "SPECIAL LIVE",
+    "headers": {
+      "Origin": "https://g.zoomplayer.xyz",
+      "Referer": "https://g.zoomplayer.xyz/",
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36"
+    },
+    "url": "https://hotlivezz179026907.akainu.xyz/GPNn2E3idIJD6Tj3_ICfVg/Fv2lucGIbhPi2caWYvF5Lg/1747996819175/live/may24/chunklist.m3u8"
+  },
+  {
+    "id": "SkySportsNZ1",
+    "title": "Sky Sports NZ 1",
+    "group": "Sports",
+    "url": "https://7pal.short.gy/skyspt1nz"
   }
 ]

@@ -95,6 +95,25 @@
     "firstRow": 9
   },
   {
+    "id": "39608496-8006-445f-9eb3-30c39c3c8fea",
+    "duration": 2.17,
+    "league": "Liga 1",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Persija",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/zG89oHU9U0HCCF-zutao2Q_96x96.png"
+    },
+    "team2": {
+      "name": "Malut United",
+      "logo": "https://tmssl.akamaized.net/images/wappen/head/97916.png?lm=1688777192"
+    },
+    "kickoff_date": "2025-05-23",
+    "kickoff_time": "19:00",
+    "match_date": "2025-05-23",
+    "match_time": "19:00",
+    "firstRow": 10
+  },
+  {
     "id": "a90d64a0-3b39-4c0e-aaa6-88af1eb8b96f",
     "duration": 3,
     "league": "Serie A",

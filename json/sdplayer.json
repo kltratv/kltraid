@@ -1,24 +1,19 @@
 [
   {
-    "id": "aa422adb-e875-4ebf-98fa-75bfb69d1b04",
+    "id": "9d4dd8ff-b299-4ffa-9559-148fd6a834fe",
     "servers": [
       {
-        "key": "DiD2kqfX5g",
-        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304801.m3u8",
-        "label": "COURT 1"
+        "key": "7y8fxZASkj",
+        "url": "https://live.jiatianxiazhuangshi.com/live/52325147_d6d1cfbd90d4cd7c81e6d20a4e9cabc9_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "UuSQ2nlmLs",
-        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304901.m3u8",
-        "label": "COURT 2"
+        "key": "tdbyEFgS3z",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "f8ewBTRlen",
-        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/2027305001.m3u8",
-        "label": "COURT 3"
-      },
-      {
-        "key": "VHH6wfhXf4",
+        "key": "CORs827jvw",
         "url": "",
         "label": ""
       }
@@ -220,20 +215,25 @@
     ]
   },
   {
-    "id": "9d4dd8ff-b299-4ffa-9559-148fd6a834fe",
+    "id": "aa422adb-e875-4ebf-98fa-75bfb69d1b04",
     "servers": [
       {
-        "key": "7y8fxZASkj",
-        "url": "",
-        "label": ""
+        "key": "DiD2kqfX5g",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304801.m3u8",
+        "label": "COURT 1"
       },
       {
-        "key": "tdbyEFgS3z",
-        "url": "",
-        "label": ""
+        "key": "UuSQ2nlmLs",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304901.m3u8",
+        "label": "COURT 2"
       },
       {
-        "key": "CORs827jvw",
+        "key": "f8ewBTRlen",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/2027305001.m3u8",
+        "label": "COURT 3"
+      },
+      {
+        "key": "VHH6wfhXf4",
         "url": "",
         "label": ""
       }

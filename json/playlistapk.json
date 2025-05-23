@@ -26,5 +26,19 @@
       "User-Agent": "ExoPlayerDemo/2.15.1 (Linux; Android 13)"
     },
     "url": "https://atemecdnbalancer-voe.sysln.id/live/eds/SPOTVHD/mpd/SPOTVHD.mpd"
+  },
+  {
+    "id": "SSC1.id",
+    "title": "SSC 1 HD",
+    "group": "Sports",
+    "drm": {
+      "type": "clearkey",
+      "keyId": "d84c325f36814f39bbe59080272b10c3",
+      "key": "550727de4c96ef1ecff874905493580f"
+    },
+    "headers": {
+      "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/103.0.5060.114 Safari/537.36 Edg/103.0.1264.62"
+    },
+    "url": "https://ssc-1-enc.edgenextcdn.net/out/v1/c696e4819b55414388a1a487e8a45ca1/index.mpd"
   }
 ]

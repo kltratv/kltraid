@@ -1,24 +1,5 @@
 [
   {
-    "id": "02d0d28b-c2a6-44ea-b077-04c93c1135ed",
-    "duration": 10,
-    "league": "Malaysia Open 2025",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Badminton.png",
-    "team1": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "team2": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "kickoff_date": "2025-05-24",
-    "kickoff_time": "11:00",
-    "match_date": "2025-05-24",
-    "match_time": "11:00",
-    "firstRow": 3
-  },
-  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "duration": 1000,
     "league": "2025 MotoGP British Grand Prix",

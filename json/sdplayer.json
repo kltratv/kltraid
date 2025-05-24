@@ -1,34 +1,19 @@
 [
   {
-    "id": "6aac8a0a-922f-4943-acd5-af2b510725b9",
+    "id": "81498ee7-5c90-4c40-9c2b-841d05e17dae",
     "servers": [
       {
-        "key": "AW3RvASitk",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "NEAihnHHEn",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwMTI3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "eqClagNM1W",
+        "url": "https://pullws-gsc.jysgcgl.com/live/dps-59216045-saturn-wsu/playlist.m3u8?wsSecret=eb00c907526c53fcd82d96a448bb2cbc&wsABSTime=6831528c",
         "label": "SD [IOS]"
       },
       {
-        "key": "pyug6j0ivd",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "JI1yKwpU41",
-        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "NYEmwLnS1C",
+        "key": "jsJVSvnQxb",
         "url": "",
         "label": ""
       },
       {
-        "key": "WdtUfbuJtT",
+        "key": "RLPB2AuYws",
         "url": "",
         "label": ""
       }
@@ -310,20 +295,35 @@
     ]
   },
   {
-    "id": "81498ee7-5c90-4c40-9c2b-841d05e17dae",
+    "id": "6aac8a0a-922f-4943-acd5-af2b510725b9",
     "servers": [
       {
-        "key": "eqClagNM1W",
+        "key": "AW3RvASitk",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "NEAihnHHEn",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwMTI3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "pyug6j0ivd",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "JI1yKwpU41",
+        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "NYEmwLnS1C",
         "url": "",
         "label": ""
       },
       {
-        "key": "jsJVSvnQxb",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "RLPB2AuYws",
+        "key": "WdtUfbuJtT",
         "url": "",
         "label": ""
       }

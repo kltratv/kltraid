@@ -1,16 +1,31 @@
 [
   {
-    "id": "02d0d28b-c2a6-44ea-b077-04c93c1135ed",
+    "id": "4cfc8c49-46cb-498c-b7b5-c7de315c7c9c",
     "servers": [
       {
-        "key": "2bFyZksbrC",
-        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltraidtv/2027305501.m3u8",
-        "label": "COURT 1"
+        "key": "M8SbahDsa2",
+        "url": "https://live4.jiatianxiazhuangshi.com/live/57130735_c8dcd3d0dbb74b9225e616e839daab5e_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "jpNcSIQLXq",
-        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltraidtv/2027305601.m3u8",
-        "label": "COURT 2"
+        "key": "3o51lOtV3f",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "0e93c747-598c-487f-9c3f-3904d73a390b",
+    "servers": [
+      {
+        "key": "kF6rHo4Pnr",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/57130737_e33d4c28a623dd8133d24bee275780d2_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "C5xYHrq55O",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -51,6 +66,21 @@
         "key": "eOAQcGeUCy",
         "url": "https://goalstreamz.com/f1streams/streams/",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "02d0d28b-c2a6-44ea-b077-04c93c1135ed",
+    "servers": [
+      {
+        "key": "2bFyZksbrC",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltraidtv/2027305501.m3u8",
+        "label": "COURT 1"
+      },
+      {
+        "key": "jpNcSIQLXq",
+        "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltraidtv/2027305601.m3u8",
+        "label": "COURT 2"
       }
     ]
   },
@@ -164,36 +194,6 @@
       },
       {
         "key": "oq9bcML2Nr",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "4cfc8c49-46cb-498c-b7b5-c7de315c7c9c",
-    "servers": [
-      {
-        "key": "M8SbahDsa2",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "3o51lOtV3f",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "0e93c747-598c-487f-9c3f-3904d73a390b",
-    "servers": [
-      {
-        "key": "kF6rHo4Pnr",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "C5xYHrq55O",
         "url": "",
         "label": ""
       }

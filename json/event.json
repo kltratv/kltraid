@@ -38,25 +38,6 @@
     "firstRow": 6
   },
   {
-    "id": "01ffc03d-752c-4790-a990-d898cc8ce960",
-    "duration": 3,
-    "league": "Serie A",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Bologna",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/WnKdNmw06v2lz7HjhqPRPw_96x96.png"
-    },
-    "team2": {
-      "name": "Genoa",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/GlyoZO04xkwVX6oTh8asHA_96x96.png"
-    },
-    "kickoff_date": "2025-05-24",
-    "kickoff_time": "23:00",
-    "match_date": "2025-05-24",
-    "match_time": "22:30",
-    "firstRow": 15
-  },
-  {
     "id": "8b66a49a-1a06-4f02-a521-3a6a1c37832e",
     "duration": 3,
     "league": "LaLiga",

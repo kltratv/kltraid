@@ -1,19 +1,19 @@
 [
   {
-    "id": "f6384d9f-dcdc-4f0f-8f1f-0b8543c71dd9",
+    "id": "7e6fd46b-c24d-48e4-99d5-d2abfca875d5",
     "servers": [
       {
-        "key": "cz3zjPvC0E",
-        "url": "https://pull.dangaoka.com/live/stream-238362_lhd.m3u8?auth_key=1748080593-0-0-3fa3b24f69223cae1defa983b7c88938",
-        "label": "SD [IOS]"
+        "key": "JKH0U9XpAr",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/edq09i421m3beqx_5cf3f58952aa992cb2f4ecd7511a0cb4_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "Kinx6G3h3n",
+        "key": "QqmqN5zuo4",
         "url": "",
         "label": ""
       },
       {
-        "key": "O5eGg2UTHc",
+        "key": "c68Tmi14oI",
         "url": "",
         "label": ""
       }
@@ -90,20 +90,20 @@
     ]
   },
   {
-    "id": "7e6fd46b-c24d-48e4-99d5-d2abfca875d5",
+    "id": "f6384d9f-dcdc-4f0f-8f1f-0b8543c71dd9",
     "servers": [
       {
-        "key": "JKH0U9XpAr",
+        "key": "cz3zjPvC0E",
+        "url": "https://pull.dangaoka.com/live/stream-238362_lhd.m3u8?auth_key=1748080593-0-0-3fa3b24f69223cae1defa983b7c88938",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Kinx6G3h3n",
         "url": "",
         "label": ""
       },
       {
-        "key": "QqmqN5zuo4",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "c68Tmi14oI",
+        "key": "O5eGg2UTHc",
         "url": "",
         "label": ""
       }

@@ -378,5 +378,24 @@
     "match_date": "2025-05-25",
     "match_time": "01:30",
     "firstRow": 22
+  },
+  {
+    "id": "5a6b840d-3575-49b8-aecd-f4d2b8aaced9",
+    "duration": 3,
+    "league": "LaLiga",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Getafe",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/1UDHZMdKZD15W5gus7dJyg_96x96.png"
+    },
+    "team2": {
+      "name": "Celta de Vigo",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wpdhixHP_sloegfP0UlwAw_96x96.png"
+    },
+    "kickoff_date": "2025-05-25",
+    "kickoff_time": "02:00",
+    "match_date": "2025-05-25",
+    "match_time": "01:30",
+    "firstRow": 23
   }
 ]

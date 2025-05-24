@@ -95,6 +95,25 @@
     "firstRow": 7
   },
   {
+    "id": "7e6fd46b-c24d-48e4-99d5-d2abfca875d5",
+    "duration": 2.17,
+    "league": "Liga 1",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
+      "name": "Arema",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/gF6obPRsLgF7Oj3wEl7vtQ_96x96.png"
+    },
+    "team2": {
+      "name": "Semen Padang",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/NJbgskD55Z91SB0VmxLo8g_96x96.png"
+    },
+    "kickoff_date": "2025-05-24",
+    "kickoff_time": "16:00",
+    "match_date": "2025-05-24",
+    "match_time": "16:00",
+    "firstRow": 8
+  },
+  {
     "id": "b1b69de2-5bd1-4158-b6fb-d582a4452ead",
     "duration": 2.17,
     "league": "Liga 1",

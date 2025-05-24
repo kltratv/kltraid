@@ -35,6 +35,41 @@
     ]
   },
   {
+    "id": "9ed78e3d-b23d-42db-9052-eda17d30779e",
+    "servers": [
+      {
+        "key": "ecXC7s2zYn",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "0xVVc8RvvG",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "geiHTOBClU",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA3NiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "nQv5CSNlNF",
+        "url": "https://kc.elutuna.workers.dev/203/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "H3Go2HBE8m",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "N9C3Tswr6X",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
@@ -419,41 +454,6 @@
       },
       {
         "key": "pg66lsRyuf",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "9ed78e3d-b23d-42db-9052-eda17d30779e",
-    "servers": [
-      {
-        "key": "ecXC7s2zYn",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "0xVVc8RvvG",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "geiHTOBClU",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA3NiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "nQv5CSNlNF",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "H3Go2HBE8m",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "N9C3Tswr6X",
         "url": "",
         "label": ""
       }

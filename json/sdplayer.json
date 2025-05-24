@@ -35,41 +35,6 @@
     ]
   },
   {
-    "id": "8b66a49a-1a06-4f02-a521-3a6a1c37832e",
-    "servers": [
-      {
-        "key": "E9WeWVWJHz",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "aJ222TQEtT",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA4MCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "pKESDkyXzA",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_8/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "PVSDbJWte1",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "POS2LtVBG0",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "gMlHZrA8st",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
@@ -356,6 +321,41 @@
         "key": "6TSSk0AiFq",
         "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160884-0.m3u8?txSecret=e169431fa27c7d79b4b0a705993162be&txTime=683225bf",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "8b66a49a-1a06-4f02-a521-3a6a1c37832e",
+    "servers": [
+      {
+        "key": "E9WeWVWJHz",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "aJ222TQEtT",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA4MCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "pKESDkyXzA",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_espn_plus_8/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "PVSDbJWte1",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "POS2LtVBG0",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "gMlHZrA8st",
+        "url": "",
+        "label": ""
       }
     ]
   },

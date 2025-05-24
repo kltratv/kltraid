@@ -35,6 +35,26 @@
     ]
   },
   {
+    "id": "57bf2ad0-c0f7-42ad-8155-fba2a225ad89",
+    "servers": [
+      {
+        "key": "IBhZLErNgE",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA5OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "5GPxQ8sSMk",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "OreMX2tlXw",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "ac9145fa-5456-4ea7-8492-cb45db2cf76d",
     "servers": [
       {
@@ -301,26 +321,6 @@
         "key": "N0yh9rFB20",
         "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
         "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "57bf2ad0-c0f7-42ad-8155-fba2a225ad89",
-    "servers": [
-      {
-        "key": "IBhZLErNgE",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "5GPxQ8sSMk",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "OreMX2tlXw",
-        "url": "",
-        "label": ""
       }
     ]
   },

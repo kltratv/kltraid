@@ -80,6 +80,24 @@
     "league": "Liga 1",
     "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
     "team1": {
+      "name": "Persib",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/RpZprl39y1opAvgF7NhPVg_96x96.png"
+    },
+    "team2": {
+      "name": "Persis Solo",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/N8ehfu0um3u2H7RwOfmmZg_96x96.png"
+    },
+    "kickoff_date": "2025-05-24",
+    "kickoff_time": "16:00",
+    "match_date": "2025-05-24",
+    "match_time": "16:00",
+    "firstRow": 7
+  },
+  {
+    "duration": 2.17,
+    "league": "Liga 1",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
+    "team1": {
       "name": "Madura United",
       "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/CNX6-D-GQreUaKK_8zdpnQ_96x96.png"
     },

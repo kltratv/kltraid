@@ -35,35 +35,55 @@
     ]
   },
   {
-    "id": "5a6b840d-3575-49b8-aecd-f4d2b8aaced9",
+    "id": "e5c25ea0-5b89-4b5a-aa29-14cb52f5a868",
     "servers": [
       {
-        "key": "cUSACthMZI",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "key": "Fot4psM7ki",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
         "label": "HD AUTO"
       },
       {
-        "key": "Rl0jRWj8up",
+        "key": "zrVFupN89x",
         "url": "",
         "label": ""
       },
       {
-        "key": "2pKRhpkOLi",
+        "key": "g4wLBj9GlG",
         "url": "",
         "label": ""
       },
       {
-        "key": "OuRoqCfRLI",
+        "key": "O9uhAoVLp0",
         "url": "",
         "label": ""
       },
       {
-        "key": "S2AG7IZk37",
+        "key": "JO9Z3hIodm",
         "url": "",
         "label": ""
       },
       {
-        "key": "vp5Shlviaw",
+        "key": "fLg0wYx4HY",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "1654a116-916f-47a9-bd09-103b9d01e073",
+    "servers": [
+      {
+        "key": "CXVppuc6Xu",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "IQrzTtZBSg",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "EbzPZx7SvL",
         "url": "",
         "label": ""
       }
@@ -524,6 +544,41 @@
       },
       {
         "key": "y05pHj8MBu",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5a6b840d-3575-49b8-aecd-f4d2b8aaced9",
+    "servers": [
+      {
+        "key": "cUSACthMZI",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Rl0jRWj8up",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2pKRhpkOLi",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "OuRoqCfRLI",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "S2AG7IZk37",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vp5Shlviaw",
         "url": "",
         "label": ""
       }

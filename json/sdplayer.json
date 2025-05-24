@@ -35,6 +35,41 @@
     ]
   },
   {
+    "id": "5a6b840d-3575-49b8-aecd-f4d2b8aaced9",
+    "servers": [
+      {
+        "key": "cUSACthMZI",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Rl0jRWj8up",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "2pKRhpkOLi",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "OuRoqCfRLI",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "S2AG7IZk37",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "vp5Shlviaw",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {

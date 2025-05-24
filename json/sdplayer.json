@@ -20,6 +20,26 @@
     ]
   },
   {
+    "id": "7e6fd46b-c24d-48e4-99d5-d2abfca875d5",
+    "servers": [
+      {
+        "key": "JKH0U9XpAr",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/edq09i421m3beqx_5cf3f58952aa992cb2f4ecd7511a0cb4_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "QqmqN5zuo4",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/edq09i421m3beqx_5cf3f58952aa992cb2f4ecd7511a0cb4_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "c68Tmi14oI",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
@@ -84,26 +104,6 @@
       },
       {
         "key": "3TWScxk7YX",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "7e6fd46b-c24d-48e4-99d5-d2abfca875d5",
-    "servers": [
-      {
-        "key": "JKH0U9XpAr",
-        "url": "https://live5.jiatianxiazhuangshi.com/live/edq09i421m3beqx_5cf3f58952aa992cb2f4ecd7511a0cb4_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "QqmqN5zuo4",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "c68Tmi14oI",
         "url": "",
         "label": ""
       }

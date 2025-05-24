@@ -57,44 +57,6 @@
     "firstRow": 6
   },
   {
-    "id": "4cfc8c49-46cb-498c-b7b5-c7de315c7c9c",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Ulsan",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/-K1h8OOTItUmjKqR2g5Nnw_96x96.png"
-    },
-    "team2": {
-      "name": "Sangju Sangmu",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/zMbApCPUxbVjMaBugpVp2A_96x96.png"
-    },
-    "kickoff_date": "2025-05-24",
-    "kickoff_time": "17:00",
-    "match_date": "2025-05-24",
-    "match_time": "17:00",
-    "firstRow": 11
-  },
-  {
-    "id": "0e93c747-598c-487f-9c3f-3904d73a390b",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Daejeon Citizen",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/dZqqNtwIKpfAtMAoduqbsQ_96x96.png"
-    },
-    "team2": {
-      "name": "Daegu",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/g4u4AYVjPG8lBD5nFrKqdw_96x96.png"
-    },
-    "kickoff_date": "2025-05-24",
-    "kickoff_time": "17:00",
-    "match_date": "2025-05-24",
-    "match_time": "17:00",
-    "firstRow": 12
-  },
-  {
     "id": "02393401-e029-4740-8b7e-18c910c1b2dd",
     "duration": 2.17,
     "league": "Turkish Super League",

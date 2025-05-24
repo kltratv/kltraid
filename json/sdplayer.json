@@ -35,6 +35,31 @@
     ]
   },
   {
+    "id": "31addec4-a38b-476c-bdd1-eaf3b8871cc8",
+    "servers": [
+      {
+        "key": "0XXcl8APBj",
+        "url": "https://live2.jiatianxiazhuangshi.com/live/56690675_30f326393b4fc0699625c45d86fbf846_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "pQnESkUWrO",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ItIjvtd24S",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "NeitoJ1p5L",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
@@ -619,31 +644,6 @@
       },
       {
         "key": "hhlmgAvkWT",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "31addec4-a38b-476c-bdd1-eaf3b8871cc8",
-    "servers": [
-      {
-        "key": "0XXcl8APBj",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "pQnESkUWrO",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ItIjvtd24S",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "NeitoJ1p5L",
         "url": "",
         "label": ""
       }

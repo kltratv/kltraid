@@ -1,134 +1,34 @@
 [
   {
-    "id": "be17e4c6-ac8b-4845-92dd-f4ed57dc169c",
+    "id": "b7bbcf10-1de3-4c8a-ba53-4fd06beac2a2",
     "servers": [
       {
-        "key": "tcgwllg7Fc",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "dEwBmbPb6p",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_9_FHD/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "KxhimpWv26",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "k6gcpNtz3D",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a325b151-f3d2-469b-89eb-6f10a62d931e",
-    "servers": [
-      {
-        "key": "0oTp9IE9mR",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYyMCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "pn2g6o3M0d",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_8_FHD/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "pEGUHng8wM",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "RQu10mIcIE",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f78a1981-84f8-49da-9254-1ee3a3348faa",
-    "servers": [
-      {
-        "key": "u2zHsmp98M",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxOSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "yleCHQmaOw",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_7_FHD/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "Qnl5ROQXaY",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "I2F5QHojgJ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a80f3673-107c-4c88-85f6-b5bfeddda45b",
-    "servers": [
-      {
-        "key": "uXRxSk09ee",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "key": "E3SnnHxkGA",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
         "label": "HD AUTO"
       },
       {
-        "key": "Ed3rycyF89",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "GEXQKtN4uS",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "ndTXITnXzb",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNiZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "sbu5k42IpV",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
+        "key": "Ihq5bBWnKz",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "pl4uf9am6a",
+        "key": "yUulWV5NkZ",
         "url": "",
         "label": ""
       },
       {
-        "key": "d4OaH4yXUS",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "4bc6df5d-8f46-48b2-8cc0-38e4c9488d49",
-    "servers": [
-      {
-        "key": "eh9rwlOcv5",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxOCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "LZu6qM78W1",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_NZ_SKY_Sport_7/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "wpvZgm4oIW",
+        "key": "BQuiizk8sH",
         "url": "",
         "label": ""
       },
       {
-        "key": "cBZiaRN4cd",
+        "key": "vndg7m3GDV",
         "url": "",
         "label": ""
       }
@@ -440,35 +340,135 @@
     ]
   },
   {
-    "id": "b7bbcf10-1de3-4c8a-ba53-4fd06beac2a2",
+    "id": "be17e4c6-ac8b-4845-92dd-f4ed57dc169c",
     "servers": [
       {
-        "key": "E3SnnHxkGA",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "ndTXITnXzb",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "tcgwllg7Fc",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxMyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "Ihq5bBWnKz",
+        "key": "dEwBmbPb6p",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_9_FHD/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "KxhimpWv26",
         "url": "",
         "label": ""
       },
       {
-        "key": "yUulWV5NkZ",
+        "key": "k6gcpNtz3D",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "a325b151-f3d2-469b-89eb-6f10a62d931e",
+    "servers": [
+      {
+        "key": "0oTp9IE9mR",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYyMCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "pn2g6o3M0d",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_8_FHD/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "pEGUHng8wM",
         "url": "",
         "label": ""
       },
       {
-        "key": "BQuiizk8sH",
+        "key": "RQu10mIcIE",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "f78a1981-84f8-49da-9254-1ee3a3348faa",
+    "servers": [
+      {
+        "key": "u2zHsmp98M",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxOSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "yleCHQmaOw",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_Hub_Premier_7_FHD/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Qnl5ROQXaY",
         "url": "",
         "label": ""
       },
       {
-        "key": "vndg7m3GDV",
+        "key": "I2F5QHojgJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "a80f3673-107c-4c88-85f6-b5bfeddda45b",
+    "servers": [
+      {
+        "key": "uXRxSk09ee",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Ed3rycyF89",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "GEXQKtN4uS",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "sbu5k42IpV",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_MAIN_EVENT/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "pl4uf9am6a",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "d4OaH4yXUS",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "4bc6df5d-8f46-48b2-8cc0-38e4c9488d49",
+    "servers": [
+      {
+        "key": "eh9rwlOcv5",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxOCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "LZu6qM78W1",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_NZ_SKY_Sport_7/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "wpvZgm4oIW",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "cBZiaRN4cd",
         "url": "",
         "label": ""
       }

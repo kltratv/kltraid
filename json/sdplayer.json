@@ -35,6 +35,41 @@
     ]
   },
   {
+    "id": "68d95083-d460-49b9-944a-cca554ca3caa",
+    "servers": [
+      {
+        "key": "3Th4HcAZBc",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "V7jofJ777d",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "3vwFnmt06a",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Ynpbg81603",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "w96zsjIzvg",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GdpwDAAmwc",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
@@ -266,41 +301,6 @@
         "key": "V8Q7A1PtBG",
         "url": "https://hlslive-tx-cdn.ysp.cctv.cn/kltratv/2027304001.m3u8",
         "label": "COURT 1"
-      }
-    ]
-  },
-  {
-    "id": "68d95083-d460-49b9-944a-cca554ca3caa",
-    "servers": [
-      {
-        "key": "3Th4HcAZBc",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "V7jofJ777d",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "3vwFnmt06a",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Ynpbg81603",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "w96zsjIzvg",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GdpwDAAmwc",
-        "url": "",
-        "label": ""
       }
     ]
   }

@@ -1,24 +1,34 @@
 [
   {
-    "id": "72fdd3e9-028f-4aed-9d97-ba7b4f67d61c",
+    "id": "3a816507-8de5-4430-b959-dca3dea7aa58",
     "servers": [
       {
-        "key": "8rPWxzqKbq",
+        "key": "1oqDSbBK1s",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "kV8XwkDPHH",
         "url": "",
         "label": ""
       },
       {
-        "key": "4c8sVnHTmy",
+        "key": "W1wlUPhmbP",
         "url": "",
         "label": ""
       },
       {
-        "key": "bCvELe4LJJ",
+        "key": "n81dK3zh27",
         "url": "",
         "label": ""
       },
       {
-        "key": "LecdNXjOKw",
+        "key": "ebXoiLQZDp",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "YylWP73ecu",
         "url": "",
         "label": ""
       }
@@ -29,8 +39,8 @@
     "servers": [
       {
         "key": "pLigLQjcfk",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad2",
+        "label": "HD AUTO"
       },
       {
         "key": "9mnuuX7ZvH",
@@ -54,31 +64,6 @@
       },
       {
         "key": "diCUVeIzQ2",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "33df4eac-5a98-47ae-924f-950631e1c6f3",
-    "servers": [
-      {
-        "key": "rqbRA9styp",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "jgw32q8uZW",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "b8Z4iQUY45",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "hEgDFjnD7K",
         "url": "",
         "label": ""
       }
@@ -750,35 +735,50 @@
     ]
   },
   {
-    "id": "3a816507-8de5-4430-b959-dca3dea7aa58",
+    "id": "72fdd3e9-028f-4aed-9d97-ba7b4f67d61c",
     "servers": [
       {
-        "key": "1oqDSbBK1s",
+        "key": "8rPWxzqKbq",
         "url": "",
         "label": ""
       },
       {
-        "key": "kV8XwkDPHH",
+        "key": "4c8sVnHTmy",
         "url": "",
         "label": ""
       },
       {
-        "key": "W1wlUPhmbP",
+        "key": "bCvELe4LJJ",
         "url": "",
         "label": ""
       },
       {
-        "key": "n81dK3zh27",
+        "key": "LecdNXjOKw",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "33df4eac-5a98-47ae-924f-950631e1c6f3",
+    "servers": [
+      {
+        "key": "rqbRA9styp",
         "url": "",
         "label": ""
       },
       {
-        "key": "ebXoiLQZDp",
+        "key": "jgw32q8uZW",
         "url": "",
         "label": ""
       },
       {
-        "key": "YylWP73ecu",
+        "key": "b8Z4iQUY45",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "hEgDFjnD7K",
         "url": "",
         "label": ""
       }

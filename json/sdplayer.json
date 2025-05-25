@@ -1,84 +1,119 @@
 [
   {
-    "id": "81263579-b2f1-4017-ad85-fd8993f938e5",
+    "id": "490a9522-efab-41c3-bc20-242bc3ad2655",
     "servers": [
       {
-        "key": "loGOIzAMFD",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tel",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "J4LXeh4ziQ",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nbc",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "W1dQf9sdtC",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "lB11ozkI0V",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4Njk5MyZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "1J4YBsVIDf",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_PREMIER_LEAGUE/index.m3u8",
-        "label": "SD [IOS]"
+        "key": "MfzXwivlbr",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "9oXI7PEmwT",
-        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "mmt1uIjnmK",
+        "key": "UEkfCk7kXL",
         "url": "",
         "label": ""
       }
     ]
   },
   {
-    "id": "fda29a69-ec7b-4ec1-bae1-3ff7c263aec6",
+    "id": "f3214d4f-cb2d-4f8e-8e31-2f39bdfe51ae",
     "servers": [
       {
-        "key": "j8XIqL5skF",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYyMSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "M75bSiQGjs",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NzAzOCZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "Pgn9hYQoFE",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_NZ_SKY_Sport_9/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "bz5dxFpx2k",
+        "key": "JUzz41XvVE",
         "url": "",
         "label": ""
       },
       {
-        "key": "ulWn3BQtgJ",
+        "key": "95lsvaFynQ",
         "url": "",
         "label": ""
       }
     ]
   },
   {
-    "id": "5d74937f-c142-4383-af39-f83ffd3ccf7d",
+    "id": "7ef91041-eee7-467d-9e24-9a533e9b36e3",
     "servers": [
       {
-        "key": "WpjUL2KN05",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_epl_10/index.m3u8",
+        "key": "Poqr0ZFJKi",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NzA0NCZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "29Xi6saASY",
+        "key": "8Fwnk9bqlH",
         "url": "",
         "label": ""
       },
       {
-        "key": "GR9Trarcm6",
+        "key": "ZsRS8yVJOy",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "137180ab-e45c-4ba3-a7cf-3fd4e6109ee1",
+    "servers": [
+      {
+        "key": "ptbIpC3gBa",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NzA0OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "dPx1VF02Bf",
         "url": "",
         "label": ""
       },
       {
-        "key": "48FhuZ2ipE",
+        "key": "U5jHc5KJoJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "2e65b2fc-2f73-4c4f-90ab-a3927facd0e9",
+    "servers": [
+      {
+        "key": "sBx3oOuz1K",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4Njk5MiZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "RT6H7RFWwU",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ApQmme57ty",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "83941ad8-ff5d-4b19-839a-de115b2fc087",
+    "servers": [
+      {
+        "key": "0b2oWwDhoA",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwOTgyNyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "SYhSInmTkd",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "f2ALcYnOu9",
         "url": "",
         "label": ""
       }
@@ -560,6 +595,41 @@
     ]
   },
   {
+    "id": "81263579-b2f1-4017-ad85-fd8993f938e5",
+    "servers": [
+      {
+        "key": "loGOIzAMFD",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tel",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "J4LXeh4ziQ",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=nbc",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "W1dQf9sdtC",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYxNSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "1J4YBsVIDf",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_SKY_SPORTS_PREMIER_LEAGUE/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "9oXI7PEmwT",
+        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "mmt1uIjnmK",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "c4beb42e-31a4-4864-84a0-69ddbf56d3ea",
     "servers": [
       {
@@ -585,6 +655,56 @@
     ]
   },
   {
+    "id": "fda29a69-ec7b-4ec1-bae1-3ff7c263aec6",
+    "servers": [
+      {
+        "key": "j8XIqL5skF",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4NjYyMSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Pgn9hYQoFE",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/LIVE_NZ_SKY_Sport_9/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "bz5dxFpx2k",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ulWn3BQtgJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5d74937f-c142-4383-af39-f83ffd3ccf7d",
+    "servers": [
+      {
+        "key": "WpjUL2KN05",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_epl_10/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "29Xi6saASY",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GR9Trarcm6",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "48FhuZ2ipE",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "f1888268-a7de-421a-9eaf-7409675068f7",
     "servers": [
       {
@@ -604,126 +724,6 @@
       },
       {
         "key": "WSLBi3OM5Q",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "490a9522-efab-41c3-bc20-242bc3ad2655",
-    "servers": [
-      {
-        "key": "lB11ozkI0V",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "MfzXwivlbr",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "UEkfCk7kXL",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f3214d4f-cb2d-4f8e-8e31-2f39bdfe51ae",
-    "servers": [
-      {
-        "key": "M75bSiQGjs",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "JUzz41XvVE",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "95lsvaFynQ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "7ef91041-eee7-467d-9e24-9a533e9b36e3",
-    "servers": [
-      {
-        "key": "Poqr0ZFJKi",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "8Fwnk9bqlH",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ZsRS8yVJOy",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "137180ab-e45c-4ba3-a7cf-3fd4e6109ee1",
-    "servers": [
-      {
-        "key": "ptbIpC3gBa",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "dPx1VF02Bf",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "U5jHc5KJoJ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "2e65b2fc-2f73-4c4f-90ab-a3927facd0e9",
-    "servers": [
-      {
-        "key": "sBx3oOuz1K",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "RT6H7RFWwU",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ApQmme57ty",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "83941ad8-ff5d-4b19-839a-de115b2fc087",
-    "servers": [
-      {
-        "key": "0b2oWwDhoA",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "SYhSInmTkd",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "f2ALcYnOu9",
         "url": "",
         "label": ""
       }

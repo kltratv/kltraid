@@ -1,134 +1,34 @@
 [
   {
-    "id": "81263579-b2f1-4017-ad85-fd8993f938e5",
+    "id": "a80f3673-107c-4c88-85f6-b5bfeddda45b",
     "servers": [
       {
-        "key": "loGOIzAMFD",
+        "key": "uXRxSk09ee",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=usacwest",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "Ed3rycyF89",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=univ",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "GEXQKtN4uS",
         "url": "",
         "label": ""
       },
       {
-        "key": "J4LXeh4ziQ",
+        "key": "sbu5k42IpV",
         "url": "",
         "label": ""
       },
       {
-        "key": "W1dQf9sdtC",
+        "key": "pl4uf9am6a",
         "url": "",
         "label": ""
       },
       {
-        "key": "1J4YBsVIDf",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "9oXI7PEmwT",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "mmt1uIjnmK",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "c4beb42e-31a4-4864-84a0-69ddbf56d3ea",
-    "servers": [
-      {
-        "key": "VWPIH1ZwbZ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "WaYcqrKN72",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "hgDfe60jlf",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "VG1nGCvZKf",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "fda29a69-ec7b-4ec1-bae1-3ff7c263aec6",
-    "servers": [
-      {
-        "key": "j8XIqL5skF",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Pgn9hYQoFE",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "bz5dxFpx2k",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ulWn3BQtgJ",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "5d74937f-c142-4383-af39-f83ffd3ccf7d",
-    "servers": [
-      {
-        "key": "WpjUL2KN05",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "29Xi6saASY",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GR9Trarcm6",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "48FhuZ2ipE",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "f1888268-a7de-421a-9eaf-7409675068f7",
-    "servers": [
-      {
-        "key": "PrMSnDL1QU",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ZfUWQA83sy",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "3kQMLVuvIc",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "WSLBi3OM5Q",
+        "key": "d4OaH4yXUS",
         "url": "",
         "label": ""
       }
@@ -515,41 +415,6 @@
     ]
   },
   {
-    "id": "a80f3673-107c-4c88-85f6-b5bfeddda45b",
-    "servers": [
-      {
-        "key": "uXRxSk09ee",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "Ed3rycyF89",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GEXQKtN4uS",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "sbu5k42IpV",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "pl4uf9am6a",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "d4OaH4yXUS",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "4bc6df5d-8f46-48b2-8cc0-38e4c9488d49",
     "servers": [
       {
@@ -604,6 +469,141 @@
       },
       {
         "key": "vndg7m3GDV",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "81263579-b2f1-4017-ad85-fd8993f938e5",
+    "servers": [
+      {
+        "key": "loGOIzAMFD",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "J4LXeh4ziQ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "W1dQf9sdtC",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "1J4YBsVIDf",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "9oXI7PEmwT",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "mmt1uIjnmK",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "c4beb42e-31a4-4864-84a0-69ddbf56d3ea",
+    "servers": [
+      {
+        "key": "VWPIH1ZwbZ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "WaYcqrKN72",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "hgDfe60jlf",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "VG1nGCvZKf",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "fda29a69-ec7b-4ec1-bae1-3ff7c263aec6",
+    "servers": [
+      {
+        "key": "j8XIqL5skF",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Pgn9hYQoFE",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "bz5dxFpx2k",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ulWn3BQtgJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5d74937f-c142-4383-af39-f83ffd3ccf7d",
+    "servers": [
+      {
+        "key": "WpjUL2KN05",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "29Xi6saASY",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GR9Trarcm6",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "48FhuZ2ipE",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "f1888268-a7de-421a-9eaf-7409675068f7",
+    "servers": [
+      {
+        "key": "PrMSnDL1QU",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ZfUWQA83sy",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "3kQMLVuvIc",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "WSLBi3OM5Q",
         "url": "",
         "label": ""
       }

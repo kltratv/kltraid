@@ -1,16 +1,21 @@
 [
   {
-    "id": "b3f57a30-72be-46da-9932-5e742cc724c3",
+    "id": "a729bed5-bb7c-447d-ab74-4123ce30536b",
     "servers": [
       {
-        "key": "lRRFJcj4FC",
-        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3895418504394061_AiHD.m3u8?txSecret=434d97baf94417303400d491d3c8f60f&txTime=6833CB20",
-        "label": "COURT 1"
+        "key": "CUQwR5TrDw",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/57436783_3434cddea684c2cbb8544d0ba844965a_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
-        "key": "V8Q7A1PtBG",
-        "url": "",
-        "label": ""
+        "key": "1cBrsFu2qZ",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcxMDE2NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "8MeRUlv8iC",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4256526-0.m3u8?txSecret=e56cc8bd551fd82126771dbdb1d83e74&txTime=6832cead",
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -74,26 +79,6 @@
       },
       {
         "key": "242AqiDEZO",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "a729bed5-bb7c-447d-ab74-4123ce30536b",
-    "servers": [
-      {
-        "key": "CUQwR5TrDw",
-        "url": "https://live1.jiatianxiazhuangshi.com/live/57436783_3434cddea684c2cbb8544d0ba844965a_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "1cBrsFu2qZ",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcxMDE2NCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "8MeRUlv8iC",
         "url": "",
         "label": ""
       }
@@ -254,6 +239,21 @@
       },
       {
         "key": "Wn9YRpt0vR",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "b3f57a30-72be-46da-9932-5e742cc724c3",
+    "servers": [
+      {
+        "key": "lRRFJcj4FC",
+        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3895418504394061_AiHD.m3u8?txSecret=434d97baf94417303400d491d3c8f60f&txTime=6833CB20",
+        "label": "COURT 1"
+      },
+      {
+        "key": "V8Q7A1PtBG",
         "url": "",
         "label": ""
       }

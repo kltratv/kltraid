@@ -57,25 +57,6 @@
     "firstRow": 6
   },
   {
-    "id": "db1ae823-8d7c-46d7-b9a2-2f8670e95eac",
-    "duration": 2.17,
-    "league": "J1 League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Kawasaki Frontale",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/JzqHyQjUTYRQf_9HHYqFBw_96x96.png"
-    },
-    "team2": {
-      "name": "Gamba Osaka",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wj1tBH6I54UBBsO6YXe6VA_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "14:00",
-    "match_date": "2025-05-25",
-    "match_time": "14:00",
-    "firstRow": 36
-  },
-  {
     "id": "7b225515-394b-4a05-9287-b4ce5a2c398b",
     "duration": 2.17,
     "league": "K League 1",

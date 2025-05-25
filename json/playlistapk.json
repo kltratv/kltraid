@@ -2,6 +2,7 @@
   {
     "id": "SoccerChannel.id",
     "title": "Soccer Channel",
+    "logo": "https://www.visionplus.id/images/repository/655/655-LOGO-m.png",
     "group": "Sports",
     "drm": {
       "type": "widevine",
@@ -16,6 +17,7 @@
   {
     "id": "Spotvid",
     "title": "SPOTV ID",
+    "logo": "https://www.visionplus.id/images/repository/656/656-LOGO-m.png",
     "group": "Sports",
     "drm": {
       "type": "clearkey",
@@ -44,6 +46,7 @@
   {
     "id": "RCTI-HD",
     "title": "RCTI HD",
+    "logo": "https://www.visionplus.id/images/repository/580/580-LOGO-m.png",
     "group": "National TV",
     "headers": {
       "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/65.0.3325.181 Safari/537.36",

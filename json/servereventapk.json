@@ -1,37 +1,42 @@
 [
   {
-    "id": "d9bb32c3-8c4f-47b7-8a5f-a6637230243e",
+    "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
     "servers": [
       {
-        "key": "5Hv0e9wZaH",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=RCTI-HD",
-        "label": "COURT 1"
+        "key": "S16LrcGGCr",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt2",
+        "label": "HD AUTO"
       },
       {
-        "key": "TkaRExc9te",
-        "url": "https://nobarwarna.xyz/live/paris-saint-germain-vs-reims-1367764",
-        "label": "COURT 2"
+        "key": "7ZqsgjMIys",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "HfVlfjK3yk",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=MalaysiaMasters2025",
-        "label": "COURT 3"
-      },
-      {
-        "key": "rMG6FP66cF",
+        "key": "MhG15HUKg4",
         "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_2/index.m3u8",
-        "label": "COURT 4"
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "814abc51-85ff-401b-89dc-e815e8d0540b",
+    "servers": [
+      {
+        "key": "epr74OlLVR",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
       },
       {
-        "key": "rMG6FPf56h",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=Spotvid",
-        "label": "COURT 5"
+        "key": "xkCOZz2Yy3",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "rMG6FP3r56g",
-        "url": "https://rayneqwln.29n2cpreventnhip6hay.shop/id/baseball/major-league-baseball-1929143/houston-astros-vs-seattle-mariners.html",
-        "label": "COURT 6"
-      }	 	  
+        "key": "eOAQcGeUCy",
+        "url": "https://goalstreamz.com/f1streams/streams/",
+        "label": "SD [IOS]"
+      }
     ]
   }
 ]

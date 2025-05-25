@@ -38,63 +38,6 @@
     "firstRow": 6
   },
   {
-    "id": "a80f3673-107c-4c88-85f6-b5bfeddda45b",
-    "duration": 3,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Nottingham Forest",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Zr6FbE-8pDH7UBpWCO8U9A_96x96.png"
-    },
-    "team2": {
-      "name": "Chelsea",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/fhBITrIlbQxhVB6IjxUO6Q_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "22:00",
-    "match_date": "2025-05-25",
-    "match_time": "21:30",
-    "firstRow": 12
-  },
-  {
-    "id": "b7bbcf10-1de3-4c8a-ba53-4fd06beac2a2",
-    "duration": 3,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Manchester United",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/udQ6ns69PctCv143h-GeYw_96x96.png"
-    },
-    "team2": {
-      "name": "Aston Villa",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/uyNNelfnFvCEnsLrUL-j2Q_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "22:00",
-    "match_date": "2025-05-25",
-    "match_time": "21:30",
-    "firstRow": 14
-  },
-  {
-    "id": "81263579-b2f1-4017-ad85-fd8993f938e5",
-    "duration": 3,
-    "league": "Premier League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Liverpool",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/0iShHhASp5q1SL4JhtwJiw_96x96.png"
-    },
-    "team2": {
-      "name": "Crystal Palace",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/8piQOzndGmApKYTcvyN9vA_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "22:00",
-    "match_date": "2025-05-25",
-    "match_time": "21:30",
-    "firstRow": 15
-  },
-  {
     "id": "490a9522-efab-41c3-bc20-242bc3ad2655",
     "duration": 2.17,
     "league": "Turkish Super League",

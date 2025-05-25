@@ -1,34 +1,14 @@
 [
   {
-    "id": "01ffc03d-752c-4790-a990-d898cc8ce960",
+    "id": "b3f57a30-72be-46da-9932-5e742cc724c3",
     "servers": [
       {
-        "key": "4bcuqYqaSi",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
-        "label": "HD AUTO"
+        "key": "lRRFJcj4FC",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "lVxfsnnbna",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "aMcGEz85tp",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA3NCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "bFs7h8MagH",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_serie_a_03/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "csdrXu2ULc",
-        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "MVgtkisyOZ",
+        "key": "V8Q7A1PtBG",
         "url": "",
         "label": ""
       }
@@ -281,6 +261,36 @@
         "key": "N0yh9rFB20",
         "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_laliga_tv/index.m3u8",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "01ffc03d-752c-4790-a990-d898cc8ce960",
+    "servers": [
+      {
+        "key": "4bcuqYqaSi",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=ad1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "aMcGEz85tp",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcwNTA3NCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "bFs7h8MagH",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_serie_a_03/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "csdrXu2ULc",
+        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "MVgtkisyOZ",
+        "url": "",
+        "label": ""
       }
     ]
   },

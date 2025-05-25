@@ -38,25 +38,6 @@
     "firstRow": 6
   },
   {
-    "id": "281d0ae9-deb3-41d4-b173-9046e1a24248",
-    "duration": 3,
-    "league": "Taca de Portugal",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Benfica",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/nFwABZ-4n_A3BGXT9A7Adg_96x96.png"
-    },
-    "team2": {
-      "name": "Sporting CP",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/58doDuhR0wW3WZE9PdODUw_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "23:15",
-    "match_date": "2025-05-25",
-    "match_time": "23:15",
-    "firstRow": 26
-  },
-  {
     "id": "3a816507-8de5-4430-b959-dca3dea7aa58",
     "duration": 3,
     "league": "Serie A",

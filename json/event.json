@@ -57,25 +57,6 @@
     "firstRow": 6
   },
   {
-    "id": "7b225515-394b-4a05-9287-b4ce5a2c398b",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Gwangju",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/NWXV7bdDxjLz4zZk9bhoKg_96x96.png"
-    },
-    "team2": {
-      "name": "Gangwon",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/DuaOwMOLBfwzaP_meKLaEg_96x96.png"
-    },
-    "kickoff_date": "2025-05-25",
-    "kickoff_time": "14:30",
-    "match_date": "2025-05-25",
-    "match_time": "14:30",
-    "firstRow": 37
-  },
-  {
     "id": "62a6cea0-ff23-4fe7-b572-0e27dd675063",
     "duration": 3,
     "league": "LaLiga",

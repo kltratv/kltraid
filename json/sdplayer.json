@@ -1,34 +1,24 @@
 [
   {
-    "id": "8d6aea48-f932-495a-9753-630876631030",
+    "id": "4a3c357c-3b9e-4168-b217-2305faa9ab07",
     "servers": [
       {
-        "key": "Ac1mFs4N4G",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "cIgGwK7cZO",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "fTENEj8XHo",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4Njc3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "dtKlaTDb3C",
+        "url": "https://sc.elutuna.workers.dev/303/playlist.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "cVDm9B9YBL",
-        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "fCYjg0GydR",
+        "key": "NAJ4sEOfOe",
         "url": "",
         "label": ""
       },
       {
-        "key": "FvT7XBWjcL",
+        "key": "4zksmZ60TX",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "IfbAqnrc7s",
         "url": "",
         "label": ""
       }
@@ -760,25 +750,35 @@
     ]
   },
   {
-    "id": "4a3c357c-3b9e-4168-b217-2305faa9ab07",
+    "id": "8d6aea48-f932-495a-9753-630876631030",
     "servers": [
       {
-        "key": "dtKlaTDb3C",
+        "key": "Ac1mFs4N4G",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "cIgGwK7cZO",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=daznde1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "fTENEj8XHo",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY4Njc3MyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "cVDm9B9YBL",
+        "url": "https://kc.elutuna.workers.dev/210/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "fCYjg0GydR",
         "url": "",
         "label": ""
       },
       {
-        "key": "NAJ4sEOfOe",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "4zksmZ60TX",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "IfbAqnrc7s",
+        "key": "FvT7XBWjcL",
         "url": "",
         "label": ""
       }

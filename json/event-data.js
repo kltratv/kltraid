@@ -35,6 +35,25 @@
     "match_date": "2025-05-23",
     "match_time": "16:00",
     "firstRow": 4
+  },
+  {
+    "id": "814abc51-85ff-401b-89dc-e815e8d0540b",
+    "duration": 2000,
+    "league": "Monaco Grand Prix 2025",
+    "icon": "https://kltraid.pages.dev/images/sportsicon/Balapan.png",
+    "team1": {
+      "name": "Formula 1",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/lTM9VlVyyG5jgF4UHAx94g_64x64.png"
+    },
+    "team2": {
+      "name": "Formula 1",
+      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/lTM9VlVyyG5jgF4UHAx94g_64x64.png"
+    },
+    "kickoff_date": "2025-05-23",
+    "kickoff_time": "17:30",
+    "match_date": "2025-05-23",
+    "match_time": "17:30",
+    "firstRow": 5
   }
 ]
 })();

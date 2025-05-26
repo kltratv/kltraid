@@ -16,5 +16,26 @@
   }
 
   window.__PLAYER_DATA__ =
-[]
+[
+  {
+    "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
+    "servers": [
+      {
+        "key": "bK3vyzU03B",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "o3sCEk8Bzx",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Ig4MkVC1Ge",
+        "url": "",
+        "label": ""
+      }
+    ]
+  }
+]
 })();

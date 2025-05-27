@@ -1,14 +1,59 @@
 [
   {
-    "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
+    "id": "9a0363c8-89c8-48ec-abba-ff5b2b0af26a",
     "servers": [
       {
-        "key": "mdGX9IxG4J",
+        "key": "rPpQu2nPF1",
+        "url": "https://live.jiatianxiazhuangshi.com/live/57130741_0a38e1d703015f3c4044d59a242c8081_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "7ySIHdBTfO",
         "url": "",
         "label": ""
       },
       {
-        "key": "ld5hkshtIW",
+        "key": "aLgezbkMLM",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "c4f1fd48-72ae-47ea-866e-7e454e869020",
+    "servers": [
+      {
+        "key": "zS5OnMAgoC",
+        "url": "https://live1.jiatianxiazhuangshi.com/live/57130743_9f3bb5f1e72ea079ed329d0f33b2cfbf_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "lR8lNu7fto",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "DjeDGNpz0G",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "b3bcdac6-9c95-4980-85d0-a64e082128e9",
+    "servers": [
+      {
+        "key": "RvVGFwAvcF",
+        "url": "https://live2.jiatianxiazhuangshi.com/live/57130745_e9f235d4ed29dd6b12db275a9a2ac887_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "EoC4Zph6VG",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "HB9U80Df9C",
         "url": "",
         "label": ""
       }
@@ -55,60 +100,15 @@
     ]
   },
   {
-    "id": "9a0363c8-89c8-48ec-abba-ff5b2b0af26a",
+    "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
     "servers": [
       {
-        "key": "rPpQu2nPF1",
+        "key": "mdGX9IxG4J",
         "url": "",
         "label": ""
       },
       {
-        "key": "7ySIHdBTfO",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "aLgezbkMLM",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "c4f1fd48-72ae-47ea-866e-7e454e869020",
-    "servers": [
-      {
-        "key": "zS5OnMAgoC",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "lR8lNu7fto",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "DjeDGNpz0G",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "b3bcdac6-9c95-4980-85d0-a64e082128e9",
-    "servers": [
-      {
-        "key": "RvVGFwAvcF",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "EoC4Zph6VG",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "HB9U80Df9C",
+        "key": "ld5hkshtIW",
         "url": "",
         "label": ""
       }

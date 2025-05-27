@@ -1,25 +1,10 @@
 [
   {
-    "id": "8b1a4a48-4598-4501-938f-d558a1541198",
-    "servers": [
-      {
-        "key": "Ukx5s1Xvfp",
-        "url": "https://sc.elutuna.workers.dev/309/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "UxzN8IqNUy",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "fb33b7b6-a9c8-463d-8277-86f181badef1",
     "servers": [
       {
         "key": "U78UIIlgKz",
-        "url": "",
+        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910949843577061_AiHD.m3u8?txSecret=75ad3651b64b3e8d8180173183c572ea&txTime=68365200",
         "label": "COURT 1"
       },
       {
@@ -34,6 +19,21 @@
       },
       {
         "key": "OsHEn46bMR",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "8b1a4a48-4598-4501-938f-d558a1541198",
+    "servers": [
+      {
+        "key": "Ukx5s1Xvfp",
+        "url": "https://sc.elutuna.workers.dev/309/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "UxzN8IqNUy",
         "url": "",
         "label": ""
       }

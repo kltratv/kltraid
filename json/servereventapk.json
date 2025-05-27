@@ -1,5 +1,30 @@
 [
   {
+    "id": "fb33b7b6-a9c8-463d-8277-86f181badef1",
+    "servers": [
+      {
+        "key": "U78UIIlgKz",
+        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910949843577061_AiHD.m3u8?txSecret=75ad3651b64b3e8d8180173183c572ea&txTime=68365200",
+        "label": "COURT 1"
+      },
+      {
+        "key": "RI1PqRWaGx",
+        "url": "https://aae3e8111b7e62fa97499a11d53fc80a.v.smtcdns.net/play.cbalive.weibisai.com/live/3910950044897061_AiHD.m3u8?txSecret=722c008a24dd8236f68b230ac89f41e8&txTime=68365200",
+        "label": "COURT 2"
+      },
+      {
+        "key": "DdRLTsxfbG",
+        "url": "https://aae3e8111b7e62fa97499a11d53fc80a.v.smtcdns.net/play.cbalive.weibisai.com/live/3910950267430061_AiHD.m3u8?txSecret=0fdbd3a07d27f8ea8b5cd0251ab3722f&txTime=68365200",
+        "label": "COURT 3"
+      },
+      {
+        "key": "OsHEn46bMR",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
     "id": "8b1a4a48-4598-4501-938f-d558a1541198",
     "servers": [
       {
@@ -9,31 +34,6 @@
       },
       {
         "key": "UxzN8IqNUy",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
-        "label": "HD AUTO"
-      }
-    ]
-  },
-  {
-    "id": "fb33b7b6-a9c8-463d-8277-86f181badef1",
-    "servers": [
-      {
-        "key": "U78UIIlgKz",
-        "url": "",
-        "label": "COURT 1"
-      },
-      {
-        "key": "RI1PqRWaGx",
-        "url": "",
-        "label": "COURT 2"
-      },
-      {
-        "key": "DdRLTsxfbG",
-        "url": "",
-        "label": "COURT 3"
-      },
-      {
-        "key": "OsHEn46bMR",
         "url": "",
         "label": ""
       }

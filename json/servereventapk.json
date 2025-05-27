@@ -1,41 +1,41 @@
 [
   {
-    "id": "912533f8-c089-4fef-8e00-0d53ace2ba1a",
+    "id": "8b1a4a48-4598-4501-938f-d558a1541198",
     "servers": [
       {
-        "key": "S16LrcGGCr",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt2",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "7ZqsgjMIys",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=RCTI-HD",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "MhG15HUKg4",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_2/index.m3u8",
+        "key": "Ukx5s1Xvfp",
+        "url": "https://sc.elutuna.workers.dev/309/playlist.m3u8",
         "label": "SD [IOS]"
+      },
+      {
+        "key": "UxzN8IqNUy",
+        "url": "",
+        "label": ""
       }
     ]
   },
   {
-    "id": "814abc51-85ff-401b-89dc-e815e8d0540b",
+    "id": "fb33b7b6-a9c8-463d-8277-86f181badef1",
     "servers": [
       {
-        "key": "epr74OlLVR",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
+        "key": "U78UIIlgKz",
+        "url": "",
+        "label": "COURT 1"
       },
       {
-        "key": "xkCOZz2Yy3",
-        "url": "https://kltraid.pages.dev/json/playlistapk.json?id=Spotvid",
-        "label": "HD AUTO"
+        "key": "RI1PqRWaGx",
+        "url": "",
+        "label": "COURT 2"
       },
       {
-        "key": "eOAQcGeUCy",
-        "url": "https://goalstreamz.com/f1streams/streams/",
-        "label": "SD [IOS]"
+        "key": "DdRLTsxfbG",
+        "url": "",
+        "label": "COURT 3"
+      },
+      {
+        "key": "OsHEn46bMR",
+        "url": "",
+        "label": ""
       }
     ]
   }

@@ -19,63 +19,6 @@
     "firstRow": 3
   },
   {
-    "id": "9a0363c8-89c8-48ec-abba-ff5b2b0af26a",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Suwon FC",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/Y8JV0tP0MmeNRLP02dN-uA_96x96.png"
-    },
-    "team2": {
-      "name": "Jeju United",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/sC2vTgf3ZsFWY8a1o4tkbg_96x96.png"
-    },
-    "kickoff_date": "2025-05-27",
-    "kickoff_time": "17:30",
-    "match_date": "2025-05-27",
-    "match_time": "17:30",
-    "firstRow": 5
-  },
-  {
-    "id": "c4f1fd48-72ae-47ea-866e-7e454e869020",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Daejeon Citizen",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/dZqqNtwIKpfAtMAoduqbsQ_96x96.png"
-    },
-    "team2": {
-      "name": "Pohang Steelers",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/oHFLIPiY-JeABv5EXD8-5Q_96x96.png"
-    },
-    "kickoff_date": "2025-05-27",
-    "kickoff_time": "17:30",
-    "match_date": "2025-05-27",
-    "match_time": "17:30",
-    "firstRow": 6
-  },
-  {
-    "id": "b3bcdac6-9c95-4980-85d0-a64e082128e9",
-    "duration": 2.17,
-    "league": "K League 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Daegu",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/g4u4AYVjPG8lBD5nFrKqdw_96x96.png"
-    },
-    "team2": {
-      "name": "Jeonbuk Motors",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/5JL1pqxK8ydx8YzPIWTCKg_96x96.png"
-    },
-    "kickoff_date": "2025-05-27",
-    "kickoff_time": "17:30",
-    "match_date": "2025-05-27",
-    "match_time": "17:30",
-    "firstRow": 7
-  },
-  {
     "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
     "duration": 3,
     "league": "NBA",

@@ -33,5 +33,85 @@
         "label": "COURT 3"
       }
     ]
+  },
+  {
+    "id": "ac025edc-7aec-406a-98db-90ad9ef0ddb3",
+    "servers": [
+      {
+        "key": "CaUH1Hi911",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "64yMjrbpjf",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "mlCOWEq1zw",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "51ed0f5b-857a-4427-b78f-37474d3ccc15",
+    "servers": [
+      {
+        "key": "GOE1GFaAc2",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "jJvVOqcKqN",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Jgq8jTmIZb",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "5e21a3b2-8acc-4c3d-ab55-df6f780b00f0",
+    "servers": [
+      {
+        "key": "GWTr3j6cdI",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5ODk2NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "56HLV0L4L7",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "Ha1fjCs0Po",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "aa0f6198-373e-4409-8b31-a864b0823ebe",
+    "servers": [
+      {
+        "key": "EpenvL3S0Y",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5ODk3NSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "TgccAeuWEl",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "W4ot7akly2",
+        "url": "",
+        "label": ""
+      }
+    ]
   }
 ]

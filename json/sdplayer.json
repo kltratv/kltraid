@@ -5,12 +5,12 @@
       {
         "key": "vFGwMzG7wp",
         "url": "",
-        "label": ""
+        "label": "HD AUTO [IOS]"
       },
       {
         "key": "QsPAVbQhiy",
         "url": "",
-        "label": ""
+        "label": "Server 1"
       },
       {
         "key": "hqCVKJJQen",
@@ -29,41 +29,6 @@
       },
       {
         "key": "rn1ajr4k7h",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "d68af669-674f-4492-890a-28aea71b4cf3",
-    "servers": [
-      {
-        "key": "izBI1RctWZ",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "nzOisMraZo",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "BQXf2XHa4p",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "TOgTRNmQR2",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "ys4RCKLKmu",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "4hdr14Is3i",
         "url": "",
         "label": ""
       }
@@ -179,6 +144,41 @@
       },
       {
         "key": "W4ot7akly2",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "d68af669-674f-4492-890a-28aea71b4cf3",
+    "servers": [
+      {
+        "key": "izBI1RctWZ",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nzOisMraZo",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "BQXf2XHa4p",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "TOgTRNmQR2",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "ys4RCKLKmu",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "4hdr14Is3i",
         "url": "",
         "label": ""
       }

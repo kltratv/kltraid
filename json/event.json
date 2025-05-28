@@ -1,24 +1,5 @@
 [
   {
-    "id": "35702634-5896-48a6-9b6c-42b5f2c9cf72",
-    "duration": 15,
-    "league": "Singapore Open 2025",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Badminton.png",
-    "team1": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "team2": {
-      "name": "Badminton",
-      "logo": "https://kltraid.pages.dev/images/sportsicon/Badminton.png"
-    },
-    "kickoff_date": "2025-05-28",
-    "kickoff_time": "09:00",
-    "match_date": "2025-05-28",
-    "match_time": "09:00",
-    "firstRow": 4
-  },
-  {
     "id": "1d6b7063-d3b7-4435-be46-e5df667c30f9",
     "duration": 4,
     "league": "Club Friendly Match",
@@ -35,7 +16,7 @@
     "kickoff_time": "19:45",
     "match_date": "2025-05-28",
     "match_time": "19:15",
-    "firstRow": 9
+    "firstRow": 4
   },
   {
     "id": "d68af669-674f-4492-890a-28aea71b4cf3",
@@ -54,7 +35,7 @@
     "kickoff_time": "02:00",
     "match_date": "2025-05-29",
     "match_time": "01:30",
-    "firstRow": 10
+    "firstRow": 5
   },
   {
     "id": "dcfbd3aa-0581-419e-8756-520899ed33e0",
@@ -73,7 +54,7 @@
     "kickoff_time": "06:30",
     "match_date": "2025-05-29",
     "match_time": "06:30",
-    "firstRow": 11
+    "firstRow": 6
   },
   {
     "id": "b06b379b-64f7-4b6a-9f73-bc7ab6c9a27a",
@@ -92,7 +73,7 @@
     "kickoff_time": "06:30",
     "match_date": "2025-05-29",
     "match_time": "06:30",
-    "firstRow": 12
+    "firstRow": 7
   },
   {
     "id": "8970a4f6-dab0-4052-91f9-9bef2c9a59f0",
@@ -111,6 +92,6 @@
     "kickoff_time": "07:30",
     "match_date": "2025-05-29",
     "match_time": "07:30",
-    "firstRow": 13
+    "firstRow": 8
   }
 ]

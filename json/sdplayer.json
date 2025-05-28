@@ -1,36 +1,21 @@
 [
   {
-    "id": "d68af669-674f-4492-890a-28aea71b4cf3",
+    "id": "dcfbd3aa-0581-419e-8756-520899ed33e0",
     "servers": [
       {
-        "key": "izBI1RctWZ",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "nzOisMraZo",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=foxmx1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "BQXf2XHa4p",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "TOgTRNmQR2",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "key": "ETf4CSyP4V",
+        "url": "https://kc.elutuna.workers.dev/21061/playlist.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "ys4RCKLKmu",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5ODk1OSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
+        "key": "NeZa0oZvNu",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "4hdr14Is3i",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
-        "label": "SD [IOS]"
+        "key": "mBda5pu06Q",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -185,22 +170,37 @@
     ]
   },
   {
-    "id": "dcfbd3aa-0581-419e-8756-520899ed33e0",
+    "id": "d68af669-674f-4492-890a-28aea71b4cf3",
     "servers": [
       {
-        "key": "ETf4CSyP4V",
-        "url": "",
-        "label": ""
+        "key": "izBI1RctWZ",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid3",
+        "label": "HD AUTO"
       },
       {
-        "key": "NeZa0oZvNu",
-        "url": "",
-        "label": ""
+        "key": "nzOisMraZo",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=foxmx1",
+        "label": "HD AUTO"
       },
       {
-        "key": "mBda5pu06Q",
-        "url": "",
-        "label": ""
+        "key": "BQXf2XHa4p",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "TOgTRNmQR2",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "ys4RCKLKmu",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5ODk1OSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "4hdr14Is3i",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "label": "SD [IOS]"
       }
     ]
   },

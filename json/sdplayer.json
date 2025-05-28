@@ -13,5 +13,30 @@
         "label": "SD [IOS]"
       }
     ]
+  },
+  {
+    "id": "35702634-5896-48a6-9b6c-42b5f2c9cf72",
+    "servers": [
+      {
+        "key": "Wa1nk3tnxQ",
+        "url": "",
+        "label": "COURT 1"
+      },
+      {
+        "key": "T9g5H8OHc9",
+        "url": "",
+        "label": "COURT 2"
+      },
+      {
+        "key": "ucrN93maPM",
+        "url": "",
+        "label": "COURT 3"
+      },
+      {
+        "key": "XuMojSyAVp",
+        "url": "",
+        "label": "COURT 4"
+      }
+    ]
   }
 ]

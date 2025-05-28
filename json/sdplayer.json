@@ -1,5 +1,20 @@
 [
   {
+    "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
+    "servers": [
+      {
+        "key": "mdGX9IxG4J",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "ld5hkshtIW",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
     "id": "35702634-5896-48a6-9b6c-42b5f2c9cf72",
     "servers": [
       {
@@ -16,26 +31,6 @@
         "key": "ucrN93maPM",
         "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951237486061_AiHD.m3u8?txSecret=5c48ba3ef5dc2405db3213c42056b3b8&txTime=6837A380",
         "label": "COURT 3"
-      },
-      {
-        "key": "XuMojSyAVp",
-        "url": "",
-        "label": "COURT 4"
-      }
-    ]
-  },
-  {
-    "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
-    "servers": [
-      {
-        "key": "mdGX9IxG4J",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "ld5hkshtIW",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
-        "label": "SD [IOS]"
       }
     ]
   }

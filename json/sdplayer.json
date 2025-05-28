@@ -1,111 +1,11 @@
 [
   {
-    "id": "9a0363c8-89c8-48ec-abba-ff5b2b0af26a",
-    "servers": [
-      {
-        "key": "rPpQu2nPF1",
-        "url": "https://live.jiatianxiazhuangshi.com/live/57130741_0a38e1d703015f3c4044d59a242c8081_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "7ySIHdBTfO",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5NDc4NyZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "aLgezbkMLM",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "c4f1fd48-72ae-47ea-866e-7e454e869020",
-    "servers": [
-      {
-        "key": "zS5OnMAgoC",
-        "url": "https://live1.jiatianxiazhuangshi.com/live/57130743_9f3bb5f1e72ea079ed329d0f33b2cfbf_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "lR8lNu7fto",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5NDc5MSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "DjeDGNpz0G",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "b3bcdac6-9c95-4980-85d0-a64e082128e9",
-    "servers": [
-      {
-        "key": "RvVGFwAvcF",
-        "url": "https://live2.jiatianxiazhuangshi.com/live/57130745_e9f235d4ed29dd6b12db275a9a2ac887_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "EoC4Zph6VG",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjY5NDc4OSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "HB9U80Df9C",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "fb33b7b6-a9c8-463d-8277-86f181badef1",
-    "servers": [
-      {
-        "key": "U78UIIlgKz",
-        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910949843577061_AiHD.m3u8?txSecret=75ad3651b64b3e8d8180173183c572ea&txTime=68365200",
-        "label": "COURT 1"
-      },
-      {
-        "key": "RI1PqRWaGx",
-        "url": "https://aae3e8111b7e62fa97499a11d53fc80a.v.smtcdns.net/play.cbalive.weibisai.com/live/3910950044897061_AiHD.m3u8?txSecret=722c008a24dd8236f68b230ac89f41e8&txTime=68365200",
-        "label": "COURT 2"
-      },
-      {
-        "key": "DdRLTsxfbG",
-        "url": "https://aae3e8111b7e62fa97499a11d53fc80a.v.smtcdns.net/play.cbalive.weibisai.com/live/3910950267430061_AiHD.m3u8?txSecret=0fdbd3a07d27f8ea8b5cd0251ab3722f&txTime=68365200",
-        "label": "COURT 3"
-      },
-      {
-        "key": "OsHEn46bMR",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "8b1a4a48-4598-4501-938f-d558a1541198",
-    "servers": [
-      {
-        "key": "Ukx5s1Xvfp",
-        "url": "https://sc.elutuna.workers.dev/309/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "UxzN8IqNUy",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "8c72b9db-75ba-45d9-9a68-865195065fdb",
     "servers": [
       {
         "key": "mdGX9IxG4J",
-        "url": "",
-        "label": ""
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
       },
       {
         "key": "ld5hkshtIW",

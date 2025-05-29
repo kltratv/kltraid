@@ -1,19 +1,19 @@
 [
   {
-    "id": "24d4c7a3-b709-43b7-b16d-96a3269e92ec",
+    "id": "39ce1e50-abe4-4cbe-889c-adeb130239bd",
     "servers": [
       {
-        "key": "lpaCOHj3nx",
-        "url": "https://kc.elutuna.workers.dev/21011/playlist.m3u8",
+        "key": "0ZVBVg9Jtf",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcyNjc3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "3E8HoLIIFE",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4329481-0.m3u8?txSecret=5f148e42f71f3f25f096ee9114a1030c&txTime=6838af24",
-        "label": "SD [IOS]"
+        "key": "f19z3glrMs",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "LDIXMFNkbJ",
+        "key": "M4n8F7fDQv",
         "url": "",
         "label": ""
       }
@@ -55,20 +55,20 @@
     ]
   },
   {
-    "id": "39ce1e50-abe4-4cbe-889c-adeb130239bd",
+    "id": "24d4c7a3-b709-43b7-b16d-96a3269e92ec",
     "servers": [
       {
-        "key": "0ZVBVg9Jtf",
-        "url": "",
-        "label": ""
+        "key": "lpaCOHj3nx",
+        "url": "https://kc.elutuna.workers.dev/21011/playlist.m3u8",
+        "label": "SD [IOS]"
       },
       {
-        "key": "f19z3glrMs",
-        "url": "",
-        "label": ""
+        "key": "3E8HoLIIFE",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4329481-0.m3u8?txSecret=5f148e42f71f3f25f096ee9114a1030c&txTime=6838af24",
+        "label": "SD [IOS]"
       },
       {
-        "key": "M4n8F7fDQv",
+        "key": "LDIXMFNkbJ",
         "url": "",
         "label": ""
       }

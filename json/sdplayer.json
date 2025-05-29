@@ -1,14 +1,84 @@
 [
   {
-    "id": "b6c4dc31-a2c7-4a73-a5cb-c3913beff598",
+    "id": "24d4c7a3-b709-43b7-b16d-96a3269e92ec",
     "servers": [
       {
-        "key": "YANXkAFgvK",
-        "url": "https://live.jiatianxiazhuangshi.com/live/527r3i4e4yzc47e_6cf0f969e13930b8cc0119da1fe8e09e_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "lpaCOHj3nx",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "tZF1fwb79F",
+        "key": "3E8HoLIIFE",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "LDIXMFNkbJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "39ce1e50-abe4-4cbe-889c-adeb130239bd",
+    "servers": [
+      {
+        "key": "0ZVBVg9Jtf",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "f19z3glrMs",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "M4n8F7fDQv",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "529dc894-7af3-4965-b668-e3e18c5e3c31",
+    "servers": [
+      {
+        "key": "8YPHBaQVR3",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "gwfbGsiG1G",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "KELhPCGyVz",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "HIoADJwQ7J",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "8154235b-fb69-40ad-bdcd-a865150a6d7f",
+    "servers": [
+      {
+        "key": "sqQ6TLkjAH",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "wRm82KjOEW",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "PtKdMKrJbe",
         "url": "",
         "label": ""
       }
@@ -31,6 +101,21 @@
         "key": "uka9g2FbVi",
         "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952090735061_AiHD.m3u8?txSecret=9dae8779a708ae86a03b7421ee9dd485&txTime=6838F500",
         "label": "COURT 3"
+      }
+    ]
+  },
+  {
+    "id": "b6c4dc31-a2c7-4a73-a5cb-c3913beff598",
+    "servers": [
+      {
+        "key": "YANXkAFgvK",
+        "url": "https://live.jiatianxiazhuangshi.com/live/527r3i4e4yzc47e_6cf0f969e13930b8cc0119da1fe8e09e_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "tZF1fwb79F",
+        "url": "",
+        "label": ""
       }
     ]
   }

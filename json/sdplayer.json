@@ -1,21 +1,21 @@
 [
   {
-    "id": "8970a4f6-dab0-4052-91f9-9bef2c9a59f0",
+    "id": "49810923-fb9a-49a5-89cd-8a851ee36f86",
     "servers": [
       {
-        "key": "oHK9dn94D6",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "3OFgU8C68u",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "key": "lk6Guh8UZk",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951728025061_AiHD.m3u8?txSecret=709f3c368ccd837cc412c85c8231c965&txTime=6838F500",
         "label": "SD [IOS]"
       },
       {
-        "key": "vrOv3J4bDx",
-        "url": "https://live5.jiatianxiazhuangshi.com/live/59796308_209ddf31053dad540be7e2296ecacd11_autoChange.m3u8?auth_key=1748492826-0-0-a4fa20e40157fac10b7a2e2dc63c4a5c",
-        "label": "ANDROID/PC"
+        "key": "ZGOoNF4mpk",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "uka9g2FbVi",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -241,6 +241,26 @@
         "key": "K8zT9leY5c",
         "url": "",
         "label": ""
+      }
+    ]
+  },
+  {
+    "id": "8970a4f6-dab0-4052-91f9-9bef2c9a59f0",
+    "servers": [
+      {
+        "key": "oHK9dn94D6",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "3OFgU8C68u",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "vrOv3J4bDx",
+        "url": "https://live5.jiatianxiazhuangshi.com/live/59796308_209ddf31053dad540be7e2296ecacd11_autoChange.m3u8?auth_key=1748492826-0-0-a4fa20e40157fac10b7a2e2dc63c4a5c",
+        "label": "ANDROID/PC"
       }
     ]
   }

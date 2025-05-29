@@ -4,8 +4,8 @@
     "servers": [
       {
         "key": "lpaCOHj3nx",
-        "url": "",
-        "label": ""
+        "url": "https://kc.elutuna.workers.dev/21011/playlist.m3u8",
+        "label": "SD [IOS]"
       },
       {
         "key": "3E8HoLIIFE",
@@ -14,6 +14,41 @@
       },
       {
         "key": "LDIXMFNkbJ",
+        "url": "",
+        "label": ""
+      }
+    ]
+  },
+  {
+    "id": "49810923-fb9a-49a5-89cd-8a851ee36f86",
+    "servers": [
+      {
+        "key": "lk6Guh8UZk",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951728025061_AiHD.m3u8?txSecret=709f3c368ccd837cc412c85c8231c965&txTime=6838F500",
+        "label": "COURT 1"
+      },
+      {
+        "key": "ZGOoNF4mpk",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951906461061_AiHD.m3u8?txSecret=b5486f38518129b1c80fc5fc9a1a18af&txTime=6838F500",
+        "label": "COURT 2"
+      },
+      {
+        "key": "uka9g2FbVi",
+        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952090735061_AiHD.m3u8?txSecret=9dae8779a708ae86a03b7421ee9dd485&txTime=6838F500",
+        "label": "COURT 3"
+      }
+    ]
+  },
+  {
+    "id": "b6c4dc31-a2c7-4a73-a5cb-c3913beff598",
+    "servers": [
+      {
+        "key": "YANXkAFgvK",
+        "url": "https://live.jiatianxiazhuangshi.com/live/527r3i4e4yzc47e_6cf0f969e13930b8cc0119da1fe8e09e_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "tZF1fwb79F",
         "url": "",
         "label": ""
       }
@@ -79,41 +114,6 @@
       },
       {
         "key": "PtKdMKrJbe",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
-    "id": "49810923-fb9a-49a5-89cd-8a851ee36f86",
-    "servers": [
-      {
-        "key": "lk6Guh8UZk",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951728025061_AiHD.m3u8?txSecret=709f3c368ccd837cc412c85c8231c965&txTime=6838F500",
-        "label": "COURT 1"
-      },
-      {
-        "key": "ZGOoNF4mpk",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951906461061_AiHD.m3u8?txSecret=b5486f38518129b1c80fc5fc9a1a18af&txTime=6838F500",
-        "label": "COURT 2"
-      },
-      {
-        "key": "uka9g2FbVi",
-        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952090735061_AiHD.m3u8?txSecret=9dae8779a708ae86a03b7421ee9dd485&txTime=6838F500",
-        "label": "COURT 3"
-      }
-    ]
-  },
-  {
-    "id": "b6c4dc31-a2c7-4a73-a5cb-c3913beff598",
-    "servers": [
-      {
-        "key": "YANXkAFgvK",
-        "url": "https://live.jiatianxiazhuangshi.com/live/527r3i4e4yzc47e_6cf0f969e13930b8cc0119da1fe8e09e_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "tZF1fwb79F",
         "url": "",
         "label": ""
       }

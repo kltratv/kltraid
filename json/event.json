@@ -1,43 +1,5 @@
 [
   {
-    "id": "dcfbd3aa-0581-419e-8756-520899ed33e0",
-    "duration": 2.17,
-    "league": "MLS",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Inter Miami",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/dn0bMtTbbpx7v3Ieq6TZtQ_96x96.png"
-    },
-    "team2": {
-      "name": "CF Montreal",
-      "logo": "https://tmssl.akamaized.net/images/wappen/head/4078.png?lm=1668716810"
-    },
-    "kickoff_date": "2025-05-29",
-    "kickoff_time": "06:30",
-    "match_date": "2025-05-29",
-    "match_time": "06:30",
-    "firstRow": 6
-  },
-  {
-    "id": "b06b379b-64f7-4b6a-9f73-bc7ab6c9a27a",
-    "duration": 2.17,
-    "league": "MLS",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Cincinnati",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/wtbE1XYYT52e2DHjn3UG6Q_96x96.png"
-    },
-    "team2": {
-      "name": "Dallas",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/eV8_9jipENSUukcAlReehQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-29",
-    "kickoff_time": "06:30",
-    "match_date": "2025-05-29",
-    "match_time": "06:30",
-    "firstRow": 7
-  },
-  {
     "id": "8970a4f6-dab0-4052-91f9-9bef2c9a59f0",
     "duration": 3,
     "league": "NBA",

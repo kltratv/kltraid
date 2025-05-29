@@ -1,24 +1,5 @@
 [
   {
-    "id": "529dc894-7af3-4965-b668-e3e18c5e3c31",
-    "duration": 2.17,
-    "league": "Ligue 1",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Reims",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/NWzvJ-A3j8HQkeQZ0sJP1w_96x96.png"
-    },
-    "team2": {
-      "name": "Metz",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/b7iBf-aijuqQaScGSpDV7A_96x96.png"
-    },
-    "kickoff_date": "2025-05-30",
-    "kickoff_time": "01:30",
-    "match_date": "2025-05-30",
-    "match_time": "01:30",
-    "firstRow": 7
-  },
-  {
     "id": "8154235b-fb69-40ad-bdcd-a865150a6d7f",
     "duration": 3,
     "league": "NBA",

@@ -1,26 +1,21 @@
 [
   {
-    "id": "529dc894-7af3-4965-b668-e3e18c5e3c31",
+    "id": "8154235b-fb69-40ad-bdcd-a865150a6d7f",
     "servers": [
       {
-        "key": "8YPHBaQVR3",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcyNjc0OSZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "sqQ6TLkjAH",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "wRm82KjOEW",
+        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "gwfbGsiG1G",
-        "url": "https://kc.elutuna.workers.dev/21052/playlist.m3u8",
+        "key": "PtKdMKrJbe",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853915-2.m3u8?txSecret=5df02c4d8e378b68d40c72a8b30b2243&txTime=68392dc2",
         "label": "SD [IOS]"
-      },
-      {
-        "key": "KELhPCGyVz",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4332741-0.m3u8?txSecret=67f9b2cd54732fe1a7aee2f4c706f4f5&txTime=6838e05c",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "HIoADJwQ7J",
-        "url": "",
-        "label": ""
       }
     ]
   },
@@ -100,20 +95,25 @@
     ]
   },
   {
-    "id": "8154235b-fb69-40ad-bdcd-a865150a6d7f",
+    "id": "529dc894-7af3-4965-b668-e3e18c5e3c31",
     "servers": [
       {
-        "key": "sqQ6TLkjAH",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "wRm82KjOEW",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
+        "key": "8YPHBaQVR3",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcyNjc0OSZzaz0xYzlhYzAxJnR5cGU9cw==",
         "label": "SD [IOS]"
       },
       {
-        "key": "PtKdMKrJbe",
+        "key": "gwfbGsiG1G",
+        "url": "https://kc.elutuna.workers.dev/21052/playlist.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "KELhPCGyVz",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4332741-0.m3u8?txSecret=67f9b2cd54732fe1a7aee2f4c706f4f5&txTime=6838e05c",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "HIoADJwQ7J",
         "url": "",
         "label": ""
       }

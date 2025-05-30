@@ -19,63 +19,6 @@
     "firstRow": 5
   },
   {
-    "id": "d2cd60ed-1b39-42a6-b4e8-77bf0bccfc39",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Galatasaray",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/TWjoccvTU4JXZJZ3aW3cVg_96x96.png"
-    },
-    "team2": {
-      "name": "Istanbul Bagaksehir",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/b_G6FYhPyTa_WdhdikiqyA_96x96.png"
-    },
-    "kickoff_date": "2025-05-31",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-31",
-    "match_time": "00:00",
-    "firstRow": 6
-  },
-  {
-    "id": "d71aa299-0ec0-460f-aca8-08e6b66eaae6",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Antalyaspor",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/UCtuB1m9ogk1vakmxCAbWw_96x96.png"
-    },
-    "team2": {
-      "name": "Trabzonspor",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/rQs-vhZVYO9BbP4nInu3uw_96x96.png"
-    },
-    "kickoff_date": "2025-05-31",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-31",
-    "match_time": "00:00",
-    "firstRow": 7
-  },
-  {
-    "id": "a75e0c6a-ea2b-4bd9-81ab-775db962d5e6",
-    "duration": 2.17,
-    "league": "Turkish Super League",
-    "icon": "https://kltraid.pages.dev/images/sportsicon/Sepakbola.png",
-    "team1": {
-      "name": "Kasimpasa",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/7zFWZCjDqsK7TH4BxZcdfA_96x96.png"
-    },
-    "team2": {
-      "name": "Goztepe",
-      "logo": "https://ssl.gstatic.com/onebox/media/sports/logos/vjtcQOabVkCAP2lNGRLVlQ_96x96.png"
-    },
-    "kickoff_date": "2025-05-31",
-    "kickoff_time": "00:00",
-    "match_date": "2025-05-31",
-    "match_time": "00:00",
-    "firstRow": 8
-  },
-  {
     "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
     "duration": 2.17,
     "league": "Saudi King's Cup",

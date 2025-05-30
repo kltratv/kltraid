@@ -1,25 +1,5 @@
 [
   {
-    "id": "d2cd60ed-1b39-42a6-b4e8-77bf0bccfc39",
-    "servers": [
-      {
-        "key": "OGJUudxQ3E",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjczMTE1OCZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "Fm4P41TaBA",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "HfUXmerjjU",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "d71aa299-0ec0-460f-aca8-08e6b66eaae6",
     "servers": [
       {
@@ -29,13 +9,13 @@
       },
       {
         "key": "mBWxSASFvG",
-        "url": "",
-        "label": ""
+        "url": "https://live.jiatianxiazhuangshi.com/live/51472475_cecc4b7830171365c58b1d3c9c997a1e_nsd.m3u8",
+        "label": "ANDROID/PC"
       },
       {
         "key": "cC0D413lR4",
-        "url": "",
-        "label": ""
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160891-0.m3u8?txSecret=e9171fec82c31d180002ded75c33f4e9&txTime=683a1cc4",
+        "label": "SD [IOS]"
       }
     ]
   },
@@ -49,8 +29,8 @@
       },
       {
         "key": "RDyv9XNnRR",
-        "url": "",
-        "label": ""
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160895-0.m3u8?txSecret=cdcc7b673b05a58bc0d6fb38869d0bef&txTime=683a1cc4",
+        "label": "SD [IOS]"
       },
       {
         "key": "2do6yeqMOS",
@@ -111,6 +91,26 @@
         "key": "QBNLcNhBxK",
         "url": "https://sc.elutuna.workers.dev/381/playlist.m3u8",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "d2cd60ed-1b39-42a6-b4e8-77bf0bccfc39",
+    "servers": [
+      {
+        "key": "OGJUudxQ3E",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjczMTE1OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Fm4P41TaBA",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "HfUXmerjjU",
+        "url": "",
+        "label": ""
       }
     ]
   },

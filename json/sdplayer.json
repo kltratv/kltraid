@@ -16,6 +16,21 @@
         "key": "Pq048gCGgX",
         "url": "",
         "label": "COURT 3"
+      },
+      {
+        "key": "XRB9SkeD1a",
+        "url": "https://thapcam.elutuna.workers.dev/gZHn9hwjjVb7B_-Hcd7StA/Fv2lucGIbhPi2caWYvF5Lg/1748600106220/live/may24/playlist.m3u8",
+        "label": "COURT 1+"
+      },
+      {
+        "key": "bM3bKnrp2J",
+        "url": "https://thapcam.elutuna.workers.dev/TSPNJvApBMKVHB_35DgifQ/Fv2lucGIbhPi2caWYvF5Lg/1748600400084/live/may25/playlist.m3u8",
+        "label": "COURT 2+"
+      },
+      {
+        "key": "xzrRVLQFgg",
+        "url": "",
+        "label": "COURT 3+"
       }
     ]
   },

@@ -20,100 +20,20 @@
     ]
   },
   {
-    "id": "49810923-fb9a-49a5-89cd-8a851ee36f86",
+    "id": "c997a7dc-f931-40f0-8b39-919e259bcce1",
     "servers": [
       {
-        "key": "lk6Guh8UZk",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951728025061_AiHD.m3u8?txSecret=709f3c368ccd837cc412c85c8231c965&txTime=6838F500",
-        "label": "COURT 1"
-      },
-      {
-        "key": "ZGOoNF4mpk",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910951906461061_AiHD.m3u8?txSecret=b5486f38518129b1c80fc5fc9a1a18af&txTime=6838F500",
-        "label": "COURT 2"
-      },
-      {
-        "key": "uka9g2FbVi",
-        "url": "https://01a7debea34b410001e86f430d9634e2.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952090735061_AiHD.m3u8?txSecret=9dae8779a708ae86a03b7421ee9dd485&txTime=6838F500",
-        "label": "COURT 3"
-      }
-    ]
-  },
-  {
-    "id": "b6c4dc31-a2c7-4a73-a5cb-c3913beff598",
-    "servers": [
-      {
-        "key": "YANXkAFgvK",
-        "url": "https://live.jiatianxiazhuangshi.com/live/527r3i4e4yzc47e_6cf0f969e13930b8cc0119da1fe8e09e_nsd.m3u8",
-        "label": "ANDROID/PC"
-      },
-      {
-        "key": "tZF1fwb79F",
+        "key": "2RHvVemFoP",
         "url": "",
         "label": ""
-      }
-    ]
-  },
-  {
-    "id": "24d4c7a3-b709-43b7-b16d-96a3269e92ec",
-    "servers": [
-      {
-        "key": "lpaCOHj3nx",
-        "url": "https://kc.elutuna.workers.dev/21011/playlist.m3u8",
-        "label": "SD [IOS]"
       },
       {
-        "key": "3E8HoLIIFE",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4329481-0.m3u8?txSecret=5f148e42f71f3f25f096ee9114a1030c&txTime=6838af24",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "LDIXMFNkbJ",
+        "key": "S72OSXN6j6",
         "url": "",
         "label": ""
-      }
-    ]
-  },
-  {
-    "id": "39ce1e50-abe4-4cbe-889c-adeb130239bd",
-    "servers": [
-      {
-        "key": "0ZVBVg9Jtf",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcyNjc3MiZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
       },
       {
-        "key": "f19z3glrMs",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_nl_espn_1_fhd/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "M4n8F7fDQv",
-        "url": "https://kc.elutuna.workers.dev/22032/playlist.m3u8",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "529dc894-7af3-4965-b668-e3e18c5e3c31",
-    "servers": [
-      {
-        "key": "8YPHBaQVR3",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjcyNjc0OSZzaz0xYzlhYzAxJnR5cGU9cw==",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "gwfbGsiG1G",
-        "url": "https://kc.elutuna.workers.dev/21052/playlist.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "KELhPCGyVz",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4332741-0.m3u8?txSecret=67f9b2cd54732fe1a7aee2f4c706f4f5&txTime=6838e05c",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "HIoADJwQ7J",
+        "key": "Pq048gCGgX",
         "url": "",
         "label": ""
       }

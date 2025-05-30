@@ -1,21 +1,16 @@
 [
   {
-    "id": "b4ff482b-8aec-4377-89b9-a4c6b41cadf6",
+    "id": "88d8dd2b-b788-4128-8cef-cd34cb660e17",
     "servers": [
       {
-        "key": "1pvbAXpqhu",
-        "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/6058004203001/playlist.m3u8",
-        "label": "HD AUTO [IOS]"
+        "key": "nKa9KP90SS",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "RbqraveIJd",
-        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_uk_mutv_fhd/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "QBNLcNhBxK",
-        "url": "https://sc.elutuna.workers.dev/381/playlist.m3u8",
-        "label": "SD [IOS]"
+        "key": "UIdi3oPkTi",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -51,6 +46,26 @@
         "key": "xzrRVLQFgg",
         "url": "",
         "label": "COURT 3+"
+      }
+    ]
+  },
+  {
+    "id": "b4ff482b-8aec-4377-89b9-a4c6b41cadf6",
+    "servers": [
+      {
+        "key": "1pvbAXpqhu",
+        "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/6058004203001/playlist.m3u8",
+        "label": "HD AUTO [IOS]"
+      },
+      {
+        "key": "RbqraveIJd",
+        "url": "https://rr4---sn-8pxuuxa-onon.applecdnstore.com/livetv/2024/live_event_uk_mutv_fhd/index.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "QBNLcNhBxK",
+        "url": "https://sc.elutuna.workers.dev/381/playlist.m3u8",
+        "label": "SD [IOS]"
       }
     ]
   },

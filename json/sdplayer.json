@@ -1,26 +1,31 @@
 [
   {
-    "id": "88d8dd2b-b788-4128-8cef-cd34cb660e17",
+    "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
     "servers": [
       {
-        "key": "nKa9KP90SS",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
-        "label": "HD AUTO"
+        "key": "Gi9aCSuPpg",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "UIdi3oPkTi",
-        "url": "https://nijineh-lalajo.hf.space/watch/aHR0cHM6Ly9kb2trbzFuZXcubmV3a3NvLnJ1L2Rva2tvMS9wcmVtaXVtNTM3L21vbm8ubTN1OA==.m3u8",
-        "label": "SD [IOS]"
+        "key": "GpBhzKjyjs",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "kQOG1946TV",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=foxmx1",
-        "label": "HD AUTO"
+        "key": "DPYJD9UITz",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "FC1G7Ujjlg",
-        "url": "https://thapcam.elutuna.workers.dev/jYiAEpMMeEir8U9-cjoD7Q/Fv2lucGIbhPi2caWYvF5Lg/1748629515972/live/Z1SD/playlist.m3u8",
-        "label": "SD [IOS]"
+        "key": "y4WJvnQFYP",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nczzSNZ0Gu",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -136,6 +141,31 @@
         "key": "2do6yeqMOS",
         "url": "",
         "label": ""
+      }
+    ]
+  },
+  {
+    "id": "88d8dd2b-b788-4128-8cef-cd34cb660e17",
+    "servers": [
+      {
+        "key": "nKa9KP90SS",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=beinid1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "UIdi3oPkTi",
+        "url": "https://nijineh-lalajo.hf.space/watch/aHR0cHM6Ly9kb2trbzFuZXcubmV3a3NvLnJ1L2Rva2tvMS9wcmVtaXVtNTM3L21vbm8ubTN1OA==.m3u8",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "kQOG1946TV",
+        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=foxmx1",
+        "label": "HD AUTO"
+      },
+      {
+        "key": "FC1G7Ujjlg",
+        "url": "https://thapcam.elutuna.workers.dev/jYiAEpMMeEir8U9-cjoD7Q/Fv2lucGIbhPi2caWYvF5Lg/1748629515972/live/Z1SD/playlist.m3u8",
+        "label": "SD [IOS]"
       }
     ]
   }

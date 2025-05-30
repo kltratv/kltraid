@@ -1,29 +1,19 @@
 [
   {
-    "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
+    "id": "a75e0c6a-ea2b-4bd9-81ab-775db962d5e6",
     "servers": [
       {
-        "key": "Gi9aCSuPpg",
+        "key": "kfNGa1xoGk",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjczMTE1NyZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "RDyv9XNnRR",
         "url": "",
         "label": ""
       },
       {
-        "key": "GpBhzKjyjs",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "DPYJD9UITz",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "y4WJvnQFYP",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "nczzSNZ0Gu",
+        "key": "2do6yeqMOS",
         "url": "",
         "label": ""
       }
@@ -125,26 +115,6 @@
     ]
   },
   {
-    "id": "a75e0c6a-ea2b-4bd9-81ab-775db962d5e6",
-    "servers": [
-      {
-        "key": "kfNGa1xoGk",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "RDyv9XNnRR",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "2do6yeqMOS",
-        "url": "",
-        "label": ""
-      }
-    ]
-  },
-  {
     "id": "88d8dd2b-b788-4128-8cef-cd34cb660e17",
     "servers": [
       {
@@ -166,6 +136,36 @@
         "key": "FC1G7Ujjlg",
         "url": "https://thapcam.elutuna.workers.dev/jYiAEpMMeEir8U9-cjoD7Q/Fv2lucGIbhPi2caWYvF5Lg/1748629515972/live/Z1SD/playlist.m3u8",
         "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
+    "servers": [
+      {
+        "key": "Gi9aCSuPpg",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "GpBhzKjyjs",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "DPYJD9UITz",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "y4WJvnQFYP",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nczzSNZ0Gu",
+        "url": "",
+        "label": ""
       }
     ]
   }

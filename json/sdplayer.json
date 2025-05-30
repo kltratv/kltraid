@@ -1,21 +1,31 @@
 [
   {
-    "id": "d2cd60ed-1b39-42a6-b4e8-77bf0bccfc39",
+    "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
     "servers": [
       {
-        "key": "OGJUudxQ3E",
-        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjczMTE1OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "key": "Gi9aCSuPpg",
+        "url": "https://kc.elutuna.workers.dev/209/playlist.m3u8",
         "label": "SD [IOS]"
       },
       {
-        "key": "Fm4P41TaBA",
-        "url": "https://live.jiatianxiazhuangshi.com/live/51472489_33f7764036f36e2e7dcb764aa4ded627_nsd.m3u8",
-        "label": "ANDROID/PC"
+        "key": "GpBhzKjyjs",
+        "url": "",
+        "label": ""
       },
       {
-        "key": "HfUXmerjjU",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160894-0.m3u8?txSecret=01701948b92472a0576da1852157514f&txTime=683a1d3c",
-        "label": "SD [IOS]"
+        "key": "DPYJD9UITz",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "y4WJvnQFYP",
+        "url": "",
+        "label": ""
+      },
+      {
+        "key": "nczzSNZ0Gu",
+        "url": "",
+        "label": ""
       }
     ]
   },
@@ -70,6 +80,26 @@
       {
         "key": "QBNLcNhBxK",
         "url": "https://sc.elutuna.workers.dev/381/playlist.m3u8",
+        "label": "SD [IOS]"
+      }
+    ]
+  },
+  {
+    "id": "d2cd60ed-1b39-42a6-b4e8-77bf0bccfc39",
+    "servers": [
+      {
+        "key": "OGJUudxQ3E",
+        "url": "https://sport.inplaynet.tech/livestream.html?src=aHR0cHM6Ly9zbWQuc3BvcnRwbGF5ZXIuaW8vZW1iZWQucGhwLz9tYXRjaF9pZD0xMjczMTE1OCZzaz0xYzlhYzAxJnR5cGU9cw==",
+        "label": "SD [IOS]"
+      },
+      {
+        "key": "Fm4P41TaBA",
+        "url": "https://live.jiatianxiazhuangshi.com/live/51472489_33f7764036f36e2e7dcb764aa4ded627_nsd.m3u8",
+        "label": "ANDROID/PC"
+      },
+      {
+        "key": "HfUXmerjjU",
+        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-1-4160894-0.m3u8?txSecret=01701948b92472a0576da1852157514f&txTime=683a1d3c",
         "label": "SD [IOS]"
       }
     ]
@@ -136,36 +166,6 @@
         "key": "FC1G7Ujjlg",
         "url": "https://thapcam.elutuna.workers.dev/jYiAEpMMeEir8U9-cjoD7Q/Fv2lucGIbhPi2caWYvF5Lg/1748629515972/live/Z1SD/playlist.m3u8",
         "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "db9044cb-f4a9-4400-a32f-7dbdafd339f9",
-    "servers": [
-      {
-        "key": "Gi9aCSuPpg",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "GpBhzKjyjs",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "DPYJD9UITz",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "y4WJvnQFYP",
-        "url": "",
-        "label": ""
-      },
-      {
-        "key": "nczzSNZ0Gu",
-        "url": "",
-        "label": ""
       }
     ]
   }

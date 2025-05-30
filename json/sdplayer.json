@@ -1,11 +1,46 @@
 [
   {
+    "id": "c997a7dc-f931-40f0-8b39-919e259bcce1",
+    "servers": [
+      {
+        "key": "2RHvVemFoP",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952410910061_AiHD.m3u8?txSecret=14807877bb7226ca02c4a795c2eede43&txTime=683A62A0",
+        "label": "COURT 1"
+      },
+      {
+        "key": "S72OSXN6j6",
+        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952605772061_AiHD.m3u8?txSecret=a33a9f26d199c4e935ae6395733e9f45&txTime=683A62A0",
+        "label": "COURT 2"
+      },
+      {
+        "key": "Pq048gCGgX",
+        "url": "",
+        "label": "COURT 3"
+      },
+      {
+        "key": "XRB9SkeD1a",
+        "url": "https://thapcam.elutuna.workers.dev/gZHn9hwjjVb7B_-Hcd7StA/Fv2lucGIbhPi2caWYvF5Lg/1748600106220/live/may24/playlist.m3u8",
+        "label": "COURT 1+"
+      },
+      {
+        "key": "bM3bKnrp2J",
+        "url": "https://thapcam.elutuna.workers.dev/TSPNJvApBMKVHB_35DgifQ/Fv2lucGIbhPi2caWYvF5Lg/1748600400084/live/may25/playlist.m3u8",
+        "label": "COURT 2+"
+      },
+      {
+        "key": "xzrRVLQFgg",
+        "url": "",
+        "label": "COURT 3+"
+      }
+    ]
+  },
+  {
     "id": "b4ff482b-8aec-4377-89b9-a4c6b41cadf6",
     "servers": [
       {
         "key": "1pvbAXpqhu",
-        "url": "",
-        "label": ""
+        "url": "https://bcovlive-a.akamaihd.net/r2d2c4ca5bf57456fb1d16255c1a535c8/eu-west-1/6058004203001/playlist.m3u8",
+        "label": "HD AUTO [IOS]"
       },
       {
         "key": "RbqraveIJd",
@@ -76,61 +111,6 @@
         "key": "2do6yeqMOS",
         "url": "",
         "label": ""
-      }
-    ]
-  },
-  {
-    "id": "8154235b-fb69-40ad-bdcd-a865150a6d7f",
-    "servers": [
-      {
-        "key": "sqQ6TLkjAH",
-        "url": "https://bikinbaru96.blogspot.com/p/playermpd.html?channel=tnt1",
-        "label": "HD AUTO"
-      },
-      {
-        "key": "wRm82KjOEW",
-        "url": "https://livetvkilatlive.applecdnstore.com/livetv/2024/UK_TNT_SPORTS_1/index.m3u8",
-        "label": "SD [IOS]"
-      },
-      {
-        "key": "PtKdMKrJbe",
-        "url": "https://vt-osoi7r4b.sportcdn.live/live/live-2-3853915-2.m3u8?txSecret=5df02c4d8e378b68d40c72a8b30b2243&txTime=68392dc2",
-        "label": "SD [IOS]"
-      }
-    ]
-  },
-  {
-    "id": "c997a7dc-f931-40f0-8b39-919e259bcce1",
-    "servers": [
-      {
-        "key": "2RHvVemFoP",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952410910061_AiHD.m3u8?txSecret=14807877bb7226ca02c4a795c2eede43&txTime=683A62A0",
-        "label": "COURT 1"
-      },
-      {
-        "key": "S72OSXN6j6",
-        "url": "https://4c9acbfc5736afa854fa764f3bafa98e.v.smtcdns.net/play.cbalive.weibisai.com/live/3910952605772061_AiHD.m3u8?txSecret=a33a9f26d199c4e935ae6395733e9f45&txTime=683A62A0",
-        "label": "COURT 2"
-      },
-      {
-        "key": "Pq048gCGgX",
-        "url": "",
-        "label": "COURT 3"
-      },
-      {
-        "key": "XRB9SkeD1a",
-        "url": "https://thapcam.elutuna.workers.dev/gZHn9hwjjVb7B_-Hcd7StA/Fv2lucGIbhPi2caWYvF5Lg/1748600106220/live/may24/playlist.m3u8",
-        "label": "COURT 1+"
-      },
-      {
-        "key": "bM3bKnrp2J",
-        "url": "https://thapcam.elutuna.workers.dev/TSPNJvApBMKVHB_35DgifQ/Fv2lucGIbhPi2caWYvF5Lg/1748600400084/live/may25/playlist.m3u8",
-        "label": "COURT 2+"
-      },
-      {
-        "key": "xzrRVLQFgg",
-        "url": "",
-        "label": "COURT 3+"
       }
     ]
   }

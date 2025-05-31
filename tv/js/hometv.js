@@ -4,7 +4,7 @@
 
     async function loadChannelsFromJSON() {
         try {
-            const res = await fetch('https://kltraid.my.id/vip/channel.json');
+            const res = await fetch('https://kltraid.pages.dev/json/channel.json');
             if (!res.ok) throw new Error('Failed to load channel.json');
             const data = await res.json();
             const container = document.querySelector('#live-tv #content');

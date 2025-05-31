@@ -1,1 +1,710 @@
-var intervals={},activeEventId=null;const fallbackURL='https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html';async function loadChannelsFromJSON(){try{const _0x5cb145=await fetch('https://kltraid.my.id/vip/channel.json');if(!_0x5cb145['ok'])throw new Error('Failed\x20to\x20load\x20channel.json');const _0x468192=await _0x5cb145['json'](),_0x21dc35=document['querySelector']('#live-tv\x20#content');_0x21dc35['innerHTML']='',_0x468192['forEach'](_0x117791=>{const _0x2da74d='\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22channel-container\x22\x20data-id=\x22'+_0x117791['id']+'\x22\x20data-url=\x22'+_0x117791['url']+'\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22logo-container\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<img\x20src=\x22'+_0x117791['logo']+'\x22\x20alt=\x22Channel\x20Logo\x22\x20class=\x22logo\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<div\x20class=\x22info-container\x22>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<h3\x20class=\x22channel-name\x22>'+_0x117791['name']+'</h3>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20<p\x20class=\x22status\x22>'+_0x117791['status']+'</p>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20\x20\x20</div>\x0a\x09\x20\x20\x20\x20\x20\x20';_0x21dc35['insertAdjacentHTML']('beforeend',_0x2da74d);}),!_0x21dc35['querySelector']('#spacer')&&_0x21dc35['insertAdjacentHTML']('beforeend','<div\x20id=\x22spacer\x22></div>'),setupChannels();}catch(_0x31089b){console['error']('Error\x20loading\x20channels:',_0x31089b);}}async function loadEventsFromJSON(){const _0x27d271='https://bikinbaru96.blogspot.com/p/playersd.html?key=',_0x506663=Date['now'](),[_0x524ba9,_0x242fe4]=await Promise['all']([fetch('https://kltraid.my.id/vip/event.json?ts='+_0x506663),fetch('https://kltraid.my.id/vip/sdplayer.json?ts='+_0x506663)]),_0x1114d7=await _0x524ba9['json'](),_0x2db9cc=await _0x242fe4['json'](),_0x4f4bc4={};_0x2db9cc['forEach'](_0x4f994e=>{_0x4f994e['id']&&Array['isArray'](_0x4f994e['servers'])&&(_0x4f4bc4[_0x4f994e['id']]=_0x4f994e['servers']);});const _0x29be81=document['querySelector']('#live-event\x20#content');_0x29be81['innerHTML']='',_0x1114d7['forEach'](_0x7c382e=>{const _0x483404=_0x4f4bc4[_0x7c382e['id']]||[];let _0x1b43ce=0x1;const _0x10ceeb=_0x483404['filter'](_0x59d479=>_0x59d479['label']&&_0x59d479['label']['trim']()!=='')['map'](_0x19ac4a=>{const _0x371a34=_0x19ac4a['label']['trim']();let _0x43b40e;if(_0x371a34==='HD\x20AUTO')_0x43b40e=_0x371a34;else/^COURT\s*\d+$/i['test'](_0x371a34)?_0x43b40e=_0x371a34['toUpperCase']():_0x43b40e='Server\x20'+_0x1b43ce++;return{'key':_0x19ac4a['key'],'label':_0x43b40e,'url':''+_0x27d271+_0x19ac4a['key']};}),_0x5138dd=_0x10ceeb[0x0]?.['key']||'',_0x55e24c=_0x5138dd?''+_0x27d271+_0x5138dd:'',_0x221d73=JSON['stringify'](_0x10ceeb)['replace'](/"/g,'&quot;'),_0x5be0ff='\x0a\x09\x09<div\x20class=\x22event-container\x22\x0a\x09\x09\x09\x20data-id=\x22'+_0x7c382e['id']+'\x22\x0a\x09\x09\x09\x20data-url=\x22'+_0x55e24c+'\x22\x0a\x09\x09\x09\x20data-servers=\x22'+_0x221d73+'\x22\x0a\x09\x09\x09\x20data-duration=\x22'+_0x7c382e['duration']+'\x22>\x0a\x09\x09\x09\x20\x0a\x09\x09\x09<h2><img\x20src=\x22'+_0x7c382e['icon']+'\x22\x20class=\x22sport-icon\x22>'+_0x7c382e['league']+'</h2>\x0a\x09\x09\x09\x0a\x09\x09\x09<div\x20class=\x22team\x22>\x0a\x09\x09\x09\x09<img\x20src=\x22'+_0x7c382e['team1']['logo']+'\x22\x20class=\x22team-logo\x22\x20alt=\x22'+_0x7c382e['team1']['name']+'\x22>\x0a\x09\x09\x09\x09<span>'+_0x7c382e['team1']['name']+'</span>\x0a\x09\x09\x09</div>\x0a\x09\x09\x09\x0a\x09\x09\x09<div\x20class=\x22kickoff-match-date\x22>'+_0x7c382e['kickoff_date']+'</div>\x0a\x09\x09\x09<div\x20class=\x22kickoff-match-time\x22>'+_0x7c382e['kickoff_time']+'</div>\x0a\x09\x09\x09<div\x20class=\x22match-date\x22\x20style=\x22display:none;\x22\x20data-original-date=\x22'+_0x7c382e['match_date']+'\x22>'+_0x7c382e['match_date']+'</div>\x0a\x09\x09\x09<div\x20class=\x22match-time\x22\x20style=\x22display:none;\x22\x20data-original-time=\x22'+_0x7c382e['match_time']+'\x22>'+_0x7c382e['kickoff_time']+'</div>\x0a\x09\x09\x09<div\x20class=\x22live-label\x22\x20style=\x22display:none;\x22>Live</div>\x0a\x09\x09\x09\x0a\x09\x09\x09<div\x20class=\x22team\x22>\x0a\x09\x09\x09\x09<img\x20src=\x22'+_0x7c382e['team2']['logo']+'\x22\x20class=\x22team-logo\x22\x20alt=\x22'+_0x7c382e['team2']['name']+'\x22>\x0a\x09\x09\x09\x09<span>'+_0x7c382e['team2']['name']+'</span>\x0a\x09\x09\x09</div>\x0a\x09\x09\x09\x0a\x09\x09\x09<div\x20class=\x22server-buttons\x22\x20style=\x22display:none;\x22>\x0a\x09\x09\x09\x09<div\x20class=\x22instruction\x22>You\x20can\x20select\x20a\x20server\x20stream:</div>\x0a\x09\x09\x09\x09<div\x20class=\x22buttons-container\x22></div>\x0a\x09\x09\x09</div>\x0a\x09\x09\x09\x0a\x09\x09\x09<div\x20class=\x22countdown-wrapper\x22\x20id=\x22countdown-'+_0x7c382e['id']+'\x22\x20style=\x22display:none;\x22>\x0a\x09\x09\x09\x09<div\x20class=\x22countdown-title\x22>Event\x20will\x20start\x20in:</div>\x0a\x09\x09\x09\x09<div\x20class=\x22countdown-timer\x22></div>\x0a\x09\x09\x09</div>\x0a\x09\x09</div>\x0a\x09\x09';_0x29be81['insertAdjacentHTML']('beforeend',_0x5be0ff);const _0x585bf4=_0x29be81['querySelector']('.event-container[data-id=\x22'+_0x7c382e['id']+'\x22]'),_0x512320=_0x585bf4['querySelector']('.buttons-container');_0x10ceeb['forEach']((_0x2e0d37,_0x3b8266)=>{const _0x557851=document['createElement']('div');_0x557851['className']='server-button';if(_0x3b8266===0x0)_0x557851['classList']['add']('active');_0x557851['setAttribute']('data-url',_0x2e0d37['url']),_0x557851['textContent']=_0x2e0d37['label'],_0x512320['appendChild'](_0x557851);});});!_0x29be81['querySelector']('#spacer')&&_0x29be81['insertAdjacentHTML']('beforeend','<div\x20id=\x22spacer\x22></div>');setupEvents();const _0x452275=sessionStorage['getItem']('activeEventId'),_0xe1412d=sessionStorage['getItem']('activeServerUrl_'+_0x452275);if(_0x452275&&_0xe1412d){const _0x223b80=document['querySelector']('.event-container[data-id=\x22'+_0x452275+'\x22]');if(_0x223b80){const _0x3f6b43=_0x223b80['querySelector']('.server-button[data-url=\x22'+_0xe1412d+'\x22]');_0x3f6b43&&selectServerButton(_0x3f6b43),loadEventVideo(_0x223b80,_0xe1412d,![]);}}}function isMobileDevice(){return/Mobi|Android/i['test'](navigator['userAgent']);}function setupEvents(){var _0x511a99=document['querySelectorAll']('.event-container'),_0x17c71b=[];_0x511a99['forEach'](function(_0x226602){var _0x5a82e1=_0x226602['getAttribute']('data-id');_0x17c71b['push'](_0x5a82e1);var _0x1336d7=_0x226602['querySelector']('.match-date')['dataset']['originalDate'],_0x3eb0f8=_0x226602['querySelector']('.match-time')['dataset']['originalTime'],_0x101a93=parseEventDateTime(_0x1336d7,_0x3eb0f8),_0x1f166f=_0x226602['querySelector']('.kickoff-match-date')['textContent']['trim'](),_0x3f7528=_0x226602['querySelector']('.kickoff-match-time')['textContent']['trim'](),_0x2dbe1b=parseEventDateTime(_0x1f166f,_0x3f7528),_0x2a52ff=parseFloat(_0x226602['getAttribute']('data-duration'))||3.5,_0x42bfcc=_0x2a52ff*0x3c*0x3c*0x3e8;updateMatchTimes(_0x226602,_0x101a93),updateMatchTimes(_0x226602,_0x2dbe1b),checkLiveStatus(_0x226602,_0x101a93,_0x42bfcc);var _0x118e9f=sessionStorage['getItem']('eventStatus_'+_0x5a82e1);_0x118e9f==='ended'&&(markEventAsEnded(_0x5a82e1),activeEventId===_0x5a82e1&&redirectToEndedURL());var _0xe3a5ed=JSON['parse'](_0x226602['getAttribute']('data-servers')),_0x10e8bc=_0x226602['querySelector']('.buttons-container');_0x10e8bc['innerHTML']='',_0xe3a5ed['forEach'](function(_0x59a36f,_0x19448d){if(_0x59a36f['label']['includes']('Mobile')&&!isMobileDevice())return;var _0x261892=document['createElement']('div');_0x261892['className']='server-button',_0x261892['textContent']=_0x59a36f['label'],_0x261892['setAttribute']('data-url',_0x59a36f['url']),_0x261892['addEventListener']('click',function(_0x119166){_0x119166['stopPropagation'](),selectServerButton(_0x261892),loadEventVideo(_0x226602,_0x59a36f['url']);}),_0x10e8bc['appendChild'](_0x261892),_0x19448d===0x0&&_0x261892['classList']['add']('active');}),_0x226602['addEventListener']('click',function(){var _0x2f524a=new Date();_0x2f524a>=_0x101a93&&toggleServerButtons(_0x226602,!![]),loadEventVideo(_0x226602);});var _0x433da2=sessionStorage['getItem']('activeEventId'),_0x5b492e=sessionStorage['getItem']('activeServerUrl_'+_0x5a82e1);if(_0x433da2===_0x5a82e1&&_0x5b492e){var _0x34e337=_0x226602['querySelector']('.server-button[data-url=\x22'+_0x5b492e+'\x22]');_0x34e337&&(selectServerButton(_0x34e337),loadEventVideo(_0x226602,_0x5b492e,![]));}}),activeEventId&&!_0x17c71b['includes'](activeEventId)&&redirectToEndedURL(),startPeriodicEventCheck();}function parseEventDateTime(_0xdc491c,_0x56c599){var _0x55565e=new Date(_0xdc491c+'T'+_0x56c599+':00+07:00');return _0x55565e;}function updateCountdown(_0x25c270,_0x3d24ac,_0x57cbff,_0x87f422,_0x443bdb){clearInterval(intervals[_0x443bdb]);var _0x2f51f0=setInterval(function(){var _0xa06eec=new Date()['getTime'](),_0x59e50a=_0x57cbff['getTime']()-_0xa06eec;if(_0x59e50a<0x3e8){var _0x1acc83=document['getElementById']('video-iframe');_0x1acc83&&(_0x1acc83['src']='');}if(_0x59e50a<0x0){clearInterval(_0x2f51f0),_0x25c270['style']['display']='none',console['log']('Event\x20started:',_0x443bdb),loadEventVideo(document['querySelector']('.event-container[data-id=\x22'+_0x443bdb+'\x22]'),_0x87f422,![]),checkLiveStatus(document['querySelector']('.event-container[data-id=\x22'+_0x443bdb+'\x22]'),_0x57cbff);var _0x1654b9=document['querySelector']('.event-container[data-id=\x22'+_0x443bdb+'\x22]\x20.server-button');_0x1654b9&&selectServerButton(_0x1654b9);var _0xd6865f=parseFloat(document['querySelector']('.event-container[data-id=\x22'+_0x443bdb+'\x22]')['getAttribute']('data-duration'))*0x3c*0x3c*0x3e8||3.5*0x3c*0x3c*0x3e8,_0xee7703=new Date(_0x57cbff['getTime']()+_0xd6865f);setTimeout(function(){var _0xf71bc4=new Date();_0xf71bc4>=_0xee7703&&(activeEventId===_0x443bdb&&(markEventAsEnded(_0x443bdb),redirectToEndedURL()));},_0xd6865f);}else{var _0x5e3a09=Math['floor'](_0x59e50a/(0x3e8*0x3c*0x3c*0x18)),_0x29f98a=Math['floor'](_0x59e50a%(0x3e8*0x3c*0x3c*0x18)/(0x3e8*0x3c*0x3c)),_0x5e709c=Math['floor'](_0x59e50a%(0x3e8*0x3c*0x3c)/(0x3e8*0x3c)),_0x1e85a1=Math['floor'](_0x59e50a%(0x3e8*0x3c)/0x3e8);_0x25c270['style']['display']='block',_0x3d24ac['innerHTML']=_0x5e3a09+'d\x20'+_0x29f98a+'h\x20'+_0x5e709c+'m\x20'+_0x1e85a1+'s\x20',console['log']('Countdown\x20for\x20event\x20'+_0x443bdb+':\x20'+_0x5e3a09+'d\x20'+_0x29f98a+'h\x20'+_0x5e709c+'m\x20'+_0x1e85a1+'s');}},0x3e8);intervals[_0x443bdb]=_0x2f51f0;}function updateMatchTimes(_0x509ded,_0x483aa9){var _0x394b58=_0x509ded['querySelector']('.match-date'),_0x3f050b=_0x509ded['querySelector']('.match-time'),_0x3d86b9=_0x509ded['querySelector']('.kickoff-match-date'),_0x47eaa4=_0x509ded['querySelector']('.kickoff-match-time');!_0x394b58['hasAttribute']('data-original-date')&&(_0x394b58['setAttribute']('data-original-date',_0x394b58['textContent']['trim']()),_0x3f050b['setAttribute']('data-original-time',_0x3f050b['textContent']['trim']()));var _0x65a56b=new Date(_0x483aa9['getTime']()+_0x483aa9['getTimezoneOffset']()*0xea60),_0x18a623=new Date()['getTimezoneOffset'](),_0x170c03=_0x18a623/0x3c,_0x475782=new Date(_0x65a56b['getTime']()-_0x170c03*0x3c*0x3c*0x3e8),_0x13d4be=_0x475782['toLocaleDateString']('en-US',{'year':'numeric','month':'long','day':'numeric'}),_0x4ce3ba=_0x475782['toLocaleTimeString']('en-US',{'hour':'2-digit','minute':'2-digit','hour12':![]});console['log']('Adjusted\x20date\x20for\x20event:\x20'+_0x13d4be),console['log']('Adjusted\x20time\x20for\x20event:\x20'+_0x4ce3ba),_0x394b58['textContent']=_0x13d4be,_0x3f050b['textContent']=_0x4ce3ba,_0x3d86b9&&_0x47eaa4&&(_0x3d86b9['textContent']=_0x13d4be,_0x47eaa4['textContent']=_0x4ce3ba);}function checkLiveStatus(_0x3e4de9,_0x265b61,_0x43ea82){var _0x30c633=new Date(),_0xb6a6dc=_0x3e4de9['querySelector']('.live-label');if(_0x30c633>=_0x265b61){_0xb6a6dc['style']['display']='block',console['log']('Event\x20live:',_0x3e4de9['getAttribute']('data-id'));var _0x2c0ead=new Date(_0x265b61['getTime']()+_0x43ea82);setTimeout(function(){var _0x4866a7=new Date();_0x4866a7>=_0x2c0ead&&markEventAsEnded(_0x3e4de9['getAttribute']('data-id'));},_0x2c0ead['getTime']()-_0x30c633);}else _0xb6a6dc['style']['display']='none',console['log']('Event\x20not\x20live\x20yet:',_0x3e4de9['getAttribute']('data-id')),setTimeout(function(){checkLiveStatus(_0x3e4de9,_0x265b61,_0x43ea82);},_0x265b61['getTime']()-_0x30c633);}function setupChannels(){var _0x5ce755=document['querySelectorAll']('.channel-container'),_0x11e053=sessionStorage['getItem']('activeChannelId');_0x5ce755['forEach'](function(_0x4c2db8){var _0x2d33c0=_0x4c2db8['getAttribute']('data-id');_0x2d33c0===_0x11e053&&(_0x4c2db8['classList']['add']('selected'),loadEventVideo(_0x4c2db8)),_0x4c2db8['addEventListener']('click',function(){_0x5ce755['forEach'](function(_0x4c8154){_0x4c8154['classList']['remove']('selected');}),_0x4c2db8['classList']['add']('selected'),sessionStorage['setItem']('activeChannelId',_0x2d33c0),sessionStorage['removeItem']('activeEventId'),loadEventVideo(_0x4c2db8);});});}var reconnectTimeout=null,lastLoadedUrl=null;function normalizeUrl(_0x4fa09b){try{let _0x519f96=new URL(_0x4fa09b);return _0x519f96['origin']+_0x519f96['pathname']+_0x519f96['search'];}catch(_0x261466){return console['error']('Invalid\x20URL:',_0x4fa09b),_0x4fa09b;}}function loadEventVideo(_0x41b17d,_0x7a869=null,_0x150e8b=!![]){var _0x55ec4a=_0x41b17d['getAttribute']('data-id'),_0x46772d=sessionStorage['getItem']('activeServerUrl_'+_0x55ec4a),_0x41b61d=_0x7a869||_0x46772d||_0x41b17d['getAttribute']('data-url')||fallbackURL,_0x58dd20=_0x41b17d['classList']['contains']('channel-container'),_0x4da64a=_0x41b17d['querySelector']('.match-date')?.['getAttribute']('data-original-date'),_0x154a9e=_0x41b17d['querySelector']('.match-time')?.['getAttribute']('data-original-time'),_0x4aa54a=parseFloat(_0x41b17d['getAttribute']('data-duration'))||3.5,_0x113c16=_0x4aa54a*0x3c*0x3c*0x3e8,_0x3231d2=parseEventDateTime(_0x4da64a,_0x154a9e),_0x1edd74=new Date();if(isNaN(_0x3231d2['getTime']())&&!_0x58dd20){console['error']('Invalid\x20event\x20time\x20for\x20event\x20'+_0x55ec4a+':\x20'+_0x4da64a+'\x20'+_0x154a9e);return;}_0x150e8b&&(_0x58dd20?(sessionStorage['setItem']('activeChannelId',_0x55ec4a),sessionStorage['removeItem']('activeEventId')):(sessionStorage['setItem']('activeEventId',_0x55ec4a),sessionStorage['removeItem']('activeChannelId'),activeEventId=_0x55ec4a));var _0x321f0d=document['getElementById']('countdown'),_0x4bd55e=_0x321f0d['querySelector']('.countdown-timer'),_0x3ac709=document['getElementById']('video-iframe'),_0x17bb20=document['getElementById']('video-placeholder'),_0x1f614b=document['getElementById']('player');_0x41b61d['includes']('sportsonline')||_0x41b61d['includes']('sportcastelite')||_0x41b61d['includes']('venoms')||_0x41b61d['includes']('p2plive2')?_0x3ac709['setAttribute']('sandbox','allow-same-origin\x20allow-scripts\x20allow-forms\x20allow-pointer-lock\x20allow-top-navigation'):_0x3ac709['removeAttribute']('sandbox');document['querySelectorAll']('.countdown-wrapper')['forEach'](function(_0x58cca5){_0x58cca5['style']['display']='none';});for(var _0xc717d5 in intervals){clearInterval(intervals[_0xc717d5]);}document['querySelectorAll']('.event-container\x20.server-buttons')['forEach'](function(_0x4abb15){_0x4abb15['style']['display']='none';});if(_0x58dd20){_0x3ac709['src']!==_0x41b61d&&(_0x3ac709['src']=_0x41b61d);_0x3ac709['style']['display']='block',_0x17bb20['style']['display']='none',_0x1f614b['style']['display']='none',console['log']('Channel\x20video\x20loaded:',_0x41b61d);return;}if(_0x1edd74>=_0x3231d2){_0x321f0d['style']['display']='none';_0x3ac709&&_0x3ac709['src']!==_0x41b61d&&(_0x3ac709['src']='',_0x3ac709['style']['display']='none');_0x3ac709['src']!==_0x41b61d&&(_0x3ac709['src']=_0x41b61d);_0x3ac709['style']['display']='block',_0x17bb20['style']['display']='none',_0x1f614b['style']['display']='none',setActiveHoverEffect(_0x55ec4a),console['log']('Loading\x20event\x20video\x20now:',_0x55ec4a),toggleServerButtons(_0x41b17d,!![]),checkLiveStatus(_0x41b17d,_0x3231d2,_0x113c16);var _0x3b4418=_0x41b17d['querySelector']('.server-button[data-url=\x22'+_0x41b61d+'\x22]');_0x3b4418&&selectServerButton(_0x3b4418);}else _0x321f0d['style']['display']='block',_0x3ac709['style']['display']='none',_0x17bb20['style']['display']='block',_0x1f614b['style']['display']='none',updateCountdown(_0x321f0d,_0x4bd55e,_0x3231d2,_0x41b61d,_0x55ec4a),setActiveHoverEffect(_0x55ec4a),console['log']('Setting\x20countdown\x20for\x20future\x20event:',_0x55ec4a);toggleServerButtons(_0x41b17d,_0x1edd74>=_0x3231d2),_0x150e8b&&_0x7a869&&sessionStorage['setItem']('activeServerUrl_'+_0x55ec4a,_0x7a869);}function markEventAsEnded(_0x435c6d){var _0x22b548=document['querySelector']('.event-container[data-id=\x22'+_0x435c6d+'\x22]');_0x22b548&&(sessionStorage['setItem']('eventStatus_'+_0x435c6d,'ended'),_0x22b548['style']['display']='none');}function redirectToEndedURL(){var _0x2ba6b5=sessionStorage['getItem']('activeEventId'),_0x3202ad=sessionStorage['getItem']('eventStatus_'+_0x2ba6b5);if(_0x3202ad==='ended'){var _0x5b9126=document['querySelector']('.event-container[data-id=\x22'+_0x2ba6b5+'\x22]');_0x5b9126&&(_0x5b9126['style']['display']='none');}}function setActiveHoverEffect(_0x4e1450){document['querySelectorAll']('.event-container')['forEach'](function(_0x4cd69a){_0x4cd69a['classList']['remove']('hover-effect');});var _0x2dd5af=document['querySelector']('.event-container[data-id=\x22'+_0x4e1450+'\x22]');_0x2dd5af&&(_0x2dd5af['classList']['add']('hover-effect'),console['log']('Hover\x20effect\x20set\x20for\x20event:',_0x4e1450));}function resetHoverEffect(){if(activeEventId){var _0x4f4026=document['querySelector']('.event-container[data-id=\x22'+activeEventId+'\x22]');_0x4f4026&&(_0x4f4026['classList']['add']('hover-effect'),console['log']('Hover\x20effect\x20reset\x20for\x20active\x20event:',activeEventId));}}function toggleServerButtons(_0x28d701,_0x2d5bf0=!![]){var _0x2c9988=_0x28d701['querySelector']('.server-buttons');_0x2d5bf0?_0x2c9988['style']['display']='flex':_0x2c9988['style']['display']='none';}function selectServerButton(_0x1fdd0a){var _0x26c351=document['querySelectorAll']('.server-button');_0x26c351['forEach'](function(_0x4f5a31){_0x4f5a31['classList']['remove']('active');}),_0x1fdd0a['classList']['add']('active');var _0x56374a=_0x1fdd0a['getAttribute']('data-url'),_0x316981=_0x1fdd0a['closest']('.event-container')['getAttribute']('data-id');sessionStorage['setItem']('activeServerUrl_'+_0x316981,_0x56374a);}function switchContent(_0x18c8ca){document['querySelectorAll']('.sidebar-content')['forEach'](function(_0x4ee74f){_0x4ee74f['classList']['remove']('active');});var _0x4ebe25=document['getElementById'](_0x18c8ca);_0x4ebe25['classList']['add']('active');if(_0x18c8ca==='chat'){var _0x15d61c=_0x4ebe25['querySelector']('.chat-iframe');_0x15d61c&&!_0x15d61c['src']&&(_0x15d61c['src']=_0x15d61c['getAttribute']('data-src'));}}function refreshVideoPlayer(){var _0x4fe52d=document['getElementById']('video-iframe');if(_0x4fe52d){var _0x41770f=_0x4fe52d['src'];if(_0x41770f['includes']('m3u8')||_0x41770f['includes']('clappr'))try{var _0x2437ff=_0x4fe52d['contentWindow']['player'];_0x2437ff&&(_0x2437ff['stop'](),_0x2437ff['load']({'source':_0x2437ff['options']['source']}),_0x2437ff['play'](),console['log']('Clappr\x20player\x20refreshed\x20successfully'));}catch(_0x3710f1){console['error']('Failed\x20to\x20refresh\x20Clappr\x20player:',_0x3710f1);}else _0x4fe52d['src']='',_0x41770f['includes']('sportsonline')||_0x41770f['includes']('sportcastelite')||_0x41770f['includes']('venoms')||_0x41770f['includes']('p2plive2')?_0x4fe52d['setAttribute']('sandbox','allow-same-origin\x20allow-scripts\x20allow-forms\x20allow-pointer-lock\x20allow-top-navigation'):_0x4fe52d['removeAttribute']('sandbox'),_0x4fe52d['src']=_0x41770f,console['log']('Non-Clappr\x20iframe\x20refreshed\x20successfully');}}function startPeriodicEventCheck(){setInterval(function(){var _0x117408=new Date();document['querySelectorAll']('.event-container')['forEach'](function(_0x3a9a24){var _0x1e3a6c=_0x3a9a24['querySelector']('.match-date')['getAttribute']('data-original-date'),_0x35b772=_0x3a9a24['querySelector']('.match-time')['getAttribute']('data-original-time'),_0x129336=parseFloat(_0x3a9a24['getAttribute']('data-duration'))||3.5,_0x542a0b=_0x129336*0x3c*0x3c*0x3e8,_0x57aff7=parseEventDateTime(_0x1e3a6c,_0x35b772),_0x56c04c=new Date(_0x57aff7['getTime']()+_0x542a0b);if(_0x117408>=_0x56c04c){var _0x4d6a06=_0x3a9a24['getAttribute']('data-id');markEventAsEnded(_0x4d6a06);}});},0xea60);}window['addEventListener']('DOMContentLoaded',async()=>{await loadEventsFromJSON(),await loadChannelsFromJSON(),setInterval(loadEventsFromJSON,0x1388);const _0x3a4ccd=sessionStorage['getItem']('activeEventId'),_0x55b464=sessionStorage['getItem']('activeServerUrl_'+_0x3a4ccd);if(_0x3a4ccd&&_0x55b464){const _0x3ef722=document['querySelector']('.event-container[data-id=\x22'+_0x3a4ccd+'\x22]');if(_0x3ef722){const _0x48ac9f=_0x3ef722['querySelector']('.server-button[data-url=\x22'+_0x55b464+'\x22]');_0x48ac9f&&selectServerButton(_0x48ac9f);loadEventVideo(_0x3ef722,_0x55b464,![]);return;}}const _0x97aab2=sessionStorage['getItem']('activeChannelId');if(_0x97aab2){const _0x286f45=document['querySelector']('.channel-container[data-id=\x22'+_0x97aab2+'\x22]');_0x286f45&&(_0x286f45['classList']['add']('selected'),loadEventVideo(_0x286f45));}});
+    var intervals = {}; // Object to keep track of intervals
+    var activeEventId = null; // Track the currently active event
+    const fallbackURL = "https://bikinbaru96.blogspot.com/2024/06/blog-post_13.html"; // URL fallback jika URL tidak ditemukan
+
+    async function loadChannelsFromJSON() {
+        try {
+            const res = await fetch('https://kltraid.my.id/vip/channel.json');
+            if (!res.ok) throw new Error('Failed to load channel.json');
+            const data = await res.json();
+            const container = document.querySelector('#live-tv #content');
+            container.innerHTML = "";
+
+            data.forEach(channel => {
+                const html = `
+	        <div class="channel-container" data-id="${channel.id}" data-url="${channel.url}">
+	          <div class="logo-container">
+	            <img src="${channel.logo}" alt="Channel Logo" class="logo">
+	          </div>
+	          <div class="info-container">
+	            <h3 class="channel-name">${channel.name}</h3>
+	            <p class="status">${channel.status}</p>
+	          </div>
+	        </div>
+	      `;
+                container.insertAdjacentHTML('beforeend', html);
+            });
+
+            // ⬇️ Tambahkan spacer di sini agar scroll tidak terpotong
+            if (!container.querySelector('#spacer')) {
+                container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+            }
+
+            setupChannels(); // aktifkan klik listener setelah render
+        } catch (error) {
+            console.error('Error loading channels:', error);
+        }
+    }
+
+    async function loadEventsFromJSON() {
+        const playerBaseUrl = "https://bikinbaru96.blogspot.com/p/playersd.html?key=";
+
+        const timestamp = Date.now();
+
+        const [eventRes, playerRes] = await Promise.all([
+          fetch(`https://kltraid.my.id/vip/event.json?ts=${timestamp}`),
+          fetch(`https://kltraid.my.id/vip/sdplayer.json?ts=${timestamp}`)
+        ]);
+
+        const events = await eventRes.json();
+        const playerList = await playerRes.json();
+        const playerMap = {};
+
+        playerList.forEach(item => {
+            if (item.id && Array.isArray(item.servers)) {
+                playerMap[item.id] = item.servers;
+            }
+        });
+
+        const container = document.querySelector('#live-event #content');
+        container.innerHTML = "";
+
+        events.forEach(event => {
+            const rawServers = playerMap[event.id] || [];
+            let serverCounter = 1;
+
+			const processedServers = rawServers
+			  .filter(s => s.label && s.label.trim() !== "")
+			  .map(s => {
+				const originalLabel = s.label.trim();
+				let newLabel;
+
+				if (originalLabel === "HD AUTO") {
+				  newLabel = originalLabel;
+				} else if (/^COURT\s*\d+$/i.test(originalLabel)) {
+				  newLabel = originalLabel.toUpperCase();
+				} else {
+				  newLabel = `Server ${serverCounter++}`;
+				}
+
+				return {
+				  key: s.key,
+				  label: newLabel,
+				  url: `${playerBaseUrl}${s.key}`
+				};
+			  });
+
+            const firstKey = processedServers[0]?.key || '';
+            const defaultUrl = firstKey ? `${playerBaseUrl}${firstKey}` : '';
+            const encodedServers = JSON.stringify(processedServers).replace(/"/g, '&quot;');
+
+            const html = `
+		<div class="event-container"
+			 data-id="${event.id}"
+			 data-url="${defaultUrl}"
+			 data-servers="${encodedServers}"
+			 data-duration="${event.duration}">
+			 
+			<h2><img src="${event.icon}" class="sport-icon">${event.league}</h2>
+			
+			<div class="team">
+				<img src="${event.team1.logo}" class="team-logo" alt="${event.team1.name}">
+				<span>${event.team1.name}</span>
+			</div>
+			
+			<div class="kickoff-match-date">${event.kickoff_date}</div>
+			<div class="kickoff-match-time">${event.kickoff_time}</div>
+			<div class="match-date" style="display:none;" data-original-date="${event.match_date}">${event.match_date}</div>
+			<div class="match-time" style="display:none;" data-original-time="${event.match_time}">${event.kickoff_time}</div>
+			<div class="live-label" style="display:none;">Live</div>
+			
+			<div class="team">
+				<img src="${event.team2.logo}" class="team-logo" alt="${event.team2.name}">
+				<span>${event.team2.name}</span>
+			</div>
+			
+			<div class="server-buttons" style="display:none;">
+				<div class="instruction">You can select a server stream:</div>
+				<div class="buttons-container"></div>
+			</div>
+			
+			<div class="countdown-wrapper" id="countdown-${event.id}" style="display:none;">
+				<div class="countdown-title">Event will start in:</div>
+				<div class="countdown-timer"></div>
+			</div>
+		</div>
+		`;
+
+            container.insertAdjacentHTML('beforeend', html);
+
+            const eventContainer = container.querySelector(`.event-container[data-id="${event.id}"]`);
+            const buttonContainer = eventContainer.querySelector('.buttons-container');
+
+            processedServers.forEach((server, index) => {
+                const div = document.createElement('div');
+                div.className = 'server-button';
+                if (index === 0) div.classList.add('active');
+                div.setAttribute('data-url', server.url);
+                div.textContent = server.label;
+                buttonContainer.appendChild(div);
+            });
+        });
+
+        if (!container.querySelector('#spacer')) {
+            container.insertAdjacentHTML('beforeend', '<div id="spacer"></div>');
+        }
+
+        setupEvents();
+
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                }
+                loadEventVideo(activeContainer, storedActiveServerUrl, false);
+            }
+        }
+    }
+
+    function isMobileDevice() {
+        return /Mobi|Android/i.test(navigator.userAgent);
+    }
+
+    function setupEvents() {
+        var eventContainers = document.querySelectorAll('.event-container');
+        var validEventIds = [];
+
+        eventContainers.forEach(function(container) {
+            var id = container.getAttribute('data-id');
+            validEventIds.push(id);
+
+            // Event time (match-date and match-time)
+			var matchDate = container.querySelector('.match-date').dataset.originalDate;
+			var matchTime = container.querySelector('.match-time').dataset.originalTime;
+            var eventTime = parseEventDateTime(matchDate, matchTime);
+
+            // Kickoff event time (kickoff-match-date and kickoff-match-time)
+            var kickoffDate = container.querySelector('.kickoff-match-date').textContent.trim();
+            var kickoffTime = container.querySelector('.kickoff-match-time').textContent.trim();
+            var kickoffEventTime = parseEventDateTime(kickoffDate, kickoffTime);
+
+            var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+            var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+            // Update match times for both eventTime and kickoffEventTime
+            updateMatchTimes(container, eventTime); // Original event time
+            updateMatchTimes(container, kickoffEventTime); // Kickoff time adjustment
+
+            // Check live status using eventTime
+            checkLiveStatus(container, eventTime, eventDurationMilliseconds);
+
+            // Check stored event status
+            var storedStatus = sessionStorage.getItem(`eventStatus_${id}`);
+            if (storedStatus === 'ended') {
+                markEventAsEnded(id); // Set event as ended if stored status is "ended"
+                if (activeEventId === id) {
+                    redirectToEndedURL();
+                }
+            }
+
+            // Setup server buttons
+            var servers = JSON.parse(container.getAttribute('data-servers'));
+            var buttonsContainer = container.querySelector('.buttons-container');
+
+            buttonsContainer.innerHTML = ''; // Clear existing buttons
+
+            servers.forEach(function(server, index) {
+                if (server.label.includes("Mobile") && !isMobileDevice()) {
+                    return;
+                }
+
+                var button = document.createElement('div');
+                button.className = 'server-button';
+                button.textContent = server.label;
+                button.setAttribute('data-url', server.url);
+                button.addEventListener('click', function(event) {
+                    event.stopPropagation();
+                    selectServerButton(button);
+                    loadEventVideo(container, server.url);
+                });
+                buttonsContainer.appendChild(button);
+
+                if (index === 0) {
+                    button.classList.add('active');
+                }
+            });
+
+            // Add event listener to toggle server buttons on click
+            container.addEventListener('click', function() {
+                var now = new Date();
+                if (now >= eventTime) {
+                    toggleServerButtons(container, true);
+                }
+                loadEventVideo(container); // Ensure the event is loaded when container is clicked
+            });
+
+            // Restore active button state from sessionStorage
+            var storedActiveEventId = sessionStorage.getItem('activeEventId');
+            var storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+            if (storedActiveEventId === id && storedActiveServerUrl) {
+                var storedButton = container.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                    loadEventVideo(container, storedActiveServerUrl, false);
+                }
+            }
+        });
+
+        // Check if the active event is still valid, otherwise reset it
+        if (activeEventId && !validEventIds.includes(activeEventId)) {
+            redirectToEndedURL();
+        }
+
+        // Start periodic check for event statuses
+        startPeriodicEventCheck();
+    }
+
+    function parseEventDateTime(date, time) {
+        // Assuming date format is "June 21, 2024" and time is "07:30"
+        var formattedDate = new Date(`${date}T${time}:00+07:00`);
+        return formattedDate;
+    }
+
+    function updateCountdown(countdownElement, countdownTimer, eventTime, url, id) {
+        clearInterval(intervals[id]); // Clear previous interval if exists
+
+        var interval = setInterval(function() {
+            var now = new Date().getTime();
+            var distance = eventTime.getTime() - now;
+
+            if (distance < 1000) { // Clear the video src just before the countdown ends
+                var videoIframe = document.getElementById('video-iframe');
+                if (videoIframe) {
+                    videoIframe.src = '';
+                }
+            }
+
+            if (distance < 0) {
+                clearInterval(interval);
+                countdownElement.style.display = 'none';
+                console.log('Event started:', id);
+                loadEventVideo(document.querySelector(`.event-container[data-id="${id}"]`), url, false); // Load video with the initial URL
+                checkLiveStatus(document.querySelector(`.event-container[data-id="${id}"]`), eventTime); // Show live label
+
+                // Mark the first button as active
+                var firstButton = document.querySelector(`.event-container[data-id="${id}"] .server-button`);
+                if (firstButton) {
+                    selectServerButton(firstButton);
+                }
+
+                // Set timeout to check if event should end after its duration
+                var eventDurationMilliseconds = parseFloat(document.querySelector(`.event-container[data-id="${id}"]`).getAttribute('data-duration')) * 60 * 60 * 1000 || 3.5 * 60 * 60 * 1000;
+                var eventEndTime = new Date(eventTime.getTime() + eventDurationMilliseconds);
+                setTimeout(function() {
+                    var now = new Date();
+                    if (now >= eventEndTime) {
+                        if (activeEventId === id) {
+                            markEventAsEnded(id);
+                            redirectToEndedURL();
+                        }
+                    }
+                }, eventDurationMilliseconds);
+            } else {
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                countdownElement.style.display = 'block'; // Ensure countdown element is displayed
+                countdownTimer.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s `;
+                console.log(`Countdown for event ${id}: ${days}d ${hours}h ${minutes}m ${seconds}s`);
+            }
+        }, 1000);
+
+        intervals[id] = interval; // Store the interval in the intervals object
+    }
+
+    function updateMatchTimes(container, eventStartTime) {
+        var matchDateElem = container.querySelector('.match-date');
+        var matchTimeElem = container.querySelector('.match-time');
+        var kickoffDateElem = container.querySelector('.kickoff-match-date');
+        var kickoffTimeElem = container.querySelector('.kickoff-match-time');
+
+        if (!matchDateElem.hasAttribute('data-original-date')) {
+            matchDateElem.setAttribute('data-original-date', matchDateElem.textContent.trim());
+            matchTimeElem.setAttribute('data-original-time', matchTimeElem.textContent.trim());
+        }
+
+        var utcDate = new Date(eventStartTime.getTime() + (eventStartTime.getTimezoneOffset() * 60000));
+        var visitorOffsetInMinutes = new Date().getTimezoneOffset();
+        var visitorOffsetInHours = visitorOffsetInMinutes / 60;
+        var localEventStartTime = new Date(utcDate.getTime() - (visitorOffsetInHours * 60 * 60 * 1000));
+
+        var adjustedDate = localEventStartTime.toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+        var adjustedTime = localEventStartTime.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit',
+            hour12: false
+        });
+
+        console.log(`Adjusted date for event: ${adjustedDate}`);
+        console.log(`Adjusted time for event: ${adjustedTime}`);
+
+        // Update match date and time
+        matchDateElem.textContent = adjustedDate;
+        matchTimeElem.textContent = adjustedTime;
+
+        // Update kickoff date and time if available
+        if (kickoffDateElem && kickoffTimeElem) {
+            kickoffDateElem.textContent = adjustedDate;
+            kickoffTimeElem.textContent = adjustedTime;
+        }
+    }
+
+    function checkLiveStatus(container, eventStartTime, eventDurationMilliseconds) {
+        var now = new Date();
+        var liveLabel = container.querySelector('.live-label');
+
+        if (now >= eventStartTime) {
+            liveLabel.style.display = 'block';
+            console.log('Event live:', container.getAttribute('data-id'));
+
+            // Set timeout untuk menyembunyikan event container saat event berakhir
+            var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+            setTimeout(function() {
+                var now = new Date();
+                if (now >= eventEndTime) {
+                    markEventAsEnded(container.getAttribute('data-id')); // Sembunyikan event-container saat event berakhir
+                }
+            }, eventEndTime.getTime() - now);
+        } else {
+            liveLabel.style.display = 'none';
+            console.log('Event not live yet:', container.getAttribute('data-id'));
+
+            // Set timeout untuk mengecek status live lagi saat event dimulai
+            setTimeout(function() {
+                checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
+            }, eventStartTime.getTime() - now);
+        }
+    }
+
+    function setupChannels() {
+        var channelContainers = document.querySelectorAll('.channel-container');
+        var activeChannelId = sessionStorage.getItem('activeChannelId');
+
+        channelContainers.forEach(function(container) {
+            var channelId = container.getAttribute('data-id');
+
+            if (channelId === activeChannelId) {
+                container.classList.add('selected');
+                loadEventVideo(container);
+            }
+
+            container.addEventListener('click', function() {
+                channelContainers.forEach(function(otherContainer) {
+                    otherContainer.classList.remove('selected');
+                });
+
+                container.classList.add('selected');
+                sessionStorage.setItem('activeChannelId', channelId);
+                sessionStorage.removeItem('activeEventId'); // Hapus pilihan event agar tidak konflik
+                loadEventVideo(container);
+            });
+        });
+    }
+
+    var reconnectTimeout = null;
+    var lastLoadedUrl = null;
+
+    function normalizeUrl(url) {
+        try {
+            let urlObj = new URL(url);
+            return urlObj.origin + urlObj.pathname + urlObj.search;
+        } catch (e) {
+            console.error("Invalid URL:", url);
+            return url;
+        }
+    }
+
+    function loadEventVideo(container, specificUrl = null, resetActiveId = true) {
+        var id = container.getAttribute('data-id');
+        var storedUrl = sessionStorage.getItem(`activeServerUrl_${id}`);
+        var url = specificUrl || storedUrl || container.getAttribute('data-url') || fallbackURL;
+        var isChannel = container.classList.contains('channel-container');
+
+        var matchDate = container.querySelector('.match-date')?.getAttribute('data-original-date');
+        var matchTime = container.querySelector('.match-time')?.getAttribute('data-original-time');
+        var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+        var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+        var eventStartTime = parseEventDateTime(matchDate, matchTime);
+        var now = new Date();
+
+        if (isNaN(eventStartTime.getTime()) && !isChannel) {
+            console.error(`Invalid event time for event ${id}: ${matchDate} ${matchTime}`);
+            return;
+        }
+
+        if (resetActiveId) {
+            if (isChannel) {
+                sessionStorage.setItem('activeChannelId', id);
+                sessionStorage.removeItem('activeEventId');
+            } else {
+                sessionStorage.setItem('activeEventId', id);
+                sessionStorage.removeItem('activeChannelId');
+                activeEventId = id;
+            }
+        }
+
+        var countdownElement = document.getElementById('countdown');
+        var countdownTimer = countdownElement.querySelector('.countdown-timer');
+        var videoIframe = document.getElementById('video-iframe');
+        var videoPlaceholder = document.getElementById('video-placeholder');
+        var playerElement = document.getElementById("player");
+
+        if (url.includes('sportsonline') || url.includes('sportcastelite') || url.includes('venoms') || url.includes('p2plive2')) {
+            videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+        } else {
+            videoIframe.removeAttribute('sandbox');
+        }
+
+        document.querySelectorAll('.countdown-wrapper').forEach(function(countdown) {
+            countdown.style.display = 'none';
+        });
+        for (var key in intervals) {
+            clearInterval(intervals[key]);
+        }
+
+        document.querySelectorAll('.event-container .server-buttons').forEach(function(buttonsContainer) {
+            buttonsContainer.style.display = 'none';
+        });
+
+        // Tampilkan langsung jika channel (iframe penuh)
+        if (isChannel) {
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+            console.log('Channel video loaded:', url);
+            return;
+        }
+
+        // Event container logic
+        if (now >= eventStartTime) {
+            countdownElement.style.display = 'none';
+
+            if (videoIframe && videoIframe.src !== url) {
+                videoIframe.src = '';
+                videoIframe.style.display = 'none';
+            }
+
+            if (videoIframe.src !== url) {
+                videoIframe.src = url;
+            }
+
+            videoIframe.style.display = 'block';
+            videoPlaceholder.style.display = 'none';
+            playerElement.style.display = 'none';
+
+            setActiveHoverEffect(id);
+            console.log('Loading event video now:', id);
+            toggleServerButtons(container, true);
+            checkLiveStatus(container, eventStartTime, eventDurationMilliseconds);
+
+            var activeButton = container.querySelector(`.server-button[data-url="${url}"]`);
+            if (activeButton) {
+                selectServerButton(activeButton);
+            }
+        } else {
+            countdownElement.style.display = 'block';
+            videoIframe.style.display = 'none';
+            videoPlaceholder.style.display = 'block';
+            playerElement.style.display = 'none';
+            updateCountdown(countdownElement, countdownTimer, eventStartTime, url, id);
+            setActiveHoverEffect(id);
+            console.log('Setting countdown for future event:', id);
+        }
+
+        toggleServerButtons(container, now >= eventStartTime);
+
+        if (resetActiveId && specificUrl) {
+            sessionStorage.setItem(`activeServerUrl_${id}`, specificUrl);
+        }
+    }
+
+    function markEventAsEnded(eventId) {
+        var eventContainer = document.querySelector(`.event-container[data-id="${eventId}"]`);
+        if (eventContainer) {
+            sessionStorage.setItem(`eventStatus_${eventId}`, 'ended'); // Simpan status "Ended" di sessionStorage
+            eventContainer.style.display = 'none'; // Sembunyikan event container ketika event berakhir
+        }
+    }
+
+    function redirectToEndedURL() {
+        var storedActiveEventId = sessionStorage.getItem('activeEventId');
+        var storedStatus = sessionStorage.getItem(`eventStatus_${storedActiveEventId}`);
+
+        if (storedStatus === 'ended') {
+            // Jika event sudah berakhir, sembunyikan event-container aktif
+            var activeEventContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeEventContainer) {
+                activeEventContainer.style.display = 'none'; // Sembunyikan event container
+            }
+        }
+    }
+
+    function setActiveHoverEffect(activeId) {
+        // Menghapus class hover-effect dari semua containers
+        document.querySelectorAll('.event-container').forEach(function(container) {
+            container.classList.remove('hover-effect');
+        });
+
+        // Menambahkan class hover-effect hanya pada container dengan id yang aktif
+        var activeContainer = document.querySelector('.event-container[data-id="' + activeId + '"]');
+        if (activeContainer) {
+            activeContainer.classList.add('hover-effect');
+            console.log('Hover effect set for event:', activeId);
+        }
+    }
+
+    function resetHoverEffect() {
+        if (activeEventId) {
+            var activeContainer = document.querySelector('.event-container[data-id="' + activeEventId + '"]');
+            if (activeContainer) {
+                activeContainer.classList.add('hover-effect');
+                console.log('Hover effect reset for active event:', activeEventId);
+            }
+        }
+    }
+
+    function toggleServerButtons(container, show = true) {
+        var serverButtonsContainer = container.querySelector('.server-buttons');
+        if (show) {
+            serverButtonsContainer.style.display = 'flex';
+        } else {
+            serverButtonsContainer.style.display = 'none';
+        }
+    }
+
+    function selectServerButton(button) {
+        // Menghapus class active dari semua tombol server
+        var buttons = document.querySelectorAll('.server-button');
+        buttons.forEach(function(btn) {
+            btn.classList.remove('active');
+        });
+        // Menambahkan class active pada tombol yang diklik
+        button.classList.add('active');
+        // Simpan URL dari tombol server yang aktif
+        var url = button.getAttribute('data-url');
+        var eventId = button.closest('.event-container').getAttribute('data-id');
+        sessionStorage.setItem(`activeServerUrl_${eventId}`, url);
+    }
+
+    // Fungsi untuk switch content
+    function switchContent(target) {
+        document.querySelectorAll('.sidebar-content').forEach(function(content) {
+            content.classList.remove('active'); // hide all content
+        });
+        var targetContent = document.getElementById(target);
+        targetContent.classList.add('active'); // show target content
+
+        // Lazy load chat iframe
+        if (target === 'chat') {
+            var chatIframe = targetContent.querySelector('.chat-iframe');
+            if (chatIframe && !chatIframe.src) {
+                chatIframe.src = chatIframe.getAttribute('data-src');
+            }
+        }
+    }
+
+    function refreshVideoPlayer() {
+        var videoIframe = document.getElementById('video-iframe');
+        if (videoIframe) {
+            var currentSrc = videoIframe.src;
+
+            // Cek apakah iframe tersebut menggunakan Clappr dengan pengecekan sumber video HLS
+            if (currentSrc.includes('m3u8') || currentSrc.includes('clappr')) {
+                try {
+                    // Akses player Clappr di dalam iframe
+                    var player = videoIframe.contentWindow.player;
+
+                    if (player) {
+                        // Reload Clappr player tanpa mengosongkan src iframe
+                        player.stop();
+                        player.load({
+                            source: player.options.source
+                        }); // Memuat ulang stream yang sama
+                        player.play(); // Mulai ulang player
+                        console.log('Clappr player refreshed successfully');
+                    }
+                } catch (error) {
+                    console.error('Failed to refresh Clappr player:', error);
+                }
+            } else {
+                // Logika untuk iframe selain Clappr (tetap seperti sebelumnya)
+                videoIframe.src = ''; // Kosongkan src
+                // Set atribut sandbox jika perlu
+                if (currentSrc.includes('sportsonline') || currentSrc.includes('sportcastelite') || currentSrc.includes('venoms') || currentSrc.includes('p2plive2')) {
+                    videoIframe.setAttribute('sandbox', 'allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation');
+                } else {
+                    videoIframe.removeAttribute('sandbox');
+                }
+                videoIframe.src = currentSrc; // Set ulang src untuk reload iframe
+                console.log('Non-Clappr iframe refreshed successfully');
+            }
+        }
+    }
+
+    function startPeriodicEventCheck() {
+        setInterval(function() {
+            var now = new Date();
+            document.querySelectorAll('.event-container').forEach(function(container) {
+                var matchDate = container.querySelector('.match-date').getAttribute('data-original-date');
+                var matchTime = container.querySelector('.match-time').getAttribute('data-original-time');
+                var eventDurationHours = parseFloat(container.getAttribute('data-duration')) || 3.5;
+                var eventDurationMilliseconds = eventDurationHours * 60 * 60 * 1000;
+
+                var eventStartTime = parseEventDateTime(matchDate, matchTime);
+                var eventEndTime = new Date(eventStartTime.getTime() + eventDurationMilliseconds);
+
+                if (now >= eventEndTime) {
+                    var id = container.getAttribute('data-id');
+                    markEventAsEnded(id); // Sembunyikan event-container jika event berakhir
+                }
+            });
+        }, 60000); // Periksa setiap menit
+    }
+
+    window.addEventListener('DOMContentLoaded', async () => {
+        await loadEventsFromJSON(); // 🔁 Panggil sekali saat halaman pertama dibuka
+        await loadChannelsFromJSON(); // 🔁 Panggil sekali
+
+        setInterval(loadEventsFromJSON, 5000); // 🔁 Refresh setiap 5 detik
+
+        // 🔄 Restore session untuk event
+        const storedActiveEventId = sessionStorage.getItem('activeEventId');
+        const storedActiveServerUrl = sessionStorage.getItem(`activeServerUrl_${storedActiveEventId}`);
+
+        if (storedActiveEventId && storedActiveServerUrl) {
+            const activeContainer = document.querySelector(`.event-container[data-id="${storedActiveEventId}"]`);
+            if (activeContainer) {
+                const storedButton = activeContainer.querySelector(`.server-button[data-url="${storedActiveServerUrl}"]`);
+                if (storedButton) {
+                    selectServerButton(storedButton);
+                }
+                loadEventVideo(activeContainer, storedActiveServerUrl, false);
+                return; // ⬅️ Jika event ditemukan, tidak lanjut ke channel
+            }
+        }
+
+        // 🔄 Restore session untuk channel (jika event tidak tersedia)
+        const storedActiveChannelId = sessionStorage.getItem('activeChannelId');
+        if (storedActiveChannelId) {
+            const activeChannel = document.querySelector(`.channel-container[data-id="${storedActiveChannelId}"]`);
+            if (activeChannel) {
+                activeChannel.classList.add('selected');
+                loadEventVideo(activeChannel);
+            }
+        }
+    });

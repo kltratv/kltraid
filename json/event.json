@@ -35,7 +35,7 @@
     "kickoff_time": "18:30",
     "match_date": "2025-05-30",
     "match_time": "18:30",
-    "firstRow": 5
+    "firstRow": 4
   },
   {
     "id": "de8cdc0a-1047-4966-80fe-6ca6df363448",
@@ -54,7 +54,7 @@
     "kickoff_time": "12:00",
     "match_date": "2025-05-31",
     "match_time": "12:00",
-    "firstRow": 10
+    "firstRow": 5
   },
   {
     "id": "9d18daa1-49d4-46e9-967e-9be6e77c86b7",
@@ -73,7 +73,7 @@
     "kickoff_time": "12:00",
     "match_date": "2025-05-31",
     "match_time": "12:00",
-    "firstRow": 11
+    "firstRow": 6
   },
   {
     "id": "76f2a735-94e4-4fee-a60c-381509600e36",
@@ -92,7 +92,7 @@
     "kickoff_time": "12:00",
     "match_date": "2025-05-31",
     "match_time": "12:00",
-    "firstRow": 12
+    "firstRow": 7
   },
   {
     "id": "1653bbe0-7782-4518-bd76-df83643f46d0",
@@ -111,7 +111,7 @@
     "kickoff_time": "14:00",
     "match_date": "2025-05-31",
     "match_time": "14:00",
-    "firstRow": 13
+    "firstRow": 8
   },
   {
     "id": "8b766e4d-a67e-4b1e-af64-e778fb44b24b",
@@ -130,7 +130,7 @@
     "kickoff_time": "15:30",
     "match_date": "2025-05-31",
     "match_time": "15:30",
-    "firstRow": 14
+    "firstRow": 9
   },
   {
     "id": "4290073a-ef13-4e25-9e71-f307ac9b861e",
@@ -149,7 +149,7 @@
     "kickoff_time": "16:00",
     "match_date": "2025-05-31",
     "match_time": "16:00",
-    "firstRow": 15
+    "firstRow": 10
   },
   {
     "id": "22113e20-5eb4-4bfb-8cb2-e412d2c3f68e",
@@ -168,7 +168,7 @@
     "kickoff_time": "17:00",
     "match_date": "2025-05-31",
     "match_time": "17:00",
-    "firstRow": 16
+    "firstRow": 11
   },
   {
     "id": "860a890f-95b3-42d0-8468-b6ae25a6e7d6",
@@ -187,7 +187,7 @@
     "kickoff_time": "17:00",
     "match_date": "2025-05-31",
     "match_time": "17:00",
-    "firstRow": 17
+    "firstRow": 12
   },
   {
     "id": "e85d4d09-7d91-4d93-b9ab-8fadd1e80e15",
@@ -206,7 +206,7 @@
     "kickoff_time": "17:00",
     "match_date": "2025-05-31",
     "match_time": "17:00",
-    "firstRow": 18
+    "firstRow": 13
   },
   {
     "id": "3d6033d9-39d0-4bfd-8aa2-d382242ed6ad",
@@ -225,6 +225,6 @@
     "kickoff_time": "17:00",
     "match_date": "2025-05-31",
     "match_time": "17:00",
-    "firstRow": 19
+    "firstRow": 14
   }
 ]

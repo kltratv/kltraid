@@ -1,180 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link rel="stylesheet" href="/tv/css/hometv.css">
-    <link rel="manifest" href="/tv/manifest.json">
-    <meta name="theme-color" content="#000000">
-
-    <title>KLTRATV | Free Streaming Sports</title>
-
-    <style>
-        @keyframes slideInRight {
-            from {
-                transform: translateX(100%);
-                opacity: 0;
-            }
-
-            to {
-                transform: translateX(0);
-                opacity: 1;
-            }
-        }
-
-        .notif-bar {
-            position: fixed;
-            top: 56px;
-            /* ⬅️ Adjust jika toolbar kamu tinggi */
-            right: 0;
-            left: auto;
-            z-index: 9999;
-            background: linear-gradient(90deg, #00c6ff, #0072ff);
-            color: white;
-            display: flex;
-            align-items: center;
-            padding: 10px 12px;
-            border-radius: 8px 0 0 8px;
-            /* Tetap menempel kanan */
-            box-shadow: -4px 4px 10px rgba(0, 0, 0, 0.3);
-            font-family: sans-serif;
-            max-width: 90%;
-            gap: 10px;
-
-            /* 🔄 Animasi saat muncul */
-            animation: slideInRight 0.4s ease-out;
-        }
-
-        .notif-bar.hidden {
-            display: none;
-        }
-
-        .notif-text {
-            white-space: nowrap;
-            font-size: 14px;
-        }
-
-        .notif-action {
-            background: white;
-            color: #0072ff;
-            border: none;
-            padding: 6px 12px;
-            border-radius: 6px;
-            font-weight: bold;
-            cursor: pointer;
-            font-size: 13px;
-            transition: background-color 0.3s;
-        }
-
-        .notif-action:hover {
-            background-color: #e6f0ff;
-        }
-
-        .notif-close {
-            background: transparent;
-            color: white;
-            border: none;
-            font-size: 16px;
-            cursor: pointer;
-        }
-    </style>
-
-    <script disable-devtool-auto src='https://cdn.jsdelivr.net/npm/disable-devtool'></script>
-
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Update Aplikasi Diperlukan</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      text-align: center;
+      padding: 50px;
+      background: #f2f2f2;
+    }
+    .container {
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 400px;
+      margin: auto;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      background-color: #007BFF;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    .btn:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
-    
-    <div id="notif-bar" class="notif-bar hidden">
-        <span class="notif-text">🔔 Enable notifications</span>
-        <button class="notif-action" onclick="bukaPengaturanNotifikasi()">Enable</button>
-        <button class="notif-close" onclick="tutupNotifBar()">✖</button>
-    </div>
+<body>
 
-    <header class="app-header">
-        <div class="logo-area">
-            <img src="/tv/images/logoheader.png" alt="KLTRA Logo" class="logo-img">
-            <div class="text-area">
-                <div class="app-name">KLTRATV</div>
-                <div class="app-slogan">FREE STREAMING SPORTS</div>
-            </div>
-        </div>
-        <a href="https://saweria.co/Indopride99" class="wallet-icon" target="_blank" title="Donate">
-          <i class="fas fa-gift"></i>
-        </a>
-    </header>
-
-    <div id="main-content">
-        <div class="video-container">
-            <div class="video-wrapper">
-                <img id="video-placeholder" src="https://kltraid.pages.dev/images/home_11zon.jpg" alt="Video Placeholder" style="width: 100%; height: 100%; object-fit: cover;">
-                <div id="player"></div> <!-- Pindahkan player ke dalam video-wrapper -->
-                <iframe id="video-iframe" src="about:blank" width="100%" height="100%" frameborder="0" allowfullscreen scrolling="no" gesture="media" allow="encrypted-media" style="display:none;"></iframe>
-                <div class="countdown-wrapper" id="countdown" style="display:none;">
-                    <div class="countdown-title">Event will start in:</div>
-                    <div class="countdown-timer"></div>
-                </div>
-            </div>
-        </div>
-
-        <div class="sidebar">
-            <!-- Menu-wrapper di atas -->
-            <div class="menu-wrapper-top">
-                <div class="menu-container">
-                    <button class="menu-button" onclick="refreshVideoPlayer()">Refresh Video</button>
-                    <button class="menu-button" onclick="switchContent('live-event')">Live Event</button>
-                    <button class="menu-button" onclick="switchContent('live-tv')">Live TV</button>
-                    <button class="menu-button" onclick="switchContent('chat')">Chat</button>
-                </div>
-            </div>
-
-            <div id="refresh" class="sidebar-content">
-                <h2>Refresh Content</h2>
-                <!-- Content for Refresh will be added here -->
-            </div>
-
-            <div id="live-event" class="sidebar-content active">
-                <div id="content">
-
-                    <!-- Awal Data -->
-
-                    <!-- Akhir Data -->
-
-                </div>
-            </div>
-
-            <div id="live-tv" class="sidebar-content">
-                <div id="content">
-                    <!-- Awal Data Channel-->
-
-                    <!-- Akhir Data Channel-->
-
-                </div>
-            </div>
-
-            <div id="chat" class="sidebar-content">
-                <iframe class="chat-iframe" src="https://www3.cbox.ws/box/?boxid=3538770&boxtag=Dn3dpG" width="294px" height="645px" allowtransparency="yes" allow="autoplay" frameborder="0" marginheight="0" marginwidth="0" scrolling="auto"></iframe>
-                <div id="spacer"></div>
-            </div>
-
-            <div class="menu-wrapper-bottom">
-                <div class="menu-container">
-                    <!-- Tombol Refresh Halaman dengan warna sesuai -->
-                    <button class="menu-button refresh-button" onclick="location.reload();">
-                        <i class="fas fa-sync-alt"></i> Refresh Page
-                    </button>
-                    <!-- Tombol Telegram dengan warna sesuai -->
-                    <button class="menu-button telegram-button" onclick="window.open('https://t.me/+YdCBhuNDESw3ZWRl', '_blank');">
-                        <i class="fab fa-telegram-plane"></i> Telegram
-                    </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <script src="/tv/js/hometv.js"></script>
+  <div class="container">
+    <h2>Update Available</h2>
+    <p>The latest version of the application is available. Please update to continue.</p>
+    <a class="btn" href="https://t.me/+YdCBhuNDESw3ZWRl">Update Now</a>
+  </div>
 
 </body>
-
 </html>

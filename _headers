@@ -1,0 +1,3 @@
+/html/playermpd*
+  X-Frame-Options: DENY
+  Content-Security-Policy: frame-ancestors https://kltraid.pages.dev https://bikinbaru96.blogspot.com https://kltratvqq.blogspot.com https://kltra-tv.blogspot.com;

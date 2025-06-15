@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>F5-TTS Demo via HuggingFace</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+    textarea {
+      width: 100%;
+      height: 120px;
+      padding: 12px;
+      font-size: 16px;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      resize: vertical;
+    }
+    button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:disabled {
+      background-color: #999;
+      cursor: not-allowed;
+    }
+    button:hover:not(:disabled) {
+      background-color: #0056b3;
+    }
+    audio {
+      margin-top: 20px;
+      width: 100%;
+    }
+    .status {
+      text-align: center;
+      margin-top: 10px;
+      font-size: 14px;
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>🔊 F5-TTS (HuggingFace) Demo</h2>
+  <textarea id="textInput">Halo! Ini adalah pengujian TTS menggunakan Hugging Face Space.</textarea>
+  <button onclick="generateAudio()">🔈 Ubah Teks Menjadi Suara</button>
+  <div class="status" id="statusMsg">Menunggu input...</div>
+  <audio id="player" controls></audio>
+
+  <script>
+    async function generateAudio() {
+      const text = document.getElementById("textInput").value.trim();
+      const button = document.querySelector("button");
+      const status = document.getElementById("statusMsg");
+      const player = document.getElementById("player");
+
+      if (!text) {
+        alert("Silakan masukkan teks terlebih dahulu.");
+        return;
+      }
+
+      button.disabled = true;
+      status.textContent = "⏳ Memproses teks...";
+
+      try {
+        const response = await fetch("https://hf.space/embed/mrfakename/E2-F5-TTS/+/api/predict/", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            data: [{ text }]
+          })
+        });
+
+        const result = await response.json();
+        const audioUrl = result?.data?.[0]?.url;
+
+        if (audioUrl) {
+          player.src = audioUrl;
+          player.play();
+          status.textContent = "✅ Suara berhasil dihasilkan.";
+        } else {
+          status.textContent = "❌ Gagal mendapatkan audio.";
+          console.error(result);
+        }
+
+      } catch (err) {
+        status.textContent = "❌ Terjadi kesalahan saat mengakses API.";
+        console.error(err);
+      } finally {
+        button.disabled = false;
+      }
+    }
+  </script>
+
+</body>
+</html>

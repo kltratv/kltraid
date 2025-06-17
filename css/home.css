@@ -165,26 +165,22 @@
             /* Memastikan mengisi lebar sidebar */
         }
 
-        /* Tombol Refresh - warna abu-abu */
-        .menu-wrapper-bottom .refresh-button {
-            background-color: #4CAF50;
-            /* Warna abu-abu */
+        /* Tombol Download APK */
+        .menu-wrapper-bottom .downloadapk-button {
+            background-color: #3DDC84;
         }
 
-        .menu-wrapper-bottom .refresh-button:hover {
-            background-color: #45A049;
-            /* Warna abu-abu yang lebih gelap saat hover */
+        .menu-wrapper-bottom .downloadapk-button:hover {
+            background-color: #32c176;
         }
 
-        /* Tombol Telegram - warna biru */
-        .menu-wrapper-bottom .telegram-button {
-            background-color: #0088cc;
-            /* Warna biru sesuai Telegram */
+        /* Tombol Saweria */
+        .menu-wrapper-bottom .donasi-button {
+            background-color: #faae2b;
         }
 
-        .menu-wrapper-bottom .telegram-button:hover {
-            background-color: #007ab8;
-            /* Warna biru yang lebih gelap saat hover */
+        .menu-wrapper-bottom .donasi-button:hover {
+            background-color: #e39b24;
         }
 
         /* Umum untuk semua tombol di menu-wrapper-bottom */

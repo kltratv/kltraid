@@ -1,512 +1,573 @@
-        /* Custom CSS for Video Player and Sidebar Layout */
-        html,
-        body {
-            margin: 0;
-            height: 100%;
-            overflow: hidden;
-            display: flex;
-            flex-direction: column;
-            color: white;
-            font-family: 'Teko', sans-serif;
-            /* Menggunakan font Teko dari Google Fonts */
-        }
+              /* Custom CSS for Video Player and Sidebar Layout */
+              html,
+              body {
+                  margin: 0;
+                  height: 100%;
+                  overflow: hidden;
+                  display: flex;
+                  flex-direction: column;
+                  color: white;
+                  font-family: 'Teko', sans-serif;
+                  /* Menggunakan font Teko dari Google Fonts */
+              }
 
-        #main-content {
-            display: flex;
-            width: 100%;
-            height: 100%;
-        }
+              #main-content {
+                  display: flex;
+                  width: 100%;
+                  height: 100%;
+              }
 
-        .video-container {
-            flex: 1;
-            background-color: #000;
-            height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
+              .video-container {
+                  flex: 1;
+                  background-color: #000;
+                  height: 100vh;
+                  display: flex;
+                  flex-direction: column;
+                  justify-content: center;
+                  align-items: center;
+              }
 
-        .video-wrapper {
-            position: relative;
-            width: 100%;
-            /* Menggunakan rasio 16:9 dengan padding-bottom */
-            padding-bottom: 56.25%;
-            /* Rasio 16:9 */
-            height: 0;
-        }
+              .video-wrapper {
+                  position: relative;
+                  width: 100%;
+                  /* Menggunakan rasio 16:9 dengan padding-bottom */
+                  padding-bottom: 56.25%;
+                  /* Rasio 16:9 */
+                  height: 0;
+              }
 
-        .video-wrapper iframe,
-        .video-wrapper img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            /* Tetap menggunakan cover untuk memastikan video mengisi seluruh wadah */
-        }
+              .video-wrapper iframe,
+              .video-wrapper img {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  object-fit: cover;
+                  /* Tetap menggunakan cover untuk memastikan video mengisi seluruh wadah */
+              }
 
-        #player {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background-color: black;
-            /* Optional: background hitam untuk player */
-            display: none;
-        }
+              #player {
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  width: 100%;
+                  height: 100%;
+                  background-color: black;
+                  /* Optional: background hitam untuk player */
+                  display: none;
+              }
 
-        .channel-container {
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, #1b262c, #2c3e50, #34495e, #3a3a52);
-            padding: 10px;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            width: 100%;
-            /* Menyesuaikan dengan elemen induk */
-            box-sizing: border-box;
-            /* Memastikan padding tidak menambah lebar total */
-            margin-bottom: 2px;
-        }
+              .channel-container {
+                  display: flex;
+                  align-items: center;
+                  background: linear-gradient(135deg, #1b262c, #2c3e50, #34495e, #3a3a52);
+                  padding: 10px;
+                  border-radius: 8px;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  width: 100%;
+                  /* Menyesuaikan dengan elemen induk */
+                  box-sizing: border-box;
+                  /* Memastikan padding tidak menambah lebar total */
+                  margin-bottom: 2px;
+              }
 
-        .logo-container {
-            flex-shrink: 0;
-            width: 80px;
-            height: 55px;
-            border-radius: 8px;
-            overflow: hidden;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
+              .logo-container {
+                  flex-shrink: 0;
+                  width: 80px;
+                  height: 55px;
+                  border-radius: 8px;
+                  overflow: hidden;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+              }
 
-        .logo {
-            max-width: 100%;
-            max-height: 100%;
-        }
+              .logo {
+                  max-width: 100%;
+                  max-height: 100%;
+              }
 
-        .info-container {
-            margin-left: 10px;
-        }
+              .info-container {
+                  margin-left: 10px;
+              }
 
-        .channel-name {
-            margin: 0;
-            font-size: 16px;
-            font-weight: bold;
-            color: white;
-        }
+              .channel-name {
+                  margin: 0;
+                  font-size: 16px;
+                  font-weight: bold;
+                  color: white;
+              }
 
-        .status {
-            margin: 0;
-            font-size: 14px;
-            color: red;
-        }
+              .status {
+                  margin: 0;
+                  font-size: 14px;
+                  color: red;
+              }
 
-        .channel-container:hover,
-        .channel-container.selected {
-            background: linear-gradient(135deg, #2b3842, #3b5267, #46556c, #50505b);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
+              .channel-container:hover,
+              .channel-container.selected {
+                  background: linear-gradient(135deg, #2b3842, #3b5267, #46556c, #50505b);
+                  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+              }
 
-        .countdown-wrapper {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            color: white;
-            font-size: 24px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.7);
-            padding: 20px;
-            border-radius: 10px;
-        }
+              .countdown-wrapper {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  color: white;
+                  font-size: 24px;
+                  text-align: center;
+                  background-color: rgba(0, 0, 0, 0.7);
+                  padding: 20px;
+                  border-radius: 10px;
+              }
 
-        .countdown-title {
-            margin-bottom: 10px;
-        }
+              .countdown-title {
+                  margin-bottom: 10px;
+              }
 
-        .sidebar {
-            flex: 0 0 400px;
-            /* Lebar tetap untuk sidebar */
-            background-color: #f4f4f4;
-            padding: 0;
-            /* Menghilangkan padding */
-            overflow-y: auto;
-            /* Memungkinkan scroll vertikal jika diperlukan */
-            overflow-x: hidden;
-            /* Mencegah scroll horizontal */
-            height: 100vh;
-            box-sizing: border-box;
-            /* Menyertakan padding dalam perhitungan lebar */
-            display: flex;
-            flex-direction: column;
-        }
+              .sidebar {
+                  flex: 0 0 400px;
+                  /* Lebar tetap untuk sidebar */
+                  background-color: #f4f4f4;
+                  padding: 0;
+                  /* Menghilangkan padding */
+                  overflow-y: auto;
+                  /* Memungkinkan scroll vertikal jika diperlukan */
+                  overflow-x: hidden;
+                  /* Mencegah scroll horizontal */
+                  height: 100vh;
+                  box-sizing: border-box;
+                  /* Menyertakan padding dalam perhitungan lebar */
+                  display: flex;
+                  flex-direction: column;
+              }
 
-        /* CSS untuk menu-wrapper di atas */
-        .menu-wrapper-top {
-            background-color: #ffffff;
-            /* Warna latar yang solid */
-            padding: 0;
-            /* Padding seragam di semua sisi */
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            /* Bayangan untuk kedalaman visual */
-            border-bottom: 1px solid #ccc;
-            /* Garis batas untuk memperjelas pemisahan */
-            position: sticky;
-            /* Membuat menu tetap di atas saat di-scroll */
-            top: 0;
-            /* Menempel di atas */
-            z-index: 100;
-            /* Memastikan menu berada di atas isi lainnya */
-            width: 100%;
-            /* Memastikan mengisi lebar sidebar */
-        }
+              /* CSS untuk menu-wrapper di atas */
+              .menu-wrapper-top {
+                  background-color: #ffffff;
+                  /* Warna latar yang solid */
+                  padding: 0;
+                  /* Padding seragam di semua sisi */
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+                  /* Bayangan untuk kedalaman visual */
+                  border-bottom: 1px solid #ccc;
+                  /* Garis batas untuk memperjelas pemisahan */
+                  position: sticky;
+                  /* Membuat menu tetap di atas saat di-scroll */
+                  top: 0;
+                  /* Menempel di atas */
+                  z-index: 100;
+                  /* Memastikan menu berada di atas isi lainnya */
+                  width: 100%;
+                  /* Memastikan mengisi lebar sidebar */
+              }
 
-        /* Tombol Download APK */
-        .menu-wrapper-bottom .downloadapk-button {
-            background-color: #3DDC84;
-        }
+              /* Tombol Refresh Event */
+              #live-event {
+                  position: relative;
+              }
 
-        .menu-wrapper-bottom .downloadapk-button:hover {
-            background-color: #32c176;
-        }
+              #refresh-button {
+                  position: absolute;
+                  bottom: 20px;
+                  right: 20px;
+                  background-color: #007BFF;
+                  color: white;
+                  width: 50px;
+                  height: 50px;
+                  border-radius: 50%;
+                  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+                  cursor: pointer;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  z-index: 999;
+                  transition: background-color 0.3s ease;
+              }
 
-        /* Tombol Saweria */
-        .menu-wrapper-bottom .donasi-button {
-            background-color: #faae2b;
-        }
+              #refresh-button:hover {
+                  background-color: #0056b3;
+              }
 
-        .menu-wrapper-bottom .donasi-button:hover {
-            background-color: #e39b24;
-        }
+              #refresh-button i {
+                  font-size: 24px;
+              }
 
-        /* Umum untuk semua tombol di menu-wrapper-bottom */
-        .menu-wrapper-bottom .menu-button {
-            flex: 1;
-            /* Pastikan tombol membagi ruang secara merata */
-            text-align: center;
-            /* Memusatkan teks dan ikon */
-            padding: 10px 0;
-            /* Padding untuk kenyamanan pengguna */
-            color: white;
-            /* Warna teks */
-            border: none;
-            /* Menghilangkan border */
-            cursor: pointer;
-            /* Menampilkan kursor pointer saat hover */
-            transition: background-color 0.3s;
-            /* Transisi halus untuk efek hover */
-            margin: 0;
-            /* Menghilangkan margin antar tombol */
-            border-left: 1px solid #ffffff;
-            /* Garis pemisah antar tombol */
-            font-family: 'Teko', sans-serif;
-            /* Menambahkan properti font-family */
-        }
+              #refresh-button {
+                  display: flex !important;
+              }
 
-        .menu-wrapper-bottom .menu-button:first-child {
-            border-left: none;
-            /* Menghilangkan garis pemisah pada tombol pertama */
-        }
+              #refresh-button:focus,
+              #refresh-button:active {
+                  outline: none;
+                  box-shadow: 0 0 0 5px rgba(0, 123, 255, 0.3);
+                  /* soft shadow yang tetap bulat */
+                  border-radius: 50%;
+                  /* pastikan tetap bulat saat active/focus */
+              }
 
-        .menu-wrapper-bottom .menu-button i {
-            margin-right: 8px;
-            /* Jarak antara ikon dan teks */
-        }
+              /* Tombol Download APK */
+              .menu-wrapper-bottom .downloadapk-button {
+                  background-color: #3DDC84;
+              }
 
-        .menu-container {
-            display: flex;
-            width: 100%;
-            /* Memastikan mengisi lebar wrapper */
-            margin: 0;
-            /* Menghilangkan margin default */
-            padding: 0;
-            /* Menghilangkan padding default */
-        }
+              .menu-wrapper-bottom .downloadapk-button:hover {
+                  background-color: #32c176;
+              }
 
-        .menu-button {
-            flex: 1;
-            /* Ensures each button has the same width */
-            text-align: center;
-            /* Centering the text inside the buttons */
-            padding: 10px 0;
-            /* Padding for button for better touch */
-            background-color: #F91E4E;
-            /* Example background color */
-            color: white;
-            /* Text color */
-            border: none;
-            /* Removes border */
-            cursor: pointer;
-            /* Shows a pointer cursor on hover */
-            transition: background-color 0.3s;
-            /* Smooth transition for hover effect */
-            margin: 0;
-            /* Menghilangkan margin antar tombol */
-            border-left: 1px solid #ffffff;
-            /* Garis pemisah antar tombol */
-            font-family: 'Teko', sans-serif;
-            /* Menambahkan properti font-family */
-        }
+              /* Tombol Saweria */
+              .menu-wrapper-bottom .donasi-button {
+                  background-color: #faae2b;
+              }
 
-        .menu-button:first-child {
-            border-left: none;
-            /* Menghilangkan garis pemisah pada tombol pertama */
-        }
+              .menu-wrapper-bottom .donasi-button:hover {
+                  background-color: #e39b24;
+              }
 
-        .menu-button:hover {
-            background-color: #ff456e;
-            /* Darker shade on hover */
-        }
+              /* Umum untuk semua tombol di menu-wrapper-bottom */
+              .menu-wrapper-bottom .menu-button {
+                  flex: 1;
+                  /* Pastikan tombol membagi ruang secara merata */
+                  text-align: center;
+                  /* Memusatkan teks dan ikon */
+                  padding: 10px 0;
+                  /* Padding untuk kenyamanan pengguna */
+                  color: white;
+                  /* Warna teks */
+                  border: none;
+                  /* Menghilangkan border */
+                  cursor: pointer;
+                  /* Menampilkan kursor pointer saat hover */
+                  transition: background-color 0.3s;
+                  /* Transisi halus untuk efek hover */
+                  margin: 0;
+                  /* Menghilangkan margin antar tombol */
+                  border-left: 1px solid #ffffff;
+                  /* Garis pemisah antar tombol */
+                  font-family: 'Teko', sans-serif;
+                  /* Menambahkan properti font-family */
+              }
 
-        .sidebar-content {
-            flex-grow: 1;
-            /* Let content take the remaining space */
-            padding: 2px;
-            /* Padding around content for better spacing */
-            display: none;
-            /* Hide by default */
-            overflow-y: auto;
-            /* Ensures only this part is scrollable */
-            background:
-                repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
-                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
-                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
-                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
-                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px,
-                repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
-                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
-                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
-                    #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
-                    #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px #0f172a;
-            background-size: 64px 64px;
-        }
+              .menu-wrapper-bottom .menu-button:first-child {
+                  border-left: none;
+                  /* Menghilangkan garis pemisah pada tombol pertama */
+              }
 
-        .sidebar-content.active {
-            display: block;
-            /* Show active content */
-        }
+              .menu-wrapper-bottom .menu-button i {
+                  margin-right: 8px;
+                  /* Jarak antara ikon dan teks */
+              }
 
-        .event-container {
-            position: relative;
-            background: linear-gradient(135deg, #1b262c, #2c3e50, #34495e, #3a3a52);
-            padding: 10px;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            cursor: pointer;
-            transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease;
-            margin-bottom: 10px;
-        }
+              .menu-container {
+                  display: flex;
+                  width: 100%;
+                  /* Memastikan mengisi lebar wrapper */
+                  margin: 0;
+                  /* Menghilangkan margin default */
+                  padding: 0;
+                  /* Menghilangkan padding default */
+              }
 
-        .event-container:hover,
-        .event-container.hover-effect {
-            background: linear-gradient(135deg, #2b3842, #3b5267, #46556c, #50505b);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        }
+              .menu-button {
+                  flex: 1;
+                  /* Ensures each button has the same width */
+                  text-align: center;
+                  /* Centering the text inside the buttons */
+                  padding: 10px 0;
+                  /* Padding for button for better touch */
+                  background-color: #F91E4E;
+                  /* Example background color */
+                  color: white;
+                  /* Text color */
+                  border: none;
+                  /* Removes border */
+                  cursor: pointer;
+                  /* Shows a pointer cursor on hover */
+                  transition: background-color 0.3s;
+                  /* Smooth transition for hover effect */
+                  margin: 0;
+                  /* Menghilangkan margin antar tombol */
+                  border-left: 1px solid #ffffff;
+                  /* Garis pemisah antar tombol */
+                  font-family: 'Teko', sans-serif;
+                  /* Menambahkan properti font-family */
+              }
 
-        .live-label {
-            display: none;
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            background-color: #F91E4E;
-            color: white;
-            padding: 5px;
-            font-size: 0.75em;
-            border-radius: 3px;
-        }
+              .menu-button:first-child {
+                  border-left: none;
+                  /* Menghilangkan garis pemisah pada tombol pertama */
+              }
 
-        .server-buttons {
-            display: none;
-            flex-direction: column;
-            align-items: flex-start;
-            padding: 10px;
-            margin-top: 10px;
-            background-color: #0F172A;
-            border-radius: 5px;
-        }
+              .menu-button:hover {
+                  background-color: #ff456e;
+                  /* Darker shade on hover */
+              }
 
-        .server-buttons .buttons-container {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            justify-content: center;
-        }
+              .sidebar-content {
+                  flex-grow: 1;
+                  /* Let content take the remaining space */
+                  padding: 2px;
+                  /* Padding around content for better spacing */
+                  display: none;
+                  /* Hide by default */
+                  overflow-y: auto;
+                  /* Ensures only this part is scrollable */
+                  background:
+                      repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                          #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                          #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                          #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                          #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px,
+                      repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                          #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                          #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)), repeating-linear-gradient(-45deg, #0000 calc(-650%/13) calc(50%/13), #0f1129 0 calc(100%/13),
+                          #0000 0 calc(150%/13), #0f1129 0 calc(200%/13),
+                          #0000 0 calc(250%/13), #0f1129 0 calc(300%/13)) 32px 32px #0f172a;
+                  background-size: 64px 64px;
+              }
 
-        .server-button {
-            background-color: #20BB2E;
-            padding: 5px 10px;
-            font-size: 0.75em;
-            color: white;
-            border-radius: 3px;
-            cursor: pointer;
-            transition: background-color 0.3s;
-            text-align: center;
-            /* flex: 1; */
-            max-width: 80px;
-            /* Lebar maksimal untuk tombol */
-        }
+              .sidebar-content.active {
+                  display: block;
+                  /* Show active content */
+              }
 
-        .server-button.active {
-            background-color: #1F8B24;
-        }
+              .event-container {
+                  position: relative;
+                  background: linear-gradient(135deg, #1b262c, #2c3e50, #34495e, #3a3a52);
+                  padding: 10px;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+                  cursor: pointer;
+                  transition: box-shadow 0.3s ease-in-out, background-color 0.3s ease;
+                  margin-bottom: 10px;
+              }
 
-        .server-button:hover {
-            background-color: #1F8B24;
-        }
+              .event-container:hover,
+              .event-container.hover-effect {
+                  background: linear-gradient(135deg, #2b3842, #3b5267, #46556c, #50505b);
+                  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+              }
 
-        .instruction {
-            font-size: 0.75em;
-            color: white;
-            margin-bottom: 5px;
-            text-align: left;
-            width: 100%;
-        }
+              .live-label {
+                  display: none;
+                  position: absolute;
+                  top: 5px;
+                  right: 5px;
+                  background-color: #F91E4E;
+                  color: white;
+                  padding: 5px;
+                  font-size: 0.75em;
+                  border-radius: 3px;
+              }
 
-        h2 {
-            font-size: 0.9em;
-            margin-top: 0;
-            padding-bottom: 5px;
-            border-bottom: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-        }
+              .server-buttons {
+                  display: none;
+                  flex-direction: column;
+                  align-items: flex-start;
+                  padding: 10px;
+                  margin-top: 10px;
+                  background-color: #0F172A;
+                  border-radius: 5px;
+              }
 
-        .sport-icon {
-            width: 24px;
-            height: auto;
-            margin-right: 10px;
-        }
+              .server-buttons .buttons-container {
+                  display: flex;
+                  flex-wrap: wrap;
+                  gap: 10px;
+                  justify-content: center;
+              }
 
-        .team {
-            display: flex;
-            align-items: center;
-            /* margin: 10px 0; */
-        }
+              .server-button {
+                  background-color: #20BB2E;
+                  padding: 5px 10px;
+                  font-size: 0.75em;
+                  color: white;
+                  border-radius: 3px;
+                  cursor: pointer;
+                  transition: background-color 0.3s;
+                  text-align: center;
+                  /* flex: 1; */
+                  max-width: 80px;
+                  /* Lebar maksimal untuk tombol */
+              }
 
-        .team-logo {
-            width: 24px;
-            height: auto;
-            margin-right: 10px;
-        }
+              .server-button.active {
+                  background-color: #1F8B24;
+              }
 
-        .kickoff-match-time {
-            text-align: right;
-            padding-right: 10px;
-            /* margin-top: 10px; */
-            font-size: 0.8em;
-        }
+              .server-button:hover {
+                  background-color: #1F8B24;
+              }
 
-        .kickoff-match-date {
-            text-align: right;
-            padding-right: 10px;
-            /* margin-top: 5px; */
-            font-size: 0.8em;
-        }
+              .instruction {
+                  font-size: 0.75em;
+                  color: white;
+                  margin-bottom: 5px;
+                  text-align: left;
+                  width: 100%;
+              }
 
-        .chat-iframe {
-            width: 100%;
-            height: 98%;
-            /* Make the iframe fill the entire height of the sidebar content */
-            border: none;
-            overflow: hidden;
-        }
+              h2 {
+                  font-size: 0.9em;
+                  margin-top: 0;
+                  padding-bottom: 5px;
+                  border-bottom: 1px solid #ddd;
+                  display: flex;
+                  align-items: center;
+              }
 
-        .event-container .team-logo1,
-        .event-container .team-logo2 {
-            width: 24px;
-            /* Ukuran logo lebih besar */
-            height: auto;
-            margin-right: 10px;
-        }
+              .sport-icon {
+                  width: 24px;
+                  height: auto;
+                  margin-right: 10px;
+              }
 
-        .event-container .team-logo2 {
-            background-color: #ffff0000;
-        }
+              .team {
+                  display: flex;
+                  align-items: center;
+                  /* margin: 10px 0; */
+              }
 
-        .event-container .team1,
-        .event-container .team2 {
-            display: flex;
-            align-items: center;
-            /* margin: 10px 0; */
-        }
+              .team-logo {
+                  width: 24px;
+                  height: auto;
+                  margin-right: 10px;
+              }
 
-        .event-container .team2 {
-            color: #ffff0000;
-        }
+              .kickoff-match-time {
+                  text-align: right;
+                  padding-right: 10px;
+                  /* margin-top: 10px; */
+                  font-size: 0.8em;
+              }
 
-        .event-container .team2:hover {
-            color: #ffff0000;
-        }
+              .kickoff-match-date {
+                  text-align: right;
+                  padding-right: 10px;
+                  /* margin-top: 5px; */
+                  font-size: 0.8em;
+              }
 
-        @media (max-width: 768px) {
-            #main-content {
-                flex-direction: column;
-                display: flex;
-                height: 100vh;
-            }
+              .chat-iframe {
+                  width: 100%;
+                  height: 98%;
+                  /* Make the iframe fill the entire height of the sidebar content */
+                  border: none;
+                  overflow: hidden;
+              }
 
-            .video-container {
-                width: 100%;
-                position: relative;
-                padding-top: 56.25%;
-            }
+              .event-container .team-logo1,
+              .event-container .team-logo2 {
+                  width: 24px;
+                  /* Ukuran logo lebih besar */
+                  height: auto;
+                  margin-right: 10px;
+              }
 
-            .video-wrapper {
-                position: absolute;
-                top: 0;
-                right: 0;
-                bottom: 0;
-                left: 0;
-            }
+              .event-container .team-logo2 {
+                  background-color: #ffff0000;
+              }
 
-            .sidebar {
-                width: 100%;
-                padding: 2px;
-                box-sizing: border-box;
-                overflow-y: auto;
-                flex-shrink: 0;
-                flex-grow: 1;
-                min-height: calc(100vh - 56.25vw);
-            }
+              .event-container .team1,
+              .event-container .team2 {
+                  display: flex;
+                  align-items: center;
+                  /* margin: 10px 0; */
+              }
 
-            .menu-button {
-                margin-bottom: 2px;
-            }
+              .event-container .team2 {
+                  color: #ffff0000;
+              }
 
-            .chat-iframe {
-                height: 63vh;
-                /* Make the iframe fill the entire height of the sidebar content */
-                border: none;
-            }
+              .event-container .team2:hover {
+                  color: #ffff0000;
+              }
 
-            .countdown-wrapper {
-                font-size: 20px;
-            }
+              @media (max-width: 768px) {
+                  #main-content {
+                      flex-direction: column;
+                      display: flex;
+                      height: 100vh;
+                  }
 
-            #spacer {
-                height: 140px;
-                /* Sesuaikan nilai tinggi ini untuk memastikan sidebar tidak menimpa navbar */
-                width: 100%;
-                background: transparent;
-                /* Pastikan div ini tidak terlihat */
-            }
+                  .video-container {
+                      width: 100%;
+                      position: relative;
+                      padding-top: 56.25%;
+                  }
 
-            /* Tambahan untuk memastikan menu-wrapper-bottom berada di atas navbar */
-            .menu-wrapper-bottom {
-                position: fixed;
-                /* Pastikan posisi fixed agar selalu di atas navbar */
-                bottom: env(safe-area-inset-bottom);
-                /* Sesuaikan dengan safe area */
-                left: 0;
-                right: 0;
-                width: 100%;
-                z-index: 1000;
-                /* Pastikan z-index cukup tinggi */
-                padding-bottom: calc(0px + env(safe-area-inset-bottom));
-                /* Menambahkan padding bawah */
-            }
-        }
+                  .video-wrapper {
+                      position: absolute;
+                      top: 0;
+                      right: 0;
+                      bottom: 0;
+                      left: 0;
+                  }
+
+                  .sidebar {
+                      width: 100%;
+                      padding: 2px;
+                      box-sizing: border-box;
+                      overflow-y: auto;
+                      flex-shrink: 0;
+                      flex-grow: 1;
+                      min-height: calc(100vh - 56.25vw);
+                  }
+
+                  .menu-button {
+                      margin-bottom: 2px;
+                  }
+
+                  .chat-iframe {
+                      height: 63vh;
+                      /* Make the iframe fill the entire height of the sidebar content */
+                      border: none;
+                  }
+
+                  .countdown-wrapper {
+                      font-size: 20px;
+                  }
+
+                  #spacer {
+                      height: 140px;
+                      /* Sesuaikan nilai tinggi ini untuk memastikan sidebar tidak menimpa navbar */
+                      width: 100%;
+                      background: transparent;
+                      /* Pastikan div ini tidak terlihat */
+                  }
+
+                  /* Tambahan untuk memastikan menu-wrapper-bottom berada di atas navbar */
+                  .menu-wrapper-bottom {
+                      position: fixed;
+                      /* Pastikan posisi fixed agar selalu di atas navbar */
+                      bottom: env(safe-area-inset-bottom);
+                      /* Sesuaikan dengan safe area */
+                      left: 0;
+                      right: 0;
+                      width: 100%;
+                      z-index: 1000;
+                      /* Pastikan z-index cukup tinggi */
+                      padding-bottom: calc(0px + env(safe-area-inset-bottom));
+                      /* Menambahkan padding bawah */
+                  }
+
+                  @media (max-width: 768px) {
+                      #refresh-button {
+                          bottom: 110px;
+                          /* Naikkan tombol agar tidak tertutup menu-wrapper-bottom */
+                          right: 15px;
+                          width: 45px;
+                          height: 45px;
+                          font-size: 20px;
+                          z-index: 2000;
+                          /* Lebih tinggi dari menu-wrapper-bottom */
+                      }
+
+                      #refresh-button i {
+                          font-size: 20px;
+                      }
+                  }
+              }

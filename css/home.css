@@ -48,7 +48,7 @@
               }
 
               #player {
-                  position: sticky;
+                  position: absolute;
                   top: 0;
                   left: 0;
                   width: 100%;
@@ -171,7 +171,7 @@
               }
 
               #refresh-button {
-                  position: absolute;
+                  position: sticky;
                   bottom: 20px;
                   right: 20px;
                   background-color: #007BFF;

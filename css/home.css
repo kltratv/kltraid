@@ -171,33 +171,29 @@
               }
 
               #refresh-button {
-                  position: sticky;
-                  bottom: 0;
-                  background-color: #007BFF;
-                  color: white;
+                  position: fixed;
+                  bottom: 20px;
+                  right: 20px;
                   width: 50px;
                   height: 50px;
+                  background-color: #007BFF;
+                  color: white;
                   border-radius: 50%;
                   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
                   cursor: pointer;
                   display: flex;
                   justify-content: center;
                   align-items: center;
-                  z-index: 100;
-                  margin: 20px auto;
+                  z-index: 9999;
                   transition: background-color 0.3s ease;
               }
-
+              
               #refresh-button:hover {
                   background-color: #0056b3;
               }
-
+              
               #refresh-button i {
                   font-size: 24px;
-              }
-
-              #refresh-button {
-                  display: flex !important;
               }
 
               #refresh-button:focus,

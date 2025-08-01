@@ -205,6 +205,15 @@ body {
     /* pastikan tetap bulat saat active/focus */
 }
 
+/* Tombol All Sports */
+.menu-wrapper-bottom .allsports-button {
+    background-color: #007BFF; /* Biru utama */
+}
+
+.menu-wrapper-bottom .downloadapk-button:hover {
+    background-color: #0056b3; /* Biru saat hover */
+}
+
 /* Tombol Download APK */
 .menu-wrapper-bottom .downloadapk-button {
     background-color: #3DDC84;

@@ -1,0 +1,258 @@
+    * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Teko', sans-serif;
+        background-color: #121212;
+        color: white;
+    }
+
+    /* === HEADER === */
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: #222;
+        padding: 12px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        z-index: 1000;
+    }
+
+    .header-left {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .header-right {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .filter-dropdown {
+        background-color: #1e1e1e;
+        color: white;
+        border: 1px solid #444;
+        padding: 6px 10px;
+        border-radius: 4px;
+        font-size: 1em;
+    }
+
+    .logo {
+        width: 40px;
+        height: 40px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .brand-name {
+        font-size: 1.5em;
+        font-weight: bold;
+    }
+
+    .back-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+
+    .container {
+        padding: 50px 20px 20px;
+    }
+
+    .match-card {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #1e1e1e;
+        border-radius: 2px;
+        padding: 16px 20px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    .match-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .event-name {
+        font-size: 1.05em;
+        font-weight: bold;
+        color: #ddd;
+        margin-bottom: 4px;
+    }
+
+    .teams {
+        font-size: 0.95em;
+        color: #ccc;
+    }
+
+    .btn-group {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn {
+        background-color: #dc3545;
+        /* merah */
+        color: white;
+        border: none;
+        padding: 8px 14px;
+        border-radius: 4px;
+        font-size: 0.9em;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+        background-color: #c82333;
+        /* merah gelap untuk hover */
+    }
+
+    /* === MODAL === */
+    .modal {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.8);
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .modal-content {
+        background-color: #000;
+        border-radius: 8px;
+        max-width: 90%;
+        width: 800px;
+        position: relative;
+    }
+
+    .modal iframe {
+        width: 100%;
+        height: 450px;
+        border: none;
+        border-radius: 8px;
+    }
+
+    .close-btn {
+        position: absolute;
+        top: 8px;
+        right: 12px;
+        font-size: 30px;
+        color: #fff;
+        cursor: pointer;
+    }
+
+    .refresh-button {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 50%;
+        cursor: pointer;
+        z-index: 99999;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        transition: background-color 0.3s ease;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+    }
+
+    .refresh-button:hover {
+        background-color: #0056b3;
+    }
+
+    .refresh-button i {
+        pointer-events: none;
+    }
+
+    /* === RESPONSIVE === */
+    @media (max-width: 600px) {
+        .header {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .filter-dropdown {
+            font-size: 0.7em;
+        }
+
+        .container {
+            padding-top: 40px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+
+        .match-card {
+            flex-direction: row;
+            /* tetap baris, bukan kolom */
+            align-items: center;
+            padding: 10px 12px;
+            margin-bottom: 10px;
+        }
+
+        .event-name {
+            font-size: 0.9em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 40vw;
+        }
+
+        .teams {
+            font-size: 0.7em;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 40vw;
+        }
+
+        .btn {
+            font-size: 0.75em;
+            padding: 6px 10px;
+        }
+
+        .brand-name {
+            font-size: 1.2em;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+        }
+
+        .back-button {
+            font-size: 0.85em;
+            padding: 6px 12px;
+        }
+
+        .btn-group {
+            gap: 6px;
+        }
+
+        .modal iframe {
+            height: 240px;
+        }
+    }

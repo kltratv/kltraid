@@ -1,1 +1,54 @@
-(function(_0x256c60,_0x5cd2f1){const _0x1e3c94=_0x58f5,_0x462557=_0x256c60();while(!![]){try{const _0x3916a5=-parseInt(_0x1e3c94(0xbd))/0x1*(-parseInt(_0x1e3c94(0xae))/0x2)+-parseInt(_0x1e3c94(0xb1))/0x3+parseInt(_0x1e3c94(0xb7))/0x4*(parseInt(_0x1e3c94(0xba))/0x5)+parseInt(_0x1e3c94(0xbb))/0x6*(-parseInt(_0x1e3c94(0xc0))/0x7)+parseInt(_0x1e3c94(0xb4))/0x8*(parseInt(_0x1e3c94(0xac))/0x9)+-parseInt(_0x1e3c94(0xad))/0xa+parseInt(_0x1e3c94(0xb8))/0xb;if(_0x3916a5===_0x5cd2f1)break;else _0x462557['push'](_0x462557['shift']());}catch(_0x21ef4e){_0x462557['push'](_0x462557['shift']());}}}(_0x44a6,0x315f1),(function(){const _0x3cd165=_0x58f5;let _0x3a5e65=![];try{_0x3a5e65=window[_0x3cd165(0xaf)]!==window[_0x3cd165(0xab)];}catch(_0x2fa4c9){_0x3a5e65=!![];}function _0x23eb30(){const _0x588664=_0x3cd165,_0x1e867c=document['createElement'](_0x588664(0xb9));_0x1e867c[_0x588664(0xbf)][_0x588664(0xb2)]=_0x588664(0xbc);const _0xcb6e9=document['createElement']('div');_0xcb6e9['style'][_0x588664(0xb2)]='\x0a\x20\x20\x20\x20\x20\x20background:\x20#111;\x0a\x20\x20\x20\x20\x20\x20color:\x20#fff;\x0a\x20\x20\x20\x20\x20\x20max-width:\x2090%;\x0a\x20\x20\x20\x20\x20\x20width:\x20360px;\x0a\x20\x20\x20\x20\x20\x20padding:\x201.5rem;\x0a\x20\x20\x20\x20\x20\x20border-radius:\x2016px;\x0a\x20\x20\x20\x20\x20\x20box-shadow:\x200\x208px\x2024px\x20rgba(0,0,0,0.6);\x0a\x20\x20\x20\x20\x20\x20text-align:\x20center;\x0a\x20\x20\x20\x20\x20\x20font-family:\x20system-ui,\x20sans-serif;\x0a\x20\x20\x20\x20\x20\x20font-size:\x201rem;\x0a\x20\x20\x20\x20\x20\x20line-height:\x201.5;\x0a\x20\x20\x20\x20',_0xcb6e9[_0x588664(0xbe)]=_0x588664(0xb6),_0x1e867c[_0x588664(0xb0)](_0xcb6e9),document['body']['appendChild'](_0x1e867c);}window[_0x3cd165(0xb5)](_0x3cd165(0xb3),function(){_0x3a5e65&&_0x23eb30();});}()));function _0x58f5(_0x44141b,_0x532732){const _0x44a685=_0x44a6();return _0x58f5=function(_0x58f549,_0x144885){_0x58f549=_0x58f549-0xab;let _0x5ef59f=_0x44a685[_0x58f549];return _0x5ef59f;},_0x58f5(_0x44141b,_0x532732);}function _0x44a6(){const _0x910978=['\x0a\x20\x20\x20\x20\x20\x20position:\x20fixed;\x0a\x20\x20\x20\x20\x20\x20top:\x200;\x20left:\x200;\x0a\x20\x20\x20\x20\x20\x20width:\x20100%;\x20height:\x20100%;\x0a\x20\x20\x20\x20\x20\x20background-color:\x20rgba(0,\x200,\x200,\x200.65);\x0a\x20\x20\x20\x20\x20\x20backdrop-filter:\x20blur(4px);\x0a\x20\x20\x20\x20\x20\x20display:\x20flex;\x0a\x20\x20\x20\x20\x20\x20justify-content:\x20center;\x0a\x20\x20\x20\x20\x20\x20align-items:\x20center;\x0a\x20\x20\x20\x20\x20\x20z-index:\x202147483647;\x0a\x20\x20\x20\x20','243ZwMgMf','innerHTML','style','994791BkRYeN','self','333PcJrCK','3586190bLasgn','2860kUuRUg','top','appendChild','863373JFdUKR','cssText','load','55048KgnCRA','addEventListener','\x0a\x20\x20\x20\x20\x20\x20<div\x20style=\x22font-size:\x201.6rem;\x20margin-bottom:\x200.5rem;\x22>⚠️\x20Sandbox\x20Detected</div>\x0a\x20\x20\x20\x20\x20\x20<div\x20style=\x22margin-top:\x200.5rem;\x22>\x0a\x20\x20\x20\x20\x20\x20\x20\x20This\x20page\x20is\x20being\x20loaded\x20inside\x20an\x20<strong>iframe\x20with\x20sandbox</strong>\x20enabled.<br><br>\x0a\x20\x20\x20\x20\x20\x20\x20\x20Please\x20<strong\x20style=\x22color:#f66;\x22>remove\x20the\x20sandbox\x20attribute</strong>\x20to\x20display\x20this\x20content\x20properly.\x0a\x20\x20\x20\x20\x20\x20</div>\x0a\x20\x20\x20\x20','380nOIOdT','5287799ZQKPvZ','div','2635ywUvAL','12IqqItd'];_0x44a6=function(){return _0x910978;};return _0x44a6();}
+(function() {
+    let sandboxDetected = false;
+    try {
+        sandboxDetected = window.top !== window.self;
+    } catch (e) {
+        sandboxDetected = true;
+    }
+
+    function showWarningOverlay() {
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2147483647;
+    font-family: 'Teko', sans-serif;
+  `;
+        const box = document.createElement('div');
+        box.style.cssText = `
+    background: #1f1f1f;
+    color: #fff;
+    max-width: 90%;
+    width: 400px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.7);
+    text-align: center;
+    font-family: 'Teko', sans-serif;
+    font-size: 1.2rem;
+    letter-spacing: 0.5px;
+  `;
+        box.innerHTML = `
+    <div style="font-size: 2rem; color: #f87171; margin-bottom: 1rem;">
+      ⚠️ Sandbox Detected
+    </div>
+    <div style="font-size: 1rem; font-family: system-ui, sans-serif;">
+      This page is being loaded inside an <strong>iframe with sandbox</strong> enabled.<br><br>
+      Please <strong style="color:#f87171;">remove the sandbox attribute</strong> to display this content properly.
+    </div>
+  `;
+        overlay.appendChild(box);
+        document.body.appendChild(overlay);
+    }
+    window.addEventListener('load', function() {
+        if (sandboxDetected) {
+            showWarningOverlay();
+        }
+    });
+})();

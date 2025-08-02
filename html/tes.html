@@ -1,61 +1,45 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8" />
-  <title>Deteksi Sandbox</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <title>Deteksi Sandbox via Ping</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      background: black;
-      color: white;
+      background: #111;
+      color: #fff;
       font-family: sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       text-align: center;
+      padding-top: 80px;
     }
-    #warning {
-      color: red;
-      font-size: 1.4rem;
-      display: none;
+    .warn {
+      color: #f87171;
+      font-size: 1.8em;
     }
   </style>
 </head>
 <body>
-  <div>
-    <div>🧪 Sedang mendeteksi apakah halaman ini disandbox...</div>
-    <div id="warning">⚠️ Sandbox Detected</div>
-  </div>
+  <div id="status">🧪 Mengecek akses ping.gif...</div>
 
   <script>
-(function () {
-  let sandbox = false;
-  let crossOrigin = false;
+    (async function () {
+      const status = document.getElementById('status');
 
-  try {
-    window.top.location.href;
-  } catch (e) {
-    // Akses top.location gagal => bisa sandbox atau cross-origin
-    crossOrigin = true;
-  }
+      try {
+        const res = await fetch('./ping.gif', {
+          credentials: 'include',
+          cache: 'no-store'
+        });
 
-  try {
-    localStorage.setItem('sandbox_test', 'ok');
-    localStorage.removeItem('sandbox_test');
-  } catch (e) {
-    sandbox = true;
-  }
+        if (!res.ok || res.status >= 400) {
+          throw new Error("Blocked or sandboxed");
+        }
 
-  // Hanya tampil warning jika gagal akses window.top dan localStorage sekaligus
-  if (sandbox && !crossOrigin) {
-    document.getElementById('warning').style.display = 'block';
-  } else {
-    console.log('✅ Bukan sandbox (meskipun cross-origin mungkin sudah aktif)');
-  }
-})();
+        status.textContent = "✅ Halaman tidak disandbox (ping berhasil)";
+      } catch (err) {
+        status.innerHTML = "⚠️ <span class='warn'>Sandbox Terdeteksi (via fetch gagal)</span>";
+      }
+    })();
   </script>
 </body>
 </html>

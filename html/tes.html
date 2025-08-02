@@ -1,40 +1,44 @@
 <!DOCTYPE html>
-<html lang="id">
+<html>
 <head>
   <meta charset="UTF-8">
-  <title>Deteksi Sandbox via Ping</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sandbox Detector</title>
   <style>
     body {
       background: #111;
-      color: #fff;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
       font-family: sans-serif;
       text-align: center;
-      padding-top: 80px;
     }
-    .warn {
-      color: #f87171;
-      font-size: 1.8em;
+    #result {
+      font-size: 1.5em;
     }
   </style>
 </head>
 <body>
-  <div id="status">🧪 Mengecek akses ping.gif...</div>
+  <div id="result">🧪 Memeriksa status sandbox...</div>
 
   <script>
-      (async () => {
-        const statusEl = document.getElementById('status');
-        try {
-          const res = await fetch('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png');
-          if (res.ok) {
-            statusEl.innerHTML = '✅ Halaman tidak disandbox (ping eksternal berhasil)';
-          } else {
-            statusEl.innerHTML = '⚠️ Sandbox Detected (fetch eksternal gagal)';
-          }
-        } catch (e) {
-          statusEl.innerHTML = '⚠️ Sandbox Detected (error saat fetch)';
-        }
-      })();
+    async function detectSandbox() {
+      const resEl = document.getElementById('result');
+      try {
+        const res = await fetch('https://kltraid.my.id/vip/ping.gif', {
+          mode: 'no-cors', // supaya gak error meski blocked
+          cache: 'no-store'
+        });
+
+        // Meskipun status tidak bisa dicek karena `no-cors`, kita deteksi via error
+        resEl.innerHTML = '✅ Tidak disandbox (resource dapat diakses)';
+      } catch (err) {
+        resEl.innerHTML = '⚠️ Sandbox terdeteksi (gagal akses resource)';
+      }
+    }
+
+    detectSandbox();
   </script>
 </body>
 </html>

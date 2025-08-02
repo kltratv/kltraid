@@ -12,23 +12,32 @@
     overlay.style.cssText = `
       position: fixed;
       top: 0; left: 0; width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.95);
+      background-color: rgba(0, 0, 0, 0.6);
+      backdrop-filter: blur(4px);
       color: white;
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 2rem;
-      z-index: 2147483647;
+      font-size: 4vw;
+      line-height: 1.5;
+      z-index: 999999;
       text-align: center;
       padding: 2rem;
-      pointer-events: all;
+      pointer-events: none;
     `;
 
     overlay.innerHTML = `
-      <div>
-        ⚠️ <strong>Sandbox Detected</strong><br><br>
+      <div style="
+        background: rgba(0,0,0,0.85);
+        padding: 1.5rem 2rem;
+        border-radius: 12px;
+        max-width: 90%;
+        pointer-events: auto;
+        box-shadow: 0 0 20px rgba(0,0,0,0.8);
+      ">
+        ⚠️ <strong style="font-size: 1.2em;">Sandbox Detected</strong><br><br>
         This page is being loaded inside an <strong>iframe with sandbox</strong> enabled.<br>
-        Please <strong>remove the sandbox attribute</strong> if you wish to embed this content properly.
+        Please <strong>remove the sandbox attribute</strong> to display this content properly.
       </div>
     `;
 
@@ -37,7 +46,7 @@
 
   window.addEventListener('load', function () {
     if (sandboxDetected) {
-      showWarningOverlay("⚠️ Sandbox is enabled. Please remove the sandbox attribute to view this content.");
+      showWarningOverlay();
     }
   });
 })();

@@ -27,11 +27,10 @@
   const resEl = document.getElementById('result');
   try {
     const res = await fetch('https://kltraid.my.id/vip/ping.gif', {
-      // pakai default mode (CORS)
       cache: 'no-store',
-      credentials: 'include'
+      credentials: 'omit'
     });
-
+    
     if (res.ok) {
       resEl.innerText = '✅ Tidak disandbox (resource diakses)';
     } else {

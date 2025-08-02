@@ -22,23 +22,25 @@
 <body>
   <div id="result">🧪 Memeriksa status sandbox...</div>
 
-  <script>
-    async function detectSandbox() {
-      const resEl = document.getElementById('result');
-      try {
-        const res = await fetch('https://kltraid.my.id/vip/ping.gif', {
-          mode: 'no-cors', // supaya gak error meski blocked
-          cache: 'no-store'
-        });
+<script>
+(async function() {
+  const resEl = document.getElementById('result');
+  try {
+    const res = await fetch('https://kltraid.my.id/vip/ping.gif', {
+      // pakai default mode (CORS)
+      cache: 'no-store',
+      credentials: 'include'
+    });
 
-        // Meskipun status tidak bisa dicek karena `no-cors`, kita deteksi via error
-        resEl.innerHTML = '✅ Tidak disandbox (resource dapat diakses)';
-      } catch (err) {
-        resEl.innerHTML = '⚠️ Sandbox terdeteksi (gagal akses resource)';
-      }
+    if (res.ok) {
+      resEl.innerText = '✅ Tidak disandbox (resource diakses)';
+    } else {
+      throw new Error('fetch blocked');
     }
-
-    detectSandbox();
-  </script>
+  } catch (e) {
+    resEl.innerText = '⚠️ Sandbox terdeteksi (fetch resource gagal)';
+  }
+})();
+</script>
 </body>
 </html>

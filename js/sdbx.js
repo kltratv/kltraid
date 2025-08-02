@@ -2,21 +2,10 @@
   let sandboxed = false;
 
   try {
-    // Coba tes apakah localStorage dan document.cookie dapat digunakan
-    localStorage.setItem('sandboxTest', '1');
-    const testCookie = document.cookie;
-
-    // Jika tidak bisa akses window.top (tapi domain beda), jangan langsung anggap sandbox
-    // Kita hanya tandai sandboxed jika fitur browser nonaktif
-    if (!localStorage.getItem('sandboxTest') || typeof testCookie === 'undefined') {
-      sandboxed = true;
-    }
-
-    // Cleanup
-    localStorage.removeItem('sandboxTest');
-
+    // Sandbox tanpa "allow-top-navigation" akan blok ini
+    window.top.location.href;
+    // Kalau berhasil, aman
   } catch (e) {
-    // Gagal akses property penting → kemungkinan besar sandbox
     sandboxed = true;
   }
 
@@ -36,14 +25,12 @@
       padding: 20px;
       z-index: 99999;
     `;
-
     overlay.innerHTML = `
       <div>
-        <h2>⚠️ Halaman ini dibatasi sandbox</h2>
-        <p>Jika Anda meng-iframe halaman ini, harap jangan gunakan atribut <code>sandbox</code> agar fitur berjalan dengan baik.</p>
+        <h2>⚠️ Halaman dibatasi sandbox</h2>
+        <p>Mohon hapus atribut <code>sandbox</code> dari tag <code>iframe</code> agar halaman berfungsi optimal.</p>
       </div>
     `;
-
     document.body.appendChild(overlay);
   }
 })();

@@ -1,36 +1,51 @@
+<script>
 (function () {
-  function isSandboxed() {
-    try {
-      // Jika berhasil akses → bukan sandbox
-      window.top.location.href;
-      return false;
-    } catch (e) {
-      // Jika tidak bisa akses dan ini dalam iframe → sandbox
-      return window.top !== window.self;
+  let sandboxed = false;
+
+  try {
+    // Coba tes apakah localStorage dan document.cookie dapat digunakan
+    localStorage.setItem('sandboxTest', '1');
+    const testCookie = document.cookie;
+
+    // Jika tidak bisa akses window.top (tapi domain beda), jangan langsung anggap sandbox
+    // Kita hanya tandai sandboxed jika fitur browser nonaktif
+    if (!localStorage.getItem('sandboxTest') || typeof testCookie === 'undefined') {
+      sandboxed = true;
     }
+
+    // Cleanup
+    localStorage.removeItem('sandboxTest');
+
+  } catch (e) {
+    // Gagal akses property penting → kemungkinan besar sandbox
+    sandboxed = true;
   }
 
-  if (isSandboxed()) {
+  if (sandboxed) {
     const overlay = document.createElement('div');
     overlay.style.cssText = `
       position: fixed;
       top: 0; left: 0;
       width: 100vw; height: 100vh;
-      background: rgba(0,0,0,0.8);
+      background: rgba(0, 0, 0, 0.8);
+      color: white;
+      font-family: sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      font-family: 'Teko', sans-serif;
-      font-size: 1.2rem;
-      z-index: 999999;
+      text-align: center;
+      padding: 20px;
+      z-index: 99999;
     `;
+
     overlay.innerHTML = `
-      <div style="background:#1f1f1f; padding:2rem; border-radius:12px; text-align:center; max-width:90%;">
-        ⚠️ <strong>Sandbox iframe detected</strong><br><br>
-        Please <code>remove sandbox</code> from the iframe to allow full functionality and ads to load properly.
+      <div>
+        <h2>⚠️ Halaman ini dibatasi sandbox</h2>
+        <p>Jika Anda meng-iframe halaman ini, harap jangan gunakan atribut <code>sandbox</code> agar fitur berjalan dengan baik.</p>
       </div>
     `;
+
     document.body.appendChild(overlay);
   }
 })();
+</script>

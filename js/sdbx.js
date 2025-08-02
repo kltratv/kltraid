@@ -1,8 +1,8 @@
 (function () {
   let sandboxDetected = false;
+
   try {
-    const topTest = window.top.location.href;
-    window.top.location = window.top.location;
+    sandboxDetected = window.top !== window.self;
   } catch (e) {
     sandboxDetected = true;
   }

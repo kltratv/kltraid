@@ -1,4 +1,3 @@
-<script>
 (function () {
   let sandboxed = false;
 
@@ -48,4 +47,3 @@
     document.body.appendChild(overlay);
   }
 })();
-</script>

@@ -2,63 +2,62 @@
 <html lang="id">
 <head>
   <meta charset="UTF-8" />
+  <title>Deteksi Sandbox</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Iframe Embed Test</title>
   <style>
-    body, html {
+    body {
       margin: 0;
       padding: 0;
-      height: 100%;
-    }
-
-    #sandbox-warning {
-      position: fixed;
-      top: 0; left: 0;
-      width: 100vw; height: 100vh;
-      background: rgba(0, 0, 0, 0.85);
+      background: black;
       color: white;
-      display: none;
-      justify-content: center;
+      font-family: sans-serif;
+      display: flex;
       align-items: center;
-      z-index: 99999;
+      justify-content: center;
+      height: 100vh;
       text-align: center;
-      padding: 20px;
-      box-sizing: border-box;
-      font-family: 'Segoe UI', sans-serif;
     }
-
-    #sandbox-warning h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-    }
-
-    #sandbox-warning p {
-      font-size: 1rem;
-      max-width: 500px;
+    #warning {
+      color: red;
+      font-size: 1.4rem;
+      display: none;
     }
   </style>
 </head>
 <body>
-
-<div id="sandbox-warning">
   <div>
-    <h2>⚠️ Terjadi Pembatasan Akses</h2>
-    <p>Halaman ini dimuat di dalam <strong>iframe</strong> dengan pengaturan keamanan yang ketat (mungkin karena atribut <code>sandbox</code>).</p>
-    <p>Jika Anda meng-embed halaman ini, harap <strong>jangan gunakan atribut <code>sandbox</code></strong> agar fungsi berjalan dengan baik.</p>
+    <div>🧪 Sedang mendeteksi apakah halaman ini disandbox...</div>
+    <div id="warning">⚠️ Sandbox Detected</div>
   </div>
-</div>
 
-<script>
-(function () {
-  try {
-    // Coba akses top.location.href
-    const href = window.top.location.href;
-  } catch (e) {
-    // Gagal akses: tampilkan overlay
-    document.getElementById('sandbox-warning').style.display = 'flex';
-  }
-})();
-</script>
+  <script>
+    (function () {
+      let sandbox = false;
 
+      try {
+        const check = window.top.location.href; // bisa gagal kalau sandbox or cross-origin
+      } catch (e) {
+        sandbox = true;
+      }
+
+      try {
+        localStorage.setItem('test', 'ok');
+        localStorage.removeItem('test');
+      } catch (e) {
+        sandbox = true;
+      }
+
+      if (document.referrer === '') {
+        sandbox = true;
+      }
+
+      if (sandbox) {
+        document.getElementById('warning').style.display = 'block';
+        console.warn('⚠️ Sandbox likely active!');
+      } else {
+        console.log('✅ Sandbox not detected');
+      }
+    })();
+  </script>
 </body>
 </html>

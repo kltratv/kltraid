@@ -31,33 +31,31 @@
   </div>
 
   <script>
-    (function () {
-      let sandbox = false;
+(function () {
+  let sandbox = false;
+  let crossOrigin = false;
 
-      try {
-        const check = window.top.location.href; // bisa gagal kalau sandbox or cross-origin
-      } catch (e) {
-        sandbox = true;
-      }
+  try {
+    window.top.location.href;
+  } catch (e) {
+    // Akses top.location gagal => bisa sandbox atau cross-origin
+    crossOrigin = true;
+  }
 
-      try {
-        localStorage.setItem('test', 'ok');
-        localStorage.removeItem('test');
-      } catch (e) {
-        sandbox = true;
-      }
+  try {
+    localStorage.setItem('sandbox_test', 'ok');
+    localStorage.removeItem('sandbox_test');
+  } catch (e) {
+    sandbox = true;
+  }
 
-      if (document.referrer === '') {
-        sandbox = true;
-      }
-
-      if (sandbox) {
-        document.getElementById('warning').style.display = 'block';
-        console.warn('⚠️ Sandbox likely active!');
-      } else {
-        console.log('✅ Sandbox not detected');
-      }
-    })();
+  // Hanya tampil warning jika gagal akses window.top dan localStorage sekaligus
+  if (sandbox && !crossOrigin) {
+    document.getElementById('warning').style.display = 'block';
+  } else {
+    console.log('✅ Bukan sandbox (meskipun cross-origin mungkin sudah aktif)');
+  }
+})();
   </script>
 </body>
 </html>

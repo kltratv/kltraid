@@ -2,55 +2,45 @@
   let sandboxDetected = false;
 
   try {
-    sandboxDetected = window.top !== window.self;
+    // Deteksi sandbox hanya jika dibuka dari iframe
+    if (window.top !== window.self) {
+      // Test akses — kalau gagal berarti sandbox
+      try {
+        window.top.location.href;
+        sandboxDetected = false;
+      } catch (e) {
+        sandboxDetected = true;
+      }
+    }
   } catch (e) {
     sandboxDetected = true;
   }
 
-  function showWarningOverlay() {
+  function showWarningOverlay(message) {
     const overlay = document.createElement('div');
     overlay.style.cssText = `
       position: fixed;
       top: 0; left: 0;
       width: 100%; height: 100%;
-      background-color: rgba(0, 0, 0, 0.65);
-      backdrop-filter: blur(4px);
+      background: rgba(0,0,0,0.92);
       display: flex;
       justify-content: center;
       align-items: center;
-      z-index: 2147483647;
-    `;
-
-    const box = document.createElement('div');
-    box.style.cssText = `
-      background: #111;
-      color: #fff;
-      max-width: 90%;
-      width: 360px;
-      padding: 1.5rem;
-      border-radius: 16px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      z-index: 999999;
+      color: white;
+      font-size: 1.3rem;
       text-align: center;
-      font-family: system-ui, sans-serif;
-      font-size: 1rem;
-      line-height: 1.5;
+      padding: 2rem;
+      font-family: sans-serif;
     `;
-
-    box.innerHTML = `
-      <div style="font-size: 1.6rem; margin-bottom: 0.5rem;">⚠️ Sandbox Detected</div>
-      <div style="margin-top: 0.5rem;">
-        This page is being loaded inside an <strong>iframe with sandbox</strong> enabled.<br><br>
-        Please <strong style="color:#f66;">remove the sandbox attribute</strong> to display this content properly.
-      </div>
-    `;
-
-    overlay.appendChild(box);
+    overlay.innerHTML = `<div>⚠️ This page is inside a sandboxed iframe. Please remove <code>sandbox</code> to view content properly.</div>`;
     document.body.appendChild(overlay);
   }
 
-  window.addEventListener('load', function () {
+  window.addEventListener('load', () => {
+    console.log("[sdbx.js] Sandbox Detected?", sandboxDetected); // DEBUG
     if (sandboxDetected) {
-      showWarningOverlay();
+      showWarningOverlay("⚠️ This page is loaded inside a sandboxed iframe. Please remove the sandbox attribute to display it properly.");
     }
   });
 })();

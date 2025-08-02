@@ -22,24 +22,19 @@
   <div id="status">🧪 Mengecek akses ping.gif...</div>
 
   <script>
-    (async function () {
-      const status = document.getElementById('status');
-
-      try {
-        const res = await fetch('./ping.gif', {
-          credentials: 'include',
-          cache: 'no-store'
-        });
-
-        if (!res.ok || res.status >= 400) {
-          throw new Error("Blocked or sandboxed");
+      (async () => {
+        const statusEl = document.getElementById('status');
+        try {
+          const res = await fetch('https://upload.wikimedia.org/wikipedia/commons/4/47/PNG_transparency_demonstration_1.png');
+          if (res.ok) {
+            statusEl.innerHTML = '✅ Halaman tidak disandbox (ping eksternal berhasil)';
+          } else {
+            statusEl.innerHTML = '⚠️ Sandbox Detected (fetch eksternal gagal)';
+          }
+        } catch (e) {
+          statusEl.innerHTML = '⚠️ Sandbox Detected (error saat fetch)';
         }
-
-        status.textContent = "✅ Halaman tidak disandbox (ping berhasil)";
-      } catch (err) {
-        status.innerHTML = "⚠️ <span class='warn'>Sandbox Terdeteksi (via fetch gagal)</span>";
-      }
-    })();
+      })();
   </script>
 </body>
 </html>

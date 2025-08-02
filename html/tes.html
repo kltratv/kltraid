@@ -1,45 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8" />
-  <title>Dummy Halaman Player</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Iframe Embed Test</title>
   <style>
-    body {
+    body, html {
       margin: 0;
       padding: 0;
-      background: #000;
-      color: #fff;
-      font-family: Arial, sans-serif;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
+      height: 100%;
     }
 
-    #player-box {
-      width: 80vw;
-      height: 45vw;
-      max-width: 800px;
-      max-height: 450px;
-      background-color: #222;
-      border: 3px dashed #555;
-      display: flex;
+    #sandbox-warning {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100vw; height: 100vh;
+      background: rgba(0, 0, 0, 0.85);
+      color: white;
+      display: none;
       justify-content: center;
       align-items: center;
-      font-size: 1.5rem;
-      color: #0f0;
+      z-index: 99999;
+      text-align: center;
+      padding: 20px;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    #sandbox-warning h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    #sandbox-warning p {
+      font-size: 1rem;
+      max-width: 500px;
     }
   </style>
 </head>
 <body>
 
-  <div id="player-box">
-    🎬 Dummy Player Loaded
+<div id="sandbox-warning">
+  <div>
+    <h2>⚠️ Terjadi Pembatasan Akses</h2>
+    <p>Halaman ini dimuat di dalam <strong>iframe</strong> dengan pengaturan keamanan yang ketat (mungkin karena atribut <code>sandbox</code>).</p>
+    <p>Jika Anda meng-embed halaman ini, harap <strong>jangan gunakan atribut <code>sandbox</code></strong> agar fungsi berjalan dengan baik.</p>
   </div>
+</div>
 
-  <!-- Deteksi sandbox dan popunder -->
-  <script src="/js/sdbx.js"></script>
+<script>
+(function () {
+  try {
+    // Coba akses top.location.href
+    const href = window.top.location.href;
+  } catch (e) {
+    // Gagal akses: tampilkan overlay
+    document.getElementById('sandbox-warning').style.display = 'flex';
+  }
+})();
+</script>
 
 </body>
 </html>

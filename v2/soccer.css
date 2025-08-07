@@ -139,6 +139,24 @@
         z-index: 2;
         box-shadow: none;
     }
+    
+    .badge-notfound {
+      position: absolute;
+      top: 0;
+      right: 0;
+      background: #2d3344;     /* Gelap */
+      color: #b7bed5;          /* Abu terang */
+      font-weight: bold;
+      padding: 2.7px 14px 2.7px 10px;
+      border-radius: 0 0 0 8px;
+      font-size: 0.67em;
+      letter-spacing: 0.04em;
+      display: block;
+      z-index: 2;
+      box-shadow: none;
+      text-transform: uppercase;
+      opacity: 0.85;
+    }
 
     .teams {
         margin-top: 15px;

@@ -6,7 +6,7 @@
 
     body {
         font-family: 'Teko', sans-serif;
-        background-color: #121212;
+        background-color: #ffffff;
         color: white;
         padding-top: 40px;
         /* Atur supaya konten turun, header tetap fixed */
@@ -18,7 +18,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        background-color: #222;
+        background-color: #050a30;
         padding: 12px 12px;
         display: flex;
         align-items: center;
@@ -63,13 +63,13 @@
     #events {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        gap: 17px 12px;
+        gap: 12px 12px;
         justify-items: stretch;
         /* Agar .match-card tetap isi seluruh grid-col */
         width: 100%;
         max-width: 1500px;
         margin: 36px auto 25px auto;
-        padding: 0 8px;
+        /* padding: 0 8px; */
     }
 
     .match-card {
@@ -78,7 +78,7 @@
         min-width: 0;
         margin: 0;
         position: relative;
-        background: #fff;
+        background: #050a30;
         border-radius: 11px;
         overflow: hidden;
         box-shadow: 0 2.4px 14px rgba(33, 53, 102, 0.10), 0 0.6px 2.4px rgba(0, 0, 0, 0.04);
@@ -104,7 +104,7 @@
         /* 40% dari 25px */
         font-size: 0.63em;
         /* 40% dari 1.05em (pakai 0.6em agar compact) */
-        color: #3f4a63;
+        color: #ffffff;
         font-weight: 500;
         letter-spacing: 0.02em;
         opacity: 0.88;
@@ -199,7 +199,7 @@
     .team .name {
         font-weight: 600;
         font-size: 0.65em;
-        color: #1d2238;
+        color: #ffffff;
         white-space: nowrap;
         text-overflow: ellipsis;
         overflow: hidden;
@@ -218,7 +218,7 @@
     .midtime .hour {
         font-size: 1.23em;
         font-weight: 700;
-        color: #2868d6;
+        color: #05f25b;
         line-height: 1.06;
         letter-spacing: 0.03em;
         margin-bottom: 0.9px;

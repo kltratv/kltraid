@@ -118,7 +118,8 @@
     /* 5 kolom: Waktu | Match | League | Sport | Aksi */
     .thead {
         display: grid;
-        grid-template-columns: 180px 1fr 280px 160px 160px;
+        grid-template-columns: 160px minmax(300px, 2fr) 240px 220px 140px minmax(80px, 1fr);
+        /* <— diupdate */
         padding: 8px 10px;
         font-size: 1.05rem;
         color: #cbd1d9;
@@ -137,7 +138,8 @@
 
     .row {
         display: grid;
-        grid-template-columns: 180px 1fr 280px 160px 160px;
+        grid-template-columns: 160px minmax(300px, 2fr) 240px 220px 140px minmax(80px, 1fr);
+        /* <— diupdate */
         align-items: center;
         padding: 8px 10px;
         border-bottom: 1px solid var(--border);
@@ -233,7 +235,8 @@
     /* ========== SKELETON ========== */
     .sk {
         display: grid;
-        grid-template-columns: 180px 1fr 280px 160px 160px;
+        grid-template-columns: 160px minmax(300px, 2fr) 240px 220px 140px minmax(80px, 1fr);
+        /* <— diupdate */
         gap: 0;
         padding: 8px 10px;
         border-bottom: 1px solid var(--border);
@@ -268,11 +271,11 @@
 
         .row {
             display: grid;
-            grid-template-columns: 1fr auto;
+            grid-template-columns: 1fr minmax(120px, 40%);
             grid-template-areas:
                 "match actions"
                 "time  league"
-                "sport sport";
+                "sport detail";
             padding: 12px;
             gap: 8px 10px;
             border-left: 6px solid #1b1c20;
@@ -284,10 +287,12 @@
             background: var(--row)
         }
 
-        .cell {
+        .cell.sport {
+            grid-area: sport;
+            color: #cfd5df;
             white-space: nowrap;
             overflow: hidden;
-            text-overflow: ellipsis
+            text-overflow: ellipsis;
         }
 
         .cell.match {
@@ -326,6 +331,15 @@
         .cell.sport {
             grid-area: sport;
             color: #cfd5df
+        }
+
+        .cell.detail {
+            grid-area: detail;
+            color: #d3d7de;
+            text-align: right;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
 
         .cutline {

@@ -454,12 +454,21 @@ body {
 }
 
 h2 {
-    font-size: 0.9em;
-    margin-top: 0;
-    padding-bottom: 5px;
-    border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
+  font-size: 0.9em;
+  margin-top: 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.league-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: inline-block;
+  max-width: 180px; /* Sesuaikan dengan lebar yang kamu mau */
 }
 
 .sport-icon {

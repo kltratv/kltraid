@@ -460,7 +460,7 @@ h2 {
   border-bottom: 1px solid #ddd;
   display: flex;
   align-items: center;
-  gap: 6px;
+  /* gap: 6px; */
 }
 
 .league-name {

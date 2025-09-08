@@ -43,50 +43,43 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
-                padding: 30px;
+                padding: 20px;
                 text-align: center;
-                max-width: 500px;
-                border-radius: 16px;
-                margin: 20px;
-                min-height: 280px;
-                font-size: 1.2em;
+                max-width: 250px;
+                border-radius: 12px;
+                margin: 20px auto;
+                min-height: 180px;
+                font-size: 0.95em;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                border: 2px solid #444;
-                background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
-                box-shadow: 0 0 25px rgba(0, 255, 170, 0.15), 0 0 5px rgba(255, 255, 255, 0.1) inset;
-                color: #eeeeee;
-                transition: all 0.3s ease;
+                border: 1px solid #444;
+                background: #1c1c1c;
+                color: #e0e0e0;
+                box-shadow: 0 0 15px rgba(0, 255, 170, 0.15);
             ">
-                <h2 style="
-                    margin-bottom: 15px;
-                    font-weight: 800;
-                    font-size: 1.8em;
-                    color: #00ffcc;
-                    text-shadow: 0 0 8px rgba(0, 255, 170, 0.6);
-                ">🚫 AdBlocker Detected!</h2>
-                
-                <p style="margin-bottom: 20px; color: #cccccc;">
-                    We rely on ads to keep this site free. Please disable your ad blocker or whitelist our domain 🙏
-                </p>
-                
+                <h3 style="color: #00ffcc; margin-bottom: 10px;">Disabled Your Adblock</h3>
+                <p style="margin: 4px 0;">Don't Use DNS</p>
+                <p style="margin: 4px 0;">Try Using Chrome</p>
+        
                 <button id="refresh-page" style="
-                    padding: 12px 25px;
-                    font-size: 16px;
-                    font-weight: 600;
+                    margin-top: 15px;
+                    padding: 8px 16px;
+                    font-size: 14px;
+                    font-weight: 500;
                     cursor: pointer;
                     background: #00ffcc;
                     color: #000;
                     border: none;
-                    border-radius: 8px;
-                    box-shadow: 0 0 12px rgba(0, 255, 170, 0.4);
-                    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
+                    border-radius: 6px;
+                    box-shadow: 0 0 10px rgba(0,255,170,0.3);
+                    transition: all 0.2s ease;
                 " 
-                onmouseover="this.style.background='#00e6b8'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 18px rgba(0,255,170,0.6)'"
-                onmouseout="this.style.background='#00ffcc'; this.style.transform='scale(1)'; this.style.boxShadow='0 0 12px rgba(0,255,170,0.4)'">
-                    ✅ I Disabled AdBlock
+                onmouseover="this.style.background='#00e6b8'; this.style.transform='scale(1.05)'"
+                onmouseout="this.style.background='#00ffcc'; this.style.transform='scale(1)'">
+                    Reload
                 </button>
             </div>
         `;
+
         document.body.appendChild(overlay);
 
         document.getElementById("refresh-page").addEventListener("click", function () {

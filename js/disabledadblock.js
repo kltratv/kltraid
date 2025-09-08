@@ -37,45 +37,49 @@
         overlay.style.justifyContent = "center";
         overlay.style.alignItems = "center";
         overlay.style.zIndex = "9999";
-        const lang = navigator.language || navigator.userLanguage;
-        const isIndo = lang.startsWith('id');
+        const lang = (navigator.language || navigator.userLanguage).toLowerCase();
         
         // Translation map
-        const content = {
-            title: isIndo ? 'Nonaktifkan Adblock Anda' : 'Disabled Your Adblock',
-            message: isIndo ? 'Jangan gunakan DNS & Coba gunakan Chrome' : "Don't Use DNS & Try Using Chrome",
-            button: isIndo ? 'Muat Ulang' : 'Reload'
+        const translations = {
+            en: { title: "Disabled Your Adblock", message: "Don't Use DNS", button: "Reload" },
+            id: { title: "Nonaktifkan Adblock Anda", message: "Jangan Gunakan DNS", button: "Muat Ulang" },
+            es: { title: "Desactiva tu Adblock", message: "No uses DNS", button: "Recargar" },
+            fr: { title: "Désactivez votre Adblock", message: "N'utilisez pas DNS", button: "Recharger" },
+            de: { title: "Deaktiviere deinen Adblocker", message: "Verwenden Sie kein DNS", button: "Neu laden" },
+            pt: { title: "Desative seu Adblock", message: "Não use DNS", button: "Recarregar" },
+            ja: { title: "Adblockを無効にしてください", message: "DNSを使用しないでください", button: "再読み込み" },
+            ko: { title: "Adblock을 비활성화하세요", message: "DNS를 사용하지 마세요", button: "새로고침" },
+            zh: { title: "请禁用广告拦截器", message: "不要使用DNS", button: "重新加载" }
         };
+        
+        // Use the first 2 characters of lang to get translation
+        const locale = lang.slice(0, 2);
+        const content = translations[locale] || translations['en'];
         
         overlay.innerHTML = `
             <div style="
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: center;
                 padding: 20px;
                 text-align: center;
                 max-width: 250px;
                 border-radius: 12px;
                 margin: 20px auto;
-                min-height: 100px;
-                font-size: 0.95em;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                border: 1px solid #444;
                 background: #1c1c1c;
                 color: #e0e0e0;
-                box-shadow: 0 0 15px rgba(0, 255, 170, 0.15);
+                box-shadow: 0 0 15px rgba(0, 255, 170, 0.1);
             ">
-                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 10px; color: #00ffcc;">
+                <div style="font-size: 1.3em; font-weight: bold; color: #00ffcc; margin-bottom: 6px;">
                     ${content.title}
                 </div>
-                <div style="margin-bottom: 15px;">
+                <div style="font-size: 0.95em; margin-bottom: 20px;">
                     ${content.message}
                 </div>
                 <button id="refresh-page" style="
                     padding: 8px 16px;
                     font-size: 14px;
-                    font-weight: 500;
                     cursor: pointer;
                     background: #00ffcc;
                     color: #000;
@@ -83,15 +87,13 @@
                     border-radius: 6px;
                     box-shadow: 0 0 10px rgba(0,255,170,0.3);
                     transition: all 0.2s ease;
-                " 
+                "
                 onmouseover="this.style.background='#00e6b8'; this.style.transform='scale(1.05)'"
                 onmouseout="this.style.background='#00ffcc'; this.style.transform='scale(1)'">
                     ${content.button}
                 </button>
             </div>
         `;
-
-
         document.body.appendChild(overlay);
 
         document.getElementById("refresh-page").addEventListener("click", function () {

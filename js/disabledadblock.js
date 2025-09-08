@@ -74,12 +74,12 @@
                 <div style="font-size: 1.3em; font-weight: bold; color: #00ffcc; margin-bottom: 6px;">
                     ${content.title}
                 </div>
-                <div style="font-size: 0.95em; margin-bottom: 20px;">
+                <div style="font-size: 0.90em; margin-bottom: 20px;">
                     ${content.message}
                 </div>
                 <button id="refresh-page" style="
                     padding: 8px 16px;
-                    font-size: 14px;
+                    font-size: 10px;
                     cursor: pointer;
                     background: #00ffcc;
                     color: #000;

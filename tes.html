@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <title>🔥 Halaman Terproteksi</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body style="font-family:sans-serif; text-align:center; padding-top: 10%;">
+  <h1>✅ DevTools Belum Dibuka</h1>
+  <p>Jika kamu melihat ini, berarti DevTools belum aktif atau belum terdeteksi.</p>
+  <div id="marker">🔒 HALAMAN AMAN</div>
+
+  <script>
+    // Loop deteksi DevTools pakai debugger trick
+    setInterval(() => {
+      const before = performance.now();
+      debugger;
+      const after = performance.now();
+      if (after - before > 100) {
+        location.replace("https://www.google.com");
+      }
+    }, 500);
+  </script>
+</body>
+</html>

@@ -38,10 +38,53 @@
         overlay.style.alignItems = "center";
         overlay.style.zIndex = "9999";
         overlay.innerHTML = `
-            <div style="display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 20px; text-align: center; max-width: 500px; border-radius: 10px; margin: 20px; min-height: 250px; font-size: 1.2em; font-family: system-ui; border: 5px solid #b3b3b3; background: #ffffff; color: black;">
-                <h2 style="margin: 0px 0px 15px; font-weight: 700;">AdBlocker Detected!</h2>
-                <p>We rely on ads to keep our website free. Please disable your ad blocker or whitelist our site.</p>
-                <button id="refresh-page" style="padding: 10px 20px; font-size: 16px; cursor: pointer; background: #1a73e8; color: white; border-radius: 10px; margin: 15px 0px 0px;">I Disabled AdBlock</button>
+            <div style="
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 30px;
+                text-align: center;
+                max-width: 500px;
+                border-radius: 20px;
+                margin: 20px;
+                min-height: 280px;
+                font-size: 1.2em;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                border: 4px solid #d1d1d1;
+                background: linear-gradient(135deg, #ffffff, #f2f2f2);
+                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+                color: #333;
+                transition: all 0.3s ease;
+            ">
+                <h2 style="
+                    margin-bottom: 15px;
+                    font-weight: 800;
+                    font-size: 1.8em;
+                    color: #d32f2f;
+                    text-shadow: 1px 1px #fff;
+                ">🚫 AdBlocker Detected!</h2>
+                
+                <p style="margin-bottom: 20px;">
+                    Ads help us keep this site free. Please consider disabling your ad blocker or adding us to your whitelist 💖
+                </p>
+                
+                <button id="refresh-page" style="
+                    padding: 12px 25px;
+                    font-size: 16px;
+                    font-weight: 600;
+                    cursor: pointer;
+                    background: #4CAF50;
+                    color: white;
+                    border: none;
+                    border-radius: 8px;
+                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                    transition: background 0.3s ease, transform 0.2s ease;
+                " 
+                onmouseover="this.style.background='#43a047'; this.style.transform='scale(1.05)'"
+                onmouseout="this.style.background='#4CAF50'; this.style.transform='scale(1)'">
+                    ✅ I Disabled AdBlock
+                </button>
             </div>
         `;
         document.body.appendChild(overlay);

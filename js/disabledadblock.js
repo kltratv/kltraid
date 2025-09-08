@@ -37,6 +37,16 @@
         overlay.style.justifyContent = "center";
         overlay.style.alignItems = "center";
         overlay.style.zIndex = "9999";
+        const lang = navigator.language || navigator.userLanguage;
+        const isIndo = lang.startsWith('id');
+        
+        // Translation map
+        const content = {
+            title: isIndo ? 'Nonaktifkan Adblock Anda' : 'Disabled Your Adblock',
+            message: isIndo ? 'Jangan gunakan DNS & Coba gunakan Chrome' : "Don't Use DNS & Try Using Chrome",
+            button: isIndo ? 'Muat Ulang' : 'Reload'
+        };
+        
         overlay.innerHTML = `
             <div style="
                 display: flex;
@@ -56,12 +66,13 @@
                 color: #e0e0e0;
                 box-shadow: 0 0 15px rgba(0, 255, 170, 0.15);
             ">
-                <h3 style="color: #00ffcc; margin-bottom: 10px;">Disabled Your Adblock</h3>
-                <p style="margin: 4px 0;">Don't Use DNS</p>
-                <p style="margin: 4px 0;">Try Using Chrome</p>
-        
+                <div style="font-size: 1.3em; font-weight: bold; margin-bottom: 10px; color: #00ffcc;">
+                    ${content.title}
+                </div>
+                <div style="margin-bottom: 15px;">
+                    ${content.message}
+                </div>
                 <button id="refresh-page" style="
-                    margin-top: 15px;
                     padding: 8px 16px;
                     font-size: 14px;
                     font-weight: 500;
@@ -75,10 +86,11 @@
                 " 
                 onmouseover="this.style.background='#00e6b8'; this.style.transform='scale(1.05)'"
                 onmouseout="this.style.background='#00ffcc'; this.style.transform='scale(1)'">
-                    Reload
+                    ${content.button}
                 </button>
             </div>
         `;
+
 
         document.body.appendChild(overlay);
 

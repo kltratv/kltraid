@@ -46,27 +46,27 @@
                 padding: 30px;
                 text-align: center;
                 max-width: 500px;
-                border-radius: 20px;
+                border-radius: 16px;
                 margin: 20px;
                 min-height: 280px;
                 font-size: 1.2em;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                border: 4px solid #d1d1d1;
-                background: linear-gradient(135deg, #ffffff, #f2f2f2);
-                box-shadow: 0 10px 25px rgba(0,0,0,0.1);
-                color: #333;
+                border: 2px solid #444;
+                background: linear-gradient(145deg, #1e1e1e, #2c2c2c);
+                box-shadow: 0 0 25px rgba(0, 255, 170, 0.15), 0 0 5px rgba(255, 255, 255, 0.1) inset;
+                color: #eeeeee;
                 transition: all 0.3s ease;
             ">
                 <h2 style="
                     margin-bottom: 15px;
                     font-weight: 800;
                     font-size: 1.8em;
-                    color: #d32f2f;
-                    text-shadow: 1px 1px #fff;
+                    color: #00ffcc;
+                    text-shadow: 0 0 8px rgba(0, 255, 170, 0.6);
                 ">🚫 AdBlocker Detected!</h2>
                 
-                <p style="margin-bottom: 20px;">
-                    Ads help us keep this site free. Please consider disabling your ad blocker or adding us to your whitelist 💖
+                <p style="margin-bottom: 20px; color: #cccccc;">
+                    We rely on ads to keep this site free. Please disable your ad blocker or whitelist our domain 🙏
                 </p>
                 
                 <button id="refresh-page" style="
@@ -74,15 +74,15 @@
                     font-size: 16px;
                     font-weight: 600;
                     cursor: pointer;
-                    background: #4CAF50;
-                    color: white;
+                    background: #00ffcc;
+                    color: #000;
                     border: none;
                     border-radius: 8px;
-                    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                    transition: background 0.3s ease, transform 0.2s ease;
+                    box-shadow: 0 0 12px rgba(0, 255, 170, 0.4);
+                    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s;
                 " 
-                onmouseover="this.style.background='#43a047'; this.style.transform='scale(1.05)'"
-                onmouseout="this.style.background='#4CAF50'; this.style.transform='scale(1)'">
+                onmouseover="this.style.background='#00e6b8'; this.style.transform='scale(1.05)'; this.style.boxShadow='0 0 18px rgba(0,255,170,0.6)'"
+                onmouseout="this.style.background='#00ffcc'; this.style.transform='scale(1)'; this.style.boxShadow='0 0 12px rgba(0,255,170,0.4)'">
                     ✅ I Disabled AdBlock
                 </button>
             </div>

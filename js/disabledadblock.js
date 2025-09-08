@@ -67,7 +67,7 @@
                 border-radius: 12px;
                 margin: 20px auto;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-                background: #1c1c1c;
+                background: #0d0d0d;
                 color: #e0e0e0;
                 box-shadow: 0 0 15px rgba(0, 255, 170, 0.1);
             ">

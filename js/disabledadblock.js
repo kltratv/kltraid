@@ -58,7 +58,7 @@
                 max-width: 250px;
                 border-radius: 12px;
                 margin: 20px auto;
-                min-height: 180px;
+                min-height: 100px;
                 font-size: 0.95em;
                 font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
                 border: 1px solid #444;

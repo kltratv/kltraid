@@ -1,0 +1,405 @@
+    /* ====== Layout dasar ====== */
+    html,
+    body {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background: black;
+    }
+
+    .shaka-video-container.youtube-theme {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 100%;
+        height: 100%;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .shaka-video {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        aspect-ratio: 16/9;
+        /* jaga proporsi saat potrait */
+        background: black;
+    }
+
+    .youtube-theme .shaka-play-button,
+    .youtube-theme .shaka-spinner-container {
+        transform: scale(0.8);
+    }
+
+    .youtube-theme .shaka-video-container .material-icons-round {
+        color: #fdff00;
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOmCnqEu92Fr1Me5Q.ttf) format('truetype');
+    }
+
+    @font-face {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500;
+        font-display: swap;
+        src: url(https://fonts.gstatic.com/s/roboto/v27/KFOlCnqEu92Fr1MmEU9vAw.ttf) format('truetype');
+    }
+
+    .youtube-theme .shaka-bottom-controls {
+        width: 100%;
+        padding: 0;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .youtube-theme .shaka-ad-controls {
+        order: 1;
+    }
+
+    .youtube-theme .shaka-controls-button-panel {
+        order: 2;
+        height: 40px;
+        padding: 0 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    .youtube-theme .shaka-range-container {
+        margin: 4px 10px;
+        top: 0;
+    }
+
+    .youtube-theme .shaka-small-play-button {
+        order: -3;
+    }
+
+    .youtube-theme .shaka-mute-button {
+        order: -2;
+    }
+
+    .youtube-theme .shaka-controls-button-panel>* {
+        margin: 0;
+        padding: 3px 8px;
+        color: #fdff00;
+        height: 40px;
+    }
+
+    .youtube-theme .shaka-controls-button-panel>*:hover {
+        color: #e6e800;
+    }
+
+    .youtube-theme .shaka-controls-button-panel .shaka-volume-bar-container {
+        position: relative;
+        z-index: 10;
+        left: -1px;
+        order: -1;
+        opacity: 0;
+        width: 0px;
+        height: 3px;
+        transition: width .2s cubic-bezier(0.4, 0, 1, 1);
+        padding: 0;
+    }
+
+    .youtube-theme .shaka-controls-button-panel .shaka-volume-bar-container:hover,
+    .youtube-theme .shaka-controls-button-panel .shaka-volume-bar-container:focus {
+        display: block;
+        width: 50px;
+        opacity: 1;
+        padding: 0 6px;
+    }
+
+    .youtube-theme .shaka-mute-button:hover+div {
+        opacity: 1;
+        width: 50px;
+        padding: 0 6px;
+    }
+
+    .youtube-theme .shaka-current-time {
+        padding: 0 10px;
+        font-size: 12px;
+    }
+
+    .youtube-theme .shaka-seek-bar-container {
+        height: 3px;
+        position: relative;
+        top: -1px;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    .youtube-theme .shaka-seek-bar-container .shaka-range-element {
+        opacity: 0;
+    }
+
+    .youtube-theme .shaka-seek-bar-container:hover {
+        height: 5px;
+        top: 0;
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-seek-bar-container:hover .shaka-range-element {
+        opacity: 1;
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-seek-bar-container input[type=range]::-webkit-slider-thumb {
+        background: #FF0000;
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-seek-bar-container input[type=range]::-moz-range-thumb {
+        background: #FF0000;
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-seek-bar-container input[type=range]::-ms-thumb {
+        background: #FF0000;
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-video-container * {
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .youtube-theme .shaka-video-container .material-icons-round {
+        font-family: 'Material Icons Sharp';
+    }
+
+    .youtube-theme .shaka-overflow-menu,
+    .youtube-theme .shaka-settings-menu {
+        border-radius: 2px;
+        background: rgba(28, 28, 28, .9);
+        text-shadow: 0 0 2px rgba(0, 0, 0, 0);
+        transition: opacity .1s cubic-bezier(0, 0, .2, 1);
+        right: 10px;
+        bottom: 50px;
+        padding: 8px 0;
+        min-width: 200px;
+    }
+
+    .youtube-theme .shaka-settings-menu {
+        padding: 0 0 8px 0;
+    }
+
+    .youtube-theme .shaka-settings-menu button {
+        font-size: 12px;
+    }
+
+    .youtube-theme .shaka-settings-menu button span {
+        margin-left: 33px;
+        font-size: 13px;
+    }
+
+    .youtube-theme .shaka-settings-menu button[aria-selected="true"] {
+        display: flex;
+    }
+
+    .youtube-theme .shaka-settings-menu button[aria-selected="true"] span {
+        order: 2;
+        margin-left: 0;
+    }
+
+    .youtube-theme .shaka-settings-menu button[aria-selected="true"] i {
+        order: 1;
+        font-size: 18px;
+        padding-left: 5px;
+    }
+
+    .youtube-theme .shaka-overflow-menu button {
+        padding: 0;
+    }
+
+    .youtube-theme .shaka-overflow-menu button i {
+        display: none;
+    }
+
+    .youtube-theme .shaka-overflow-menu button .shaka-overflow-button-label {
+        display: flex;
+        height: 40px;
+        flex: 0 0 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .youtube-theme .shaka-overflow-menu button .shaka-overflow-button-label span {
+        flex-shrink: initial;
+        padding-left: 15px;
+        font-size: 13px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+    }
+
+    .youtube-theme .shaka-overflow-menu span+span {
+        color: #FFF;
+        font-weight: 400 !important;
+        font-size: 12px !important;
+        padding-right: 8px;
+        padding-left: 0 !important;
+    }
+
+    .youtube-theme .shaka-overflow-menu span+span:after {
+        content: "navigate_next";
+        font-family: 'Material Icons Sharp';
+        font-size: 20px;
+    }
+
+    .youtube-theme .shaka-overflow-menu .shaka-pip-button span+span {
+        padding-right: 15px !important;
+    }
+
+    .youtube-theme .shaka-overflow-menu .shaka-pip-button span+span:after {
+        content: "";
+    }
+
+    .youtube-theme .shaka-back-to-overflow-button {
+        padding: 8px 0;
+        border-bottom: 1px solid rgba(255, 255, 255, .2);
+        font-size: 12px;
+        color: #eee;
+        height: 40px;
+    }
+
+    .youtube-theme .shaka-back-to-overflow-button .material-icons-round {
+        font-size: 15px;
+        padding-right: 10px;
+    }
+
+    .youtube-theme .shaka-back-to-overflow-button span {
+        margin-left: 3px !important;
+    }
+
+    .youtube-theme .shaka-overflow-menu button:hover,
+    .youtube-theme .shaka-settings-menu button:hover {
+        background-color: rgba(255, 255, 255, .1);
+        cursor: pointer;
+    }
+
+    .youtube-theme .shaka-overflow-menu button:focus,
+    .youtube-theme .shaka-settings-menu button:focus {
+        background-color: rgba(255, 255, 255, .1);
+        border: none;
+        outline: none;
+    }
+
+    .youtube-theme .shaka-overflow-menu button,
+    .youtube-theme .shaka-settings-menu button {
+        color: #EEE;
+    }
+
+    .youtube-theme .shaka-captions-off {
+        color: #BFBFBF;
+    }
+
+    .youtube-theme .shaka-overflow-menu-button {
+        font-size: 18px;
+        margin-right: 5px;
+    }
+
+    .youtube-theme .shaka-fullscreen-button:hover {
+        font-size: 25px;
+        transition: font-size .1s cubic-bezier(0, 0, .2, 1);
+    }
+
+    .shaka-refresh-button.shaka-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        height: 40px;
+        padding: 3px 8px;
+        color: #fdff00;
+        background: transparent;
+        border: 0;
+        cursor: pointer;
+        order: 0;
+    }
+
+    .shaka-refresh-button.shaka-button:hover {
+        color: #e6e800;
+    }
+
+    .shaka-refresh-button .material-icons-sharp {
+        font-size: 25px;
+        line-height: 1;
+    }
+
+    .page-share-btn {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        z-index: 10000;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        border: 0;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, .55);
+        color: #fdff00;
+        cursor: pointer;
+    }
+
+    .page-share-btn:hover {
+        color: #e6e800;
+    }
+
+    .page-share-btn i {
+        font-size: 18px;
+    }
+
+    :fullscreen .page-share-btn,
+    :-webkit-full-screen .page-share-btn {
+        display: none !important;
+    }
+
+    .copy-toast {
+        position: fixed;
+        top: 56px;
+        left: 10px;
+        z-index: 10001;
+        background: rgba(20, 20, 20, .95);
+        color: #eee;
+        border: 1px solid rgba(255, 255, 255, .1);
+        border-radius: 8px;
+        padding: 6px 10px;
+        font-size: 12px;
+        display: none;
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    /* Tombol Unmute besar di dalam player */
+    .player-unmute {
+      position: absolute;          
+      top: 10px;
+      right: 12px;
+      z-index: 9999;               
+      display: none;               
+
+      padding: 10px 12px;
+      border: 0;
+      border-radius: 999px;
+      background: rgba(0,0,0,.6);
+      color: #fdff00;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      line-height: 1;
+      gap: 8px;
+
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+    }
+    .player-unmute:hover { background: rgba(0,0,0,.75); color: #e6e800; }
+    .player-unmute .mi { font-family: 'Material Icons Sharp'; font-size: 20px; }

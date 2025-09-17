@@ -249,12 +249,12 @@ body {
 }
 
 /* Tombol All Sports */
-.menu-wrapper-bottom .allsports-button {
-    background-color: #007BFF; /* Biru utama */
+.menu-wrapper-bottom .telegram-button {
+    background-color: #229ED9; /* Biru utama */
 }
 
-.menu-wrapper-bottom .allsports-button:hover {
-    background-color: #0056b3; /* Biru saat hover */
+.menu-wrapper-bottom .telegram-button:hover {
+    background-color: #1b7eae; /* Biru saat hover */
 }
 
 /* Tombol Download APK */

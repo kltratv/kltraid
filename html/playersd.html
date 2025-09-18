@@ -1,125 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Player SD</title>
-    <script src="https://yosintv.github.io/yosintv/jwcdn.js"></script>
-  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <meta charset="UTF-8">
+  <title>Clappr Fullscreen with Loader & YouTube Mode</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="/css/sdplayer.css">
 
-
-    <style>
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden;
-            background-color: black;
-        }
-        
-        .jw-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 100%;
-            height: 100%;
-        }
-
-        .jw-video-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-        }
-
-        .jwplayer {
-            width: 100%;
-            height: auto;
-            max-height: 100%;
-            background-color: black;
-        }
-
-        .jw-refresh-btn {
-            filter: drop-shadow(0 0 1px rgba(255,255,255,0.7));
-        }
-
-        #videoIframe {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            border: 0;
-        }
-
-        .hidden {
-            display: none;
-        }
-
-        /* Loader Styles */
-        .loader-container {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            color: #00fa9f;
-            z-index: 9999;
-        }
-
-        .loader {
-            width: 10px;
-            height: 10px;
-            border-radius: 50%;
-            display: block;
-            margin: 15px auto;
-            position: relative;
-            color: #FFF;
-            left: -100px;
-            box-sizing: border-box;
-            animation: shadowRolling 2s linear infinite;
-        }
-
-        @keyframes shadowRolling {
-            0% { box-shadow: 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
-            12% { box-shadow: 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
-            25% { box-shadow: 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0), 0px 0 rgba(255, 255, 255, 0); }
-            36% { box-shadow: 120px 0 white, 110px 0 white, 100px 0 white, 0px 0 rgba(255, 255, 255, 0); }
-            50% { box-shadow: 130px 0 white, 120px 0 white, 110px 0 white, 100px 0 white; }
-            62% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white, 110px 0 white; }
-            75% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white, 120px 0 white; }
-            87% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 130px 0 white; }
-            100% { box-shadow: 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0), 200px 0 rgba(255, 255, 255, 0); }
-        }
-    </style>
+  <script src="https://cdn.jsdelivr.net/npm/clappr@latest/dist/clappr.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/clappr/clappr-level-selector-plugin@latest/dist/level-selector.min.js"></script>
   
-    <script data-cfasync="false" type='text/javascript' src='//disappearsurgery.com/ae/3b/26/ae3b266ab5ae91abcaa715535a094b32.js'></script>	
-    <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>
-	
+  <script type='text/javascript' src='//atecomprisedispel.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js'></script>
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>   
+
 </head>
 <body>
-  
-  	<div id="statusOverlay">Berpindah ke sumber baru...</div>
+  <!-- Loader -->
+  <div id="loaderContainer" class="loader-container hidden">
+    <div class="loader"></div>
+    <div>Waiting streams</div>
+  </div>
 
-    <!-- Loader -->
-    <div id="loaderContainer" class="loader-container hidden">
-        <div class="loader"></div>
-        <div><i class="fas fa-satellite-dish"></i> Mencari sumber video...</div>
-    </div>
+  <!-- Share button + toast -->
+  <button id="pageShareBtn" class="page-share-btn" title="Copy embed">
+    <i class="material-icons-sharp" aria-hidden="true">ios_share</i>
+  </button>
+  <div id="copyToast" class="copy-toast">Embed code copied</div>
 
-    <!-- JW Player Container -->
-    <div class="jw-wrapper hidden" id="jwContainer">
-        <div id="player" class="jw-video-container"></div>
-    </div>
+  <!-- Clappr Player -->
+  <div id="player" class="hidden"></div>
 
-    <!-- Container untuk Iframe -->
-    <iframe id="videoIframe" class="hidden" src="" frameborder="0" allowfullscreen scrolling="no"
-        sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
-        allow="encrypted-media; autoplay">
-    </iframe>
+  <!-- Iframe fallback & YouTube -->
+  <iframe id="fallbackIframe" class="hidden" allowfullscreen scrolling="no"
+      frameborder="0"
+      sandbox="allow-same-origin allow-scripts allow-forms allow-pointer-lock allow-top-navigation"
+      allow="autoplay; encrypted-media; picture-in-picture"
+      style="position:fixed; top:0; left:0; width:100%; height:100%;"></iframe>
+
+  <script>
+    const NO_REFERRER_DOMAINS = ['livecdn.euw1-0005.jwplive','dktq4q','inplaynet','sindikasi.inews','op-group1-swiftservehd-1.dens','bbapcall','5nhp186eg31fofnc.chinese-restaurant-api.site'];
+    const EXCLUDED_IFRAME_DOMAINS = ['embedstreams.top','topembed.pw','sindikasi.inews.id','voodc.com'];
+  </script>    
   
-	<script src="/js/playersd.js"></script>
-	<script src="/js/sdbx.js"></script>		
-  
+  <script src="/js/playersd.js"></script>
 </body>
 </html>

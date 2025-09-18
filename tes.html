@@ -886,28 +886,31 @@ async function init() {
     if (channels[key]) {
         const channel = channels[key];
         currentChannelUrl = channel.url;
-        // DRM (clearKeys)
-        if (channel.drm?.clearkey) {
-            player.configure({
-                drm: {
-                    clearKeys: {
-                        [channel.drm.clearkey.keyId]: channel.drm.clearkey.key
-                    }
-                }
-            });
-        } else {
-            player.configure({
-                drm: {
-                    clearKeys: channel.drm
-                }
-            });
-        }
-        // ⚡ samakan dengan kode 1 agar startup cepat
+    
+        // 1) DRM ClearKeys
+        player.configure({
+            drm: { clearKeys: channel.drm }
+        });
+    
+        // 2) Streaming & ABR config cepat
         player.configure({
             streaming: {
-                rebufferingGoal: 2,
-                bufferingGoal: 10,
-                lowLatencyMode: false
+                lowLatencyMode: true,   // 🚀 langsung render frame pertama
+                rebufferingGoal: 1.5,
+                bufferingGoal: 3.5,
+                jumpLargeGaps: true,
+                smallGapLimit: 0.5,
+                stallEnabled: true,
+                stallThreshold: 0.25,
+                retryParameters: {
+                    timeout: 4000,
+                    maxAttempts: 2,
+                    baseDelay: 250
+                }
+            },
+            abr: {
+                defaultBandwidthEstimate: 5_000_000,
+                switchInterval: 2
             },
             manifest: {
                 dash: {
@@ -916,6 +919,8 @@ async function init() {
                 }
             }
         });
+    
+        // 3) Load stream
         try {
             prefetchManifest(channel.url);
             await player.load(channel.url);

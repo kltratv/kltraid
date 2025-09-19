@@ -5,7 +5,7 @@
   const disallowedOrigins = [
     'https://testklttra.blogspot.com'
   ];
-  const BLOCK_URL = '/block.html';
+  const BLOCK_URL = '/html/block.html';
 
   function isBlocked() {
     try {

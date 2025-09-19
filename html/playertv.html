@@ -1,1 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Shaka HLS Player – YouTube Theme + Refresh</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
+  <!-- Shaka UI v4 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/shaka-player@4.12.0/dist/controls.css" />
+  <script src="https://cdn.jsdelivr.net/npm/shaka-player@4.12.0/dist/shaka-player.ui.js"></script>
+
+  <!-- Icons & Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/playertv.css">
+  
+
+
+  <script>
+    /** Domain yang butuh no-referrer */
+    const NO_REFERRER_DOMAINS = [
+        'j1.soft4game', 'dktq4q', 'inplaynet',
+        'sindikasi.inews', 'op-group1-swiftservehd-1.dens',
+        'bbapcall', 'video.detik'
+    ];
+	/** Daftar sources langsung */
+	const SOURCES = {
+	<!-- Awal Data -->
+	'btv': 'https://b1news.beritasatumedia.com/Beritasatu/B1News_manifest.m3u8',
+	'sctv': 'https://op-group1-swiftservehd-1.dens.tv/h/h217/index.m3u8',
+	'moji': 'https://op-group1-swiftservehd-1.dens.tv/h/h207/index.m3u8',
+	'indosiar': 'https://op-group1-swiftservehd-1.dens.tv/h/h235/index.m3u8',
+	'tvrisports': 'https://op-group1-swiftservesd-1.dens.tv/s/s107/index.m3u8',  
+	'tvriworld': 'https://ott-balancer.tvri.go.id/live/eds/TVRIWorld/hls/TVRIWorld.m3u8', 
+	'jowo': 'https://op-group1-swiftservehd-1.dens.tv/h/h208/index.m3u8', 
+	'metrotv': 'https://op-group1-swiftservehd-1.dens.tv/h/h12/index.m3u8',
+	'tvone': 'https://op-group1-swiftservehd-1.dens.tv/h/h40/index.m3u8',           
+	'kplus': 'https://op-group1-swiftservehd-1.dens.tv/h/h08/01.m3u8',  
+	'tennistv': 'https://tennischannel-int-samsunguk.amagi.tv/playlist.m3u8',
+	'tennistv2': 'https://dddd.dracwoundshop.eu.org/tennisp.m3u8',  
+	'kompas': 'https://op-group1-swiftservehd-1.dens.tv/s/s104/index.m3u8', 
+	'btv': 'https://op-group1-swiftservehd-1.dens.tv/h/h129/S4/mnf.m3u8', 
+	'rtv': 'https://op-group1-swiftservehd-1.dens.tv/h/h10/index.m3u8',
+	'antv': 'https://op-group1-swiftservehd-1.dens.tv/s/s07/index.m3u8', 
+	'mdtv': 'https://op-group1-swiftservesd-1.dens.tv/h/h06/index.m3u8', 
+	'trans7': 'https://video.detik.com/trans7/smil:trans7.smil/playlist.m3u8',
+	'transtv': 'https://video.detik.com/transtv/smil:transtv.smil/playlist.m3u8',
+	'rcti': 'https://sindikasi.inews.id/embed/video/YWdlbnQ9ZGVza3RvcCZ1cmw9aHR0cHMlM0ElMkYlMkZlbWJlZC5yY3RpcGx1cy5jb20lMkZsaXZlJTJGcmN0aSUyRmluZXdzaWQmaGVpZ2h0PTEwMCUyNSZ3aWR0aD0xMDAlMjU=',
+	'gtv': 'https://sindikasi.inews.id/embed/video/YWdlbnQ9ZGVza3RvcCZ1cmw9aHR0cHMlM0ElMkYlMkZlbWJlZC5yY3RpcGx1cy5jb20lMkZsaXZlJTJGZ3R2JTJGaW5ld3NpZCZoZWlnaHQ9MTAwJTI1JndpZHRoPTEwMCUyNQ==',
+	'inews': 'https://sindikasi.inews.id/embed/video/YWdlbnQ9ZGVza3RvcCZ1cmw9aHR0cHMlM0ElMkYlMkZlbWJlZC5yY3RpcGx1cy5jb20lMkZsaXZlJTJGaW5ld3MlMkZpbmV3c2lkJmhlaWdodD0xMDAlMjUmd2lkdGg9MTAwJTI1',
+	'mnctv': 'https://sindikasi.inews.id/embed/video/YWdlbnQ9ZGVza3RvcCZ1cmw9aHR0cHMlM0ElMkYlMkZlbWJlZC5yY3RpcGx1cy5jb20lMkZsaXZlJTJGbW5jdHYlMkZpbmV3c2lkJmhlaWdodD0xMDAlMjUmd2lkdGg9MTAwJTI1',
+	'dazncombat': 'https://rakutenaa-dazn-combat-rakuten-kcybm.amagi.tv/playlist/rakutenAA-dazn-combat-rakuten/cb543d1f7a6c6c8e84cb3b67cef342a9f9591fde1d6988693eb5518975d1073edce2a59caa08ff16388f1ede7f0a66413a3e951fda77118fd87eb141453c5728cfffe729a2c05616b7db083429b56a062a866a68ac39437ed0e21f48a238b6720a5aa82a66443d80b846ac7554db80148b61299bce8c37683f03409a5e5afba358b1ebb70f4d8c68a8e24855977c11e79f43c8821ca689860a9c5e8623a3119f90f98b87418181f31d93758ae18a51581fb4b93bfbe45cbadb837a309d03472c7c74d5d3587ad35efc23624ff1feb1df2f9f418de1ade61157db60f82fe454aa12ca69c7812ee0919b952e602aadc5144a32a3eda984fc0ffedc0cf48fe6c77a7095f75b2d09992d9015223694f2dc07c4ed21d6e773cbe4325d0fc99f13cfc6f29bb9e4c40abd35dacbf1af3840656a104dd30ef5d43e8d69955380fa3e0d100d48a4915084a1dc5d3b6d06c6a356c61c16bc94dad089406b8430550aa853d85d047ec57b392fb263aacc4e19e34c3d8c3b39f44f26c013acca4bdb939bb45675e5a484289948e0ba0ddef378d94e344b0dbef76c12057b74deea691a233ba461e1c0c1f578190a8eae9be6a1b359d2b080f26afc986fb3cca650da25458f99e6bf575f/96/640x360_792000/index.m3u8'
+	<!-- Akhir Data -->
+        };
+
+	/** Ambil URL stream dari sources berdasarkan ?key= */
+	function getStreamUrlByKey() {
+	  const key = new URLSearchParams(window.location.search).get('key');
+	  if (!key) throw new Error('Missing ?key=... in URL');
+	  const url = SOURCES[key];
+	  if (!url) throw new Error('Stream not found for key: ' + key);
+	  return url;
+	}
+    /** Inject meta no-referrer bila domain cocok */
+    function maybeInjectNoReferrerMeta(url) {
+        const need = NO_REFERRER_DOMAINS.some(d => url.includes(d));
+        if (need) {
+            const meta = document.createElement('meta');
+            meta.name = 'referrer';
+            meta.content = 'no-referrer';
+            document.head.appendChild(meta);
+        }
+    }
+  </script> 
+  
+</head>
+<body>
+  <!-- Share -->
+  <button id="pageShareBtn" class="page-share-btn" title="Copy embed">
+      <i class="material-icons-sharp" aria-hidden="true">ios_share</i>
+  </button>
+  <div id="copyToast" class="copy-toast">Embed code copied</div>
+
+  <!-- Shaka container -->
+  <div data-shaka-player-container class="shaka-container youtube-theme" shaka-controls>
+      <video autoplay muted playsinline webkit-playsinline data-shaka-player class="shaka-video" referrerpolicy="no-referrer">
+      </video>
+  </div>
+
+	<script src="/js/playertv.js"></script>
+  
+</body>
+</html>

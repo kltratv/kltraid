@@ -1,1 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>PLAYERMPD</title>
 
+  <!-- Shaka UI v4.1.1 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/controls.min.css" crossorigin="anonymous">
+
+  <!-- Icons & font untuk theme -->
+  <link href="https://fonts.googleapis.com/css2?family=Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/playermpd.css">
+
+  <meta name="referrer" content="no-referrer" />
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/shaka-player/4.1.1/shaka-player.ui.min.js" crossorigin="anonymous"></script>
+  <script type='text/javascript' src='//atecomprisedispel.com/42/bd/bf/42bdbfa0c65f07db50603564b0771d5d.js'></script>
+  <script disable-devtool-auto src="https://cdn.jsdelivr.net/npm/disable-devtool"></script>  
+
+</head>
+<body>
+  <button id="pageShareBtn" class="page-share-btn" title="Copy embed">
+      <i class="material-icons-sharp" aria-hidden="true">ios_share</i>
+  </button>
+  <div id="copyToast" class="copy-toast">Embed code copied</div>
+
+  <div data-shaka-player-container style="width: 100%; height: 100%; cursor: none;" shaka-controls="true" class="shaka-video-container youtube-theme">
+      <video autoplay muted playsinline webkit-playsinline data-shaka-player id="video" class="shaka-video" poster=""></video>
+  </div>
+  
+  <script src="/js/playermpd.js" defer></script>
+  
+</body>
+</html>

@@ -41,15 +41,51 @@
         
         // Translation map
         const translations = {
-            en: { title: "Disabled Your Adblock", message: "Don't Use DNS", button: "Reload" },
-            id: { title: "Nonaktifkan Adblock Anda", message: "Jangan Gunakan DNS", button: "Muat Ulang" },
-            es: { title: "Desactiva tu Adblock", message: "No uses DNS", button: "Recargar" },
-            fr: { title: "Désactivez votre Adblock", message: "N'utilisez pas DNS", button: "Recharger" },
-            de: { title: "Deaktiviere deinen Adblocker", message: "Verwenden Sie kein DNS", button: "Neu laden" },
-            pt: { title: "Desative seu Adblock", message: "Não use DNS", button: "Recarregar" },
-            ja: { title: "Adblockを無効にしてください", message: "DNSを使用しないでください", button: "再読み込み" },
-            ko: { title: "Adblock을 비활성화하세요", message: "DNS를 사용하지 마세요", button: "새로고침" },
-            zh: { title: "请禁用广告拦截器", message: "不要使用DNS", button: "重新加载" }
+            en: { 
+                title: "Disabled Your Adblock", 
+                message: "Don't Use DNS & Open With Chrome", 
+                button: "Reload" 
+            },
+            id: { 
+                title: "Nonaktifkan Adblock Anda", 
+                message: "Jangan Gunakan DNS & Buka Dengan Chrome", 
+                button: "Muat Ulang" 
+            },
+            es: { 
+                title: "Desactiva tu Adblock", 
+                message: "No uses DNS & Ábrelo con Chrome", 
+                button: "Recargar" 
+            },
+            fr: { 
+                title: "Désactivez votre Adblock", 
+                message: "N'utilisez pas DNS & Ouvrez avec Chrome", 
+                button: "Recharger" 
+            },
+            de: { 
+                title: "Deaktiviere deinen Adblocker", 
+                message: "Verwenden Sie kein DNS & Öffnen Sie mit Chrome", 
+                button: "Neu laden" 
+            },
+            pt: { 
+                title: "Desative seu Adblock", 
+                message: "Não use DNS & Abra com o Chrome", 
+                button: "Recarregar" 
+            },
+            ja: { 
+                title: "Adblockを無効にしてください", 
+                message: "DNSを使用しないでください & Chromeで開いてください", 
+                button: "再読み込み" 
+            },
+            ko: { 
+                title: "Adblock을 비활성화하세요", 
+                message: "DNS를 사용하지 마세요 & Chrome에서 열기", 
+                button: "새로고침" 
+            },
+            zh: { 
+                title: "请禁用广告拦截器", 
+                message: "不要使用DNS & 请用Chrome打开", 
+                button: "重新加载" 
+            }
         };
         
         // Use the first 2 characters of lang to get translation
